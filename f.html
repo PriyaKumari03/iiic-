@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Upload PDF to Google Drive</title>
+  <style>
+    .upload-form {
+      display: flex;
+      align-items: center;
+    }
+
+    .upload-button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .file-input {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <form action="upload.php" method="POST" enctype="multipart/form-data" class="upload-form">
+    <label for="pdfFile" class="upload-button">Select PDF File (Max 5 MB)</label>
+    <input type="file" id="pdfFile" name="pdfFile" accept=".pdf" max-size="5242880" class="file-input">
+    <input type="submit" value="Upload" class="upload-button">
+  </form>
+</body>
+</html>
