@@ -118,21 +118,137 @@ include_once 'database.php';
         </script>
       </div>
 
-
-
       <!-- certificate upload -->
 
       <form action="upload.php" method="POST" enctype="multipart/form-data">
         <label for="pdfFile">Upload Incorporation Certificate (Max 5 mb)</label>
         <input type="file" id="pdfFile" name="my_image" max="5242880"><br> <br>
-        
-        <input type="submit" name="upload" class="btn btn-info" value="Upload"> 
+        <input type="submit" name="upload" class="btn btn-info" value="Upload"> <br> <br>
+      
+        <div class="form-group">
+        <label for="se-name">Name of the Stock Exchange(s)</label>
+        <input type="text" id="se-name" name="se-name" class="form-control" placeholder="Enter name of the Stock Exchange(s) where shares are listed" required>
+      </div>
 
+      <div class="form-group">
+        <label for="puc">Paid-up Capital</label>
+        <input type="text" id="puc" name="puc" required pattern="[0-9]+">
+        </div>
+
+      <!-- Deatils of POC-->
+        <div class="form-group">
+          <p class="poc">
+        <label for="details">Details of Point of Contact</label>
+        <br>
+        <label for="poc-name">Name</label>
+        <input type="text" id="poc-name" name="poc-name" placeholder="Enter the name of person to contact for queries">
+        <label for="poc-phone">Phone Number</label>
+        <input type="text" id="poc-phone" name="poc-phone" required pattern="[0-9]+" placeholder="Enter the contact number">
+        <label for="email">Email Address</label>
+        <input type="text" id="poc-email" name="poc-email" class="form-control" placeholder="Enter email address" required>
+        </p>
+        </div>
+        <!-- Deatils of POC ends-->
+
+        <div class="form-group">
+        <label for="rep-b">Reporting boundary</label>
+        <input type="text" id="rep-b" name="rep-b" class="form-control" placeholder="Enter Reporting boundary" required>
+      </div>
+
+       <div class="form-group">
+          <label for="doba">Details of Business activities</label>
+          <textarea id="doba" name="doba" rows="5" cols="50" class="form-control" placeholder="Enter details of Business activities of the entity (accounting for 90% of the entity’s Turnover)" required></textarea>
+        </div>
+
+        
+       <div class="form-group">
+          <label for="dops">Details of the products & services</label>
+          <textarea id="dops" name="dops" rows="5" cols="50" class="form-control" placeholder="Enter details of the products & services sold by the entity (accounting for 90% of the entity’s Turnover)" required></textarea>
+        </div>
+
+      <div class="form-group">
+        <label for="nol">Number of locations</label>
+        <input type="text" id="nol" name="nol" required pattern="[0-9]+" placeholder=" Enter number of locations where plants/operation/ offices of the entity are located.">
+        </div>
+
+        <div class="form-group">
+          <label for="drm">Details regarding markets served by the entity.</label>
+          <textarea id="drm" name="drm" rows="5" cols="50" class="form-control" placeholder="Enter details regarding markets served by the entity." required></textarea>
+        </div>
+
+        <!-- Deatils of employee-->
+        <div class="form-group">
+          <p class="poc">
+        <label for="details">Details of Employees & Workers</label>
+        <br>
+        <label for="tote">Total numbere of Employees & Workers</label>
+        <input type="text" id="tote" name="tote" placeholder="Enter the total numbere of Employees & Workers">
+        
+        <label for="type">Peramnent</label>
+
+        <label for="male">Male Employee</label>
+        <input type="text" id="male" name="male" placeholder="Number of male employee">
+        <label for="female">Female Employee</label>
+        <input type="text" id="female" name="female" placeholder="Number of female employee">
+
+        <label for="type1">Temporaray</label>
+
+         <label for="male1">Male Employee</label>
+         <input type="text" id="male1" name="male1" placeholder="Number of male employee">
+         <label for="female1">Female Employee</label>
+         <input type="text" id="female1" name="female1" placeholder="Number of female employee">
+
+      </p>
+        </div>
+        <!-- Deatils of employee ends-->
+
+        <div class="form-group">
+        <label for="p-no">Participation/Inclusion/Representation of Women</label>
+        <input type="text" id="p-no" name="p-no" required pattern="[0-9]+" placeholder=" Enter number of Female members of the BOD/KMP">
+        </div>
+
+        <div class="form-group">
+        <label for="tor">Turnover rate for permanent employees & workers (For past 3 years)</label>
+        <input type="text" id="tor" name="tor" required pattern="[0-9]+" placeholder="Enter Turnover rate for past 3 years">
+        </div>
+
+        
+      <!-- Deatils of corporate structure-->
+      <div class="form-group">
+          <p class="poc">
+        <label for="details">Details of corporate structure</label>
+        <br>
+        <label for="holding">Holding</label>
+        <input type="text" id="holding" name="holding" placeholder="Enter the details of Holding">
+        
+        <label for="subsidiary">Subsidiary</label>
+        <input type="text" id="subsidiary" name="subsidiary" required pattern="[0-9]+" placeholder="Enter the subsidiary">
+        
+        <label for="ac">Associate Companies (including joint ventures)</label>
+        <textarea id="ac" name="ac" rows="5" cols="50" class="form-control" placeholder="Enter the details of Associate Companies (including joint ventures)" required></textarea>  
+      </p>
+        </div>
+        <!-- Deatils of corporate structure ends-->
+
+        <div class="form-group">
+        <label for="csr">Details of CSR Activities </label>
+        <textarea id="csr" name="csr" rows="5" cols="50" class="form-control" placeholder="Enter the details of CSR Activities" required></textarea>  
+      </div>
+
+      <div class="form-group">
+        <label for="gre">Grievance redressal </label>
+        <textarea id="gre" name="gre" rows="5" cols="50" class="form-control" placeholder=" Raise concerns about, & seek remedy for, the organization’s potential & actual negative impacts on them" required></textarea>  
+      </div>
+
+      <div class="form-group">
+        <label for="overview">Overview of the entity’s material responsible business conduct issues </label>
+        <textarea id="overview" name="overview" rows="5" cols="50" class="form-control" placeholder="Increased awareness & understanding of climate risks & opportunities within the entity resulting in better risk management & more informed strategic planning" required></textarea>  
+      </div>
+
+<!-- form fields ends-->
         <button type="submit" name="submit" class="custom-btn btn-13">Submit</button>
         <button class="custom-btn btn-15">Reset</button>
-       
-       
-
+    
       </form>
 
       <!-- certificate upload ends -->
