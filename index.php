@@ -127,7 +127,7 @@ include_once 'database.php';
       
         <div class="form-group">
         <label for="se-name">Name of the Stock Exchange(s)</label>
-        <input type="text" id="se-name" name="se-name" class="form-control" placeholder="Enter name of the Stock Exchange(s) where shares are listed" required>
+        <input type="text" id="se-name" name="name_stock" class="form-control" placeholder="Enter name of the Stock Exchange(s) where shares are listed" required>
       </div>
 
       <div class="form-group">
@@ -141,18 +141,18 @@ include_once 'database.php';
         <label for="details">Details of Point of Contact</label>
         <br>
         <label for="poc-name">Name</label>
-        <input type="text" id="poc-name" name="poc-name" placeholder="Enter the name of person to contact for queries">
+        <input type="text" id="poc-name" name="poc_name" placeholder="Enter the name of person to contact for queries">
         <label for="poc-phone">Phone Number</label>
-        <input type="text" id="poc-phone" name="poc-phone" required pattern="[0-9]+" placeholder="Enter the contact number">
+        <input type="text" id="poc-phone" name="poc_phone" required pattern="[0-9]+" placeholder="Enter the contact number">
         <label for="email">Email Address</label>
-        <input type="text" id="poc-email" name="poc-email" class="form-control" placeholder="Enter email address" required>
+        <input type="text" id="poc-email" name="poc_email" class="form-control" placeholder="Enter email address" required>
         </p>
         </div>
         <!-- Deatils of POC ends-->
 
         <div class="form-group">
         <label for="rep-b">Reporting boundary</label>
-        <input type="text" id="rep-b" name="rep-b" class="form-control" placeholder="Enter Reporting boundary" required>
+        <input type="text" id="rep-b" name="rep_b" class="form-control" placeholder="Enter Reporting boundary" required>
       </div>
 
        <div class="form-group">
@@ -194,9 +194,9 @@ include_once 'database.php';
         <label for="type1">Temporaray</label>
 
          <label for="male1">Male Employee</label>
-         <input type="text" id="male1" name="male1" placeholder="Number of male employee">
+         <input type="text" id="male1" name="malet" placeholder="Number of male employee">
          <label for="female1">Female Employee</label>
-         <input type="text" id="female1" name="female1" placeholder="Number of female employee">
+         <input type="text" id="female1" name="femalet" placeholder="Number of female employee">
 
       </p>
         </div>
@@ -204,7 +204,7 @@ include_once 'database.php';
 
         <div class="form-group">
         <label for="p-no">Participation/Inclusion/Representation of Women</label>
-        <input type="text" id="p-no" name="p-no" required pattern="[0-9]+" placeholder=" Enter number of Female members of the BOD/KMP">
+        <input type="text" id="p-no" name="p_no" required pattern="[0-9]+" placeholder=" Enter number of Female members of the BOD/KMP">
         </div>
 
         <div class="form-group">
@@ -284,8 +284,35 @@ include_once 'database.php';
         $telephone = $_POST['telephone'];
         $website = $_POST['website'];
         $reporting_fin_year = $_POST['reporting_fin_year'];
+        $name_stock = $_POST['name_stock'];
+        $puc = $_POST['puc'];
+        $poc_name = $_POST['poc_name'];
+        $poc_phone = $_POST['poc_phone'];
+        $poc_email = $_POST['poc_email'];
+        $rep_b  = $_POST['rep_b'];
+        $doba = $_POST['doba'];
+        $dops = $_POST['dops'];
+        $nol = $_POST['nol'];
+        $drm = $_POST['drm'];
+        $tote = $_POST['tote'];
+        $male = $_POST['male'];
+        $female = $_POST['female'];
+        $malet = $_POST['malet'];
+        $femalet = $_POST['femalet'];
+        $p_no = $_POST['p_no'];
+        $tor = $_POST['tor'];
+        $holding = $_POST['holding'];
+        $subsidiary= $_POST['subsidiary'];
+        $ac = $_POST['ac'];
+        $csr = $_POST['csr'];
+        $gre = $_POST['gre'];
+        $overview = $_POST['overview'];
         //$sql = "INSERT INTO student (i) VALUES('$id','$firstname','$lastname','$dob','$gender','$dep','$usern','$pass'); ";
-        $sql = "INSERT INTO section_a_form (`cin`, `name`, `year`, `office_address`, `corporate_address`, `email`, `telephone`, `website`, `reporting_fin_year`) VALUES('$cin','$name','$year','$office_address','$corporate_address','$email','$telephone','$website','$reporting_fin_year'); ";
+        //$sql = "INSERT INTO section_a_form (`cin`, `name`, `year`, `office_address`, `corporate_address`, `email`, `telephone`, `website`, `reporting_fin_year`) VALUES('$cin','$name','$year','$office_address','$corporate_address','$email','$telephone','$website','$reporting_fin_year'); ";
+        $sql = "INSERT INTO `section_a_form`(`cin`, `name`, `year`, `office_address`, `corporate_address`, `email`, `telephone`, `website`, `reporting_fin_year`, `name_stock`, `puc`, `poc_name`, `poc_phone`, `poc_email`, `rep_b`, `doba`, `dops`, `nol`, `drm`, `tote`, `male`, `female`, `malet`, `femalet`, `p_no`, `tor`, `holding`, `subsidiary`, `ac`, `csr`, `gre`, `overview`) 
+              VALUES ('$cin','$name','$year','$office_address','$corporate_address','$email','$telephone','$website','$reporting_fin_year','$name_stock','$puc','$poc_name',
+              '$poc_phone','$poc_email','$rep_b','$doba','$dops','$nol','$drm','$tote','$male','$female','$malet','$femalet','$p_no','$tor','$holding','$subsidiary','$ac','$csr','$gre',
+              '$overview');";
         $data = mysqli_query($conn, $sql);
       
 
