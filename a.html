@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Entity NGRBC Policy Form</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="a.css">
+  <style>
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="text-center">Entity NGRBC Policy Form</h1>
+  
+  <div class="container">
+    <form id="policyForm">
+      <div class="mb-3">
+        <label for="policyQuestion" class="form-label">Whether your entity’s policy/policies cover each principle & core elements of NGRBCs:</label>
+        <select class="form-select" id="policyQuestion" name="policyQuestion" required>
+          <option value="">Select an option</option>
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+        </select>
+      </div>
+      
+      <div class="mb-3 hidden" id="policyLinkContainer">
+        <label for="policyLink" class="form-label">If Web link available, provide the same:</label>
+        <input type="text" class="form-control" id="policyLink" name="policyLink">
+      </div>
+      
+      <div class="mb-3">
+        <label for="procedureQuestion" class="form-label">Whether the entity has translated the policy into procedures:</label>
+        <select class="form-select" id="procedureQuestion" name="procedureQuestion" required>
+          <option value="">Select an option</option>
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+        </select>
+      </div>
+      
+      <div class="mb-3 hidden" id="procedureLinkContainer">
+        <label for="procedureLink" class="form-label">If Web link available, provide the same:</label>
+        <input type="text" class="form-control" id="procedureLink" name="procedureLink">
+      </div>
+      
+      <div class="mb-3">
+        <label for="valueChainQuestion" class="form-label">Do the enlisted policies extend to your value chain partners?:</label>
+        <select class="form-select" id="valueChainQuestion" name="valueChainQuestion" required>
+          <option value="">Select an option</option>
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+        </select>
+      </div>
+      
+      <div class="mb-3 hidden" id="valueChainLinkContainer">
+        <label for="valueChainLink" class="form-label">If Web link available, provide the same:</label>
+        <input type="text" class="form-control" id="valueChainLink" name="valueChainLink">
+      </div>
+      
+      <div class="mb-3">
+        <label for="standardsQuestion" class="form-label">Name of the national & international codes/certifications/labels/standards adopted by your entity & mapped to each principle:</label>
+        <textarea class="form-control" id="standardsQuestion" name="standardsQuestion" rows="4" required></textarea>
+      </div>
+      
+      <div class="mb-3">
+        <label for="commitmentsQuestion" class="form-label">Specific commitments, goals & targets set by the entity with defined timelines, if any:</label>
+        <textarea class="form-control" id="commitmentsQuestion" name="commitmentsQuestion" rows="4" required></textarea>
+      </div>
+      
+      <div class="mb-3">
+        <label for="performanceQuestion" class="form-label">Performance of the entity against the specific commitments, goals & targets along with reasons in case the same are not met:</label>
+        <textarea class="form-control" id="performanceQuestion" name="performanceQuestion" rows="4" required></textarea>
+      </div>
+
+      <div class="mb-3">
+        <label for="directorStatement" class="form-label">Statement by director responsible for the business responsibility report, highlighting ESG related challenges, targets & achievements:</label>
+        <textarea class="form-control" id="directorStatement" name="directorStatement" rows="4" required></textarea>
+      </div>
+      
+      <div class="mb-3">
+        <label for="achievementsQuestion" class="form-label">Achievements:</label>
+        <select class="form-select" id="achievementsQuestion" name="achievementsQuestion" required>
+          <input type="file">
+        </select>
+      </div>
+
+      <div class="mb-3">
+        <label for="authorityDetails" class="form-label">Details of the highest authority responsible for implementation & oversight of the Business Responsibility policy:</label>
+        <textarea class="form-control" id="authorityDetails" name="authorityDetails" rows="4" required></textarea>
+      </div>
+
+      <div class="mb-3">
+        <label for="sustainabilityCommitteeQuestion" class="form-label">Does the entity have a specified Committee of the Board/Director responsible for decision-making on sustainability-related issues?</label>
+        <select class="form-select" id="sustainabilityCommitteeQuestion" name="sustainabilityCommitteeQuestion" required>
+          <option value="">Select an option</option>
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+        </select>
+      </div>
+      
+      <div class="mb-3 hidden" id="committeeDetailsContainer">
+        <label for="committeeDetails" class="form-label">If yes, provide details:</label>
+        <textarea class="form-control" id="committeeDetails" name="committeeDetails" rows="4"></textarea>
+      </div>
+
+      <div class="mb-3">
+        <label for="assessmentQuestion" class="form-label">Has the entity carried out independent assessment/evaluation of the working of its policies by an external agency?</label>
+        <select class="form-select" id="assessmentQuestion" name="assessmentQuestion" required>
+          <option value="">Select an option</option>
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+        </select>
+      </div>
+      
+      <div class="mb-3 hidden" id="agencyDetailsContainer">
+        <label for="agencyDetails" class="form-label">If yes, provide agency details:</label>
+        <textarea class="form-control" id="agencyDetails" name="agencyDetails" rows="4"></textarea>
+      </div>
+      
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+  <script src="a.js"></script>
+</body>
+</html>
