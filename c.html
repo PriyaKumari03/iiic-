@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="a.css">
+    <title>Compliance Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            margin-bottom: 30px;
+        }
+
+        form {
+            width: 50%;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 8%;
+            padding-top: 4%;
+            padding-bottom: 4%;
+            border-radius: 5px;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+
+        .prev {
+            float: left;
+        }
+
+        textarea {
+            height: 100px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            float: right;
+        }
+
+        .con {
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <h1 class="logo"><a href="#">CUSRS</a></h1>
+        <ul class="main-nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+
+
+    <div id="principle1">
+        <form id="myForm">
+
+            <h1>Section - C</h1>
+            <h3>PRINCIPLE 1: BUSINESSES SHOULD CONDUCT & GOVERN THEMSELVES WITH INTEGRITY, & IN A MANNER THAT IS
+                ETHICAL, TRANSPARENT & ACCOUNTABLE.</h3>
+            <label for="coverage">1. Percentage coverage by training & awareness programmes on any of the Principles
+                during the financial year of KMP/BOD/ Employees other than BOD & KMPs, Workers:</label>
+            <input type="number" id="coverage" name="coverage" placeholder="Enter percentage coverage" required>
+
+            <label for="details">2. Details of fines / penalties /punishment/ award/ compounding fees/ settlement amount
+                paid in proceedings (by the entity or by directors / KMPs) with regulators/ law
+                enforcement agencies/ judicial institutions, in the financial year:</label>
+            <textarea id="details" name="details" placeholder="Enter details of fines/penalties/punishment"
+                required></textarea>
+
+            <label for="appeal">3. Of the instances disclosed in Question 2 above, details of the Appeal/ Revision
+                preferred in cases where monetary or non-monetary action has been appealed.
+                :</label>
+            <textarea id="appeal" name="appeal" placeholder="Enter details of appeal/revision"></textarea>
+
+            <label for="antiCorruptionPolicy">4. Does the entity have an anti-corruption or anti-bribery policy? If yes,
+                provide details in brief & if available, provide a web-link to the policy.:</label>
+            <textarea id="antiCorruptionPolicy" name="antiCorruptionPolicy"
+                placeholder="Enter anti-corruption/anti-bribery policy details"></textarea>
+
+            <label for="disciplinaryAction">5. Number of Directors/KMPs/employees/workers against whom disciplinary
+                action was taken by any law enforcement agency for the charges of bribery/ corruption:</label>
+            <input type="number" id="disciplinaryAction" name="disciplinaryAction" placeholder="Enter number of persons"
+                required>
+
+            <label for="conflictComplaints">6.Details of complaints with regard to conflict of interest.:</label>
+            <textarea id="conflictComplaints" name="conflictComplaints"
+                placeholder="Enter conflict of interest complaints details"></textarea>
+
+            <label for="correctiveAction">7.Provide details of any corrective action taken or underway on issues related
+                to fines / penalties / action taken by regulators/ law enforcement agencies/ judicial
+                institutions, on cases of corruption & conflicts of interest:</label>
+            <textarea id="correctiveAction" name="correctiveAction"
+                placeholder="Enter corrective action details"></textarea><br><br>
+
+            <h3>LEADERSHIP INDICATORS – IMPORTANCE TO INVESTORS</h3>
+
+            <label for="awarenessProgrammes">1.Awareness programmes conducted for value chain partners on any of the
+                Principles during the financial year
+                :</label>
+            <input type="text" id="awarenessProgrammes" name="awarenessProgrammes"
+                placeholder="Enter awareness programmes details" required>
+
+            <label for="conflictOfInterest">2.Does the entity have processes in place to avoid/ manage conflict of
+                interests involving members of the Board? (Yes/No) If Yes, provide details of the same :</label>
+            <div class="con">
+                <input type="radio" id="conflictYes" name="conflictInterest" value="Yes">
+                <label for="conflictYes">yes</label>
+                <input type="radio" id="conflictNo" name="conflictInterest" value="No">
+                <label for="conflictNo">No</label>
+            </div>
+            <textarea id="conflictDetails" name="conflictDetails"
+                placeholder="Enter conflict of interest details"></textarea>
+
+            <button type="submit" onclick="principle2()">Next</button>
+
+
+
+        </form>
+    </div>
+
+
+    <div id="principle2">
+        <form id="myForm2">
+
+            <h1>Section - C</h1>
+            <h3>PRINCIPLE 2: BUSINESSES SHOULD RESPECT THE INTERESTS OF & BE RESPONSIVE TO ALL THEIR STAKEHOLDERS.</h3>
+            <label for="rdPercentage">1.Percentage of R&D & capital expenditure (capex) investments in specific
+                technologies to improve the environmental & social impacts of product & processes to total
+                R&D & capex investments made by the entity in current & previous FY:</label>
+            <input type="number" id="rdPercentage" name="rdPercentage" placeholder="Enter percentage" required>
+
+            <label for="sustainableSourcing">2. Does the entity have procedures in place for sustainable sourcing, if
+                yes specify the percentage:</label>
+            <input type="radio" id="sourcingYes" name="sourcing" value="Yes"> Yes
+            <input type="radio" id="sourcingNo" name="sourcing" value="No"> No
+
+            <input type="number" id="sourcingPercentage" name="sourcingPercentage" placeholder="Enter percentage">
+
+            <label for="reclaimProcesses">3.Describe the processes in place to safely reclaim your products for reusing,
+                recycling & disposing at the end of life, for (a) Plastics (including packaging) (b) E-waste (c)
+                Hazardous waste & (d) other waste :</label>
+            <textarea id="reclaimProcesses" name="reclaimProcesses"
+                placeholder="Enter processes for product reclamation" required></textarea>
+
+            <label for="eprApplicable">4.Whether Extended Producer Responsibility (EPR) is applicable to the entity’s
+                activities (Yes / No). If yes, whether the waste collection plan is in line with the Extended
+                Producer Responsibility (EPR) plan submitted to Pollution Control Boards? If not, provide steps taken to
+                address the same:</label>
+            <input type="radio" id="eprYes" name="epr" value="Yes"> Yes
+            <input type="radio" id="eprNo" name="epr" value="No"> No
+
+            <input type="text" id="eprCollectionPlan" name="eprCollectionPlan"
+                placeholder="Enter EPR collection plan details">
+
+            <br><br><br><br>
+
+
+            <h3>LEADERSHIP INDICATORS – IMPORTANCE TO INVESTORS</h3>
+            <label for="lcaConducted">1.Has the entity conducted Life Cycle Perspective / Assessments (LCA) for any of
+                its products or for its services If yes, provide details, i.e. Name of Product /Service, % of
+                total Turnover contributed, Boundary for which the Life Cycle Perspective / Assessment was conducted,
+                whether conducted by external agency:</label>
+            <input type="radio" id="lcaYes" name="lcaConducted" value="Yes"> Yes
+            <input type="radio" id="lcaNo" name="lcaConducted" value="No"> No
+
+            <textarea id="lcaDetails" name="lcaDetails" placeholder="Enter LCA details"></textarea>
+
+            <label for="concernsMitigation">2.If there are any significant social or environmental concerns &/or risks
+                arising from production or disposal of your products / services, as identified in the Life Cycle
+                Perspective / Assessments (LCA) or through any other means, briefly describe the same along-with action
+                taken to mitigate the same:</label>
+            <textarea id="concernsMitigation" name="concernsMitigation"
+                placeholder="Enter concerns and mitigation actions"></textarea>
+
+            <label for="recycledPercentage">3.Percentage of recycled or reused input material to total material (by
+                value) used in production or providing services in current & previous FY:</label>
+            <input type="number" id="recycledPercentage" name="recycledPercentage" placeholder="Enter percentage"
+                required>
+
+            <label for="reclaimedProducts">4.Products & packaging reclaimed at end of life of products, amount (in
+                metric tonnes) reused, recycled, & safely disposed in the current & previous FY:</label>
+            <textarea id="reclaimedProducts" name="reclaimedProducts"
+                placeholder="Enter reclaimed product and packaging details"></textarea>
+
+            <label for="reclaimedPercentages">5.Reclaimed products & their packaging materials (as percentage of
+                products sold) for each product category:</label>
+            <textarea id="reclaimedPercentages" name="reclaimedPercentages"
+                placeholder="Enter reclaimed product and packaging percentages"></textarea>
+
+
+            <button class="prev" type="submit" onclick="principle1()">Previous</button>
+            <button class="next2">Next</button>
+
+        </form>
+    </div>
+
+
+    <script>
+        document.getElementById('myForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+            const coverage = document.getElementById('coverage').value;
+            const details = document.getElementById('details').value;
+            const appeal = document.getElementById('appeal').value;
+            const antiCorruptionPolicy = document.getElementById('antiCorruptionPolicy').value;
+            const disciplinaryAction = document.getElementById('disciplinaryAction').value;
+            const conflictComplaints = document.getElementById('conflictComplaints').value;
+            const correctiveAction = document.getElementById('correctiveAction').value;
+
+            if (!coverage || !details || !disciplinaryAction) {
+                alert('Please fill in all required fields.');
+            } else {
+                alert('Form submitted successfully!\nCoverage: ' + coverage + '\nDetails: ' + details);
+                // You can send the data to the server or perform other actions here
+            }
+        });
+
+        document.getElementById('myForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+            const awarenessProgrammes = document.getElementById('awarenessProgrammes').value;
+            const conflictInterest = document.querySelector('input[name="conflictInterest"]:checked');
+            const conflictDetails = document.getElementById('conflictDetails').value;
+
+            if (!awarenessProgrammes || !conflictInterest || (conflictInterest.value === 'Yes' && !conflictDetails)) {
+                alert('Please fill in all required fields.');
+            } else {
+                alert('Form submitted successfully!\nAwareness Programmes: ' + awarenessProgrammes);
+                if (conflictInterest.value === 'Yes') {
+                    alert('Conflict of Interest Details: ' + conflictDetails);
+                }
+                // You can send the data to the server or perform other actions here
+            }
+        });
+
+        document.getElementById('myForm2').addEventListener('submit', function (event) {
+            event.preventDefault();
+            const lcaConducted = document.querySelector('input[name="lcaConducted"]:checked');
+            const lcaDetails = document.getElementById('lcaDetails').value;
+            const concernsMitigation = document.getElementById('concernsMitigation').value;
+            const recycledPercentage = document.getElementById('recycledPercentage').value;
+            const reclaimedProducts = document.getElementById('reclaimedProducts').value;
+            const reclaimedPercentages = document.getElementById('reclaimedPercentages').value;
+
+            if (!lcaConducted || (lcaConducted.value === 'Yes' && !lcaDetails) || !recycledPercentage) {
+                alert('Please fill in all required fields.');
+            } else {
+                alert('Form submitted successfully!');
+                alert('LCA Conducted: ' + lcaConducted.value);
+                if (lcaConducted.value === 'Yes') {
+                    alert('LCA Details: ' + lcaDetails);
+                }
+                alert('Concerns & Mitigation: ' + concernsMitigation);
+                alert('Recycled Percentage: ' + recycledPercentage);
+                alert('Reclaimed Products & Packaging: ' + reclaimedProducts);
+                alert('Reclaimed Percentages: ' + reclaimedPercentages);
+                // You can send the data to the server or perform other actions here
+            }
+        });
+
+        document.getElementById("principle2").style.display = "none";
+
+        function principle2() {
+            document.getElementById("principle1").style.display = "none";
+            document.getElementById("principle2").style.display = "block";
+            scrolltotop()
+        }
+        function principle1() {
+            document.getElementById("principle1").style.display = "block";
+            document.getElementById("principle2").style.display = "none";
+            scrolltotop()
+        }
+
+        function scrolltotop() {
+            window.scroll({
+                top: 0,
+                left: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</body>
+
+</html>
