@@ -6,6 +6,7 @@ include_once 'database.php';
 
 <head>
   <title>CRUS</title>
+  <link rel="icon" type="image/jpg" href="images\cusrrs.jpg"> 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -20,12 +21,16 @@ include_once 'database.php';
 
 <body>
   <header class="header">
-    <h1 class="logo"><a href="#">CUSRS</a></h1>
+  <a class="logo" href="#"><img src="images\cusrrs.jpg" alt="Logo"></a>
+    <h1 class="logo"><a href="index.php">CHRIST University Susatinable Research Society</a></h1>
     <ul class="main-nav">
-      <li><a href="#">Home</a></li>
+      <li><a href="">Home</a></li>
       <li><a href="#">About</a></li>
-      <li><a href="#">Portfolio</a></li>
+      
+      <li><a href="sec_C.php">Section C</a></li>
       <li><a href="#">Contact</a></li>
+   
+
     </ul>
   </header>
 
@@ -250,6 +255,30 @@ include_once 'database.php';
         <button class="custom-btn btn-15">Reset</button>
     
       </form>
+      
+      <nav aria-label="...">
+  <ul class="pagination">
+    <li class="page-item disabled">
+      <a class="page-link" href="#" tabindex="-1"> << </a>
+    </li>
+    <li class="page-item active">
+      <a class="page-link" href="index.php">Section A<span class="sr-only">(current)</span></a>
+    </li>
+    <li class="page-item"><a class="page-link" href="sec_C.php">6</a></li>
+    <li class="page-item"><a class="page-link" href="sec_Cp7.php">7</a></li>
+    <li class="page-item"><a class="page-link" href="sec_Cp8.php">8</a></li>
+    <li class="page-item"><a class="page-link" href="sec_Cp9.php">9</a></li>
+    <li class="page-item">
+      <a class="page-link" href="sec_C.php"> >> </a>
+    </li>
+  </ul>
+</nav>
+
+      
+
+      
+  
+
 
       <!-- certificate upload ends -->
 

@@ -4,7 +4,7 @@
 	box-sizing: border-box;
 }
 body {
-  background-image: url("images/p4.jpg");
+  background-image: url("images/green.jpg");
 	font-family: 'Montserrat', sans-serif;
 	line-height: 1.6;
 	margin: 0;
@@ -16,6 +16,14 @@ ul {
   list-style: none;
 }
 
+
+.logo img {
+  border-radius: 50%;
+  border: 2px solid #000;
+  width: 50px;
+  height: 50px;
+  
+}
 
 h2,
 h3,
@@ -737,3 +745,83 @@ svg {
 }
 
 /** certificate upload ends **/
+
+/**optiion for yes or no **/
+.container2 {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.details-form {
+  display: none;
+  margin-top: 20px;
+}
+
+.details-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.bt {
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-yes {
+  padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  background-color: #4caf50;
+  color: white;
+}
+
+.btn-no {
+  padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  background-color: #f44336;
+  color: white;
+}
+
+/**optiion for yes or no ENDS**/
+
+/**pagination menu
+.pagination {
+  display: inline-block;
+  text-align: center;
+  margin-top: 30px; 
+
+}
+
+.pagination a {
+  margin: 0 5px; 
+  padding: 5px 10px;
+  text-decoration: none;
+  border: 1px solid #333;
+  background-color: #fff;
+  color: #333;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+
+.pagination a:hover {
+  background-color: #333;
+  color: #fff;
+}
+pagination menu ends**/
