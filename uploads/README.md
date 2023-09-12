@@ -1,0 +1,1 @@
+The uploads directory is used to store any user uploads like the acheivements from Section B. The path to this file will be updated in the database. Allows for multiple uploads from the same user.
