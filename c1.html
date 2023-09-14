@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="a.css">
+    <link rel="stylesheet" href="b.css">
     <title>Compliance Form</title>
     <style>
         body {
@@ -80,7 +80,7 @@
 
 
     <div id="principle3">
-        <form id="myForm">
+        <form id="myForm3">
 
             <h1>Section - C</h1>
             <h3>PRINCIPLE 3:BUSINESSES SHOULD RESPECT & PROMOTE THE WELL-BEING OF ALL EMPLOYEES, INCLUDING THOSE IN THEIR VALUE CHAINS.</h3>
@@ -179,7 +179,7 @@
 
 
     <div id="principle4">
-        <form id="myForm2">
+        <form id="myForm4">
 
             <h1>Section - C</h1>
             <h3>PRINCIPLE 4: BUSINESSES SHOULD RESPECT THE INTERESTS OF & BE RESPONSIVE TO ALL THEIR STAKEHOLDERS.</h3>
@@ -232,7 +232,7 @@
 
 
     <script>
-        document.getElementById('myForm').addEventListener('submit', function (event) {
+        document.getElementById('myForm3').addEventListener('submit', function (event) {
             event.preventDefault();
             const coverage = document.getElementById('coverage').value;
             const details = document.getElementById('details').value;
@@ -250,7 +250,7 @@
             }
         });
 
-        document.getElementById('myForm').addEventListener('submit', function (event) {
+        document.getElementById('myForm3').addEventListener('submit', function (event) {
             event.preventDefault();
             const awarenessProgrammes = document.getElementById('awarenessProgrammes').value;
             const conflictInterest = document.querySelector('input[name="conflictInterest"]:checked');
@@ -267,7 +267,7 @@
             }
         });
 
-        document.getElementById('myForm2').addEventListener('submit', function (event) {
+        document.getElementById('myForm4').addEventListener('submit', function (event) {
             event.preventDefault();
             const lcaConducted = document.querySelector('input[name="lcaConducted"]:checked');
             const lcaDetails = document.getElementById('lcaDetails').value;
