@@ -22,7 +22,7 @@ include_once 'database.php';
 <body>
   <header class="header">
   <a class="logo" href="#"><img src="images\cusrrs.jpg" alt="Logo"></a>
-    <h1 class="logo"><a href="index.php">CHRIST University Susatinable Research Society</a></h1>
+    <h1 class="logo"><a href="index.php">CHRIST University Sustainable Research Society</a></h1>
     <ul class="main-nav">
       <li><a href="">Home</a></li>
       <li><a href="#">About</a></li>
