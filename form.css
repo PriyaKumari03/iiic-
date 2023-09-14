@@ -250,7 +250,7 @@ select {
   button {
     margin: 20px;
   }
-  .custom-btn {
+.custom-btn {
     width: 130px;
     height: 40px;
     color: #fff;
@@ -263,11 +263,10 @@ select {
     transition: all 0.3s ease;
     position: relative;
     display: inline-block;
-     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
-     7px 7px 20px 0px rgba(0,0,0,.1),
-     4px 4px 5px 0px rgba(0,0,0,.1);
+    box-shadow: inset 2px 2px 2px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
     outline: none;
-  }
+    margin-right: 10px;
+}
 /* 13 */
 .btn-13 {
     background-color: #89d8d3;
@@ -304,7 +303,6 @@ select {
     top: 2px;
   }
 
- 
 /* 15 */
 .btn-15 {
     background: hsl(0, 100%, 63%);
@@ -431,6 +429,25 @@ button {
    7px 7px 20px 0px rgba(0,0,0,.1),
    4px 4px 5px 0px rgba(0,0,0,.1);
   outline: none;
+}
+
+/* prev and next*/
+.prev-btn {
+    background-color: #89d8d3;
+    background-image: linear-gradient(315deg, #89d8d3 0%, #03c8a8 74%);
+    border: none;
+    z-index: 1;
+}
+
+.next-btn {
+    background-color: #89d8d3;
+    background-image: linear-gradient(315deg, #89d8d3 0%, #03c8a8 74%);
+    border: none;
+    z-index: 1;
+}
+
+.navigation-buttons {
+    margin-top: 20px;
 }
 
 /* 13 */
