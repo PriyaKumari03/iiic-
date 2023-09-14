@@ -37,224 +37,236 @@ include_once 'database.php';
   <div class="container form-container">
     <h1>Section A form</h1>
     <form method="POST">
+     
+     <!-- Section 1: Basic Details -->
+    <div id="section1" class="form-section">
       <div class="form-group">
-        <label for="cin">Corporate Identity Number (CIN)</label>
-        <input type="text" id="cin" name="cin" class="form-control" placeholder="Enter CIN of Listed Entity" required>
-      </div>
+      <label for="cin">Corporate Identity Number (CIN)</label>
+      <input type="text" id="cin" name="cin" class="form-control" placeholder="Enter CIN of Listed Entity" required>
+    </div>
 
-      <div class="form-group">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" class="form-control" placeholder="Enter name of Listed Entity" required>
-      </div>
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" class="form-control" placeholder="Enter name of Listed Entity" required>
+    </div>
 
-      <div class="form-group">
-        <label for="inyear">Incorporation Year</label>
-
-
-        <select name="year" id="inyear" class="form-control">
+    <div class="form-group">
+      <label for="inyear">Incorporation Year</label>
 
 
+      <select name="year" id="inyear" class="form-control">
 
-          <!--<option value="" name="year">Select the Year of Incorporation</option>
-          <!-- Year options from 2022 to 2050 
-          <script>
-            for (var i = 2022; i <= 2050; i++) {
-              document.write('<option value="' + i + '">' + i + '</option>');
-            }
-          </script> -->
-        </select>
+
+
+        <!--<option value="" name="year">Select the Year of Incorporation</option>
+        <!-- Year options from 2022 to 2050 
         <script>
-          var start = 2022;
-          var end = 2050;
-          var options = "";
-          for (var year = start; year <= end; year++) {
-            options += "<option>" + year + "</option>";
+          for (var i = 2022; i <= 2050; i++) {
+            document.write('<option value="' + i + '">' + i + '</option>');
           }
-          document.getElementById("inyear").innerHTML = options;
-        </script>
-      </div>
+        </script> -->
+      </select>
+      <script>
+        var start = 2022;
+        var end = 2050;
+        var options = "";
+        for (var year = start; year <= end; year++) {
+          options += "<option>" + year + "</option>";
+        }
+        document.getElementById("inyear").innerHTML = options;
+      </script>
+    </div>
 
-      <div class="form-group">
-        <label for="office_add">Registered Office Address</label>
-        <input type="text" id="office_add" name="office_address" class="form-control" placeholder="Enter registered address" required>
-      </div>
+    <div class="form-group">
+      <label for="office_add">Registered Office Address</label>
+      <input type="text" id="office_add" name="office_address" class="form-control" placeholder="Enter registered address" required>
+    </div>
 
-      <div class="form-group">
-        <label for="corp_add">Corporate Address</label>
-        <input type="text" id="corp_add" name="corporate_address" class="form-control" placeholder="Enter Corporate address" required>
-      </div>
+    <div class="form-group">
+      <label for="corp_add">Corporate Address</label>
+      <input type="text" id="corp_add" name="corporate_address" class="form-control" placeholder="Enter Corporate address" required>
+    </div>
 
-      <div class="form-group">
-        <label for="email">Email</label>
-        <input type="text" id="email" name="email" class="form-control" placeholder="Enter your email" required>
-      </div>
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="text" id="email" name="email" class="form-control" placeholder="Enter your email" required>
+    </div>
 
-      <div class="form-group">
-        <label for="contact">Telephone</label>
-        <input type="text" id="contact" name="telephone" class="form-control" placeholder="Enter your contact number" required>
-      </div>
+    <div class="form-group">
+      <label for="contact">Telephone</label>
+      <input type="text" id="contact" name="telephone" class="form-control" placeholder="Enter your contact number" required>
+    </div>
 
 
-      <div class="form-group">
-        <label for="website">Website</label>
-        <input type="url" id="website" name="website" class="form-control" placeholder="Enter your website link" required>
-      </div>
+    <div class="form-group">
+      <label for="website">Website</label>
+      <input type="url" id="website" name="website" class="form-control" placeholder="Enter your website link" required>
+    </div>
 
-      <div class="form-group">
-        <label for="year">Reporting Financial year</label>
-        <select name="reporting_fin_year" id="year" class="form-control">
-          
-        <!--<option name="reporting_fin_year" value="">Select Financial year for which reporting is being done</option>
-          <!-- Year options from 2022 to 2040 
-          <script>
-            for (var i = 2022; i <= 2040; i++) {
-              document.write('<option value="' + i + '">' + i + '</option>');
-            }
-          </script> -->
-        </select>
-        <script>
-          var start = 2022;
-          var end = 2040;
-          var options = "";
-          for (var year = start; year <= end; year++) {
-            options += "<option>" + year + "</option>";
-          }
-          document.getElementById("year").innerHTML = options;
-        </script>
-      </div>
-
-      <!-- certificate upload -->
-
-      <form action="upload.php" method="POST" enctype="multipart/form-data">
-        <label for="pdfFile">Upload Incorporation Certificate (Max 5 mb)</label>
-        <input type="file" id="pdfFile" name="my_image" max="5242880"><br> <br>
-        <input type="submit" name="upload" class="btn btn-info" value="Upload"> <br> <br>
-      
-        <div class="form-group">
-        <label for="se-name">Name of the Stock Exchange(s)</label>
-        <input type="text" id="se-name" name="name_stock" class="form-control" placeholder="Enter name of the Stock Exchange(s) where shares are listed" required>
-      </div>
-
-      <div class="form-group">
-        <label for="puc">Paid-up Capital</label>
-        <input type="text" id="puc" name="puc" required pattern="[0-9]+">
-        </div>
-
-      <!-- Deatils of POC-->
-        <div class="form-group">
-          <p class="poc">
-        <label for="details">Details of Point of Contact</label>
-        <br>
-        <label for="poc-name">Name</label>
-        <input type="text" id="poc-name" name="poc_name" placeholder="Enter the name of person to contact for queries">
-        <label for="poc-phone">Phone Number</label>
-        <input type="text" id="poc-phone" name="poc_phone" required pattern="[0-9]+" placeholder="Enter the contact number">
-        <label for="email">Email Address</label>
-        <input type="text" id="poc-email" name="poc_email" class="form-control" placeholder="Enter email address" required>
-        </p>
-        </div>
-        <!-- Deatils of POC ends-->
-
-        <div class="form-group">
-        <label for="rep-b">Reporting boundary</label>
-        <input type="text" id="rep-b" name="rep_b" class="form-control" placeholder="Enter Reporting boundary" required>
-      </div>
-
-       <div class="form-group">
-          <label for="doba">Details of Business activities</label>
-          <textarea id="doba" name="doba" rows="5" cols="50" class="form-control" placeholder="Enter details of Business activities of the entity (accounting for 90% of the entity’s Turnover)" required></textarea>
-        </div>
-
-        
-       <div class="form-group">
-          <label for="dops">Details of the products & services</label>
-          <textarea id="dops" name="dops" rows="5" cols="50" class="form-control" placeholder="Enter details of the products & services sold by the entity (accounting for 90% of the entity’s Turnover)" required></textarea>
-        </div>
-
-      <div class="form-group">
-        <label for="nol">Number of locations</label>
-        <input type="text" id="nol" name="nol" required pattern="[0-9]+" placeholder=" Enter number of locations where plants/operation/ offices of the entity are located.">
-        </div>
-
-        <div class="form-group">
-          <label for="drm">Details regarding markets served by the entity.</label>
-          <textarea id="drm" name="drm" rows="5" cols="50" class="form-control" placeholder="Enter details regarding markets served by the entity." required></textarea>
-        </div>
-
-        <!-- Deatils of employee-->
-        <div class="form-group">
-          <p class="poc">
-        <label for="details">Details of Employees & Workers</label>
-        <br>
-        <label for="tote">Total numbere of Employees & Workers</label>
-        <input type="text" id="tote" name="tote" placeholder="Enter the total numbere of Employees & Workers">
-        
-        <label for="type">Peramnent</label>
-
-        <label for="male">Male Employee</label>
-        <input type="text" id="male" name="male" placeholder="Number of male employee">
-        <label for="female">Female Employee</label>
-        <input type="text" id="female" name="female" placeholder="Number of female employee">
-
-        <label for="type1">Temporaray</label>
-
-         <label for="male1">Male Employee</label>
-         <input type="text" id="male1" name="malet" placeholder="Number of male employee">
-         <label for="female1">Female Employee</label>
-         <input type="text" id="female1" name="femalet" placeholder="Number of female employee">
-
-      </p>
-        </div>
-        <!-- Deatils of employee ends-->
-
-        <div class="form-group">
-        <label for="p-no">Participation/Inclusion/Representation of Women</label>
-        <input type="text" id="p-no" name="p_no" required pattern="[0-9]+" placeholder=" Enter number of Female members of the BOD/KMP">
-        </div>
-
-        <div class="form-group">
-        <label for="tor">Turnover rate for permanent employees & workers (For past 3 years)</label>
-        <input type="text" id="tor" name="tor" required pattern="[0-9]+" placeholder="Enter Turnover rate for past 3 years">
-        </div>
-
-        
-      <!-- Deatils of corporate structure-->
-      <div class="form-group">
-          <p class="poc">
-        <label for="details">Details of corporate structure</label>
-        <br>
-        <label for="holding">Holding</label>
-        <input type="text" id="holding" name="holding" placeholder="Enter the details of Holding">
-        
-        <label for="subsidiary">Subsidiary</label>
-        <input type="text" id="subsidiary" name="subsidiary" required pattern="[0-9]+" placeholder="Enter the subsidiary">
-        
-        <label for="ac">Associate Companies (including joint ventures)</label>
-        <textarea id="ac" name="ac" rows="5" cols="50" class="form-control" placeholder="Enter the details of Associate Companies (including joint ventures)" required></textarea>  
-      </p>
-        </div>
-        <!-- Deatils of corporate structure ends-->
-
-        <div class="form-group">
-        <label for="csr">Details of CSR Activities </label>
-        <textarea id="csr" name="csr" rows="5" cols="50" class="form-control" placeholder="Enter the details of CSR Activities" required></textarea>  
-      </div>
-
-      <div class="form-group">
-        <label for="gre">Grievance redressal </label>
-        <textarea id="gre" name="gre" rows="5" cols="50" class="form-control" placeholder=" Raise concerns about, & seek remedy for, the organization’s potential & actual negative impacts on them" required></textarea>  
-      </div>
-
-      <div class="form-group">
-        <label for="overview">Overview of the entity’s material responsible business conduct issues </label>
-        <textarea id="overview" name="overview" rows="5" cols="50" class="form-control" placeholder="Increased awareness & understanding of climate risks & opportunities within the entity resulting in better risk management & more informed strategic planning" required></textarea>  
-      </div>
-
-<!-- form fields ends-->
-        <button type="submit" name="submit" class="custom-btn btn-13">Submit</button>
-        <button class="custom-btn btn-15">Reset</button>
+    <div class="form-group">
+      <label for="year">Reporting Financial year</label>
+      <select name="reporting_fin_year" id="year" class="form-control">
     
-      </form>
+      <!--<option name="reporting_fin_year" value="">Select Financial year for which reporting is being done</option>
+        <!-- Year options from 2022 to 2040 
+        <script>
+          for (var i = 2022; i <= 2040; i++) {
+            document.write('<option value="' + i + '">' + i + '</option>');
+          }
+        </script> -->
+      </select>
+      <script>
+        var start = 2022;
+        var end = 2040;
+        var options = "";
+        for (var year = start; year <= end; year++) {
+          options += "<option>" + year + "</option>";
+        }
+        document.getElementById("year").innerHTML = options;
+      </script>
+    </div>
+
+    <!-- certificate upload -->
+
+    <form action="upload.php" method="POST" enctype="multipart/form-data">
+      <label for="pdfFile">Upload Incorporation Certificate (Max 5 mb)</label>
+      <input type="file" id="pdfFile" name="my_image" max="5242880"><br> <br>
+      <input type="submit" name="upload" class="btn btn-info" value="Upload"> <br> <br>
+
+      <div class="form-group">
+      <label for="se-name">Name of the Stock Exchange(s)</label>
+      <input type="text" id="se-name" name="name_stock" class="form-control" placeholder="Enter name of the Stock Exchange(s) where shares are listed" required>
+    </div>
+
+    <div class="form-group">
+      <label for="puc">Paid-up Capital</label>
+      <input type="text" id="puc" name="puc" required pattern="[0-9]+">
+      </div>
+    </div>
+
+    <!-- Section 2: POC Details -->
+    <div id="section2" class="form-section" style="display: none;">
+      <div class="form-group">
+        <p class="poc">
+      <label for="details">Details of Point of Contact</label>
+      <br>
+      <label for="poc-name">Name</label>
+      <input type="text" id="poc-name" name="poc_name" placeholder="Enter the name of person to contact for queries">
+      <label for="poc-phone">Phone Number</label>
+      <input type="text" id="poc-phone" name="poc_phone" required pattern="[0-9]+" placeholder="Enter the contact number">
+      <label for="email">Email Address</label>
+      <input type="text" id="poc-email" name="poc_email" class="form-control" placeholder="Enter email address" required>
+      </p>
+      </div>
+    </div>
+
+    <!-- Section 3: Other Business Details -->    
+    <div id="section3" class="form-section" style="display: none;">
+      <div class="form-group">
+      <label for="rep-b">Reporting boundary</label>
+      <input type="text" id="rep-b" name="rep_b" class="form-control" placeholder="Enter Reporting boundary" required>
+      </div>
+
+     <div class="form-group">
+        <label for="doba">Details of Business activities</label>
+        <textarea id="doba" name="doba" rows="5" cols="50" class="form-control" placeholder="Enter details of Business activities of the entity (accounting for 90% of the entity’s Turnover)" required></textarea>
+      </div>
+
+  
+     <div class="form-group">
+        <label for="dops">Details of the products & services</label>
+        <textarea id="dops" name="dops" rows="5" cols="50" class="form-control" placeholder="Enter details of the products & services sold by the entity (accounting for 90% of the entity’s Turnover)" required></textarea>
+      </div>
+
+    <div class="form-group">
+      <label for="nol">Number of locations</label>
+      <input type="text" id="nol" name="nol" required pattern="[0-9]+" placeholder=" Enter number of locations where plants/operation/ offices of the entity are located.">
+      </div>
+
+      <div class="form-group">
+        <label for="drm">Details regarding markets served by the entity.</label>
+        <textarea id="drm" name="drm" rows="5" cols="50" class="form-control" placeholder="Enter details regarding markets served by the entity." required></textarea>
+      </div>
+    </div>
+
+    <!-- Section 4: Employee Details -->
+    <div id="section4" class="form-section" style="display: none;">
+      <div class="form-group">
+        <p class="poc">
+      <label for="details">Details of Employees & Workers</label>
+      <br>
+      <label for="tote">Total numbere of Employees & Workers</label>
+      <input type="text" id="tote" name="tote" placeholder="Enter the total numbere of Employees & Workers">
+  
+      <label for="type">Peramnent</label>
+
+      <label for="male">Male Employee</label>
+      <input type="text" id="male" name="male" placeholder="Number of male employee">
+      <label for="female">Female Employee</label>
+      <input type="text" id="female" name="female" placeholder="Number of female employee">
+
+      <label for="type1">Temporaray</label>
+
+       <label for="male1">Male Employee</label>
+       <input type="text" id="male1" name="malet" placeholder="Number of male employee">
+       <label for="female1">Female Employee</label>
+       <input type="text" id="female1" name="femalet" placeholder="Number of female employee">
+
+    </p>
+      </div>
+
+      <div class="form-group">
+      <label for="p-no">Participation/Inclusion/Representation of Women</label>
+      <input type="text" id="p-no" name="p_no" required pattern="[0-9]+" placeholder=" Enter number of Female members of the BOD/KMP">
+      </div>
+
+      <div class="form-group">
+      <label for="tor">Turnover rate for permanent employees & workers (For past 3 years)</label>
+      <input type="text" id="tor" name="tor" required pattern="[0-9]+" placeholder="Enter Turnover rate for past 3 years">
+      </div>
+    </div>
+
+    <!-- Section 5: Corporate Structure and CSR -->
+    <div id="section5" class="form-section" style="display: none;">
+      <div class="form-group">
+        <p class="poc">
+      <label for="details">Details of corporate structure</label>
+      <br>
+      <label for="holding">Holding</label>
+      <input type="text" id="holding" name="holding" placeholder="Enter the details of Holding">
+  
+      <label for="subsidiary">Subsidiary</label>
+      <input type="text" id="subsidiary" name="subsidiary" required pattern="[0-9]+" placeholder="Enter the subsidiary">
+  
+      <label for="ac">Associate Companies (including joint ventures)</label>
+      <textarea id="ac" name="ac" rows="5" cols="50" class="form-control" placeholder="Enter the details of Associate Companies (including joint ventures)" required></textarea>  
+    </p>
+      </div>
+
+      <div class="form-group">
+      <label for="csr">Details of CSR Activities </label>
+      <textarea id="csr" name="csr" rows="5" cols="50" class="form-control" placeholder="Enter the details of CSR Activities" required></textarea>  
+    </div>
+
+    <div class="form-group">
+      <label for="gre">Grievance redressal </label>
+      <textarea id="gre" name="gre" rows="5" cols="50" class="form-control" placeholder=" Raise concerns about, & seek remedy for, the organization’s potential & actual negative impacts on them" required></textarea>  
+    </div>
+
+    <div class="form-group">
+      <label for="overview">Overview of the entity’s material responsible business conduct issues </label>
+      <textarea id="overview" name="overview" rows="5" cols="50" class="form-control" placeholder="Increased awareness & understanding of climate risks & opportunities within the entity resulting in better risk management & more informed strategic planning" required></textarea>  
+    </div>
+    </div>    
+      
+    <!-- Navigation Buttons -->
+    <div class="navigation-buttons">
+      <button type="button" class="custom-btn prev-btn">Previous</button>
+      <button type="button" class="custom-btn next-btn">Next</button>
+      <button type="submit" name="submit" class="custom-btn btn-13" style="display: none;">Submit</button>
+    </div>
+    
+   </form>
       
       <nav aria-label="...">
   <ul class="pagination">
@@ -412,6 +424,7 @@ include_once 'database.php';
 
   </footer>
 
+  <script src="index_nav_buttons.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
