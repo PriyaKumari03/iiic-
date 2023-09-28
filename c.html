@@ -123,10 +123,9 @@
             <h3>LEADERSHIP INDICATORS – IMPORTANCE TO INVESTORS</h3>
 
             <label for="awarenessProgrammes">1.Awareness programmes conducted for value chain partners on any of the
-                Principles during the financial year
-                :</label>
-            <input type="text" id="awarenessProgrammes" name="awarenessProgrammes"
-                placeholder="Enter awareness programmes details" required>
+                Principles during the financial year:</label>
+            <textarea id="awarenessProgrammes" name="awarenessProgrammes"
+                placeholder="Enter awareness programmes details" required></textarea>
 
             <label for="conflictOfInterest">2.Does the entity have processes in place to avoid/ manage conflict of
                 interests involving members of the Board? (Yes/No) If Yes, provide details of the same :</label>
@@ -174,8 +173,8 @@
             <input type="radio" id="eprYes" name="epr" value="Yes"> Yes
             <input type="radio" id="eprNo" name="epr" value="No"> No
 
-            <input type="text" id="eprCollectionPlan" name="eprCollectionPlan"
-                placeholder="Enter EPR collection plan details">
+            <textarea id="eprCollectionPlan" name="eprCollectionPlan"
+                placeholder="Enter EPR collection plan details" ></textarea>
 
             <br><br><br><br>
 
@@ -222,20 +221,21 @@
             <h1>Section - C</h1>
             <h3>PRINCIPLE 3: BUSINESSES SHOULD RESPECT & PROMOTE THE WELL-BEING OF ALL EMPLOYEES, INCLUDING THOSE IN THEIR VALUE CHAINS.</h3>
             <label for="coverage">1. Details of measures for the well-being of (a) employees & (b) workers such as:</label>
-            <input type="text" id="coverage" name="coverage" placeholder="Total number & percentage of various categories covered by: Health insurance, Accident insurance, Maternity benefits, Paternity Benefits & Day Care facilities." required>
+            <textarea id="coverage" name="coverage" placeholder="Total number & percentage of various categories covered by: Health insurance, Accident insurance, Maternity benefits, Paternity Benefits & Day Care facilities." required></textarea>
 
             <label for="details">2. Details of retirement benefits offered to workers & employees, for Current FY & Previous Financial Year:</label>
-            <textarea id="details" name="details" placeholder=""
+            <textarea id="details" name="details" placeholder="enter the details of retirement benefits offered"
                 required></textarea>
 
             <label for="appeal">3. Are the premises/offices of the entity accessible to differently-abled employees & workers, as per the requirements of the Rights of Persons with Disabilities Act, 2016? 
-                If not, whether any steps are being taken by the entity in this regard. 
-                </label>
-            <textarea id="appeal" name="appeal" placeholder=""></textarea>
+                If not, whether any steps are being taken by the entity in this regard. </label>
+                <input type="radio" id="lcaYes" name="lcaConducted" value="Yes"> Yes
+                <input type="radio" id="lcaNo" name="lcaConducted" value="No"> No
+            <textarea id="appeal" name="appeal" placeholder="Enter the steps are being taken"></textarea>
 
             <label for="antiCorruptionPolicy">4. Does the entity have an equal opportunity policy as per the Rights of Persons with Disabilities Act, 2016? If so, provide a web link to the policy. </label>
             <textarea id="antiCorruptionPolicy" name="antiCorruptionPolicy"
-                placeholder="web-link"></textarea>
+                placeholder=" Enter the web-link"></textarea>
 
             <label for="disciplinaryAction">5.Return to work & Retention rates of permanent employees & workers that took parental leave based on gender-male & female & in totality </label>
             <textarea type="text" id="disciplinaryAction" name="disciplinaryAction" placeholder=""
@@ -248,16 +248,16 @@
             <label for="correctiveAction">7.Disclose No. & percentage of Membership of total permanent male & female both categories employees & workers in association(s) or Unions recognized by the listed 
                 entity for both current & previous Financial Years.:</label>
             <input type="number" id="correctiveAction" name="correctiveAction"
-                placeholder="Enter corrective action details">
+                placeholder="Enter the percentage">
 
             <label for="conflictComplaints">8.Details of training on Health & safety measures & on skill up-gradation, given to employees & workers based on gender-male & female, & in totality for both current &
                 previous financial years. </label>
             <textarea id="conflictComplaints" name="conflictComplaints"
-            placeholder=""></textarea>
+            placeholder="Enter the details on Details of training on Health & safety measures & on skill up-gradation"></textarea>
             
             <label for="conflictComplaints">9.Details of performance & career development reviews of employees & workers on a gender-male & female & in totality for both current & previous financial years. </label>
             <textarea id="conflictComplaints" name="conflictComplaints"
-            placeholder=""></textarea>
+            placeholder="Enter the performance & career development reviews "></textarea>
 
             <label for="conflictComplaints">10.Whether an occupational health & safety management system has been implemented by the entity? (Yes/ No). If yes, the coverage of such system? </label>
             <select name="" id="policyQuestion">
@@ -268,13 +268,13 @@
 
             <label for="conflictComplaints">11.Describe the measures taken by the entity to ensure a safe & healthy workplace.  </label>
             <textarea id="conflictComplaints" name="conflictComplaints"
-            placeholder=""></textarea>
+            placeholder="Enter the measures taken"></textarea>
             
                 <br><br>
 
             <h3>LEADERSHIP INDICATORS – IMPORTANCE TO INVESTORS</h3>
 
-            <label for="awarenessProgrammes">Does the entity extend any life insurance or any compensatory package in the event of death of (A) Employees (Y/N) (B) Workers (Y/N).
+            <label for="awarenessProgrammes">1.Does the entity extend any life insurance or any compensatory package in the event of death of (A) Employees (Y/N) (B) Workers (Y/N).
                 :</label>
                 <div class="con">
                     <input type="radio" id="conflictYes" name="conflictInterest" value="Yes">
@@ -368,83 +368,83 @@
         <h1>Section - C</h1>
         <h3>PRINCIPLE 5: BUSINESSES SHOULD RESPECT & PROMOTE HUMAN RIGHTS.</h3>
         <div class="form-group">
-            <label for="P51">Details of training provided to employees & workers (Permanent & Temporary) on human rights issues for current & previous years. </label>
-            <input type="text" id="P51" name="P51" class="form-control" placeholder=" Enter the training details on human rights issues." required>
+            <label for="P51">1.Details of training provided to employees & workers (Permanent & Temporary) on human rights issues for current & previous years. </label>
+            <textarea id="P51" name="P51" class="form-control" placeholder=" Enter the training details on human rights issues." required></textarea>
           </div>
     
           <div class="form-group">
-            <label for="P52">Details of minimum wages paid to workers & employees (For both current & previous year)</label>
-            <input type="text" id="P52" name="P52" class="form-control" placeholder="Enter the details of minimum wages paid. " required>
+            <label for="P52">2.Details of minimum wages paid to workers & employees (For both current & previous year)</label>
+            <textarea id="P52" name="P52" class="form-control" placeholder="Enter the details of minimum wages paid. " required></textarea>
           </div>
            
           <div class="form-group">
-            <label for="P53">Details of remuneration/salary/wages of BoD/KMP/Employees & Workers (For both Male & Female)</label>
-            <input type="text" id="P53" name="P53" class="form-control" placeholder="Enter the Details of remuneration/salary/wages of BoD/KMP/Employees" required>
+            <label for="P53">3.Details of remuneration/salary/wages of BoD/KMP/Employees & Workers (For both Male & Female)</label>
+            <textarea id="P53" name="P53" class="form-control" placeholder="Enter the Details of remuneration/salary/wages of BoD/KMP/Employees" required></textarea>
           </div>
     
           <div class="form-group">
-            <label for="P54">Does the organization have an Individual /Committee responsible for addressing human rights impacts or issues caused or contributed to by the business?</label>
+            <label for="P54">4.Does the organization have an Individual /Committee responsible for addressing human rights impacts or issues caused or contributed to by the business?</label>
             <input type="radio" id="P54Yes" name="P54" value="Yes"> Yes
             <input type="radio" id="P54No" name="P54" value="No"> No
           </div>
     
           <div class="form-group">
-            <label for="P55">Details of the internal mechanisms in place to redress grievances related to human rights issues.</label>
-            <input type="text" id="P55" name="P55" class="form-control" placeholder="Enter details of the internal mechanism" required>
+            <label for="P55">5.Details of the internal mechanisms in place to redress grievances related to human rights issues.</label>
+            <textarea id="P55" name="P55" class="form-control" placeholder="Enter details of the internal mechanism" required></textarea>
           </div>
     
           <div class="form-group">
-            <label for="P56">Details of complaints made by employees & workers on sexual harassment, discrimination at workplace, Child Labour, Forced Labour/Involuntary Labour, Wages or other human rights related issues</label>
-            <input type="text" id="P56" name="P56" class="form-control" placeholder="Enter employees compliment here" required>
+            <label for="P56">6.Details of complaints made by employees & workers on sexual harassment, discrimination at workplace, Child Labour, Forced Labour/Involuntary Labour, Wages or other human rights related issues</label>
+            <textarea id="P56" name="P56" class="form-control" placeholder="Enter employees compliment here" required></textarea>
           </div>
     
           <div class="form-group">
-            <label for="P57">Mechanisms to prevent adverse consequences to the complainant in discrimination & harassment cases</label>
-            <input type="text" id="P57" name="P57" class="form-control" placeholder="  provide details of Mechanisms to prevent adverse consequences "  required>
+            <label for="P57">7.Mechanisms to prevent adverse consequences to the complainant in discrimination & harassment cases</label>
+            <textarea id="P57" name="P57" class="form-control" placeholder="  provide details of Mechanisms to prevent adverse consequences "  required></textarea>
           </div>
     
           <div class="form-group">
-            <label for="P58">Do human rights requirements form part of your business agreements & contracts? (Yes/No)</label>
+            <label for="P58">8.Do human rights requirements form part of your business agreements & contracts? (Yes/No)</label>
             <input type="radio" id="sourcingYes" name="sourcing" value="Yes"> Yes
             <input type="radio" id="sourcingNo" name="sourcing" value="No"> No
           </div>
     
           <div class="form-group">
-            <label for="P59">Percentage of your plants & offices that were assessed (by entity or statutory authorities or third parties) for sexual harassment, discrimination at workplace, Child
+            <label for="P59">9.Percentage of your plants & offices that were assessed (by entity or statutory authorities or third parties) for sexual harassment, discrimination at workplace, Child
                Labour, Forced Labour/Involuntary Labour, Wages or other human rights related issues)</label>
-            <input type="text" id="P59" name="P59" class="form-control" placeholder="Enter the Percentage of your plants & offices that were assessed " required>
+            <input type="number" id="P59" name="P59" class="form-control" placeholder="Enter the Percentage of your plants & offices that were assessed " required></textarea>
           </div>
     
           <div class="form-group">
-            <label for="P510">Provide details of any corrective actions taken or underway to address significant risks / concerns arising from the assessments at Question 9 above</label>
-            <input type="text" id="P510" name="P510" class="form-control" placeholder="Enter details of any corrective actions taken or underway to address significant risks." required>
+            <label for="P510">10.Provide details of any corrective actions taken or underway to address significant risks / concerns arising from the assessments at Question 9 above</label>
+            <textarea id="P510" name="P510" class="form-control" placeholder="Enter details of any corrective actions taken or underway to address significant risks." required></textarea>
           </div>
     
           <div class="form-group">
-            <label for="P511">Details of a business process being modified / introduced as a result of addressing human rights grievances/complaints.</label>
-            <input type="text" id="P511" name="P511" class="form-control" placeholder="Enter details of a business process being modified." required>
+            <label for="P511">11.Details of a business process being modified / introduced as a result of addressing human rights grievances/complaints.</label>
+            <textarea id="P511" name="P511" class="form-control" placeholder="Enter details of a business process being modified." required></textarea>
           </div>
     
           <div class="form-group">
-            <label for="P512">Details of the scope & coverage of any Human rights due-diligence conducted.</label>
-            <input type="text" id="P512" name="P512" class="form-control" placeholder="Enter Details of the scope & coverage of any Human rights due-diligence conducted." required>
+            <label for="P512">12.Details of the scope & coverage of any Human rights due-diligence conducted.</label>
+            <textarea id="P512" name="P512" class="form-control" placeholder="Enter Details of the scope & coverage of any Human rights due-diligence conducted." required></textarea>
           </div>
     
           <div class="form-group">
-            <label for="P513">Is the premise/office of the entity accessible to differently abled visitors, as per the requirements of the Rights of Persons with Disabilities Act, 2016?</label>
+            <label for="P513">13.Is the premise/office of the entity accessible to differently abled visitors, as per the requirements of the Rights of Persons with Disabilities Act, 2016?</label>
             <input type="radio" id="P513Yes" name="P513" value="Yes"> Yes
             <input type="radio" id="P513No" name="P513" value="No"> No
           </div>
     
           <div class="form-group">
-            <label for="P514">Percentage of value chain partners that were assessed (by entity or statutory authorities or third parties) for sexual harassment, discrimination at workplace, Child
+            <label for="P514">14.Percentage of value chain partners that were assessed (by entity or statutory authorities or third parties) for sexual harassment, discrimination at workplace, Child
               Labour, Forced Labour/Involuntary Labour, Wages or other human rights related issues, along with the corrective action taken to address significant risks & concerns arising from assessments.</label>
-            <input type="text" id="P514" name="P514" class="form-control" placeholder=" Enter percentage value." required>
+            <input type="number" id="P514" name="P514" class="form-control" placeholder=" Enter percentage value." required>
           </div>
     
           <div class="form-group">
-            <label for="P515">Provide details of any corrective actions taken or underway to address significant risks / concerns arising from the assessments at Question 4 above.</label>
-            <input type="text" id="P515" name="P515" class="form-control" placeholder="Provide the concerns arising from the assessments at Question 4 above." required>
+            <label for="P515">15.Provide details of any corrective actions taken or underway to address significant risks / concerns arising from the assessments at Question 4 above.</label>
+            <textarea id="P515" name="P515" class="form-control" placeholder="Provide the concerns arising from the assessments at Question 4 above." required></textarea>
           </div>
         <button class="prev" type="submit" onclick="principle4()">Previous</button>
         <button class="next2" onclick="principle6()">Next</button>
@@ -459,65 +459,64 @@
             <h3>PRINCIPLE 6: BUSINESSES SHOULD RESPECT & MAKE EFFORTS TO PROTECT & RESTORE THE ENVIRONMENT</h3>
 
             <div class="form-group">
-        <label for="P61">Details of total energy consumption (in Joules or multiples) & energy intensity as per BRSR format. 
+        <label for="P61">1.Details of total energy consumption (in Joules or multiples) & energy intensity as per BRSR format. 
           Also Indicate if any independent assessment/ evaluation/assurance has been carried out by an external agency? </label>
-        <input type="text" id="P61" name="P61" class="form-control" placeholder=" (Y/N) If yes, name of the external agency">
+        <textarea id="P61" name="P61" class="form-control" placeholder=" (Y/N) If yes, name of the external agency"></textarea>
       </div>
 
       <div class="form-group">
-        <label for="P62">Does the entity have any sites/facilities identified as designated consumers (DCs) under the Performance, Achieve, & Trade (PAT) Scheme of the Government of India?</label>
-        <input type="text" id="P62" name="P62" class="form-control" placeholder="(Y/N) If yes, disclose whether targets set under the PAT scheme have been achieved. In case targets have
-         not been achieved, provide the remedial action taken if any. ">
+        <label for="P62">2.Does the entity have any sites/facilities identified as designated consumers (DCs) under the Performance, Achieve, & Trade (PAT) Scheme of the Government of India?</label>
+        <textarea id="P62" name="P62" class="form-control" placeholder="(Y/N) If yes, disclose whether targets set under the PAT scheme have been achieved. In case targets have not been achieved, provide the remedial action taken if any. "></textarea>
       </div>
        
       <div class="form-group">
-        <label for="P63">Provide details of water withdrawal from different sources, total volume of water withdrawal & consumed, & Water intensity per rupee of turnover (Water consumed / turnover) as per BRSR format. Also, indicate if any independent assessment/ evaluation/assurance has been carried out by an external agency?</label>
-        <input type="text" id="P63" name="P63" class="form-control" placeholder="(Y/N) If yes, name of theexternal agency">
+        <label for="P63">3.Provide details of water withdrawal from different sources, total volume of water withdrawal & consumed, & Water intensity per rupee of turnover (Water consumed / turnover) as per BRSR format. Also, indicate if any independent assessment/ evaluation/assurance has been carried out by an external agency?</label>
+        <textarea id="P63" name="P63" class="form-control" placeholder="(Y/N) If yes, name of theexternal agency"></textarea>
       </div>
 
       <div class="form-group">
-        <label for="P64">Has the entity implemented a mechanism for Zero Liquid Discharge?</label>
-        <input type="text" id="P64" name="P64" class="form-control" placeholder=" If yes, provide details of its coverage & implementation." required>
+        <label for="P64">4.Has the entity implemented a mechanism for Zero Liquid Discharge?</label>
+        <textarea id="P64" name="P64" class="form-control" placeholder=" If yes, provide details of its coverage & implementation." required></textarea>
       </div>
 
       <div class="form-group">
-        <label for="P65">Please provide details of air emissions (other than GHG emissions) by the entity, in BRSR format. Also, indicate if any independent assessment/ evaluation/assurance has been carried out by an external agency?</label>
-        <input type="text" id="P65" name="P65" class="form-control" placeholder=" (Y/N) If yes, the name of the external agency">
+        <label for="P65">5.Please provide details of air emissions (other than GHG emissions) by the entity, in BRSR format. Also, indicate if any independent assessment/ evaluation/assurance has been carried out by an external agency?</label>
+        <textarea id="P65" name="P65" class="form-control" placeholder=" (Y/N) If yes, the name of the external agency"></textarea>
       </div>
 
       <div class="form-group">
-        <label for="P66">Provide details of greenhouse gas emissions (Scope 1 & Scope 2 emissions) & its intensity per rupee of turnover as per BRSR format. Also, indicate if any independent assessment/ evaluation/assurance has been carried out by an external agency??</label>
-        <input type="text" id="P66" name="P66" class="form-control" placeholder=" (Y/N) If yes, the name of the external agency">
+        <label for="P66">6.Provide details of greenhouse gas emissions (Scope 1 & Scope 2 emissions) & its intensity per rupee of turnover as per BRSR format. Also, indicate if any independent assessment/ evaluation/assurance has been carried out by an external agency??</label>
+        <textarea id="P66" name="P66" class="form-control" placeholder=" (Y/N) If yes, the name of the external agency"></textarea>
       </div>
 
       <div class="form-group">
-        <label for="P67">Does the entity have any project related to reducing Green House Gas emission?</label>
-        <input type="text" id="P67" name="P67" class="form-control" placeholder=" (Y/N) If yes, the name of the external agency. ">
+        <label for="P67">7.Does the entity have any project related to reducing Green House Gas emission?</label>
+        <textarea id="P67" name="P67" class="form-control" placeholder=" (Y/N) If yes, the name of the external agency. "></textarea>
       </div>
 
       <div class="form-group">
-        <label for="P68">Provide details of waste generated, waste recycled & waste dumped with breakup into categories like hazardous, plastic, e-waste, bio-medical waste etc. as per BRSR format. Also, indicate if any independent assessment/ evaluation/assurance has been carried out by an external agency?</label>
-        <input type="text" id="P68" name="P68" class="form-control" placeholder=" If Yes, then provide details.">
+        <label for="P68">8.Provide details of waste generated, waste recycled & waste dumped with breakup into categories like hazardous, plastic, e-waste, bio-medical waste etc. as per BRSR format. Also, indicate if any independent assessment/ evaluation/assurance has been carried out by an external agency?</label>
+        <textarea id="P68" name="P68" class="form-control" placeholder=" If Yes, then provide details."></textarea>
       </div>
 
       <div class="form-group">
-        <label for="P69">Briefly describe the waste management practices adopted in your establishments. Describe the strategy adopted by your entity to reduce usage of hazardous & toxic chemicals in your products & processes & the practices adopted to manage such wastes.</label>
-        <input type="text" id="P69" name="P69" class="form-control" placeholder="Provide details here.">
+        <label for="P69">9.Briefly describe the waste management practices adopted in your establishments. Describe the strategy adopted by your entity to reduce usage of hazardous & toxic chemicals in your products & processes & the practices adopted to manage such wastes.</label>
+        <textarea id="P69" name="P69" class="form-control" placeholder="Provide details here."></textarea>
       </div>
 
       <div class="form-group">
-        <label for="P610">If the entity has operations/offices in/around ecologically sensitive areas (such as national parks, wildlife sanctuaries, biosphere reserves, wetlands, biodiversity hotspots, forests, coastal regulation zones etc.) where environmental approvals / clearances are required, please specify details like: Location of operations/offices; Type of operations; the conditions of environmental approval / clearance are being complied with?</label>
-        <input type="text" id="P610" name="P610" class="form-control" placeholder=" (Y/N) If no, the reasons thereof & corrective action taken, if any.">
+        <label for="P610">10.If the entity has operations/offices in/around ecologically sensitive areas (such as national parks, wildlife sanctuaries, biosphere reserves, wetlands, biodiversity hotspots, forests, coastal regulation zones etc.) where environmental approvals / clearances are required, please specify details like: Location of operations/offices; Type of operations; the conditions of environmental approval / clearance are being complied with?</label>
+        <textarea id="P610" name="P610" class="form-control" placeholder=" (Y/N) If no, the reasons thereof & corrective action taken, if any."></textarea>
       </div>
 
       <div class="form-group">
-        <label for="P611">Share name & details of environmental impact assessments of projects undertaken by the entity along with EIA notification No.& date; in the current financial year. Also share whether EIA is conducted by independent external agency (Yes/No)</label>
-        <input type="text" id="P611" name="P611" class="form-control" placeholder="If yes then whether Results communicated in public domain (Yes/No) & Relevant Web link.">
+        <label for="P611">11.Share name & details of environmental impact assessments of projects undertaken by the entity along with EIA notification No.& date; in the current financial year. Also share whether EIA is conducted by independent external agency (Yes/No)</label>
+        <textarea id="P611" name="P611" class="form-control" placeholder="If yes then whether Results communicated in public domain (Yes/No) & Relevant Web link."></textarea>
       </div>
 
       <div class="form-group">
-        <label for="P612">Is the entity compliant with the applicable environmental law/ regulations/ guidelines in India; such as the Water (Prevention & Control of Pollution) Act, Air (Prevention & Control of Pollution) Act, Environment Protection Act & rules thereunder (Y/N).</label>
-        <input type="text" id="P612" name="P612" class="form-control" placeholder=" If Yes, then provide details.">
+        <label for="P612">12.Is the entity compliant with the applicable environmental law/ regulations/ guidelines in India; such as the Water (Prevention & Control of Pollution) Act, Air (Prevention & Control of Pollution) Act, Environment Protection Act & rules thereunder (Y/N).</label>
+        <textarea id="P612" name="P612" class="form-control" placeholder=" If Yes, then provide details."></textarea>
       </div>
 
             <button class="prev" type="submit" onclick="principle5()">Previous</button>
@@ -533,19 +532,19 @@
             <h3>PRINCIPLE 7: BUSINESSES, WHEN ENGAGING IN INFLUENCING PUBLIC & REGULATORY POLICY, SHOULD DO SO IN A MANNER THAT IS RESPONSIBLE & TRANSPARENT</h3>
 
             <div class="form-group">
-                <label for="P71">Details of affiliations with trade & industry chambers/ associations. (Name of top 10 trade & industry chambers)</label>
-                <input type="text" id="P71" name="P71" class="form-control" placeholder="(Y/N) If yes, name of the external agency" required>
+                <label for="P71">1.Details of affiliations with trade & industry chambers/ associations. (Name of top 10 trade & industry chambers)</label>
+                <textarea id="P71" name="P71" class="form-control" placeholder="(Y/N) If yes, name of the external agency" required></textarea>
             </div>
         
             <div class="form-group">
-                <label for="P72">Details of corrective action taken or underway on any issues related to anticompetitive conduct by the entity, based on adverse orders from regulatory authorities.</label>
-                <input type="text" id="P72" name="P72" class="form-control" placeholder="(Y/N) If yes, name of the external agency " required>
+                <label for="P72">2.Details of corrective action taken or underway on any issues related to anticompetitive conduct by the entity, based on adverse orders from regulatory authorities.</label>
+                <textarea id="P72" name="P72" class="form-control" placeholder="(Y/N) If yes, name of the external agency " required></textarea>
             </div>
                
         
             <div class="form-group">
-                <label for="P73">Details of the Public policy advocated by the entity.</label>
-                <input type="text" id="P73" name="P73" class="form-control" placeholder="(Y/N) If yes, name of theexternal agency" required>
+                <label for="P73">3.Details of the Public policy advocated by the entity.</label>
+                <textarea id="P73" name="P73" class="form-control" placeholder="(Y/N) If yes, name of theexternal agency" required></textarea>
             </div>
 
             <button class="prev" type="submit" onclick="principle6()">Previous</button>
@@ -559,53 +558,53 @@
             <h1>Section - C</h1>
             <h3>PRINCIPLE 8: BUSINESSES SHOULD PROMOTE INCLUSIVE GROWTH & EQUITABLE DEVELOPMENT.</h3>
             <div class="form-group">
-                <label for="P81">Details of Social Impact Assessments (SIA) of projects undertaken by the entity based on applicable laws, in the current financial year.</label>
-                <input type="text" id="P81" name="P81" class="form-control" placeholder="Enter Details here" required>
+                <label for="P81">1.Details of Social Impact Assessments (SIA) of projects undertaken by the entity based on applicable laws, in the current financial year.</label>
+                <textarea id="P81" name="P81" class="form-control" placeholder="Enter Details here" required></textarea>
               </div>
         
               <div class="form-group">
-                <label for="P82">Provide information on project(s) for which ongoing Rehabilitation & Resettlement (R&R) is being undertaken by your entity, in the following format:</label>
-                <input type="text" id="P82" name="P82" class="form-control" placeholder="Enter Details here" required>
+                <label for="P82">2.Provide information on project(s) for which ongoing Rehabilitation & Resettlement (R&R) is being undertaken by your entity, in the following format:</label>
+                <textarea id="P82" name="P82" class="form-control" placeholder="Enter Details here" required></textarea>
               </div>
                
               <div class="form-group">
-                <label for="P83">Describe the mechanisms to receive & redress grievances of the community</label>
-                <input type="text" id="P83" name="P83" class="form-control" placeholder="Enter Details here" required>
+                <label for="P83">3.Describe the mechanisms to receive & redress grievances of the community</label>
+                <textarea id="P83" name="P83" class="form-control" placeholder="Enter Details here" required></textarea>
               </div>
         
               <div class="form-group">
-                <label for="P84">Percentage of input material (inputs to total inputs by value) sourced from suppliers:</label>
-                <input type="text" id="P84" name="P84" class="form-control" placeholder="Enter Details here" required>
+                <label for="P84">4.Percentage of input material (inputs to total inputs by value) sourced from suppliers:</label>
+                <input type="number" id="P84" name="P84" class="form-control" placeholder="Enter the percentage" required>
               </div>
         
               <div class="form-group">
-                <label for="P85">Provide details of actions taken to mitigate any negative social impacts identified in Social Impact Assessments (Reference: Question 1 of Essential Indicators above): </label>
-                <input type="text" id="P85" name="P85" class="form-control" placeholder="Enter Details here" required>
+                <label for="P85">5.Provide details of actions taken to mitigate any negative social impacts identified in Social Impact Assessments (Reference: Question 1 of Essential Indicators above): </label>
+                <textarea id="P85" name="P85" class="form-control" placeholder="Enter Details here" required></textarea>
               </div>
         
               <div class="form-group">
-                <label for="P86">Provide the following information on CSR projects undertaken by your entity in designated aspirational districts as identified by government bodies</label>
-                <input type="text" id="P86" name="P86" class="form-control" placeholder="Enter Details here" required>
+                <label for="P86">6.Provide the following information on CSR projects undertaken by your entity in designated aspirational districts as identified by government bodies</label>
+                <textarea id="P86" name="P86" class="form-control" placeholder="Enter Details here" required></textarea>
               </div>
                
               <div class="form-group">
-                <label for="P87">Details of procurement policy in respect to marginalized /vulnerable groups.</label>
-                <input type="text" id="P87" name="P87" class="form-control" placeholder="Enter Details here" required>
+                <label for="P87">7.Details of procurement policy in respect to marginalized /vulnerable groups.</label>
+                <textarea id="P87" name="P87" class="form-control" placeholder="Enter Details here" required></textarea>
               </div>
         
               <div class="form-group">
-                <label for="P88">Details of the benefits derived & shared from the intellectual properties owned or acquired by your entity (in the current financial year), based on traditional knowledge</label>
-                <input type="text" id="P88" name="P88" class="form-control" placeholder="Enter Details here" required>
+                <label for="P88">8.Details of the benefits derived & shared from the intellectual properties owned or acquired by your entity (in the current financial year), based on traditional knowledge</label>
+                <textarea id="P88" name="P88" class="form-control" placeholder="Enter Details here" required></textarea>
               </div>
         
               <div class="form-group">
-                <label for="P89">Details of corrective actions taken or underway, based on any adverse order in intellectual property related disputes wherein usage of traditional knowledge is involved</label>
-                <input type="text" id="P89" name="P89" class="form-control" placeholder="Enter Details here" required>
+                <label for="P89">9.Details of corrective actions taken or underway, based on any adverse order in intellectual property related disputes wherein usage of traditional knowledge is involved</label>
+                <textarea id="P89" name="P89" class="form-control" placeholder="Enter Details here" required></textarea>
               </div>
         
               <div class="form-group">
-                <label for="P810">Details of beneficiaries of CSR Projects</label>
-                <input type="text" id="P810" name="P810" class="form-control" placeholder="Enter Details here" required>
+                <label for="P810">10.Details of beneficiaries of CSR Projects</label>
+                <textarea id="P810" name="P810" class="form-control" placeholder="Enter Details here" required></textarea>
               </div>
 
               <button class="prev" type="submit" onclick="principle7()">Previous</button>
@@ -619,65 +618,65 @@
             <h1>Section - C</h1>
             <h3>PRINCIPLE 9: BUSINESSES SHOULD ENGAGE WITH & PROVIDE VALUE TO THEIR CONSUMERS IN A RESPONSIBLE MANNER.</h3>
             <div class="form-group">
-                <label for="P91">Describe the mechanisms in place to receive & respond to consumer complaints & feedback</label>
-                <input type="text" id="P91" name="P91" class="form-control" placeholder="Provide details here." required>
+                <label for="P91">1.Describe the mechanisms in place to receive & respond to consumer complaints & feedback</label>
+                <textarea id="P91" name="P91" class="form-control" placeholder="Provide details here." required></textarea>
               </div>
         
               <div class="form-group">
-                <label for="P92">Turnover of products &/ services as a percentage of turnover from all products/service that carry information about, Environmental & social parameters relevant to
-        the product, Safe & responsible usage & Recycling &/or safe disposal.</label>
-                <input type="text" id="P92" name="P92" class="form-control" placeholder="Provide details here. " required>
+                <label for="P92">2.Turnover of products &/ services as a percentage of turnover from all products/service that carry information about, Environmental & social parameters relevant to
+                  the product, Safe & responsible usage & Recycling &/or safe disposal.</label>
+                <textarea id="P92" name="P92" class="form-control" placeholder="Provide details here. " required></textarea>
               </div>
                
               <div class="form-group">
-                <label for="P93">Number of consumer complaints in respect of the Data privacy, Advertising, Cyber-security, Delivery of essential services, Restrictive Trade Practices, Unfair Trade
-        Practices& other Received & pending during current & previous FY. </label>
-                <input type="text" id="P93" name="P93" class="form-control" placeholder="Provide details here." required>
+                <label for="P93">3.Number of consumer complaints in respect of the Data privacy, Advertising, Cyber-security, Delivery of essential services, Restrictive Trade Practices, Unfair Trade
+                   Practices& other Received & pending during current & previous FY. </label>
+                <textarea id="P93" name="P93" class="form-control" placeholder="Provide details here." required></textarea>
               </div>
         
               <div class="form-group">
-                <label for="P94">Details of instances of product recalls on account of safety issues.</label>
-                <input type="text" id="P94" name="P94" class="form-control" placeholder="Provide details here." required>
+                <label for="P94">4.Details of instances of product recalls on account of safety issues.</label>
+                <textarea id="P94" name="P94" class="form-control" placeholder="Provide details here." required></textarea>
               </div>
         
               <div class="form-group">
-                <label for="P95">Does the entity have a framework/ policy on cyber security & risks related to data privacy? (Yes/No) If available, provide a web-link of the policy.</label>
-                <input type="text" id="P95" name="P95" class="form-control" placeholder="Provide details here." required>
+                <label for="P95">5.Does the entity have a framework/ policy on cyber security & risks related to data privacy? (Yes/No) If available, provide a web-link of the policy.</label>
+                <textarea id="P95" name="P95" class="form-control" placeholder="Provide details here." required></textarea>
               </div>
         
               <div class="form-group">
-                <label for="P96">Provide details of any corrective actions taken or underway on issues relating to advertising, & delivery of essential services; cyber security & data privacy of customers;
-        re-occurrence of instances of product recalls; penalty / action taken by regulatory authorities on safety of products / services.
+                <label for="P96">6.Provide details of any corrective actions taken or underway on issues relating to advertising, & delivery of essential services; cyber security & data privacy of customers;
+                    re-occurrence of instances of product recalls; penalty / action taken by regulatory authorities on safety of products / services.
         </label>
-                <input type="text" id="P96" name="P96" class="form-control" placeholder="Provide details here." required>
+                <textarea id="P96" name="P96" class="form-control" placeholder="Provide details here." required></textarea>
               </div>
         
               <div class="form-group">
-                <label for="P97">Channels / platforms where information on products & services of the entity can be accessed (provide web link, if available).</label>
-                <input type="text" id="P97" name="P97" class="form-control" placeholder="Provide details here." required>
+                <label for="P97">7.Channels / platforms where information on products & services of the entity can be accessed (provide web link, if available).</label>
+                <textarea id="P97" name="P97" class="form-control" placeholder="Provide details here." required></textarea>
               </div>
         
               <div class="form-group">
-                <label for="P98">Steps taken to inform & educate consumers about safe & responsible usage of products &/or services</label>
-                <input type="text" id="P98" name="P98" class="form-control" placeholder=" Provide details here." required>
+                <label for="P98">8.Steps taken to inform & educate consumers about safe & responsible usage of products &/or services</label>
+                <textarea id="P98" name="P98" class="form-control" placeholder=" Provide details here." required></textarea>
               </div>
         
               <div class="form-group">
-                <label for="P99">Mechanisms in place to inform consumers of any risk of disruption/discontinuation of essential services.</label>
-                <input type="text" id="P99" name="P99" class="form-control" placeholder="Provide details here." required>
+                <label for="P99">9.Mechanisms in place to inform consumers of any risk of disruption/discontinuation of essential services.</label>
+                <textarea id="P99" name="P99" class="form-control" placeholder="Provide details here." required></textarea>
               </div>
         
               <div class="form-group">
-                <label for="P910">Does the entity display product information on the product over & above what Is mandated as per local laws? (Yes/No/Not Applicable) If yes, provide details in brief.
-        Did your entity carry out any survey with regard to consumer satisfaction relating to the major products / services of the entity, significant locations of operation of
-        the entity or the entity as a whole? (Yes/No).</label>
-                <input type="text" id="P910" name="P910" class="form-control" placeholder=" (Y/N) If no, the reasons thereof & corrective action taken, if any." required>
+                <label for="P910">10.Does the entity display product information on the product over & above what Is mandated as per local laws? (Yes/No/Not Applicable) If yes, provide details in brief.
+                     Did your entity carry out any survey with regard to consumer satisfaction relating to the major products / services of the entity, significant locations of operation of
+                     the entity or the entity as a whole? (Yes/No).</label>
+                <textarea id="P910" name="P910" class="form-control" placeholder=" (Y/N) If no, the reasons thereof & corrective action taken, if any." required></textarea>
               </div>
         
               <div class="form-group">
-                <label for="P911">Provide the information relating to data breaches Number of instances of data breaches along with impact &
-        Percentage of data breaches involving personally identifiable information of customers</label>
-                <input type="text" id="P911" name="P911" class="form-control" placeholder="Provide details here." required>
+                <label for="P911">11.Provide the information relating to data breaches Number of instances of data breaches along with impact &
+                    Percentage of data breaches involving personally identifiable information of customers</label>
+                <textarea id="P911" name="P911" class="form-control" placeholder="Provide details here." required></textarea>
               </div>
               <button class="prev" type="submit" onclick="principle8()">Previous</button>
               <button class="next2">Next</button>
@@ -788,7 +787,7 @@
             const reclaimedProducts = document.getElementById('reclaimedProducts').value;
             const reclaimedPercentages = document.getElementById('reclaimedPercentages').value;
 
-            if (!lcaConducted || (lcaConducted.value === 'Yes' && !lcaDetails) || !recycledPercentage) {
+            /*if (!lcaConducted || (lcaConducted.value === 'Yes' && !lcaDetails) || !recycledPercentage) {
                 alert('Please fill in all required fields.');
             } else {
                 alert('Form submitted successfully!');
@@ -801,7 +800,7 @@
                 alert('Reclaimed Products & Packaging: ' + reclaimedProducts);
                 alert('Reclaimed Percentages: ' + reclaimedPercentages);
                 // You can send the data to the server or perform other actions here
-            }
+            }*/
         });
         document.getElementById('myForm5').addEventListener('submit', function (event) {
             event.preventDefault();
