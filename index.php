@@ -333,9 +333,7 @@ include_once 'database.php';
         $csr = $_POST['csr'];
         $gre = $_POST['gre'];
         $overview = $_POST['overview'];
-        //$sql = "INSERT INTO student (i) VALUES('$id','$firstname','$lastname','$dob','$gender','$dep','$usern','$pass'); ";
-        //$sql = "INSERT INTO section_a_form (`cin`, `name`, `year`, `office_address`, `corporate_address`, `email`, `telephone`, `website`, `reporting_fin_year`) VALUES('$cin','$name','$year','$office_address','$corporate_address','$email','$telephone','$website','$reporting_fin_year'); ";
-        $sql = "INSERT INTO `section_a_form`(`cin`, `name`, `year`, `office_address`, `corporate_address`, `email`, `telephone`, `website`, `reporting_fin_year`, `name_stock`, `puc`, `poc_name`, `poc_phone`, `poc_email`, `rep_b`, `doba`, `dops`, `nol`, `drm`, `tote`, `male`, `female`, `malet`, `femalet`, `p_no`, `tor`, `holding`, `subsidiary`, `ac`, `csr`, `gre`, `overview`) 
+       $sql = "INSERT INTO `section_a_form`(`cin`, `name`, `year`, `office_address`, `corporate_address`, `email`, `telephone`, `website`, `reporting_fin_year`, `name_stock`, `puc`, `poc_name`, `poc_phone`, `poc_email`, `rep_b`, `doba`, `dops`, `nol`, `drm`, `tote`, `male`, `female`, `malet`, `femalet`, `p_no`, `tor`, `holding`, `subsidiary`, `ac`, `csr`, `gre`, `overview`) 
               VALUES ('$cin','$name','$year','$office_address','$corporate_address','$email','$telephone','$website','$reporting_fin_year','$name_stock','$puc','$poc_name',
               '$poc_phone','$poc_email','$rep_b','$doba','$dops','$nol','$drm','$tote','$male','$female','$malet','$femalet','$p_no','$tor','$holding','$subsidiary','$ac','$csr','$gre',
               '$overview');";
@@ -397,7 +395,7 @@ include_once 'database.php';
 
           <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
 
-          <!-- <li><a href="#"><i class="fa-brands fa-github"></i></a></li> -->
+  
 
         </ul>
 
