@@ -27,7 +27,7 @@
             <h1>Section B form</h1>
             <div class="mb-3">
                 <div class="policy">
-                    <label for="policyQuestion" class="form-label">Whether your entity’s policy/policies cover each principle & core elements of NGRBCs:</label>
+                    <label for="policyQuestion" class="form-label">Whether your entity’s policy/policies cover each principle & core elements of National Guidelines on Responsible Business Conduct(NGRBC):</label>
                 </div>
                 <select class="form-select" id="policyQuestion" name="policyQuestion" required>
                     <option value="">Select an option</option>
@@ -102,7 +102,7 @@
 
             <div class="mb-3">
                 <div class="policy">
-                    <label for="directorStatement" class="form-label">Statement by director responsible for the business responsibility report, highlighting ESG related challenges, targets & achievements:</label>
+                    <label for="directorStatement" class="form-label">Statement by director responsible for the business responsibility report, highlighting Environmental, Social, and Governance(ESG) related challenges, targets & achievements:</label>
                 </div>
                 <textarea class="form-control" id="directorStatement" name="directorStatement" rows="4" required></textarea>
             </div>

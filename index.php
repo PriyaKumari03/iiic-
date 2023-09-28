@@ -229,7 +229,7 @@ include_once 'database.php';
       </div>
 
       <div class="form-group">
-      <label for="csr">Details of CSR Activities </label>
+      <label for="csr">Details of Corporate Social Responsibility (CSR) Activities </label>
       <textarea id="csr" name="csr" rows="5" cols="50" class="form-control" placeholder="Enter the details of CSR Activities" required></textarea>  
     </div>
 
