@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<?php
+<!--?php
 include_once 'database.php';
-?>
+?-->
 <html>
 
 <head>
