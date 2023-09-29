@@ -30,8 +30,7 @@
       <form id="primary" enctype="multipart/form-data">
         <div class="form-group">
           <label for="cin">Corporate Identity Number (CIN)</label>
-          <input type="text" id="cin" name="cin" class="form-control" placeholder="Enter CIN of Listed Entity" required>
-          
+          <input type="text" id="cin" name="cin" class="form-control" placeholder="Enter CIN of Listed Entity" required> 
         </div>
 
         <div class="form-group">
@@ -66,6 +65,22 @@
         <div class="form-group">
           <label for="email">Email</label>
           <input type="text" id="email" name="email" class="form-control" placeholder="Enter your email" required>
+          <p id="validationMessage"></p>
+      <script>
+          const emailInput = document.getElementById("email");
+          const validationMessage = document.getElementById("validationMessage");
+          emailInput.addEventListener("input", function() {
+          const email = emailInput.value;
+          const gmailRegex = /@gmail\.com$/;
+          if (gmailRegex.test(email)) {
+              validationMessage.textContent = "Valid email!";
+              validationMessage.style.color = "green";
+          } else {
+              validationMessage.textContent = "Invalid email ID";
+              validationMessage.style.color = "red";
+          }
+          });
+      </script>
         </div>
 
         <div class="form-group">
@@ -120,6 +135,22 @@
             <input type="text" id="poc-phone" name="poc_phone" required pattern="[0-9]+" placeholder="Enter the contact number">
             <label for="email">Email Address</label>
             <input type="text" id="poc-email" name="poc_email" class="form-control" placeholder="Enter email address" required>
+            <p id="validationMessage"></p>
+            <script>
+                const emailInput = document.getElementById("email");
+                const validationMessage = document.getElementById("validationMessage");
+                emailInput.addEventListener("input", function() {
+                const email = emailInput.value;
+                const gmailRegex = /@gmail\.com$/;
+                if (gmailRegex.test(email)) {
+                    validationMessage.textContent = "Valid email!";
+                    validationMessage.style.color = "green";
+                } else {
+                    validationMessage.textContent = "Invalid email ID";
+                    validationMessage.style.color = "red";
+                }
+                });
+            </script>
           </p>
         </div>
         <!-- Deatils of POC ends-->
@@ -189,7 +220,7 @@
         </div>
         <!-- Deatils of corporate structure ends-->
         <div class="form-group">
-          <label for="csr">Details of CSR Activities </label>
+          <label for="csr">Details of Corporate Social Responsibility(CSR) Activities </label>
           <textarea id="csr" name="csr" rows="5" cols="50" class="form-control" placeholder="Enter the details of CSR Activities" required></textarea>  
         </div>
 
