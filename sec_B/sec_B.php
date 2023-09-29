@@ -112,7 +112,7 @@
 
             <div class="mb-3">
                 <div class="policy">
-                    <label for="achievementsQuestion" class="form-label">Achievements (Upload PDF only Max 5 MB)</label>
+                    <label for="achievementsQuestion" class="form-label">Achievements (Upload PDF only - Max size 5 MB)</label>
                 </div>
                 <input type="file" id="file" name="uploadedFiles[]" accept=".pdf" required multiple>
                 <br><br>
