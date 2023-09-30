@@ -63,7 +63,7 @@
         </div>
 
         <div class="form-group">
-          <label for="email"><span style="color: red;"> * </span>Email</label>
+          <label for="email"><span style="color: red;"> * </span>Email (Enter only official email ID)</label>
           <input type="text" id="email" name="email" class="form-control" placeholder="Enter your email" required>
           <p id="validationMessage"></p>
             <script>
@@ -133,9 +133,9 @@
             <input type="text" id="poc-name" name="poc_name" placeholder="Enter the name of the person to contact for queries" required>
             <label for="poc-phone"><span style="color: red;"> * </span>Phone Number</label>
             <input type="text" id="poc-phone" name="poc_phone" required pattern="[0-9]+" placeholder="Enter the contact number">
-            <label for="poc-email"><span style="color: red;"> * </span>Email Address</label>
+            <label for="poc-email"><span style="color: red;"> * </span>Email Address (Enter only official email ID)</label>
             <input type="text" id="poc-email" name="poc_email" class="form-control" placeholder="Enter email address" required>
-            <p id="poc-validationMessage">Enter a valid email address.</p> <!-- Unique validation message ID -->
+            <p id="poc-validationMessage"></p> <!-- Unique validation message ID -->
             <script>
               const pocEmailInput = document.getElementById("poc-email"); // Unique ID
               const pocValidationMessage = document.getElementById("poc-validationMessage"); // Unique ID
@@ -182,12 +182,12 @@
             <br>
             <label for="tote">Total numbere of Employees & Workers</label>
             <input type="text" id="tote" name="tote" placeholder="Enter the total numbere of Employees & Workers">
-            <label for="type">Peramnent</label>
+            <label for="type">Permanent</label>
             <label for="male">Male Employee</label>
             <input type="text" id="male" name="male" placeholder="Number of male employee">
             <label for="female">Female Employee</label>
             <input type="text" id="female" name="female" placeholder="Number of female employee">
-            <label for="type1">Temporaray</label>
+            <label for="type1">Temporary</label>
             <label for="male1">Male Employee</label>
             <input type="text" id="male1" name="malet" placeholder="Number of male employee">
             <label for="female1">Female Employee</label>
@@ -220,7 +220,7 @@
         </div>
         <!-- Deatils of corporate structure ends-->
         <div class="form-group">
-          <label for="csr">Details of CSR Activities </label>
+          <label for="csr">Details of Corporate Social Responsibility (CSR) Activities </label>
           <textarea id="csr" name="csr" rows="5" cols="50" class="form-control" placeholder="Enter the details of CSR Activities" ></textarea>  
         </div>
 
