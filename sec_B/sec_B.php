@@ -30,7 +30,7 @@
             <h1>Section B form</h1>
             <div class="mb-3">
                 <div class="policy">
-                    <label for="policyQuestion" class="form-label">Whether your entity’s policy/policies cover each principle & core elements of National Guidelines on responsible Business conduct(NGRBC):</label>
+                    <label for="policyQuestion" class="form-label">Whether your entity’s policy/policies cover each principle & core elements of National Guidelines on responsible Business conduct (NGRBC):</label>
                 </div>
                 <select class="form-select" id="policyQuestion" name="policyQuestion">
                     <option value="">Select an option</option>
@@ -112,7 +112,7 @@
 
             <div class="mb-3">
                 <div class="policy">
-                    <label for="achievementsQuestion" class="form-label"><span style="color: red;"> * </span>Achievements (Upload PDF only Max 5 MB)</label>
+                    <label for="achievementsQuestion" class="form-label"><span style="color: red;"> * </span>Please provide your Achievements as a PDF file (Max 5 MB)</label>
                 </div>
                 <input type="file" id="file" name="uploadedFiles[]" accept=".pdf" required multiple>
                 <br><br>
