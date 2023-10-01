@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 28, 2023 at 03:08 PM
+-- Generation Time: Oct 01, 2023 at 08:27 PM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 8.0.10
 
@@ -28,7 +28,7 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `section_a_form` (
-  `cin`varchar(21) NOT NULL,
+  `cin` varchar(21) NOT NULL,
   `name` varchar(255) DEFAULT NULL,
   `year` int(11) DEFAULT NULL,
   `office_address` text DEFAULT NULL,
@@ -63,14 +63,6 @@ CREATE TABLE `section_a_form` (
   `overview` text DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
 
--- Indexes for table `section_b_form`
---
-ALTER TABLE `section_a_form`
-  ADD PRIMARY KEY (`cin`);
---
--- AUTO_INCREMENT for dumped tables
---
-
 -- --------------------------------------------------------
 
 --
@@ -78,7 +70,7 @@ ALTER TABLE `section_a_form`
 --
 
 CREATE TABLE `section_b_form` (
-  `id` int(11) NOT NULL,
+  `cin` varchar(21) NOT NULL,
   `policyQuestion` enum('Yes','No') NOT NULL,
   `policyLink` varchar(255) DEFAULT NULL,
   `procedureQuestion` enum('Yes','No') NOT NULL,
@@ -102,20 +94,16 @@ CREATE TABLE `section_b_form` (
 --
 
 --
+-- Indexes for table `section_a_form`
+--
+ALTER TABLE `section_a_form`
+  ADD PRIMARY KEY (`cin`);
+
+--
 -- Indexes for table `section_b_form`
 --
 ALTER TABLE `section_b_form`
-  ADD PRIMARY KEY (`id`);
-
---
--- AUTO_INCREMENT for dumped tables
---
-
---
--- AUTO_INCREMENT for table `section_b_form`
---
-ALTER TABLE `section_b_form`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  ADD KEY `cin` (`cin`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
