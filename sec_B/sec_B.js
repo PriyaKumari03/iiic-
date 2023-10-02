@@ -1,3 +1,6 @@
+//This file contain any functions or logic that are not directly 
+//related to the form submission but are part of the form's behavior.
+
 document.getElementById('policyQuestion').addEventListener('change', function () {
     var policyLinkContainer = document.getElementById('policyLinkContainer');
     if (this.value === 'Yes') {
@@ -68,4 +71,28 @@ document.getElementById('assessmentQuestion').addEventListener('change', functio
     } else {
         agencyDetailsContainer.classList.add('hidden');
     }
+});
+
+//pdf uploading 
+  // Function to check file size
+  function checkFileSize(input) {
+    var maxSizeInBytes = 5 * 1024 * 1024; // 5 MB in bytes
+    var files = input.files;
+    var errorMessage = document.getElementById('file-error');
+    for (var i = 0; i < files.length; i++) {
+        var file = files[i];
+        if (file.size > maxSizeInBytes) {
+            errorMessage.textContent = "File size exceeds the maximum allowed size of 5 MB.";
+            input.value = ''; // Clear the input field
+            return false;
+        } else {
+            errorMessage.textContent = ''; // Clear any previous error message
+        }
+    }
+    return true;
+}
+// Attach an event listener to the file input
+var fileInput = document.getElementById('file');
+fileInput.addEventListener('change', function() {
+    checkFileSize(this);
 });

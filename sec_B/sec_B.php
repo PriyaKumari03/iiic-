@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
@@ -12,11 +12,33 @@
         .hidden {
             display: none;
         }
+        /* Add this CSS */
+        @media screen and (max-width: 800px) {
+            #cinDiv {
+                display: none;
+            }
+        }
     </style>
 </head>
+
+<?php
+    session_start(); // Start the session to access session variables
+    // Check if CIN is set in the session
+    if (isset($_SESSION['cin'])) 
+        $cin = $_SESSION['cin'];
+?>
 <body>
     <header class="header">
         <h1 class="logo"><a href="#">CUSRS</a></h1>
+        <div style="padding-left:20%;" id="cinDiv">
+        <?php
+        // Display the CIN if it's set
+        if (!empty($cin)) {
+            echo '<div class="form-label" style="float:center; margin-top:1%"><h4>CIN: ' . $cin . '</h4></div>';
+        }
+        ?>
+    </div>
+
         <ul class="main-nav">
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
@@ -26,7 +48,7 @@
     </header>
 
     <div class="container">
-        <form method="post" action="sec_B_response.php" enctype="multipart/form-data">
+        <form method="post" enctype="multipart/form-data">
             <h1>Section B form</h1>
             <div class="mb-3">
                 <div class="policy">
@@ -109,14 +131,16 @@
                 </div>
                 <textarea class="form-control" id="directorStatement" name="directorStatement" rows="4" required></textarea>
             </div>
-
+            <!--PDF UPLOAD-->
             <div class="mb-3">
                 <div class="policy">
                     <label for="achievementsQuestion" class="form-label"><span style="color: red;"> * </span>Please provide your Achievements as a PDF file (Max 5 MB)</label>
                 </div>
                 <input type="file" id="file" name="uploadedFiles[]" accept=".pdf" required multiple>
-                <br><br>
+                <br>
+                <div id="file-error" style="color: red;"></div> <!-- Error message will be displayed here -->
             </div>
+            <!--END PDF UPLOAD-->
 
             <div class="mb-3">
                 <div class="policy">
@@ -161,25 +185,10 @@
                 <textarea class="form-control" id="agencyDetails" name="agencyDetails" rows="4"></textarea>
             </div>
 
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-primary" onclick="return submitForm();">Submit</button>
         </form>
     </div>
     <script src="sec_B.js"></script>
-    <script>
-        function submitForm() {
-            // You can perform any form validation here before submission.
-        if (isSuccessful) {
-                alert("Form submitted successfully!");
-                window.location.href = "../sec_C/sec_C.php";
-            } else {
-                alert("Form submission failed. Please try again.");
-                window.location.href = "../sec_B/sec_B.php";
-            }
-            
-            // Return false to prevent the form from actually submitting.
-            // You can remove this line if you want the form to submit even after showing the alert.
-            return false;
-        }
-    </script>
+    <script src="sec_B_form_submit_validation.js"></script>
 </body>
 </html>
