@@ -63,7 +63,7 @@ CREATE TABLE IF NOT EXISTS `section_a_form` (
   `gre` varchar(255) DEFAULT NULL,
   `overview` text,
   PRIMARY KEY (`cin`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 -- --------------------------------------------------------
 
@@ -91,7 +91,7 @@ CREATE TABLE IF NOT EXISTS `section_b_form` (
   `assessmentQuestion` enum('Yes','No') NOT NULL,
   `agencyDetails` text,
   PRIMARY KEY (`cin`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 -- --------------------------------------------------------
 
@@ -226,7 +226,7 @@ CREATE TABLE IF NOT EXISTS `section_c_form` (
   `9_11_1_surveyInfoDetails` text,
   `9_12_dataBreachesInfo` text,
   PRIMARY KEY (`cin`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
