@@ -18,11 +18,6 @@
                 display: none;
             }
         }
-
-        .error {
-          color: red;
-          display: none;
-      }
     </style>
 </head>
 
@@ -143,7 +138,6 @@
             </label>
           </div>
           <input type="file" id="file" name="uploadedFiles[]" accept=".pdf" required multiple><br><br>
-          <p id="uploadStatus"></p>
           <div id="fileSizeMessage" style="color: red;"></div> <!-- Message container -->
         </div>
         <!-- PDF UPLOAD End -->
@@ -173,9 +167,9 @@
         <!-- Paid-up Capital Start -->
         <div class="mb-3">
           <div class="policy">
-            <label for="puc" class="form-label"><span style="color: red;"> * </span>Paid-up Capital(Lakhs)</label>
+            <label for="puc" class="form-label"><span style="color: red;"> * </span>Paid-up Capital</label>
           </div>
-          <input type="number" class="form-control" id="puc" name="puc" required pattern="[0-9]+">
+          <input type="text" class="form-control" id="puc" name="puc" required pattern="[0-9]+">
         </div>
         <!-- Paid-up Capital End -->
 
@@ -209,7 +203,7 @@
             <div class="policy">
               <label for="poc-email" class="form-label"><span style="color: red;"> * </span>Email Address (Enter only official email ID)</label>
             </div>
-            <input type="email" class="form-control" id="poc-email" name="poc_email" class="form-control" placeholder="Enter email address" required>
+            <input type="text" class="form-control" id="poc-email" name="poc_email" class="form-control" placeholder="Enter email address" required>
           </div>
           <!-- Email validation message -->
           <span id="poc-email-validation" style="color: red;"></span>
@@ -220,8 +214,7 @@
         <!-- Reporting boundary Start -->
         <div class="mb-3">
           <div class="policy">
-            <label for="rep_b" class="form-label">Reporting boundary - Are the disclosures under this report made on a standalone basis (i.e. only for the entity) or on a consolidated basis (i.e. for the entity & all the
-              entities which form a part of its consolidated financial statements, taken together).</label>
+            <label for="rep_b" class="form-label">Reporting boundary</label>
           </div>
             <input type="text" class="form-control" id="rep_b" name="rep_b" placeholder="Enter Reporting boundary" >
         </div>
@@ -248,7 +241,7 @@
         <!-- Number of locations Start -->
         <div class="mb-3">
           <div class="policy">
-            <label for="nol" class="form-label">Number of locations(International/National)</label>
+            <label for="nol" class="form-label">Number of locations</label>
           </div>
           <input type="text" class="form-control" id="nol" name="nol" placeholder=" Enter number of locations where plants/operation/ offices of the entity are located.">
         </div>
@@ -302,7 +295,7 @@
           <!-- Temporary Employees Start -->
           <div class="mb-3">
             <div class="policy">
-              <label for="type1" class="form-label">Contingent Workers </label>
+              <label for="type1" class="form-label">Temporary</label>
             </div>
             <div class="mb-3">
               <div class="policy">
