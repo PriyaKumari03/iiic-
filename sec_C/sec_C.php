@@ -495,21 +495,24 @@
                     </div>
                     <textarea id="correctiveActionsForAssessments" name="correctiveActionsForAssessments" class="form-control" placeholder="Enter details of any corrective actions taken or underway to address significant risks." required></textarea>
                 </div>
+                <div class="policy">
+                    <h3>LEADERSHIP INDICATORS – IMPORTANCE TO INVESTORS</h3>
+                </div>
                 <div class="mb-3">
                     <div class="policy">
-                        <label for="businessProcessModifications" class="form-label"><span style="color: red;"> * </span>11. Details of a business process being modified / introduced as a result of addressing human rights grievances/complaints:</label>
+                        <label for="businessProcessModifications" class="form-label"><span style="color: red;"> * </span>1. Details of a business process being modified / introduced as a result of addressing human rights grievances/complaints:</label>
                     </div>
                     <textarea id="businessProcessModifications" name="businessProcessModifications" class="form-control" placeholder="Enter details of a business process being modified." required></textarea>
                 </div>
                 <div class="mb-3">
                     <div class="policy">
-                        <label for="humanRightsDueDiligence" class="form-label"><span style="color: red;"> * </span>12. Details of the scope & coverage of any Human rights due-diligence conducted:</label>
+                        <label for="humanRightsDueDiligence" class="form-label"><span style="color: red;"> * </span>2. Details of the scope & coverage of any Human rights due-diligence conducted:</label>
                     </div>
                     <textarea id="humanRightsDueDiligence" name="humanRightsDueDiligence" class="form-control" placeholder="Enter Details of the scope & coverage of any Human rights due-diligence conducted." required></textarea>
                 </div>
                 <div class="mb-3">
                     <div class="policy">
-                        <label for="premiseAccessibility" class="form-label">13. Is the premise/office of the entity accessible to differently abled visitors, as per the requirements of the Rights of Persons with Disabilities Act, 2016?</label>
+                        <label for="premiseAccessibility" class="form-label">3. Is the premise/office of the entity accessible to differently abled visitors, as per the requirements of the Rights of Persons with Disabilities Act, 2016?</label>
                     </div>
                     <select name="premiseAccessibility" id="premiseAccessibility" class="form-control">
                         <option value="">Select an option</option>
@@ -519,13 +522,13 @@
                 </div>
                 <div class="mb-3">
                     <div class="policy">
-                        <label for="valueChainAssessment" class="form-label"><span style="color: red;"> * </span>14. Percentage of value chain partners that were assessed (by entity or statutory authorities or third parties) for sexual harassment, discrimination at workplace, Child Labour, Forced Labour/Involuntary Labour, Wages or other human rights related issues, along with the corrective action taken to address significant risks & concerns arising from assessments:</label>
+                        <label for="valueChainAssessment" class="form-label"><span style="color: red;"> * </span>4. Percentage of value chain partners that were assessed (by entity or statutory authorities or third parties) for sexual harassment, discrimination at workplace, Child Labour, Forced Labour/Involuntary Labour, Wages or other human rights related issues, along with the corrective action taken to address significant risks & concerns arising from assessments:</label>
                     </div>
                     <input type="number" id="valueChainAssessment" name="valueChainAssessment" class="form-control" placeholder="Enter percentage value." required>
                 </div>
                 <div class="mb-3">
                     <div class="policy">
-                        <label for="correctiveActionsFromAssessments" class="form-label"><span style="color: red;"> * </span>15. Provide details of any corrective actions taken or underway to address significant risks / concerns arising from the assessments at Question 4 above:</label>
+                        <label for="correctiveActionsFromAssessments" class="form-label"><span style="color: red;"> * </span>5. Provide details of any corrective actions taken or underway to address significant risks / concerns arising from the assessments at Question 4 above:</label>
                     </div>
                     <textarea id="correctiveActionsFromAssessments" name="correctiveActionsFromAssessments" class="form-control" placeholder="Provide the concerns arising from the assessments at Question 4 above." required></textarea>
                 </div>
@@ -540,13 +543,13 @@
                 </div>
                 <div class="mb-3">
                     <div class="policy">
-                        <label for="energyConsumptionDetails" class="form-label">1. Details of total energy consumption (in Joules or multiples) & energy intensity as per BRSR format:</label>
+                        <label for="energyConsumptionDetails" class="form-label">1.1 Details of total energy consumption (in Joules or multiples) & energy intensity as per BRSR format:</label>
                     </div>
                     <textarea id="energyConsumptionDetails" name="energyConsumptionDetails" class="form-control" placeholder="Enter the details"></textarea>
                 </div>
                 <div class="mb-3">
                     <div class="policy">
-                        <label for="energyExternalAgency" class="form-label">2. Indicate if any independent assessment/ evaluation/assurance of energy consumption has been carried out by an external agency? If yes, provide the name of the external agency:</label>
+                        <label for="energyExternalAgency" class="form-label">1.2 Indicate if any independent assessment/ evaluation/assurance of energy consumption has been carried out by an external agency? If yes, provide the name of the external agency:</label>
                     </div>
                     <select name="energyExternalAgency" id="energyExternalAgency" class="form-control">
                         <option value="">Select an option</option>
@@ -562,7 +565,7 @@
                 </div>
                 <div class="mb-3">
                     <div class="policy">
-                        <label for="designatedConsumers" class="form-label">3. Does the entity have any sites/facilities identified as designated consumers (DCs) under the Performance, Achieve, & Trade (PAT) Scheme of the Government of India?  If yes, disclose whether targets set under the PAT scheme have been achieved. In case targets have not been achieved, provide the remedial action taken if any:</label>
+                        <label for="designatedConsumers" class="form-label">2. Does the entity have any sites/facilities identified as designated consumers (DCs) under the Performance, Achieve, & Trade (PAT) Scheme of the Government of India?  If yes, disclose whether targets set under the PAT scheme have been achieved. In case targets have not been achieved, provide the remedial action taken if any:</label>
                     </div>
                     <select name="designatedConsumers" id="designatedConsumers" class="form-control">
                         <option value="">Select an option</option>
@@ -578,13 +581,13 @@
                 </div>
                 <div class="mb-3">
                     <div class="policy">
-                        <label for="waterWithdrawalDetails" class="form-label">4. Provide details of water withdrawal from different sources, total volume of water withdrawal & consumed, & Water intensity per rupee of turnover (Water consumed / turnover) as per BRSR format:</label>
+                        <label for="waterWithdrawalDetails" class="form-label">3.1. Provide details of water withdrawal from different sources, total volume of water withdrawal & consumed, & Water intensity per rupee of turnover (Water consumed / turnover) as per BRSR format:</label>
                     </div>
                     <textarea id="waterWithdrawalDetails" name="waterWithdrawalDetails" class="form-control" placeholder="Enter the details"></textarea>
                 </div>
                 <div class="mb-3">
                     <div class="policy">
-                        <label for="waterExternalAgency" class="form-label">5. Indicate if any independent assessment/ evaluation/assurance of water withdrawal has been carried out by an external agency? If yes, provide the name of the external agency:</label>
+                        <label for="waterExternalAgency" class="form-label">3.2. Indicate if any independent assessment/ evaluation/assurance of water withdrawal has been carried out by an external agency? If yes, provide the name of the external agency:</label>
                     </div>
                     <select name="waterExternalAgency" id="waterExternalAgency" class="form-control">
                         <option value="">Select an option</option>
@@ -600,7 +603,7 @@
                 </div>
                 <div class="mb-3">
                     <div class="policy">
-                        <label for="liquidDischarge" class="form-label"><span style="color: red;"> * </span>6. Has the entity implemented a mechanism for Zero Liquid Discharge? If yes, provide details of its coverage & implementation:</label>
+                        <label for="liquidDischarge" class="form-label"><span style="color: red;"> * </span>4. Has the entity implemented a mechanism for Zero Liquid Discharge? If yes, provide details of its coverage & implementation:</label>
                     </div>
                     <select name="liquidDischarge" id="liquidDischarge" class="form-control" required>
                         <option value="">Select an option</option>
@@ -616,13 +619,13 @@
                 </div>
                 <div class="mb-3">
                     <div class="policy">
-                        <label for="airEmissionDetails" class="form-label">7. Please provide details of air emissions (other than GHG emissions) by the entity, in BRSR format. Also, indicate if any independent assessment/ evaluation/assurance has been carried out by an external agency?</label>
+                        <label for="airEmissionDetails" class="form-label">5.1. Please provide details of air emissions (other than GHG emissions) by the entity, in BRSR format. Also, indicate if any independent assessment/ evaluation/assurance has been carried out by an external agency?</label>
                     </div>
                     <textarea id="airEmissionDetails" name="airEmissionDetails" class="form-control" placeholder="Enter the details"></textarea>
                 </div>
                 <div class="mb-3">
                     <div class="policy">
-                        <label for="airExternalAgency" class="form-label">8. Indicate if any independent assessment/ evaluation/assurance of air emissions has been carried out by an external agency? If yes, provide the name of the external agency:</label>
+                        <label for="airExternalAgency" class="form-label">5.2. Indicate if any independent assessment/ evaluation/assurance of air emissions has been carried out by an external agency? If yes, provide the name of the external agency:</label>
                     </div>
                     <select name="airExternalAgency" id="airExternalAgency" class="form-control">
                         <option value="">Select an option</option>
@@ -638,13 +641,13 @@
                 </div>
                 <div class="mb-3">
                     <div class="policy">
-                        <label for="greenhouseGasEmissionDetails" class="form-label">9. Provide details of greenhouse gas emissions (Scope 1 & Scope 2 emissions) & its intensity per rupee of turnover as per BRSR format:</label>
+                        <label for="greenhouseGasEmissionDetails" class="form-label">6.1. Provide details of greenhouse gas emissions (Scope 1 & Scope 2 emissions) & its intensity per rupee of turnover as per BRSR format:</label>
                     </div>
                     <textarea id="greenhouseGasEmissionDetails" name="greenhouseGasEmissionDetails" class="form-control" placeholder="Enter the details"></textarea>
                 </div>
                 <div class="mb-3">
                     <div class="policy">
-                        <label for="ghgExternalAgency" class="form-label">10. Indicate if any independent assessment/ evaluation/assurance of greenhouse gas emissions has been carried out by an external agency? If yes, provide the name of the external agency:</label>
+                        <label for="ghgExternalAgency" class="form-label">6.2. Indicate if any independent assessment/ evaluation/assurance of greenhouse gas emissions has been carried out by an external agency? If yes, provide the name of the external agency:</label>
                     </div>
                     <select name="ghgExternalAgency" id="ghgExternalAgency" class="form-control">
                         <option value="">Select an option</option>
@@ -660,7 +663,7 @@
                 </div>
                 <div class="mb-3">
                     <div class="policy">
-                        <label for="ghgReductionProject" class="form-label">11. Does the entity have any project related to reducing Green House Gas emission? If yes, provide details about the project:</label>
+                        <label for="ghgReductionProject" class="form-label">7. Does the entity have any project related to reducing Green House Gas emission? If yes, provide details about the project:</label>
                     </div>
                     <select name="ghgReductionProject" id="ghgReductionProject" class="form-control">
                         <option value="">Select an option</option>
@@ -676,13 +679,13 @@
                 </div>
                 <div class="mb-3">
                     <div class="policy">
-                        <label for="wasteDetails" class="form-label">12. Provide details of waste generated, waste recycled & waste dumped with breakup into categories like hazardous, plastic, e-waste, bio-medical waste etc. as per BRSR format:</label>
+                        <label for="wasteDetails" class="form-label">8.1. Provide details of waste generated, waste recycled & waste dumped with breakup into categories like hazardous, plastic, e-waste, bio-medical waste etc. as per BRSR format:</label>
                     </div>
                     <textarea id="wasteDetails" name="wasteDetails" class="form-control" placeholder="Enter the details"></textarea>
                 </div>
                 <div class="mb-3">
                     <div class="policy">
-                        <label for="wasteExternalAgency" class="form-label">13. Indicate if any independent assessment/ evaluation/assurance of greenhouse waste management has been carried out by an external agency? If yes, provide the name of the external agency:</label>
+                        <label for="wasteExternalAgency" class="form-label">8.2. Indicate if any independent assessment/ evaluation/assurance of greenhouse waste management has been carried out by an external agency? If yes, provide the name of the external agency:</label>
                     </div>
                     <select name="wasteExternalAgency" id="wasteExternalAgency" class="form-control">
                         <option value="">Select an option</option>
@@ -698,13 +701,13 @@
                 </div>
                 <div class="mb-3">
                     <div class="policy">
-                        <label for="wasteManagementPractices" class="form-label">14. Briefly describe the waste management practices adopted in your establishments. Describe the strategy adopted by your entity to reduce usage of hazardous & toxic chemicals in your products & processes & the practices adopted to manage such wastes:</label>
+                        <label for="wasteManagementPractices" class="form-label">9. Briefly describe the waste management practices adopted in your establishments. Describe the strategy adopted by your entity to reduce usage of hazardous & toxic chemicals in your products & processes & the practices adopted to manage such wastes:</label>
                     </div>
                     <textarea id="wasteManagementPractices" name="wasteManagementPractices" class="form-control" placeholder="Enter the details"></textarea>
                 </div>
                 <div class="mb-3">
                     <div class="policy">
-                        <label for="ecologicalAreaOperations" class="form-label">15. Does the entity have operations/offices in/around ecologically sensitive areas (such as national parks, wildlife sanctuaries, biosphere reserves, wetlands, biodiversity hotspots, forests, coastal regulation zones etc.) where environmental approvals / clearances are required. If yes, please specify details like: Location of operations/offices; Type of operations; the conditions of environmental approval / clearance are being complied with?</label>
+                        <label for="ecologicalAreaOperations" class="form-label">10. Does the entity have operations/offices in/around ecologically sensitive areas (such as national parks, wildlife sanctuaries, biosphere reserves, wetlands, biodiversity hotspots, forests, coastal regulation zones etc.) where environmental approvals / clearances are required. If yes, please specify details like: Location of operations/offices; Type of operations; the conditions of environmental approval / clearance are being complied with?</label>
                     </div>
                     <select name="ecologicalAreaOperations" id="ecologicalAreaOperations" class="form-control">
                         <option value="">Select an option</option>
@@ -720,13 +723,13 @@
                 </div>
                 <div class="mb-3">
                     <div class="policy">
-                        <label for="environmentalImpactAssessmentDetails" class="form-label">16. Share name & details of environmental impact assessments of projects undertaken by the entity along with EIA notification no. & date; in the current financial year:</label>
+                        <label for="environmentalImpactAssessmentDetails" class="form-label">11.1. Share name & details of environmental impact assessments of projects undertaken by the entity along with EIA notification no. & date; in the current financial year:</label>
                     </div>
                     <textarea id="environmentalImpactAssessmentDetails" name="environmentalImpactAssessmentDetails" class="form-control" placeholder="Enter the details"></textarea>
                 </div>
                 <div class="mb-3">
                     <div class="policy">
-                        <label for="eiaExternalAgency" class="form-label">17. Indicate if EIA has been carried out by an independent external agency? If yes, provide the name of the external agency:</label>
+                        <label for="eiaExternalAgency" class="form-label">11.2. Indicate if EIA has been carried out by an independent external agency? If yes, provide the name of the external agency:</label>
                     </div>
                     <select name="eiaExternalAgency" id="eiaExternalAgency" class="form-control">
                         <option value="">Select an option</option>
@@ -742,7 +745,7 @@
                 </div>
                 <div class="mb-3">
                     <div class="policy">
-                        <label for="eiaPublicDomain" class="form-label">18. Indicate if results of the EIA have been communicated in the public domain? If yes, provide the relevant web link:</label>
+                        <label for="eiaPublicDomain" class="form-label">11.3. Indicate if results of the EIA have been communicated in the public domain? If yes, provide the relevant web link:</label>
                     </div>
                     <select name="eiaPublicDomain" id="eiaPublicDomain" class="form-control">
                         <option value="">Select an option</option>
@@ -758,7 +761,7 @@
                 </div>
                 <div class="mb-3">
                     <div class="policy">
-                        <label for="environmentalComplianceStatus" class="form-label">19. Is the entity compliant with the applicable environmental law/ regulations/ guidelines in India; such as the Water (Prevention & Control of Pollution) Act, Air (Prevention & Control of Pollution) Act, Environment Protection Act & rules thereunder. If yes, provide relevant details:</label>
+                        <label for="environmentalComplianceStatus" class="form-label">12. Is the entity compliant with the applicable environmental law/ regulations/ guidelines in India; such as the Water (Prevention & Control of Pollution) Act, Air (Prevention & Control of Pollution) Act, Environment Protection Act & rules thereunder. If yes, provide relevant details:</label>
                     </div>
                     <select name="environmentalComplianceStatus" id="environmentalComplianceStatus" class="form-control">
                         <option value="">Select an option</option>
@@ -772,6 +775,11 @@
                     </div>
                     <textarea id="environmentalComplianceStatusDetails" name="environmentalComplianceStatusDetails" class="form-control" placeholder="Enter the details"></textarea>
                 </div>
+                <!--Leadership indicators principle 6-->
+                <div class="policy">
+                    <h3>LEADERSHIP INDICATORS – IMPORTANCE TO INVESTORS</h3>
+                </div>
+
                 <button type="button" class="btn-primary" onclick="navigate(-1)">Previous</button>
                 <button type="button" class="btn-primary" onclick="navigate(1)">Next</button>
             </div>
@@ -803,9 +811,12 @@
                     </div>
                     <textarea id="antiCompetitiveActionsDetails" name="antiCompetitiveActionsDetails" class="form-control" placeholder="Enter the details"></textarea>
                 </div>
+                <div class="policy">
+                    <h3>LEADERSHIP INDICATORS – IMPORTANCE TO INVESTORS</h3>
+                </div>
                 <div class="mb-3">
                     <div class="policy">
-                        <label for="publicPolicyAdvocacy" class="form-label"><span style="color: red;"> * </span>3. Details of the Public policy advocated by the entity:</label>
+                        <label for="publicPolicyAdvocacy" class="form-label"><span style="color: red;"> * </span>1. Details of the Public policy advocated by the entity:</label>
                     </div>
                     <textarea id="publicPolicyAdvocacy" name="publicPolicyAdvocacy" class="form-control" placeholder="Enter the details" required></textarea>
                 </div>
@@ -842,39 +853,42 @@
                     </div>
                     <input type="number" id="inputMaterialPercentage" name="inputMaterialPercentage" class="form-control" placeholder="Enter the percentage" required>
                 </div>
+                <div class="policy">
+                    <h3>LEADERSHIP INDICATORS – IMPORTANCE TO INVESTORS</h3>
+                </div>
                 <div class="mb-3">
                     <div class="policy">
-                        <label for="socialImpactActions" class="form-label"><span style="color: red;"> * </span>5. Provide details of actions taken to mitigate any negative social impacts identified in Social Impact Assessments (Reference: Question 1 of Essential Indicators above):</label>
+                        <label for="socialImpactActions" class="form-label"><span style="color: red;"> * </span>1. Provide details of actions taken to mitigate any negative social impacts identified in Social Impact Assessments (Reference: Question 1 of Essential Indicators above):</label>
                     </div>
                     <textarea id="socialImpactActions" name="socialImpactActions" class="form-control" placeholder="Enter the details" required></textarea>
                 </div>
                 <div class="mb-3">
                     <div class="policy">
-                        <label for="csrAspirationalDistricts" class="form-label"><span style="color: red;"> * </span>6. Provide the following information on CSR projects undertaken by your entity in designated aspirational districts as identified by government bodies:</label>
+                        <label for="csrAspirationalDistricts" class="form-label"><span style="color: red;"> * </span>2. Provide the following information on CSR projects undertaken by your entity in designated aspirational districts as identified by government bodies:</label>
                     </div>
                     <textarea id="csrAspirationalDistricts" name="csrAspirationalDistricts" class="form-control" placeholder="Enter the details" required></textarea>
                 </div>
                 <div class="mb-3">
                     <div class="policy">
-                        <label for="procurementPolicyMarginalized" class="form-label"><span style="color: red;"> * </span>7. Details of procurement policy in respect to marginalized/vulnerable groups:</label>
+                        <label for="procurementPolicyMarginalized" class="form-label"><span style="color: red;"> * </span>3. Details of procurement policy in respect to marginalized/vulnerable groups:</label>
                     </div>
                     <textarea id="procurementPolicyMarginalized" name="procurementPolicyMarginalized" class="form-control" placeholder="Enter the details" required></textarea>
                 </div>
                 <div class="mb-3">
                     <div class="policy">
-                        <label for="intellectualPropertiesBenefits" class="form-label"><span style="color: red;"> * </span>8. Details of the benefits derived & shared from the intellectual properties owned or acquired by your entity (in the current financial year), based on traditional knowledge:</label>
+                        <label for="intellectualPropertiesBenefits" class="form-label"><span style="color: red;"> * </span>4. Details of the benefits derived & shared from the intellectual properties owned or acquired by your entity (in the current financial year), based on traditional knowledge:</label>
                     </div>
                     <textarea id="intellectualPropertiesBenefits" name="intellectualPropertiesBenefits" class="form-control" placeholder="Enter the details" required></textarea>
                 </div>
                 <div class="mb-3">
                     <div class="policy">
-                        <label for="correctiveActionsIntellectualProperty" class="form-label"><span style="color: red;"> * </span>9. Details of corrective actions taken or underway, based on any adverse order in intellectual property related disputes wherein usage of traditional knowledge is involved:</label>
+                        <label for="correctiveActionsIntellectualProperty" class="form-label"><span style="color: red;"> * </span>5. Details of corrective actions taken or underway, based on any adverse order in intellectual property related disputes wherein usage of traditional knowledge is involved:</label>
                     </div>
                     <textarea id="correctiveActionsIntellectualProperty" name="correctiveActionsIntellectualProperty" class="form-control" placeholder="Enter the details" required></textarea>
                 </div>
                 <div class="mb-3">
                     <div class="policy">
-                        <label for="csrProjectBeneficiaries" class="form-label"><span style="color: red;"> * </span>10. Details of beneficiaries of CSR Projects:</label>
+                        <label for="csrProjectBeneficiaries" class="form-label"><span style="color: red;"> * </span>6. Details of beneficiaries of CSR Projects:</label>
                     </div>
                     <textarea id="csrProjectBeneficiaries" name="csrProjectBeneficiaries" class="form-control" placeholder="Enter the details" required></textarea>
                 </div>
@@ -933,27 +947,30 @@
                     </div>
                     <textarea id="correctiveActions" name="correctiveActions" class="form-control" placeholder="Enter the details" required></textarea>
                 </div>
+                <div class="policy">
+                    <h3>LEADERSHIP INDICATORS – IMPORTANCE TO INVESTORS</h3>
+                </div>
                 <div class="mb-3">
                     <div class="policy">
-                        <label for="infoChannels" class="form-label"><span style="color: red;"> * </span>7. Channels/platforms where information on products & services of the entity can be accessed (provide web link, if available):</label>
+                        <label for="infoChannels" class="form-label"><span style="color: red;"> * </span>1. Channels/platforms where information on products & services of the entity can be accessed (provide web link, if available):</label>
                     </div>
                     <textarea id="infoChannels" name="infoChannels" class="form-control" placeholder="Enter the details" required></textarea>
                 </div>
                 <div class="mb-3">
                     <div class="policy">
-                        <label for="consumerEducation" class="form-label"><span style="color: red;"> * </span>8. Steps taken to inform & educate consumers about safe & responsible usage of products and/or services:</label>
+                        <label for="consumerEducation" class="form-label"><span style="color: red;"> * </span>2. Steps taken to inform & educate consumers about safe & responsible usage of products and/or services:</label>
                     </div>
                     <textarea id="consumerEducation" name="consumerEducation" class="form-control" placeholder="Enter the details" required></textarea>
                 </div>
                 <div class="mb-3">
                     <div class="policy">
-                        <label for="serviceDisruptionInfo" class="form-label"><span style="color: red;"> * </span>9. Mechanisms in place to inform consumers of any risk of disruption/discontinuation of essential services:</label>
+                        <label for="serviceDisruptionInfo" class="form-label"><span style="color: red;"> * </span>3. Mechanisms in place to inform consumers of any risk of disruption/discontinuation of essential services:</label>
                     </div>
                     <textarea id="serviceDisruptionInfo" name="serviceDisruptionInfo" class="form-control" placeholder="Enter the details" required></textarea>
                 </div>
                 <div class="mb-3">
                     <div class="policy">
-                        <label for="productInfoDisplay" class="form-label"><span style="color: red;"> * </span>10. Does the entity display product information on the product over & above what is mandated as per local laws? If yes, provide details in brief:</label>
+                        <label for="productInfoDisplay" class="form-label"><span style="color: red;"> * </span>4.1 Does the entity display product information on the product over & above what is mandated as per local laws? If yes, provide details in brief:</label>
                     </div>
                     <select name="productInfoDisplay" id="productInfoDisplay" class="form-control" required>
                         <option value="">Select an option</option>
@@ -970,7 +987,7 @@
                 </div>
                 <div class="mb-3">
                     <div class="policy">
-                        <label for="surveyInfo" class="form-label"><span style="color: red;"> * </span>11. Did your entity carry out any survey with regard to consumer satisfaction relating to the major products/services of the entity, significant locations of operation of the entity or the entity as a whole? If no, the reasons thereof & corrective actions taken, if any:</label>
+                        <label for="surveyInfo" class="form-label"><span style="color: red;"> * </span>4.2. Did your entity carry out any survey with regard to consumer satisfaction relating to the major products/services of the entity, significant locations of operation of the entity or the entity as a whole? If no, the reasons thereof & corrective actions taken, if any:</label>
                     </div>
                     <select name="surveyInfo" id="surveyInfo" class="form-control" required>
                         <option value="">Select an option</option>
@@ -986,7 +1003,7 @@
                 </div>
                 <div class="mb-3">
                     <div class="policy">
-                        <label for="dataBreachesInfo" class="form-label"><span style="color: red;"> * </span>12. Provide the information relating to data breaches: Number of instances of data breaches along with impact & Percentage of data breaches involving personally identifiable information of customers:</label>
+                        <label for="dataBreachesInfo" class="form-label"><span style="color: red;"> * </span>5. Provide the information relating to data breaches: Number of instances of data breaches along with impact & Percentage of data breaches involving personally identifiable information of customers:</label>
                     </div>
                     <textarea id="dataBreachesInfo" name="dataBreachesInfo" class="form-control" placeholder="Enter the details" required></textarea>
                 </div>
