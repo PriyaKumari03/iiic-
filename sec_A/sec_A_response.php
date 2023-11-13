@@ -28,33 +28,38 @@ try {
             $incorp_date = $_POST['incorp_date'];
             $office_address = $_POST['office_address'];
             $corporate_address = $_POST['corporate_address'];
+
             $email = $_POST['email'];
             $telephone = $_POST['telephone'];
             $website = $_POST['website'];
             $reporting_fin_year = $_POST['reporting_fin_year'];
             $stock_name = implode(', ', $_POST['stock_name']);
+            
             $puc = $_POST['puc'];
             $poc_name = $_POST['poc_name'];
             $poc_phone = $_POST['poc_phone'];
             $poc_email = $_POST['poc_email'];
             $rep_b  = $_POST['rep_b'];
-            $doba = $_POST['doba'];
-            $dops = $_POST['dops'];
-            $nol = $_POST['nol'];
-            $drm = $_POST['drm'];
-            $tote = $_POST['tote'];
-            $male = $_POST['male'];
-            $female = $_POST['female'];
-            $malet = $_POST['malet'];
-            $femalet = $_POST['femalet'];
-            $p_no = $_POST['p_no'];
-            $tor = $_POST['tor'];
-            $holding = $_POST['holding'];
-            $subsidiary= $_POST['subsidiary'];
-            $ac = $_POST['ac'];
-            $csr = $_POST['csr'];
-            $gre = $_POST['gre'];
-            $overview = $_POST['overview'];
+            
+            $doba =  implode(', ', $_POST['doba']);
+            $dops = implode(', ', $_POST['dops']);
+            $nol = implode(', ', $_POST['nol']);
+            $drm = implode(', ', $_POST['drm']);
+            $drm_contribution_export = $_POST['drm_contribution_export'];
+            
+            $drm_types_customers = $_POST['drm_types_customers'];
+            $dew = implode(', ', $_POST['dew']);
+            $dewda = implode(', ', $_POST['dewda']);
+            $pirw = implode(', ', $_POST['pirw']);
+            $torpew = implode(', ', $_POST['torpew']);
+            
+            $holding = implode(', ', $_POST['holding']);
+            $csr_act = $_POST['csr_act'];
+            $csr_turnover = $_POST['csr_turnover'];
+            $csr_networth = $_POST['csr_networth'];
+            $gre = implode(', ', $_POST['gre']);
+            
+            $overview = implode(', ', $_POST['overview']);
             $incorporation_certificate = null;
 
             if (isset($_FILES['uploadedFiles']) && is_array($_FILES['uploadedFiles']['error'])) {
@@ -93,17 +98,17 @@ try {
                     email, telephone, website, reporting_fin_year, incorporation_certificate,
                     stock_name, puc, poc_name, poc_phone, poc_email,
                     rep_b, doba, dops, nol, drm,
-                    tote, male, female, malet, femalet,
-                    p_no, tor, holding, subsidiary, ac,
-                    csr, gre, overview
+                    drm_contribution_export, drm_types_customers, dew, dewda, pirw, 
+                    torpew, holding, csr_act, csr_turnover, csr_networth, 
+                    gre, overview
                 ) VALUES (
                     ?, ?, ?, ?, ?,
                     ?, ?, ?, ?, ?, 
                     ?, ?, ?, ?, ?, 
+                    ?, ?, ?, ?, ?,
                     ?, ?, ?, ?, ?, 
-                    ?, ?, ?, ?, ?, 
-                    ?, ?, ?, ?, ?, 
-                    ?, ?, ?
+                    ?, ?, ?, ?, ?,
+                    ?, ?
                 )
             ");
 
@@ -112,9 +117,9 @@ try {
                 $email, $telephone, $website, $reporting_fin_year, $incorporation_certificate,
                 $stock_name, $puc, $poc_name, $poc_phone, $poc_email,
                 $rep_b, $doba, $dops, $nol, $drm,
-                $tote, $male, $female, $malet, $femalet,
-                $p_no, $tor, $holding, $subsidiary, $ac,
-                $csr, $gre, $overview
+                $drm_contribution_export, $drm_types_customers, $dew, $dewda, $pirw,
+                $torpew, $holding, $csr_act, $csr_turnover, $csr_networth,
+                $gre, $overview
             ]);
 
             $response['status'] = 'success';
