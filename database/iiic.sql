@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 13, 2023 at 10:38 PM
+-- Generation Time: Nov 14, 2023 at 09:02 PM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 8.0.10
 
@@ -62,6 +62,13 @@ CREATE TABLE `section_a_form` (
   `overview` text DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
+--
+-- Dumping data for table `section_a_form`
+--
+
+INSERT INTO `section_a_form` (`cin`, `name`, `incorp_date`, `office_address`, `corporate_address`, `email`, `telephone`, `website`, `reporting_fin_year`, `incorporation_certificate`, `stock_name`, `puc`, `poc_name`, `poc_phone`, `poc_email`, `rep_b`, `doba`, `dops`, `nol`, `drm`, `drm_contribution_export`, `drm_types_customers`, `dew`, `dewda`, `pirw`, `torpew`, `holding`, `csr_act`, `csr_turnover`, `csr_networth`, `gre`, `overview`) VALUES
+('U74140DL2014PTC272628', 'Ashutosh Kumar Maurya', 1900, 'Devdanhall Christ University Kengeri Maysore Road', 'Dawaud Ansari Hospital Road', 'ashutosh.maurya@btech.christuniversity.in', '07523946373', 'https://www.g.com', 1900, '../uploads/sec_A/6553af3ebd21b_section_c_form.pdf', 'BSE, NSE, CSE', '24', 'Ashutosh Kumar Maurya', '7523946373', 'ashutosh.maurya@btech.christuniversity.in', 'Karnataka ', '1, 1, 1, 1', '1, 1, 1, 1', '1, 1, 1, 1, 1, 1', '1, 1', '1', '1', '1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 11, 1, 1, 1, 1, 1, 1, 1', '1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1', '1, 1, 1, 1, 1, 1', '1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 11, 1, 1, 1, 1, 1, 1', '1, 1, 1, 1, 11', 'yes', 1, 1, '1, 1, 1, 1, 11, 1, 1, 1, 1, 1, 1, 1, 1, 11, 1, 1, 1, 1, 1, 1, 1, 1, 11, 1, 1, 1, 1, 11, 1, 1, 1, 1, 1, 1, 1, 11, 1, 1, 11, 1, 1, 1, 1, 1, 1, 1, 1, 1, 11', '1, 1, 1, 1, 1, 1');
+
 -- --------------------------------------------------------
 
 --
@@ -70,22 +77,13 @@ CREATE TABLE `section_a_form` (
 
 CREATE TABLE `section_b_form` (
   `cin` varchar(21) NOT NULL,
-  `policyQuestion` enum('Yes','No') NOT NULL,
-  `policyLink` varchar(255) DEFAULT NULL,
-  `procedureQuestion` enum('Yes','No') NOT NULL,
-  `procedureLink` varchar(255) DEFAULT NULL,
-  `valueChainQuestion` enum('Yes','No') NOT NULL,
-  `valueChainLink` varchar(255) DEFAULT NULL,
-  `standardsQuestion` text NOT NULL,
-  `commitmentsQuestion` text NOT NULL,
-  `performanceQuestion` text NOT NULL,
-  `directorStatement` text NOT NULL,
-  `achievementsFile` text DEFAULT NULL,
-  `authorityDetails` text NOT NULL,
-  `sustainabilityCommitteeQuestion` enum('Yes','No') NOT NULL,
-  `committeeDetails` text DEFAULT NULL,
-  `assessmentQuestion` enum('Yes','No') NOT NULL,
-  `agencyDetails` text DEFAULT NULL
+  `dew` text DEFAULT NULL,
+  `stmtdir` text DEFAULT NULL,
+  `dthi` text DEFAULT NULL,
+  `enspec` text DEFAULT NULL,
+  `gre` text DEFAULT NULL,
+  `question11` text DEFAULT NULL,
+  `question12` text DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
