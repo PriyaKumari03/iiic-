@@ -339,12 +339,12 @@ function removeSpecificRow14() {
               updateSNoValues14();
           }
       } else {
-          alert("Invalid index. The specified row does not exist.");
+          alert("Invalid S.No. The specified row does not exist.");
       }
   } else if (parsedIndex === 1) {
-      alert("Cannot remove the first row. Please enter a valid index greater than 1.");
+      alert("Cannot remove the first row. Please enter a valid S.No. greater than 1.");
   } else {
-      alert("Invalid index. Please enter a valid positive number.");
+      alert("Invalid S.No. Please enter a valid S.No.");
   }
 
   // Clear the input value after removing the row
@@ -401,7 +401,7 @@ function addRowAtIndex14() {
         rows[i].cells[0].getElementsByTagName("input")[0].value = currentSNo + 0;
     }
   } else {
-    alert("Invalid index. Please enter a valid index greater than 1.");
+    alert("Invalid S.No. Please enter a valid S.No. greater than 1.");
   }
   // Clear the input value after adding the row
   indexInput14.value = "";
@@ -463,12 +463,12 @@ function removeSpecificRow15() {
               updateSNoValues15();
           }
       } else {
-          alert("Invalid index. The specified row does not exist.");
+          alert("Invalid S.No. The specified row does not exist.");
       }
   } else if (parsedIndex === 1) {
-      alert("Cannot remove the first row. Please enter a valid index greater than 1.");
+      alert("Cannot remove the first row. Please enter a valid S.No. greater than 1.");
   } else {
-      alert("Invalid index. Please enter a valid positive number.");
+      alert("Invalid S.No. Please enter a valid S.No.");
   }
 
   // Clear the input value after removing the row
@@ -526,7 +526,7 @@ function removeBottomRow15() {
         rows[i].cells[0].getElementsByTagName("input")[0].value = currentSNo + 0;
     }
   } else {
-    alert("Invalid index. Please enter a valid index greater than 1.");
+    alert("Invalid S.No. Please enter a valid S.No. greater than 1.");
   }
   // Clear the input value after adding the row
   indexInput15.value = "";
@@ -588,12 +588,12 @@ function removeSpecificRow21() {
               updateSNoValues21();
           }
       } else {
-          alert("Invalid index. The specified row does not exist.");
+          alert("Invalid S.No. The specified row does not exist.");
       }
   } else if (parsedIndex === 1) {
-      alert("Cannot remove the first row. Please enter a valid index greater than 1.");
+      alert("Cannot remove the first row. Please enter a valid S.No. greater than 1.");
   } else {
-      alert("Invalid index. Please enter a valid positive number.");
+      alert("Invalid S.No. Please enter a valid S.No.");
   }
 
   // Clear the input value after removing the row
@@ -651,7 +651,7 @@ function removeBottomRow21() {
         rows[i].cells[0].getElementsByTagName("input")[0].value = currentSNo + 0;
     }
   } else {
-    alert("Invalid index. Please enter a valid index greater than 1.");
+    alert("Invalid S.No. Please enter a valid S.No. greater than 1.");
   }
   // Clear the input value after adding the row
   indexInput21.value = "";
@@ -714,12 +714,12 @@ function removeSpecificRow24() {
               updateSNoValues24();
           }
       } else {
-          alert("Invalid index. The specified row does not exist.");
+          alert("Invalid S.No. The specified row does not exist.");
       }
   } else if (parsedIndex === 1) {
-      alert("Cannot remove the first row. Please enter a valid index greater than 1.");
+      alert("Cannot remove the first row. Please enter a valid S.No. greater than 1.");
   } else {
-      alert("Invalid index. Please enter a valid positive number.");
+      alert("Invalid S.No. Please enter a valid S.No.");
   }
 
   // Clear the input value after removing the row
@@ -777,7 +777,7 @@ function removeBottomRow24() {
         rows[i].cells[0].getElementsByTagName("input")[0].value = currentSNo + 0;
     }
   } else {
-    alert("Invalid index. Please enter a valid index greater than 1.");
+    alert("Invalid S.No. Please enter a valid S.No. greater than 1.");
   }
   // Clear the input value after adding the row
   indexInput24.value = "";
