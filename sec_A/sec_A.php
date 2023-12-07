@@ -159,7 +159,8 @@
             var end = 2023;
             var options = "";
             for (var year = start; year <= end; year++) {
-              options += "<option value='" + year + "'>" + year + "</option>";
+              var fiscalYear = "FY " + year + "-" + (year.toString().substr(2, 2) * 1 + 1).toString().padStart(2, "0");
+              options += "<option value='" + fiscalYear + "'>" + fiscalYear + "</option>";
             }
             document.getElementById("reporting_fin_year").innerHTML = options;
           </script>
@@ -171,6 +172,26 @@
               <label for="incorporation_certificate" class="form-label">Please provide your incorporation certificate as a PDF file (Max 5 MB)<span style="color: red;"> * </span></label>
             </div>
             <input type="file" id="incorporation_certificate" name="uploadedFiles[]" accept=".pdf" required multiple><br><br>
+            <script>
+                document.getElementById('incorporation_certificate').addEventListener('change', function () {
+                    const fileInput = this;
+                    const maxFileSizeInBytes = 5 * 1024 * 1024; // 5 MB
+                    const fileSizeMessage = document.getElementById('fileSizeMessage');
+                    let invalidFile = false;
+                    for (let i = 0; i < fileInput.files.length; i++) {
+                      const file = fileInput.files[i];
+                      if (file.size > maxFileSizeInBytes) {
+                        invalidFile = true;
+                        fileSizeMessage.textContent = 'File size exceeds the maximum allowed size of 5 MB.';
+                        fileInput.value = ''; // Clear the file input
+                        break;
+                      }
+                    }
+                    if (!invalidFile) {
+                      fileSizeMessage.textContent = ''; // Clear the message if the file is valid
+                    }
+                });
+            </script>
             <div id="fileSizeMessage" style="color: red;"></div> <!-- Message container -->
           </div>
           <!-- PDF UPLOAD End -->
@@ -220,7 +241,26 @@
                 <label for="poc-name" class="form-label">Name<span style="color: red;"> * </span></label>
               </div>  
               <input type="text" class="form-control" id="poc-name" name="poc_name" placeholder="Enter the name of the person to contact for queries" required>
+              <span id="poc-name-validation" style="color: red;"></span>         
             </div>
+            <script>
+              document.addEventListener('DOMContentLoaded', function () {
+                const pocNameInput = document.getElementById("poc-name");
+                const pocNameValidation = document.getElementById("poc-name-validation");
+
+                pocNameInput.addEventListener("input", function () {
+                  const name = pocNameInput.value;
+                  const nameRegex = /^[a-zA-Z\s.'-]*$/; // Allow letters, spaces, apostrophes, periods, and hyphens
+                  if (nameRegex.test(name)) {
+                    pocNameValidation.textContent = "Valid name";
+                    pocNameValidation.style.color = "green";
+                  } else {
+                    pocNameValidation.textContent = "Invalid name";
+                    pocNameValidation.style.color = "red";
+                  }
+                });
+              });
+            </script>
             <!-- Name of the Point of Contact End -->
             
             <!-- Phone Number of Point of Contact Start -->
@@ -228,10 +268,28 @@
               <div class="policy">
                 <label for="poc-phone" class="form-label">Phone Number<span style="color: red;"> * </span></label>
               </div>
-              <input type="text" class="form-control" id="poc-phone" name="poc_phone" required pattern="[0-9]+" placeholder="Enter the contact number" maxlength="10">
+              <input type="text" class="form-control" id="poc-phone" name="poc_phone" required placeholder="Enter the contact number"  maxlimit="10">
+              <span id="poc-phone-validation" style="color: red;"></span>
             </div> 
-            <!-- Phone validation message -->
-            <span id="poc-phone-validation" style="color: red;"></span>
+            <script>
+              document.addEventListener('DOMContentLoaded', function () {
+                const pocPhoneInput = document.getElementById("poc-phone");
+                const pocPhoneValidation = document.getElementById("poc-phone-validation");
+
+                pocPhoneInput.addEventListener("input", function () {
+                  const phoneNumber = pocPhoneInput.value;
+                  const phoneRegex = /^[0-9]+$/;
+
+                  if (phoneRegex.test(phoneNumber) && phoneNumber.length === 10) {
+                    pocPhoneValidation.textContent = "Valid phone number";
+                    pocPhoneValidation.style.color = "green";
+                  } else {
+                    pocPhoneValidation.textContent = "Invalid phone number (must be 10 digits)";
+                    pocPhoneValidation.style.color = "red";
+                  }
+                });
+              });
+            </script>
             <!-- Phone Number of Point of Contact End -->
 
             <!-- Email Address of Point of Contact Start -->
@@ -239,10 +297,26 @@
               <div class="policy">
                 <label for="poc-email" class="form-label">Email Address (Enter only official email ID)<span style="color: red;"> * </span></label>
               </div>
-              <input type="text" class="form-control" id="poc-email" name="poc_email" class="form-control" placeholder="Enter email address" required>
+              <input type="text" class="form-control" id="poc-email" name="poc_email" placeholder="Enter email address" required>
             </div>
-            <!-- Email validation message -->
             <span id="poc-email-validation" style="color: red;"></span>
+            <script>
+              document.addEventListener('DOMContentLoaded', function () {
+                const pocEmailInput = document.getElementById("poc-email");
+                  const pocEmailValidation = document.getElementById("poc-email-validation");
+                  pocEmailInput.addEventListener("input", function () {
+                    const email = pocEmailInput.value;
+                    const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+                    if (emailRegex.test(email)) {
+                      pocEmailValidation.textContent = "Valid email!";
+                      pocEmailValidation.style.color = "green";
+                    } else {
+                      pocEmailValidation.textContent = "Invalid email ID";
+                      pocEmailValidation.style.color = "red";
+                    }
+                  });
+              });
+            </script>
             <!-- Email Address of Point of Contact End -->
           </div>    
           <!-- Details of Point of Contact End -->
@@ -300,9 +374,9 @@
                 </tbody>
               </table>
               <div>
-                <input type="number" id="indexInput14" placeholder="Enter Index">
-                <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex14()">Add At Index</button>
-                <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow14()">Remove At Index</button>
+                <input type="number" id="indexInput14" placeholder="Enter S.No.">
+                <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex14()">Add S.No.</button>
+                <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow14()">Remove S.No.</button>
                 <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow14()">Add Row</button>
                 <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow14()">Remove Row</button>
               </div>
@@ -335,9 +409,9 @@
                 </tbody>
               </table>
               <div>
-                <input type="number" id="indexInput15" placeholder="Enter Index">
-                <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex15()">Add At Index</button>
-                <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow15()">Remove At Index</button>
+                <input type="number" id="indexInput15" placeholder="Enter S.No.">
+                <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex15()">Add S.No.</button>
+                <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow15()">Remove S.No.</button>
                 <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow15()">Add Row</button>
                 <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow15()">Remove Row</button>
               </div>
@@ -363,7 +437,7 @@
           <!-- Number of locations Start -->
           <div class="mb-3">
             <div class="policy">
-              <label for="nol" class="form-label">16. &nbsp;Number of locations where plants and/or operations/offices of the entity are situated:</label>
+              <label for="nol" class="form-label">16. &nbsp;National + International  locations where plants and/or operations/offices of the entity are situated:</label>
             </div>
             <div id="nol">
               <table id="p_nol">
@@ -378,20 +452,34 @@
                 <tbody>
                   <tr>
                     <th class="form-label" id="nol" id="p_nol" name="nol[]" class="form-control">National</th>
-                    <td><input type="number" id="nol" name="nol[]" class="form-control"></td>
-                    <td><input type="number" id="nol" name="nol[]" class="form-control"></td>
-                    <td><input type="number" id="nol" name="nol[]" class="form-control"></td>
+                    <td><input type="number" name="nol[]" oninput="calculate16(this)" class="form-control nol-input"></td>
+                    <td><input type="number" name="nol[]" oninput="calculate16(this)" class="form-control nol-input"></td>
+                    <td><input type="number" name="nol[]" class="form-control nol-total" readonly></td>
                   </tr>
                   <tr>
                     <th class="form-label" id="nol" id="p_nol" name="nol[]" class="form-control">International</th>
-                    <td><input type="number" id="nol" name="nol[]" class="form-control"></td>
-                    <td><input type="number" id="nol" name="nol[]" class="form-control"></td>
-                    <td><input type="number" id="nol" name="nol[]" class="form-control"></td>
+                    <td><input type="number" id="nol" name="nol[]" oninput="calculate16(this)" class="form-control nol-input"></td>
+                    <td><input type="number" id="nol" name="nol[]" oninput="calculate16(this)" class="form-control nol-input"></td>
+                    <td><input type="number" id="nol" name="nol[]" class="form-control nol-total" readonly></td>
                   </tr>
                 </tbody>
               </table>
             </div>  
           </div>
+          <!--To calculate total value-->
+          <script>
+            function calculate16(input) {
+              var row = input.parentNode.parentNode; // Get the parent row
+              var inputs = row.querySelectorAll('.nol-input');
+              var totalInput = row.querySelector('.nol-total');
+
+              var total = 0;
+              for (var i = 0; i < inputs.length; i++) {
+                total += parseInt(inputs[i].value) || 0;
+              }
+              totalInput.value = total;
+            }
+          </script>
           <!-- Number of locations End -->
 
           <!-- Details regarding markets served by the entity Start -->
@@ -402,7 +490,7 @@
             <!-- Number of locations START -->
             <div class="mb-3 invisible_container">
               <div class="policy">
-                <label for="drm" class="form-label">a. &nbsp;Number of locations:</label>
+                <label for="drm" class="form-label">a. &nbsp;National + International locations:</label>
               </div>
               <div id="drm">
                 <table id="p_drm">
@@ -414,11 +502,11 @@
                   </thead>
                   <tbody>
                     <tr>
-                      <th class="form-label" id="drm" id="p_drm" name="drm[]" class="form-control">National</th>
+                      <th class="form-label" id="drm" id="p_drm" name="drm[]" class="form-control">National (No. of States)</th>
                       <td><input type="number" id="drm" name="drm[]" class="form-control"></td>
                     </tr>
                     <tr>
-                      <th class="form-label" id="drm" id="p_drm" name="drm[]" class="form-control">International</th>
+                      <th class="form-label" id="drm" id="p_drm" name="drm[]" class="form-control">International (No. of Countries)</th>
                       <td><input type="number" id="drm" name="drm[]" class="form-control"></td>
                     </tr>
                   </tbody>
@@ -439,7 +527,7 @@
             <!-- A brief on types of customers START -->
             <div class="mb-3 invisible_container">
               <div class="policy">
-                <label for="drm_types_customers" class="form-label">c. &nbsp;c. A brief on types of customers:</label>
+                <label for="drm_types_customers" class="form-label">c. &nbsp; A brief on types of customers:</label>
               </div>
               <input type="text" class="form-control" id="drm_types_customers" name="drm_types_customers" placeholder="A brief on types of customers">
             </div>
@@ -470,7 +558,7 @@
           <!-- Details of Employees & Workers Start -->
           <div class="mb-3 invisible_container">
             <div class="policy">
-              <label for="dew" class="form-label">a.Details of Employees & Workers</label>
+              <label for="dew" class="form-label">a. &nbsp; Details of Employees & Workers</label>
             </div>
             <div id="dew">
               <table id="p_dew">
@@ -493,29 +581,29 @@
                 <tr>
                   <th class="form-label">1.</th>
                   <th class="form-label">Permanent(D)</th>
-                  <td><input type="number" id="dew" name="dew[]" class="form-control" required></td>
-                  <td><input type="number" id="dew" name="dew[]" class="form-control" required></td>
-                  <td><input type="number" id="dew" name="dew[]" class="form-control" required></td>
-                  <td><input type="number" id="dew" name="dew[]" class="form-control" required></td>
-                  <td><input type="number" id="dew" name="dew[]" class="form-control" required></td>
+                  <td><input type="number" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 3)" required></td>
+                  <td><input type="number" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 3)" required></td>
+                  <td><input type="number" id="dew" name="dew[]" class="form-control" readonly></td>
+                  <td><input type="number" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 3)" required></td>
+                  <td><input type="number" id="dew" name="dew[]" class="form-control" readonly></td>
                 </tr>
                 <tr>
                   <th class="form-label">2.</th>
                   <th class="form-label">Other than Permanent(E)</th>  
-                  <td><input type="number" id="dew" name="dew[]" class="form-control" required></td>
-                  <td><input type="number" id="dew" name="dew[]" class="form-control" required></td>
-                  <td><input type="number" id="dew" name="dew[]" class="form-control" required></td>
-                  <td><input type="number" id="dew" name="dew[]" class="form-control" required></td>
-                  <td><input type="number" id="dew" name="dew[]" class="form-control" required></td>
+                  <td><input type="number" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 4)" required></td>
+                  <td><input type="number" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 4)" required></td>
+                  <td><input type="number" id="dew" name="dew[]" class="form-control" readonly></td>
+                  <td><input type="number" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 4)" required></td>
+                  <td><input type="number" id="dew" name="dew[]" class="form-control" readonly></td>
                 </tr>
                 <tr>
                   <th class="form-label">3.</th>
                   <th class="form-label">Total employees(D + E)</th>
-                  <td><input type="number" id="dew" name="dew[]" class="form-control" required></td>
-                  <td><input type="number" id="dew" name="dew[]" class="form-control" required></td>
-                  <td><input type="number" id="dew" name="dew[]" class="form-control" required></td>
-                  <td><input type="number" id="dew" name="dew[]" class="form-control" required></td>
-                  <td><input type="number" id="dew" name="dew[]" class="form-control" required></td>
+                  <td><input type="number" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 5)" required></td>
+                  <td><input type="number" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 5)" required></td>
+                  <td><input type="number" id="dew" name="dew[]" class="form-control" readonly></td>
+                  <td><input type="number" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 5)" required></td>
+                  <td><input type="number" id="dew" name="dew[]" class="form-control" readonly></td>
                 </tr>
                 <tr>
                   <th class="form-label" colspan="7"><u> WORKERS </u></th>
@@ -523,31 +611,52 @@
                 <tr>
                   <th class="form-label">4.</th>
                   <th class="form-label">Permanent (F)</th>
-                  <td><input type="number" id="dew" name="dew[]" class="form-control" required></td>
-                  <td><input type="number" id="dew" name="dew[]" class="form-control" required></td>
-                  <td><input type="number" id="dew" name="dew[]" class="form-control" required></td>
-                  <td><input type="number" id="dew" name="dew[]" class="form-control" required></td>
-                  <td><input type="number" id="dew" name="dew[]" class="form-control" required></td>
+                  <td><input type="number" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 7)" required></td>
+                  <td><input type="number" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 7)" required></td>
+                  <td><input type="number" id="dew" name="dew[]" class="form-control" readonly></td>
+                  <td><input type="number" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 7)" required></td>
+                  <td><input type="number" id="dew" name="dew[]" class="form-control" readonly></td>
                 </tr>
                 <tr>
                   <th class="form-label">5.</th>
                   <th class="form-label">Other than Permanent (G)</th>
-                  <td><input type="number" id="dew" name="dew[]" class="form-control" required></td>
-                  <td><input type="number" id="dew" name="dew[]" class="form-control" required></td>
-                  <td><input type="number" id="dew" name="dew[]" class="form-control" required></td>
-                  <td><input type="number" id="dew" name="dew[]" class="form-control" required></td>
-                  <td><input type="number" id="dew" name="dew[]" class="form-control" required></td>
+                  <td><input type="number" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 8)" required></td>
+                  <td><input type="number" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 8)" required></td>
+                  <td><input type="number" id="dew" name="dew[]" class="form-control" readonly></td>
+                  <td><input type="number" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 8)" required></td>
+                  <td><input type="number" id="dew" name="dew[]" class="form-control" readonly></td>
                 </tr>
                 <tr>
                   <th class="form-label">6.</th>
                   <th class="form-label">Total workers (F + G)</th>
-                  <td><input type="number" id="dew" name="dew[]" class="form-control" required></td>
-                  <td><input type="number" id="dew" name="dew[]" class="form-control" required></td>
-                  <td><input type="number" id="dew" name="dew[]" class="form-control" required></td>
-                  <td><input type="number" id="dew" name="dew[]" class="form-control" required></td>
-                  <td><input type="number" id="dew" name="dew[]" class="form-control" required></td>
+                  <td><input type="number" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 9)" required></td>
+                  <td><input type="number" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 9)" required></td>
+                  <td><input type="number" id="dew" name="dew[]" class="form-control" readonly></td>
+                  <td><input type="number" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 9)" required></td>
+                  <td><input type="number" id="dew" name="dew[]" class="form-control" readonly></td>
                 </tr>
               </table>
+              <!--Function to calculate percentages-->
+              <script>
+                // Function to calculate percentages
+                function calculatePercentages18a(tableId, rowIndex) {
+                    var table = document.getElementById(tableId);
+                    var row = table.rows[rowIndex];
+                    
+                    var totalA = parseFloat(row.cells[2].querySelector('input').value) || 0;
+                    var maleB = parseFloat(row.cells[3].querySelector('input').value) || 0;
+                    var femaleC = parseFloat(row.cells[5].querySelector('input').value) || 0;
+
+                    // Calculate percentages and update the respective cells
+                    row.cells[4].querySelector('input').value = calculatePercentage(maleB, totalA);
+                    row.cells[6].querySelector('input').value = calculatePercentage(femaleC, totalA);
+                }
+
+                // Helper function to calculate percentage
+                function calculatePercentage(part, whole) {
+                    return (part / whole * 100).toFixed(2); // Adjust the number of decimal places as needed
+                }
+              </script>
             </div>
             <!-- 18a. Employees and workers (including differently abled) End -->
 
@@ -576,29 +685,29 @@
                 <tr>
                   <th class="form-label" id="dewda" name="dewda[]">1.</th>
                   <th class="form-label" id="dewda" name="dewda[]">Permanent(D)</th>
-                  <td><input type="number" id="dewda" name="dewda[]" class="form-control" required></td>
-                  <td><input type="number" id="dewda" name="dewda[]" class="form-control" required></td>
-                  <td><input type="number" id="dewda" name="dewda[]" class="form-control" required></td>
-                  <td><input type="number" id="dewda" name="dewda[]" class="form-control" required></td>
-                  <td><input type="number" id="dewda" name="dewda[]" class="form-control" required></td>
+                  <td><input type="number" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 3)" required></td>
+                  <td><input type="number" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 3)" required></td>
+                  <td><input type="number" id="dewda" name="dewda[]" class="form-control" readonly></td>
+                  <td><input type="number" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 3)" required></td>
+                  <td><input type="number" id="dewda" name="dewda[]" class="form-control" readonly></td>
                 </tr>
                 <tr>
                   <th class="form-label" id="dewda" name="dewda[]">2.</th>
                   <th class="form-label" id="dewda" name="dewda[]">Other than Permanent(E)</th>
-                  <td><input type="number" id="dewda" name="dewda[]" class="form-control" required></td>
-                  <td><input type="number" id="dewda" name="dewda[]" class="form-control" required></td>
-                  <td><input type="number" id="dewda" name="dewda[]" class="form-control" required></td>
-                  <td><input type="number" id="dewda" name="dewda[]" class="form-control" required></td>
-                  <td><input type="number" id="dewda" name="dewda[]" class="form-control" required></td>
+                  <td><input type="number" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 4)"  required></td>
+                  <td><input type="number" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 4)"  required></td>
+                  <td><input type="number" id="dewda" name="dewda[]" class="form-control" readonly></td>
+                  <td><input type="number" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 4)"  required></td>
+                  <td><input type="number" id="dewda" name="dewda[]" class="form-control" readonly></td>
                 </tr>
                 <tr>
                   <th class="form-label" id="dewda" name="dewda[]">3.</th>
-                  <th class="form-label" id="dewda" name="dewda[]">Total employees(D + E)</th>
-                  <td><input type="number" id="dewda" name="dewda[]" class="form-control" required></td>
-                  <td><input type="number" id="dewda" name="dewda[]" class="form-control" required></td>
-                  <td><input type="number" id="dewda" name="dewda[]" class="form-control" required></td>
-                  <td><input type="number" id="dewda" name="dewda[]" class="form-control" required></td>
-                  <td><input type="number" id="dewda" name="dewda[]" class="form-control" required></td>
+                  <th class="form-label" id="dewda" name="dewda[]">Total differently abled employees(D + E)</th>
+                  <td><input type="number" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 5)"  required></td>
+                  <td><input type="number" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 5)"  required></td>
+                  <td><input type="number" id="dewda" name="dewda[]" class="form-control" readonly></td>
+                  <td><input type="number" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 5)"  required></td>
+                  <td><input type="number" id="dewda" name="dewda[]" class="form-control" readonly></td>
                 </tr>
                 <tr>
                   <th class="form-label" colspan="7"><u> DIFFERENTLY ABLED WORKERS </u></th>
@@ -606,31 +715,53 @@
                 <tr>
                   <th class="form-label" id="dewda" name="dewda[]">4.</th>
                   <th class="form-label" id="dewda" name="dewda[]">Permanent (F)</th>
-                  <td><input type="number" id="dewda" name="dewda[]" class="form-control" required></td>
-                  <td><input type="number" id="dewda" name="dewda[]" class="form-control" required></td>
-                  <td><input type="number" id="dewda" name="dewda[]" class="form-control" required></td>
-                  <td><input type="number" id="dewda" name="dewda[]" class="form-control" required></td>
-                  <td><input type="number" id="dewda" name="dewda[]" class="form-control" required></td>
+                  <td><input type="number" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 7)"  required></td>
+                  <td><input type="number" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 7)"  required></td>
+                  <td><input type="number" id="dewda" name="dewda[]" class="form-control" readonly></td>
+                  <td><input type="number" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 7)"  required></td>
+                  <td><input type="number" id="dewda" name="dewda[]" class="form-control" readonly></td>
                 </tr>
                 <tr>
                   <th class="form-label" id="dewda" name="dewda[]">5.</th>
                   <th class="form-label" id="dewda" name="dewda[]">Other than Permanent (G)</th>
-                  <td><input type="number" id="dewda" name="dewda[]" class="form-control" required></td>
-                  <td><input type="number" id="dewda" name="dewda[]" class="form-control" required></td>
-                  <td><input type="number" id="dewda" name="dewda[]" class="form-control" required></td>
-                  <td><input type="number" id="dewda" name="dewda[]" class="form-control" required></td>
-                  <td><input type="number" id="dewda" name="dewda[]" class="form-control" required></td>
+                  <td><input type="number" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 8)" required></td>
+                  <td><input type="number" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 8)" required></td>
+                  <td><input type="number" id="dewda" name="dewda[]" class="form-control" readonly></td>
+                  <td><input type="number" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 8)" required></td>
+                  <td><input type="number" id="dewda" name="dewda[]" class="form-control" readonly></td>
                 </tr>
                 <tr>
                   <th class="form-label" id="dewda" name="dewda[]">6.</th>
-                  <th class="form-label" id="dewda" name="dewda[]">Total workers (F + G)</th>
-                  <td><input type="number" id="dewda" name="dewda[]" class="form-control" required></td>
-                  <td><input type="number" id="dewda" name="dewda[]" class="form-control" required></td>
-                  <td><input type="number" id="dewda" name="dewda[]" class="form-control" required></td>
-                  <td><input type="number" id="dewda" name="dewda[]" class="form-control" required></td>
-                  <td><input type="number" id="dewda" name="dewda[]" class="form-control" required></td>
+                  <th class="form-label" id="dewda" name="dewda[]">Total differently abled workers (F + G)</th>
+                  <td><input type="number" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 9)" required></td>
+                  <td><input type="number" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 9)" required></td>
+                  <td><input type="number" id="dewda" name="dewda[]" class="form-control" readonly></td>
+                  <td><input type="number" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 9)" required></td>
+                  <td><input type="number" id="dewda" name="dewda[]" class="form-control" readonly></td>
                 </tr>
               </table>
+              <!--Function to calculate percentages-->
+              <script>
+                // Function to calculate percentages
+                function calculatePercentages18b(tableId, rowIndex) {
+                    var table = document.getElementById(tableId);
+                    var row = table.rows[rowIndex];
+                    
+                    var totalA = parseFloat(row.cells[2].querySelector('input').value) || 0;
+                    var maleB = parseFloat(row.cells[3].querySelector('input').value) || 0;
+                    var femaleC = parseFloat(row.cells[5].querySelector('input').value) || 0;
+
+                    // Calculate percentages and update the respective cells
+                    row.cells[4].querySelector('input').value = calculatePercentage(maleB, totalA);
+                    row.cells[6].querySelector('input').value = calculatePercentage(femaleC, totalA);
+                }
+
+
+                // Helper function to calculate percentage
+                function calculatePercentage(part, whole) {
+                    return (part / whole * 100).toFixed(2); // Adjust the number of decimal places as needed
+                }
+              </script>
             </div>
           </div>
           <!-- 18b. Differently abled employees and workers start -->
@@ -653,17 +784,28 @@
                 </tr>
                 <tr>
                   <th class="form-label">Board of Directors</th>
-                  <td><input type="number" id="pirw" name="pirw[]" class="form-control" required></td>
-                  <td><input type="number" id="pirw" name="pirw[]" class="form-control" required></td>
+                  <td><input type="number" id="pirw" name="pirw[]" oninput="calculate19(this)" class="form-control" required></td>
+                  <td><input type="number" id="pirw" name="pirw[]" oninput="calculate19(this)" class="form-control" required></td>
                   <td><input type="number" id="pirw" name="pirw[]" class="form-control" required></td>
                 </tr>
                 <tr>
                   <th class="form-label">Key Management <br> Personnel</th>
-                  <td><input type="number" id="pirw" name="pirw[]" class="form-control" required></td>
-                  <td><input type="number" id="pirw" name="pirw[]" class="form-control" required></td>
+                  <td><input type="number" id="pirw" name="pirw[]" oninput="calculate19(this)" class="form-control" required></td>
+                  <td><input type="number" id="pirw" name="pirw[]" oninput="calculate19(this)" class="form-control" required></td>
                   <td><input type="number" id="pirw" name="pirw[]" class="form-control" required></td>
                 </tr>
               </table>
+              <!--To calculate percentage-->
+              <script>
+                  function calculate19(input) {
+                    var row = input.closest('tr'); // Get the closest parent row
+                    var A = parseInt(row.cells[1].querySelector('input').value) || 0;
+                    var B = parseInt(row.cells[2].querySelector('input').value) || 0;
+                    var per = (B / A * 100).toFixed(2);
+
+                    row.cells[3].querySelector('input').value = per;
+                  }
+              </script>
             </div>
           </div>
           <!-- Participation/Inclusion/Representation of Women End -->
@@ -694,29 +836,56 @@
                 </tr>
                 <tr>
                   <th class="form-label">Permanent Employees</th>
-                  <td><input type="number" id="torpew" name="torpew[]" class="form-control" required></td>
-                  <td><input type="number" id="torpew" name="torpew[]" class="form-control" required></td>
-                  <td><input type="number" id="torpew" name="torpew[]" class="form-control" required></td>
-                  <td><input type="number" id="torpew" name="torpew[]" class="form-control" required></td>
-                  <td><input type="number" id="torpew" name="torpew[]" class="form-control" required></td>
-                  <td><input type="number" id="torpew" name="torpew[]" class="form-control" required></td>
-                  <td><input type="number" id="torpew" name="torpew[]" class="form-control" required></td>
-                  <td><input type="number" id="torpew" name="torpew[]" class="form-control" required></td>
-                  <td><input type="number" id="torpew" name="torpew[]" class="form-control" required></td>
+                  <td><input type="number" id="torpew" name="torpew[]" class="form-control" oninput="calculate20a(this)" required></td>
+                  <td><input type="number" id="torpew" name="torpew[]" class="form-control" oninput="calculate20a(this)" required></td>
+                  <td><input type="number" id="torpew" name="torpew[]" class="form-control" readonly></td>
+                  <td><input type="number" id="torpew" name="torpew[]" class="form-control" oninput="calculate20b(this)" required></td>
+                  <td><input type="number" id="torpew" name="torpew[]" class="form-control" oninput="calculate20b(this)" required></td>
+                  <td><input type="number" id="torpew" name="torpew[]" class="form-control" readonly></td>
+                  <td><input type="number" id="torpew" name="torpew[]" class="form-control" oninput="calculate20c(this)" required></td>
+                  <td><input type="number" id="torpew" name="torpew[]" class="form-control" oninput="calculate20c(this)" required></td>
+                  <td><input type="number" id="torpew" name="torpew[]" class="form-control" readonly></td>
                 </tr>
                 <tr>
                   <th class="form-label">Permanent Workers</th>
-                  <td><input type="number" id="torpew" name="torpew[]" class="form-control" required></td>
-                  <td><input type="number" id="torpew" name="torpew[]" class="form-control" required></td>
-                  <td><input type="number" id="torpew" name="torpew[]" class="form-control" required></td>
-                  <td><input type="number" id="torpew" name="torpew[]" class="form-control" required></td>
-                  <td><input type="number" id="torpew" name="torpew[]" class="form-control" required></td>
-                  <td><input type="number" id="torpew" name="torpew[]" class="form-control" required></td>
-                  <td><input type="number" id="torpew" name="torpew[]" class="form-control" required></td>
-                  <td><input type="number" id="torpew" name="torpew[]" class="form-control" required></td>
-                  <td><input type="number" id="torpew" name="torpew[]" class="form-control" required></td>
+                  <td><input type="number" id="torpew" name="torpew[]" class="form-control" oninput="calculate20a(this)" required></td>
+                  <td><input type="number" id="torpew" name="torpew[]" class="form-control" oninput="calculate20a(this)" required></td>
+                  <td><input type="number" id="torpew" name="torpew[]" class="form-control" readonly></td>
+                  <td><input type="number" id="torpew" name="torpew[]" class="form-control" oninput="calculate20b(this)" required></td>
+                  <td><input type="number" id="torpew" name="torpew[]" class="form-control" oninput="calculate20b(this)" required></td>
+                  <td><input type="number" id="torpew" name="torpew[]" class="form-control" readonly></td>
+                  <td><input type="number" id="torpew" name="torpew[]" class="form-control" oninput="calculate20c(this)" required></td>
+                  <td><input type="number" id="torpew" name="torpew[]" class="form-control" oninput="calculate20c(this)" required></td>
+                  <td><input type="number" id="torpew" name="torpew[]" class="form-control" readonly></td>
                 </tr>
               </table>
+              <!--To calculate totals-->
+              <script>
+                  function calculate20a(input) {
+                    var row = input.closest('tr'); // Get the closest parent row
+                    var male = parseInt(row.cells[1].querySelector('input').value) || 0;
+                    var female = parseInt(row.cells[2].querySelector('input').value) || 0;
+                    var totalA = male + female;
+
+                    row.cells[3].querySelector('input').value = totalA;
+                  }
+                  function calculate20b(input) {
+                    var row = input.closest('tr'); // Get the closest parent row
+                    var male = parseInt(row.cells[4].querySelector('input').value) || 0;
+                    var female = parseInt(row.cells[5].querySelector('input').value) || 0;
+                    var totalB = male + female;
+
+                    row.cells[6].querySelector('input').value = totalB;
+                  }
+                  function calculate20c(input) {
+                    var row = input.closest('tr'); // Get the closest parent row
+                    var male = parseInt(row.cells[7].querySelector('input').value) || 0;
+                    var female = parseInt(row.cells[8].querySelector('input').value) || 0;
+                    var totalC = male + female;
+
+                    row.cells[9].querySelector('input').value = totalC;
+                  }
+              </script>
             </div>
           </div>
           <!-- Turnover rate for permanent employees & workers (For past 3 years) End -->
@@ -763,9 +932,9 @@
                 <tbody>
               </table>
               <div>
-                <input type="number" id="indexInput21" placeholder="Enter Index">
-                <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex21()">Add At Index</button>
-                <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow21()">Remove At Index</button>
+                <input type="number" id="indexInput21" placeholder="Enter S.No.">
+                <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex21()">Add S.No.</button>
+                <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow21()">Remove S.No.</button>
                 <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow21()">Add Row</button>
                 <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow21()">Remove Row</button>
               </div>
@@ -968,9 +1137,9 @@
                 </tbody>
               </table>
               <div>
-                <input type="number" id="indexInput24" placeholder="Enter Index">
-                <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex24()">Add At Index</button>
-                <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow24()">Remove At Index</button>
+                <input type="number" id="indexInput24" placeholder="Enter S.No.">
+                <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex24()">Add S.No.</button>
+                <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow24()">Remove S.No.</button>
                 <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow24()">Add Row</button>
                 <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow24()">Remove Row</button>
               </div>
@@ -984,7 +1153,7 @@
         <!-- Add this part at the end of your form -->
         <div class="mb-3">
           <!-- <button type="button" class="btn btn-primary" onclick="printReview()">Review Form</button> -->
-          <button type="submit" class="btn btn-primary" onclick="return confirmSubmission()">Submmit</button>
+          <button type="submit" class="btn btn-primary" onclick="return confirmSubmission()">Submit</button>
         </div>
       </form>
     </div>

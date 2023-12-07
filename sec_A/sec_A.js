@@ -48,7 +48,6 @@ emailInput.addEventListener("input", function() {
     }
 });
 
-
 //telephone validation
 const contactInput = document.getElementById("contact");
 const telephoneValidation = document.getElementById("Telephone-validation");
@@ -66,78 +65,6 @@ contactInput.addEventListener("input", function() {
     telephoneValidation.textContent = "";
     telephoneValidation.style.color = "green"; // Set the error message color to green when input is valid
     contactInput.setCustomValidity("");
-  }
-});
-
-
-//Q9-Financial year for which reporting is being done *
-
-//JS Code to check the size of the pdf
-// Function to check the file size of the pdf before submitting the form
-document.getElementById('incorporation_certificate').addEventListener('change', function () {
-    const fileInput = this;
-    const maxFileSizeInBytes = 5 * 1024 * 1024; // 5 MB
-    const fileSizeMessage = document.getElementById('fileSizeMessage');
-    let invalidFile = false;
-    for (let i = 0; i < fileInput.files.length; i++) {
-      const file = fileInput.files[i];
-      if (file.size > maxFileSizeInBytes) {
-        invalidFile = true;
-        fileSizeMessage.textContent = 'File size exceeds the maximum allowed size of 5 MB.';
-        fileInput.value = ''; // Clear the file input
-        break;
-      }
-    }
-    if (!invalidFile) {
-      fileSizeMessage.textContent = ''; // Clear the message if the file is valid
-    }
-});
-
-//POC fields validation
-//const pocNameInput = document.getElementById("poc-name");
-const pocNameInput = document.getElementById("poc-name");
-const pocPhoneInput = document.getElementById("poc-phone");
-const pocEmailInput = document.getElementById("poc-email");
-
-//poc-name
-const pocNameValidation = document.getElementById("poc-name-validation");
-
-  pocNameInput.addEventListener("input", function() {
-    this.value = this.value.replace(/[^A-Za-z\s.]/g, '');
-    const pocName = pocNameInput.value;
-    const regex = /^[A-Za-z\s.]+$/; // Allow uppercase, lowercase, space, and dot
-    if (!regex.test(pocName)) {
-      pocNameValidation.textContent = "Only uppercase, lowercase, spaces, and dots are allowed.";
-      pocNameInput.setCustomValidity("Invalid input");
-    } else {
-      pocNameValidation.textContent = "";
-      pocNameInput.setCustomValidity("");
-    }
-  });
-
-//poc-phone number
-pocPhoneInput.addEventListener("input", function () {
-    // Remove non-digit characters from the phone number
-    this.value = this.value.replace(/[^0-9]/g, '');
-    const phoneRegex = /^[0-9]+$/;
-    const phoneValidation = document.getElementById("poc-phone-validation");
-    if (phoneRegex.test(this.value)) {
-      phoneValidation.textContent = "";
-    } else {s
-      phoneValidation.textContent = "Invalid phone number format. Please enter digits only.";
-    }
-});
-//poc-email
-const pocValidationMessage = document.getElementById("poc-email-validation"); // Unique ID
-pocEmailInput.addEventListener("input", function() {
-  const email = pocEmailInput.value;
-  const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
-  if (emailRegex.test(email)) {
-    pocValidationMessage.textContent = "Valid email!";
-    pocValidationMessage.style.color = "green";
-  } else {
-    pocValidationMessage.textContent = "Invalid email ID";
-    pocValidationMessage.style.color = "red";
   }
 });
 
