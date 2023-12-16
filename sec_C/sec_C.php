@@ -26,6 +26,11 @@
             $cin = $_SESSION['cin'];
     ?>
     <body>
+        <!------------------------------------------------------------------------------------------------------------------------->
+        <!--                                                                                                                     -->
+        <!--                                                HEADER                                                               -->
+        <!--                                                                                                                     -->
+        <!-------------------------------------------------------------------------------------------------------------------------> 
         <header class="header">
             <h1 class="logo"><a href="#">CUSRS</a></h1>
             <div style="padding-left:20%;" id="cinDiv">
@@ -42,9 +47,10 @@
                 <li><a href="#">Contact</a></li>
             </ul>
         </header>
+
         <!------------------------------------------------------------------------------------------------------------------------->
         <!--                                                                                                                     -->
-        <!--                                                Main Division                                                        -->
+        <!--                                                MAIN DIVISION                                                        -->
         <!--                                                                                                                     -->
         <!-------------------------------------------------------------------------------------------------------------------------> 
         <div class="container">
@@ -195,20 +201,24 @@
                                 <label for="appeal" class="form-label">3. Of the instances disclosed in Question 2 above, details of the Appeal/ Revision preferred in cases where monetary or non-monetary action has been appealed.</label>
                             </div>
                             <div id="appeal" class="responsive-table">
-                                <table id="appeal">
-                                    <tr>
-                                        <th class="form-label">S.No.</th>
-                                        <th class="form-label">Case Details</th>
-                                        <th class="form-label">Name of the regulatory/enforcement agencies/judicial instutions</th>
-                                    </tr>
-                                    <tr>
-                                        <td style="width:5%;"><input type="number" id="appeal" id="p_appeal" name="appeal[]" class="table-control" required value="1" readonly></td>
-                                        <td><input type="text" id="appeal" name="appeal[]" class="form-control" required></td>
-                                        <td><input type="text" id="appeal" name="appeal[]" class="form-control" required></td>
-                                    </tr>
+                                <table id="p_appeal">
+                                    <thead>
+                                        <tr>
+                                            <th class="form-label">S.No.</th>
+                                            <th class="form-label">Case Details</th>
+                                            <th class="form-label">Name of the regulatory/enforcement agencies/judicial instutions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td style="width:5%;"><input type="number" id="appeal" id="p_appeal" name="appeal[]" class="table-control" required value="1" readonly></td>
+                                            <td><input type="text" id="appeal" name="appeal[]" class="form-control" required></td>
+                                            <td><input type="text" id="appeal" name="appeal[]" class="form-control" required></td>
+                                        </tr>
+                                    </tbody>
                                 </table>
                                 <div>
-                                    <input type="number" id="indexInput1_3" placeholder="Enter Index">
+                                    <input type="number" id="indexInput1_3" placeholder="Enter S.No.">
                                     <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex1_3()">Add At Index</button>
                                     <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow1_3()">Remove At Index</button>
                                     <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow1_3()">Add Row</button>
@@ -325,17 +335,21 @@
                             </div>
                             <div id="awarenessProgrammes" class="responsive-table">
                                 <table id="p_awarenessProgrammes">
-                                    <tr>
-                                        <th class="form-label">S.No</th>
-                                        <th class="form-label">Total number of awareness programes held</th>
-                                        <th class="form-label">Topics/Principles Covered Under the training</th>
-                                        <th class="form-label">%age of value chain partners covered (by value of business done with such partners)under the awareness programmes</th>
-                                    </tr>
+                                    <thead>
+                                        <tr>
+                                            <th class="form-label">S.No</th>
+                                            <th class="form-label">Total number of awareness programes held</th>
+                                            <th class="form-label">Topics/Principles Covered Under the training</th>
+                                            <th class="form-label">%age of value chain partners covered (by value of business done with such partners)under the awareness programmes</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
                                         <tr><td style="width:5%;"><input type="number" id="awarenessProgrammes" id="p_awarenessProgrammes" name="awarenessProgrammes[]" class="table-control" required value="1" readonly></td>
                                         <td><input type="text" id="awarenessProgrammes" name="awarenessProgrammes[]" class="form-control" required></td>
                                         <td><input type="text" id="awarenessProgrammes" name="awarenessProgrammes[]" class="form-control" required></td>
                                         <td><input type="text" id="awarenessProgrammes" name="awarenessProgrammes[]" class="form-control" required></td>
-                                    </tr>
+                                        </tr>
+                                    </tbody>
                                 </table>
                                 <div>
                                     <input type="number" id="indexInput1_p_1" placeholder="Enter Index">
@@ -385,7 +399,7 @@
                 <!-------------------------------------------------------------------------------------------------------------------------> 
                 <div id="prin2" class="prin-div">
                     <div class="policy">
-                        <h3>PRINCIPLE 2: BUSINESSES SHOULD RESPECT THE INTERESTS OF & BE RESPONSIVE TO ALL THEIR STAKEHOLDERS.</h3>
+                        <h3>PRINCIPLE 2:BUSINESSES SHOULD PROVIDE GOODS AND SERVICES IN A MANNER THAT IS SUSTAINABLE AND SAFE.</h3>
                     </div>
 
                     <!------------------------------------------------------------------------------------------------------------------------->
@@ -463,6 +477,7 @@
                                 <option value="">Select an option</option>
                                 <option value="Yes">Yes</option>
                                 <option value="No">No</option>
+                                <option value="Still under process">Still under process</option>
                             </select>
                         </div>
                         <!--hidden-->
@@ -489,25 +504,28 @@
                             </div>
                             <div id="lcaConducted2" class="responsive-table">
                                 <table id="p_lcaConducted2">
-                                    <tr>
-                                        <th class="form-label">S.No.</th>
-                                        <th class="form-label">NIC code</th>
-                                        <th class="form-label">Name of Product/Service</th>
-                                        <th class="form-label">% of total Turnover contributed</th>
-                                        <th class="form-label">Boundary for which the life Cycle Perspective/Assessment was conducted</th>
-                                        <th class="form-label">Whether conducted by independent external agency(Yes/No)</th>
-                                        <th class="form-label">Results communicated in public domain(yes/no) if yes, provide the web-link</th>
-                                    </tr>
-                                    <tr>
-                                        <tr><td style="width:5%;"><input type="number" id="lcaConducted2" id="p_lcaConducted2" name="lcaConducted2[]" class="table-control" required value="1" readonly></td>
-                                        <td><input type="text" id="lcaConducted2" name="lcaConducted2[]" class="form-control" required></td>
-                                        <td><input type="text" id="lcaConducted2" name="lcaConducted2[]" class="form-control" required></td>
-                                        <td><input type="text" id="lcaConducted2" name="lcaConducted2[]" class="form-control" required></td>
-                                        <td><input type="text" id="lcaConducted2" name="lcaConducted2[]" class="form-control" required></td>
-                                        <td><input type="text" id="lcaConducted2" name="lcaConducted2[]" class="form-control" required></td>
-                                        <td><input type="text" id="lcaConducted2" name="lcaConducted2[]" class="form-control" required></td>
-                                        <td><input type="text" id="lcaConducted2" name="lcaConducted2[]" class="form-control" required></td>
-                                    </tr>
+                                    <thead>
+                                        <tr>
+                                            <th class="form-label">S.No.</th>
+                                            <th class="form-label">NIC code</th>
+                                            <th class="form-label">Name of Product/Service</th>
+                                            <th class="form-label">% of total Turnover contributed</th>
+                                            <th class="form-label">Boundary for which the life Cycle Perspective/Assessment was conducted</th>
+                                            <th class="form-label">Whether conducted by independent external agency(Yes/No)</th>
+                                            <th class="form-label">Results communicated in public domain(yes/no) if yes, provide the web-link</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td style="width:5%;"><input type="number" id="lcaConducted2" id="p_lcaConducted2" name="lcaConducted2[]" class="table-control" required value="1" readonly></td>
+                                            <td><input type="text" id="lcaConducted2" name="lcaConducted2[]" class="form-control" required></td>
+                                            <td><input type="text" id="lcaConducted2" name="lcaConducted2[]" class="form-control" required></td>
+                                            <td><input type="text" id="lcaConducted2" name="lcaConducted2[]" class="form-control" required></td>
+                                            <td><input type="text" id="lcaConducted2" name="lcaConducted2[]" class="form-control" required></td>
+                                            <td><input type="text" id="lcaConducted2" name="lcaConducted2[]" class="form-control" required></td>
+                                            <td><input type="text" id="lcaConducted2" name="lcaConducted2[]" class="form-control" required></td>
+                                        </tr>
+                                    </tbody>
                                 </table>
                                 <div>
                                     <input type="number" id="indexInput2_1" placeholder="Enter Index">
@@ -527,18 +545,22 @@
                             </div>
                             <div id="concernsMitigation2" class="responsive-table">
                                 <table id="p_concernsMitigation2">
-                                    <tr>
-                                        <th class="form-label">S.No.</th>
-                                        <th class="form-label">Name of Product/service</th>
-                                        <th class="form-label">Description of the risk/concern</th>
-                                        <th class="form-label">Action Taken</th>
-                                    </tr>
-                                    <tr>
-                                        <tr><td style="width:5%;"><input type="number" id="concernsMitigation2" id="p_concernsMitigation2" name="concernsMitigation2[]" class="table-control" required value="1" readonly></td>                          
-                                        <td><input type="text" id="concernsMitigation2" name="concernsMitigation2[]" class="form-control" required></td>                          
-                                        <td><input type="text" id="concernsMitigation2" name="concernsMitigation2[]" class="form-control" required></td>                          
-                                        <td><input type="text" id="concernsMitigation2" name="concernsMitigation2[]" class="form-control" required></td>
-                                    </tr>
+                                    <thead>
+                                        <tr>
+                                            <th class="form-label">S.No.</th>
+                                            <th class="form-label">Name of Product/service</th>
+                                            <th class="form-label">Description of the risk/concern</th>
+                                            <th class="form-label">Action Taken</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td style="width:5%;"><input type="number" id="concernsMitigation2" id="p_concernsMitigation2" name="concernsMitigation2[]" class="table-control" required value="1" readonly></td>                          
+                                            <td><input type="text" id="concernsMitigation2" name="concernsMitigation2[]" class="form-control" required></td>                          
+                                            <td><input type="text" id="concernsMitigation2" name="concernsMitigation2[]" class="form-control" required></td>                          
+                                            <td><input type="text" id="concernsMitigation2" name="concernsMitigation2[]" class="form-control" required></td>
+                                        </tr>
+                                    </tbody>
                                 </table>
                                 <div>
                                     <input type="number" id="indexInput2_2" placeholder="Enter Index">
@@ -558,21 +580,25 @@
                             </div>
                             <div id="recycledPercentage2" class="responsive-table">
                                 <table id="p_recycledPercentage2">
-                                    <tr>
-                                        <th class="form-label" rowspan="2">S.No.</th>
-                                        <th class="form-label" rowspan="2">Indicate input material</th>
-                                        <th class="form-label" colspan="2">Recycled or re-used input material to total material </th>
-                                    </tr>
-                                    <tr>
-                                        <th class="form-label"> FY___current Financial Year</th>
-                                        <th class="form-label"> FY___Previous Financial Year</th>
-                                    </tr>
-                                    <tr>
-                                        <td style="width:5%;"><input type="number" id="recycledPercentage2" id="p_recycledPercentage2" name="recycledPercentage2[]" class="table-control" required value="1" readonly></td>                                          
-                                        <td><input type="text" id="rrecycledPercentage2" name="recycledPercentage2[]" class="form-control" required></td>
-                                        <td><input type="text" id="rrecycledPercentage2" name="recycledPercentage2[]" class="form-control" required></td>
-                                        <td><input type="text" id="rrecycledPercentage2" name="recycledPercentage2[]" class="form-control" required></td>
-                                    </tr>
+                                    <thead>
+                                        <tr>
+                                            <th class="form-label" rowspan="2">S.No.</th>
+                                            <th class="form-label" rowspan="2">Indicate input material</th>
+                                            <th class="form-label" colspan="2">Recycled or re-used input material to total material </th>
+                                        </tr>
+                                        <tr>
+                                            <th class="form-label"> FY___current Financial Year</th>
+                                            <th class="form-label"> FY___Previous Financial Year</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td style="width:5%;"><input type="number" id="recycledPercentage2" id="p_recycledPercentage2" name="recycledPercentage2[]" class="table-control" required value="1" readonly></td>                                          
+                                            <td><input type="text" id="rrecycledPercentage2" name="recycledPercentage2[]" class="form-control" required></td>
+                                            <td><input type="text" id="rrecycledPercentage2" name="recycledPercentage2[]" class="form-control" required></td>
+                                            <td><input type="text" id="rrecycledPercentage2" name="recycledPercentage2[]" class="form-control" required></td>
+                                        </tr>
+                                    </tbody>
                                 </table>
                                 <div>
                                     <input type="number" id="indexInput2_3" placeholder="Enter Index">
@@ -653,16 +679,20 @@
                             </div>
                             <div id="reclaimedPercentages2" class="responsive-table">
                                 <table id="p_reclaimedPercentages2">
-                                    <tr>
-                                        <th class="form=label">S.No.</th>
-                                        <th class="form-label">Indicate product category</th>
-                                        <th class="form-label">Reclaimed products and their packaging materials as % of total products sold in respective category</th>
-                                    </tr>
-                                    <tr>
-                                        <td style="width:5%;"><input type="number" id="reclaimedPercentages2" id="p_reclaimedPercentages2" name="reclaimedPercentages2[]" class="table-control" required value="1" readonly></td>                                                                      
-                                        <td><input type="text" id="reclaimedPercentages2" name="reclaimedPercentages2[]" class="form-control" required></td>
-                                        <td><input type="text" id="reclaimedPercentages2" name="reclaimedPercentages2[]" class="form-control" required></td>
-                                    </tr>
+                                    <thead>
+                                        <tr>
+                                            <th class="form=label">S.No.</th>
+                                            <th class="form-label">Indicate product category</th>
+                                            <th class="form-label">Reclaimed products and their packaging materials as % of total products sold in respective category</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td style="width:5%;"><input type="number" id="reclaimedPercentages2" id="p_reclaimedPercentages2" name="reclaimedPercentages2[]" class="table-control" required value="1" readonly></td>                                                                      
+                                            <td><input type="text" id="reclaimedPercentages2" name="reclaimedPercentages2[]" class="form-control" required></td>
+                                            <td><input type="text" id="reclaimedPercentages2" name="reclaimedPercentages2[]" class="form-control" required></td>
+                                        </tr>
+                                    </tbody>
                                 </table>
                                 <div>
                                     <input type="number" id="indexInput2_5" placeholder="Enter Index">
@@ -1793,23 +1823,26 @@
                             </div>
                             <div id="stakeholderEngagementDetails" class="responsive-table">
                                 <table id="p_stakeholderEngagementDetails">
-                                    <tr>
-                                        <th class="form-label">S.No</th>
-                                        <th class="form-label">Stakeholder Group</th>
-                                        <th class="form-label">Whether identified as Vulnerable & Marginalized group (Yes/No)</th>
-                                        <th class="form-label">Channels of communication</th>
-                                        <th class="form-label">Frequency of engagement(Anually/Half yearly/Quarterly/others-please specify)</th>
-                                        <th class="form-label">Purpose and scope of engagement including key topics and concerns raised during such engagement</th>
-                                    </tr>
-                                    <tr>
-                                        <td style="width:5%;"><input type="number" id="stakeholderEngagementDetails" id="p_stakeholderEngagementDetails" name="stakeholderEngagementDetails[]" class="table-control" required value="1" readonly></td>                                                                      
-                                        <td><input type="text" id="sstakeholderEngagementDetails" name="stakeholder[]" class="form-control" required></td>
-                                        <td><input type="text" id="sstakeholderEngagementDetails" name="stakeholder[]" class="form-control" required></td>
-                                        <td><input type="text" id="sstakeholderEngagementDetails" name="stakeholder[]" class="form-control" required></td>
-                                        <td><input type="text" id="sstakeholderEngagementDetails" name="stakeholder[]" class="form-control" required></td>
-                                        <td><input type="text" id="sstakeholderEngagementDetails" name="stakeholder[]" class="form-control" required></td>
-                                        <td><input type="text" id="sstakeholderEngagementDetails" name="stakeholder[]" class="form-control" required></td>
-                                    </tr>
+                                    <thead>
+                                        <tr>
+                                            <th class="form-label">S.No</th>
+                                            <th class="form-label">Stakeholder Group</th>
+                                            <th class="form-label">Whether identified as Vulnerable & Marginalized group (Yes/No)</th>
+                                            <th class="form-label">Channels of communication</th>
+                                            <th class="form-label">Frequency of engagement(Anually/Half yearly/Quarterly/others-please specify)</th>
+                                            <th class="form-label">Purpose and scope of engagement including key topics and concerns raised during such engagement</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td style="width:5%;"><input type="number" id="stakeholderEngagementDetails" id="p_stakeholderEngagementDetails" name="stakeholderEngagementDetails[]" class="table-control" required value="1" readonly></td>                                                                      
+                                            <td><input type="text" id="sstakeholderEngagementDetails" name="stakeholder[]" class="form-control" required></td>
+                                            <td><input type="text" id="sstakeholderEngagementDetails" name="stakeholder[]" class="form-control" required></td>
+                                            <td><input type="text" id="sstakeholderEngagementDetails" name="stakeholder[]" class="form-control" required></td>
+                                            <td><input type="text" id="sstakeholderEngagementDetails" name="stakeholder[]" class="form-control" required></td>
+                                            <td><input type="text" id="sstakeholderEngagementDetails" name="stakeholder[]" class="form-control" required></td>
+                                        </tr>
+                                    </tbody>
                                 </table>
                                 <div>
                                      <input type="number" id="indexInput4_2" placeholder="Enter Index">
@@ -2772,56 +2805,57 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                    <tr>
-                                        <td style="width:5%;"><input type="number" id="7_1_2_tradeAffiliations" id="p_7_1_2_tradeAffiliations" name="7_1_2_tradeAffiliations[]" required value="1" class="form-control" readonly></td>
-                                        <td><input type="text" id="7_1_2_tradeAffiliations" name="7_1_2_tradeAffiliations[]" class="form-control" required></td>
-                                        <td><input type="text" id="7_1_2_tradeAffiliations" name="7_1_2_tradeAffiliations[]" class="form-control" required></td>
-                                    </tr>
-                                    <tr>
-                                        <td style="width:5%;"><input type="number" id="7_1_2_tradeAffiliations" id="p_7_1_2_tradeAffiliations" name="7_1_2_tradeAffiliations[]" required value="2" class="form-control" readonly></td>
-                                        <td><input type="text" id="7_1_2_tradeAffiliations" name="7_1_2_tradeAffiliations[]" class="form-control" required></td>
-                                        <td><input type="text" id="7_1_2_tradeAffiliations" name="7_1_2_tradeAffiliations[]" class="form-control" required></td>
-                                    </tr>
-                                    <tr>
-                                        <td style="width:5%;"><input type="number" id="7_1_2_tradeAffiliations" id="p_7_1_2_tradeAffiliations" name="7_1_2_tradeAffiliations[]" required value="3" class="form-control" readonly></td>
-                                        <td><input type="text" id="7_1_2_tradeAffiliations" name="7_1_2_tradeAffiliations[]" class="form-control" required></td>
-                                        <td><input type="text" id="7_1_2_tradeAffiliations" name="7_1_2_tradeAffiliations[]" class="form-control" required></td>
-                                    </tr>
-                                    <tr>
-                                        <td style="width:5%;"><input type="number" id="7_1_2_tradeAffiliations" id="p_7_1_2_tradeAffiliations" name="7_1_2_tradeAffiliations[]" required value="4" class="form-control" readonly></td>
-                                        <td><input type="text" id="7_1_2_tradeAffiliations" name="7_1_2_tradeAffiliations[]" class="form-control" required></td>
-                                        <td><input type="text" id="7_1_2_tradeAffiliations" name="7_1_2_tradeAffiliations[]" class="form-control" required></td>
-                                    </tr>
-                                    <tr>
-                                        <td style="width:5%;"><input type="number" id="7_1_2_tradeAffiliations" id="p_7_1_2_tradeAffiliations" name="7_1_2_tradeAffiliations[]" required value="5" class="form-control" readonly></td>
-                                        <td><input type="text" id="7_1_2_tradeAffiliations" name="7_1_2_tradeAffiliations[]" class="form-control" required></td>
-                                        <td><input type="text" id="7_1_2_tradeAffiliations" name="7_1_2_tradeAffiliations[]" class="form-control" required></td>
-                                    </tr>
-                                    <tr>
-                                        <td style="width:5%;"><input type="number" id="7_1_2_tradeAffiliations" id="p_7_1_2_tradeAffiliations" name="7_1_2_tradeAffiliations[]" required value="6" class="form-control" readonly></td>
-                                        <td><input type="text" id="7_1_2_tradeAffiliations" name="7_1_2_tradeAffiliations[]" class="form-control" required></td>
-                                        <td><input type="text" id="7_1_2_tradeAffiliations" name="7_1_2_tradeAffiliations[]" class="form-control" required></td>
-                                    </tr>
-                                    <tr>
-                                        <td style="width:5%;"><input type="number" id="7_1_2_tradeAffiliations" id="p_7_1_2_tradeAffiliations" name="7_1_2_tradeAffiliations[]" required value="7" class="form-control" readonly></td>
-                                        <td><input type="text" id="7_1_2_tradeAffiliations" name="7_1_2_tradeAffiliations[]" class="form-control" required></td>
-                                        <td><input type="text" id="7_1_2_tradeAffiliations" name="7_1_2_tradeAffiliations[]" class="form-control" required></td>
-                                    </tr>
-                                    <tr>
-                                        <td style="width:5%;"><input type="number" id="7_1_2_tradeAffiliations" id="p_7_1_2_tradeAffiliations" name="7_1_2_tradeAffiliations[]" required value="8" class="form-control" readonly></td>
-                                        <td><input type="text" id="7_1_2_tradeAffiliations" name="7_1_2_tradeAffiliations[]" class="form-control" required></td>
-                                        <td><input type="text" id="7_1_2_tradeAffiliations" name="7_1_2_tradeAffiliations[]" class="form-control" required></td>
-                                    </tr>
-                                    <tr>
-                                        <td style="width:5%;"><input type="number" id="7_1_2_tradeAffiliations" id="p_7_1_2_tradeAffiliations" name="7_1_2_tradeAffiliations[]" required value="9" class="form-control" readonly></td>
-                                        <td><input type="text" id="7_1_2_tradeAffiliations" name="7_1_2_tradeAffiliations[]" class="form-control" required></td>
-                                        <td><input type="text" id="7_1_2_tradeAffiliations" name="7_1_2_tradeAffiliations[]" class="form-control" required></td>
-                                    </tr>
-                                    <tr>
-                                        <td style="width:5%;"><input type="number" id="7_1_2_tradeAffiliations" id="p_7_1_2_tradeAffiliations" name="7_1_2_tradeAffiliations[]" required value="10" class="form-control" readonly></td>
-                                        <td><input type="text" id="7_1_2_tradeAffiliations" name="7_1_2_tradeAffiliations[]" class="form-control" required></td>
-                                        <td><input type="text" id="7_1_2_tradeAffiliations" name="7_1_2_tradeAffiliations[]" class="form-control" required></td>
-                                    </tr>
+                                        <tr>
+                                            <td style="width:5%;"><input type="number" id="7_1_2_tradeAffiliations" id="p_7_1_2_tradeAffiliations" name="7_1_2_tradeAffiliations[]" required value="1" class="form-control" readonly></td>
+                                            <td><input type="text" id="7_1_2_tradeAffiliations" name="7_1_2_tradeAffiliations[]" class="form-control" required></td>
+                                            <td><input type="text" id="7_1_2_tradeAffiliations" name="7_1_2_tradeAffiliations[]" class="form-control" required></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width:5%;"><input type="number" id="7_1_2_tradeAffiliations" id="p_7_1_2_tradeAffiliations" name="7_1_2_tradeAffiliations[]" required value="2" class="form-control" readonly></td>
+                                            <td><input type="text" id="7_1_2_tradeAffiliations" name="7_1_2_tradeAffiliations[]" class="form-control" required></td>
+                                            <td><input type="text" id="7_1_2_tradeAffiliations" name="7_1_2_tradeAffiliations[]" class="form-control" required></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width:5%;"><input type="number" id="7_1_2_tradeAffiliations" id="p_7_1_2_tradeAffiliations" name="7_1_2_tradeAffiliations[]" required value="3" class="form-control" readonly></td>
+                                            <td><input type="text" id="7_1_2_tradeAffiliations" name="7_1_2_tradeAffiliations[]" class="form-control" required></td>
+                                            <td><input type="text" id="7_1_2_tradeAffiliations" name="7_1_2_tradeAffiliations[]" class="form-control" required></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width:5%;"><input type="number" id="7_1_2_tradeAffiliations" id="p_7_1_2_tradeAffiliations" name="7_1_2_tradeAffiliations[]" required value="4" class="form-control" readonly></td>
+                                            <td><input type="text" id="7_1_2_tradeAffiliations" name="7_1_2_tradeAffiliations[]" class="form-control" required></td>
+                                            <td><input type="text" id="7_1_2_tradeAffiliations" name="7_1_2_tradeAffiliations[]" class="form-control" required></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width:5%;"><input type="number" id="7_1_2_tradeAffiliations" id="p_7_1_2_tradeAffiliations" name="7_1_2_tradeAffiliations[]" required value="5" class="form-control" readonly></td>
+                                            <td><input type="text" id="7_1_2_tradeAffiliations" name="7_1_2_tradeAffiliations[]" class="form-control" required></td>
+                                            <td><input type="text" id="7_1_2_tradeAffiliations" name="7_1_2_tradeAffiliations[]" class="form-control" required></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width:5%;"><input type="number" id="7_1_2_tradeAffiliations" id="p_7_1_2_tradeAffiliations" name="7_1_2_tradeAffiliations[]" required value="6" class="form-control" readonly></td>
+                                            <td><input type="text" id="7_1_2_tradeAffiliations" name="7_1_2_tradeAffiliations[]" class="form-control" required></td>
+                                            <td><input type="text" id="7_1_2_tradeAffiliations" name="7_1_2_tradeAffiliations[]" class="form-control" required></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width:5%;"><input type="number" id="7_1_2_tradeAffiliations" id="p_7_1_2_tradeAffiliations" name="7_1_2_tradeAffiliations[]" required value="7" class="form-control" readonly></td>
+                                            <td><input type="text" id="7_1_2_tradeAffiliations" name="7_1_2_tradeAffiliations[]" class="form-control" required></td>
+                                            <td><input type="text" id="7_1_2_tradeAffiliations" name="7_1_2_tradeAffiliations[]" class="form-control" required></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width:5%;"><input type="number" id="7_1_2_tradeAffiliations" id="p_7_1_2_tradeAffiliations" name="7_1_2_tradeAffiliations[]" required value="8" class="form-control" readonly></td>
+                                            <td><input type="text" id="7_1_2_tradeAffiliations" name="7_1_2_tradeAffiliations[]" class="form-control" required></td>
+                                            <td><input type="text" id="7_1_2_tradeAffiliations" name="7_1_2_tradeAffiliations[]" class="form-control" required></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width:5%;"><input type="number" id="7_1_2_tradeAffiliations" id="p_7_1_2_tradeAffiliations" name="7_1_2_tradeAffiliations[]" required value="9" class="form-control" readonly></td>
+                                            <td><input type="text" id="7_1_2_tradeAffiliations" name="7_1_2_tradeAffiliations[]" class="form-control" required></td>
+                                            <td><input type="text" id="7_1_2_tradeAffiliations" name="7_1_2_tradeAffiliations[]" class="form-control" required></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width:5%;"><input type="number" id="7_1_2_tradeAffiliations" id="p_7_1_2_tradeAffiliations" name="7_1_2_tradeAffiliations[]" required value="10" class="form-control" readonly></td>
+                                            <td><input type="text" id="7_1_2_tradeAffiliations" name="7_1_2_tradeAffiliations[]" class="form-control" required></td>
+                                            <td><input type="text" id="7_1_2_tradeAffiliations" name="7_1_2_tradeAffiliations[]" class="form-control" required></td>
+                                        </tr>
+                                    </tbody>
                                 </table>
                             </div>
                         </div>
@@ -3106,6 +3140,7 @@
                                             <th class="form-label">State</th>
                                             <th class="form-label">Aspirational District</th>
                                             <th class="form-label">Amount spent (In INR)</th>
+                                            <th class="form-label">Remarks</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -3114,6 +3149,7 @@
                                             <td><input type="text" id="csrAspirationalDistricts" name="csrAspirationalDistricts[]" class="form-control" required></td>
                                             <td><input type="text" id="csrAspirationalDistricts" name="csrAspirationalDistricts[]" class="form-control" required></td>
                                             <td><input type="number" id="csrAspirationalDistricts" name="csrAspirationalDistricts[]" class="form-control"></td>
+                                            <td><input type="text" id="csrAspirationalDistricts" name="csrAspirationalDistricts[]" class="form-control"></td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -3290,7 +3326,7 @@
                         <!--Turnover of products and/ services as a percentage of turnover from all products start-->
                         <div class="mb-3">
                             <div class="policy">
-                                <label for="productRecallInstances" class="form-label"><span style="color: red;"> * </span>2. Turnover of products and/or services as a percentage of turnover from all products/service that carry information about:</label>
+                                <label for="productRecallInstances" class="form-label">2. Turnover of products and/or services as a percentage of turnover from all products/service that carry information about:</label>
                             </div>
                             <div id="productRecallInstances" class="responsive-table">
                                 <table id="p_productRecallInstances">
@@ -3300,15 +3336,15 @@
                                     </tr>
                                     <tr>
                                         <th class="form-label">Environmental and social parameters relevant to the product</th>
-                                        <td><input type="number" id="productRecallInstances" name="productRecallInstances[]" class="form-control" required></td>
+                                        <td><input type="number" id="productRecallInstances" name="productRecallInstances[]" class="form-control"></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label">Safe and responsible usage</th>
-                                        <td><input type="number" id="productRecallInstances" name="productRecallInstances[]" class="form-control" required></td>
+                                        <td><input type="number" id="productRecallInstances" name="productRecallInstances[]" class="form-control"></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label">Recycling and/or safe disposal</th>
-                                        <td><input type="number" id="productRecallInstances" name="productRecallInstances[]" class="form-control" required></td>
+                                        <td><input type="number" id="productRecallInstances" name="productRecallInstances[]" class="form-control"></td>
                                     </tr>
                                 </table>
                             </div>
@@ -3420,12 +3456,12 @@
                                     <tr>
                                         <th class="form-label">Voluntary recalls</th>
                                         <td><input type="number" id="productRecallInstances" name="productRecallInstances[]" class="form-control" required></td>
-                                        <td><input type="number" id="productRecallInstances" name="productRecallInstances[]" class="form-control" required></td>
+                                        <td><input type="text" id="productRecallInstances" name="productRecallInstances[]" class="form-control" required></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label">Forced recalls</th>
                                         <td><input type="number" id="productRecallInstances" name="productRecallInstances[]" class="form-control" required></td>
-                                        <td><input type="number" id="productRecallInstances" name="productRecallInstances[]" class="form-control" required></td>
+                                        <td><input type="text" id="productRecallInstances" name="productRecallInstances[]" class="form-control" required></td>
                                     </tr>
                                 </table>
                             </div>

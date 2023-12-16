@@ -337,3 +337,1010 @@ document.getElementById("inputMaterialPercentage").addEventListener("input", fun
         this.value = 100;
     }
 });
+
+/* ************************************************************************************************************************************ */
+/*                                                                                                                                      */
+/*                                                                P1 Table-START                                                        */
+/*                                                                                                                                      */
+/* ************************************************************************************************************************************ */
+
+
+    /********************************************************************************************************************************** */
+    /*                                                            P1-T1-Start                                                           */
+    /********************************************************************************************************************************** */
+    // Function to add a new row at the bottom of the table
+    function addBottomRow1_3() {
+        const table = document.querySelector("#appeal table tbody");
+        const rows = table.getElementsByTagName("tr");
+        const lastRow = rows[rows.length - 1].cloneNode(true);
+
+        // Increment the S.No. in the new row
+        const lastSNo = parseInt(rows[rows.length - 1].cells[0].getElementsByTagName("input")[0].value);
+        lastRow.cells[0].getElementsByTagName("input")[0].value = lastSNo + 1;
+
+        // Clear other input fields in the new row
+        const inputs = lastRow.getElementsByTagName("input");
+        for (let i = 1; i < inputs.length; i++) {
+            inputs[i].value = "";
+        }
+
+        // Add the new row at the bottom
+        table.appendChild(lastRow);
+
+        updateSNoValues1_3();
+    }
+
+    // Function to remove a specific row from the table with confirmation
+    function removeSpecificRow1_3() {
+        const indexInput1_3 = document.getElementById("indexInput1_3");
+        const parsedIndex = parseInt(indexInput1_3.value);
+
+        if (!isNaN(parsedIndex) && parsedIndex > 1) {
+            const table = document.querySelector("#appeal table tbody");
+            const rows = table.getElementsByTagName("tr");
+
+            if (parsedIndex <= rows.length) {
+                // Ask for confirmation before removing the row
+                if (confirm("Are you sure you want to remove this row?")) {
+                    table.removeChild(rows[parsedIndex - 1]);
+
+                    // Update the S.No. values in the table
+                    updateSNoValues1_3();
+                }
+            } else {
+                alert("Invalid S.No. The specified row does not exist.");
+            }
+        } else if (parsedIndex === 1) {
+            alert("Cannot remove the first row. Please enter a valid S.No. greater than 1.");
+        } else {
+            alert("Invalid S.No. Please enter a valid S.No.");
+        }
+
+        // Clear the input value after removing the row
+        indexInput1_3.value = "";
+    }
+
+    // Function to remove the last row from the table with confirmation
+    function removeBottomRow1_3() {
+        const table = document.querySelector("#appeal table tbody");
+        const rows = table.getElementsByTagName("tr");
+
+        if (rows.length > 1) { // Ensure there is more than one row
+            // Ask for confirmation before removing the row
+            if (confirm("Are you sure you want to remove the last row?")) {
+                table.removeChild(rows[rows.length - 1]);
+
+                // Update the S.No. values in the table
+                updateSNoValues1_3();
+            }
+        }
+    }
+
+    // Function to add a new row at a specific index
+    function addRowAtIndex1_3() {
+        const indexInput1_3 = document.getElementById("indexInput1_3");
+        const parsedIndex = parseInt(indexInput1_3.value);
+
+        if (!isNaN(parsedIndex) && parsedIndex > 1) {
+            const table = document.querySelector("#appeal table tbody");
+            const rows = table.getElementsByTagName("tr");
+            const newRow = rows[rows.length - 1].cloneNode(true);
+
+            // Clear input fields in the new row
+            const inputs = newRow.getElementsByTagName("input");
+            for (let i = 0; i < inputs.length; i++) {
+                inputs[i].value = "";
+            }
+            // Increment the S.No. in the new row
+            const lastSNo = parseInt(rows[rows.length - 1].cells[0].getElementsByTagName("input")[0].value);
+
+            // Add the new row at the specified index
+            if (parsedIndex === 0) {
+                // Insert at the beginning
+                table.insertBefore(newRow, rows[0]);
+            } else if (parsedIndex <= rows.length - 1) {
+                table.insertBefore(newRow, rows[parsedIndex]);
+            } else {
+                table.appendChild(newRow);
+            }
+
+            // Set S.No. for all rows starting from the specified index
+            for (let i = parsedIndex; i < rows.length; i++) {
+                const currentSNo = parseInt(rows[i].cells[0].getElementsByTagName("input")[0].value);
+                rows[i].cells[0].getElementsByTagName("input")[0].value = currentSNo + 0;
+            }
+        } else {
+            alert("Invalid S.No. Please enter a valid S.No. greater than 1.");
+        }
+        // Clear the input value after adding the row
+        indexInput1_3.value = "";
+        // Update the S.No. values in the table
+        updateSNoValues1_3();
+    }
+
+    // Function to update S.No. values in the table
+    function updateSNoValues1_3() {
+        const table = document.querySelector("#appeal table tbody");
+        const rows = table.getElementsByTagName("tr");
+        for (let i = 1; i < rows.length; i++) {
+            rows[i].cells[0].getElementsByTagName("input")[0].value = i + 1;
+        }
+    }
+
+    /********************************************************************************************************************************** */
+    /*                                                            P1-T1-Start                                                           */
+    /********************************************************************************************************************************** */
+    // Function to add a new row at the bottom of the table
+    function addBottomRow1_p_1() {
+        const table = document.querySelector("#awarenessProgrammes table tbody");
+        const rows = table.getElementsByTagName("tr");
+        const lastRow = rows[rows.length - 1].cloneNode(true);
+
+        // Increment the S.No. in the new row
+        const lastSNo = parseInt(rows[rows.length - 1].cells[0].getElementsByTagName("input")[0].value);
+        lastRow.cells[0].getElementsByTagName("input")[0].value = lastSNo + 1;
+
+        // Clear other input fields in the new row
+        const inputs = lastRow.getElementsByTagName("input");
+        for (let i = 1; i < inputs.length; i++) {
+            inputs[i].value = "";
+        }
+
+        // Add the new row at the bottom
+        table.appendChild(lastRow);
+
+        updateSNoValues1_p_1();
+    }
+
+    // Function to remove a specific row from the table with confirmation
+    function removeSpecificRow1_p_1() {
+        const indexInput1_p_1 = document.getElementById("indexInput1_p_1");
+        const parsedIndex = parseInt(indexInput1_p_1.value);
+
+        if (!isNaN(parsedIndex) && parsedIndex > 1) {
+            const table = document.querySelector("#awarenessProgrammes table tbody");
+            const rows = table.getElementsByTagName("tr");
+
+            if (parsedIndex <= rows.length) {
+                // Ask for confirmation before removing the row
+                if (confirm("Are you sure you want to remove this row?")) {
+                    table.removeChild(rows[parsedIndex - 1]);
+
+                    // Update the S.No. values in the table
+                    updateSNoValues1_p_1();
+                }
+            } else {
+                alert("Invalid S.No. The specified row does not exist.");
+            }
+        } else if (parsedIndex === 1) {
+            alert("Cannot remove the first row. Please enter a valid S.No. greater than 1.");
+        } else {
+            alert("Invalid S.No. Please enter a valid S.No.");
+        }
+
+        // Clear the input value after removing the row
+        indexInput1_p_1.value = "";
+    }
+
+    // Function to remove the last row from the table with confirmation
+    function removeBottomRow1_p_1() {
+        const table = document.querySelector("#awarenessProgrammes table tbody");
+        const rows = table.getElementsByTagName("tr");
+
+        if (rows.length > 1) { // Ensure there is more than one row
+            // Ask for confirmation before removing the row
+            if (confirm("Are you sure you want to remove the last row?")) {
+                table.removeChild(rows[rows.length - 1]);
+
+                // Update the S.No. values in the table
+                updateSNoValues1_p_1();
+            }
+        }
+    }
+
+    // Function to add a new row at a specific index
+    function addRowAtIndex1_p_1() {
+        const indexInput1_p_1 = document.getElementById("indexInput1_p_1");
+        const parsedIndex = parseInt(indexInput1_p_1.value);
+
+        if (!isNaN(parsedIndex) && parsedIndex > 1) {
+            const table = document.querySelector("#awarenessProgrammes table tbody");
+            const rows = table.getElementsByTagName("tr");
+            const newRow = rows[rows.length - 1].cloneNode(true);
+
+            // Clear input fields in the new row
+            const inputs = newRow.getElementsByTagName("input");
+            for (let i = 0; i < inputs.length; i++) {
+                inputs[i].value = "";
+            }
+            // Increment the S.No. in the new row
+            const lastSNo = parseInt(rows[rows.length - 1].cells[0].getElementsByTagName("input")[0].value);
+
+            // Add the new row at the specified index
+            if (parsedIndex === 0) {
+                // Insert at the beginning
+                table.insertBefore(newRow, rows[0]);
+            } else if (parsedIndex <= rows.length - 1) {
+                table.insertBefore(newRow, rows[parsedIndex]);
+            } else {
+                table.appendChild(newRow);
+            }
+
+            // Set S.No. for all rows starting from the specified index
+            for (let i = parsedIndex; i < rows.length; i++) {
+                const currentSNo = parseInt(rows[i].cells[0].getElementsByTagName("input")[0].value);
+                rows[i].cells[0].getElementsByTagName("input")[0].value = currentSNo + 0;
+            }
+        } else {
+            alert("Invalid S.No. Please enter a valid S.No. greater than 1.");
+        }
+        // Clear the input value after adding the row
+        indexInput1_p_1.value = "";
+        // Update the S.No. values in the table
+        updateSNoValues1_p_1();
+    }
+
+    // Function to update S.No. values in the table
+    function updateSNoValues1_p_1() {
+        const table = document.querySelector("#awarenessProgrammes table tbody");
+        const rows = table.getElementsByTagName("tr");
+        for (let i = 1; i < rows.length; i++) {
+            rows[i].cells[0].getElementsByTagName("input")[0].value = i + 1;
+        }
+}
+
+
+/* ************************************************************************************************************************************ */
+/*                                                                                                                                      */
+/*                                                                P2 Table-START                                                        */
+/*                                                                                                                                      */
+/* ************************************************************************************************************************************ */
+
+    /********************************************************************************************************************************** */
+    /*                                                            P2-T1-Start                                                           */
+    /********************************************************************************************************************************** */
+    // Function to add a new row at the bottom of the table
+    function addBottomRow2_1() {
+        const table = document.querySelector("#lcaConducted2 table tbody");
+        const rows = table.getElementsByTagName("tr");
+        const lastRow = rows[rows.length - 1].cloneNode(true);
+
+        // Increment the S.No. in the new row
+        const lastSNo = parseInt(rows[rows.length - 1].cells[0].getElementsByTagName("input")[0].value);
+        lastRow.cells[0].getElementsByTagName("input")[0].value = lastSNo + 1;
+
+        // Clear other input fields in the new row
+        const inputs = lastRow.getElementsByTagName("input");
+        for (let i = 1; i < inputs.length; i++) {
+            inputs[i].value = "";
+        }
+
+        // Add the new row at the bottom
+        table.appendChild(lastRow);
+
+        updateSNoValues2_1();
+    }
+
+    // Function to remove a specific row from the table with confirmation
+    function removeSpecificRow2_1() {
+        const indexInput2_1 = document.getElementById("indexInput2_1");
+        const parsedIndex = parseInt(indexInput2_1.value);
+
+        if (!isNaN(parsedIndex) && parsedIndex > 1) {
+            const table = document.querySelector("#lcaConducted2 table tbody");
+            const rows = table.getElementsByTagName("tr");
+
+            if (parsedIndex <= rows.length) {
+                // Ask for confirmation before removing the row
+                if (confirm("Are you sure you want to remove this row?")) {
+                    table.removeChild(rows[parsedIndex - 1]);
+
+                    // Update the S.No. values in the table
+                    updateSNoValues2_1();
+                }
+            } else {
+                alert("Invalid S.No. The specified row does not exist.");
+            }
+        } else if (parsedIndex === 1) {
+            alert("Cannot remove the first row. Please enter a valid S.No. greater than 1.");
+        } else {
+            alert("Invalid S.No. Please enter a valid S.No.");
+        }
+
+        // Clear the input value after removing the row
+        indexInput2_1.value = "";
+    }
+
+    // Function to remove the last row from the table with confirmation
+    function removeBottomRow2_1() {
+        const table = document.querySelector("#lcaConducted2 table tbody");
+        const rows = table.getElementsByTagName("tr");
+
+        if (rows.length > 1) { // Ensure there is more than one row
+            // Ask for confirmation before removing the row
+            if (confirm("Are you sure you want to remove the last row?")) {
+                table.removeChild(rows[rows.length - 1]);
+
+                // Update the S.No. values in the table
+                updateSNoValues2_1();
+            }
+        }
+    }
+
+    // Function to add a new row at a specific index
+    function addRowAtIndex2_1() {
+        const indexInput2_1 = document.getElementById("indexInput2_1");
+        const parsedIndex = parseInt(indexInput2_1.value);
+
+        if (!isNaN(parsedIndex) && parsedIndex > 1) {
+            const table = document.querySelector("#lcaConducted2 table tbody");
+            const rows = table.getElementsByTagName("tr");
+            const newRow = rows[rows.length - 1].cloneNode(true);
+
+            // Clear input fields in the new row
+            const inputs = newRow.getElementsByTagName("input");
+            for (let i = 0; i < inputs.length; i++) {
+                inputs[i].value = "";
+            }
+            // Increment the S.No. in the new row
+            const lastSNo = parseInt(rows[rows.length - 1].cells[0].getElementsByTagName("input")[0].value);
+
+            // Add the new row at the specified index
+            if (parsedIndex === 0) {
+                // Insert at the beginning
+                table.insertBefore(newRow, rows[0]);
+            } else if (parsedIndex <= rows.length - 1) {
+                table.insertBefore(newRow, rows[parsedIndex]);
+            } else {
+                table.appendChild(newRow);
+            }
+
+            // Set S.No. for all rows starting from the specified index
+            for (let i = parsedIndex; i < rows.length; i++) {
+                const currentSNo = parseInt(rows[i].cells[0].getElementsByTagName("input")[0].value);
+                rows[i].cells[0].getElementsByTagName("input")[0].value = currentSNo + 0;
+            }
+        } else {
+            alert("Invalid S.No. Please enter a valid S.No. greater than 1.");
+        }
+        // Clear the input value after adding the row
+        indexInput2_1.value = "";
+        // Update the S.No. values in the table
+        updateSNoValues2_1();
+    }
+
+    // Function to update S.No. values in the table
+    function updateSNoValues2_1() {
+        const table = document.querySelector("#lcaConducted2 table tbody");
+        const rows = table.getElementsByTagName("tr");
+        for (let i = 1; i < rows.length; i++) {
+            rows[i].cells[0].getElementsByTagName("input")[0].value = i + 1;
+        }
+    }
+
+
+    /********************************************************************************************************************************** */
+    /*                                                            P2-T2-Start                                                           */
+    /********************************************************************************************************************************** */
+    // Function to add a new row at the bottom of the table
+    function addBottomRow2_2() {
+        const table = document.querySelector("#concernsMitigation2 table tbody");
+        const rows = table.getElementsByTagName("tr");
+        const lastRow = rows[rows.length - 1].cloneNode(true);
+
+        // Increment the S.No. in the new row
+        const lastSNo = parseInt(rows[rows.length - 1].cells[0].getElementsByTagName("input")[0].value);
+        lastRow.cells[0].getElementsByTagName("input")[0].value = lastSNo + 1;
+
+        // Clear other input fields in the new row
+        const inputs = lastRow.getElementsByTagName("input");
+        for (let i = 1; i < inputs.length; i++) {
+            inputs[i].value = "";
+        }
+
+        // Add the new row at the bottom
+        table.appendChild(lastRow);
+
+        updateSNoValues2_2();
+    }
+
+    // Function to remove a specific row from the table with confirmation
+    function removeSpecificRow2_2() {
+        const indexInput2_2 = document.getElementById("indexInput2_2");
+        const parsedIndex = parseInt(indexInput2_2.value);
+
+        if (!isNaN(parsedIndex) && parsedIndex > 1) {
+            const table = document.querySelector("#concernsMitigation2 table tbody");
+            const rows = table.getElementsByTagName("tr");
+
+            if (parsedIndex <= rows.length) {
+                // Ask for confirmation before removing the row
+                if (confirm("Are you sure you want to remove this row?")) {
+                    table.removeChild(rows[parsedIndex - 1]);
+
+                    // Update the S.No. values in the table
+                    updateSNoValues2_2();
+                }
+            } else {
+                alert("Invalid S.No. The specified row does not exist.");
+            }
+        } else if (parsedIndex === 1) {
+            alert("Cannot remove the first row. Please enter a valid S.No. greater than 1.");
+        } else {
+            alert("Invalid S.No. Please enter a valid S.No.");
+        }
+
+        // Clear the input value after removing the row
+        indexInput2_2.value = "";
+    }
+
+    // Function to remove the last row from the table with confirmation
+    function removeBottomRow2_2() {
+        const table = document.querySelector("#concernsMitigation2 table tbody");
+        const rows = table.getElementsByTagName("tr");
+
+        if (rows.length > 1) { // Ensure there is more than one row
+            // Ask for confirmation before removing the row
+            if (confirm("Are you sure you want to remove the last row?")) {
+                table.removeChild(rows[rows.length - 1]);
+
+                // Update the S.No. values in the table
+                updateSNoValues2_2();
+            }
+        }
+    }
+
+    // Function to add a new row at a specific index
+    function addRowAtIndex2_2() {
+        const indexInput2_2 = document.getElementById("indexInput2_2");
+        const parsedIndex = parseInt(indexInput2_2.value);
+
+        if (!isNaN(parsedIndex) && parsedIndex > 1) {
+            const table = document.querySelector("#concernsMitigation2 table tbody");
+            const rows = table.getElementsByTagName("tr");
+            const newRow = rows[rows.length - 1].cloneNode(true);
+
+            // Clear input fields in the new row
+            const inputs = newRow.getElementsByTagName("input");
+            for (let i = 0; i < inputs.length; i++) {
+                inputs[i].value = "";
+            }
+            // Increment the S.No. in the new row
+            const lastSNo = parseInt(rows[rows.length - 1].cells[0].getElementsByTagName("input")[0].value);
+
+            // Add the new row at the specified index
+            if (parsedIndex === 0) {
+                // Insert at the beginning
+                table.insertBefore(newRow, rows[0]);
+            } else if (parsedIndex <= rows.length - 1) {
+                table.insertBefore(newRow, rows[parsedIndex]);
+            } else {
+                table.appendChild(newRow);
+            }
+
+            // Set S.No. for all rows starting from the specified index
+            for (let i = parsedIndex; i < rows.length; i++) {
+                const currentSNo = parseInt(rows[i].cells[0].getElementsByTagName("input")[0].value);
+                rows[i].cells[0].getElementsByTagName("input")[0].value = currentSNo + 0;
+            }
+        } else {
+            alert("Invalid S.No. Please enter a valid S.No. greater than 1.");
+        }
+        // Clear the input value after adding the row
+        indexInput2_2.value = "";
+        // Update the S.No. values in the table
+        updateSNoValues2_2();
+    }
+
+    // Function to update S.No. values in the table
+    function updateSNoValues2_2() {
+        const table = document.querySelector("#concernsMitigation2 table tbody");
+        const rows = table.getElementsByTagName("tr");
+        for (let i = 1; i < rows.length; i++) {
+            rows[i].cells[0].getElementsByTagName("input")[0].value = i + 1;
+        }
+    }
+
+
+    /********************************************************************************************************************************** */
+    /*                                                            P2-T3-Start                                                           */
+    /********************************************************************************************************************************** */
+    // Function to add a new row at the bottom of the table
+    function addBottomRow2_3() {
+        const table = document.querySelector("#recycledPercentage2 table tbody");
+        const rows = table.getElementsByTagName("tr");
+        const lastRow = rows[rows.length - 1].cloneNode(true);
+
+        // Increment the S.No. in the new row
+        const lastSNo = parseInt(rows[rows.length - 1].cells[0].getElementsByTagName("input")[0].value);
+        lastRow.cells[0].getElementsByTagName("input")[0].value = lastSNo + 1;
+
+        // Clear other input fields in the new row
+        const inputs = lastRow.getElementsByTagName("input");
+        for (let i = 1; i < inputs.length; i++) {
+            inputs[i].value = "";
+        }
+
+        // Add the new row at the bottom
+        table.appendChild(lastRow);
+
+        updateSNoValues2_3();
+    }
+
+    // Function to remove a specific row from the table with confirmation
+    function removeSpecificRow2_3() {
+        const indexInput2_3 = document.getElementById("indexInput2_3");
+        const parsedIndex = parseInt(indexInput2_3.value);
+
+        if (!isNaN(parsedIndex) && parsedIndex > 1) {
+            const table = document.querySelector("#recycledPercentage2 table tbody");
+            const rows = table.getElementsByTagName("tr");
+
+            if (parsedIndex <= rows.length) {
+                // Ask for confirmation before removing the row
+                if (confirm("Are you sure you want to remove this row?")) {
+                    table.removeChild(rows[parsedIndex - 1]);
+
+                    // Update the S.No. values in the table
+                    updateSNoValues2_3();
+                }
+            } else {
+                alert("Invalid S.No. The specified row does not exist.");
+            }
+        } else if (parsedIndex === 1) {
+            alert("Cannot remove the first row. Please enter a valid S.No. greater than 1.");
+        } else {
+            alert("Invalid S.No. Please enter a valid S.No.");
+        }
+
+        // Clear the input value after removing the row
+        indexInput2_3.value = "";
+    }
+
+    // Function to remove the last row from the table with confirmation
+    function removeBottomRow2_3() {
+        const table = document.querySelector("#recycledPercentage2 table tbody");
+        const rows = table.getElementsByTagName("tr");
+
+        if (rows.length > 1) { // Ensure there is more than one row
+            // Ask for confirmation before removing the row
+            if (confirm("Are you sure you want to remove the last row?")) {
+                table.removeChild(rows[rows.length - 1]);
+
+                // Update the S.No. values in the table
+                updateSNoValues2_3();
+            }
+        }
+    }
+
+    // Function to add a new row at a specific index
+    function addRowAtIndex2_3() {
+        const indexInput2_3 = document.getElementById("indexInput2_3");
+        const parsedIndex = parseInt(indexInput2_3.value);
+
+        if (!isNaN(parsedIndex) && parsedIndex > 1) {
+            const table = document.querySelector("#recycledPercentage2 table tbody");
+            const rows = table.getElementsByTagName("tr");
+            const newRow = rows[rows.length - 1].cloneNode(true);
+
+            // Clear input fields in the new row
+            const inputs = newRow.getElementsByTagName("input");
+            for (let i = 0; i < inputs.length; i++) {
+                inputs[i].value = "";
+            }
+            // Increment the S.No. in the new row
+            const lastSNo = parseInt(rows[rows.length - 1].cells[0].getElementsByTagName("input")[0].value);
+
+            // Add the new row at the specified index
+            if (parsedIndex === 0) {
+                // Insert at the beginning
+                table.insertBefore(newRow, rows[0]);
+            } else if (parsedIndex <= rows.length - 1) {
+                table.insertBefore(newRow, rows[parsedIndex]);
+            } else {
+                table.appendChild(newRow);
+            }
+
+            // Set S.No. for all rows starting from the specified index
+            for (let i = parsedIndex; i < rows.length; i++) {
+                const currentSNo = parseInt(rows[i].cells[0].getElementsByTagName("input")[0].value);
+                rows[i].cells[0].getElementsByTagName("input")[0].value = currentSNo + 0;
+            }
+        } else {
+            alert("Invalid S.No. Please enter a valid S.No. greater than 1.");
+        }
+        // Clear the input value after adding the row
+        indexInput2_3.value = "";
+        // Update the S.No. values in the table
+        updateSNoValues2_3();
+    }
+
+    // Function to update S.No. values in the table
+    function updateSNoValues2_3() {
+        const table = document.querySelector("#recycledPercentage2 table tbody");
+        const rows = table.getElementsByTagName("tr");
+        for (let i = 1; i < rows.length; i++) {
+            rows[i].cells[0].getElementsByTagName("input")[0].value = i + 1;
+        }
+    }
+
+
+    /********************************************************************************************************************************** */
+    /*                                                            P2-T4-Start                                                           */
+    /********************************************************************************************************************************** */
+    // Function to add a new row at the bottom of the table
+    function addBottomRow2_5() {
+        const table = document.querySelector("#reclaimedPercentages2 table tbody");
+        const rows = table.getElementsByTagName("tr");
+        const lastRow = rows[rows.length - 1].cloneNode(true);
+
+        // Increment the S.No. in the new row
+        const lastSNo = parseInt(rows[rows.length - 1].cells[0].getElementsByTagName("input")[0].value);
+        lastRow.cells[0].getElementsByTagName("input")[0].value = lastSNo + 1;
+
+        // Clear other input fields in the new row
+        const inputs = lastRow.getElementsByTagName("input");
+        for (let i = 1; i < inputs.length; i++) {
+            inputs[i].value = "";
+        }
+
+        // Add the new row at the bottom
+        table.appendChild(lastRow);
+
+        updateSNoValues2_5();
+    }
+
+    // Function to remove a specific row from the table with confirmation
+    function removeSpecificRow2_5() {
+        const indexInput2_5 = document.getElementById("indexInput2_5");
+        const parsedIndex = parseInt(indexInput2_5.value);
+
+        if (!isNaN(parsedIndex) && parsedIndex > 1) {
+            const table = document.querySelector("#reclaimedPercentages2 table tbody");
+            const rows = table.getElementsByTagName("tr");
+
+            if (parsedIndex <= rows.length) {
+                // Ask for confirmation before removing the row
+                if (confirm("Are you sure you want to remove this row?")) {
+                    table.removeChild(rows[parsedIndex - 1]);
+
+                    // Update the S.No. values in the table
+                    updateSNoValues2_5();
+                }
+            } else {
+                alert("Invalid S.No. The specified row does not exist.");
+            }
+        } else if (parsedIndex === 1) {
+            alert("Cannot remove the first row. Please enter a valid S.No. greater than 1.");
+        } else {
+            alert("Invalid S.No. Please enter a valid S.No.");
+        }
+
+        // Clear the input value after removing the row
+        indexInput2_5.value = "";
+    }
+
+    // Function to remove the last row from the table with confirmation
+    function removeBottomRow2_5() {
+        const table = document.querySelector("#reclaimedPercentages2 table tbody");
+        const rows = table.getElementsByTagName("tr");
+
+        if (rows.length > 1) { // Ensure there is more than one row
+            // Ask for confirmation before removing the row
+            if (confirm("Are you sure you want to remove the last row?")) {
+                table.removeChild(rows[rows.length - 1]);
+
+                // Update the S.No. values in the table
+                updateSNoValues2_5();
+            }
+        }
+    }
+
+    // Function to add a new row at a specific index
+    function addRowAtIndex2_5() {
+        const indexInput2_5 = document.getElementById("indexInput2_5");
+        const parsedIndex = parseInt(indexInput2_5.value);
+
+        if (!isNaN(parsedIndex) && parsedIndex > 1) {
+            const table = document.querySelector("#reclaimedPercentages2 table tbody");
+            const rows = table.getElementsByTagName("tr");
+            const newRow = rows[rows.length - 1].cloneNode(true);
+
+            // Clear input fields in the new row
+            const inputs = newRow.getElementsByTagName("input");
+            for (let i = 0; i < inputs.length; i++) {
+                inputs[i].value = "";
+            }
+            // Increment the S.No. in the new row
+            const lastSNo = parseInt(rows[rows.length - 1].cells[0].getElementsByTagName("input")[0].value);
+
+            // Add the new row at the specified index
+            if (parsedIndex === 0) {
+                // Insert at the beginning
+                table.insertBefore(newRow, rows[0]);
+            } else if (parsedIndex <= rows.length - 1) {
+                table.insertBefore(newRow, rows[parsedIndex]);
+            } else {
+                table.appendChild(newRow);
+            }
+
+            // Set S.No. for all rows starting from the specified index
+            for (let i = parsedIndex; i < rows.length; i++) {
+                const currentSNo = parseInt(rows[i].cells[0].getElementsByTagName("input")[0].value);
+                rows[i].cells[0].getElementsByTagName("input")[0].value = currentSNo + 0;
+            }
+        } else {
+            alert("Invalid S.No. Please enter a valid S.No. greater than 1.");
+        }
+        // Clear the input value after adding the row
+        indexInput2_5.value = "";
+        // Update the S.No. values in the table
+        updateSNoValues2_5();
+    }
+
+    // Function to update S.No. values in the table
+    function updateSNoValues2_5() {
+        const table = document.querySelector("#reclaimedPercentages2 table tbody");
+        const rows = table.getElementsByTagName("tr");
+        for (let i = 1; i < rows.length; i++) {
+            rows[i].cells[0].getElementsByTagName("input")[0].value = i + 1;
+        }
+}
+
+
+/* ************************************************************************************************************************************ */
+/*                                                                                                                                      */
+/*                                                                P4 Table-START                                                        */
+/*                                                                                                                                      */
+/* ************************************************************************************************************************************ */
+
+    /********************************************************************************************************************************** */
+    /*                                                            P4-T1-Start                                                           */
+    /********************************************************************************************************************************** */
+    // Function to add a new row at the bottom of the table
+    function addBottomRow4_2() {
+        const table = document.querySelector("#stakeholderEngagementDetails table tbody");
+        const rows = table.getElementsByTagName("tr");
+        const lastRow = rows[rows.length - 1].cloneNode(true);
+
+        // Increment the S.No. in the new row
+        const lastSNo = parseInt(rows[rows.length - 1].cells[0].getElementsByTagName("input")[0].value);
+        lastRow.cells[0].getElementsByTagName("input")[0].value = lastSNo + 1;
+
+        // Clear other input fields in the new row
+        const inputs = lastRow.getElementsByTagName("input");
+        for (let i = 1; i < inputs.length; i++) {
+            inputs[i].value = "";
+        }
+
+        // Add the new row at the bottom
+        table.appendChild(lastRow);
+
+        updateSNoValues4_2();
+    }
+
+    // Function to remove a specific row from the table with confirmation
+    function removeSpecificRow4_2() {
+        const indexInput4_2 = document.getElementById("indexInput4_2");
+        const parsedIndex = parseInt(indexInput4_2.value);
+
+        if (!isNaN(parsedIndex) && parsedIndex > 1) {
+            const table = document.querySelector("#stakeholderEngagementDetails table tbody");
+            const rows = table.getElementsByTagName("tr");
+
+            if (parsedIndex <= rows.length) {
+                // Ask for confirmation before removing the row
+                if (confirm("Are you sure you want to remove this row?")) {
+                    table.removeChild(rows[parsedIndex - 1]);
+
+                    // Update the S.No. values in the table
+                    updateSNoValues4_2();
+                }
+            } else {
+                alert("Invalid S.No. The specified row does not exist.");
+            }
+        } else if (parsedIndex === 1) {
+            alert("Cannot remove the first row. Please enter a valid S.No. greater than 1.");
+        } else {
+            alert("Invalid S.No. Please enter a valid S.No.");
+        }
+
+        // Clear the input value after removing the row
+        indexInput4_2.value = "";
+    }
+
+    // Function to remove the last row from the table with confirmation
+    function removeBottomRow4_2() {
+        const table = document.querySelector("#stakeholderEngagementDetails table tbody");
+        const rows = table.getElementsByTagName("tr");
+
+        if (rows.length > 1) { // Ensure there is more than one row
+            // Ask for confirmation before removing the row
+            if (confirm("Are you sure you want to remove the last row?")) {
+                table.removeChild(rows[rows.length - 1]);
+
+                // Update the S.No. values in the table
+                updateSNoValues4_2();
+            }
+        }
+    }
+
+    // Function to add a new row at a specific index
+    function addRowAtIndex4_2() {
+        const indexInput4_2 = document.getElementById("indexInput4_2");
+        const parsedIndex = parseInt(indexInput4_2.value);
+
+        if (!isNaN(parsedIndex) && parsedIndex > 1) {
+            const table = document.querySelector("#stakeholderEngagementDetails table tbody");
+            const rows = table.getElementsByTagName("tr");
+            const newRow = rows[rows.length - 1].cloneNode(true);
+
+            // Clear input fields in the new row
+            const inputs = newRow.getElementsByTagName("input");
+            for (let i = 0; i < inputs.length; i++) {
+                inputs[i].value = "";
+            }
+            // Increment the S.No. in the new row
+            const lastSNo = parseInt(rows[rows.length - 1].cells[0].getElementsByTagName("input")[0].value);
+
+            // Add the new row at the specified index
+            if (parsedIndex === 0) {
+                // Insert at the beginning
+                table.insertBefore(newRow, rows[0]);
+            } else if (parsedIndex <= rows.length - 1) {
+                table.insertBefore(newRow, rows[parsedIndex]);
+            } else {
+                table.appendChild(newRow);
+            }
+
+            // Set S.No. for all rows starting from the specified index
+            for (let i = parsedIndex; i < rows.length; i++) {
+                const currentSNo = parseInt(rows[i].cells[0].getElementsByTagName("input")[0].value);
+                rows[i].cells[0].getElementsByTagName("input")[0].value = currentSNo + 0;
+            }
+        } else {
+            alert("Invalid S.No. Please enter a valid S.No. greater than 1.");
+        }
+        // Clear the input value after adding the row
+        indexInput4_2.value = "";
+        // Update the S.No. values in the table
+        updateSNoValues4_2();
+    }
+
+    // Function to update S.No. values in the table
+    function updateSNoValues4_2() {
+        const table = document.querySelector("#stakeholderEngagementDetails table tbody");
+        const rows = table.getElementsByTagName("tr");
+        for (let i = 1; i < rows.length; i++) {
+            rows[i].cells[0].getElementsByTagName("input")[0].value = i + 1;
+        }
+}
+
+
+/* ************************************************************************************************************************************ */
+/*                                                                                                                                      */
+/*                                                                P7 Table-START                                                        */
+/*                                                                                                                                      */
+/* ************************************************************************************************************************************ */
+
+    /********************************************************************************************************************************** */
+    /*                                                            P7-T1-Start                                                           */
+    /********************************************************************************************************************************** */
+    // Function to add a new row at the bottom of the table
+    function addBottomRow7_3() {
+        const table = document.querySelector("#publicPolicyAdvocacy table tbody");
+        const rows = table.getElementsByTagName("tr");
+        const lastRow = rows[rows.length - 1].cloneNode(true);
+
+        // Increment the S.No. in the new row
+        const lastSNo = parseInt(rows[rows.length - 1].cells[0].getElementsByTagName("input")[0].value);
+        lastRow.cells[0].getElementsByTagName("input")[0].value = lastSNo + 1;
+
+        // Clear other input fields in the new row
+        const inputs = lastRow.getElementsByTagName("input");
+        for (let i = 1; i < inputs.length; i++) {
+            inputs[i].value = "";
+        }
+
+        // Add the new row at the bottom
+        table.appendChild(lastRow);
+
+        updateSNoValues7_3();
+    }
+
+    // Function to remove a specific row from the table with confirmation
+    function removeSpecificRow7_3() {
+        const indexInput7_3 = document.getElementById("indexInput7_3");
+        const parsedIndex = parseInt(indexInput7_3.value);
+
+        if (!isNaN(parsedIndex) && parsedIndex > 1) {
+            const table = document.querySelector("#publicPolicyAdvocacy table tbody");
+            const rows = table.getElementsByTagName("tr");
+
+            if (parsedIndex <= rows.length) {
+                // Ask for confirmation before removing the row
+                if (confirm("Are you sure you want to remove this row?")) {
+                    table.removeChild(rows[parsedIndex - 1]);
+
+                    // Update the S.No. values in the table
+                    updateSNoValues7_3();
+                }
+            } else {
+                alert("Invalid S.No. The specified row does not exist.");
+            }
+        } else if (parsedIndex === 1) {
+            alert("Cannot remove the first row. Please enter a valid S.No. greater than 1.");
+        } else {
+            alert("Invalid S.No. Please enter a valid S.No.");
+        }
+
+        // Clear the input value after removing the row
+        indexInput7_3.value = "";
+    }
+
+    // Function to remove the last row from the table with confirmation
+    function removeBottomRow7_3() {
+        const table = document.querySelector("#publicPolicyAdvocacy table tbody");
+        const rows = table.getElementsByTagName("tr");
+
+        if (rows.length > 1) { // Ensure there is more than one row
+            // Ask for confirmation before removing the row
+            if (confirm("Are you sure you want to remove the last row?")) {
+                table.removeChild(rows[rows.length - 1]);
+
+                // Update the S.No. values in the table
+                updateSNoValues7_3();
+            }
+        }
+    }
+
+    // Function to add a new row at a specific index
+    function addRowAtIndex7_3() {
+        const indexInput7_3 = document.getElementById("indexInput7_3");
+        const parsedIndex = parseInt(indexInput7_3.value);
+
+        if (!isNaN(parsedIndex) && parsedIndex > 1) {
+            const table = document.querySelector("#publicPolicyAdvocacy table tbody");
+            const rows = table.getElementsByTagName("tr");
+            const newRow = rows[rows.length - 1].cloneNode(true);
+
+            // Clear input fields in the new row
+            const inputs = newRow.getElementsByTagName("input");
+            for (let i = 0; i < inputs.length; i++) {
+                inputs[i].value = "";
+            }
+            // Increment the S.No. in the new row
+            const lastSNo = parseInt(rows[rows.length - 1].cells[0].getElementsByTagName("input")[0].value);
+
+            // Add the new row at the specified index
+            if (parsedIndex === 0) {
+                // Insert at the beginning
+                table.insertBefore(newRow, rows[0]);
+            } else if (parsedIndex <= rows.length - 1) {
+                table.insertBefore(newRow, rows[parsedIndex]);
+            } else {
+                table.appendChild(newRow);
+            }
+
+            // Set S.No. for all rows starting from the specified index
+            for (let i = parsedIndex; i < rows.length; i++) {
+                const currentSNo = parseInt(rows[i].cells[0].getElementsByTagName("input")[0].value);
+                rows[i].cells[0].getElementsByTagName("input")[0].value = currentSNo + 0;
+            }
+        } else {
+            alert("Invalid S.No. Please enter a valid S.No. greater than 1.");
+        }
+        // Clear the input value after adding the row
+        indexInput7_3.value = "";
+        // Update the S.No. values in the table
+        updateSNoValues7_3();
+    }
+
+    // Function to update S.No. values in the table
+    function updateSNoValues7_3() {
+        const table = document.querySelector("#publicPolicyAdvocacy table tbody");
+        const rows = table.getElementsByTagName("tr");
+        for (let i = 1; i < rows.length; i++) {
+            rows[i].cells[0].getElementsByTagName("input")[0].value = i + 1;
+        }
+    }

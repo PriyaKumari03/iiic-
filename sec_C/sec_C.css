@@ -139,11 +139,26 @@ a {
 
 .container {
     margin: 20px auto;
-    max-width: 786px;
-    padding: 20px;
+    max-width: 100%;
+    padding: 1%;
     border-radius: 5px;
     background-color: #f1f9f4;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.bold_border_container {
+    margin: 20px auto;
+    max-width: 100%;
+    padding: 1%;
+    border-radius: 5px;
+    background-color: #f1f9f4;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border: 2px solid #186b38; /* Add this line to make the border solid with the same color */
+}
+.invisible_container {
+    margin: 10px auto;
+    max-width: 100%;
+    padding: 1%;
+    background-color: #f1f9f4;
 }
 
 h1 {
@@ -264,22 +279,383 @@ h3 {
     display: none;
 }
 
-/**footer**/
+/**table start**/
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 1px solid #2d6a4f;
+    border-radius: 5px;
+}
+td,th {
+    border: 1px solid #2d6a4f;
+    padding: 4px;
+}
+table input[type="text"] {
+    background-color: transparent;
+    width: 100%;
+    padding: 5px;
+}
+/**table end**/
+/* Table p7 Start */
+
+.table-control {
+    width: 100%;
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #2d6a4f;
+}
+/*Principle 1 tables*/
+#indexInput1_3 {
+    width: 10%; /* Adjust the width as needed */
+    padding: 8px;
+    border: 1px solid #2d6a4f;
+    border-radius: 4px;
+    margin-right: 10px; /* Add some spacing to the right */
+    margin-top: 1%;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+#indexInput1_3:focus {
+    outline: none;
+    border-color: #17a2b8; /* Highlight border color on focus */
+}
+
+#indexInput1_p_1 {
+    width: 10%; /* Adjust the width as needed */
+    padding: 8px;
+    border: 1px solid #2d6a4f;
+    border-radius: 4px;
+    margin-right: 10px; /* Add some spacing to the right */
+    margin-top: 1%;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+#indexInput1_p_1:focus {
+    outline: none;
+    border-color: #17a2b8; /* Highlight border color on focus */
+}
+
+/*Principle 2 tables*/
+#indexInput2_1 {
+    width: 10%; /* Adjust the width as needed */
+    padding: 8px;
+    border: 1px solid #2d6a4f;
+    border-radius: 4px;
+    margin-right: 10px; /* Add some spacing to the right */
+    margin-top: 1%;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+#indexInput2_1:focus {
+    outline: none;
+    border-color: #17a2b8; /* Highlight border color on focus */
+}
+
+#indexInput2_2 {
+    width: 10%; /* Adjust the width as needed */
+    padding: 8px;
+    border: 1px solid #2d6a4f;
+    border-radius: 4px;
+    margin-right: 10px; /* Add some spacing to the right */
+    margin-top: 1%;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+#indexInput2_2:focus {
+    outline: none;
+    border-color: #17a2b8; /* Highlight border color on focus */
+}
+
+#indexInput2_3 {
+    width: 10%; /* Adjust the width as needed */
+    padding: 8px;
+    border: 1px solid #2d6a4f;
+    border-radius: 4px;
+    margin-right: 10px; /* Add some spacing to the right */
+    margin-top: 1%;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+#indexInput2_3:focus {
+    outline: none;
+    border-color: #17a2b8; /* Highlight border color on focus */
+}
+
+#indexInput2_5 {
+    width: 10%; /* Adjust the width as needed */
+    padding: 8px;
+    border: 1px solid #2d6a4f;
+    border-radius: 4px;
+    margin-right: 10px; /* Add some spacing to the right */
+    margin-top: 1%;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+#indexInput2_5:focus {
+    outline: none;
+    border-color: #17a2b8; /* Highlight border color on focus */
+}
+
+/*Principle 4 tables*/
+#indexInput4_2 {
+    width: 10%; /* Adjust the width as needed */
+    padding: 8px;
+    border: 1px solid #2d6a4f;
+    border-radius: 4px;
+    margin-right: 10px; /* Add some spacing to the right */
+    margin-top: 1%;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+#indexInput4_2:focus {
+    outline: none;
+    border-color: #17a2b8; /* Highlight border color on focus */
+}
+
+/*Principle 6 tables*/
+#indexInput6_10 {
+    width: 10%; /* Adjust the width as needed */
+    padding: 8px;
+    border: 1px solid #2d6a4f;
+    border-radius: 4px;
+    margin-right: 10px; /* Add some spacing to the right */
+    margin-top: 1%;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+#indexInput6_10:focus {
+    outline: none;
+    border-color: #17a2b8; /* Highlight border color on focus */
+}
+
+#indexInput6_11 {
+    width: 10%; /* Adjust the width as needed */
+    padding: 8px;
+    border: 1px solid #2d6a4f;
+    border-radius: 4px;
+    margin-right: 10px; /* Add some spacing to the right */
+    margin-top: 1%;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+#indexInput6_11:focus {
+    outline: none;
+    border-color: #17a2b8; /* Highlight border color on focus */
+}
+
+#indexInput6_12 {
+    width: 10%; /* Adjust the width as needed */
+    padding: 8px;
+    border: 1px solid #2d6a4f;
+    border-radius: 4px;
+    margin-right: 10px; /* Add some spacing to the right */
+    margin-top: 1%;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+#indexInput6_12:focus {
+    outline: none;
+    border-color: #17a2b8; /* Highlight border color on focus */
+}
+
+/*Principle 7 tables*/
+#indexInput7_2 {
+    width: 10%; /* Adjust the width as needed */
+    padding: 8px;
+    border: 1px solid #2d6a4f;
+    border-radius: 4px;
+    margin-right: 10px; /* Add some spacing to the right */
+    margin-top: 1%;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+#indexInput7_2:focus {
+    outline: none;
+    border-color: #17a2b8; /* Highlight border color on focus */
+}
+
+#indexInput7_3 {
+    width: 10%; /* Adjust the width as needed */
+    padding: 8px;
+    border: 1px solid #2d6a4f;
+    border-radius: 4px;
+    margin-right: 10px; /* Add some spacing to the right */
+    margin-top: 1%;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+#indexInput7_3:focus {
+    outline: none;
+    border-color: #17a2b8; /* Highlight border color on focus */
+}
+
+/*Principle 8 tables*/
+#indexInput8_1 {
+    width: 10%; /* Adjust the width as needed */
+    padding: 8px;
+    border: 1px solid #2d6a4f;
+    border-radius: 4px;
+    margin-right: 10px; /* Add some spacing to the right */
+    margin-top: 1%;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+#indexInput8_1:focus {
+    outline: none;
+    border-color: #17a2b8; /* Highlight border color on focus */
+}
+
+#indexInput8_2 {
+    width: 10%; /* Adjust the width as needed */
+    padding: 8px;
+    border: 1px solid #2d6a4f;
+    border-radius: 4px;
+    margin-right: 10px; /* Add some spacing to the right */
+    margin-top: 1%;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+#indexInput8_2:focus {
+    outline: none;
+    border-color: #17a2b8; /* Highlight border color on focus */
+}
+
+#indexInput8_L_1 {
+    width: 10%; /* Adjust the width as needed */
+    padding: 8px;
+    border: 1px solid #2d6a4f;
+    border-radius: 4px;
+    margin-right: 10px; /* Add some spacing to the right */
+    margin-top: 1%;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+#indexInput8_L_1:focus {
+    outline: none;
+    border-color: #17a2b8; /* Highlight border color on focus */
+}
+
+#indexInput8_L_2 {
+    width: 10%; /* Adjust the width as needed */
+    padding: 8px;
+    border: 1px solid #2d6a4f;
+    border-radius: 4px;
+    margin-right: 10px; /* Add some spacing to the right */
+    margin-top: 1%;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+#indexInput8_L_2:focus {
+    outline: none;
+    border-color: #17a2b8; /* Highlight border color on focus */
+}
+
+#indexInput8_L_4 {
+    width: 10%; /* Adjust the width as needed */
+    padding: 8px;
+    border: 1px solid #2d6a4f;
+    border-radius: 4px;
+    margin-right: 10px; /* Add some spacing to the right */
+    margin-top: 1%;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+#indexInput8_L_4:focus {
+    outline: none;
+    border-color: #17a2b8; /* Highlight border color on focus */
+}
+
+#indexInput8_L_5 {
+    width: 10%; /* Adjust the width as needed */
+    padding: 8px;
+    border: 1px solid #2d6a4f;
+    border-radius: 4px;
+    margin-right: 10px; /* Add some spacing to the right */
+    margin-top: 1%;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+#indexInput8_L_5:focus {
+    outline: none;
+    border-color: #17a2b8; /* Highlight border color on focus */
+}
+
+#indexInput8_L_6 {
+    width: 10%; /* Adjust the width as needed */
+    padding: 8px;
+    border: 1px solid #2d6a4f;
+    border-radius: 4px;
+    margin-right: 10px; /* Add some spacing to the right */
+    margin-top: 1%;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+#indexInput8_L_6:focus {
+    outline: none;
+    border-color: #17a2b8; /* Highlight border color on focus */
+}
+/*************************************************************************************************************************************/
+/*                                                                                                                                   */                           
+/*                                                          Table Responsive                                                         */
+/*                                                                                                                                   */  
+/*************************************************************************************************************************************/
+
+/* Add a general class for tables with responsive slider */
+.responsive-table {
+    width: auto;
+    overflow-x: auto;
+    display: block;
+}
+
+/* Apply styles to the table and cells */
+.responsive-table th,
+.responsive-table td {
+    max-width: auto; /* Set a maximum width for each cell */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/*************************************************************************************************************************************/
+/*                                                                                                                                   */                           
+/*                                              FOOTER-START                                                                         */
+/*                                                                                                                                   */  
+/*************************************************************************************************************************************/
 .footer {
     background-color: #2d6a4f;
     color: #fff;
     padding: 20px 0;
     text-align: center;
-  }
+    width: 100%;
+}
 
 .row {
-    display: flex;
-    padding: 1rem;
+    display: collapse;
+    flex-wrap: wrap; /* Enable wrapping for responsiveness */
+    justify-content: space-between; /* Spread columns evenly */
 }
 
 .column {
-    width: calc(100% / 3);
     padding: 0 0.9375rem;
+    margin-bottom: 1.5rem; /* Add some spacing between columns */
 }
 
 h4 {
@@ -298,49 +674,59 @@ ul {
     padding: 0;
 }
 
-    ul li {
+ul li {
+    margin-bottom: 0.625rem;
+}
+
+ul li a {
+    color: #fff;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+ul li i {
+    color: #00563F;
+}
+
+ul li a:hover {
+    color: #02cc96;
+}
+
+
+@media (max-width: 800px) {
+    ul.social-icons {
+        flex-direction: justify; /* Stack the icons vertically */
+        text-align: center; /* Center the icons within the container */
+    }
+
+    ul.social-icons li {
         margin-bottom: 0.625rem;
     }
-
-        ul li a {
-            color: #333;
-            font-size: 1rem;
-        }
-
-        ul li i {
-            color: #00563F;
-        }
-
-        ul li a:hover {
-            color: #02cc96;
-        }
-
-    ul.social-icons {
-        display: flex;
-        column-gap: 0.625rem;
-        margin-left: 130px;
-    }
+}
+.social-icons {
+    display: flex;
+    justify-content: center;
+    column-gap: 0.625rem;
+}
 
 .social-icons i {
     color: white;
 }
 
-ul.social-icons li {
-    margin-bottom: 0rem;
+ul.social-icons li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background-color: #00563F;
+    text-decoration: none;
 }
 
-    ul.social-icons li a {
-        display: grid;
-        place-content: center;
-        width: 2.5rem;
-        height: 2.5rem;
-        border-radius: 100%;
-        background-color: #00563F;
-    }
-
-    ul.social-icons li:hover a {
-        background-color: #16981d;
-    }
+ul.social-icons li:hover a {
+    background-color: #16981d;
+}
 
 .copyright {
     text-align: center;
@@ -348,4 +734,11 @@ ul.social-icons li {
     background-color: #008514;
     padding: 0.6rem 0;
 }
-/**footer ends**/
+
+
+
+/*************************************************************************************************************************************/
+/*                                                                                                                                   */                           
+/*                                              FOOTER-END                                                                           */
+/*                                                                                                                                   */  
+/*************************************************************************************************************************************/
