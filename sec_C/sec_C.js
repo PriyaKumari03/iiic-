@@ -1344,3 +1344,131 @@ document.getElementById("inputMaterialPercentage").addEventListener("input", fun
             rows[i].cells[0].getElementsByTagName("input")[0].value = i + 1;
         }
     }
+
+/* ************************************************************************************************************************************ */
+/*                                                                                                                                      */
+/*                                                                P8 Table-START                                                        */
+/*                                                                                                                                      */
+/* ************************************************************************************************************************************ */
+
+    /********************************************************************************************************************************** */
+    /*                                                            P8-T1-Start                                                           */
+    /********************************************************************************************************************************** */
+    // Function to add a new row at the bottom of the table
+    function addBottomRow8_1() {
+        const table = document.querySelector("#socialImpactAssessments table tbody");
+        const rows = table.getElementsByTagName("tr");
+        const lastRow = rows[rows.length - 1].cloneNode(true);
+
+        // Increment the S.No. in the new row
+        const lastSNo = parseInt(rows[rows.length - 1].cells[0].getElementsByTagName("input")[0].value);
+        lastRow.cells[0].getElementsByTagName("input")[0].value = lastSNo + 1;
+
+        // Clear other input fields in the new row
+        const inputs = lastRow.getElementsByTagName("input");
+        for (let i = 1; i < inputs.length; i++) {
+            inputs[i].value = "";
+        }
+
+        // Add the new row at the bottom
+        table.appendChild(lastRow);
+
+        updateSNoValues8_1();
+    }
+
+    // Function to remove a specific row from the table with confirmation
+    function removeSpecificRow8_1() {
+        const indexInput8_1 = document.getElementById("indexInput8_1");
+        const parsedIndex = parseInt(indexInput8_1.value);
+
+        if (!isNaN(parsedIndex) && parsedIndex > 1) {
+            const table = document.querySelector("#socialImpactAssessments table tbody");
+            const rows = table.getElementsByTagName("tr");
+
+            if (parsedIndex <= rows.length) {
+                // Ask for confirmation before removing the row
+                if (confirm("Are you sure you want to remove this row?")) {
+                    table.removeChild(rows[parsedIndex - 1]);
+
+                    // Update the S.No. values in the table
+                    updateSNoValues8_1();
+                }
+            } else {
+                alert("Invalid S.No. The specified row does not exist.");
+            }
+        } else if (parsedIndex === 1) {
+            alert("Cannot remove the first row. Please enter a valid S.No. greater than 1.");
+        } else {
+            alert("Invalid S.No. Please enter a valid S.No.");
+        }
+
+        // Clear the input value after removing the row
+        indexInput8_1.value = "";
+    }
+
+    // Function to remove the last row from the table with confirmation
+    function removeBottomRow8_1() {
+        const table = document.querySelector("#socialImpactAssessments table tbody");
+        const rows = table.getElementsByTagName("tr");
+
+        if (rows.length > 1) { // Ensure there is more than one row
+            // Ask for confirmation before removing the row
+            if (confirm("Are you sure you want to remove the last row?")) {
+                table.removeChild(rows[rows.length - 1]);
+
+                // Update the S.No. values in the table
+                updateSNoValues8_1();
+            }
+        }
+    }
+
+    // Function to add a new row at a specific index
+    function addRowAtIndex8_1() {
+        const indexInput8_1 = document.getElementById("indexInput8_1");
+        const parsedIndex = parseInt(indexInput8_1.value);
+
+        if (!isNaN(parsedIndex) && parsedIndex > 1) {
+            const table = document.querySelector("#psocialImpactAssessments table tbody");
+            const rows = table.getElementsByTagName("tr");
+            const newRow = rows[rows.length - 1].cloneNode(true);
+
+            // Clear input fields in the new row
+            const inputs = newRow.getElementsByTagName("input");
+            for (let i = 0; i < inputs.length; i++) {
+                inputs[i].value = "";
+            }
+            // Increment the S.No. in the new row
+            const lastSNo = parseInt(rows[rows.length - 1].cells[0].getElementsByTagName("input")[0].value);
+
+            // Add the new row at the specified index
+            if (parsedIndex === 0) {
+                // Insert at the beginning
+                table.insertBefore(newRow, rows[0]);
+            } else if (parsedIndex <= rows.length - 1) {
+                table.insertBefore(newRow, rows[parsedIndex]);
+            } else {
+                table.appendChild(newRow);
+            }
+
+            // Set S.No. for all rows starting from the specified index
+            for (let i = parsedIndex; i < rows.length; i++) {
+                const currentSNo = parseInt(rows[i].cells[0].getElementsByTagName("input")[0].value);
+                rows[i].cells[0].getElementsByTagName("input")[0].value = currentSNo + 0;
+            }
+        } else {
+            alert("Invalid S.No. Please enter a valid S.No. greater than 1.");
+        }
+        // Clear the input value after adding the row
+        indexInput8_1.value = "";
+        // Update the S.No. values in the table
+        updateSNoValues8_1();
+    }
+
+    // Function to update S.No. values in the table
+    function updateSNoValues8_1() {
+        const table = document.querySelector("#socialImpactAssessments table tbody");
+        const rows = table.getElementsByTagName("tr");
+        for (let i = 1; i < rows.length; i++) {
+            rows[i].cells[0].getElementsByTagName("input")[0].value = i + 1;
+        }
+    }
