@@ -3008,7 +3008,7 @@
                         <!--Details on project(s) for which ongoing Rehabilitation and Resettlement(R&R) start-->
                         <div class="mb-3">
                             <div class="policy">
-                                <label for="rehabilitationProjects" class="form-label"><span style="color: red;"> * </span>2. Provide information on project(s) for which ongoing Rehabilitation & Resettlement (R&R) is being undertaken by your entity, in the following format:</label>
+                                <label for="rehabilitationProject" class="form-label"><span style="color: red;"> * </span>2. Provide information on project(s) for which ongoing Rehabilitation & Resettlement (R&R) is being undertaken by your entity, in the following format:</label>
                             </div>
                             <div id="rehabilitationProject" class="responsive-table">
                                 <table id="p_rehabilitationProject">
