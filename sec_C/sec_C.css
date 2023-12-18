@@ -305,7 +305,7 @@ table input[type="text"] {
     border: 1px solid #2d6a4f;
 }
 /*Principle 1 tables*/
-#indexInput1_3 {
+#indexInput_appeal {
     width: 10%; /* Adjust the width as needed */
     padding: 8px;
     border: 1px solid #2d6a4f;
@@ -316,12 +316,12 @@ table input[type="text"] {
     font-size: 14px;
 }
 
-#indexInput1_3:focus {
+#indexInput_appeal:focus {
     outline: none;
     border-color: #17a2b8; /* Highlight border color on focus */
 }
 
-#indexInput1_p_1 {
+#indexInput_awarenessProgrammes {
     width: 10%; /* Adjust the width as needed */
     padding: 8px;
     border: 1px solid #2d6a4f;
@@ -332,13 +332,13 @@ table input[type="text"] {
     font-size: 14px;
 }
 
-#indexInput1_p_1:focus {
+#indexInput_awarenessProgrammes:focus {
     outline: none;
     border-color: #17a2b8; /* Highlight border color on focus */
 }
 
 /*Principle 2 tables*/
-#indexInput2_1 {
+#indexInput_lcaConducted2 {
     width: 10%; /* Adjust the width as needed */
     padding: 8px;
     border: 1px solid #2d6a4f;
@@ -349,12 +349,12 @@ table input[type="text"] {
     font-size: 14px;
 }
 
-#indexInput2_1:focus {
+#indexInput_lcaConducted2:focus {
     outline: none;
     border-color: #17a2b8; /* Highlight border color on focus */
 }
 
-#indexInput2_2 {
+#indexInput_concernsMitigation2 {
     width: 10%; /* Adjust the width as needed */
     padding: 8px;
     border: 1px solid #2d6a4f;
@@ -365,12 +365,12 @@ table input[type="text"] {
     font-size: 14px;
 }
 
-#indexInput2_2:focus {
+#indexInput_concernsMitigation2:focus {
     outline: none;
     border-color: #17a2b8; /* Highlight border color on focus */
 }
 
-#indexInput2_3 {
+#indexInput_recycledPercentage2 {
     width: 10%; /* Adjust the width as needed */
     padding: 8px;
     border: 1px solid #2d6a4f;
@@ -381,12 +381,12 @@ table input[type="text"] {
     font-size: 14px;
 }
 
-#indexInput2_3:focus {
+#indexInput_recycledPercentage2:focus {
     outline: none;
     border-color: #17a2b8; /* Highlight border color on focus */
 }
 
-#indexInput2_5 {
+#indexInput_reclaimedPercentages2 {
     width: 10%; /* Adjust the width as needed */
     padding: 8px;
     border: 1px solid #2d6a4f;
@@ -397,13 +397,13 @@ table input[type="text"] {
     font-size: 14px;
 }
 
-#indexInput2_5:focus {
+#indexInput_reclaimedPercentages2:focus {
     outline: none;
     border-color: #17a2b8; /* Highlight border color on focus */
 }
 
 /*Principle 4 tables*/
-#indexInput4_2 {
+#indexInput_stakeholderEngagementDetails {
     width: 10%; /* Adjust the width as needed */
     padding: 8px;
     border: 1px solid #2d6a4f;
@@ -414,13 +414,13 @@ table input[type="text"] {
     font-size: 14px;
 }
 
-#indexInput4_2:focus {
+#indexInput_stakeholderEngagementDetails:focus {
     outline: none;
     border-color: #17a2b8; /* Highlight border color on focus */
 }
 
 /*Principle 6 tables*/
-#indexInput6_10 {
+#indexInput_ecologicalAreaOperations {
     width: 10%; /* Adjust the width as needed */
     padding: 8px;
     border: 1px solid #2d6a4f;
@@ -431,12 +431,12 @@ table input[type="text"] {
     font-size: 14px;
 }
 
-#indexInput6_10:focus {
+#indexInput_ecologicalAreaOperation:focus {
     outline: none;
     border-color: #17a2b8; /* Highlight border color on focus */
 }
 
-#indexInput6_11 {
+#indexInput_eiaExternalAgency {
     width: 10%; /* Adjust the width as needed */
     padding: 8px;
     border: 1px solid #2d6a4f;
@@ -447,12 +447,12 @@ table input[type="text"] {
     font-size: 14px;
 }
 
-#indexInput6_11:focus {
+#indexInput_eiaExternalAgency:focus {
     outline: none;
     border-color: #17a2b8; /* Highlight border color on focus */
 }
 
-#indexInput6_12 {
+#indexInput_environmentalComplianceStatus {
     width: 10%; /* Adjust the width as needed */
     padding: 8px;
     border: 1px solid #2d6a4f;
@@ -463,13 +463,29 @@ table input[type="text"] {
     font-size: 14px;
 }
 
-#indexInput6_12:focus {
+#indexInput_environmentalComplianceStatus:focus {
+    outline: none;
+    border-color: #17a2b8; /* Highlight border color on focus */
+}
+
+#indexInput_resourceefficiency {
+    width: 10%; /* Adjust the width as needed */
+    padding: 8px;
+    border: 1px solid #2d6a4f;
+    border-radius: 4px;
+    margin-right: 10px; /* Add some spacing to the right */
+    margin-top: 1%;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+#indexInput_resourceefficiency:focus {
     outline: none;
     border-color: #17a2b8; /* Highlight border color on focus */
 }
 
 /*Principle 7 tables*/
-#indexInput7_2 {
+#indexInput_antiCompetitiveActions {
     width: 10%; /* Adjust the width as needed */
     padding: 8px;
     border: 1px solid #2d6a4f;
@@ -480,12 +496,12 @@ table input[type="text"] {
     font-size: 14px;
 }
 
-#indexInput7_2:focus {
+#indexInput_antiCompetitiveActions:focus {
     outline: none;
     border-color: #17a2b8; /* Highlight border color on focus */
 }
 
-#indexInput7_3 {
+#indexInput_publicPolicyAdvocacy {
     width: 10%; /* Adjust the width as needed */
     padding: 8px;
     border: 1px solid #2d6a4f;
@@ -496,13 +512,13 @@ table input[type="text"] {
     font-size: 14px;
 }
 
-#indexInput7_3:focus {
+#indexInput_publicPolicyAdvocacy:focus {
     outline: none;
     border-color: #17a2b8; /* Highlight border color on focus */
 }
 
 /*Principle 8 tables*/
-#indexInput8_1 {
+#indexInput_socialImpactAssessments {
     width: 10%; /* Adjust the width as needed */
     padding: 8px;
     border: 1px solid #2d6a4f;
@@ -513,12 +529,12 @@ table input[type="text"] {
     font-size: 14px;
 }
 
-#indexInput8_1:focus {
+#indexInput_socialImpactAssessments:focus {
     outline: none;
     border-color: #17a2b8; /* Highlight border color on focus */
 }
 
-#indexInput8_2 {
+#indexInput_rehabilitationProject {
     width: 10%; /* Adjust the width as needed */
     padding: 8px;
     border: 1px solid #2d6a4f;
@@ -529,12 +545,12 @@ table input[type="text"] {
     font-size: 14px;
 }
 
-#indexInput8_2:focus {
+#indexInput_rehabilitationProject:focus {
     outline: none;
     border-color: #17a2b8; /* Highlight border color on focus */
 }
 
-#indexInput8_L_1 {
+#indexInput_socialImpactActions {
     width: 10%; /* Adjust the width as needed */
     padding: 8px;
     border: 1px solid #2d6a4f;
@@ -545,12 +561,12 @@ table input[type="text"] {
     font-size: 14px;
 }
 
-#indexInput8_L_1:focus {
+#indexInput_socialImpactActions:focus {
     outline: none;
     border-color: #17a2b8; /* Highlight border color on focus */
 }
 
-#indexInput8_L_2 {
+#indexInput_csrAspirationalDistricts {
     width: 10%; /* Adjust the width as needed */
     padding: 8px;
     border: 1px solid #2d6a4f;
@@ -561,12 +577,12 @@ table input[type="text"] {
     font-size: 14px;
 }
 
-#indexInput8_L_2:focus {
+#indexInput_csrAspirationalDistricts:focus {
     outline: none;
     border-color: #17a2b8; /* Highlight border color on focus */
 }
 
-#indexInput8_L_4 {
+#indexInput_intellectualPropertiesBenefits {
     width: 10%; /* Adjust the width as needed */
     padding: 8px;
     border: 1px solid #2d6a4f;
@@ -577,12 +593,12 @@ table input[type="text"] {
     font-size: 14px;
 }
 
-#indexInput8_L_4:focus {
+#indexInput_intellectualPropertiesBenefits:focus {
     outline: none;
     border-color: #17a2b8; /* Highlight border color on focus */
 }
 
-#indexInput8_L_5 {
+#indexInput_correctiveActionsIntellectualProperty {
     width: 10%; /* Adjust the width as needed */
     padding: 8px;
     border: 1px solid #2d6a4f;
@@ -593,12 +609,12 @@ table input[type="text"] {
     font-size: 14px;
 }
 
-#indexInput8_L_5:focus {
+#indexInput_correctiveActionsIntellectualProperty:focus {
     outline: none;
     border-color: #17a2b8; /* Highlight border color on focus */
 }
 
-#indexInput8_L_6 {
+#indexInput_csrProjectBeneficiaries {
     width: 10%; /* Adjust the width as needed */
     padding: 8px;
     border: 1px solid #2d6a4f;
@@ -609,7 +625,7 @@ table input[type="text"] {
     font-size: 14px;
 }
 
-#indexInput8_L_6:focus {
+#indexInput_csrProjectBeneficiaries:focus {
     outline: none;
     border-color: #17a2b8; /* Highlight border color on focus */
 }

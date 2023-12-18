@@ -93,27 +93,27 @@
                                     <tbody>
                                         <tr>
                                             <th class="form-label">Board of Directors</th>
-                                            <td><input type="text" id="coverage" name="coverage[]" class="form-control" required></td>
-                                            <td><input type="text" id="coverage" name="coverage[]" class="form-control" required></td>
-                                            <td><input type="text" id="coverage" name="coverage[]" class="form-control" required></td>
+                                            <td><input type="text" id="coverage" name="coverage[]" class="form-control" ></td>
+                                            <td><input type="text" id="coverage" name="coverage[]" class="form-control" ></td>
+                                            <td><input type="text" id="coverage" name="coverage[]" class="form-control" ></td>
                                         </tr>
                                         <tr>
                                             <th class="form-label">Key Managerial Personnel</th>
-                                            <td><input type="text" id="coverage" name="coverage[]" class="form-control" required></td>
-                                            <td><input type="text" id="coverage" name="coverage[]" class="form-control" required></td>
-                                            <td><input type="text" id="coverage" name="coverage[]" class="form-control" required></td>
+                                            <td><input type="text" id="coverage" name="coverage[]" class="form-control" ></td>
+                                            <td><input type="text" id="coverage" name="coverage[]" class="form-control" ></td>
+                                            <td><input type="text" id="coverage" name="coverage[]" class="form-control" ></td>
                                         </tr>
                                         <tr>
                                             <th class="form-label">Employees other than BoD and KMPs</th>
-                                            <td><input type="text" id="coverage" name="coverage[]" class="form-control" required></td>
-                                            <td><input type="text" id="coverage" name="coverage[]" class="form-control" required></td>
-                                            <td><input type="text" id="coverage" name="coverage[]" class="form-control" required></td>
+                                            <td><input type="text" id="coverage" name="coverage[]" class="form-control" ></td>
+                                            <td><input type="text" id="coverage" name="coverage[]" class="form-control" ></td>
+                                            <td><input type="text" id="coverage" name="coverage[]" class="form-control" ></td>
                                         </tr>
                                         <tr>
                                             <th class="form-label">Workers</th>
-                                            <td><input type="text" id="coverage" name="coverage[]" class="form-control" required></td>
-                                            <td><input type="text" id="coverage" name="coverage[]" class="form-control" required></td>
-                                            <td><input type="text" id="coverage" name="coverage[]" class="form-control" required></td>
+                                            <td><input type="text" id="coverage" name="coverage[]" class="form-control" ></td>
+                                            <td><input type="text" id="coverage" name="coverage[]" class="form-control" ></td>
+                                            <td><input type="text" id="coverage" name="coverage[]" class="form-control" ></td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -141,27 +141,27 @@
                                     </tr>
                                     <tr>
                                         <th class="form-label">Penalty/fine</th>
-                                        <td><input type="text" id="details" name="details[]" class="form-control" required></td>
-                                        <td><input type="text" id="details" name="details[]" class="form-control" required></td>
-                                        <td><input type="text" id="details" name="details[]" class="form-control" required></td>
-                                        <td><input type="text" id="details" name="details[]" class="form-control" required></td>
-                                        <td><input type="text" id="details" name="details[]" class="form-control" required></td>
+                                        <td><input type="text" id="details" name="details[]" class="form-control" ></td>
+                                        <td><input type="text" id="details" name="details[]" class="form-control" ></td>
+                                        <td><input type="text" id="details" name="details[]" class="form-control" ></td>
+                                        <td><input type="text" id="details" name="details[]" class="form-control" ></td>
+                                        <td><input type="text" id="details" name="details[]" class="form-control" ></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label">settlement</th>
-                                        <td><input type="text" id="details" name="details[]" class="form-control" required></td>
-                                        <td><input type="text" id="details" name="details[]" class="form-control" required></td>
-                                        <td><input type="text" id="details" name="details[]" class="form-control" required></td>
-                                        <td><input type="text" id="details" name="details[]" class="form-control" required></td>
-                                        <td><input type="text" id="details" name="details[]" class="form-control" required></td>
+                                        <td><input type="text" id="details" name="details[]" class="form-control" ></td>
+                                        <td><input type="text" id="details" name="details[]" class="form-control" ></td>
+                                        <td><input type="text" id="details" name="details[]" class="form-control" ></td>
+                                        <td><input type="text" id="details" name="details[]" class="form-control" ></td>
+                                        <td><input type="text" id="details" name="details[]" class="form-control" ></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label">Compounding fee</th>
-                                        <td><input type="text" id="details" name="details[]" class="form-control" required></td>
-                                        <td><input type="text" id="details" name="details[]" class="form-control" required></td>
-                                        <td><input type="text" id="details" name="details[]" class="form-control" required></td>
-                                        <td><input type="text" id="details" name="details[]" class="form-control" required></td>
-                                        <td><input type="text" id="details" name="details[]" class="form-control" required></td>  
+                                        <td><input type="text" id="details" name="details[]" class="form-control" ></td>
+                                        <td><input type="text" id="details" name="details[]" class="form-control" ></td>
+                                        <td><input type="text" id="details" name="details[]" class="form-control" ></td>
+                                        <td><input type="text" id="details" name="details[]" class="form-control" ></td>
+                                        <td><input type="text" id="details" name="details[]" class="form-control" ></td>  
                                     </tr>
                                     <tr>
                                         <th  class="form-label" colspan="6">Non-Monetary</th>
@@ -176,19 +176,19 @@
                                     </tr>
                                     <tr>
                                         <th class="form-label">Imprisonment</th>
-                                        <td><input type="text" id="details" name="details[]" class="form-control" required></td>
-                                        <td><input type="text" id="details" name="details[]" class="form-control" required></td>
-                                        <td><input type="text" id="details" name="details[]" class="form-control" required></td>
-                                        <td><input type="text" id="details" name="details[]" class="form-control" required></td>
-                                        <td><input type="text" id="details" name="details[]" class="form-control" required></td>
+                                        <td><input type="text" id="details" name="details[]" class="form-control" ></td>
+                                        <td><input type="text" id="details" name="details[]" class="form-control" ></td>
+                                        <td><input type="text" id="details" name="details[]" class="form-control" ></td>
+                                        <td><input type="text" id="details" name="details[]" class="form-control" ></td>
+                                        <td><input type="text" id="details" name="details[]" class="form-control" ></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label">Punishment</th>
-                                        <td><input type="text" id="details" name="details[]" class="form-control" required></td>
-                                        <td><input type="text" id="details" name="details[]" class="form-control" required></td>
-                                        <td><input type="text" id="details" name="details[]" class="form-control" required></td>
-                                        <td><input type="text" id="details" name="details[]" class="form-control" required></td>
-                                        <td><input type="text" id="details" name="details[]" class="form-control" required></td>  
+                                        <td><input type="text" id="details" name="details[]" class="form-control" ></td>
+                                        <td><input type="text" id="details" name="details[]" class="form-control" ></td>
+                                        <td><input type="text" id="details" name="details[]" class="form-control" ></td>
+                                        <td><input type="text" id="details" name="details[]" class="form-control" ></td>
+                                        <td><input type="text" id="details" name="details[]" class="form-control" ></td>
                                     </tr>
                                 </table>
                             </div>
@@ -212,17 +212,17 @@
                                     <tbody>
                                         <tr>
                                             <td style="width:5%;"><input type="number" id="appeal" id="p_appeal" name="appeal[]" class="table-control" required value="1" readonly></td>
-                                            <td><input type="text" id="appeal" name="appeal[]" class="form-control" required></td>
-                                            <td><input type="text" id="appeal" name="appeal[]" class="form-control" required></td>
+                                            <td><input type="text" id="appeal" name="appeal[]" class="form-control" ></td>
+                                            <td><input type="text" id="appeal" name="appeal[]" class="form-control" ></td>
                                         </tr>
                                     </tbody>
                                 </table>
                                 <div>
-                                    <input type="number" id="indexInput1_3" placeholder="Enter S.No.">
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex1_3()">Add At Index</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow1_3()">Remove At Index</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow1_3()">Add Row</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow1_3()">Remove Row</button>
+                                    <input type="number" id="indexInput_appeal" placeholder="Enter S.No.">
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex('appeal')">Add At Index</button>
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow('appeal')">Remove At Index</button>
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow('appeal')">Add Row</button>
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow('appeal')">Remove Row</button>
                                 </div>
                             </div>
                         </div>
@@ -251,23 +251,23 @@
                                     </tr>
                                     <tr>
                                         <th class="form-label">Directors</th>
-                                        <td><input type="text" id="disciplinaryAction" name="disciplinaryAction[]" class="form-control" required></td>
-                                        <td><input type="text" id="disciplinaryAction" name="disciplinaryAction[]" class="form-control" required></td>
+                                        <td><input type="text" id="disciplinaryAction" name="disciplinaryAction[]" class="form-control" ></td>
+                                        <td><input type="text" id="disciplinaryAction" name="disciplinaryAction[]" class="form-control" ></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label">KMPs</th>
-                                        <td><input type="text" id="disciplinaryAction" name="disciplinaryAction[]" class="form-control" required></td>
-                                        <td><input type="text" id="disciplinaryAction" name="disciplinaryAction[]" class="form-control" required></td>
+                                        <td><input type="text" id="disciplinaryAction" name="disciplinaryAction[]" class="form-control" ></td>
+                                        <td><input type="text" id="disciplinaryAction" name="disciplinaryAction[]" class="form-control" ></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label">Employees</th>
-                                        <td><input type="text" id="disciplinaryAction" name="disciplinaryAction[]" class="form-control" required></td>
-                                        <td><input type="text" id="disciplinaryAction" name="disciplinaryAction[]" class="form-control" required></td>     
+                                        <td><input type="text" id="disciplinaryAction" name="disciplinaryAction[]" class="form-control" ></td>
+                                        <td><input type="text" id="disciplinaryAction" name="disciplinaryAction[]" class="form-control" ></td>    
                                     </tr>
                                     <tr>
                                         <th class="form-label">workers</th>
-                                        <td><input type="text" id="disciplinaryAction" name="disciplinaryAction[]" class="form-control" required></td>
-                                        <td><input type="text" id="disciplinaryAction" name="disciplinaryAction[]" class="form-control" required></td>
+                                        <td><input type="text" id="disciplinaryAction" name="disciplinaryAction[]" class="form-control" ></td>
+                                        <td><input type="text" id="disciplinaryAction" name="disciplinaryAction[]" class="form-control" ></td>
                                 </table>
                             </div>
                         </div>
@@ -293,17 +293,17 @@
                                     </tr>
                                     <tr>
                                         <th class="form-label">Number of Complaints received in relation to issues of Conflfict of intrest of the Directors</th>
-                                        <td><input type="text" id="conflictComplaints" name="conflictComplaints[]" class="form-control" required></td>
-                                        <td><input type="text" id="conflictComplaints" name="conflictComplaints[]" class="form-control" required></td>
-                                        <td><input type="text" id="conflictComplaints" name="conflictComplaints[]" class="form-control" required></td>
-                                        <td><input type="text" id="conflictComplaints" name="conflictComplaints[]" class="form-control" required></td>
+                                        <td><input type="text" id="conflictComplaints" name="conflictComplaints[]" class="form-control" ></td>
+                                        <td><input type="text" id="conflictComplaints" name="conflictComplaints[]" class="form-control" ></td>
+                                        <td><input type="text" id="conflictComplaints" name="conflictComplaints[]" class="form-control" ></td>
+                                        <td><input type="text" id="conflictComplaints" name="conflictComplaints[]" class="form-control" ></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label">Number of Complaints received in relation to issues of Conflect to Intrest of the KMPs</th>
-                                        <td><input type="text" id="conflictComplaints" name="conflictComplaints[]" class="form-control" required></td>
-                                        <td><input type="text" id="conflictComplaints" name="conflictComplaints[]" class="form-control" required></td>
-                                        <td><input type="text" id="conflictComplaints" name="conflictComplaints[]" class="form-control" required></td>
-                                        <td><input type="text" id="conflictComplaints" name="conflictComplaints[]" class="form-control" required></td>
+                                        <td><input type="text" id="conflictComplaints" name="conflictComplaints[]" class="form-control" ></td>
+                                        <td><input type="text" id="conflictComplaints" name="conflictComplaints[]" class="form-control" ></td>
+                                        <td><input type="text" id="conflictComplaints" name="conflictComplaints[]" class="form-control" ></td>
+                                        <td><input type="text" id="conflictComplaints" name="conflictComplaints[]" class="form-control" ></td>
                                     </tr>
                                 </table>
                             </div>
@@ -345,18 +345,18 @@
                                     </thead>
                                     <tbody>
                                         <tr><td style="width:5%;"><input type="number" id="awarenessProgrammes" id="p_awarenessProgrammes" name="awarenessProgrammes[]" class="table-control" required value="1" readonly></td>
-                                        <td><input type="text" id="awarenessProgrammes" name="awarenessProgrammes[]" class="form-control" required></td>
-                                        <td><input type="text" id="awarenessProgrammes" name="awarenessProgrammes[]" class="form-control" required></td>
-                                        <td><input type="text" id="awarenessProgrammes" name="awarenessProgrammes[]" class="form-control" required></td>
+                                        <td><input type="text" id="awarenessProgrammes" name="awarenessProgrammes[]" class="form-control" ></td>
+                                        <td><input type="text" id="awarenessProgrammes" name="awarenessProgrammes[]" class="form-control" ></td>
+                                        <td><input type="text" id="awarenessProgrammes" name="awarenessProgrammes[]" class="form-control" ></td>
                                         </tr>
                                     </tbody>
                                 </table>
                                 <div>
-                                    <input type="number" id="indexInput1_p_1" placeholder="Enter Index">
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex1_p_1()">Add At Index</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow1_p_1()">Remove At Index</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow1_p_1()">Add Row</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow1_p_1()">Remove Row</button>
+                                    <input type="number" id="indexInput_awarenessProgrammes" placeholder="Enter Index">
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex('awarenessProgrammes')">Add At Index</button>
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow('awarenessProgrammes')">Remove At Index</button>
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow('awarenessProgrammes')">Add Row</button>
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow('awarenessProgrammes')">Remove Row</button>
                                 </div>
                             </div>
                         </div>
@@ -424,15 +424,15 @@
                                     </tr>
                                     <tr>
                                         <th class="form-label">R&D</th>
-                                        <td><input type="text" id="dpercentage" name="dpercentage[]" class="form-control" required></td>
-                                        <td><input type="text" id="dpercentage" name="dpercentage[]" class="form-control" required></td>
-                                        <td><input type="text" id="dpercentage" name="dpercentage[]" class="form-control" required></td>
+                                        <td><input type="text" id="dpercentage" name="dpercentage[]" class="form-control" ></td>
+                                        <td><input type="text" id="dpercentage" name="dpercentage[]" class="form-control" ></td>
+                                        <td><input type="text" id="dpercentage" name="dpercentage[]" class="form-control" ></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label">capex</th>
-                                        <td><input type="text" id="dpercentage" name="dpercentage[]" class="form-control" required></td>
-                                        <td><input type="text" id="dpercentage" name="dpercentage[]" class="form-control" required></td>
-                                        <td><input type="text" id="dpercentage" name="dpercentage[]" class="form-control" required></td>
+                                        <td><input type="text" id="dpercentage" name="dpercentage[]" class="form-control" ></td>
+                                        <td><input type="text" id="dpercentage" name="dpercentage[]" class="form-control" ></td>
+                                        <td><input type="text" id="dpercentage" name="dpercentage[]" class="form-control" ></td>
                                     </tr>
                                 </table>
                             </div>
@@ -518,21 +518,21 @@
                                     <tbody>
                                         <tr>
                                             <td style="width:5%;"><input type="number" id="lcaConducted2" id="p_lcaConducted2" name="lcaConducted2[]" class="table-control" required value="1" readonly></td>
-                                            <td><input type="text" id="lcaConducted2" name="lcaConducted2[]" class="form-control" required></td>
-                                            <td><input type="text" id="lcaConducted2" name="lcaConducted2[]" class="form-control" required></td>
-                                            <td><input type="text" id="lcaConducted2" name="lcaConducted2[]" class="form-control" required></td>
-                                            <td><input type="text" id="lcaConducted2" name="lcaConducted2[]" class="form-control" required></td>
-                                            <td><input type="text" id="lcaConducted2" name="lcaConducted2[]" class="form-control" required></td>
-                                            <td><input type="text" id="lcaConducted2" name="lcaConducted2[]" class="form-control" required></td>
+                                            <td><input type="text" id="lcaConducted2" name="lcaConducted2[]" class="form-control" ></td>
+                                            <td><input type="text" id="lcaConducted2" name="lcaConducted2[]" class="form-control" ></td>
+                                            <td><input type="text" id="lcaConducted2" name="lcaConducted2[]" class="form-control" ></td>
+                                            <td><input type="text" id="lcaConducted2" name="lcaConducted2[]" class="form-control" ></td>
+                                            <td><input type="text" id="lcaConducted2" name="lcaConducted2[]" class="form-control" ></td>
+                                            <td><input type="text" id="lcaConducted2" name="lcaConducted2[]" class="form-control" ></td>
                                         </tr>
                                     </tbody>
                                 </table>
                                 <div>
-                                    <input type="number" id="indexInput2_1" placeholder="Enter Index">
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex2_1()">Add At Index</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow2_1()">Remove At Index</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow2_1()">Add Row</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow2_1()">Remove Row</button>
+                                    <input type="number" id="indexInput_lcaConducted2" placeholder="Enter Index">
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex('lcaConducted2')">Add At Index</button>
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow('lcaConducted2')">Remove At Index</button>
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow('lcaConducted2')">Add Row</button>
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow('lcaConducted2')">Remove Row</button>
                                 </div>
                             </div>
                         </div>
@@ -556,18 +556,18 @@
                                     <tbody>
                                         <tr>
                                             <td style="width:5%;"><input type="number" id="concernsMitigation2" id="p_concernsMitigation2" name="concernsMitigation2[]" class="table-control" required value="1" readonly></td>                          
-                                            <td><input type="text" id="concernsMitigation2" name="concernsMitigation2[]" class="form-control" required></td>                          
-                                            <td><input type="text" id="concernsMitigation2" name="concernsMitigation2[]" class="form-control" required></td>                          
-                                            <td><input type="text" id="concernsMitigation2" name="concernsMitigation2[]" class="form-control" required></td>
+                                            <td><input type="text" id="concernsMitigation2" name="concernsMitigation2[]" class="form-control" ></td>                          
+                                            <td><input type="text" id="concernsMitigation2" name="concernsMitigation2[]" class="form-control" ></td>                          
+                                            <td><input type="text" id="concernsMitigation2" name="concernsMitigation2[]" class="form-control" ></td>
                                         </tr>
                                     </tbody>
                                 </table>
                                 <div>
-                                    <input type="number" id="indexInput2_2" placeholder="Enter Index">
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex2_2()">Add At Index</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow2_2()">Remove At Index</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow2_2()">Add Row</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow2_2()">Remove Row</button>
+                                    <input type="number" id="indexInput_concernsMitigation2" placeholder="Enter Index">
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex('concernsMitigation2')">Add At Index</button>
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow('concernsMitigation2')">Remove At Index</button>
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow('concernsMitigation2')">Add Row</button>
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow('concernsMitigation2')">Remove Row</button>
                                 </div>
                             </div>
                         </div>
@@ -594,18 +594,18 @@
                                     <tbody>
                                         <tr>
                                             <td style="width:5%;"><input type="number" id="recycledPercentage2" id="p_recycledPercentage2" name="recycledPercentage2[]" class="table-control" required value="1" readonly></td>                                          
-                                            <td><input type="text" id="rrecycledPercentage2" name="recycledPercentage2[]" class="form-control" required></td>
-                                            <td><input type="text" id="rrecycledPercentage2" name="recycledPercentage2[]" class="form-control" required></td>
-                                            <td><input type="text" id="rrecycledPercentage2" name="recycledPercentage2[]" class="form-control" required></td>
+                                            <td><input type="text" id="rrecycledPercentage2" name="recycledPercentage2[]" class="form-control" ></td>
+                                            <td><input type="text" id="rrecycledPercentage2" name="recycledPercentage2[]" class="form-control" ></td>
+                                            <td><input type="text" id="rrecycledPercentage2" name="recycledPercentage2[]" class="form-control" ></td>
                                         </tr>
                                     </tbody>
                                 </table>
                                 <div>
-                                    <input type="number" id="indexInput2_3" placeholder="Enter Index">
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex2_3()">Add At Index</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow2_3()">Remove At Index</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow2_3()">Add Row</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow2_3()">Remove Row</button>
+                                    <input type="number" id="indexInput_recycledPercentage2" placeholder="Enter Index">
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex('recycledPercentage2')">Add At Index</button>
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow('recycledPercentage2')">Remove At Index</button>
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow('recycledPercentage2')">Add Row</button>
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow('recycledPercentage2')">Remove Row</button>
                                 </div>
                             </div>
                         </div>
@@ -633,30 +633,30 @@
                                     </tr>
                                     <tr>
                                         <th class="form-label">Plastics(including packaging)</th>
-                                        <td><input type="text" id="reclaimedProducts2" name="reclaimedProducts2[]" class="form-control" required></td>
-                                        <td><input type="text" id="reclaimedProducts2" name="reclaimedProducts2[]" class="form-control" required></td>
-                                        <td><input type="text" id="reclaimedProducts2" name="reclaimedProducts2[]" class="form-control" required></td>
-                                        <td><input type="text" id="reclaimedProducts2" name="reclaimedProducts2[]" class="form-control" required></td>
-                                        <td><input type="text" id="reclaimedProducts2" name="reclaimedProducts2[]" class="form-control" required></td>
-                                        <td><input type="text" id="reclaimedProducts2" name="reclaimedProducts2[]" class="form-control" required></td>
+                                        <td><input type="text" id="reclaimedProducts2" name="reclaimedProducts2[]" class="form-control" ></td>
+                                        <td><input type="text" id="reclaimedProducts2" name="reclaimedProducts2[]" class="form-control" ></td>
+                                        <td><input type="text" id="reclaimedProducts2" name="reclaimedProducts2[]" class="form-control" ></td>
+                                        <td><input type="text" id="reclaimedProducts2" name="reclaimedProducts2[]" class="form-control" ></td>
+                                        <td><input type="text" id="reclaimedProducts2" name="reclaimedProducts2[]" class="form-control" ></td>
+                                        <td><input type="text" id="reclaimedProducts2" name="reclaimedProducts2[]" class="form-control" ></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label">E-waste</th>
-                                        <td><input type="text" id="reclaimedProducts2" name="reclaimedProducts2[]" class="form-control" required></td>
-                                        <td><input type="text" id="reclaimedProducts2" name="reclaimedProducts2[]" class="form-control" required></td>
-                                        <td><input type="text" id="reclaimedProducts2" name="reclaimedProducts2[]" class="form-control" required></td>
-                                        <td><input type="text" id="reclaimedProducts2" name="reclaimedProducts2[]" class="form-control" required></td>
-                                        <td><input type="text" id="reclaimedProducts2" name="reclaimedProducts2[]" class="form-control" required></td>
-                                        <td><input type="text" id="reclaimedProducts2" name="reclaimedProducts2[]" class="form-control" required></td>
+                                        <td><input type="text" id="reclaimedProducts2" name="reclaimedProducts2[]" class="form-control" ></td>
+                                        <td><input type="text" id="reclaimedProducts2" name="reclaimedProducts2[]" class="form-control" ></td>
+                                        <td><input type="text" id="reclaimedProducts2" name="reclaimedProducts2[]" class="form-control" ></td>
+                                        <td><input type="text" id="reclaimedProducts2" name="reclaimedProducts2[]" class="form-control" ></td>
+                                        <td><input type="text" id="reclaimedProducts2" name="reclaimedProducts2[]" class="form-control" ></td>
+                                        <td><input type="text" id="reclaimedProducts2" name="reclaimedProducts2[]" class="form-control" ></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label">Hazardous waste</th>
-                                        <td><input type="text" id="reclaimedProducts2" name="reclaimedProducts2[]" class="form-control" required></td>
-                                        <td><input type="text" id="reclaimedProducts2" name="reclaimedProducts2[]" class="form-control" required></td>
-                                        <td><input type="text" id="reclaimedProducts2" name="reclaimedProducts2[]" class="form-control" required></td>
-                                        <td><input type="text" id="reclaimedProducts2" name="reclaimedProducts2[]" class="form-control" required></td>
-                                        <td><input type="text" id="reclaimedProducts2" name="reclaimedProducts2[]" class="form-control" required></td>
-                                        <td><input type="text" id="reclaimedProducts2" name="reclaimedProducts2[]" class="form-control" required></td>
+                                        <td><input type="text" id="reclaimedProducts2" name="reclaimedProducts2[]" class="form-control" ></td>
+                                        <td><input type="text" id="reclaimedProducts2" name="reclaimedProducts2[]" class="form-control" ></td>
+                                        <td><input type="text" id="reclaimedProducts2" name="reclaimedProducts2[]" class="form-control" ></td>
+                                        <td><input type="text" id="reclaimedProducts2" name="reclaimedProducts2[]" class="form-control" ></td>
+                                        <td><input type="text" id="reclaimedProducts2" name="reclaimedProducts2[]" class="form-control" ></td>
+                                        <td><input type="text" id="reclaimedProducts2" name="reclaimedProducts2[]" class="form-control" ></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label">Other waste</th>
@@ -689,17 +689,17 @@
                                     <tbody>
                                         <tr>
                                             <td style="width:5%;"><input type="number" id="reclaimedPercentages2" id="p_reclaimedPercentages2" name="reclaimedPercentages2[]" class="table-control" required value="1" readonly></td>                                                                      
-                                            <td><input type="text" id="reclaimedPercentages2" name="reclaimedPercentages2[]" class="form-control" required></td>
-                                            <td><input type="text" id="reclaimedPercentages2" name="reclaimedPercentages2[]" class="form-control" required></td>
+                                            <td><input type="text" id="reclaimedPercentages2" name="reclaimedPercentages2[]" class="form-control" ></td>
+                                            <td><input type="text" id="reclaimedPercentages2" name="reclaimedPercentages2[]" class="form-control" ></td>
                                         </tr>
                                     </tbody>
                                 </table>
                                 <div>
-                                    <input type="number" id="indexInput2_5" placeholder="Enter Index">
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex2_5()">Add At Index</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow2_5()">Remove At Index</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow2_5()">Add Row</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow2_5()">Remove Row</button>
+                                    <input type="number" id="indexInput_reclaimedPercentages2" placeholder="Enter Index">
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex('reclaimedPercentages2')">Add At Index</button>
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow('reclaimedPercentages2')">Remove At Index</button>
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow('reclaimedPercentages2')">Add Row</button>
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow('reclaimedPercentages2')">Remove Row</button>
                                 </div>
                             </div>
                         </div>
@@ -762,90 +762,90 @@
                                     </tr>
                                     <tr>
                                         <th class="form-label">Male</td>
-                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" required></td>
+                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" ></td>
                                     </tr>
                                     <tr>
                                         <td class="form-label">Female</td>
-                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" required></td>
+                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" ></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label">Total</th>
-                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" required></td>
+                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" ></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label" colspan="12">Other than Permanent employees</th>
                                     </tr>
                                     <tr>
                                         <th class="form-label">Male</td>
-                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" required></td>
+                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" ></td>
                                     </tr>
                                     <tr>
                                         <td class="form-label">Female</td>
-                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" required></td>
+                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" ></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label">Total</th>
-                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" required></td>
+                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" ></td>
                                     </tr>
                                 </table>
                             </div>
@@ -888,90 +888,90 @@
                                     </tr>
                                     <tr>
                                         <th class="form-label">Male</td>
-                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" required></td>
+                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" ></td>
                                     </tr>
                                     <tr>
                                         <td class="form-label">Female</td>
-                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" required></td>
+                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" ></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label">Total</th>
-                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" required></td>
+                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" ></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label" colspan="12">Other than Permanent workers</th>
                                     </tr>
                                     <tr>
                                         <th class="form-label">Male</td>
-                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" required></td>
+                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" ></td>
                                     </tr>
                                     <tr>
                                         <td class="form-label">Female</td>
-                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" required></td>
+                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" ></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label">Total</th>
-                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" required></td>
+                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" ></td>
                                     </tr>
                                 </table>
                             </div>
@@ -1001,38 +1001,38 @@
                                     <tr>
                                         <th class="form-label">PF</th>
                                         <td><input type="text" id="retirementBenefitsDetails" name="retirementBenefitsDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="retirementBenefitsDetails" name="retirementBenefitsDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="retirementBenefitsDetails" name="retirementBenefitsDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="retirementBenefitsDetails" name="retirementBenefitsDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="retirementBenefitsDetails" name="retirementBenefitsDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="retirementBenefitsDetails" name="retirementBenefitsDetails[]" class="form-control" required></td>
+                                        <td><input type="text" id="retirementBenefitsDetails" name="retirementBenefitsDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="retirementBenefitsDetails" name="retirementBenefitsDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="retirementBenefitsDetails" name="retirementBenefitsDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="retirementBenefitsDetails" name="retirementBenefitsDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="retirementBenefitsDetails" name="retirementBenefitsDetails[]" class="form-control" ></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label">Gratuity</th>
-                                        <td><input type="text" id="retirementBenefitsDetails" name="retirementBenefitsDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="retirementBenefitsDetails" name="retirementBenefitsDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="retirementBenefitsDetails" name="retirementBenefitsDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="retirementBenefitsDetails" name="retirementBenefitsDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="retirementBenefitsDetails" name="retirementBenefitsDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="retirementBenefitsDetails" name="retirementBenefitsDetails[]" class="form-control" required></td>
+                                        <td><input type="text" id="retirementBenefitsDetails" name="retirementBenefitsDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="retirementBenefitsDetails" name="retirementBenefitsDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="retirementBenefitsDetails" name="retirementBenefitsDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="retirementBenefitsDetails" name="retirementBenefitsDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="retirementBenefitsDetails" name="retirementBenefitsDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="retirementBenefitsDetails" name="retirementBenefitsDetails[]" class="form-control" ></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label">ESI</th>
-                                        <td><input type="text" id="retirementBenefitsDetails" name="retirementBenefitsDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="retirementBenefitsDetails" name="retirementBenefitsDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="retirementBenefitsDetails" name="retirementBenefitsDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="retirementBenefitsDetails" name="retirementBenefitsDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="retirementBenefitsDetails" name="retirementBenefitsDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="retirementBenefitsDetails" name="retirementBenefitsDetails[]" class="form-control" required></td>       
+                                        <td><input type="text" id="retirementBenefitsDetails" name="retirementBenefitsDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="retirementBenefitsDetails" name="retirementBenefitsDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="retirementBenefitsDetails" name="retirementBenefitsDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="retirementBenefitsDetails" name="retirementBenefitsDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="retirementBenefitsDetails" name="retirementBenefitsDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="retirementBenefitsDetails" name="retirementBenefitsDetails[]" class="form-control" ></td>      
                                     </tr>
                                     <tr>
                                         <th class="form-label">Others-please specify</th>
-                                        <td><input type="text" id="retirementBenefitsDetails" name="retirementBenefitsDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="retirementBenefitsDetails" name="retirementBenefitsDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="retirementBenefitsDetails" name="retirementBenefitsDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="retirementBenefitsDetails" name="retirementBenefitsDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="retirementBenefitsDetails" name="retirementBenefitsDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="retirementBenefitsDetails" name="retirementBenefitsDetails[]" class="form-control" required></td>
+                                        <td><input type="text" id="retirementBenefitsDetails" name="retirementBenefitsDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="retirementBenefitsDetails" name="retirementBenefitsDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="retirementBenefitsDetails" name="retirementBenefitsDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="retirementBenefitsDetails" name="retirementBenefitsDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="retirementBenefitsDetails" name="retirementBenefitsDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="retirementBenefitsDetails" name="retirementBenefitsDetails[]" class="form-control" ></td>
                                     </tr>
                                 </table>
                             </div>
@@ -1100,24 +1100,24 @@
                                     </tr>
                                     <tr>
                                         <td align="center" class="form-label">Male</td>
-                                        <td><input type="text" id="returnRetentionRates" name="returnRetentionRates[]" class="form-control" required></td>
-                                        <td><input type="text" id="returnRetentionRates" name="returnRetentionRates[]" class="form-control" required></td>
-                                        <td><input type="text" id="returnRetentionRates" name="returnRetentionRates[]" class="form-control" required></td>
-                                        <td><input type="text" id="returnRetentionRates" name="returnRetentionRates[]" class="form-control" required></td>
+                                        <td><input type="text" id="returnRetentionRates" name="returnRetentionRates[]" class="form-control" ></td>
+                                        <td><input type="text" id="returnRetentionRates" name="returnRetentionRates[]" class="form-control" ></td>
+                                        <td><input type="text" id="returnRetentionRates" name="returnRetentionRates[]" class="form-control" ></td>
+                                        <td><input type="text" id="returnRetentionRates" name="returnRetentionRates[]" class="form-control" ></td>
                                     </tr>
                                     <tr>
                                         <td align="center" class="form-label">Female</td>
-                                        <td><input type="text" id="returnRetentionRates" name="returnRetentionRates[]" class="form-control" required></td>
-                                        <td><input type="text" id="returnRetentionRates" name="returnRetentionRates[]" class="form-control" required></td>
-                                        <td><input type="text" id="returnRetentionRates" name="returnRetentionRates[]" class="form-control" required></td>
-                                        <td><input type="text" id="returnRetentionRates" name="returnRetentionRates[]" class="form-control" required></td>
+                                        <td><input type="text" id="returnRetentionRates" name="returnRetentionRates[]" class="form-control" ></td>
+                                        <td><input type="text" id="returnRetentionRates" name="returnRetentionRates[]" class="form-control" ></td>
+                                        <td><input type="text" id="returnRetentionRates" name="returnRetentionRates[]" class="form-control" ></td>
+                                        <td><input type="text" id="returnRetentionRates" name="returnRetentionRates[]" class="form-control" ></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label">Total</th>
-                                        <td><input type="text" id="returnRetentionRates" name="returnRetentionRates[]" class="form-control" required></td>
-                                        <td><input type="text" id="returnRetentionRates" name="returnRetentionRates[]" class="form-control" required></td>
-                                        <td><input type="text" id="returnRetentionRates" name="returnRetentionRates[]" class="form-control" required></td>
-                                        <td><input type="text" id="returnRetentionRates" name="returnRetentionRates[]" class="form-control" required></td>
+                                        <td><input type="text" id="returnRetentionRates" name="returnRetentionRates[]" class="form-control" ></td>
+                                        <td><input type="text" id="returnRetentionRates" name="returnRetentionRates[]" class="form-control" ></td>
+                                        <td><input type="text" id="returnRetentionRates" name="returnRetentionRates[]" class="form-control" ></td>
+                                        <td><input type="text" id="returnRetentionRates" name="returnRetentionRates[]" class="form-control" ></td>
                                     </tr>
                                 </table>
                             </div>
@@ -1137,19 +1137,19 @@
                                     </tr>
                                     <tr>
                                         <th class="form-label">Permanent Workers</th>
-                                        <td><input type="text" id="grievanceMechanismDetails" name="grievanceMechanismDetails[]" class="form-control" required></td>
+                                        <td><input type="text" id="grievanceMechanismDetails" name="grievanceMechanismDetails[]" class="form-control" ></td>
                                     </tr>
                                     <tr>
                                     <th class="form-label">Other than Permanent Workers</th>
-                                        <td><input type="text" id="grievanceMechanismDetails" name="grievanceMechanismDetails[]" class="form-control" required></td>
+                                        <td><input type="text" id="grievanceMechanismDetails" name="grievanceMechanismDetails[]" class="form-control" ></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label">Permanent employees</th>
-                                        <td><input type="text" id="grievanceMechanismDetails" name="grievanceMechanismDetails[]" class="form-control" required></td>
+                                        <td><input type="text" id="grievanceMechanismDetails" name="grievanceMechanismDetails[]" class="form-control" ></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label">other than permanent employees</th>
-                                        <td><input type="text" id="grievanceMechanismDetails" name="grievanceMechanismDetails[]" class="form-control" required></td>
+                                        <td><input type="text" id="grievanceMechanismDetails" name="grievanceMechanismDetails[]" class="form-control" ></td>
                                     </tr>
                                 </table>
                             </div>
@@ -1178,57 +1178,57 @@
                                     </tr>
                                     <tr>
                                         <th class="form-label">Total Permanent Employees</th>
-                                        <td><input type="text" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" required></td>
-                                        <td><input type="text" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" required></td>
-                                        <td><input type="text" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" required></td>
-                                        <td><input type="text" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" required></td>
-                                        <td><input type="text" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" required></td>
-                                        <td><input type="text" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" required></td>
+                                        <td><input type="text" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" ></td>
+                                        <td><input type="text" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" ></td>
+                                        <td><input type="text" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" ></td>
+                                        <td><input type="text" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" ></td>
+                                        <td><input type="text" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" ></td>
+                                        <td><input type="text" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" ></td>
                                     </tr>
                                     <tr>
                                         <td align="center" class="form-label">Male</td>
-                                        <td><input type="text" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" required></td>
-                                        <td><input type="text" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" required></td>
-                                        <td><input type="text" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" required></td>
-                                        <td><input type="text" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" required></td>
-                                        <td><input type="text" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" required></td>
-                                        <td><input type="text" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" required></td>
+                                        <td><input type="text" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" ></td>
+                                        <td><input type="text" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" ></td>
+                                        <td><input type="text" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" ></td>
+                                        <td><input type="text" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" ></td>
+                                        <td><input type="text" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" ></td>
+                                        <td><input type="text" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" ></td>
                                     </tr>
                                     <tr>
                                         <td align="center" class="form-label">Female</td>
-                                        <td><input type="text" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" required></td>
-                                        <td><input type="text" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" required></td>
-                                        <td><input type="text" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" required></td>
-                                        <td><input type="text" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" required></td>
-                                        <td><input type="text" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" required></td>
-                                        <td><input type="text" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" required></td>
+                                        <td><input type="text" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" ></td>
+                                        <td><input type="text" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" ></td>
+                                        <td><input type="text" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" ></td>
+                                        <td><input type="text" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" ></td>
+                                        <td><input type="text" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" ></td>
+                                        <td><input type="text" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" ></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label">Total Permanent Workers</th>
-                                        <td><input type="text" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" required></td>
-                                        <td><input type="text" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" required></td>
-                                        <td><input type="text" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" required></td>
-                                        <td><input type="text" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" required></td>
-                                        <td><input type="text" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" required></td>
-                                        <td><input type="text" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" required></td>
+                                        <td><input type="text" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" ></td>
+                                        <td><input type="text" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" ></td>
+                                        <td><input type="text" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" ></td>
+                                        <td><input type="text" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" ></td>
+                                        <td><input type="text" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" ></td>
+                                        <td><input type="text" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" ></td>
                                     </tr>
                                     <tr>
                                         <td align="center" class="form-label">Male</td>
-                                        <td><input type="text" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" required></td>
-                                        <td><input type="text" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" required></td>
-                                        <td><input type="text" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" required></td>
-                                        <td><input type="text" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" required></td>
-                                        <td><input type="text" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" required></td>
-                                        <td><input type="text" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" required></td>
+                                        <td><input type="text" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" ></td>
+                                        <td><input type="text" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" ></td>
+                                        <td><input type="text" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" ></td>
+                                        <td><input type="text" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" ></td>
+                                        <td><input type="text" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" ></td>
+                                        <td><input type="text" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" ></td>
                                     </tr>
                                     <tr>
                                         <td align="center" class="form-label">Female</td>
-                                        <td><input type="text" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" required></td>
-                                        <td><input type="text" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" required></td>
-                                        <td><input type="text" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" required></td>
-                                        <td><input type="text" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" required></td>
-                                        <td><input type="text" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" required></td>
-                                        <td><input type="text" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" required></td>
+                                        <td><input type="text" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" ></td>
+                                        <td><input type="text" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" ></td>
+                                        <td><input type="text" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" ></td>
+                                        <td><input type="text" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" ></td>
+                                        <td><input type="text" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" ></td>
+                                        <td><input type="text" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" ></td>
                                     </tr>
                                 </table>
                             </div>
@@ -1270,84 +1270,84 @@
                                     </tr>
                                     <tr>
                                         <td align="center" class="form-label">Male</td>
-                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" required></td>
+                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" ></td>
                                     </tr>
                                     <tr>
                                         <td align="center" class="form-label">Female</td>
-                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" required></td>
+                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" ></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label">Total</th>
-                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" required></td>
+                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" ></td>
                                     </tr>
                                     <tr>
                                         <th  class="form-label" colspan="11">Workers</th>
                                     </tr>
                                     <tr>
                                         <td align="center" class="form-label">Male</td>
-                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" required></td>
+                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" ></td>
                                     </tr>
                                     <tr>
                                         <td align="center" class="form-label">Female</td>
-                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" required></td>
+                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" ></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label">Total</th>
-                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" required></td>
+                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" ></td>
                                     </tr>
                                 </table>
                             </div>
@@ -1380,60 +1380,60 @@
                                     </tr>
                                     <tr>
                                         <td align="center" class="form-label">Male</td>
-                                        <td><input type="text" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" required></td>
+                                        <td><input type="text" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" ></td>
                                     </tr>
                                     <tr>
                                         <td align="center" class="form-label">Female</td>
-                                        <td><input type="text" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" required></td>
+                                        <td><input type="text" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" ></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label">Total</th>
-                                        <td><input type="text" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" required></td>
+                                        <td><input type="text" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" ></td>
                                     </tr>
                                     <tr>
                                         <th  class="form-label" colspan="7">Workers</th>
                                     </tr>
                                     <tr>
                                         <td align="center" class="form-label">Male</td>
-                                        <td><input type="text" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" required></td>
+                                        <td><input type="text" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" ></td>
                                     </tr>
                                     <tr>
                                         <td align="center" class="form-label">Female</td>
-                                        <td><input type="text" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" required></td>
+                                        <td><input type="text" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" ></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label">Total</th>
-                                        <td><input type="text" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" required></td>
-                                        <td><input type="text" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" required></td>
+                                        <td><input type="text" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" ></td>
+                                        <td><input type="text" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" ></td>
                                     </tr>
                                 </table>
                             </div>
@@ -1518,57 +1518,57 @@
                                     <tr>
                                         <th class="form-label" rowspan="2">Lost Time Injury Frequency Rate(LTIFR)(per one million-person hours worked)</th>
                                         <td align="center" class="form-label">Employees</td>
-                                        <td><input type="text" id="workplaceSafetyMeasures" name="workplaceSafetyMeasures[]" class="form-control" required></td>
-                                        <td><input type="text" id="workplaceSafetyMeasures" name="workplaceSafetyMeasures[]" class="form-control" required></td>
+                                        <td><input type="text" id="workplaceSafetyMeasures" name="workplaceSafetyMeasures[]" class="form-control" ></td>
+                                        <td><input type="text" id="workplaceSafetyMeasures" name="workplaceSafetyMeasures[]" class="form-control" ></td>
                                     </tr>
                                     <tr>
                                         <td align="center" class="form-label">Workers</td>
-                                        <td><input type="text" id="workplaceSafetyMeasures" name="workplaceSafetyMeasures[]" class="form-control" required></td>
-                                        <td><input type="text" id="workplaceSafetyMeasures" name="workplaceSafetyMeasures[]" class="form-control" required></td>
+                                        <td><input type="text" id="workplaceSafetyMeasures" name="workplaceSafetyMeasures[]" class="form-control" ></td>
+                                        <td><input type="text" id="workplaceSafetyMeasures" name="workplaceSafetyMeasures[]" class="form-control" ></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label" rowspan="2">Total recordable work-related injuries</th>
                                         <td align="center" class="form-label">Employees</td>
-                                        <td><input type="text" id="workplaceSafetyMeasures" name="workplaceSafetyMeasures[]" class="form-control" required></td>
-                                        <td><input type="text" id="workplaceSafetyMeasures" name="workplaceSafetyMeasures[]" class="form-control" required></td>
+                                        <td><input type="text" id="workplaceSafetyMeasures" name="workplaceSafetyMeasures[]" class="form-control" ></td>
+                                        <td><input type="text" id="workplaceSafetyMeasures" name="workplaceSafetyMeasures[]" class="form-control" ></td>
                                     </tr>
                                     <tr>
                                         <td align="center" class="form-label">Workers</td>
-                                        <td><input type="text" id="workplaceSafetyMeasures" name="workplaceSafetyMeasures[]" class="form-control" required></td>
-                                        <td><input type="text" id="workplaceSafetyMeasures" name="workplaceSafetyMeasures[]" class="form-control" required></td>
+                                        <td><input type="text" id="workplaceSafetyMeasures" name="workplaceSafetyMeasures[]" class="form-control" ></td>
+                                        <td><input type="text" id="workplaceSafetyMeasures" name="workplaceSafetyMeasures[]" class="form-control" ></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label" rowspan="2">no.of fatalities</th>
                                         <td align="center" class="form-label">Employees</td>
-                                        <td><input type="text" id="workplaceSafetyMeasures" name="workplaceSafetyMeasures[]" class="form-control" required></td>
-                                        <td><input type="text" id="workplaceSafetyMeasures" name="workplaceSafetyMeasures[]" class="form-control" required></td>
+                                        <td><input type="text" id="workplaceSafetyMeasures" name="workplaceSafetyMeasures[]" class="form-control" ></td>
+                                        <td><input type="text" id="workplaceSafetyMeasures" name="workplaceSafetyMeasures[]" class="form-control" ></td>
                                     </tr>
                                     <tr>
                                         <td align="center" class="form-label">Workers</td>
-                                        <td><input type="text" id="workplaceSafetyMeasures" name="workplaceSafetyMeasures[]" class="form-control" required></td>
-                                        <td><input type="text" id="workplaceSafetyMeasures" name="workplaceSafetyMeasures[]" class="form-control" required></td>
+                                        <td><input type="text" id="workplaceSafetyMeasures" name="workplaceSafetyMeasures[]" class="form-control" ></td>
+                                        <td><input type="text" id="workplaceSafetyMeasures" name="workplaceSafetyMeasures[]" class="form-control" ></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label" rowspan="2">High consequence work-related injury or ill-health(excluding fatalities)</th>
                                         <td align="center" class="form-label">Employees</td>
-                                        <td><input type="text" id="workplaceSafetyMeasures" name="workplaceSafetyMeasures[]" class="form-control" required></td>
-                                        <td><input type="text" id="workplaceSafetyMeasures" name="workplaceSafetyMeasures[]" class="form-control" required></td>
+                                        <td><input type="text" id="workplaceSafetyMeasures" name="workplaceSafetyMeasures[]" class="form-control" ></td>
+                                        <td><input type="text" id="workplaceSafetyMeasures" name="workplaceSafetyMeasures[]" class="form-control" ></td>
                                     </tr>
                                     <tr>
                                         <td align="center" class="form-label">Workers</td>
-                                        <td><input type="text" id="workplaceSafetyMeasures" name="workplaceSafetyMeasures[]" class="form-control" required></td>
-                                        <td><input type="text" id="workplaceSafetyMeasures" name="workplaceSafetyMeasures[]" class="form-control" required></td>
+                                        <td><input type="text" id="workplaceSafetyMeasures" name="workplaceSafetyMeasures[]" class="form-control" ></td>
+                                        <td><input type="text" id="workplaceSafetyMeasures" name="workplaceSafetyMeasures[]" class="form-control" ></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label" rowspan="2">High consequence work-related injury or ill-health(excluding fatalities)</th>
                                         <td align="center" class="form-label">Employees</td>
-                                        <td><input type="text" id="workplaceSafetyMeasures" name="workplaceSafetyMeasures[]" class="form-control" required></td>
-                                        <td><input type="text" id="workplaceSafetyMeasures" name="workplaceSafetyMeasures[]" class="form-control" required></td>
+                                        <td><input type="text" id="workplaceSafetyMeasures" name="workplaceSafetyMeasures[]" class="form-control" ></td>
+                                        <td><input type="text" id="workplaceSafetyMeasures" name="workplaceSafetyMeasures[]" class="form-control" ></td>
                                     </tr>
                                     <tr>
                                         <td align="center" class="form-label">Workers</td>
-                                        <td><input type="text" id="workplaceSafetyMeasures" name="workplaceSafetyMeasures[]" class="form-control" required></td>
-                                        <td><input type="text" id="workplaceSafetyMeasures" name="workplaceSafetyMeasures[]" class="form-control" required></td>
+                                        <td><input type="text" id="workplaceSafetyMeasures" name="workplaceSafetyMeasures[]" class="form-control" ></td>
+                                        <td><input type="text" id="workplaceSafetyMeasures" name="workplaceSafetyMeasures[]" class="form-control" ></td>
                                     </tr>
                                 </table>
                             </div>
@@ -1606,21 +1606,21 @@
                                     </tr>
                                     <tr>
                                         <th class="form-label">Working Conditions</th>
-                                        <td><input type="text" id="complaintsemployees" name="complaintsemployees[]" class="form-control" required></td>
-                                        <td><input type="text" id="complaintsemployees" name="complaintsemployees[]" class="form-control" required></td>
-                                        <td><input type="text" id="complaintsemployees" name="complaintsemployees[]" class="form-control" required></td>
-                                        <td><input type="text" id="complaintsemployees" name="complaintsemployees[]" class="form-control" required></td>
-                                        <td><input type="text" id="complaintsemployees" name="complaintsemployees[]" class="form-control" required></td>
-                                        <td><input type="text" id="complaintsemployees" name="complaintsemployees[]" class="form-control" required></td>
+                                        <td><input type="text" id="complaintsemployees" name="complaintsemployees[]" class="form-control" ></td>
+                                        <td><input type="text" id="complaintsemployees" name="complaintsemployees[]" class="form-control" ></td>
+                                        <td><input type="text" id="complaintsemployees" name="complaintsemployees[]" class="form-control" ></td>
+                                        <td><input type="text" id="complaintsemployees" name="complaintsemployees[]" class="form-control" ></td>
+                                        <td><input type="text" id="complaintsemployees" name="complaintsemployees[]" class="form-control" ></td>
+                                        <td><input type="text" id="complaintsemployees" name="complaintsemployees[]" class="form-control" ></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label">Health and Safety</th>
-                                        <td><input type="text" id="complaintsemployees" name="complaintsemployees[]" class="form-control" required></td>
-                                        <td><input type="text" id="complaintsemployees" name="complaintsemployees[]" class="form-control" required></td>
-                                        <td><input type="text" id="complaintsemployees" name="complaintsemployees[]" class="form-control" required></td>
-                                        <td><input type="text" id="complaintsemployees" name="complaintsemployees[]" class="form-control" required></td>
-                                        <td><input type="text" id="complaintsemployees" name="complaintsemployees[]" class="form-control" required></td>
-                                        <td><input type="text" id="complaintsemployees" name="complaintsemployees[]" class="form-control" required></td>
+                                        <td><input type="text" id="complaintsemployees" name="complaintsemployees[]" class="form-control" ></td>
+                                        <td><input type="text" id="complaintsemployees" name="complaintsemployees[]" class="form-control" ></td>
+                                        <td><input type="text" id="complaintsemployees" name="complaintsemployees[]" class="form-control" ></td>
+                                        <td><input type="text" id="complaintsemployees" name="complaintsemployees[]" class="form-control" ></td>
+                                        <td><input type="text" id="complaintsemployees" name="complaintsemployees[]" class="form-control" ></td>
+                                        <td><input type="text" id="complaintsemployees" name="complaintsemployees[]" class="form-control" ></td>
                                     </tr>
                                 </table>
                             </div>
@@ -1724,17 +1724,17 @@
                                     </tr>
                                     <tr>
                                         <th class="form-label">Employees</th>
-                                        <td><input type="text" id="workRelatedInjuryRehabilitation" name="workRelatedInjuryRehabilitation[]" class="form-control" required></td>
-                                        <td><input type="text" id="workRelatedInjuryRehabilitation" name="workRelatedInjuryRehabilitation[]" class="form-control" required></td>
-                                        <td><input type="text" id="workRelatedInjuryRehabilitation" name="workRelatedInjuryRehabilitation[]" class="form-control" required></td>
-                                        <td><input type="text" id="workRelatedInjuryRehabilitation" name="workRelatedInjuryRehabilitation[]" class="form-control" required></td>
+                                        <td><input type="text" id="workRelatedInjuryRehabilitation" name="workRelatedInjuryRehabilitation[]" class="form-control" ></td>
+                                        <td><input type="text" id="workRelatedInjuryRehabilitation" name="workRelatedInjuryRehabilitation[]" class="form-control" ></td>
+                                        <td><input type="text" id="workRelatedInjuryRehabilitation" name="workRelatedInjuryRehabilitation[]" class="form-control" ></td>
+                                        <td><input type="text" id="workRelatedInjuryRehabilitation" name="workRelatedInjuryRehabilitation[]" class="form-control" ></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label">Workers</th>
-                                        <td><input type="text" id="workRelatedInjuryRehabilitation" name="workRelatedInjuryRehabilitation[]" class="form-control" required></td>
-                                        <td><input type="text" id="workRelatedInjuryRehabilitation" name="workRelatedInjuryRehabilitation[]" class="form-control" required></td>
-                                        <td><input type="text" id="workRelatedInjuryRehabilitation" name="workRelatedInjuryRehabilitation[]" class="form-control" required></td>
-                                        <td><input type="text" id="workRelatedInjuryRehabilitation" name="workRelatedInjuryRehabilitation[]" class="form-control" required></td>
+                                        <td><input type="text" id="workRelatedInjuryRehabilitation" name="workRelatedInjuryRehabilitation[]" class="form-control" ></td>
+                                        <td><input type="text" id="workRelatedInjuryRehabilitation" name="workRelatedInjuryRehabilitation[]" class="form-control" ></td>
+                                        <td><input type="text" id="workRelatedInjuryRehabilitation" name="workRelatedInjuryRehabilitation[]" class="form-control" ></td>
+                                        <td><input type="text" id="workRelatedInjuryRehabilitation" name="workRelatedInjuryRehabilitation[]" class="form-control" ></td>
                                     </tr>
                                 </table>
                             </div>
@@ -1836,20 +1836,20 @@
                                     <tbody>
                                         <tr>
                                             <td style="width:5%;"><input type="number" id="stakeholderEngagementDetails" id="p_stakeholderEngagementDetails" name="stakeholderEngagementDetails[]" class="table-control" required value="1" readonly></td>                                                                      
-                                            <td><input type="text" id="sstakeholderEngagementDetails" name="stakeholder[]" class="form-control" required></td>
-                                            <td><input type="text" id="sstakeholderEngagementDetails" name="stakeholder[]" class="form-control" required></td>
-                                            <td><input type="text" id="sstakeholderEngagementDetails" name="stakeholder[]" class="form-control" required></td>
-                                            <td><input type="text" id="sstakeholderEngagementDetails" name="stakeholder[]" class="form-control" required></td>
-                                            <td><input type="text" id="sstakeholderEngagementDetails" name="stakeholder[]" class="form-control" required></td>
+                                            <td><input type="text" id="sstakeholderEngagementDetails" name="stakeholder[]" class="form-control" ></td>
+                                            <td><input type="text" id="sstakeholderEngagementDetails" name="stakeholder[]" class="form-control" ></td>
+                                            <td><input type="text" id="sstakeholderEngagementDetails" name="stakeholder[]" class="form-control" ></td>
+                                            <td><input type="text" id="sstakeholderEngagementDetails" name="stakeholder[]" class="form-control" ></td>
+                                            <td><input type="text" id="sstakeholderEngagementDetails" name="stakeholder[]" class="form-control" ></td>
                                         </tr>
                                     </tbody>
                                 </table>
                                 <div>
-                                     <input type="number" id="indexInput4_2" placeholder="Enter Index">
-                                     <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex4_2()">Add At Index</button>
-                                     <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow4_2()">Remove At Index</button>
-                                     <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow4_2()">Add Row</button>
-                                     <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow4_2()">Remove Row</button>
+                                     <input type="number" id="indexInput_stakeholderEngagementDetails" placeholder="Enter Index">
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex('stakeholderEngagementDetails')">Add At Index</button>
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow('stakeholderEngagementDetails')">Remove At Index</button>
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow('stakeholderEngagementDetails')">Add Row</button>
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow('stakeholderEngagementDetails')">Remove Row</button>
                                 </div>    
                             </div>
                         </div>
@@ -2390,23 +2390,23 @@
                                     </tr>
                                     <tr>
                                         <th class="form-label">Child Labour</th>
-                                        <td><input type="text" id="assessedPlantPercentage" name="assessedPlantPercentage[]" class="form-control" required></td>
+                                        <td><input type="text" id="assessedPlantPercentage" name="assessedPlantPercentage[]" class="form-control" ></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label">Forced/involuntary Labour</th>
-                                        <td><input type="text" id="assessedPlantPercentage" name="assessedPlantPercentage[]" class="form-control" required></td>
+                                        <td><input type="text" id="assessedPlantPercentage" name="assessedPlantPercentage[]" class="form-control" ></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label">Sexual harassment</th>
-                                        <td><input type="text" id="assessedPlantPercentage" name="assessedPlantPercentage[]" class="form-control" required></td>
+                                        <td><input type="text" id="assessedPlantPercentage" name="assessedPlantPercentage[]" class="form-control" ></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label">Discrimination at workplace</th>
-                                        <td><input type="text" id="assessedPlantPercentage" name="assessedPlantPercentage[]" class="form-control" required></td>
+                                        <td><input type="text" id="assessedPlantPercentage" name="assessedPlantPercentage[]" class="form-control" ></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label">Wages</th>
-                                        <td><input type="text" id="assessedPlantPercentage" name="assessedPlantPercentage[]" class="form-control" required></td>
+                                        <td><input type="text" id="assessedPlantPercentage" name="assessedPlantPercentage[]" class="form-control" ></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label">Others - please specify</th>
@@ -2525,247 +2525,1155 @@
                 <!-------------------------------------------------------------------------------------------------------------------------> 
                 <div id="prin6" class="prin-div">
                     <div class="policy">
-                        <h3>PRINCIPLE 6: BUSINESSES SHOULD RESPECT & MAKE EFFORTS TO PROTECT & RESTORE THE ENVIRONMENT</h3>
+                        <h3>PRINCIPLE 6: BUSINESSES SHOULD RESPECT AND MAKE EFFORTS TO PROTECT AND RESTORE THE ENVIRONMENT</h3>
                     </div>
-                    <div class="mb-3">
+                    <!------------------------------------------------------------------------------------------------------------------------->
+                    <!--                                     ESSENTIAL INDICATORS -START                                                     -->
+                    <!------------------------------------------------------------------------------------------------------------------------->
+                    <div class="bold_border_container">
                         <div class="policy">
-                            <label for="energyConsumptionDetails" class="form-label">1.1 Details of total energy consumption (in Joules or multiples) & energy intensity as per BRSR format:</label>
+                            <h3 style="text-align: center; border-bottom: 2px solid #2d6a4f; padding-bottom: 15px;">Essential Indicators</h3>
                         </div>
-                        <textarea id="energyConsumptionDetails" name="energyConsumptionDetails" class="form-control" placeholder="Enter the details"></textarea>
-                    </div>
-                    <div class="mb-3">
-                        <div class="policy">
-                            <label for="energyExternalAgency" class="form-label">1.2 Indicate if any independent assessment/ evaluation/assurance of energy consumption has been carried out by an external agency? If yes, provide the name of the external agency:</label>
+                        <!--Total energy consumption and energy intensity start-->
+                        <div class="mb-3">
+                            <div class="policy">
+                                <label for="energyConsumptionDetails" class="form-label">1.1 Details of total energy consumption (in Joules or multiples) & energy intensity as per BRSR format:</label>
+                            </div>
+                            <div id="energyConsumptionDetails" class="responsive-table">
+                                <table id="p_energyConsumptionDetails">
+                                    <tr>
+                                        <th class="form-label">Parameter</th>
+                                        <th class="form-label">FY _____(Current Financial Year)</th>
+                                        <th class="form-label">FY _____(Previous Financial Year)</th>
+                                    </tr>
+                                    <tr>
+                                        <th class="form-label">Total electricity consumption (A) </th>
+                                        <td><input type="text" id="energyConsumptionDetails" name="energyConsumptionDetails[]" class="form-control"></td>
+                                        <td><input type="text" id="energyConsumptionDetails" name="energyConsumptionDetails[]" class="form-control"></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="form-label">Total fuel consumption (B) </th>
+                                        <td><input type="text" id="energyConsumptionDetails" name="energyConsumptionDetails[]" class="form-control"></td>
+                                        <td><input type="text" id="energyConsumptionDetails" name="energyConsumptionDetails[]" class="form-control"></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="form-label">Energy consumption through other sources (C) </th>
+                                        <td><input type="text" id="energyConsumptionDetails" name="energyConsumptionDetails[]" class="form-control"></td>
+                                        <td><input type="text" id="energyConsumptionDetails" name="energyConsumptionDetails[]" class="form-control"></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="form-label">Total energy consumption (A+B+C) </th>
+                                        <td><input type="text" id="energyConsumptionDetails" name="energyConsumptionDetails[]" class="form-control"></td>
+                                        <td><input type="text" id="energyConsumptionDetails" name="energyConsumptionDetails[]" class="form-control"></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="form-label">Energy intensity per rupee of turnover (Total energy consumption/turnover in rupees) </th>
+                                        <td><input type="text" id="energyConsumptionDetails" name="energyConsumptionDetails[]" class="form-control"></td>
+                                        <td><input type="text" id="energyConsumptionDetails" name="energyConsumptionDetails[]" class="form-control"></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="form-label">Energy intensity (optional) – the relevant metric may be selected by the entity </th>
+                                        <td><input type="text" id="energyConsumptionDetails" name="energyConsumptionDetails[]" class="form-control"></td>
+                                        <td><input type="text" id="energyConsumptionDetails" name="energyConsumptionDetails[]" class="form-control"></td>
+                                    </tr>
+                                </table>
+                            </div>
                         </div>
-                        <select name="energyExternalAgency" id="energyExternalAgency" class="form-control">
-                            <option value="">Select an option</option>
-                            <option value="Yes">Yes</option>
-                            <option value="No">No</option>
-                        </select>
-                    </div>
-                    <div id="energyExternalAgencyName" class="mb-3 hidden">
-                        <div class="policy">
-                            <label for="energyExternalAgencyName" class="form-label">Specify the name of the external agency:</label>
-                        </div>
-                        <textarea id="energyExternalAgencyName" name="energyExternalAgencyName" class="form-control" placeholder="Enter the name"></textarea>
-                    </div>
-                    <div class="mb-3">
-                        <div class="policy">
-                            <label for="designatedConsumers" class="form-label">2. Does the entity have any sites/facilities identified as designated consumers (DCs) under the Performance, Achieve, & Trade (PAT) Scheme of the Government of India?  If yes, disclose whether targets set under the PAT scheme have been achieved. In case targets have not been achieved, provide the remedial action taken if any:</label>
-                        </div>
-                        <select name="designatedConsumers" id="designatedConsumers" class="form-control">
-                            <option value="">Select an option</option>
-                            <option value="Yes">Yes</option>
-                            <option value="No">No</option>
-                        </select>
-                    </div>
-                    <div id="designatedConsumersDetails" class="mb-3 hidden">
-                        <div class="policy">
-                            <label for="designatedConsumersDetails" class="form-label">Specify the details of PAT scheme targets:</label>
-                        </div>
-                        <textarea id="designatedConsumersDetails" name="designatedConsumersDetails" class="form-control" placeholder="Enter the details"></textarea>
-                    </div>
-                    <div class="mb-3">
-                        <div class="policy">
-                            <label for="waterWithdrawalDetails" class="form-label">3.1. Provide details of water withdrawal from different sources, total volume of water withdrawal & consumed, & Water intensity per rupee of turnover (Water consumed / turnover) as per BRSR format:</label>
-                        </div>
-                        <textarea id="waterWithdrawalDetails" name="waterWithdrawalDetails" class="form-control" placeholder="Enter the details"></textarea>
-                    </div>
-                    <div class="mb-3">
-                        <div class="policy">
-                            <label for="waterExternalAgency" class="form-label">3.2. Indicate if any independent assessment/ evaluation/assurance of water withdrawal has been carried out by an external agency? If yes, provide the name of the external agency:</label>
-                        </div>
-                        <select name="waterExternalAgency" id="waterExternalAgency" class="form-control">
-                            <option value="">Select an option</option>
-                            <option value="Yes">Yes</option>
-                            <option value="No">No</option>
-                        </select>
-                    </div>
-                    <div id="waterExternalAgencyName" class="mb-3 hidden">
-                        <div class="policy">
-                            <label for="waterExternalAgencyName" class="form-label">Specify the name of the external agency:</label>
-                        </div>
-                        <textarea id="waterExternalAgencyName" name="waterExternalAgencyName" class="form-control" placeholder="Enter the name"></textarea>
-                    </div>
-                    <div class="mb-3">
-                        <div class="policy">
-                            <label for="liquidDischarge" class="form-label"><span style="color: red;"> * </span>4. Has the entity implemented a mechanism for Zero Liquid Discharge? If yes, provide details of its coverage & implementation:</label>
-                        </div>
-                        <select name="liquidDischarge" id="liquidDischarge" class="form-control" required>
-                            <option value="">Select an option</option>
-                            <option value="Yes">Yes</option>
-                            <option value="No">No</option>
-                        </select>
-                    </div>
-                    <div id="liquidDischargeDetails" class="mb-3 hidden">
-                        <div class="policy">
-                            <label for="liquidDischargeDetails" class="form-label">Specify the details of its coverage & implementation:</label>
-                        </div>
-                        <textarea id="liquidDischargeDetails" name="liquidDischargeDetails" class="form-control" placeholder="Enter the details"></textarea>
-                    </div>
-                    <div class="mb-3">
-                        <div class="policy">
-                            <label for="airEmissionDetails" class="form-label">5.1. Please provide details of air emissions (other than GHG emissions) by the entity, in BRSR format. Also, indicate if any independent assessment/ evaluation/assurance has been carried out by an external agency?</label>
-                        </div>
-                        <textarea id="airEmissionDetails" name="airEmissionDetails" class="form-control" placeholder="Enter the details"></textarea>
-                    </div>
-                    <div class="mb-3">
-                        <div class="policy">
-                            <label for="airExternalAgency" class="form-label">5.2. Indicate if any independent assessment/ evaluation/assurance of air emissions has been carried out by an external agency? If yes, provide the name of the external agency:</label>
-                        </div>
-                        <select name="airExternalAgency" id="airExternalAgency" class="form-control">
-                            <option value="">Select an option</option>
-                            <option value="Yes">Yes</option>
-                            <option value="No">No</option>
-                        </select>
-                    </div>
-                    <div id="airExternalAgencyName" class="mb-3 hidden">
-                        <div class="policy">
-                            <label for="airExternalAgencyName" class="form-label">Specify the name of the external agency:</label>
-                        </div>
-                        <textarea id="airExternalAgencyName" name="airExternalAgencyName" class="form-control" placeholder="Enter the name"></textarea>
-                    </div>
-                    <div class="mb-3">
-                        <div class="policy">
-                            <label for="greenhouseGasEmissionDetails" class="form-label">6.1. Provide details of greenhouse gas emissions (Scope 1 & Scope 2 emissions) & its intensity per rupee of turnover as per BRSR format:</label>
-                        </div>
-                        <textarea id="greenhouseGasEmissionDetails" name="greenhouseGasEmissionDetails" class="form-control" placeholder="Enter the details"></textarea>
-                    </div>
-                    <div class="mb-3">
-                        <div class="policy">
-                            <label for="ghgExternalAgency" class="form-label">6.2. Indicate if any independent assessment/ evaluation/assurance of greenhouse gas emissions has been carried out by an external agency? If yes, provide the name of the external agency:</label>
-                        </div>
-                        <select name="ghgExternalAgency" id="ghgExternalAgency" class="form-control">
-                            <option value="">Select an option</option>
-                            <option value="Yes">Yes</option>
-                            <option value="No">No</option>
-                        </select>
-                    </div>
-                    <div id="ghgExternalAgencyName" class="mb-3 hidden">
-                        <div class="policy">
-                            <label for="ghgExternalAgencyName" class="form-label">Specify the name of the external agency:</label>
-                        </div>
-                        <textarea id="ghgExternalAgencyName" name="ghgExternalAgencyName" class="form-control" placeholder="Enter the name"></textarea>
-                    </div>
-                    <div class="mb-3">
-                        <div class="policy">
-                            <label for="ghgReductionProject" class="form-label">7. Does the entity have any project related to reducing Green House Gas emission? If yes, provide details about the project:</label>
-                        </div>
-                        <select name="ghgReductionProject" id="ghgReductionProject" class="form-control">
-                            <option value="">Select an option</option>
-                            <option value="Yes">Yes</option>
-                            <option value="No">No</option>
-                        </select>
-                    </div>
-                    <div id="ghgReductionProjectDetails" class="mb-3 hidden">
-                        <div class="policy">
-                            <label for="ghgReductionProjectDetails" class="form-label">Specify the details of the project:</label>
-                        </div>
-                        <textarea id="ghgReductionProjectDetails" name="ghgReductionProjectDetails" class="form-control" placeholder="Enter the details"></textarea>
-                    </div>
-                    <div class="mb-3">
-                        <div class="policy">
-                            <label for="wasteDetails" class="form-label">8.1. Provide details of waste generated, waste recycled & waste dumped with breakup into categories like hazardous, plastic, e-waste, bio-medical waste etc. as per BRSR format:</label>
-                        </div>
-                        <textarea id="wasteDetails" name="wasteDetails" class="form-control" placeholder="Enter the details"></textarea>
-                    </div>
-                    <div class="mb-3">
-                        <div class="policy">
-                            <label for="wasteExternalAgency" class="form-label">8.2. Indicate if any independent assessment/ evaluation/assurance of greenhouse waste management has been carried out by an external agency? If yes, provide the name of the external agency:</label>
-                        </div>
-                        <select name="wasteExternalAgency" id="wasteExternalAgency" class="form-control">
-                            <option value="">Select an option</option>
-                            <option value="Yes">Yes</option>
-                            <option value="No">No</option>
-                        </select>
-                    </div>
-                    <div id="wasteExternalAgencyName" class="mb-3 hidden">
-                        <div class="policy">
-                            <label for="wasteExternalAgencyName" class="form-label">Specify the name of the external agency:</label>
-                        </div>
-                        <textarea id="wasteExternalAgencyName" name="wasteExternalAgencyName" class="form-control" placeholder="Enter the name"></textarea>
-                    </div>
-                    <div class="mb-3">
-                        <div class="policy">
-                            <label for="wasteManagementPractices" class="form-label">9. Briefly describe the waste management practices adopted in your establishments. Describe the strategy adopted by your entity to reduce usage of hazardous & toxic chemicals in your products & processes & the practices adopted to manage such wastes:</label>
-                        </div>
-                        <textarea id="wasteManagementPractices" name="wasteManagementPractices" class="form-control" placeholder="Enter the details"></textarea>
-                    </div>
-                    <div class="mb-3">
-                        <div class="policy">
-                            <label for="ecologicalAreaOperations" class="form-label">10. Does the entity have operations/offices in/around ecologically sensitive areas (such as national parks, wildlife sanctuaries, biosphere reserves, wetlands, biodiversity hotspots, forests, coastal regulation zones etc.) where environmental approvals / clearances are required. If yes, please specify details like: Location of operations/offices; Type of operations; the conditions of environmental approval / clearance are being complied with?</label>
-                        </div>
-                        <select name="ecologicalAreaOperations" id="ecologicalAreaOperations" class="form-control">
-                            <option value="">Select an option</option>
-                            <option value="Yes">Yes</option>
-                            <option value="No">No</option>
-                        </select>
-                    </div>
-                    <div id="ecologicalAreaOperationsDetails" class="mb-3 hidden">
-                        <div class="policy">
-                            <label for="ecologicalAreaOperationsDetails" class="form-label">Specify the details mentioned in Q15. In case of non-compliance, mention the reasons thereof & corrective action taken, if any:</label>
-                        </div>
-                        <textarea id="ecologicalAreaOperationsDetails" name="ecologicalAreaOperationsDetails" class="form-control" placeholder="Enter the details"></textarea>
-                    </div>
-                    <div class="mb-3">
-                        <div class="policy">
-                            <label for="environmentalImpactAssessmentDetails" class="form-label">11.1. Share name & details of environmental impact assessments of projects undertaken by the entity along with EIA notification no. & date; in the current financial year:</label>
-                        </div>
-                        <textarea id="environmentalImpactAssessmentDetails" name="environmentalImpactAssessmentDetails" class="form-control" placeholder="Enter the details"></textarea>
-                    </div>
-                    <div class="mb-3">
-                        <div class="policy">
-                            <label for="eiaExternalAgency" class="form-label">11.2. Indicate if EIA has been carried out by an independent external agency? If yes, provide the name of the external agency:</label>
-                        </div>
-                        <select name="eiaExternalAgency" id="eiaExternalAgency" class="form-control">
-                            <option value="">Select an option</option>
-                            <option value="Yes">Yes</option>
-                            <option value="No">No</option>
-                        </select>
-                    </div>
-                    <div id="eiaExternalAgencyName" class="mb-3 hidden">
-                        <div class="policy">
-                            <label for="eiaExternalAgencyName" class="form-label">Specify the name of the external agency:</label>
-                        </div>
-                        <textarea id="eiaExternalAgencyName" name="eiaExternalAgencyName" class="form-control" placeholder="Enter the name"></textarea>
-                    </div>
-                    <div class="mb-3">
-                        <div class="policy">
-                            <label for="eiaPublicDomain" class="form-label">11.3. Indicate if results of the EIA have been communicated in the public domain? If yes, provide the relevant web link:</label>
-                        </div>
-                        <select name="eiaPublicDomain" id="eiaPublicDomain" class="form-control">
-                            <option value="">Select an option</option>
-                            <option value="Yes">Yes</option>
-                            <option value="No">No</option>
-                        </select>
-                    </div>
-                    <div id="eiaPublicDomainLink" class="mb-3 hidden">
-                        <div class="policy">
-                            <label for="eiaPublicDomainLink" class="form-label">Specify the relevant web link:</label>
-                        </div>
-                        <textarea id="eiaPublicDomainLink" name="eiaPublicDomainLink" class="form-control" placeholder="Enter the link"></textarea>
-                    </div>
-                    <div class="mb-3">
-                        <div class="policy">
-                            <label for="environmentalComplianceStatus" class="form-label">12. Is the entity compliant with the applicable environmental law/ regulations/ guidelines in India; such as the Water (Prevention & Control of Pollution) Act, Air (Prevention & Control of Pollution) Act, Environment Protection Act & rules thereunder. If yes, provide relevant details:</label>
-                        </div>
-                        <select name="environmentalComplianceStatus" id="environmentalComplianceStatus" class="form-control">
-                            <option value="">Select an option</option>
-                            <option value="Yes">Yes</option>
-                            <option value="No">No</option>
-                        </select>
-                    </div>
-                    <div id="environmentalComplianceStatusDetails" class="mb-3 hidden">
-                        <div class="policy">
-                            <label for="environmentalComplianceStatusDetails" class="form-label">Specify the relevant details:</label>
-                        </div>
-                        <textarea id="environmentalComplianceStatusDetails" name="environmentalComplianceStatusDetails" class="form-control" placeholder="Enter the details"></textarea>
-                    </div>
-                    <!--Leadership indicators principle 6-->
-                    <div class="policy">
-                        <h3>LEADERSHIP INDICATORS – IMPORTANCE TO INVESTORS</h3>
-                    </div>
+                        <!--Total energy consumption and energy intensity end-->
 
+                        <!--Independent assessment question 1 start-->
+                        <div class="mb-3">
+                            <div class="policy">
+                                <label for="energyExternalAgency" class="form-label">1.2 Indicate if any independent assessment/ evaluation/assurance of energy consumption has been carried out by an external agency? If yes, provide the name of the external agency:</label>
+                            </div>
+                            <select name="energyExternalAgency" id="energyExternalAgency" class="form-control">
+                                <option value="">Select an option</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                            </select>
+                        </div>
+                        <!--hidden-->
+                        <div id="energyExternalAgencyName" class="mb-3 hidden">
+                            <div class="policy">
+                                <label for="energyExternalAgencyName" class="form-label">Specify the name of the external agency:</label>
+                            </div>
+                            <textarea id="energyExternalAgencyName" name="energyExternalAgencyName" class="form-control" placeholder="Enter the name"></textarea>
+                        </div>
+                        <!--Independent assessment question 1 end-->
+
+                        <!--Does the entity have any sites / facilities identified as DC under PAT scheme start-->
+                        <div class="mb-3">
+                            <div class="policy">
+                                <label for="designatedConsumers" class="form-label">2. Does the entity have any sites/facilities identified as designated consumers (DCs) under the Performance, Achieve, & Trade (PAT) Scheme of the Government of India?  If yes, disclose whether targets set under the PAT scheme have been achieved. In case targets have not been achieved, provide the remedial action taken if any:</label>
+                            </div>
+                            <select name="designatedConsumers" id="designatedConsumers" class="form-control">
+                                <option value="">Select an option</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                            </select>
+                        </div>
+                        <!--hidden-->
+                        <div id="designatedConsumersDetails" class="mb-3 hidden">
+                            <div class="policy">
+                                <label for="designatedConsumersDetails" class="form-label">Specify the details of PAT scheme targets:</label>
+                            </div>
+                            <textarea id="designatedConsumersDetails" name="designatedConsumersDetails" class="form-control" placeholder="Enter the details"></textarea>
+                        </div>
+                        <!--Does the entity have any sites / facilities identified as DC under PAT scheme end-->
+
+                        <!--Disclosures related to water start-->
+                        <div class="mb-3">
+                            <div class="policy">
+                                <label for="waterWithdrawalDetails" class="form-label">3.1. Provide details of water withdrawal from different sources, total volume of water withdrawal & consumed, & Water intensity per rupee of turnover (Water consumed / turnover) as per BRSR format:</label>
+                            </div>
+                            <div id="waterWithdrawalDetails" class="responsive-table">
+                                <table id="p_waterWithdrawalDetails">
+                                    <tr>
+                                        <th class="form-label">Parameter</th>
+                                        <th class="form-label">FY _____(Current Financial Year)</th>
+                                        <th class="form-label">FY _____(Previous Financial Year)</th>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="3" class="form-label">Water withdrawal by source (in kilolitres)</th>
+                                    </tr>
+                                    <tr>
+                                        <td align="center" class="form-label">(i) Surface water </th>
+                                        <td><input type="text" id="waterWithdrawalDetails" name="waterWithdrawalDetails[]" class="form-control"></td>
+                                        <td><input type="text" id="waterWithdrawalDetails" name="waterWithdrawalDetails[]" class="form-control"></td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center" class="form-label">(ii) Groundwater </th>
+                                        <td><input type="text" id="waterWithdrawalDetails" name="waterWithdrawalDetails[]" class="form-control"></td>
+                                        <td><input type="text" id="waterWithdrawalDetails" name="waterWithdrawalDetails[]" class="form-control"></td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center" class="form-label">(iii) Third party water </th>
+                                        <td><input type="text" id="waterWithdrawalDetails" name="waterWithdrawalDetails[]" class="form-control"></td>
+                                        <td><input type="text" id="waterWithdrawalDetails" name="waterWithdrawalDetails[]" class="form-control"></td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center" class="form-label">(iv) Seawater/ desalinated water </th>
+                                        <td><input type="text" id="waterWithdrawalDetails" name="waterWithdrawalDetails[]" class="form-control"></td>
+                                        <td><input type="text" id="waterWithdrawalDetails" name="waterWithdrawalDetails[]" class="form-control"></td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center" class="form-label">(v) Others </th>
+                                        <td><input type="text" id="waterWithdrawalDetails" name="waterWithdrawalDetails[]" class="form-control"></td>
+                                        <td><input type="text" id="waterWithdrawalDetails" name="waterWithdrawalDetails[]" class="form-control"></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="form-label">Total volume of water withdrawal (in kilolitres) (i + ii + iii + iv + v) </th>
+                                        <td><input type="text" id="waterWithdrawalDetails" name="waterWithdrawalDetails[]" class="form-control"></td>
+                                        <td><input type="text" id="waterWithdrawalDetails" name="waterWithdrawalDetails[]" class="form-control"></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="form-label">Total volume of water consumption (in kilolitres) </th>
+                                        <td><input type="text" id="waterWithdrawalDetails" name="waterWithdrawalDetails[]" class="form-control"></td>
+                                        <td><input type="text" id="waterWithdrawalDetails" name="waterWithdrawalDetails[]" class="form-control"></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="form-label">Water intensity per rupee of turnover (Water consumed / turnover) </th>
+                                        <td><input type="text" id="waterWithdrawalDetails" name="waterWithdrawalDetails[]" class="form-control"></td>
+                                        <td><input type="text" id="waterWithdrawalDetails" name="waterWithdrawalDetails[]" class="form-control"></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="form-label">Water intensity - optional </th>
+                                        <td><input type="text" id="waterWithdrawalDetails" name="waterWithdrawalDetails[]" class="form-control"></td>
+                                        <td><input type="text" id="waterWithdrawalDetails" name="waterWithdrawalDetails[]" class="form-control"></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <!--Disclosures related to water end-->
+
+                        <!--Independent assessment question 3 start-->
+                        <div class="mb-3">
+                            <div class="policy">
+                                <label for="waterExternalAgency" class="form-label">3.2. Indicate if any independent assessment/ evaluation/assurance of water withdrawal has been carried out by an external agency? If yes, provide the name of the external agency:</label>
+                            </div>
+                            <select name="waterExternalAgency" id="waterExternalAgency" class="form-control">
+                                <option value="">Select an option</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                            </select>
+                        </div>
+                        <!--hidden-->
+                        <div id="waterExternalAgencyName" class="mb-3 hidden">
+                            <div class="policy">
+                                <label for="waterExternalAgencyName" class="form-label">Specify the name of the external agency:</label>
+                            </div>
+                            <textarea id="waterExternalAgencyName" name="waterExternalAgencyName" class="form-control" placeholder="Enter the name"></textarea>
+                        </div>
+                        <!--Independent assessment question 3 end-->
+
+                        <!--Has the entity implemented a mechanism for Zero Liquid Discharge start-->
+                        <div class="mb-3">
+                            <div class="policy">
+                                <label for="liquidDischarge" class="form-label"><span style="color: red;"> * </span>4. Has the entity implemented a mechanism for Zero Liquid Discharge? If yes, provide details of its coverage & implementation:</label>
+                            </div>
+                            <select name="liquidDischarge" id="liquidDischarge" class="form-control" required>
+                                <option value="">Select an option</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                            </select>
+                        </div>
+                        <!--hidden-->
+                        <div id="liquidDischargeDetails" class="mb-3 hidden">
+                            <div class="policy">
+                                <label for="liquidDischargeDetails" class="form-label">Specify the details of its coverage & implementation:</label>
+                            </div>
+                            <textarea id="liquidDischargeDetails" name="liquidDischargeDetails" class="form-control" placeholder="Enter the details"></textarea>
+                        </div>
+                        <!--Has the entity implemented a mechanism for Zero Liquid Discharge end-->
+
+                        <!--Details of air emissions start-->
+                        <div class="mb-3">
+                            <div class="policy">
+                                <label for="airEmissionDetails" class="form-label">5.1. Please provide details of air emissions (other than GHG emissions) by the entity, in BRSR format. Also, indicate if any independent assessment/ evaluation/assurance has been carried out by an external agency?</label>
+                            </div>
+                            <div id="airEmissionDetails" class="responsive-table">
+                                <table id="p_airEmissionDetails">
+                                    <tr>
+                                        <th class="form-label">Parameter</th>
+                                        <th class="form-label">Please specify unit</th>
+                                        <th class="form-label">FY _____(Current Financial Year)</th>
+                                        <th class="form-label">FY _____(Previous Financial Year)</th>
+                                    </tr>
+                                    <tr>
+                                        <th class="form-label">NOx </th>
+                                        <td><input type="text" id="airEmissionDetails" name="airEmissionDetails[]" class="form-control"></td>
+                                        <td><input type="text" id="airEmissionDetails" name="airEmissionDetails[]" class="form-control"></td>
+                                        <td><input type="text" id="airEmissionDetails" name="airEmissionDetails[]" class="form-control"></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="form-label">SOx </th>
+                                        <td><input type="text" id="airEmissionDetails" name="airEmissionDetails[]" class="form-control"></td>
+                                        <td><input type="text" id="airEmissionDetails" name="airEmissionDetails[]" class="form-control"></td>
+                                        <td><input type="text" id="airEmissionDetails" name="airEmissionDetails[]" class="form-control"></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="form-label">Particulate matter (PM) </th>
+                                        <td><input type="text" id="airEmissionDetails" name="airEmissionDetails[]" class="form-control"></td>
+                                        <td><input type="text" id="airEmissionDetails" name="airEmissionDetails[]" class="form-control"></td>
+                                        <td><input type="text" id="airEmissionDetails" name="airEmissionDetails[]" class="form-control"></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="form-label">Persistent organic pollutants (POP) </th>
+                                        <td><input type="text" id="airEmissionDetails" name="airEmissionDetails[]" class="form-control"></td>
+                                        <td><input type="text" id="airEmissionDetails" name="airEmissionDetails[]" class="form-control"></td>
+                                        <td><input type="text" id="airEmissionDetails" name="airEmissionDetails[]" class="form-control"></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="form-label">Volatile organic compounds (VOC) </th>
+                                        <td><input type="text" id="airEmissionDetails" name="airEmissionDetails[]" class="form-control"></td>
+                                        <td><input type="text" id="airEmissionDetails" name="airEmissionDetails[]" class="form-control"></td>
+                                        <td><input type="text" id="airEmissionDetails" name="airEmissionDetails[]" class="form-control"></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="form-label">Hazardous air pollutants (HAP) </th>
+                                        <td><input type="text" id="airEmissionDetails" name="airEmissionDetails[]" class="form-control"></td>
+                                        <td><input type="text" id="airEmissionDetails" name="airEmissionDetails[]" class="form-control"></td>
+                                        <td><input type="text" id="airEmissionDetails" name="airEmissionDetails[]" class="form-control"></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="form-label">Others - please specify </th>
+                                        <td><input type="text" id="airEmissionDetails" name="airEmissionDetails[]" class="form-control"></td>
+                                        <td><input type="text" id="airEmissionDetails" name="airEmissionDetails[]" class="form-control"></td>
+                                        <td><input type="text" id="airEmissionDetails" name="airEmissionDetails[]" class="form-control"></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <!--Details of air emissions end-->
+
+                        <!--Independent assessment question 5 start-->
+                        <div class="mb-3">
+                            <div class="policy">
+                                <label for="airExternalAgency" class="form-label">5.2. Indicate if any independent assessment/ evaluation/assurance of air emissions has been carried out by an external agency? If yes, provide the name of the external agency:</label>
+                            </div>
+                            <select name="airExternalAgency" id="airExternalAgency" class="form-control">
+                                <option value="">Select an option</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                            </select>
+                        </div>
+                        <!--hidden-->
+                        <div id="airExternalAgencyName" class="mb-3 hidden">
+                            <div class="policy">
+                                <label for="airExternalAgencyName" class="form-label">Specify the name of the external agency:</label>
+                            </div>
+                            <textarea id="airExternalAgencyName" name="airExternalAgencyName" class="form-control" placeholder="Enter the name"></textarea>
+                        </div>
+                        <!--Independent assessment question 5 end-->
+
+                        <!--Details of greenhouse gas emissions start-->
+                        <div class="mb-3">
+                            <div class="policy">
+                                <label for="greenhouseGasEmissionDetails" class="form-label">6.1. Provide details of greenhouse gas emissions (Scope 1 & Scope 2 emissions) & its intensity per rupee of turnover as per BRSR format:</label>
+                            </div>
+                            <div id="greenhouseGasEmissionDetails" class="responsive-table">
+                                <table id="p_greenhouseGasEmissionDetails">
+                                    <tr>
+                                        <th class="form-label">Parameter</th>
+                                        <th class="form-label">Unit</th>
+                                        <th class="form-label">FY _____(Current Financial Year)</th>
+                                        <th class="form-label">FY _____(Previous Financial Year)</th>
+                                    </tr>
+                                    <tr>
+                                        <th class="form-label">Total Scope 1 emissions (Break-up of the GHG into CO2, CH4, N2O, HFCs, PFCs, SF6, NF3, if available) </th>
+                                        <td><input type="text" id="greenhouseGasEmissionDetails" name="greenhouseGasEmissionDetails[]" class="form-control"></td>
+                                        <td><input type="text" id="greenhouseGasEmissionDetails" name="greenhouseGasEmissionDetails[]" class="form-control"></td>
+                                        <td><input type="text" id="greenhouseGasEmissionDetails" name="greenhouseGasEmissionDetails[]" class="form-control"></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="form-label">Total Scope 2 emissions (Break-up of the GHG into CO2, CH4, N2O, HFCs, PFCs, SF6, NF3, if available) </th>
+                                        <td><input type="text" id="greenhouseGasEmissionDetails" name="greenhouseGasEmissionDetails[]" class="form-control"></td>
+                                        <td><input type="text" id="greenhouseGasEmissionDetails" name="greenhouseGasEmissionDetails[]" class="form-control"></td>
+                                        <td><input type="text" id="greenhouseGasEmissionDetails" name="greenhouseGasEmissionDetails[]" class="form-control"></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="form-label">Total Scope 1 and Scope 2 emissions per rupee of turnover </th>
+                                        <td><input type="text" id="greenhouseGasEmissionDetails" name="greenhouseGasEmissionDetails[]" class="form-control"></td>
+                                        <td><input type="text" id="greenhouseGasEmissionDetails" name="greenhouseGasEmissionDetails[]" class="form-control"></td>
+                                        <td><input type="text" id="greenhouseGasEmissionDetails" name="greenhouseGasEmissionDetails[]" class="form-control"></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="form-label">Total Scope 1 and Scope 2 emission intensity - optional</th>
+                                        <td><input type="text" id="greenhouseGasEmissionDetails" name="greenhouseGasEmissionDetails[]" class="form-control"></td>
+                                        <td><input type="text" id="greenhouseGasEmissionDetails" name="greenhouseGasEmissionDetails[]" class="form-control"></td>
+                                        <td><input type="text" id="greenhouseGasEmissionDetails" name="greenhouseGasEmissionDetails[]" class="form-control"></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="form-label">Hazardous air pollutants (HAP) </th>
+                                        <td><input type="text" id="airEmissionDetails" name="airEmissionDetails[]" class="form-control"></td>
+                                        <td><input type="text" id="airEmissionDetails" name="airEmissionDetails[]" class="form-control"></td>
+                                        <td><input type="text" id="airEmissionDetails" name="airEmissionDetails[]" class="form-control"></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="form-label">Others - please specify </th>
+                                        <td><input type="text" id="airEmissionDetails" name="airEmissionDetails[]" class="form-control"></td>
+                                        <td><input type="text" id="airEmissionDetails" name="airEmissionDetails[]" class="form-control"></td>
+                                        <td><input type="text" id="airEmissionDetails" name="airEmissionDetails[]" class="form-control"></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <!--Details of greenhouse gas emissions end-->
+
+                        <!--Independent assessment question 6 start-->
+                        <div class="mb-3">
+                            <div class="policy">
+                                <label for="ghgExternalAgency" class="form-label">6.2. Indicate if any independent assessment/ evaluation/assurance of greenhouse gas emissions has been carried out by an external agency? If yes, provide the name of the external agency:</label>
+                            </div>
+                            <select name="ghgExternalAgency" id="ghgExternalAgency" class="form-control">
+                                <option value="">Select an option</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                            </select>
+                        </div>
+                        <!--hidden-->
+                        <div id="ghgExternalAgencyName" class="mb-3 hidden">
+                            <div class="policy">
+                                <label for="ghgExternalAgencyName" class="form-label">Specify the name of the external agency:</label>
+                            </div>
+                            <textarea id="ghgExternalAgencyName" name="ghgExternalAgencyName" class="form-control" placeholder="Enter the name"></textarea>
+                        </div>
+                        <!--Independent assessment question 6 end-->
+
+                        <!--Does the entity have any project related to reducing Green House Gas emission start-->
+                        <div class="mb-3">
+                            <div class="policy">
+                                <label for="ghgReductionProject" class="form-label">7. Does the entity have any project related to reducing Green House Gas emission? If yes, provide details about the project:</label>
+                            </div>
+                            <select name="ghgReductionProject" id="ghgReductionProject" class="form-control">
+                                <option value="">Select an option</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                            </select>
+                        </div>
+                        <!--hidden-->
+                        <div id="ghgReductionProjectDetails" class="mb-3 hidden">
+                            <div class="policy">
+                                <label for="ghgReductionProjectDetails" class="form-label">Specify the details of the project:</label>
+                            </div>
+                            <textarea id="ghgReductionProjectDetails" name="ghgReductionProjectDetails" class="form-control" placeholder="Enter the details"></textarea>
+                        </div>
+                        <!--Does the entity have any project related to reducing Green House Gas emission end-->
+
+                        <!--Details of waste management start-->
+                        <div class="mb-3">
+                            <div class="policy">
+                                <label for="wasteDetails" class="form-label">8.1. Provide details of waste generated, waste recycled & waste dumped with breakup into categories like hazardous, plastic, e-waste, bio-medical waste etc. as per BRSR format:</label>
+                            </div>
+                            <div id="wasteDetails" class="responsive-table">
+                                <table id="p_wasteDetails">
+                                    <tr>
+                                        <th class="form-label">Parameter</th>
+                                        <th class="form-label">FY _____(Current Financial Year)</th>
+                                        <th class="form-label">FY _____(Previous Financial Year)</th>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="3" class="form-label">Total Waste generated (in metric tonnes)</th>
+                                    </tr>
+                                    <tr>
+                                        <th class="form-label">Plastic waste (A) </th>
+                                        <td><input type="text" id="wasteDetails" name="wasteDetails[]" class="form-control"></td>
+                                        <td><input type="text" id="wasteDetails" name="wasteDetails[]" class="form-control"></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="form-label">E-waste (B) </th>
+                                        <td><input type="text" id="wasteDetails" name="wasteDetails[]" class="form-control"></td>
+                                        <td><input type="text" id="wasteDetails" name="wasteDetails[]" class="form-control"></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="form-label">Bio-medical waste (C) </th>
+                                        <td><input type="text" id="wasteDetails" name="wasteDetails[]" class="form-control"></td>
+                                        <td><input type="text" id="wasteDetails" name="wasteDetails[]" class="form-control"></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="form-label">Construction and demolition waste (D) </th>
+                                        <td><input type="text" id="wasteDetails" name="wasteDetails[]" class="form-control"></td>
+                                        <td><input type="text" id="wasteDetails" name="wasteDetails[]" class="form-control"></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="form-label">Battery waste (E) </th>
+                                        <td><input type="text" id="wasteDetails" name="wasteDetails[]" class="form-control"></td>
+                                        <td><input type="text" id="wasteDetails" name="wasteDetails[]" class="form-control"></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="form-label">Radioactive waste (F) </th>
+                                        <td><input type="text" id="wasteDetails" name="wasteDetails[]" class="form-control"></td>
+                                        <td><input type="text" id="wasteDetails" name="wasteDetails[]" class="form-control"></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="form-label">Other hazardous waste - please specify if any (G) </th>
+                                        <td><input type="text" id="wasteDetails" name="wasteDetails[]" class="form-control"></td>
+                                        <td><input type="text" id="wasteDetails" name="wasteDetails[]" class="form-control"></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="form-label">Other Non-hazardous waste - please specify if any (H) </th>
+                                        <td><input type="text" id="wasteDetails" name="wasteDetails[]" class="form-control"></td>
+                                        <td><input type="text" id="wasteDetails" name="wasteDetails[]" class="form-control"></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="form-label">Total (A + B + C + D + E + F + G + H) </th>
+                                        <td><input type="text" id="wasteDetails" name="wasteDetails[]" class="form-control"></td>
+                                        <td><input type="text" id="wasteDetails" name="wasteDetails[]" class="form-control"></td>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="3" class="form-label">For each category of waste generated, total waste recovered through recycling, re-using or other recovery operations (in metric tonnes) </th>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="3" align="left" class="form-label">Category of waste </th>
+                                    </tr>
+                                    <tr>
+                                        <td class="form-label">(i)Recycled </th>
+                                        <td><input type="text" id="wasteDetails" name="wasteDetails[]" class="form-control"></td>
+                                        <td><input type="text" id="wasteDetails" name="wasteDetails[]" class="form-control"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="form-label">(ii)Re-used </th>
+                                        <td><input type="text" id="wasteDetails" name="wasteDetails[]" class="form-control"></td>
+                                        <td><input type="text" id="wasteDetails" name="wasteDetails[]" class="form-control"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="form-label">(iii)Other recovery operations </th>
+                                        <td><input type="text" id="wasteDetails" name="wasteDetails[]" class="form-control"></td>
+                                        <td><input type="text" id="wasteDetails" name="wasteDetails[]" class="form-control"></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="form-label" align="left">Total </th>
+                                        <td><input type="text" id="wasteDetails" name="wasteDetails[]" class="form-control"></td>
+                                        <td><input type="text" id="wasteDetails" name="wasteDetails[]" class="form-control"></td>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="3" class="form-label">For each category of waste generated, total waste disposed by nature of disposal method (in metric tonnes) </th>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="3" align="left" class="form-label">Category of waste </th>
+                                    </tr>
+                                    <tr>
+                                        <td class="form-label">(i)Incineration </th>
+                                        <td><input type="text" id="wasteDetails" name="wasteDetails[]" class="form-control"></td>
+                                        <td><input type="text" id="wasteDetails" name="wasteDetails[]" class="form-control"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="form-label">(ii)Landfilling </th>
+                                        <td><input type="text" id="wasteDetails" name="wasteDetails[]" class="form-control"></td>
+                                        <td><input type="text" id="wasteDetails" name="wasteDetails[]" class="form-control"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="form-label">(iii)Other disposal operations </th>
+                                        <td><input type="text" id="wasteDetails" name="wasteDetails[]" class="form-control"></td>
+                                        <td><input type="text" id="wasteDetails" name="wasteDetails[]" class="form-control"></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="form-label" align="left">Total </th>
+                                        <td><input type="text" id="wasteDetails" name="wasteDetails[]" class="form-control"></td>
+                                        <td><input type="text" id="wasteDetails" name="wasteDetails[]" class="form-control"></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <!--Details of waste management end-->
+
+                        <!--Independent assessment question 8 start-->
+                        <div class="mb-3">
+                            <div class="policy">
+                                <label for="wasteExternalAgency" class="form-label">8.2. Indicate if any independent assessment/ evaluation/assurance of greenhouse waste management has been carried out by an external agency? If yes, provide the name of the external agency:</label>
+                            </div>
+                            <select name="wasteExternalAgency" id="wasteExternalAgency" class="form-control">
+                                <option value="">Select an option</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                            </select>
+                        </div>
+                        <!--hidden-->
+                        <div id="wasteExternalAgencyName" class="mb-3 hidden">
+                            <div class="policy">
+                                <label for="wasteExternalAgencyName" class="form-label">Specify the name of the external agency:</label>
+                            </div>
+                            <textarea id="wasteExternalAgencyName" name="wasteExternalAgencyName" class="form-control" placeholder="Enter the name"></textarea>
+                        </div>
+                        <!--Independent assessment question 8 end-->
+
+                        <!--Details of waste management practices adopted start-->
+                        <div class="mb-3">
+                            <div class="policy">
+                                <label for="wasteManagementPractices" class="form-label">9. Briefly describe the waste management practices adopted in your establishments. Describe the strategy adopted by your entity to reduce usage of hazardous & toxic chemicals in your products & processes & the practices adopted to manage such wastes:</label>
+                            </div>
+                            <textarea id="wasteManagementPractices" name="wasteManagementPractices" class="form-control" placeholder="Enter the details"></textarea>
+                        </div>
+                        <!--Details of waste management practices adopted end-->
+
+                        <!--If the entity has operations/offices where environmental approvals / clearances are required start-->
+                        <div class="mb-3">
+                            <div class="policy">
+                                <label for="ecologicalAreaOperations" class="form-label">10. If the entity have operations/offices in/around ecologically sensitive areas (such as national parks, wildlife sanctuaries, biosphere reserves, wetlands, biodiversity hotspots, forests, coastal regulation zones etc.) where environmental approvals / clearances are required. If yes, please specify details like: Location of operations/offices; Type of operations; the conditions of environmental approval / clearance are required, please specify details in the following format :</label>
+                            </div>
+                            <div id="ecologicalAreaOperations" class="responsive-table">
+                                <table id="p_ecologicalAreaOperations">
+                                    <thead>
+                                        <tr>
+                                            <th class="form-label">S. No.</th>
+                                            <th class="form-label">Location of operations/offices</th>
+                                            <th class="form-label">Types of operations</th>
+                                            <th class="form-label">Whether the conditions of environmental approval / clearance are being complied with? (Y/N) If no, the reasons thereof and corrective action taken, if any</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td style="width:5%;"><input type="number" id="ecologicalAreaOperations" id="p_ecologicalAreaOperations" name="ecologicalAreaOperations[]" class="table-control" value="1" readonly required ></th>
+                                            <td><input type="text" id="ecologicalAreaOperations" name="ecologicalAreaOperations[]" class="form-control"></td>
+                                            <td><input type="text" id="ecologicalAreaOperations" name="ecologicalAreaOperations[]" class="form-control"></td>
+                                            <td><input type="text" id="ecologicalAreaOperations" name="ecologicalAreaOperations[]" class="form-control"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div>
+                                    <input type="number" id="indexInput_ecologicalAreaOperations" placeholder="Enter Index">
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex('ecologicalAreaOperations')">Add At Index</button>
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow('ecologicalAreaOperations')">Remove At Index</button>
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow('ecologicalAreaOperations')">Add Row</button>
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow('ecologicalAreaOperations')">Remove Row</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!--If the entity has operations/offices where environmental approvals / clearances are required end-->
+
+                        <!--Details of environmental impact assessments of projects undertaken start-->
+                        <div class="mb-3">
+                            <div class="policy">
+                                <label for="eiaExternalAgency" class="form-label">11. Details of environmental impact assessments of projects undertaken by the entity based on applicable laws, in the current financial year:</label>
+                            </div>
+                            <div id="eiaExternalAgency" class="responsive-table">
+                                <table id="p_eiaExternalAgency">
+                                    <thead>
+                                        <tr>
+                                            <th class="form-label">S. No. </th>
+                                            <th class="form-label">Name and brief details of the project</th>
+                                            <th class="form-label">EIA Notification No</th>
+                                            <th class="form-label">Date</th>
+                                            <th class="form-label">Whether conducted by independent external agency (Yes/No) </th>
+                                            <th class="form-label">Results communicated in public domain (Yes/No) </th>
+                                            <th class="form-label">Relevant Web Link </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td style="width:5%;"><input type="number" id="eiaExternalAgency" id="p_eiaExternalAgency" name="eiaExternalAgency[]" class="table-control" value="1" readonly required ></th>
+                                            <td><input type="text" id="eiaExternalAgency" name="eiaExternalAgency[]" class="form-control"></td>
+                                            <td><input type="text" id="eiaExternalAgency" name="eiaExternalAgency[]" class="form-control"></td>
+                                            <td><input type="text" id="eiaExternalAgency" name="eiaExternalAgency[]" class="form-control"></td>
+                                            <td><input type="text" id="eiaExternalAgency" name="eiaExternalAgency[]" class="form-control"></td>
+                                            <td><input type="text" id="eiaExternalAgency" name="eiaExternalAgency[]" class="form-control"></td>
+                                            <td><input type="text" id="eiaExternalAgency" name="eiaExternalAgency[]" class="form-control"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div>
+                                    <input type="number" id="indexInput_eiaExternalAgency" placeholder="Enter Index">
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex('eiaExternalAgency')">Add At Index</button>
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow('eiaExternalAgency')">Remove At Index</button>
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow('eiaExternalAgency')">Add Row</button>
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow('eiaExternalAgency')">Remove Row</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Details of environmental impact assessments of projects undertaken end-->
+
+                        <!--Is the entity compliant with the applicable environmental law in India; such as the Water Act, Air Act start-->
+                        <div class="mb-3">
+                            <div class="policy">
+                                <label for="environmentalComplianceStatus" class="form-label">12. Is the entity compliant with the applicable environmental law/ regulations/ guidelines in India; such as the Water (Prevention & Control of Pollution) Act, Air (Prevention & Control of Pollution) Act, Environment Protection Act & rules thereunder. If yes, provide relevant details:</label>
+                            </div>
+                            <div id="environmentalComplianceStatus" class="responsive-table">
+                                <table id="p_environmentalComplianceStatus">
+                                    <thead>
+                                        <tr>
+                                            <th class="form-label">S. No. </th>
+                                            <th class="form-label">Specify the law / regulation / guidelines which was not complied with</th>
+                                            <th class="form-label">Provide details of the noncompliance</th>
+                                            <th class="form-label">Any fines / penalties / action taken by regulatory agencies such as pollution control boards or by courts</th>
+                                            <th class="form-label">Corrective action taken, if any </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td style="width:5%;"><input type="number" id="environmentalComplianceStatus" id="p_environmentalComplianceStatus" name="environmentalComplianceStatus[]" class="table-control" value="1" readonly required ></th>
+                                            <td><input type="text" id="environmentalComplianceStatus" name="environmentalComplianceStatus[]" class="form-control"></td>
+                                            <td><input type="text" id="environmentalComplianceStatus" name="environmentalComplianceStatus[]" class="form-control"></td>
+                                            <td><input type="text" id="environmentalComplianceStatus" name="environmentalComplianceStatus[]" class="form-control"></td>
+                                            <td><input type="text" id="environmentalComplianceStatus" name="environmentalComplianceStatus[]" class="form-control"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div>
+                                    <input type="number" id="indexInput_environmentalComplianceStatus" placeholder="Enter Index">
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex('environmentalComplianceStatus')">Add At Index</button>
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow('environmentalComplianceStatus')">Remove At Index</button>
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow('environmentalComplianceStatus')">Add Row</button>
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow('environmentalComplianceStatus')">Remove Row</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Is the entity compliant with the applicable environmental law in India; such as the Water Act, Air Act end-->
+                    </div>
+                    <!------------------------------------------------------------------------------------------------------------------------->
+                    <!--                                     LEADERSHIP INDICATORS -START                                                    -->
+                    <!------------------------------------------------------------------------------------------------------------------------->
+                    <div class="bold_border_container">
+                        <div class="policy">
+                            <h3 style="text-align: center; border-bottom: 2px solid #2d6a4f; padding-bottom: 15px;">Leadership Indicators</h3>
+                        </div>
+
+                        <!--Break-up of the total energy consumed (in Joules or multiples) from renewable and non-renewable sources start-->
+                        <div class="mb-3">
+                            <div class="policy">
+                                <label for="totalenergyconsumed" class="form-label">1.1. Provide break-up of the total energy consumed (in Joules or multiples) from renewable and non-renewable sources, in the following format:</label>
+                            </div>
+                            <div id="totalenergyconsumed" class="responsive-table">
+                                <table id="p_totalenergyconsumed">
+                                    <tr>
+                                        <th class="form-label">Parameter</th>
+                                        <th class="form-label">FY _____(Current Financial Year)</th>
+                                        <th class="form-label">FY _____(Previous Financial Year)</th>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="3" class="form-label" align="left">From renewable sources </th>
+                                    </tr>
+                                    <tr>
+                                        <td class="form-label">Total electricity consumption (A) </th>
+                                        <td><input type="text" id="totalenergyconsumed" name="totalenergyconsumed[]" class="form-control"></td>
+                                        <td><input type="text" id="totalenergyconsumed" name="totalenergyconsumed[]" class="form-control"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="form-label">Total fuel consumption (B) </th>
+                                        <td><input type="text" id="totalenergyconsumed" name="totalenergyconsumed[]" class="form-control"></td>
+                                        <td><input type="text" id="totalenergyconsumed" name="totalenergyconsumed[]" class="form-control"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="form-label">Energy consumption through other sources (C) </th>
+                                        <td><input type="text" id="totalenergyconsumed" name="totalenergyconsumed[]" class="form-control"></td>
+                                        <td><input type="text" id="totalenergyconsumed" name="totalenergyconsumed[]" class="form-control"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="form-label">Total energy consumed from renewable sources (A + B + C) </th>
+                                        <td><input type="text" id="totalenergyconsumed" name="totalenergyconsumed[]" class="form-control"></td>
+                                        <td><input type="text" id="totalenergyconsumed" name="totalenergyconsumed[]" class="form-control"></td>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="3" class="form-label" align="left">From non-renewable sources </th>
+                                    </tr>
+                                    <tr>
+                                        <td class="form-label">Total electricity consumption (D) </th>
+                                        <td><input type="text" id="totalenergyconsumed" name="totalenergyconsumed[]" class="form-control"></td>
+                                        <td><input type="text" id="totalenergyconsumed" name="totalenergyconsumed[]" class="form-control"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="form-label">Total fuel consumption (E) </th>
+                                        <td><input type="text" id="totalenergyconsumed" name="totalenergyconsumed[]" class="form-control"></td>
+                                        <td><input type="text" id="totalenergyconsumed" name="totalenergyconsumed[]" class="form-control"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="form-label">Energy consumption through other sources (F) </th>
+                                        <td><input type="text" id="totalenergyconsumed" name="totalenergyconsumed[]" class="form-control"></td>
+                                        <td><input type="text" id="totalenergyconsumed" name="totalenergyconsumed[]" class="form-control"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="form-label">Total energy consumed from non-renewable sources (D + E + F) </th>
+                                        <td><input type="text" id="totalenergyconsumed" name="totalenergyconsumed[]" class="form-control"></td>
+                                        <td><input type="text" id="totalenergyconsumed" name="totalenergyconsumed[]" class="form-control"></td>
+                                    </tr>
+                                </table>
+                            </div>   
+                        </div>
+                        <!--Break-up of the total energy consumed (in Joules or multiples) from renewable and non-renewable sources end-->
+
+                        <!--Independent assessment question 1 leadership start-->
+                        <div class="mb-3">
+                            <div class="policy">
+                                <label for="totalenergyconsumedAgency" name="totalenergyconsumedAgency" class="form-label">1.2. Indicate if any independent assessment/ evaluation/assurance has been carried out by an external agency? If yes, provide the name of the external agency:</label>
+                            </div>
+                            <select name="totalenergyconsumedAgency" name="totalenergyconsumedAgency" id="totalenergyconsumedAgency" name="totalenergyconsumedAgency" class="form-control">
+                                <option value="">Select an option</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                            </select>
+                        </div>
+                        <!--hidden-->
+                        <div id="totalenergyconsumedAgencyName" class="mb-3 hidden">
+                            <div class="policy">
+                                <label for="totalenergyconsumedAgencyName" class="form-label">Specify the name of the external agency:</label>
+                            </div>
+                            <textarea id="totalenergyconsumedAgencyName" name="totalenergyconsumedAgencyName" class="form-control" placeholder="Enter the name"></textarea>
+                        </div>
+                        <!--Independent assessment question 1 leadership end-->
+
+                        <!--Details related to water discharged start-->
+                        <div class="mb-3">
+                            <div class="policy">
+                                <label for="waterdischarged" class="form-label">2.1. Provide break-up of the total energy consumed (in Joules or multiples) from renewable and non-renewable sources, in the following format:</label>
+                            </div>
+                            <div id="waterdischarged" class="responsive-table">
+                                <table id="p_waterdischarged">
+                                    <tr>
+                                        <th class="form-label">Parameter</th>
+                                        <th class="form-label">FY _____(Current Financial Year)</th>
+                                        <th class="form-label">FY _____(Previous Financial Year)</th>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="3" class="form-label" align="left">Water discharge by destination and level of treatment (in kilolitres) </th>
+                                    </tr>
+                                    <tr>
+                                        <td class="form-label">(i) To Surface water </th>
+                                        <td><input type="text" id="waterdischarged" name="waterdischarged[]" class="form-control"></td>
+                                        <td><input type="text" id="waterdischarged" name="waterdischarged[]" class="form-control"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="form-label"> - No treatment </th>
+                                        <td><input type="text" id="waterdischarged" name="waterdischarged[]" class="form-control"></td>
+                                        <td><input type="text" id="waterdischarged" name="waterdischarged[]" class="form-control"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="form-label"> - With treatment - please specify level of treatment </td>
+                                        <td><input type="text" id="waterdischarged" name="waterdischarged[]" class="form-control"></td>
+                                        <td><input type="text" id="waterdischarged" name="waterdischarged[]" class="form-control"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="form-label">(ii) To Groundwater </th>
+                                        <td><input type="text" id="waterdischarged" name="waterdischarged[]" class="form-control"></td>
+                                        <td><input type="text" id="waterdischarged" name="waterdischarged[]" class="form-control"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="form-label"> - No treatment </th>
+                                        <td><input type="text" id="waterdischarged" name="waterdischarged[]" class="form-control"></td>
+                                        <td><input type="text" id="waterdischarged" name="waterdischarged[]" class="form-control"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="form-label"> - With treatment - please specify level of treatment </td>
+                                        <td><input type="text" id="waterdischarged" name="waterdischarged[]" class="form-control"></td>
+                                        <td><input type="text" id="waterdischarged" name="waterdischarged[]" class="form-control"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="form-label">(iii) To Seawater </th>
+                                        <td><input type="text" id="waterdischarged" name="waterdischarged[]" class="form-control"></td>
+                                        <td><input type="text" id="waterdischarged" name="waterdischarged[]" class="form-control"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="form-label"> - No treatment </th>
+                                        <td><input type="text" id="waterdischarged" name="waterdischarged[]" class="form-control"></td>
+                                        <td><input type="text" id="waterdischarged" name="waterdischarged[]" class="form-control"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="form-label"> - With treatment - please specify level of treatment </td>
+                                        <td><input type="text" id="waterdischarged" name="waterdischarged[]" class="form-control"></td>
+                                        <td><input type="text" id="waterdischarged" name="waterdischarged[]" class="form-control"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="form-label">(iv) Sent to third-parties </th>
+                                        <td><input type="text" id="waterdischarged" name="waterdischarged[]" class="form-control"></td>
+                                        <td><input type="text" id="waterdischarged" name="waterdischarged[]" class="form-control"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="form-label"> - No treatment </th>
+                                        <td><input type="text" id="waterdischarged" name="waterdischarged[]" class="form-control"></td>
+                                        <td><input type="text" id="waterdischarged" name="waterdischarged[]" class="form-control"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="form-label"> - With treatment - please specify level of treatment </td>
+                                        <td><input type="text" id="waterdischarged" name="waterdischarged[]" class="form-control"></td>
+                                        <td><input type="text" id="waterdischarged" name="waterdischarged[]" class="form-control"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="form-label">(v) Others </th>
+                                        <td><input type="text" id="waterdischarged" name="waterdischarged[]" class="form-control"></td>
+                                        <td><input type="text" id="waterdischarged" name="waterdischarged[]" class="form-control"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="form-label"> - No treatment </th>
+                                        <td><input type="text" id="waterdischarged" name="waterdischarged[]" class="form-control"></td>
+                                        <td><input type="text" id="waterdischarged" name="waterdischarged[]" class="form-control"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="form-label"> - With treatment - please specify level of treatment </td>
+                                        <td><input type="text" id="waterdischarged" name="waterdischarged[]" class="form-control"></td>
+                                        <td><input type="text" id="waterdischarged" name="waterdischarged[]" class="form-control"></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="form-label" align="left">Total water discharged (in kilolitres) </th>
+                                        <td><input type="text" id="waterdischarged" name="waterdischarged[]" class="form-control"></td>
+                                        <td><input type="text" id="waterdischarged" name="waterdischarged[]" class="form-control"></td>
+                                    </tr>
+                                </table>
+                            </div>   
+                        </div>
+                        <!--Details related to water discharged end-->
+
+                        <!--Independent assessment question 2 leadership start-->
+                        <div class="mb-3">
+                            <div class="policy">
+                                <label for="waterdischargedAgency" name="waterdischargedAgency" class="form-label">2.2. Indicate if any independent assessment/ evaluation/assurance has been carried out by an external agency? If yes, provide the name of the external agency:</label>
+                            </div>
+                            <select name="waterdischargedAgency" name="waterdischargedAgency" id="waterdischargedAgency" class="form-control">
+                                <option value="">Select an option</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                            </select>
+                        </div>
+                        <!--hidden-->
+                        <div id="waterdischargedAgencyName" class="mb-3 hidden">
+                            <div class="policy">
+                                <label for="waterdischargedAgencyName" class="form-label">Specify the name of the external agency:</label>
+                            </div>
+                            <textarea id="waterdischargedAgencyName" name="waterdischargedAgencyName" class="form-control" placeholder="Enter the name"></textarea>
+                        </div>
+                        <!--Independent assessment question 2 leadership end-->
+
+                        <!--Water withdrawal, consumption and discharge in areas of water stress start-->
+                        <div class="mb-3">
+                            <div class="policy">
+                                <label for="waterstress" class="form-label">3.1. For each facility / plant located in areas of water stress, provide the following information::</label>
+                            </div>
+                            <div class="mb-3 invisible_container">
+                                <div class="policy">
+                                    <label for="waterstress" class="form-label"><br>a. Name of the area : </label>
+                                </div>
+                                <input type="text" id="waterstress" name="waterstress" class="form-control" placeholder="Enter the details" required></textarea>
+                                <div class="policy">
+                                    <label for="waterstress" class="form-label"><br>b. Nature of operations : </label>
+                                </div>
+                                <textarea id="waterstress" name="waterstress" class="form-control" placeholder="Enter the details" required></textarea>
+                                <div class="policy">
+                                    <label for="waterstress" class="form-label"><br>c. Water withdrawal, consumption and discharge in the following format : </label>
+                                </div>
+                                <div id="waterstress" class="responsive-table">
+                                    <table id="p_waterstress">
+                                        <tr>
+                                            <th class="form-label">Parameter</th>
+                                            <th class="form-label">FY _____(Current Financial Year)</th>
+                                            <th class="form-label">FY _____(Previous Financial Year)</th>
+                                        </tr>
+                                        <tr>
+                                            <th colspan="3" class="form-label" align="left">Water withdrawal by source (in kilolitres) </th>
+                                        </tr>
+                                        <tr>
+                                            <td class="form-label">(i) Surface water </td>
+                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control"></td>
+                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="form-label">(ii) Groundwater </td>
+                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control"></td>
+                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="form-label">(iii) Third party water </td>
+                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control"></td>
+                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="form-label">(iv) Seawater / desalinated water </td>
+                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control"></td>
+                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="form-label">(v) Others </td>
+                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control"></td>
+                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control"></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="form-label">Total volume of water withdrawal (in kilolitres) </th>
+                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control"></td>
+                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control"></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="form-label">Total volume of water consumption (in kilolitres) </th>
+                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control"></td>
+                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control"></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="form-label">Water intensity per rupee of turnover (Water consumed / turnover) </th>
+                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control"></td>
+                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control"></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="form-label">Water intensity (optional) </th>
+                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control"></td>
+                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control"></td>
+                                        </tr>
+                                        <tr>
+                                            <th colspan="3" class="form-label" align="left">Water discharge by destination and level of treatment (in kilolitres) </th>
+                                        </tr>
+                                        <tr>
+                                            <td class="form-label">(i) Into Surface water </td>
+                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control"></td>
+                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="form-label"> - No treatment </td>
+                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control"></td>
+                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="form-label"> - With treatment – please specify level of treatment </td>
+                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control"></td>
+                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="form-label">(ii) Into Ground water </td>
+                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control"></td>
+                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="form-label"> - No treatment </td>
+                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control"></td>
+                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="form-label"> - With treatment – please specify level of treatment </td>
+                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control"></td>
+                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="form-label">(iii) Into Seawater </td>
+                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control"></td>
+                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="form-label"> - No treatment </td>
+                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control"></td>
+                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="form-label"> - With treatment – please specify level of treatment </td>
+                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control"></td>
+                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="form-label">(iv) Sent to third parties </td>
+                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control"></td>
+                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="form-label"> - No treatment </td>
+                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control"></td>
+                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="form-label"> - With treatment – please specify level of treatment </td>
+                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control"></td>
+                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="form-label">(v) Others </td>
+                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control"></td>
+                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="form-label"> - No treatment </td>
+                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control"></td>
+                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="form-label"> - With treatment – please specify level of treatment </td>
+                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control"></td>
+                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control"></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="form-label">Total water discharged (in kilolitres) </th>
+                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control"></td>
+                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control"></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>  
+                        </div>
+                        <!--Water withdrawal, consumption and discharge in areas of water stress end-->
+
+                        <!--Independent assessment question 3 leadership start-->
+                        <div class="mb-3">
+                            <div class="policy">
+                                <label for="waterstressAgency" name="waterstressAgency" class="form-label">3.2. Indicate if any independent assessment/ evaluation/assurance has been carried out by an external agency? If yes, provide the name of the external agency:</label>
+                            </div>
+                            <select name="waterstresseAgency" id="waterstressAgency" class="form-control">
+                                <option value="">Select an option</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                            </select>
+                        </div>
+                        <!--hidden-->
+                        <div id="waterstressAgencyName" class="mb-3 hidden">
+                            <div class="policy">
+                                <label for="waterstressAgencyName" class="form-label">Specify the name of the external agency:</label>
+                            </div>
+                            <textarea id="waterstressAgencyName" name="waterstressAgencyName" class="form-control" placeholder="Enter the name"></textarea>
+                        </div>
+                        <!--Independent assessment question 3 leadership end-->
+
+                        <!--Details of Total scope 3 emissions and its intensity start-->
+                        <div class="mb-3">
+                            <div class="policy">
+                                <label for="totalscope" class="form-label">4.1. Please provide details of total Scope 3 emissions & its intensity, in the following format :</label>
+                            </div>
+                            <div id="totalscope" class="responsive-table">
+                                <table id="p_totalscope">
+                                    <tr>
+                                        <th class="form-label">Parameter</th>
+                                        <th class="form-label">Unit</th>
+                                        <th class="form-label">FY _____(Current Financial Year)</th>
+                                        <th class="form-label">FY _____(Previous Financial Year)</th>
+                                    </tr>
+                                    <tr>
+                                        <th align="center" class="form-label">Total Scope 3 emissions (Break-up of the GHG into CO2, CH4, N2O, HFCs, PFCs,SF6, NF3, if available) :</th>
+                                        <td><input type="text" id="totalscope" name="totalscope[]" class="form-control"></td>
+                                        <td><input type="text" id="totalscope" name="totalscope[]" class="form-control"></td>
+                                        <td><input type="text" id="totalscope" name="totalscope[]" class="form-control"></td>
+                                    </tr>
+                                    <tr>
+                                        <th align="center" class="form-label">Total Scope 3 emissions per rupee of turnover:</th>
+                                        <td><input type="text" id="totalscope" name="totalscope[]" class="form-control"></td>
+                                        <td><input type="text" id="totalscope" name="totalscope[]" class="form-control"></td>
+                                        <td><input type="text" id="totalscope" name="totalscope[]" class="form-control"></td>
+                                    </tr>
+                                    <tr>
+                                        <th align="center" class="form-label">Total Scope 3 intensity (optional) :</th>
+                                        <td><input type="text" id="totalscope" name="totalscope[]" class="form-control"></td>
+                                        <td><input type="text" id="totalscope" name="totalscope[]" class="form-control"></td>
+                                        <td><input type="text" id="totalscope" name="totalscope[]" class="form-control"></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <!--Details of Total scope 3 emissions and its intensity end-->
+
+                        <!--Independent assessment question 4 leadership start-->
+                        <div class="mb-3">
+                            <div class="policy">
+                                <label for="totalscopeAgency" name="totalscopeAgency" class="form-label">4.2. Indicate if any independent assessment/ evaluation/assurance has been carried out by an external agency? If yes, provide the name of the external agency:</label>
+                            </div>
+                            <select name="totalscopeAgency" name="totalscopeAgency" id="totalscopeAgency" class="form-control">
+                                <option value="">Select an option</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                            </select>
+                        </div>
+                        <!--hidden-->
+                        <div id="totalscopeAgencyName" class="mb-3 hidden">
+                            <div class="policy">
+                                <label for="totalscopeAgencyName" class="form-label">Specify the name of the external agency:</label>
+                            </div>
+                            <textarea id="totalscopeAgencyName" name="totalscopeAgencyName" class="form-control" placeholder="Enter the name"></textarea>
+                        </div>
+                        <!--Independent assessment question 4 leadership end-->
+
+                        <!--Significant direct & indirect impact of the entity on biodiversity start-->
+                        <div class="mb-3">
+                            <div class="policy">
+                                <label for="significantdirect" class="form-label">5. With respect to the ecologically sensitive areas reported at Question 10 of Essential Indicators above, provide details of significant direct & indirect impact of the entity on biodiversity in such areas along-with prevention and remediation activities :</label>
+                            </div>
+                            <textarea id="significantdirect" name="significantdirect" class="form-control" placeholder="Enter the details" required></textarea>
+                        </div>
+                        <!--Significant direct & indirect impact of the entity on biodiversity end-->
+
+                        <!--Details of specific initiatives or innovative technology to improve resource efficiency start-->
+                        <div class="mb-3">
+                            <div class="policy">
+                                <label for="resourceefficiency" class="form-label">6. If the entity has undertaken any specific initiatives or used innovative technology or solutions to improve resource efficiency, or reduce impact due to emissions / effluent discharge / waste generated, please provide details of the same as well as outcome of such initiatives, as per the following format :</label>
+                            </div>
+                            <div id="resourceefficiency" class="responsive-table">
+                                <table id="p_resourceefficiency">
+                                    <tr>
+                                        <th class="form-label">S. No.</th>
+                                        <th class="form-label">Initiative undertaken</th>
+                                        <th class="form-label">Details of the initiative (Web-link, if any, may be provided along-with summary)</th>
+                                        <th class="form-label">Outcome of the initiative </th>
+                                    </tr>
+                                    <tr>
+                                        <td style="width:5%;"><input type="number" id="resourceefficiency" id="p_resourceefficiency" name="resourceefficiency[]" class="table-control" value="1" readonly required ></th>
+                                        <td><input type="text" id="resourceefficiency" name="resourceefficiency[]" class="form-control"></td>
+                                        <td><input type="text" id="resourceefficiency" name="resourceefficiency[]" class="form-control"></td>
+                                        <td><input type="text" id="resourceefficiency" name="resourceefficiency[]" class="form-control"></td>
+                                    </tr>
+                                </table>
+                                <div>
+                                    <input type="number" id="indexInput_resourceefficiency" placeholder="Enter Index">
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex('resourceefficiency')">Add At Index</button>
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow('resourceefficiency')">Remove At Index</button>
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow('resourceefficiency')">Add Row</button>
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow('resourceefficiency')">Remove Row</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Details of specific initiatives or innovative technology to improve resource efficiency end-->
+
+                        <!--Details of business continuity and disaster management plan start-->
+                        <div class="mb-3">
+                            <div class="policy">
+                                <label for="disastermanagement" class="form-label">7. Does the entity have a business continuity and disaster management plan? Give details in 100 words/ web link :</label>
+                            </div>
+                            <textarea id="disastermanagement" name="disastermanagement" class="form-control" placeholder="Enter the details" required></textarea>
+                        </div>
+                        <!--Details of business continuity and disaster management plan end-->
+
+                        <!--Mitigation or adaptation measures taken by the entity to disclose any significant adverse impact to environment arising from value chain of entity start-->
+                        <div class="mb-3">
+                            <div class="policy">
+                                <label for="valuechainentity" class="form-label">8. Disclose any significant adverse impact to the environment, arising from the value chain of the entity. What mitigation or adaptation measures have been taken by the entity in this regard :</label>
+                            </div>
+                            <textarea id="valuechainentity" name="valuechainentity" class="form-control" placeholder="Enter the details" required></textarea>
+                        </div>
+                        <!--Mitigation or adaptation measures taken by the entity to disclose any significant adverse impact to environment arising from value chain of entity end-->
+
+                        <!--Percentage of value chain partners that were assessed for environmental imapcts start-->
+                        <div class="mb-3">
+                            <div class="policy">
+                                <label for="valuechainbusiness" class="form-label">9. Percentage of value chain partners (by value of business done with such partners) that were assessed for environmental impacts :</label>
+                            </div>
+                            <input type="number" id="valuechainbusiness" name="valuechainbusiness" class="form-control" placeholder="Enter the percentage" required></textarea>
+                        </div>
+                        <!--Percentage of value chain partners that were assessed for environmental imapcts end-->
+                    </div>
                     <button type="button" class="btn-primary" onclick="navigate(-1)">Previous</button>
                     <button type="button" class="btn-primary" onclick="navigate(1)">Next</button>
                 </div>
@@ -2886,11 +3794,11 @@
                                     </tbody>
                                 </table>
                                 <div>
-                                    <input type="number" id="indexInput7_2" placeholder="Enter Index">
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex7_2()">Add At Index</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow7_2()">Remove At Index</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow7_2()">Add Row</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow7_2()">Remove Row</button>
+                                    <input type="number" id="indexInput_antiCompetitiveActions" placeholder="Enter Index">
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex('antiCompetitiveActions')">Add At Index</button>
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow('antiCompetitiveActions')">Remove At Index</button>
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow('antiCompetitiveActions')">Add Row</button>
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow('antiCompetitiveActions')">Remove Row</button>
                                 </div>
                             </div>
                         </div>
@@ -2934,11 +3842,11 @@
                                 </table>
                             </div>
                             <div>
-                                <input type="number" id="indexInput7_3" placeholder="Enter Index">
-                                <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex7_3()">Add At Index</button>
-                                <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow7_3()">Remove At Index</button>
-                                <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow7_3()">Add Row</button>
-                                <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow7_3()">Remove Row</button>
+                                <input type="number" id="indexInput_publicPolicyAdvocacy" placeholder="Enter Index">
+                                <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex('publicPolicyAdvocacy')">Add At Index</button>
+                                <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow('publicPolicyAdvocacy')">Remove At Index</button>
+                                <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow('publicPolicyAdvocacy')">Add Row</button>
+                                <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow('publicPolicyAdvocacy')">Remove Row</button>
                             </div>
                         </div>
                         <!-- Details of public policy positions advocated by the entity end-->
@@ -2995,11 +3903,11 @@
                                     </tbody>
                                 </table>
                                 <div>
-                                    <input type="number" id="indexInput8_1" placeholder="Enter Index">
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex8_1()">Add At Index</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow8_1()">Remove At Index</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow8_1()">Add Row</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow8_1()">Remove Row</button>
+                                    <input type="number" id="indexInput_socialImpactAssessments" placeholder="Enter Index">
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex('socialImpactAssessments')">Add At Index</button>
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow('socialImpactAssessments')">Remove At Index</button>
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow('socialImpactAssessments')">Add Row</button>
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow('socialImpactAssessments')">Remove Row</button>
                                 </div>
                             </div>
                         </div>
@@ -3036,11 +3944,11 @@
                                     </tbody>
                                 </table>
                                 <div>
-                                    <input type="number" id="indexInput8_2" placeholder="Enter Index">
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex8_2()">Add At Index</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow8_2()">Remove At Index</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow8_2()">Add Row</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow8_2()">Remove Row</button>
+                                    <input type="number" id="indexInput_rehabilitationProject" placeholder="Enter Index">
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex('rehabilitationProject')">Add At Index</button>
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow('rehabilitationProject')">Remove At Index</button>
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow('rehabilitationProject')">Add Row</button>
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow('rehabilitationProject')">Remove Row</button>
                                 </div>
                             </div>
                         </div>  
@@ -3117,11 +4025,11 @@
                                     </tbody>
                                 </table>
                                 <div>
-                                    <input type="number" id="indexInput8_L_1" placeholder="Enter Index">
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex8_L_1()">Add At Index</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow8_L_1()">Remove At Index</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow8_L_1()">Add Row</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow8_L_1()">Remove Row</button>
+                                    <input type="number" id="indexInput_socialImpactActions" placeholder="Enter Index">
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex('socialImpactActions')">Add At Index</button>
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow('socialImpactActions')">Remove At Index</button>
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow('socialImpactActions')">Add Row</button>
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow('socialImpactActions')">Remove Row</button>
                                 </div>
                             </div>  
                         </div>
@@ -3154,11 +4062,11 @@
                                     </tbody>
                                 </table>
                                 <div>
-                                    <input type="number" id="indexInput8_L_2" placeholder="Enter Index">
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex8_L_2()">Add At Index</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow8_L_2()">Remove At Index</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow8_L_2()">Add Row</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow8_L_2()">Remove Row</button>
+                                    <input type="number" id="indexInput_csrAspirationalDistricts" placeholder="Enter Index">
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex('csrAspirationalDistricts')">Add At Index</button>
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow('csrAspirationalDistricts')">Remove At Index</button>
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow('csrAspirationalDistricts')">Add Row</button>
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow('csrAspirationalDistricts')">Remove Row</button>
                                 </div>
                             </div>  
                         </div>
@@ -3214,11 +4122,11 @@
                                     </tbody>
                                 </table>
                                 <div>
-                                    <input type="number" id="indexInput8_L_4" placeholder="Enter Index">
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex8_L_4()">Add At Index</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow8_L_4()">Remove At Index</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow8_L_4()">Add Row</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow8_L_4()">Remove Row</button>
+                                    <input type="number" id="indexInput_intellectualPropertiesBenefits" placeholder="Enter Index">
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex('intellectualPropertiesBenefits')">Add At Index</button>
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow('intellectualPropertiesBenefits')">Remove At Index</button>
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow('intellectualPropertiesBenefits')">Add Row</button>
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow('intellectualPropertiesBenefits')">Remove Row</button>
                                 </div>
                             </div>
                         </div> 
@@ -3249,11 +4157,11 @@
                                     </tbody>
                                 </table>
                                 <div>
-                                    <input type="number" id="indexInput8_L_5" placeholder="Enter Index">
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex8_L_5()">Add At Index</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow8_L_5()">Remove At Index</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow8_L_5()">Add Row</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow8_L_5()">Remove Row</button>
+                                    <input type="number" id="indexInput_correctiveActionsIntellectualProperty" placeholder="Enter Index">
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex('correctiveActionsIntellectualProperty')">Add At Index</button>
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow('correctiveActionsIntellectualProperty')">Remove At Index</button>
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow('correctiveActionsIntellectualProperty')">Add Row</button>
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow('correctiveActionsIntellectualProperty')">Remove Row</button>
                                 </div>
                             </div>
                         </div> 
@@ -3284,11 +4192,11 @@
                                     </tbody>
                                 </table>
                                 <div>
-                                    <input type="number" id="indexInput8_L_6" placeholder="Enter Index">
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex8_L_6()">Add At Index</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow8_L_6()">Remove At Index</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow8_L_6()">Add Row</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow8_L_6()">Remove Row</button>
+                                    <input type="number" id="indexInput_csrProjectBeneficiaries" placeholder="Enter Index">
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex('csrProjectBeneficiaries')">Add At Index</button>
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow('csrProjectBeneficiaries')">Remove At Index</button>
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow('csrProjectBeneficiaries')">Add Row</button>
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow('csrProjectBeneficiaries')">Remove Row</button>
                                 </div>
                             </div>
                         </div> 
