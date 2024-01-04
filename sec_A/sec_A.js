@@ -223,503 +223,128 @@ torInput.addEventListener("input", function() {
 
 /* ************************************************************************************************************************************ */
 /*                                                                                                                                      */
-/*                                                                Q14Table-START                                                        */
+/*                                                           Table row addition-START                                                   */
 /*                                                                                                                                      */
 /* ************************************************************************************************************************************ */
 // Function to add a new row at the bottom of the table
-function addBottomRow14() {
-  const table = document.querySelector("#doba table tbody");
-  const rows = table.getElementsByTagName("tr");
-  const lastRow = rows[rows.length - 1].cloneNode(true);
+function addBottomRow(Id) {
+    const table = document.querySelector(`#${Id} table tbody`);
+    const rows = table.getElementsByTagName("tr");
+    const lastRow = rows[rows.length - 1].cloneNode(true);
 
-  // Increment the S.No. in the new row
-  const lastSNo = parseInt(rows[rows.length - 1].cells[0].getElementsByTagName("input")[0].value);
-  lastRow.cells[0].getElementsByTagName("input")[0].value = lastSNo + 1;
+    // Increment the S.No. in the new row
+    const lastSNo = parseInt(rows[rows.length - 1].cells[0].getElementsByTagName("input")[0].value);
+    lastRow.cells[0].getElementsByTagName("input")[0].value = lastSNo + 1;
 
-  // Clear other input fields in the new row
-  const inputs = lastRow.getElementsByTagName("input");
-  for (let i = 1; i < inputs.length; i++) {
-      inputs[i].value = "";
-  }
+    // Clear other input fields in the new row
+    const inputs = lastRow.getElementsByTagName("input");
+    for (let i = 1; i < inputs.length; i++) {
+        inputs[i].value = "";
+    }
 
-  // Add the new row at the bottom
-  table.appendChild(lastRow);
+    // Add the new row at the bottom
+    table.appendChild(lastRow);
 
-  updateSNoValues14();
+    updateSNoValues(Id);
 }
 
 // Function to remove a specific row from the table with confirmation
-function removeSpecificRow14() {
-  const indexInput14 = document.getElementById("indexInput14");
-  const parsedIndex = parseInt(indexInput14.value);
+function removeSpecificRow(Id) {
+    const indexInput = document.getElementById(`indexInput_${Id}`);
+    const parsedIndex = parseInt(indexInput.value);
 
-  if (!isNaN(parsedIndex) && parsedIndex > 1) {
-      const table = document.querySelector("#doba table tbody");
-      const rows = table.getElementsByTagName("tr");
+    if (!isNaN(parsedIndex) && parsedIndex > 1) {
+        const table = document.querySelector(`#${Id} table tbody`);
+        const rows = table.getElementsByTagName("tr");
 
-      if (parsedIndex <= rows.length) {
-          // Ask for confirmation before removing the row
-          if (confirm("Are you sure you want to remove this row?")) {
-              table.removeChild(rows[parsedIndex - 1]);
+        if (parsedIndex <= rows.length) {
+            // Ask for confirmation before removing the row
+            if (confirm("Are you sure you want to remove this row?")) {
+                table.removeChild(rows[parsedIndex - 1]);
 
-              // Update the S.No. values in the table
-              updateSNoValues14();
-          }
-      } else {
-          alert("Invalid S.No. The specified row does not exist.");
-      }
-  } else if (parsedIndex === 1) {
-      alert("Cannot remove the first row. Please enter a valid S.No. greater than 1.");
-  } else {
-      alert("Invalid S.No. Please enter a valid S.No.");
-  }
+                // Update the S.No. values in the table
+                updateSNoValues(Id);
+            }
+        } else {
+            alert("Invalid S.No. The specified row does not exist.");
+        }
+    } else if (parsedIndex === 1) {
+        alert("Cannot remove the first row. Please enter a valid S.No. greater than 1.");
+    } else {
+        alert("Invalid S.No. Please enter a valid S.No.");
+    }
 
-  // Clear the input value after removing the row
-  indexInput14.value = "";
+    // Clear the input value after removing the row
+    indexInput.value = "";
 }
 
 // Function to remove the last row from the table with confirmation
-function removeBottomRow14() {
-  const table = document.querySelector("#doba table tbody");
-  const rows = table.getElementsByTagName("tr");
+function removeBottomRow(Id) {
+    const table = document.querySelector(`#${Id} table tbody`);
+    const rows = table.getElementsByTagName("tr");
 
-  if (rows.length > 1) { // Ensure there is more than one row
-    // Ask for confirmation before removing the row
-    if (confirm("Are you sure you want to remove the last row?")) {
-        table.removeChild(rows[rows.length - 1]);
+    if (rows.length > 1) { // Ensure there is more than one row
+        // Ask for confirmation before removing the row
+        if (confirm("Are you sure you want to remove the last row?")) {
+            table.removeChild(rows[rows.length - 1]);
 
-        // Update the S.No. values in the table
-        updateSNoValues14();
+            // Update the S.No. values in the table
+            updateSNoValues(Id);
+        }
     }
-  }
 }
 
 // Function to add a new row at a specific index
-function addRowAtIndex14() {
-  const indexInput14 = document.getElementById("indexInput14");
-  const parsedIndex = parseInt(indexInput14.value);
+function addRowAtIndex(Id) {
+    const indexInput = document.getElementById(`indexInput_${Id}`);
+    const parsedIndex = parseInt(indexInput.value);
 
-  if (!isNaN(parsedIndex) && parsedIndex > 1) {
-    const table = document.querySelector("#doba table tbody");
-    const rows = table.getElementsByTagName("tr");
-    const newRow = rows[rows.length - 1].cloneNode(true);
+    if (!isNaN(parsedIndex) && parsedIndex > 1) {
+        const table = document.querySelector(`#${Id} table tbody`);
+        const rows = table.getElementsByTagName("tr");
+        const newRow = rows[rows.length - 1].cloneNode(true);
 
-    // Clear input fields in the new row
-    const inputs = newRow.getElementsByTagName("input");
-    for (let i = 0; i < inputs.length; i++) {
-      inputs[i].value = "";
-    }
-    // Increment the S.No. in the new row
-    const lastSNo = parseInt(rows[rows.length - 1].cells[0].getElementsByTagName("input")[0].value);
+        // Clear input fields in the new row
+        const inputs = newRow.getElementsByTagName("input");
+        for (let i = 0; i < inputs.length; i++) {
+            inputs[i].value = "";
+        }
+        // Increment the S.No. in the new row
+        const lastSNo = parseInt(rows[rows.length - 1].cells[0].getElementsByTagName("input")[0].value);
 
-    // Add the new row at the specified index
-    if (parsedIndex === 0) {
-        // Insert at the beginning
-        table.insertBefore(newRow, rows[0]);
-    } else if (parsedIndex <= rows.length - 1) {
-        table.insertBefore(newRow, rows[parsedIndex]);
+        // Add the new row at the specified index
+        if (parsedIndex === 0) {
+            // Insert at the beginning
+            table.insertBefore(newRow, rows[0]);
+        } else if (parsedIndex <= rows.length - 1) {
+            table.insertBefore(newRow, rows[parsedIndex]);
+        } else {
+            table.appendChild(newRow);
+        }
+
+        // Set S.No. for all rows starting from the specified index
+        for (let i = parsedIndex; i < rows.length; i++) {
+            const currentSNo = parseInt(rows[i].cells[0].getElementsByTagName("input")[0].value);
+            rows[i].cells[0].getElementsByTagName("input")[0].value = currentSNo + 0;
+        }
     } else {
-        table.appendChild(newRow);
+        alert("Invalid S.No. Please enter a valid S.No. greater than 1.");
     }
-
-    // Set S.No. for all rows starting from the specified index
-    for (let i = parsedIndex; i < rows.length; i++) {
-        const currentSNo = parseInt(rows[i].cells[0].getElementsByTagName("input")[0].value);
-        rows[i].cells[0].getElementsByTagName("input")[0].value = currentSNo + 0;
-    }
-  } else {
-    alert("Invalid S.No. Please enter a valid S.No. greater than 1.");
-  }
-  // Clear the input value after adding the row
-  indexInput14.value = "";
-  // Update the S.No. values in the table
-  updateSNoValues14();
+    // Clear the input value after adding the row
+    indexInput.value = "";
+    // Update the S.No. values in the table
+    updateSNoValues(Id);
 }
 
 // Function to update S.No. values in the table
-function updateSNoValues14() {
-  const table = document.querySelector("#doba table tbody");
-  const rows = table.getElementsByTagName("tr");
-  for (let i = 1; i < rows.length; i++) {
-      rows[i].cells[0].getElementsByTagName("input")[0].value = i + 1;
-  }
-}
-
-/* ************************************************************************************************************************************ */
-/*                                                                                                                                      */
-/*                                                                Q15Table-START                                                        */
-/*                                                                                                                                      */
-/* ************************************************************************************************************************************ */
-// Function to add a new row at the bottom of the table
-function addBottomRow15() {
-  const table = document.querySelector("#dops table tbody");
-  const rows = table.getElementsByTagName("tr");
-  const lastRow = rows[rows.length - 1].cloneNode(true);
-
-  // Increment the S.No. in the new row
-  const lastSNo = parseInt(rows[rows.length - 1].cells[0].getElementsByTagName("input")[0].value);
-  lastRow.cells[0].getElementsByTagName("input")[0].value = lastSNo + 1;
-
-  // Clear other input fields in the new row
-  const inputs = lastRow.getElementsByTagName("input");
-  for (let i = 1; i < inputs.length; i++) {
-      inputs[i].value = "";
-  }
-
-  // Add the new row at the bottom
-  table.appendChild(lastRow);
-
-  updateSNoValues15();
-}
-
-// Function to remove a specific row from the table with confirmation
-function removeSpecificRow15() {
-  const indexInput15 = document.getElementById("indexInput15");
-  const parsedIndex = parseInt(indexInput15.value);
-
-  if (!isNaN(parsedIndex) && parsedIndex > 1) {
-      const table = document.querySelector("#dops table tbody");
-      const rows = table.getElementsByTagName("tr");
-
-      if (parsedIndex <= rows.length) {
-          // Ask for confirmation before removing the row
-          if (confirm("Are you sure you want to remove this row?")) {
-              table.removeChild(rows[parsedIndex - 1]);
-
-              // Update the S.No. values in the table
-              updateSNoValues15();
-          }
-      } else {
-          alert("Invalid S.No. The specified row does not exist.");
-      }
-  } else if (parsedIndex === 1) {
-      alert("Cannot remove the first row. Please enter a valid S.No. greater than 1.");
-  } else {
-      alert("Invalid S.No. Please enter a valid S.No.");
-  }
-
-  // Clear the input value after removing the row
-  indexInput15.value = "";
-}
-
-
-// Function to remove the last row from the table with confirmation
-function removeBottomRow15() {
-  const table = document.querySelector("#dops table tbody");
-  const rows = table.getElementsByTagName("tr");
-
-  if (rows.length > 1) { // Ensure there is more than one row
-    // Ask for confirmation before removing the row
-    if (confirm("Are you sure you want to remove the last row?")) {
-        table.removeChild(rows[rows.length - 1]);
-
-        // Update the S.No. values in the table
-        updateSNoValues15();
-    }
-  }
-}
-
- // Function to add a new row at a specific index
- function addRowAtIndex15() {
-  const indexInput15 = document.getElementById("indexInput15");
-  const parsedIndex = parseInt(indexInput15.value);
-
-  if (!isNaN(parsedIndex) && parsedIndex > 1) {
-    const table = document.querySelector("#dops table tbody");
+function updateSNoValues(Id) {
+    const table = document.querySelector(`#${Id} table tbody`);
     const rows = table.getElementsByTagName("tr");
-    const newRow = rows[rows.length - 1].cloneNode(true);
-
-    // Clear input fields in the new row
-    const inputs = newRow.getElementsByTagName("input");
-    for (let i = 0; i < inputs.length; i++) {
-      inputs[i].value = "";
+    for (let i = 1; i < rows.length; i++) {
+        rows[i].cells[0].getElementsByTagName("input")[0].value = i + 1;
     }
-    // Increment the S.No. in the new row
-    const lastSNo = parseInt(rows[rows.length - 1].cells[0].getElementsByTagName("input")[0].value);
-
-    // Add the new row at the specified index
-    if (parsedIndex === 0) {
-        // Insert at the beginning
-        table.insertBefore(newRow, rows[0]);
-    } else if (parsedIndex <= rows.length - 1) {
-        table.insertBefore(newRow, rows[parsedIndex]);
-    } else {
-        table.appendChild(newRow);
-    }
-
-    // Set S.No. for all rows starting from the specified index
-    for (let i = parsedIndex; i < rows.length; i++) {
-        const currentSNo = parseInt(rows[i].cells[0].getElementsByTagName("input")[0].value);
-        rows[i].cells[0].getElementsByTagName("input")[0].value = currentSNo + 0;
-    }
-  } else {
-    alert("Invalid S.No. Please enter a valid S.No. greater than 1.");
-  }
-  // Clear the input value after adding the row
-  indexInput15.value = "";
-  // Update the S.No. values in the table
-  updateSNoValues15();
 }
 
-// Function to update S.No. values in the table
-function updateSNoValues15() {
-  const table = document.querySelector("#dops table tbody");
-  const rows = table.getElementsByTagName("tr");
-  for (let i = 1; i < rows.length; i++) {
-      rows[i].cells[0].getElementsByTagName("input")[0].value = i + 1;
-  }
-}
-
-/* ************************************************************************************************************************************ */
-/*                                                                                                                                      */
-/*                                                                Q21Table-START                                                        */
-/*                                                                                                                                      */
-/* ************************************************************************************************************************************ */
-// Function to add a new row at the bottom of the table
-function addBottomRow21() {
-  const table = document.querySelector("#holding table tbody");
-  const rows = table.getElementsByTagName("tr");
-  const lastRow = rows[rows.length - 1].cloneNode(true);
-
-  // Increment the S.No. in the new row
-  const lastSNo = parseInt(rows[rows.length - 1].cells[0].getElementsByTagName("input")[0].value);
-  lastRow.cells[0].getElementsByTagName("input")[0].value = lastSNo + 1;
-
-  // Clear other input fields in the new row
-  const inputs = lastRow.getElementsByTagName("input");
-  for (let i = 1; i < inputs.length; i++) {
-      inputs[i].value = "";
-  }
-
-  // Add the new row at the bottom
-  table.appendChild(lastRow);
-
-  updateSNoValues21();
-}
-
-// Function to remove a specific row from the table with confirmation
-function removeSpecificRow21() {
-  const indexInput21 = document.getElementById("indexInput21");
-  const parsedIndex = parseInt(indexInput21.value);
-
-  if (!isNaN(parsedIndex) && parsedIndex > 1) {
-      const table = document.querySelector("#holding table tbody");
-      const rows = table.getElementsByTagName("tr");
-
-      if (parsedIndex <= rows.length) {
-          // Ask for confirmation before removing the row
-          if (confirm("Are you sure you want to remove this row?")) {
-              table.removeChild(rows[parsedIndex - 1]);
-
-              // Update the S.No. values in the table
-              updateSNoValues21();
-          }
-      } else {
-          alert("Invalid S.No. The specified row does not exist.");
-      }
-  } else if (parsedIndex === 1) {
-      alert("Cannot remove the first row. Please enter a valid S.No. greater than 1.");
-  } else {
-      alert("Invalid S.No. Please enter a valid S.No.");
-  }
-
-  // Clear the input value after removing the row
-  indexInput21.value = "";
-}
-
-
-// Function to remove the last row from the table with confirmation
-function removeBottomRow21() {
-  const table = document.querySelector("#holding table tbody");
-  const rows = table.getElementsByTagName("tr");
-
-  if (rows.length > 1) { // Ensure there is more than one row
-    // Ask for confirmation before removing the row
-    if (confirm("Are you sure you want to remove the last row?")) {
-        table.removeChild(rows[rows.length - 1]);
-
-        // Update the S.No. values in the table
-        updateSNoValues21();
-    }
-  }
-}
-
- // Function to add a new row at a specific index
- function addRowAtIndex21() {
-  const indexInput21 = document.getElementById("indexInput21");
-  const parsedIndex = parseInt(indexInput21.value);
-
-  if (!isNaN(parsedIndex) && parsedIndex > 1) {
-    const table = document.querySelector("#holding table tbody");
-    const rows = table.getElementsByTagName("tr");
-    const newRow = rows[rows.length - 1].cloneNode(true);
-
-    // Clear input fields in the new row
-    const inputs = newRow.getElementsByTagName("input");
-    for (let i = 0; i < inputs.length; i++) {
-      inputs[i].value = "";
-    }
-    // Increment the S.No. in the new row
-    const lastSNo = parseInt(rows[rows.length - 1].cells[0].getElementsByTagName("input")[0].value);
-
-    // Add the new row at the specified index
-    if (parsedIndex === 0) {
-        // Insert at the beginning
-        table.insertBefore(newRow, rows[0]);
-    } else if (parsedIndex <= rows.length - 1) {
-        table.insertBefore(newRow, rows[parsedIndex]);
-    } else {
-        table.appendChild(newRow);
-    }
-
-    // Set S.No. for all rows starting from the specified index
-    for (let i = parsedIndex; i < rows.length; i++) {
-        const currentSNo = parseInt(rows[i].cells[0].getElementsByTagName("input")[0].value);
-        rows[i].cells[0].getElementsByTagName("input")[0].value = currentSNo + 0;
-    }
-  } else {
-    alert("Invalid S.No. Please enter a valid S.No. greater than 1.");
-  }
-  // Clear the input value after adding the row
-  indexInput21.value = "";
-  // Update the S.No. values in the table
-  updateSNoValues21();
-}
-
-// Function to update S.No. values in the table
-function updateSNoValues21() {
-  const table = document.querySelector("#holding table tbody");
-  const rows = table.getElementsByTagName("tr");
-  for (let i = 1; i < rows.length; i++) {
-      rows[i].cells[0].getElementsByTagName("input")[0].value = i + 1;
-  }
-}
-
-
-/* ************************************************************************************************************************************ */
-/*                                                                                                                                      */
-/*                                                                Q24Table-START                                                        */
-/*                                                                                                                                      */
-/* ************************************************************************************************************************************ */
-// Function to add a new row at the bottom of the table
-function addBottomRow24() {
-  const table = document.querySelector("#overview table tbody");
-  const rows = table.getElementsByTagName("tr");
-  const lastRow = rows[rows.length - 1].cloneNode(true);
-
-  // Increment the S.No. in the new row
-  const lastSNo = parseInt(rows[rows.length - 1].cells[0].getElementsByTagName("input")[0].value);
-  lastRow.cells[0].getElementsByTagName("input")[0].value = lastSNo + 1;
-
-  // Clear other input fields in the new row
-  const inputs = lastRow.getElementsByTagName("input");
-  for (let i = 1; i < inputs.length; i++) {
-      inputs[i].value = "";
-  }
-
-  // Add the new row at the bottom
-  table.appendChild(lastRow);
-
-  updateSNoValues24();
-}
-
-// Function to remove a specific row from the table with confirmation
-function removeSpecificRow24() {
-  const indexInput24 = document.getElementById("indexInput24");
-  const parsedIndex = parseInt(indexInput24.value);
-
-  if (!isNaN(parsedIndex) && parsedIndex > 1) {
-      const table = document.querySelector("#overview table tbody");
-      const rows = table.getElementsByTagName("tr");
-
-      if (parsedIndex <= rows.length) {
-          // Ask for confirmation before removing the row
-          if (confirm("Are you sure you want to remove this row?")) {
-              table.removeChild(rows[parsedIndex - 1]);
-
-              // Update the S.No. values in the table
-              updateSNoValues24();
-          }
-      } else {
-          alert("Invalid S.No. The specified row does not exist.");
-      }
-  } else if (parsedIndex === 1) {
-      alert("Cannot remove the first row. Please enter a valid S.No. greater than 1.");
-  } else {
-      alert("Invalid S.No. Please enter a valid S.No.");
-  }
-
-  // Clear the input value after removing the row
-  indexInput24.value = "";
-}
-
-
-// Function to remove the last row from the table with confirmation
-function removeBottomRow24() {
-  const table = document.querySelector("#overview table tbody");
-  const rows = table.getElementsByTagName("tr");
-
-  if (rows.length > 1) { // Ensure there is more than one row
-    // Ask for confirmation before removing the row
-    if (confirm("Are you sure you want to remove the last row?")) {
-        table.removeChild(rows[rows.length - 1]);
-
-        // Update the S.No. values in the table
-        updateSNoValues24();
-    }
-  }
-}
-
- // Function to add a new row at a specific index
- function addRowAtIndex24() {
-  const indexInput24 = document.getElementById("indexInput24");
-  const parsedIndex = parseInt(indexInput24.value);
-
-  if (!isNaN(parsedIndex) && parsedIndex > 1) {
-    const table = document.querySelector("#overview table tbody");
-    const rows = table.getElementsByTagName("tr");
-    const newRow = rows[rows.length - 1].cloneNode(true);
-
-    // Clear input fields in the new row
-    const inputs = newRow.getElementsByTagName("input");
-    for (let i = 0; i < inputs.length; i++) {
-      inputs[i].value = "";
-    }
-    // Increment the S.No. in the new row
-    const lastSNo = parseInt(rows[rows.length - 1].cells[0].getElementsByTagName("input")[0].value);
-
-    // Add the new row at the specified index
-    if (parsedIndex === 0) {
-        // Insert at the beginning
-        table.insertBefore(newRow, rows[0]);
-    } else if (parsedIndex <= rows.length - 1) {
-        table.insertBefore(newRow, rows[parsedIndex]);
-    } else {
-        table.appendChild(newRow);
-    }
-
-    // Set S.No. for all rows starting from the specified index
-    for (let i = parsedIndex; i < rows.length; i++) {
-        const currentSNo = parseInt(rows[i].cells[0].getElementsByTagName("input")[0].value);
-        rows[i].cells[0].getElementsByTagName("input")[0].value = currentSNo + 0;
-    }
-  } else {
-    alert("Invalid S.No. Please enter a valid S.No. greater than 1.");
-  }
-  // Clear the input value after adding the row
-  indexInput24.value = "";
-  // Update the S.No. values in the table
-  updateSNoValues24();
-}
-
-// Function to update S.No. values in the table
-function updateSNoValues24() {
-  const table = document.querySelector("#overview table tbody");
-  const rows = table.getElementsByTagName("tr");
-  for (let i = 1; i < rows.length; i++) {
-      rows[i].cells[0].getElementsByTagName("input")[0].value = i + 1;
-  }
-}
 
 /* ************************************************************************************************************************************ */
 /*                                                                                                                                      */
