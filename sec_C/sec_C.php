@@ -218,8 +218,8 @@
                                 </table>
                                 <div>
                                     <input type="number" id="indexInput_appeal" placeholder="Enter S.No.">
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex('appeal')">Add At Index</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow('appeal')">Remove At Index</button>
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex('appeal')">Add S.No.</button>
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow('appeal')">Remove S.No.</button>
                                     <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow('appeal')">Add Row</button>
                                     <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow('appeal')">Remove Row</button>
                                 </div>
@@ -352,9 +352,9 @@
                                     </tbody>
                                 </table>
                                 <div>
-                                    <input type="number" id="indexInput_awarenessProgrammes" placeholder="Enter Index">
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex('awarenessProgrammes')">Add At Index</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow('awarenessProgrammes')">Remove At Index</button>
+                                    <input type="number" id="indexInput_awarenessProgrammes" placeholder="Enter S.No.">
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex('awarenessProgrammes')">Add S.No.</button>
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow('awarenessProgrammes')">Remove S.No.</button>
                                     <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow('awarenessProgrammes')">Add Row</button>
                                     <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow('awarenessProgrammes')">Remove Row</button>
                                 </div>
@@ -510,9 +510,9 @@
                                     </tbody>
                                 </table>
                                 <div>
-                                    <input type="number" id="indexInput_lcaConducted2" placeholder="Enter Index">
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex('lcaConducted2')">Add At Index</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow('lcaConducted2')">Remove At Index</button>
+                                    <input type="number" id="indexInput_lcaConducted2" placeholder="Enter S.No.">
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex('lcaConducted2')">Add S.No.</button>
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow('lcaConducted2')">Remove S.No.</button>
                                     <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow('lcaConducted2')">Add Row</button>
                                     <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow('lcaConducted2')">Remove Row</button>
                                 </div>
@@ -545,9 +545,9 @@
                                     </tbody>
                                 </table>
                                 <div>
-                                    <input type="number" id="indexInput_concernsMitigation2" placeholder="Enter Index">
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex('concernsMitigation2')">Add At Index</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow('concernsMitigation2')">Remove At Index</button>
+                                    <input type="number" id="indexInput_concernsMitigation2" placeholder="Enter S.No.">
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex('concernsMitigation2')">Add S.No.</button>
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow('concernsMitigation2')">Remove S.No.</button>
                                     <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow('concernsMitigation2')">Add Row</button>
                                     <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow('concernsMitigation2')">Remove Row</button>
                                 </div>
@@ -583,9 +583,9 @@
                                     </tbody>
                                 </table>
                                 <div>
-                                    <input type="number" id="indexInput_recycledPercentage2" placeholder="Enter Index">
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex('recycledPercentage2')">Add At Index</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow('recycledPercentage2')">Remove At Index</button>
+                                    <input type="number" id="indexInput_recycledPercentage2" placeholder="Enter S.No.">
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex('recycledPercentage2')">Add S.No.</button>
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow('recycledPercentage2')">Remove S.No.</button>
                                     <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow('recycledPercentage2')">Add Row</button>
                                     <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow('recycledPercentage2')">Remove Row</button>
                                 </div>
@@ -677,9 +677,9 @@
                                     </tbody>
                                 </table>
                                 <div>
-                                    <input type="number" id="indexInput_reclaimedPercentages2" placeholder="Enter Index">
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex('reclaimedPercentages2')">Add At Index</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow('reclaimedPercentages2')">Remove At Index</button>
+                                    <input type="number" id="indexInput_reclaimedPercentages2" placeholder="Enter S.No.">
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex('reclaimedPercentages2')">Add S.No.</button>
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow('reclaimedPercentages2')">Remove S.No.</button>
                                     <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow('reclaimedPercentages2')">Add Row</button>
                                     <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow('reclaimedPercentages2')">Remove Row</button>
                                 </div>
@@ -691,7 +691,7 @@
                     <button type="button" class="btn-primary" onclick="navigate(1)">Next</button>
                 </div>
 
-                 <!------------------------------------------------------------------------------------------------------------------------->
+                <!------------------------------------------------------------------------------------------------------------------------->
                 <!--                                                                                                                     -->
                 <!--                                                PRINCIPLE 3 -START                                                   -->
                 <!--                                                                                                                     -->
@@ -1946,9 +1946,9 @@
                                     </tbody>
                                 </table>
                                 <div>
-                                     <input type="number" id="indexInput_stakeholderEngagementDetails" placeholder="Enter Index">
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex('stakeholderEngagementDetails')">Add At Index</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow('stakeholderEngagementDetails')">Remove At Index</button>
+                                     <input type="number" id="indexInput_stakeholderEngagementDetails" placeholder="Enter S.No.">
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex('stakeholderEngagementDetails')">Add S.No.</button>
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow('stakeholderEngagementDetails')">Remove S.No.</button>
                                     <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow('stakeholderEngagementDetails')">Add Row</button>
                                     <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow('stakeholderEngagementDetails')">Remove Row</button>
                                 </div>    
@@ -3213,9 +3213,9 @@
                                     </tbody>
                                 </table>
                                 <div>
-                                    <input type="number" id="indexInput_ecologicalAreaOperations" placeholder="Enter Index">
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex('ecologicalAreaOperations')">Add At Index</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow('ecologicalAreaOperations')">Remove At Index</button>
+                                    <input type="number" id="indexInput_ecologicalAreaOperations" placeholder="Enter S.No.">
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex('ecologicalAreaOperations')">Add S.No.</button>
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow('ecologicalAreaOperations')">Remove S.No.</button>
                                     <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow('ecologicalAreaOperations')">Add Row</button>
                                     <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow('ecologicalAreaOperations')">Remove Row</button>
                                 </div>
@@ -3254,9 +3254,9 @@
                                     </tbody>
                                 </table>
                                 <div>
-                                    <input type="number" id="indexInput_eiaExternalAgency" placeholder="Enter Index">
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex('eiaExternalAgency')">Add At Index</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow('eiaExternalAgency')">Remove At Index</button>
+                                    <input type="number" id="indexInput_eiaExternalAgency" placeholder="Enter S.No.">
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex('eiaExternalAgency')">Add S.No.</button>
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow('eiaExternalAgency')">Remove S.No.</button>
                                     <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow('eiaExternalAgency')">Add Row</button>
                                     <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow('eiaExternalAgency')">Remove Row</button>
                                 </div>
@@ -3291,9 +3291,9 @@
                                     </tbody>
                                 </table>
                                 <div>
-                                    <input type="number" id="indexInput_environmentalComplianceStatus" placeholder="Enter Index">
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex('environmentalComplianceStatus')">Add At Index</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow('environmentalComplianceStatus')">Remove At Index</button>
+                                    <input type="number" id="indexInput_environmentalComplianceStatus" placeholder="Enter S.No.">
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex('environmentalComplianceStatus')">Add S.No.</button>
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow('environmentalComplianceStatus')">Remove S.No.</button>
                                     <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow('environmentalComplianceStatus')">Add Row</button>
                                     <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow('environmentalComplianceStatus')">Remove Row</button>
                                 </div>
@@ -3779,9 +3779,9 @@
                                     </tr>
                                 </table>
                                 <div>
-                                    <input type="number" id="indexInput_resourceefficiency" placeholder="Enter Index">
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex('resourceefficiency')">Add At Index</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow('resourceefficiency')">Remove At Index</button>
+                                    <input type="number" id="indexInput_resourceefficiency" placeholder="Enter S.No.">
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex('resourceefficiency')">Add S.No.</button>
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow('resourceefficiency')">Remove S.No.</button>
                                     <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow('resourceefficiency')">Add Row</button>
                                     <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow('resourceefficiency')">Remove Row</button>
                                 </div>
@@ -3940,9 +3940,9 @@
                                     </tbody>
                                 </table>
                                 <div>
-                                    <input type="number" id="indexInput_antiCompetitiveActions" placeholder="Enter Index">
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex('antiCompetitiveActions')">Add At Index</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow('antiCompetitiveActions')">Remove At Index</button>
+                                    <input type="number" id="indexInput_antiCompetitiveActions" placeholder="Enter S.No.">
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex('antiCompetitiveActions')">Add S.No.</button>
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow('antiCompetitiveActions')">Remove S.No.</button>
                                     <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow('antiCompetitiveActions')">Add Row</button>
                                     <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow('antiCompetitiveActions')">Remove Row</button>
                                 </div>
@@ -3988,9 +3988,9 @@
                                 </table>
                             </div>
                             <div>
-                                <input type="number" id="indexInput_publicPolicyAdvocacy" placeholder="Enter Index">
-                                <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex('publicPolicyAdvocacy')">Add At Index</button>
-                                <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow('publicPolicyAdvocacy')">Remove At Index</button>
+                                <input type="number" id="indexInput_publicPolicyAdvocacy" placeholder="Enter S.No.">
+                                <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex('publicPolicyAdvocacy')">Add S.No.</button>
+                                <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow('publicPolicyAdvocacy')">Remove S.No.</button>
                                 <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow('publicPolicyAdvocacy')">Add Row</button>
                                 <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow('publicPolicyAdvocacy')">Remove Row</button>
                             </div>
@@ -4049,9 +4049,9 @@
                                     </tbody>
                                 </table>
                                 <div>
-                                    <input type="number" id="indexInput_socialImpactAssessments" placeholder="Enter Index">
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex('socialImpactAssessments')">Add At Index</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow('socialImpactAssessments')">Remove At Index</button>
+                                    <input type="number" id="indexInput_socialImpactAssessments" placeholder="Enter S.No.">
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex('socialImpactAssessments')">Add S.No.</button>
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow('socialImpactAssessments')">Remove S.No.</button>
                                     <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow('socialImpactAssessments')">Add Row</button>
                                     <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow('socialImpactAssessments')">Remove Row</button>
                                 </div>
@@ -4090,9 +4090,9 @@
                                     </tbody>
                                 </table>
                                 <div>
-                                    <input type="number" id="indexInput_rehabilitationProject" placeholder="Enter Index">
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex('rehabilitationProject')">Add At Index</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow('rehabilitationProject')">Remove At Index</button>
+                                    <input type="number" id="indexInput_rehabilitationProject" placeholder="Enter S.No.">
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex('rehabilitationProject')">Add S.No</button>
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow('rehabilitationProject')">Remove S.No</button>
                                     <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow('rehabilitationProject')">Add Row</button>
                                     <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow('rehabilitationProject')">Remove Row</button>
                                 </div>
@@ -4171,9 +4171,9 @@
                                     </tbody>
                                 </table>
                                 <div>
-                                    <input type="number" id="indexInput_socialImpactActions" placeholder="Enter Index">
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex('socialImpactActions')">Add At Index</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow('socialImpactActions')">Remove At Index</button>
+                                    <input type="number" id="indexInput_socialImpactActions" placeholder="Enter S.No.">
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex('socialImpactActions')">Add S.No.</button>
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow('socialImpactActions')">Remove S.No.</button>
                                     <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow('socialImpactActions')">Add Row</button>
                                     <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow('socialImpactActions')">Remove Row</button>
                                 </div>
@@ -4208,9 +4208,9 @@
                                     </tbody>
                                 </table>
                                 <div>
-                                    <input type="number" id="indexInput_csrAspirationalDistricts" placeholder="Enter Index">
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex('csrAspirationalDistricts')">Add At Index</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow('csrAspirationalDistricts')">Remove At Index</button>
+                                    <input type="number" id="indexInput_csrAspirationalDistricts" placeholder="Enter S.No.">
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex('csrAspirationalDistricts')">Add S.No</button>
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow('csrAspirationalDistricts')">Remove S.No.</button>
                                     <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow('csrAspirationalDistricts')">Add Row</button>
                                     <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow('csrAspirationalDistricts')">Remove Row</button>
                                 </div>
@@ -4269,9 +4269,9 @@
                                     </tbody>
                                 </table>
                                 <div>
-                                    <input type="number" id="indexInput_intellectualPropertiesBenefits" placeholder="Enter Index">
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex('intellectualPropertiesBenefits')">Add At Index</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow('intellectualPropertiesBenefits')">Remove At Index</button>
+                                    <input type="number" id="indexInput_intellectualPropertiesBenefits" placeholder="Enter S.No.">
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex('intellectualPropertiesBenefits')">Add S.No.</button>
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow('intellectualPropertiesBenefits')">Remove S.No.</button>
                                     <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow('intellectualPropertiesBenefits')">Add Row</button>
                                     <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow('intellectualPropertiesBenefits')">Remove Row</button>
                                 </div>
@@ -4304,9 +4304,9 @@
                                     </tbody>
                                 </table>
                                 <div>
-                                    <input type="number" id="indexInput_correctiveActionsIntellectualProperty" placeholder="Enter Index">
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex('correctiveActionsIntellectualProperty')">Add At Index</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow('correctiveActionsIntellectualProperty')">Remove At Index</button>
+                                    <input type="number" id="indexInput_correctiveActionsIntellectualProperty" placeholder="Enter S.No.">
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex('correctiveActionsIntellectualProperty')">Add S.No.</button>
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow('correctiveActionsIntellectualProperty')">Remove S.No.</button>
                                     <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow('correctiveActionsIntellectualProperty')">Add Row</button>
                                     <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow('correctiveActionsIntellectualProperty')">Remove Row</button>
                                 </div>
@@ -4339,9 +4339,9 @@
                                     </tbody>
                                 </table>
                                 <div>
-                                    <input type="number" id="indexInput_csrProjectBeneficiaries" placeholder="Enter Index">
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex('csrProjectBeneficiaries')">Add At Index</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow('csrProjectBeneficiaries')">Remove At Index</button>
+                                    <input type="number" id="indexInput_csrProjectBeneficiaries" placeholder="Enter S.No.">
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex('csrProjectBeneficiaries')">Add S.No.</button>
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow('csrProjectBeneficiaries')">Remove S.No.</button>
                                     <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow('csrProjectBeneficiaries')">Add Row</button>
                                     <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow('csrProjectBeneficiaries')">Remove Row</button>
                                 </div>
