@@ -1,7 +1,7 @@
 **Project Directory Structure**
 
 1. **Directory Info**
-   - **database:** Contains the "iiic.sql" file, which can be imported into any server (e.g., xampp or wampp) to set up the database.
+   - **database:** Contains the "crus.sql" file, which can be imported into any server (e.g., xampp or wampp) to set up the database.
    - **images:** Includes all the images and logos used in the project.
    - **sec_A:** Contains the frontend and backend code for Section A of the form.
    - **sec_B:** Contains the frontend and backend code for Section B of the form.
@@ -13,7 +13,7 @@
    - If hosting on a remote server, you can modify the connection parameters:
      ```php
      $host = 'host_name'; // replace host_name with actual host name
-     $db   = 'iiic'; // Don't change the database name if you are using the database/iiic.sql
+     $db   = 'crus'; // Don't change the database name if you are using the database/crus.sql
      $user = 'user_name'; // replace user_name with actual user name
      $pass = 'your_password(you can leave this empty also)';
      ```
