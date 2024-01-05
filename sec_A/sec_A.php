@@ -15,7 +15,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="sec_A.css">
     <style>
         .hidden {
@@ -33,17 +32,17 @@
 
 <body>
     <header class="header" style="width:100%;">
-      <h1 class="logo"><a href="#">CUSRS</a></h1>
-      <ul class="main-nav">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
+        <h1 class="logo"><a href="#">CUSRS</a></h1>
+        <ul class="main-nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
     </header>
       
     <div class="container">
-      <form method="post" enctype="multipart/form-data">
+    <form method="post" enctype="multipart/form-data">
         <h1>SECTION A: GENERAL DISCLOSURES</h1>
         <!-------------------------------------------------------------------------------------------------------------------------------------------------->
         <!--                                                                                                                                              -->
@@ -53,125 +52,137 @@
         
         <!-- DETAILS OF THE LISTED ENTITY START -->
         <div class="bold_border_container">
-          <!--Detail Of Listed Entity Start-->
-          <div class="mb-3">
-            <div class="policy">
-              <h3><label class="form-label"><span style="color: ;">I.</span>&nbsp;&nbsp;&nbsp;<u>Details Of Listed Entity</u></label><h3>
+            <!--Detail Of Listed Entity Start-->
+            <div class="mb-3">
+                <div class="policy">
+                    <h3><label class="form-label"><span style="color: ;">I.</span>&nbsp;&nbsp;&nbsp;<u>Details Of Listed Entity</u></label><h3>
+                </div>
             </div>
-          </div>
-          <!--Detail Of Listed Entity END-->
+            <!--Detail Of Listed Entity END-->
 
-          <!-- Corporate Identity Number (CIN) of the Listed Entity Start -->
-          <div class="mb-3">
-            <div class="policy">
-              <label for="cin" class="form-label">1. &nbsp;Corporate Identity Number (CIN)<span style="color: red;"> * </span></label>
+            <!-- Corporate Identity Number (CIN) of the Listed Entity Start -->
+            <div class="mb-3">
+                <div class="policy">
+                    <label for="cin" class="form-label">1. &nbsp;Corporate Identity Number (CIN)<span style="color: red;"> * </span></label>
+                </div>
+                <input type="text" class="form-control" id="cin" name="cin"  placeholder="Enter CIN of Listed Entity" maxlength="21" required>
+                <p id="cinValidationMessage" style="color: red;"></p>
             </div>
-            <input type="text" class="form-control" id="cin" name="cin"  placeholder="Enter CIN of Listed Entity" maxlength="21" required>
-            <p id="cinValidationMessage" style="color: red;"></p>
-          </div>
-          <!-- Corporate Identity Number (CIN) of the Listed Entity End -->
+            <!-- Corporate Identity Number (CIN) of the Listed Entity End -->
 
-          <!-- Name of the Listed Entity Start -->
-          <div class="mb-3">
-            <div class="policy">
-              <label for="name" class="form-label">2. &nbsp;Name of the Listed Entity<span style="color: red;"> * </span></label>
+            <!-- Name of the Listed Entity Start -->
+            <div class="mb-3">
+                <div class="policy">
+                    <label for="name" class="form-label">2. &nbsp;Name of the Listed Entity<span style="color: red;"> * </span></label>
+                </div>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Enter name of Listed Entity" required>
+                <p id="nameValidationMessage" style="color: red;"></p>
             </div>
-            <input type="text" class="form-control" id="name" name="name" placeholder="Enter name of Listed Entity" required>
-            <p id="nameValidationMessage" style="color: red;"></p>
-          </div>
-          <!-- Name of the Listed Entity End -->
+            <!-- Name of the Listed Entity End -->
 
-          <!-- Year of incorporation Start -->
-          <div class="mb-3">
-            <div class="policy">
-              <label for="incorp_date" class="form-label">3. &nbsp;Year of incorporation<span style="color: red;"> * </span></label>
+            <!-- Year of incorporation Start -->
+            <div class="mb-3">
+                <div class="policy">
+                    <label for="incorp_date" class="form-label">3. &nbsp;Year of incorporation<span style="color: red;"> * </span></label>
+                </div>
+                <select class="form-control" id="incorp_date" name="incorp_date" required></select>
             </div>
-            <select class="form-control" id="incorp_date" name="incorp_date" required></select>
-          </div>
-          <script>
-            var start = 1900;
-            var end = 2023;
-            var options = "";
-            for (var year = start; year <= end; year++) {
-              options += "<option value='" + year + "'>" + year + "</option>";
-            }
-            document.getElementById("incorp_date").innerHTML = options;
-          </script>
-          <!-- Year of incorporation End -->
+            <script>
+                var start = 1900;
+                var end = 2023;
+                var options = "";
+                for (var year = start; year <= end; year++) {
+                  options += "<option value='" + year + "'>" + year + "</option>";
+                }
+                document.getElementById("incorp_date").innerHTML = options;
+            </script>
+            <!-- Year of incorporation End -->
 
-          <!-- Registered Office Address Start -->
-          <div class="mb-3">
-            <div class="policy">
-              <label for="office_address" class="form-label">4. &nbsp;Registered Office Address<span style="color: red;"> * </span></label>
+            <!-- Registered Office Address Start -->
+            <div class="mb-3">
+                <div class="policy">
+                    <label for="office_address" class="form-label">4. &nbsp;Registered Office Address<span style="color: red;"> * </span></label>
+                </div>
+                <input type="text" class="form-control" id="office_address" name="office_address" placeholder="Enter registered address" required>
             </div>
-            <input type="text" class="form-control" id="office_address" name="office_address" placeholder="Enter registered address" required>
-          </div>
-          <!-- Registered Office Address End -->
+            <!-- Registered Office Address End -->
 
-          <!-- Corporate Address Start -->
-          <div class="mb-3">
-            <div class="policy">
-              <label for="corporate_address" class="form-label">5. &nbsp;Corporate Address<span style="color: red;"> * </span></label>
+            <!-- Corporate Address Start -->
+            <div class="mb-3">
+                <div class="policy">
+                    <label for="corporate_address" class="form-label">5. &nbsp;Corporate Address<span style="color: red;"> * </span></label>
+                </div>
+                <input type="text" class="form-control" id="corporate_address" name="corporate_address" placeholder="Enter Corporate address" required>
             </div>
-            <input type="text" class="form-control" id="corporate_address" name="corporate_address" placeholder="Enter Corporate address" required>
-          </div>
-          <!-- Corporate Address End -->
+            <!-- Corporate Address End -->
 
-          <!-- Email Start -->
-          <div class="mb-3">
-            <div class="policy">
-              <label for="email" class="form-label">6. &nbsp;Email (Enter only official email ID)<span style="color: red;"> * </span></label>
+            <!-- Email Start -->
+            <div class="mb-3">
+                <div class="policy">
+                    <label for="email" class="form-label">6. &nbsp;Email (Enter only official email ID)<span style="color: red;"> * </span></label>
+                </div>
+                <div id="email">
+                    <table id="p_email">             
+                        <tbody>
+                            <tr>
+                                <td style="width:5%;"><input type="number" id="email" name="email[]" class="table-control" required value="1" readonly></td>
+                                <td><input type="email" class="form-control" id="email" name="email[]" id="inputmail" name="inputEmail" placeholder="Enter your email" required></td> 
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div></br>
+                        <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow('email')">Add Email</button>
+                        <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow('email')">Remove Email</button>
+                    </div>
+                </div>  
             </div>
-            <input type="text" class="form-control" id="email" name="email" placeholder="Enter your email" required>
-            <p id="emailValidationMessage"></p>
-          </div>
-          <!-- Email End -->
+            <!-- Email Start -->
 
-          <!-- Telephone Start -->
-          <div class="mb-3">
-            <div class="policy">
-              <label for="telephone" class="form-label">7. &nbsp;Telephone<span style="color: red;"> * </span></label>
+            <!-- Telephone Start -->
+            <div class="mb-3">
+                <div class="policy">
+                    <label for="telephone" class="form-label">7. &nbsp;Telephone<span style="color: red;"> * </span></label>
+                </div>
+                <input type="text" class="form-control" id="telephone" name="telephone" placeholder="Enter your contact number" maxlength="11">
+                <p id="Telephone-validation"></p>
             </div>
-            <input type="text" class="form-control" id="telephone" name="telephone" placeholder="Enter your contact number" maxlength="11">
-            <p id="Telephone-validation"></p>
-          </div>
-          <!-- Telephone End -->
+            <!-- Telephone End -->
 
-          <!-- Website Start -->
-          <div class="mb-3">
-            <div class="policy">
-              <label for="website" class="form-label">8. &nbsp;Website<span style="color: red;"> * </span></label>
-            </div>  
-            <input type="url" class="form-control" id="website" name="website" placeholder="Enter your website link" required>
-            <p id="websiteValidationMessage"></p>
-          </div>
-          <!-- Website End -->
-
-          <!-- Reporting Financial year Start -->
-          <div class="mb-3">
-            <div class="policy">
-              <label for="reporting_fin_year" class="form-label">9. &nbsp;Financial year for which reporting is being done<span style="color: red;"> * </span></label>
+            <!-- Website Start -->
+            <div class="mb-3">
+                <div class="policy">
+                    <label for="website" class="form-label">8. &nbsp;Website<span style="color: red;"> * </span></label>
+                </div>  
+                <input type="url" class="form-control" id="website" name="website" placeholder="Enter your website link" required>
+                <p id="websiteValidationMessage"></p>
             </div>
-            <select class="form-control" id="reporting_fin_year" name="reporting_fin_year" required></select>
-          </div>
-          <script>
-            var start = 1900;
-            var end = 2023;
-            var options = "";
-            for (var year = start; year <= end; year++) {
-              var fiscalYear = "FY " + year + "-" + (year.toString().substr(2, 2) * 1 + 1).toString().padStart(2, "0");
-              options += "<option value='" + fiscalYear + "'>" + fiscalYear + "</option>";
-            }
-            document.getElementById("reporting_fin_year").innerHTML = options;
-          </script>
-          <!-- Reporting Financial year End -->
+            <!-- Website End -->
 
-          <!-- PDF UPLOAD Start -->
-          <div class="mb-3">
-            <div class="policy">
-              <label for="incorporation_certificate" class="form-label">Please provide your incorporation certificate as a PDF file (Max 5 MB)<span style="color: red;"> * </span></label>
+            <!-- Reporting Financial year Start -->
+            <div class="mb-3">
+                <div class="policy">
+                    <label for="reporting_fin_year" class="form-label">9. &nbsp;Financial year for which reporting is being done<span style="color: red;"> * </span></label>
+                </div>
+                <select class="form-control" id="reporting_fin_year" name="reporting_fin_year" required></select>
             </div>
-            <input type="file" id="incorporation_certificate" name="uploadedFiles[]" accept=".pdf" required multiple><br><br>
+            <script>
+                var start = 1900;
+                var end = 2023;
+                var options = "";
+                for (var year = start; year <= end; year++) {
+                    var fiscalYear = "FY " + year + "-" + (year.toString().substr(2, 2) * 1 + 1).toString().padStart(2, "0");
+                    options += "<option value='" + fiscalYear + "'>" + fiscalYear + "</option>";
+                }
+                document.getElementById("reporting_fin_year").innerHTML = options;
+            </script>
+            <!-- Reporting Financial year End -->
+
+            <!-- PDF UPLOAD Start -->
+            <div class="mb-3">
+                <div class="policy">
+                    <label for="incorporation_certificate" class="form-label">Please provide your incorporation certificate as a PDF file (Max 5 MB)<span style="color: red;"> * </span></label>
+                </div>
+                <input type="file" id="incorporation_certificate" name="uploadedFiles[]" accept=".pdf" required multiple><br><br>
             <script>
                 document.getElementById('incorporation_certificate').addEventListener('change', function () {
                     const fileInput = this;
@@ -179,13 +190,13 @@
                     const fileSizeMessage = document.getElementById('fileSizeMessage');
                     let invalidFile = false;
                     for (let i = 0; i < fileInput.files.length; i++) {
-                      const file = fileInput.files[i];
-                      if (file.size > maxFileSizeInBytes) {
-                        invalidFile = true;
-                        fileSizeMessage.textContent = 'File size exceeds the maximum allowed size of 5 MB.';
-                        fileInput.value = ''; // Clear the file input
-                        break;
-                      }
+                          const file = fileInput.files[i];
+                          if (file.size > maxFileSizeInBytes) {
+                            invalidFile = true;
+                            fileSizeMessage.textContent = 'File size exceeds the maximum allowed size of 5 MB.';
+                            fileInput.value = ''; // Clear the file input
+                            break;
+                          }
                     }
                     if (!invalidFile) {
                       fileSizeMessage.textContent = ''; // Clear the message if the file is valid
@@ -218,14 +229,14 @@
           </div>
           <!-- Name of the Stock Exchange(s) End -->
 
-          <!-- Paid-up Capital Start -->
-          <div class="mb-3">
+         <!-- Paid-up Capital Start -->
+         <div class="mb-3">
             <div class="policy">
               <label for="puc" class="form-label">11. &nbsp;Paid-up Capital<span style="color: red;"> * </span></label>
             </div>
-            <input type="text" class="form-control" id="puc" name="puc" required pattern="[0-9]+">
-          </div>
-          <!-- Paid-up Capital End -->
+            <input type="text" class="form-control" id="puc" name="puc" required">
+         </div>
+         <!-- Paid-up Capital End -->
 
           <!-- Details of Point of Contact Start -->
           <div class="mb-3">
@@ -374,11 +385,11 @@
                 </tbody>
               </table>
               <div>
-                <input type="number" id="indexInput14" placeholder="Enter S.No.">
-                <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex14()">Add S.No.</button>
-                <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow14()">Remove S.No.</button>
-                <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow14()">Add Row</button>
-                <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow14()">Remove Row</button>
+                <input type="number" id="indexInput_doba" placeholder="Enter S.No.">
+                <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex('doba')">Add S.No.</button>
+                <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow('doba')">Remove S.No.</button>
+                <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow('doba')">Add Row</button>
+                <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow('doba')">Remove Row</button>
               </div>
             </div>  
           </div>
@@ -409,11 +420,11 @@
                 </tbody>
               </table>
               <div>
-                <input type="number" id="indexInput15" placeholder="Enter S.No.">
-                <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex15()">Add S.No.</button>
-                <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow15()">Remove S.No.</button>
-                <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow15()">Add Row</button>
-                <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow15()">Remove Row</button>
+                <input type="number" id="indexInput_dops" placeholder="Enter S.No.">
+                <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex('dops')">Add S.No.</button>
+                <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow('dops')">Remove S.No.</button>
+                <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow('dops')">Add Row</button>
+                <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow('dops')">Remove Row</button>
               </div>
             </div>
           </div>
@@ -932,11 +943,11 @@
                 <tbody>
               </table>
               <div>
-                <input type="number" id="indexInput21" placeholder="Enter S.No.">
-                <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex21()">Add S.No.</button>
-                <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow21()">Remove S.No.</button>
-                <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow21()">Add Row</button>
-                <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow21()">Remove Row</button>
+                <input type="number" id="indexInput_holding" placeholder="Enter S.No.">
+                <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex('holding')">Add S.No.</button>
+                <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow('holding')">Remove S.No.</button>
+                <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow('holding')">Add Row</button>
+                <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow('holding')">Remove Row</button>
               </div>
             </div>  
           </div>
@@ -1137,11 +1148,11 @@
                 </tbody>
               </table>
               <div>
-                <input type="number" id="indexInput24" placeholder="Enter S.No.">
-                <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex24()">Add S.No.</button>
-                <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow24()">Remove S.No.</button>
-                <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow24()">Add Row</button>
-                <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow24()">Remove Row</button>
+                <input type="number" id="indexInput_overview" placeholder="Enter S.No.">
+                <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex('overview')">Add S.No.</button>
+                <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow('overview')">Remove S.No.</button>
+                <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow('overview')">Add Row</button>
+                <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow('overview')">Remove Row</button>
               </div>
               </table>
             </div>  
