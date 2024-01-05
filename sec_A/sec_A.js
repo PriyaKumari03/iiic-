@@ -1,39 +1,39 @@
 //cin validation
 const cin = document.getElementById("cin").addEventListener("input", function () {
-  const cinValidationMessage = document.getElementById("cinValidationMessage");
-  var cinValue = this.value.toUpperCase();
-  cinValue = cinValue.replace(/[^A-Z0-9]/g, '');
-  // Check if the CIN is a valid format (e.g., U74140DL2014PTC272628)
-  const cinRegex = /^[A-Z][0-9]{5}[A-Z]{2}[0-9]{4}[A-Z]{3}[0-9]{6}$/;
-  const isValidLength = cinValue.length === 21;
-  this.value = cinValue;
-  if (cinRegex.test(cinValue) && isValidLength) {
-    cinValidationMessage.textContent = "Valid CIN";
-    cinValidationMessage.style.color = "green";
-  } else {
-    cinValidationMessage.textContent = "Invalid CIN format. Please enter a valid 21-character CIN(U74140DL2014PTC272628)";
-    cinValidationMessage.style.color = "red";
-  }
+    const cinValidationMessage = document.getElementById("cinValidationMessage");
+    var cinValue = this.value.toUpperCase();
+    cinValue = cinValue.replace(/[^A-Z0-9]/g, '');
+    // Check if the CIN is a valid format (e.g., U74140DL2014PTC272628)
+    const cinRegex = /^[A-Z][0-9]{5}[A-Z]{2}[0-9]{4}[A-Z]{3}[0-9]{6}$/;
+    const isValidLength = cinValue.length === 21;
+    this.value = cinValue;
+    if (cinRegex.test(cinValue) && isValidLength) {
+        cinValidationMessage.textContent = "Valid CIN";
+        cinValidationMessage.style.color = "green";
+    } else {
+        cinValidationMessage.textContent = "Invalid CIN format. Please enter a valid 21-character CIN(U74140DL2014PTC272628)";
+        cinValidationMessage.style.color = "red";
+    }
 });
 
 //name validation
 const nameInput = document.getElementById("name");
 const nameError = document.getElementById("nameValidationMessage");
-nameInput.addEventListener("input", function() {
-  this.value = this.value.replace(/[^A-Za-z\s.]/g, ''); // Remove characters that are NOT alphabets, spaces, or dots
-  var name = nameInput.value;
-  var regex = /^[A-Za-z\s.]+$/;
+nameInput.addEventListener("input", function () {
+    this.value = this.value.replace(/[^A-Za-z\s.]/g, ''); // Remove characters that are NOT alphabets, spaces, or dots
+    var name = nameInput.value;
+    var regex = /^[A-Za-z\s.]+$/;
 
-  if (!regex.test(name)) {
-    nameError.textContent = "Only alphabets, dots, and spaces are allowed.";
-    nameInput.setCustomValidity("Invalid input");
-  } else {
-    nameError.textContent = "";
-    nameInput.setCustomValidity("");
-  }
+    if (!regex.test(name)) {
+        nameError.textContent = "Only alphabets, dots, and spaces are allowed.";
+        nameInput.setCustomValidity("Invalid input");
+    } else {
+        nameError.textContent = "";
+        nameInput.setCustomValidity("");
+    }
 });
 
-//email validation
+/*email validation
 const emailInput = document.getElementById("email");
 const emailValidationMessage = document.getElementById("emailValidationMessage");
 emailInput.addEventListener("input", function() {
@@ -46,50 +46,50 @@ emailInput.addEventListener("input", function() {
         emailValidationMessage.textContent = "Invalid email ID";
         emailValidationMessage.style.color = "red";
     }
-});
+});*/
 
 //telephone validation
 const contactInput = document.getElementById("contact");
 const telephoneValidation = document.getElementById("Telephone-validation");
 
-contactInput.addEventListener("input", function() {
-  this.value = this.value.replace(/[^0-9]/g, '');
-  const contact = contactInput.value;
-  const regex = /^[0-9]+$/; 
+contactInput.addEventListener("input", function () {
+    this.value = this.value.replace(/[^0-9]/g, '');
+    const contact = contactInput.value;
+    const regex = /^[0-9]+$/;
 
-  if (!regex.test(contact) || contact.length !== 11) {
-    telephoneValidation.textContent = "Please enter a valid 11-digit telephone number.";
-    telephoneValidation.style.color = "red"; // Set the error message color to red
-    contactInput.setCustomValidity("Invalid input");
-  } else {
-    telephoneValidation.textContent = "";
-    telephoneValidation.style.color = "green"; // Set the error message color to green when input is valid
-    contactInput.setCustomValidity("");
-  }
+    if (!regex.test(contact) || contact.length !== 11) {
+        telephoneValidation.textContent = "Please enter a valid 11-digit telephone number.";
+        telephoneValidation.style.color = "red"; // Set the error message color to red
+        contactInput.setCustomValidity("Invalid input");
+    } else {
+        telephoneValidation.textContent = "";
+        telephoneValidation.style.color = "green"; // Set the error message color to green when input is valid
+        contactInput.setCustomValidity("");
+    }
 });
 
 //Number of women validation
 const numberInput = document.getElementById("p-no");
 const numberValidation = document.getElementById("Number-validation");
 
-numberInput.addEventListener("input", function() {
-  this.value = this.value.replace(/[^0-9]/g, '');
-  const number = numberInput.value;
-  const regex = /^[0-9]+$/; 
+numberInput.addEventListener("input", function () {
+    this.value = this.value.replace(/[^0-9]/g, '');
+    const number = numberInput.value;
+    const regex = /^[0-9]+$/;
 
-  if (!regex.test(number)) {
-    numberValidation.textContent = "Please enter a valid number.";
-    numberValidation.style.color = "red"; // Set the error message color to red
-    numberInput.setCustomValidity("Invalid input");
-  } else {
-    numberValidation.textContent = "";
-    numberValidation.style.color = "green"; // Set the error message color to green when input is valid
-    numberInput.setCustomValidity("");
-  }
+    if (!regex.test(number)) {
+        numberValidation.textContent = "Please enter a valid number.";
+        numberValidation.style.color = "red"; // Set the error message color to red
+        numberInput.setCustomValidity("Invalid input");
+    } else {
+        numberValidation.textContent = "";
+        numberValidation.style.color = "green"; // Set the error message color to green when input is valid
+        numberInput.setCustomValidity("");
+    }
 });
 
 //Capital validation
-const capitalInput = document.getElementById("puc");
+/*const capitalInput = document.getElementById("puc");
 const capitalValidation = document.getElementById("Capital-validation");
 
 capitalInput.addEventListener("input", function() {
@@ -106,26 +106,26 @@ capitalInput.addEventListener("input", function() {
     capitalValidation.style.color = "green"; // Set the error message color to green when input is valid
     capitalInput.setCustomValidity("");
   }
-});
+});*/
 
 //Location validation
 const locationInput = document.getElementById("nol");
-const locationValidation= document.getElementById("Location-validation");
+const locationValidation = document.getElementById("Location-validation");
 
-locationInput.addEventListener("input", function() {
-  this.value = this.value.replace(/[^0-9]/g, '');
-  const location = locationInput.value;
-  const regex = /^[0-9]+$/; 
+locationInput.addEventListener("input", function () {
+    this.value = this.value.replace(/[^0-9]/g, '');
+    const location = locationInput.value;
+    const regex = /^[0-9]+$/;
 
-  if (!regex.test(location)) {
-    locationValidation.textContent = "Please enter a valid number.";
-    locationValidation.style.color = "red"; // Set the error message color to red
-    locationInput.setCustomValidity("Invalid input");
-  } else {
-    locationValidation.textContent = "";
-    locationValidation.style.color = "green"; // Set the error message color to green when input is valid
-    locationInput.setCustomValidity("");
-  }
+    if (!regex.test(location)) {
+        locationValidation.textContent = "Please enter a valid number.";
+        locationValidation.style.color = "red"; // Set the error message color to red
+        locationInput.setCustomValidity("Invalid input");
+    } else {
+        locationValidation.textContent = "";
+        locationValidation.style.color = "green"; // Set the error message color to green when input is valid
+        locationInput.setCustomValidity("");
+    }
 });
 
 //Total number of employees fields validation
@@ -138,87 +138,92 @@ const female1Input = document.getElementById("female1");
 
 //Total number of Employees & Workers validation
 toteInput.addEventListener("input", function () {
-  // Remove non-digit characters from the phone number
-  this.value = this.value.replace(/[^0-9]/g, '');
-  const toteRegex = /^[0-9]+$/;
-  const toteValidation = document.getElementById("tote-validation");
-  if (toteRegex.test(this.value)) {
-    toteValidation.textContent = "";
-  } else {s
-    toteValidation.textContent = "Invalid number format. Please enter digits only.";
-  }
+    // Remove non-digit characters from the phone number
+    this.value = this.value.replace(/[^0-9]/g, '');
+    const toteRegex = /^[0-9]+$/;
+    const toteValidation = document.getElementById("tote-validation");
+    if (toteRegex.test(this.value)) {
+        toteValidation.textContent = "";
+    } else {
+        s
+        toteValidation.textContent = "Invalid number format. Please enter digits only.";
+    }
 });
 
 //Permanent Male Employee validation
 maleInput.addEventListener("input", function () {
-  // Remove non-digit characters from the phone number
-  this.value = this.value.replace(/[^0-9]/g, '');
-  const maleRegex = /^[0-9]+$/;
-  const maleValidation = document.getElementById("male-validation");
-  if (maleRegex.test(this.value)) {
-    maleValidation.textContent = "";
-  } else {s
-    maleValidation.textContent = "Invalid number format. Please enter digits only.";
-  }
+    // Remove non-digit characters from the phone number
+    this.value = this.value.replace(/[^0-9]/g, '');
+    const maleRegex = /^[0-9]+$/;
+    const maleValidation = document.getElementById("male-validation");
+    if (maleRegex.test(this.value)) {
+        maleValidation.textContent = "";
+    } else {
+        s
+        maleValidation.textContent = "Invalid number format. Please enter digits only.";
+    }
 });
 
 //Permanent female Employee validation
 femaleInput.addEventListener("input", function () {
-  // Remove non-digit characters from the phone number
-  this.value = this.value.replace(/[^0-9]/g, '');
-  const femaleRegex = /^[0-9]+$/;
-  const femaleValidation = document.getElementById("female-validation");
-  if (femaleRegex.test(this.value)) {
-    femaleValidation.textContent = "";
-  } else {s
-    femaleValidation.textContent = "Invalid number format. Please enter digits only.";
-  }
+    // Remove non-digit characters from the phone number
+    this.value = this.value.replace(/[^0-9]/g, '');
+    const femaleRegex = /^[0-9]+$/;
+    const femaleValidation = document.getElementById("female-validation");
+    if (femaleRegex.test(this.value)) {
+        femaleValidation.textContent = "";
+    } else {
+        s
+        femaleValidation.textContent = "Invalid number format. Please enter digits only.";
+    }
 });
 
 //Temporary Male Employee validation
 male1Input.addEventListener("input", function () {
-  // Remove non-digit characters from the phone number
-  this.value = this.value.replace(/[^0-9]/g, '');
-  const male1Regex = /^[0-9]+$/;
-  const male1Validation = document.getElementById("male1-validation");
-  if (male1Regex.test(this.value)) {
-    male1Validation.textContent = "";
-  } else {s
-    male1Validation.textContent = "Invalid number format. Please enter digits only.";
-  }
+    // Remove non-digit characters from the phone number
+    this.value = this.value.replace(/[^0-9]/g, '');
+    const male1Regex = /^[0-9]+$/;
+    const male1Validation = document.getElementById("male1-validation");
+    if (male1Regex.test(this.value)) {
+        male1Validation.textContent = "";
+    } else {
+        s
+        male1Validation.textContent = "Invalid number format. Please enter digits only.";
+    }
 });
 
 //Temporary female Employee validation
 female1Input.addEventListener("input", function () {
-  // Remove non-digit characters from the phone number
-  this.value = this.value.replace(/[^0-9]/g, '');
-  const female1Regex = /^[0-9]+$/;
-  const female1Validation = document.getElementById("female1-validation");
-  if (female1Regex.test(this.value)) {
-    female1Validation.textContent = "";
-  } else {s
-    female1Validation.textContent = "Invalid number format. Please enter digits only.";
-  }
+    // Remove non-digit characters from the phone number
+    this.value = this.value.replace(/[^0-9]/g, '');
+    const female1Regex = /^[0-9]+$/;
+    const female1Validation = document.getElementById("female1-validation");
+    if (female1Regex.test(this.value)) {
+        female1Validation.textContent = "";
+    } else {
+        s
+        female1Validation.textContent = "Invalid number format. Please enter digits only.";
+    }
 });
 
 //turnover validation
 const torInput = document.getElementById("tor");
 const torValidation = document.getElementById("Turnover-validation");
 
-torInput.addEventListener("input", function() {
-  this.value = this.value.replace(/[^0-9]/g, '');
-  const tor = torInput.value;
-  const regex = /^[0-9]+$/; 
+torInput.addEventListener("input", function () {
+    this.value = this.value.replace(/[^0-9]/g, '');
+    const tor = torInput.value;
+    const regex = /^[0-9]+$/;
 
-  if (!regex.test(tor)) {
-    torValidation.textContent = "Please enter a valid number.";
-    torValidation.style.color = "red"; // Set the error message color to red
-    torInput.setCustomValidity("Invalid input");
-  } else {
-    torValidation.textContent = "";
-    torValidation.style.color = "green"; // Set the error message color to green when input is valid
-    torInput.setCustomValidity("");
-  }
+    if (!regex.test(tor)) {
+        torValidation.textContent = "Please enter a valid number.";
+        torValidation.style.color = "red"; // Set the error message color to red
+        torInput.setCustomValidity("Invalid input");
+    } else {
+        torValidation.textContent = "";
+        torValidation.style.color = "green"; // Set the error message color to green when input is valid
+        torInput.setCustomValidity("");
+    }
 });
 
 /* ************************************************************************************************************************************ */
@@ -353,12 +358,12 @@ function updateSNoValues(Id) {
 /* ************************************************************************************************************************************ */
 
 function closeModal() {
-  document.getElementById('reviewModal').style.display = 'none';
+    document.getElementById('reviewModal').style.display = 'none';
 }
 
 function printReview() {
-  var printWindow = window.open('', '_blank');
-  printWindow.document.write(`
+    var printWindow = window.open('', '_blank');
+    printWindow.document.write(`
   <html>
     <head>
       <title>Section A: General Disclosures</title>
@@ -368,40 +373,40 @@ function printReview() {
       <div class="container" style="text-align: center;">
         <h1>SECTION : GENERAL DISCLOSURES</h1>
  `);
-  // Embedding HTML and CSS for each form field
+    // Embedding HTML and CSS for each form field
     var inputFields = [
-      { label: '1. Corporate Identity Number (CIN)', id: 'cin' },
-      { label: '2. Name', id: 'name' },
-      { label: '3. Incorporation Date', id: 'incorp_date' },
-      { label: '4. Registered Office Address', id: 'office_address' },
-      { label: '5. Corporate Address', id: 'corporate_address' },
-      { label: '6. Email (Enter only official email ID)', id: 'email' },
-      { label: '7. Telephone', id: 'telephone' },
-      { label: '8. Website', id: 'website' },
-      { label: '9. Financial year for which reporting is being done', id: 'reporting_fin_year' },
+        { label: '1. Corporate Identity Number (CIN)', id: 'cin' },
+        { label: '2. Name', id: 'name' },
+        { label: '3. Incorporation Date', id: 'incorp_date' },
+        { label: '4. Registered Office Address', id: 'office_address' },
+        { label: '5. Corporate Address', id: 'corporate_address' },
+        { label: '6. Email (Enter only official email ID)', id: 'email' },
+        { label: '7. Telephone', id: 'telephone' },
+        { label: '8. Website', id: 'website' },
+        { label: '9. Financial year for which reporting is being done', id: 'reporting_fin_year' },
 
-      // Add other fields as needed
+        // Add other fields as needed
     ];
-    
-   // Printing each field individually
-  inputFields.forEach(printField);
 
-  function printField(field) {
-    var value = document.getElementById(field.id).value;
-    var commonStyle = 'style="padding-left: 20%;"'; // Common style for all fields
+    // Printing each field individually
+    inputFields.forEach(printField);
 
-    // Special style for Paid-up Capital field
-    if (field.id === 'cin') {
-      commonStyle = 'style="padding-right: 1%; text-align:center;"'; // Adjust the style as needed
-    }
-    if(field.id === 'name'){
-      commonStyle = 'style="padding-right:10%; text-align:right;"';
-    }
-    if(field.id === 'incorp_date'){
-      commonStyle = 'style="padding-left:20%; text-align:right;"';
-    }
+    function printField(field) {
+        var value = document.getElementById(field.id).value;
+        var commonStyle = 'style="padding-left: 20%;"'; // Common style for all fields
 
-    printWindow.document.write(`
+        // Special style for Paid-up Capital field
+        if (field.id === 'cin') {
+            commonStyle = 'style="padding-right: 1%; text-align:center;"'; // Adjust the style as needed
+        }
+        if (field.id === 'name') {
+            commonStyle = 'style="padding-right:10%; text-align:right;"';
+        }
+        if (field.id === 'incorp_date') {
+            commonStyle = 'style="padding-left:20%; text-align:right;"';
+        }
+
+        printWindow.document.write(`
         <div class="mb-3">
           <div class="policy">
             <p for="${field.id}" class="form-control form-label" style="text-align: left;">
@@ -410,53 +415,53 @@ function printReview() {
           </div>
         </div>
       `);
-  }
+    }
 
-  // Additional function for printing selected stock exchanges
-  printWindow.document.write(`
+    // Additional function for printing selected stock exchanges
+    printWindow.document.write(`
     <div class="mb-3">
       <div class="policy">
         <p for="stock_name" class="form-label" style="text-align:left;">10. &nbsp;Name of the Stock Exchange(s) where shares are listed<span style="color: red; "> * </span></p>
       </div>
   `);
 
-  // Get the div containing checkboxes
-  var stockDiv = document.getElementById('stock_name');
-  // Get all input elements with type checkbox that are checked
-  var selectedCheckboxes = stockDiv.querySelectorAll('input[type="checkbox"]:checked');
+    // Get the div containing checkboxes
+    var stockDiv = document.getElementById('stock_name');
+    // Get all input elements with type checkbox that are checked
+    var selectedCheckboxes = stockDiv.querySelectorAll('input[type="checkbox"]:checked');
 
-  // Create an array to store the selected values
-  var selectedValues = [];
+    // Create an array to store the selected values
+    var selectedValues = [];
 
-  // Loop through the selected checkboxes and add their values to the array
-  selectedCheckboxes.forEach(function (checkbox) {
-    selectedValues.push(checkbox.value);
-  });
+    // Loop through the selected checkboxes and add their values to the array
+    selectedCheckboxes.forEach(function (checkbox) {
+        selectedValues.push(checkbox.value);
+    });
 
-  // Display the selected values
-  selectedValues.forEach(function (value) {
-    printWindow.document.write(`<p style="text-align:left; padding-left:3%; color:#2d6a4f" class="from-label">${value}</p>`);
-  });
+    // Display the selected values
+    selectedValues.forEach(function (value) {
+        printWindow.document.write(`<p style="text-align:left; padding-left:3%; color:#2d6a4f" class="from-label">${value}</p>`);
+    });
 
-  // Add Paid-up Capital section
-  var paidUpCapitalField = { label: '11. Paid-up Capital', id: 'puc' };
-  printField(paidUpCapitalField);
- 
+    // Add Paid-up Capital section
+    var paidUpCapitalField = { label: '11. Paid-up Capital', id: 'puc' };
+    printField(paidUpCapitalField);
+
     // Access the table using its ID 'p_doba'
     var dobaTable = document.getElementById('p_doba');
     var tableData = [];
 
     for (var i = 1; i < dobaTable.rows.length; i++) { // Start from 1 to skip the header row
-      var row = dobaTable.rows[i];
-      var rowData = [];
+        var row = dobaTable.rows[i];
+        var rowData = [];
 
-      for (var j = 0; j < row.cells.length; j++) {
-      // Use querySelector to select the input inside the cell
-      var cellValue = row.cells[j].querySelector('input').value; // Change this line to get the input value
-      rowData.push(cellValue);
-      }
+        for (var j = 0; j < row.cells.length; j++) {
+            // Use querySelector to select the input inside the cell
+            var cellValue = row.cells[j].querySelector('input').value; // Change this line to get the input value
+            rowData.push(cellValue);
+        }
 
-      tableData.push(rowData);
+        tableData.push(rowData);
     }
 
     // Display the table data
@@ -479,32 +484,32 @@ function printReview() {
     `);
 
     for (var i = 0; i < tableData.length; i++) {
-      printWindow.document.write('<tr style="width=30%;">');
-      for (var j = 0; j < tableData[i].length; j++) {
-        printWindow.document.write('<td style="width=30%;">' + tableData[i][j] + '</td>');
-      }
-      printWindow.document.write('</tr>');
+        printWindow.document.write('<tr style="width=30%;">');
+        for (var j = 0; j < tableData[i].length; j++) {
+            printWindow.document.write('<td style="width=30%;">' + tableData[i][j] + '</td>');
+        }
+        printWindow.document.write('</tr>');
     }
 
     // Access the table using its ID 'nol'
     var nolTable = document.getElementById('p_nol');
     var tableData = [];
 
-  for (var i = 1; i < nolTable.rows.length; i++) { // Start from 1 to skip the header row
-    var row = nolTable.rows[i];
-    var rowData = [];
+    for (var i = 1; i < nolTable.rows.length; i++) { // Start from 1 to skip the header row
+        var row = nolTable.rows[i];
+        var rowData = [];
 
-    for (var j = 0; j < row.cells.length; j++) {
-      // Use querySelector to select the input inside the cell
-      var cellValue = j === 0 ? row.cells[j].textContent : row.cells[j].querySelector('input').value;
-      rowData.push(cellValue);
+        for (var j = 0; j < row.cells.length; j++) {
+            // Use querySelector to select the input inside the cell
+            var cellValue = j === 0 ? row.cells[j].textContent : row.cells[j].querySelector('input').value;
+            rowData.push(cellValue);
+        }
+
+        tableData.push(rowData);
     }
 
-    tableData.push(rowData);
-  }
-
-  // Display the table data
-  printWindow.document.write(`
+    // Display the table data
+    printWindow.document.write(`
       </tbody>
     </table>
   </div>
@@ -525,24 +530,24 @@ function printReview() {
         <tbody>
   `);
 
-  for (var i = 0; i < tableData.length; i++) {
-    printWindow.document.write('<tr>');
-    for (var j = 0; j < tableData[i].length; j++) {
-      printWindow.document.write('<td>' + tableData[i][j] + '</td>');
+    for (var i = 0; i < tableData.length; i++) {
+        printWindow.document.write('<tr>');
+        for (var j = 0; j < tableData[i].length; j++) {
+            printWindow.document.write('<td>' + tableData[i][j] + '</td>');
+        }
+        printWindow.document.write('</tr>');
     }
-    printWindow.document.write('</tr>');
-  }
 
-  printWindow.document.write(`
+    printWindow.document.write(`
       </div>
     </body>
   </html>`);
 
-  printWindow.document.close();
-  printWindow.print();
+    printWindow.document.close();
+    printWindow.print();
 }
 
 function confirmSubmission() {
-  // You can add additional validation or actions before final submission
-  return confirm('Are you sure you want to submit the form?');
+    // You can add additional validation or actions before final submission
+    return confirm('Are you sure you want to submit the form?');
 }
