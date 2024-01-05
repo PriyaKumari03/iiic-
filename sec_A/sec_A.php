@@ -183,164 +183,165 @@
                     <label for="incorporation_certificate" class="form-label">Please provide your incorporation certificate as a PDF file (Max 5 MB)<span style="color: red;"> * </span></label>
                 </div>
                 <input type="file" id="incorporation_certificate" name="uploadedFiles[]" accept=".pdf" required multiple><br><br>
-            <script>
-                document.getElementById('incorporation_certificate').addEventListener('change', function () {
-                    const fileInput = this;
-                    const maxFileSizeInBytes = 5 * 1024 * 1024; // 5 MB
-                    const fileSizeMessage = document.getElementById('fileSizeMessage');
-                    let invalidFile = false;
-                    for (let i = 0; i < fileInput.files.length; i++) {
-                          const file = fileInput.files[i];
-                          if (file.size > maxFileSizeInBytes) {
-                            invalidFile = true;
-                            fileSizeMessage.textContent = 'File size exceeds the maximum allowed size of 5 MB.';
-                            fileInput.value = ''; // Clear the file input
-                            break;
-                          }
-                    }
-                    if (!invalidFile) {
-                      fileSizeMessage.textContent = ''; // Clear the message if the file is valid
-                    }
-                });
-            </script>
-            <div id="fileSizeMessage" style="color: red;"></div> <!-- Message container -->
-          </div>
-          <!-- PDF UPLOAD End -->
+                <script>
+                    document.getElementById('incorporation_certificate').addEventListener('change', function () {
+                        const fileInput = this;
+                        const maxFileSizeInBytes = 5 * 1024 * 1024; // 5 MB
+                        const fileSizeMessage = document.getElementById('fileSizeMessage');
+                        let invalidFile = false;
+                        for (let i = 0; i < fileInput.files.length; i++) {
+                            const file = fileInput.files[i];
+                            if (file.size > maxFileSizeInBytes) {
+                                invalidFile = true;
+                                fileSizeMessage.textContent = 'File size exceeds the maximum allowed size of 5 MB.';
+                                fileInput.value = ''; // Clear the file input
+                                break;
+                            }
+                        }
+                        if (!invalidFile) {
+                          fileSizeMessage.textContent = ''; // Clear the message if the file is valid
+                        }
+                    });
+                </script>
+                <div id="fileSizeMessage" style="color: red;">
+                </div> <!-- Message container -->
+            </div>
+            <!-- PDF UPLOAD End -->
 
-          <!-- Name of the Stock Exchange(s) Start -->
-          <div class="mb-3">
-            <div class="policy">
-              <label class="form-label">10. &nbsp;Name of the Stock Exchange(s) where shares are listed<span style="color: red;"> * </span></label>
-            </div>
-            <div id="stock_name" class="form-control form-label" required>
-              <input type="checkbox" id="BSE" name="stock_name[]" value="BSE">
-              <label for="BSE">Bombay Stock Exchange (BSE)</label><br>
-              <input type="checkbox" id="NSE" name="stock_name[]" value="NSE">
-              <label for="NSE">National Stock Exchange (NSE)</label><br>
-              <input type="checkbox" id="CSE" name="stock_name[]" value="CSE">
-              <label for="CSE">Calcutta Stock Exchange (CSE)</label><br>
-              <input type="checkbox" id="MSE" name="stock_name[]" value="MSE">
-              <label for="MSE">Madras Stock Exchange (MSE)</label><br>
-              <input type="checkbox" id="DSE" name="stock_name[]" value="DSE">
-              <label for="DSE">Delhi Stock Exchange (DSE)</label><br>
-              <input type="checkbox" id="INX" name="stock_name[]" value="INX">
-              <label for="INX">India International Exchange (INX)</label><br>
-            </div>
-          </div>
-          <!-- Name of the Stock Exchange(s) End -->
-
-         <!-- Paid-up Capital Start -->
-         <div class="mb-3">
-            <div class="policy">
-              <label for="puc" class="form-label">11. &nbsp;Paid-up Capital<span style="color: red;"> * </span></label>
-            </div>
-            <input type="text" class="form-control" id="puc" name="puc" required">
-         </div>
-         <!-- Paid-up Capital End -->
-
-          <!-- Details of Point of Contact Start -->
-          <div class="mb-3">
-            <div class="policy">
-              <label for="details" class="form-label">12. &nbsp;Name and contact details (telephone, email address) of the person who may be contacted in case of any queries on the BRSR report<span style="color: red;"> * </span></label><br>
-            </div>
-          </div>
-          
-          <div class="invisible_container">
-            <!-- Name of the Point of Contact Start -->
+            <!-- Name of the Stock Exchange(s) Start -->
             <div class="mb-3">
-              <div class="policy">
-                <label for="poc-name" class="form-label">Name<span style="color: red;"> * </span></label>
-              </div>  
-              <input type="text" class="form-control" id="poc-name" name="poc_name" placeholder="Enter the name of the person to contact for queries" required>
-              <span id="poc-name-validation" style="color: red;"></span>         
+                <div class="policy">
+                    <label class="form-label">10. &nbsp;Name of the Stock Exchange(s) where shares are listed<span style="color: red;"> * </span></label>
+                </div>
+                <div id="stock_name" class="form-control form-label" required>
+                    <input type="checkbox" id="BSE" name="stock_name[]" value="BSE">
+                    <label for="BSE">Bombay Stock Exchange (BSE)</label><br>
+                    <input type="checkbox" id="NSE" name="stock_name[]" value="NSE">
+                    <label for="NSE">National Stock Exchange (NSE)</label><br>
+                    <input type="checkbox" id="CSE" name="stock_name[]" value="CSE">
+                    <label for="CSE">Calcutta Stock Exchange (CSE)</label><br>
+                    <input type="checkbox" id="MSE" name="stock_name[]" value="MSE">
+                    <label for="MSE">Madras Stock Exchange (MSE)</label><br>
+                    <input type="checkbox" id="DSE" name="stock_name[]" value="DSE">
+                    <label for="DSE">Delhi Stock Exchange (DSE)</label><br>
+                    <input type="checkbox" id="INX" name="stock_name[]" value="INX">
+                    <label for="INX">India International Exchange (INX)</label><br>
+                </div>
             </div>
-            <script>
-              document.addEventListener('DOMContentLoaded', function () {
-                const pocNameInput = document.getElementById("poc-name");
-                const pocNameValidation = document.getElementById("poc-name-validation");
+            <!-- Name of the Stock Exchange(s) End -->
 
-                pocNameInput.addEventListener("input", function () {
-                  const name = pocNameInput.value;
-                  const nameRegex = /^[a-zA-Z\s.'-]*$/; // Allow letters, spaces, apostrophes, periods, and hyphens
-                  if (nameRegex.test(name)) {
-                    pocNameValidation.textContent = "Valid name";
-                    pocNameValidation.style.color = "green";
-                  } else {
-                    pocNameValidation.textContent = "Invalid name";
-                    pocNameValidation.style.color = "red";
-                  }
-                });
-              });
-            </script>
-            <!-- Name of the Point of Contact End -->
+            <!-- Paid-up Capital Start -->
+            <div class="mb-3">
+                <div class="policy">
+                    <label for="puc" class="form-label">11. &nbsp;Paid-up Capital<span style="color: red;"> * </span></label>
+                </div>
+                <input type="text" class="form-control" id="puc" name="puc" required>
+            </div>
+            <!-- Paid-up Capital End -->
+
+            <!-- Details of Point of Contact Start -->
+            <div class="mb-3">
+                <div class="policy">
+                    <label for="details" class="form-label">12. &nbsp;Name and contact details (telephone, email address) of the person who may be contacted in case of any queries on the BRSR report<span style="color: red;"> * </span></label><br>
+                </div>
+            </div>
+          
+            <div class="invisible_container">
+                <!-- Name of the Point of Contact Start -->
+                <div class="mb-3">
+                    <div class="policy">
+                        <label for="poc-name" class="form-label">Name<span style="color: red;"> * </span></label>
+                    </div>  
+                    <input type="text" class="form-control" id="poc-name" name="poc_name" placeholder="Enter the name of the person to contact for queries" required>
+                    <span id="poc-name-validation" style="color: red;"></span>         
+                </div>
+                <script>
+                    document.addEventListener('DOMContentLoaded', function () {
+                        const pocNameInput = document.getElementById("poc-name");
+                        const pocNameValidation = document.getElementById("poc-name-validation");
+
+                        pocNameInput.addEventListener("input", function () {
+                            const name = pocNameInput.value;
+                            const nameRegex = /^[a-zA-Z\s.'-]*$/; // Allow letters, spaces, apostrophes, periods, and hyphens
+                            if (nameRegex.test(name)) {
+                                pocNameValidation.textContent = "Valid name";
+                                pocNameValidation.style.color = "green";
+                            } else {
+                                pocNameValidation.textContent = "Invalid name";
+                                pocNameValidation.style.color = "red";
+                            }
+                        });
+                    });
+                </script>
+                <!-- Name of the Point of Contact End -->
             
-            <!-- Phone Number of Point of Contact Start -->
-            <div class="mb-3">
-              <div class="policy">
-                <label for="poc-phone" class="form-label">Phone Number<span style="color: red;"> * </span></label>
-              </div>
-              <input type="text" class="form-control" id="poc-phone" name="poc_phone" required placeholder="Enter the contact number"  maxlimit="10">
-              <span id="poc-phone-validation" style="color: red;"></span>
-            </div> 
-            <script>
-              document.addEventListener('DOMContentLoaded', function () {
-                const pocPhoneInput = document.getElementById("poc-phone");
-                const pocPhoneValidation = document.getElementById("poc-phone-validation");
+                <!-- Phone Number of Point of Contact Start -->
+                <div class="mb-3">
+                    <div class="policy">
+                        <label for="poc-phone" class="form-label">Phone Number<span style="color: red;"> * </span></label>
+                    </div>
+                    <input type="text" class="form-control" id="poc-phone" name="poc_phone" required placeholder="Enter the contact number"  maxlimit="10">
+                        <span id="poc-phone-validation" style="color: red;"></span>
+                </div> 
+                <script>
+                    document.addEventListener('DOMContentLoaded', function () {
+                        const pocPhoneInput = document.getElementById("poc-phone");
+                        const pocPhoneValidation = document.getElementById("poc-phone-validation");
 
-                pocPhoneInput.addEventListener("input", function () {
-                  const phoneNumber = pocPhoneInput.value;
-                  const phoneRegex = /^[0-9]+$/;
+                        pocPhoneInput.addEventListener("input", function () {
+                            const phoneNumber = pocPhoneInput.value;
+                            const phoneRegex = /^[0-9]+$/;
 
-                  if (phoneRegex.test(phoneNumber) && phoneNumber.length === 10) {
-                    pocPhoneValidation.textContent = "Valid phone number";
-                    pocPhoneValidation.style.color = "green";
-                  } else {
-                    pocPhoneValidation.textContent = "Invalid phone number (must be 10 digits)";
-                    pocPhoneValidation.style.color = "red";
-                  }
-                });
-              });
-            </script>
-            <!-- Phone Number of Point of Contact End -->
+                            if (phoneRegex.test(phoneNumber) && phoneNumber.length === 10) {
+                                pocPhoneValidation.textContent = "Valid phone number";
+                                pocPhoneValidation.style.color = "green";
+                            } else {
+                                pocPhoneValidation.textContent = "Invalid phone number (must be 10 digits)";
+                                pocPhoneValidation.style.color = "red";
+                            }
+                        });
+                    });
+                </script>
+                <!-- Phone Number of Point of Contact End -->
 
-            <!-- Email Address of Point of Contact Start -->
-            <div class="mb-3">
-              <div class="policy">
-                <label for="poc-email" class="form-label">Email Address (Enter only official email ID)<span style="color: red;"> * </span></label>
-              </div>
-              <input type="text" class="form-control" id="poc-email" name="poc_email" placeholder="Enter email address" required>
-            </div>
-            <span id="poc-email-validation" style="color: red;"></span>
-            <script>
-              document.addEventListener('DOMContentLoaded', function () {
-                const pocEmailInput = document.getElementById("poc-email");
-                  const pocEmailValidation = document.getElementById("poc-email-validation");
-                  pocEmailInput.addEventListener("input", function () {
-                    const email = pocEmailInput.value;
-                    const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
-                    if (emailRegex.test(email)) {
-                      pocEmailValidation.textContent = "Valid email!";
-                      pocEmailValidation.style.color = "green";
-                    } else {
-                      pocEmailValidation.textContent = "Invalid email ID";
-                      pocEmailValidation.style.color = "red";
-                    }
-                  });
-              });
-            </script>
-            <!-- Email Address of Point of Contact End -->
-          </div>    
-          <!-- Details of Point of Contact End -->
+                <!-- Email Address of Point of Contact Start -->
+                <div class="mb-3">
+                    <div class="policy">
+                        <label for="poc-email" class="form-label">Email Address (Enter only official email ID)<span style="color: red;"> * </span></label>
+                    </div>
+                        <input type="text" class="form-control" id="poc-email" name="poc_email" placeholder="Enter email address" required>
+                </div>
+                <span id="poc-email-validation" style="color: red;"></span>
+                <script>
+                    document.addEventListener('DOMContentLoaded', function () {
+                        const pocEmailInput = document.getElementById("poc-email");
+                        const pocEmailValidation = document.getElementById("poc-email-validation");
+                        pocEmailInput.addEventListener("input", function () {
+                            const email = pocEmailInput.value;
+                            const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+                            if (emailRegex.test(email)) {
+                                pocEmailValidation.textContent = "Valid email!";
+                                pocEmailValidation.style.color = "green";
+                            } else {
+                                pocEmailValidation.textContent = "Invalid email ID";
+                                pocEmailValidation.style.color = "red";
+                            }
+                        });
+                    });
+                </script>
+                <!-- Email Address of Point of Contact End -->
+            </div>    
+            <!-- Details of Point of Contact End -->
           
-          <!-- Reporting boundary Start -->
-          <div class="mb-3">
-            <div class="policy">
-              <label for="rep_b" class="form-label">13. &nbsp;Reporting boundary - Are the disclosures under this report made on a standalone basis (i.e. only for the entity) or on a consolidated basis (i.e. for the entity and all the entities
+            <!-- Reporting boundary Start -->
+            <div class="mb-3">
+                <div class="policy">
+                    <label for="rep_b" class="form-label">13. &nbsp;Reporting boundary - Are the disclosures under this report made on a standalone basis (i.e. only for the entity) or on a consolidated basis (i.e. for the entity and all the entities
                                                     which form a part of its consolidated financial statements, taken together).</label>
+                </div>
+                <input type="text" class="form-control" id="rep_b" name="rep_b" placeholder="Enter Reporting boundary" >
             </div>
-              <input type="text" class="form-control" id="rep_b" name="rep_b" placeholder="Enter Reporting boundary" >
-          </div>
-          <!-- Reporting boundary End -->
+            <!-- Reporting boundary End -->
         </div>
         <!-- DETAILS OF THE LISTED ENTITY END -->
 
@@ -1180,7 +1181,7 @@
     
     <!-- FOOTER START -->
     <footer class="footer">
-      <div class="row">
+       <div class="row">
         <div class="column">
           <h4>About Us</h4>
           <p> Christ University Sustainable development and Research group</p>
