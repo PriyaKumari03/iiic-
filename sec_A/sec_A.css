@@ -306,7 +306,7 @@ table input[type="text"] {
     border: 1px solid #2d6a4f;
 }
 
-#indexInput14 {
+#indexInput_doba {
     width: 10%; /* Adjust the width as needed */
     padding: 8px;
     border: 1px solid #2d6a4f;
@@ -317,12 +317,12 @@ table input[type="text"] {
     font-size: 14px;
 }
 
-#indexInput14:focus {
+#indexInput_doba:focus {
     outline: none;
     border-color: #17a2b8; /* Highlight border color on focus */
 }
 
-#indexInput15 {
+#indexInput_dops {
     width: 10%; /* Adjust the width as needed */
     padding: 8px;
     border: 1px solid #2d6a4f;
@@ -333,12 +333,12 @@ table input[type="text"] {
     font-size: 14px;
 }
 
-#indexInput15:focus {
+#indexInput_dops:focus {
     outline: none;
     border-color: #17a2b8; /* Highlight border color on focus */
 }
 
-#indexInput21 {
+#indexInput_holding {
     width: 10%; /* Adjust the width as needed */
     padding: 8px;
     border: 1px solid #2d6a4f;
@@ -349,12 +349,12 @@ table input[type="text"] {
     font-size: 14px;
 }
 
-#indexInput21:focus {
+#indexInput_holding:focus {
     outline: none;
     border-color: #17a2b8; /* Highlight border color on focus */
 }
 
-#indexInput24 {
+#indexInput_overview {
     width: 10%; /* Adjust the width as needed */
     padding: 8px;
     border: 1px solid #2d6a4f;
@@ -365,10 +365,10 @@ table input[type="text"] {
     font-size: 14px;
 }
 
-#indexInput24:focus {
-    outline: none;
-    border-color: #17a2b8; /* Highlight border color on focus */
-}
+    #indexInput_overview:focus {
+        outline: none;
+        border-color: #17a2b8; /* Highlight border color on focus */
+    }
 
 /*************************************************************************************************************************************/
 /*                                                                                                                                   */                           
