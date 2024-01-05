@@ -29,7 +29,7 @@ try {
             $office_address = $_POST['office_address'];
             $corporate_address = $_POST['corporate_address'];
 
-            $email = $_POST['email'];
+            $email = implode(', ', $_POST["email"]);
             $telephone = $_POST['telephone'];
             $website = $_POST['website'];
             $reporting_fin_year = $_POST['reporting_fin_year'];
