@@ -1,6 +1,6 @@
 <?php
 $host = 'localhost';
-$db   = 'iiic';
+$db   = 'crus';
 $user = 'root';
 $pass = '';
 $charset = 'utf8mb4';
