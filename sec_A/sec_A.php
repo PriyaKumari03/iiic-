@@ -60,7 +60,7 @@
                 </div>
                 <!--Detail Of Listed Entity END-->
 
-                <!-- Corporate Identity Number (CIN) of the Listed Entity Start -->
+                <!--1-Corporate Identity Number (CIN) of the Listed Entity Start -->
                 <div class="mb-3">
                     <div class="policy">
                         <label for="cin" class="form-label">1. &nbsp;Corporate Identity Number (CIN)<span style="color: red;"> * </span></label>
@@ -68,9 +68,9 @@
                     <input type="text" class="form-control" id="cin" name="cin"  placeholder="Enter CIN of Listed Entity" maxlength="21" required>
                     <p id="cinValidationMessage" style="color: red;"></p>
                 </div>
-                <!-- Corporate Identity Number (CIN) of the Listed Entity End -->
+                <!--1-Corporate Identity Number (CIN) of the Listed Entity End -->
 
-                <!-- Name of the Listed Entity Start -->
+                <!--2-Name of the Listed Entity Start -->
                 <div class="mb-3">
                     <div class="policy">
                         <label for="name" class="form-label">2. &nbsp;Name of the Listed Entity<span style="color: red;"> * </span></label>
@@ -78,104 +78,83 @@
                     <input type="text" class="form-control" id="name" name="name" placeholder="Enter name of Listed Entity" required>
                     <p id="nameValidationMessage" style="color: red;"></p>
                 </div>
-                <!-- Name of the Listed Entity End -->
+                <!--2-Name of the Listed Entity End -->
 
-                <!-- Year of incorporation Start -->
+                <!--3-Year of incorporation Start -->
                 <div class="mb-3">
                     <div class="policy">
                         <label for="incorp_date" class="form-label">3. &nbsp;Year of incorporation<span style="color: red;"> * </span></label>
                     </div>
                     <select class="form-control" id="incorp_date" name="incorp_date" required></select>
                 </div>
-                <script>
-                    var start = 1900;
-                    var end = 2023;
-                    var options = "";
-                    for (var year = start; year <= end; year++) {
-                      options += "<option value='" + year + "'>" + year + "</option>";
-                    }
-                    document.getElementById("incorp_date").innerHTML = options;
-                </script>
-                <!-- Year of incorporation End -->
+                <!--3-Year of incorporation End -->
 
-                <!-- Registered Office Address Start -->
+                <!--4-Registered Office Address Start -->
                 <div class="mb-3">
                     <div class="policy">
                         <label for="office_address" class="form-label">4. &nbsp;Registered Office Address<span style="color: red;"> * </span></label>
                     </div>
                     <input type="text" class="form-control" id="office_address" name="office_address" placeholder="Enter registered address" required>
                 </div>
-                <!-- Registered Office Address End -->
+                <!--4-Registered Office Address End -->
 
-                <!-- Corporate Address Start -->
+                <!--5-Corporate Address Start -->
                 <div class="mb-3">
                     <div class="policy">
                         <label for="corporate_address" class="form-label">5. &nbsp;Corporate Address<span style="color: red;"> * </span></label>
                     </div>
                     <input type="text" class="form-control" id="corporate_address" name="corporate_address" placeholder="Enter Corporate address" required>
                 </div>
-                <!-- Corporate Address End -->
+                <!--5-Corporate Address End -->
 
-                <!-- Email Start -->
+                <!--6-Email Start -->
                 <div class="mb-3">
                     <div class="policy">
-                        <label for="email" class="form-label">6. &nbsp;Email (Enter only official email ID)<span style="color: red;"> * </span></label>
+                        <label for="email1" class="form-label">6. Email Address (Enter only official email ID)<span style="color: red;"> * </span></label>
+                        <input type="text" class="form-control" id="email" name="email[]" placeholder="Enter email address" required>
+                        <span id="emailValidationMessage1" style="color: red;"></span>
                     </div>
-                    <div id="email">
-                        <table id="p_email">             
-                            <tbody>
-                                <tr>
-                                    <td style="width:5%;"><input type="number" id="email" name="email[]" class="table-control" required value="1" readonly></td>
-                                    <td><input type="email" class="form-control" id="email" name="email[]" id="inputmail" name="inputEmail" placeholder="Enter your email" required></td> 
-                                </tr>
-                            </tbody>
-                        </table>
-                        <div></br>
-                            <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow('email')">Add Email</button>
-                            <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow('email')">Remove Email</button>
-                        </div>
-                    </div>  
+                    <div class="policy">
+                        <label for="email2" class="form-label">Email Address (Enter only official email ID)</label>
+                        <input type="text" class="form-control" id="email" name="email[]" placeholder="Enter email address(Optional)">
+                        <span id="emailValidationMessage2" style="color: red;"></span>
+                    </div>
                 </div>
-                <!-- Email Start -->
+                <!--6-Email Start -->
 
-                <!-- Telephone Start -->
+                <!--7-Telephone Start -->
                 <div class="mb-3">
                     <div class="policy">
-                        <label for="telephone" class="form-label">7. &nbsp;Telephone<span style="color: red;"> * </span></label>
+                        <label for="telephone1" class="form-label">7. &nbsp;Telephone<span style="color: red;"> * </span></label>
+                        <input type="text" class="form-control" id="telephone" name="telephone[]" placeholder="Telephone" required>
+                        <span id="telephoneValidationMessage1" style="color: red;"></span>
                     </div>
-                    <input type="text" class="form-control" id="telephone" name="telephone" placeholder="Enter your contact number" maxlength="11">
-                    <p id="Telephone-validation"></p>
+                    <div class="policy">
+                        <label for="telephone2" class="form-label">&nbsp;Telephone</label>
+                        <input type="text" class="form-control" id="telephone" name="telephone[]" placeholder="Telephone(Optional)" required>
+                        <span id="telephoneValidationMessage2" style="color: red;"></span>
+                    </div>
                 </div>
-                <!-- Telephone End -->
+                <!--7-Telephone End -->
 
-                <!-- Website Start -->
+                <!--8-Website Start -->
                 <div class="mb-3">
                     <div class="policy">
                         <label for="website" class="form-label">8. &nbsp;Website<span style="color: red;"> * </span></label>
                     </div>  
-                    <input type="url" class="form-control" id="website" name="website" placeholder="Enter your website link" required>
+                    <input type="text" class="form-control" id="website" name="website" placeholder="Enter your website link" required>
                     <p id="websiteValidationMessage"></p>
                 </div>
-                <!-- Website End -->
+                <!--8-Website End -->
 
-                <!-- Reporting Financial year Start -->
+                <!--9-Reporting Financial year Start -->
                 <div class="mb-3">
                     <div class="policy">
                         <label for="reporting_fin_year" class="form-label">9. &nbsp;Financial year for which reporting is being done<span style="color: red;"> * </span></label>
                     </div>
                     <select class="form-control" id="reporting_fin_year" name="reporting_fin_year" required></select>
                 </div>
-                <script>
-                    var start = 1900;
-                    var end = 2023;
-                    var options = "";
-                    for (var year = start; year <= end; year++) {
-                        var fiscalYear = "FY " + year + "-" + (year.toString().substr(2, 2) * 1 + 1).toString().padStart(2, "0");
-                        options += "<option value='" + fiscalYear + "'>" + fiscalYear + "</option>";
-                    }
-                    document.getElementById("reporting_fin_year").innerHTML = options;
-                </script>
-                <!-- Reporting Financial year End -->
+                <!--9-Reporting Financial year End -->
 
                 <!-- PDF UPLOAD Start -->
                 <div class="mb-3">
@@ -183,32 +162,12 @@
                         <label for="incorporation_certificate" class="form-label">Please provide your incorporation certificate as a PDF file (Max 5 MB)<span style="color: red;"> * </span></label>
                     </div>
                     <input type="file" id="incorporation_certificate" name="uploadedFiles[]" accept=".pdf" required multiple><br><br>
-                    <script>
-                        document.getElementById('incorporation_certificate').addEventListener('change', function () {
-                            const fileInput = this;
-                            const maxFileSizeInBytes = 5 * 1024 * 1024; // 5 MB
-                            const fileSizeMessage = document.getElementById('fileSizeMessage');
-                            let invalidFile = false;
-                            for (let i = 0; i < fileInput.files.length; i++) {
-                                const file = fileInput.files[i];
-                                if (file.size > maxFileSizeInBytes) {
-                                    invalidFile = true;
-                                    fileSizeMessage.textContent = 'File size exceeds the maximum allowed size of 5 MB.';
-                                    fileInput.value = ''; // Clear the file input
-                                    break;
-                                }
-                            }
-                            if (!invalidFile) {
-                              fileSizeMessage.textContent = ''; // Clear the message if the file is valid
-                            }
-                        });
-                    </script>
                     <div id="fileSizeMessage" style="color: red;">
                     </div> <!-- Message container -->
                 </div>
                 <!-- PDF UPLOAD End -->
 
-                <!-- Name of the Stock Exchange(s) Start -->
+                <!--10-Name of the Stock Exchange(s) Start -->
                 <div class="mb-3">
                     <div class="policy">
                         <label class="form-label">10. &nbsp;Name of the Stock Exchange(s) where shares are listed<span style="color: red;"> * </span></label>
@@ -228,25 +187,25 @@
                         <label for="INX">India International Exchange (INX)</label><br>
                     </div>
                 </div>
-                <!-- Name of the Stock Exchange(s) End -->
+                <!--10-Name of the Stock Exchange(s) End -->
 
-                <!-- Paid-up Capital Start -->
+                <!--11-Paid-up Capital Start -->
                 <div class="mb-3">
                     <div class="policy">
                         <label for="puc" class="form-label">11. &nbsp;Paid-up Capital<span style="color: red;"> * </span></label>
                     </div>
                     <input type="text" class="form-control" id="puc" name="puc" required>
+                    <p id="pucValidationMessage" style="color: red;"></p>
                 </div>
-                <!-- Paid-up Capital End -->
+                <!--11-Paid-up Capital End -->
 
-                <!-- Details of Point of Contact Start -->
+                <!--12-Details of Point of Contact Start -->
                 <div class="mb-3">
                     <div class="policy">
                         <label for="details" class="form-label">12. &nbsp;Name and contact details (telephone, email address) of the person who may be contacted in case of any queries on the BRSR report<span style="color: red;"> * </span></label><br>
                     </div>
-                </div>
           
-                <div class="invisible_container">
+                    <div class="invisible_container">
                     <!-- Name of the Point of Contact Start -->
                     <div class="mb-3">
                         <div class="policy">
@@ -255,24 +214,6 @@
                         <input type="text" class="form-control" id="poc-name" name="poc_name" placeholder="Enter the name of the person to contact for queries" required>
                         <span id="poc-name-validation" style="color: red;"></span>         
                     </div>
-                    <script>
-                        document.addEventListener('DOMContentLoaded', function () {
-                            const pocNameInput = document.getElementById("poc-name");
-                            const pocNameValidation = document.getElementById("poc-name-validation");
-
-                            pocNameInput.addEventListener("input", function () {
-                                const name = pocNameInput.value;
-                                const nameRegex = /^[a-zA-Z\s.'-]*$/; // Allow letters, spaces, apostrophes, periods, and hyphens
-                                if (nameRegex.test(name)) {
-                                    pocNameValidation.textContent = "Valid name";
-                                    pocNameValidation.style.color = "green";
-                                } else {
-                                    pocNameValidation.textContent = "Invalid name";
-                                    pocNameValidation.style.color = "red";
-                                }
-                            });
-                        });
-                    </script>
                     <!-- Name of the Point of Contact End -->
             
                     <!-- Phone Number of Point of Contact Start -->
@@ -281,27 +222,8 @@
                             <label for="poc-phone" class="form-label">Phone Number<span style="color: red;"> * </span></label>
                         </div>
                         <input type="text" class="form-control" id="poc-phone" name="poc_phone" required placeholder="Enter the contact number"  maxlimit="10">
-                            <span id="poc-phone-validation" style="color: red;"></span>
+                        <span id="poc-phone-validation" style="color: red;"></span>
                     </div> 
-                    <script>
-                        document.addEventListener('DOMContentLoaded', function () {
-                            const pocPhoneInput = document.getElementById("poc-phone");
-                            const pocPhoneValidation = document.getElementById("poc-phone-validation");
-
-                            pocPhoneInput.addEventListener("input", function () {
-                                const phoneNumber = pocPhoneInput.value;
-                                const phoneRegex = /^[0-9]+$/;
-
-                                if (phoneRegex.test(phoneNumber) && phoneNumber.length === 10) {
-                                    pocPhoneValidation.textContent = "Valid phone number";
-                                    pocPhoneValidation.style.color = "green";
-                                } else {
-                                    pocPhoneValidation.textContent = "Invalid phone number (must be 10 digits)";
-                                    pocPhoneValidation.style.color = "red";
-                                }
-                            });
-                        });
-                    </script>
                     <!-- Phone Number of Point of Contact End -->
 
                     <!-- Email Address of Point of Contact Start -->
@@ -309,39 +231,23 @@
                         <div class="policy">
                             <label for="poc-email" class="form-label">Email Address (Enter only official email ID)<span style="color: red;"> * </span></label>
                         </div>
-                            <input type="text" class="form-control" id="poc-email" name="poc_email" placeholder="Enter email address" required>
+                        <input type="text" class="form-control" id="poc-email" name="poc_email" placeholder="Enter email address" required>
+                        <span id="poc-email-validation" style="color: red;"></span>
                     </div>
-                    <span id="poc-email-validation" style="color: red;"></span>
-                    <script>
-                        document.addEventListener('DOMContentLoaded', function () {
-                            const pocEmailInput = document.getElementById("poc-email");
-                            const pocEmailValidation = document.getElementById("poc-email-validation");
-                            pocEmailInput.addEventListener("input", function () {
-                                const email = pocEmailInput.value;
-                                const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
-                                if (emailRegex.test(email)) {
-                                    pocEmailValidation.textContent = "Valid email!";
-                                    pocEmailValidation.style.color = "green";
-                                } else {
-                                    pocEmailValidation.textContent = "Invalid email ID";
-                                    pocEmailValidation.style.color = "red";
-                                }
-                            });
-                        });
-                    </script>
                     <!-- Email Address of Point of Contact End -->
-                </div>    
-                <!-- Details of Point of Contact End -->
+                </div>  
+                <!--12-Details of Point of Contact End -->
           
-                <!-- Reporting boundary Start -->
+                <!--13-Reporting boundary Start -->
                 <div class="mb-3">
                     <div class="policy">
                         <label for="rep_b" class="form-label">13. &nbsp;Reporting boundary - Are the disclosures under this report made on a standalone basis (i.e. only for the entity) or on a consolidated basis (i.e. for the entity and all the entities
-                                                        which form a part of its consolidated financial statements, taken together).</label>
+                                                        which form a part of its consolidated financial statements, taken together).</label></br></br>
+                        <label class="form-label"> A reporting boundary identifies the entities within a group that need to be included in a reporting entity's reported metrics (that is, analogous to which entities are consolidated for financial reporting purposes)</label>
                     </div>
                     <input type="text" class="form-control" id="rep_b" name="rep_b" placeholder="Enter Reporting boundary" >
                 </div>
-                <!-- Reporting boundary End -->
+                <!--13-Reporting boundary End -->
             </div>
             <!-- DETAILS OF THE LISTED ENTITY END -->
 
@@ -478,20 +384,6 @@
                   </table>
                 </div>  
               </div>
-              <!--To calculate total value-->
-              <script>
-                function calculate16(input) {
-                  var row = input.parentNode.parentNode; // Get the parent row
-                  var inputs = row.querySelectorAll('.nol-input');
-                  var totalInput = row.querySelector('.nol-total');
-
-                  var total = 0;
-                  for (var i = 0; i < inputs.length; i++) {
-                    total += parseInt(inputs[i].value) || 0;
-                  }
-                  totalInput.value = total;
-                }
-              </script>
               <!-- Number of locations End -->
 
               <!-- Details regarding markets served by the entity Start -->
@@ -768,7 +660,6 @@
                         row.cells[6].querySelector('input').value = calculatePercentage(femaleC, totalA);
                     }
 
-
                     // Helper function to calculate percentage
                     function calculatePercentage(part, whole) {
                         return (part / whole * 100).toFixed(2); // Adjust the number of decimal places as needed
@@ -778,7 +669,7 @@
               </div>
               <!-- 18b. Differently abled employees and workers start -->
           
-              <!-- 19 Participation/Inclusion/Representation of Women Start -->
+              <!--19-Participation/Inclusion/Representation of Women Start -->
               <div class="mb-3">
                 <div class="policy">
                   <label for="pirw" class="form-label"> 19. &nbsp; Participation/Inclusion/Representation of women <br></label>
@@ -807,22 +698,11 @@
                       <td><input type="number" id="pirw" name="pirw[]" class="form-control" required></td>
                     </tr>
                   </table>
-                  <!--To calculate percentage-->
-                  <script>
-                      function calculate19(input) {
-                        var row = input.closest('tr'); // Get the closest parent row
-                        var A = parseInt(row.cells[1].querySelector('input').value) || 0;
-                        var B = parseInt(row.cells[2].querySelector('input').value) || 0;
-                        var per = (B / A * 100).toFixed(2);
-
-                        row.cells[3].querySelector('input').value = per;
-                      }
-                  </script>
                 </div>
               </div>
               <!-- Participation/Inclusion/Representation of Women End -->
 
-              <!-- 20 Turnover rate for permanent employees & workers (For past 3 years) Start -->
+              <!--20-Turnover rate for permanent employees & workers (For past 3 years) Start -->
               <div class="mb-3">
                 <div class="policy">
                   <br><label for="torpew" class="form-label"> 20. &nbsp;Turnover rate for permanent employees and workers<p style="padding-left:2.5%;">(Disclose trends for the past 3 years)</p></label>
@@ -871,33 +751,6 @@
                       <td><input type="number" id="torpew" name="torpew[]" class="form-control" readonly></td>
                     </tr>
                   </table>
-                  <!--To calculate totals-->
-                  <script>
-                      function calculate20a(input) {
-                        var row = input.closest('tr'); // Get the closest parent row
-                        var male = parseInt(row.cells[1].querySelector('input').value) || 0;
-                        var female = parseInt(row.cells[2].querySelector('input').value) || 0;
-                        var totalA = male + female;
-
-                        row.cells[3].querySelector('input').value = totalA;
-                      }
-                      function calculate20b(input) {
-                        var row = input.closest('tr'); // Get the closest parent row
-                        var male = parseInt(row.cells[4].querySelector('input').value) || 0;
-                        var female = parseInt(row.cells[5].querySelector('input').value) || 0;
-                        var totalB = male + female;
-
-                        row.cells[6].querySelector('input').value = totalB;
-                      }
-                      function calculate20c(input) {
-                        var row = input.closest('tr'); // Get the closest parent row
-                        var male = parseInt(row.cells[7].querySelector('input').value) || 0;
-                        var female = parseInt(row.cells[8].querySelector('input').value) || 0;
-                        var totalC = male + female;
-
-                        row.cells[9].querySelector('input').value = totalC;
-                      }
-                  </script>
                 </div>
               </div>
               <!-- Turnover rate for permanent employees & workers (For past 3 years) End -->
@@ -989,7 +842,8 @@
                 <div class="policy">
                   <label for="csr_turnover" class="form-label">(ii) Turnover (in Rs.)</label>
                 </div>
-                <input type="number" class="form-control" id="csr_turnover" name="csr_turnover" required pattern="[0-9]+" placeholder="Enter the Turnover (in Rs.)" maxlength="10">
+                <input type="text" class="form-control" id="csr_turnover" name="csr_turnover" placeholder="Enter the Turnover (in Rs.)" required>
+                <p id="csr_turnoverValidationMessage" style="color: red;"></p>
               </div> 
                <!-- (ii) Turnover (in Rs.) End -->
 
@@ -998,7 +852,8 @@
                 <div class="policy">
                   <label for="csr_networth" class="form-label">(iii) Net worth (in Rs.)</label>
                 </div>
-                <input type="number" class="form-control" id="csr_networth" name="csr_networth" class="form-control" placeholder="Enter Net worth (in Rs.)" required>
+                <input type="text" class="form-control" id="csr_networth" name="csr_networth" placeholder="Enter Net worth (in Rs.)" required>
+                <p id="csr_networthValidationMessage" style="color: red;"></p>
               </div>
               <!-- (iii) Net worth (in Rs) End -->
             </div>

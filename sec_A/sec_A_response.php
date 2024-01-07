@@ -30,7 +30,7 @@ try {
             $corporate_address = $_POST['corporate_address'];
 
             $email = implode(', ', $_POST["email"]);
-            $telephone = $_POST['telephone'];
+            $telephone = implode(', ', $_POST['telephone']);
             $website = $_POST['website'];
             $reporting_fin_year = $_POST['reporting_fin_year'];
             $stock_name = implode(', ', $_POST['stock_name']);
