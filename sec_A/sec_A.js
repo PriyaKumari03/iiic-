@@ -231,6 +231,44 @@
 /*                                                                                                                                      */
 /* ************************************************************************************************************************************ */
 
+    //18a-Details of Employees & Workers
+    function calculatePercentages18a(tableId, rowIndex) {
+        var table = document.getElementById(tableId);
+        var row = table.rows[rowIndex];
+
+        var totalA = parseFloat(row.cells[2].querySelector('input').value) || 0;
+        var maleB = parseFloat(row.cells[3].querySelector('input').value) || 0;
+        var femaleC = parseFloat(row.cells[5].querySelector('input').value) || 0;
+
+        // Calculate percentages and update the respective cells
+        row.cells[4].querySelector('input').value = calculatePercentage(maleB, totalA);
+        row.cells[6].querySelector('input').value = calculatePercentage(femaleC, totalA);
+    }
+
+    // Helper function to calculate percentage
+    function calculatePercentage(part, whole) {
+        return (part / whole * 100).toFixed(2); // Adjust the number of decimal places as needed
+    }
+
+    //18b-Differently abled employees and workers
+    function calculatePercentages18b(tableId, rowIndex) {
+        var table = document.getElementById(tableId);
+        var row = table.rows[rowIndex];
+
+        var totalA = parseFloat(row.cells[2].querySelector('input').value) || 0;
+        var maleB = parseFloat(row.cells[3].querySelector('input').value) || 0;
+        var femaleC = parseFloat(row.cells[5].querySelector('input').value) || 0;
+
+        // Calculate percentages and update the respective cells
+        row.cells[4].querySelector('input').value = calculatePercentage(maleB, totalA);
+        row.cells[6].querySelector('input').value = calculatePercentage(femaleC, totalA);
+    }
+
+    // Helper function to calculate percentage
+    function calculatePercentage(part, whole) {
+        return (part / whole * 100).toFixed(2); // Adjust the number of decimal places as needed
+    }
+    
     //19-Participation/Inclusion/Representation of Women
     function calculate19(input) {
         var row = input.closest('tr'); // Get the closest parent row
@@ -266,6 +304,44 @@
 
         row.cells[9].querySelector('input').value = totalC;
     }
+
+/* ************************************************************************************************************************************ *
+/*                                                                                                                                      */
+/*                           V. Holding, Subsidiary and Associate Companies (including joint ventures)                                  */
+/*                                                                                                                                      */
+/* ************************************************************************************************************************************ */
+
+     //21a- Names of holding / subsidiary / associate companies / joint ventures
+    document.addEventListener('DOMContentLoaded', function () {
+        const holdingInput = document.getElementById('holding1');
+        const holdingValidationMessage = document.getElementById('holdingValidationMessage');
+
+        holdingInput.addEventListener('input', function () {
+            let inputValue = holdingInput.value.trim();
+            const pattern = /^(100(\.0{1,2})?|\d{0,2}(\.\d{0,2})?|0(\.\d{0,2})?)%?$/;
+
+            if (/[^0-9.%]/.test(inputValue)) {
+                // Disallow characters other than digits, '.', and '%'
+                inputValue = inputValue.replace(/[^0-9.%]/g, '');
+                holdingInput.value = inputValue;
+            }
+
+            if ((inputValue.match(/%/g) || []).length > 1) {
+                // Remove additional '%' symbols if more than one is present
+                inputValue = inputValue.replace(/%/g, '');
+                holdingInput.value = inputValue;
+            }
+
+            if (pattern.test(inputValue)) {
+                holdingValidationMessage.textContent = '';
+            } else {
+                holdingValidationMessage.textContent = 'e.g., 25%, 99.5%, 0%.';
+                holdingValidationMessage.style.color = 'red';
+            }
+        });
+    });
+
+
 
 /* ************************************************************************************************************************************ *
 /*                                                                                                                                      */
