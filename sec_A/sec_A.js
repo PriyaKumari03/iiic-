@@ -492,3 +492,13 @@
             rows[i].cells[0].getElementsByTagName("input")[0].value = i + 1;
         }
     }
+
+/* ************************************************************************************************************************************ */
+/*                                                                                                                                      */
+/*                                         Function to make sure you really want to submit the form                                     */
+/*                                                                                                                                      */
+/* ************************************************************************************************************************************ */
+    function confirmSubmission() {
+        // You can add additional validation or actions before final submission
+        return confirm('Are you sure you want to submit the form?');
+    }
