@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Jan 05, 2024 at 05:21 PM
+-- Generation Time: Jan 07, 2024 at 01:26 PM
 -- Server version: 8.2.0
 -- PHP Version: 8.2.13
 
@@ -35,14 +35,14 @@ CREATE TABLE IF NOT EXISTS `section_a_form` (
   `office_address` text,
   `corporate_address` text,
   `email` text CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci,
-  `telephone` varchar(20) DEFAULT NULL,
+  `telephone` text CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci,
   `website` varchar(255) DEFAULT NULL,
-  `reporting_fin_year` int DEFAULT NULL,
+  `reporting_fin_year` text,
   `incorporation_certificate` text,
   `stock_name` varchar(255) DEFAULT NULL,
-  `puc` varchar(255) DEFAULT NULL,
+  `puc` text CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci,
   `poc_name` varchar(255) DEFAULT NULL,
-  `poc_phone` varchar(20) DEFAULT NULL,
+  `poc_phone` text CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci,
   `poc_email` varchar(255) DEFAULT NULL,
   `rep_b` varchar(255) DEFAULT NULL,
   `doba` text,
@@ -57,8 +57,8 @@ CREATE TABLE IF NOT EXISTS `section_a_form` (
   `torpew` text,
   `holding` text,
   `csr_act` text,
-  `csr_turnover` double DEFAULT NULL,
-  `csr_networth` double DEFAULT NULL,
+  `csr_turnover` text,
+  `csr_networth` text,
   `gre` text,
   `overview` text,
   PRIMARY KEY (`cin`)
