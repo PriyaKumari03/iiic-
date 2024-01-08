@@ -49,7 +49,7 @@ function submitForm() {
                 } else if (response.status === 'failure1') {
                     alert(response.message);
                     // Optionally, you can stay on the current page on failure:
-                    window.location.href = "../sec_C/sec_C.php";
+                    window.location.href = "../dummy_ack.php";
                 } else if (response.status === 'failure2') {
                     alert(response.message);
                     // Optionally, you can stay on the current page on failure:

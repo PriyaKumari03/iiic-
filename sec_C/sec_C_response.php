@@ -290,7 +290,6 @@ try {
                             //ESSENTIAL INDICATORS
                             '2_1_rdPercentage' => $rdPercentage,
                             '2_2_sustainableSourcing2' => $sustainableSourcing2,
-                            '2_3_sustainableSourcingPercentage' => $sustainableSourcingPercentage,
                             //removed
                             '2_4_reclaimProcesses2' => $reclaimProcesses2,
                             '2_5_eprApplicable' => $eprApplicable,

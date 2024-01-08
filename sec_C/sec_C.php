@@ -4680,7 +4680,7 @@
                         <!--Data breaches end-->
                     </div>
                     <button type="button" class="btn-primary" onclick="navigate(-1)">Previous</button>
-                    <button type="submit" class="btn-primary" id="submit">Submit</button>
+                    <button type="submit" class="btn btn-primary" onclick="return confirmSubmission()">Submit</button>
                 </div>
             </form>
         </div>
