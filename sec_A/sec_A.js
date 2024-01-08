@@ -279,31 +279,6 @@
         row.cells[3].querySelector('input').value = per;
     }
 
-    //20-Turnover rate for permanent employees & workers (For past 3 years)
-    function calculate20a(input) {
-        var row = input.closest('tr'); // Get the closest parent row
-        var male = parseInt(row.cells[1].querySelector('input').value) || 0;
-        var female = parseInt(row.cells[2].querySelector('input').value) || 0;
-        var totalA = male + female;
-
-        row.cells[3].querySelector('input').value = totalA;
-    }
-    function calculate20b(input) {
-        var row = input.closest('tr'); // Get the closest parent row
-        var male = parseInt(row.cells[4].querySelector('input').value) || 0;
-        var female = parseInt(row.cells[5].querySelector('input').value) || 0;
-        var totalB = male + female;
-
-        row.cells[6].querySelector('input').value = totalB;
-    }
-    function calculate20c(input) {
-        var row = input.closest('tr'); // Get the closest parent row
-        var male = parseInt(row.cells[7].querySelector('input').value) || 0;
-        var female = parseInt(row.cells[8].querySelector('input').value) || 0;
-        var totalC = male + female;
-
-        row.cells[9].querySelector('input').value = totalC;
-    }
 
 /* ************************************************************************************************************************************ *
 /*                                                                                                                                      */

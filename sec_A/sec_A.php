@@ -676,7 +676,7 @@
                   </div>
                   <!-- Participation/Inclusion/Representation of Women End -->
 
-                  <!--20-Turnover rate for permanent employees & workers (For past 3 years) Start -->
+                  <!-- 20 Turnover rate for permanent employees & workers (For past 3 years) Start -->
                   <div class="mb-3">
                     <div class="policy">
                       <br><label for="torpew" class="form-label"> 20. &nbsp;Turnover rate for permanent employees and workers<p style="padding-left:2.5%;">(Disclose trends for the past 3 years)</p></label>
@@ -684,45 +684,45 @@
                     <div id="torpew" class="responsive-table">
                       <table id="p_torpew">
                         <tr>
-                          <th class="form-label" colspan="1" rowspan="2"></th>
-                          <th class="form-label" colspan="3" rowspan="1">FY _____<br>(Turnover rate in current<br> FY)</th>
-                          <th class="form-label" colspan="3" rowspan="1">FY _____<br>(Turnover rate in<br> previous FY)</th>
-                          <th class="form-label" colspan="3" rowspan="1">FY _____<br>(Turnover rate in the year prior to the<br> previous FY)</th>
+                          <th class="form-label" rowspan="2"></th>
+                          <th class="form-label" colspan="3">FY _____<br>(Turnover rate in current<br> FY)</th>
+                          <th class="form-label" colspan="3">FY _____<br>(Turnover rate in<br> previous FY)</th>
+                          <th class="form-label" colspan="3">FY _____<br>(Turnover rate in the year prior to the<br> previous FY)</th>
                         </tr>
                         <tr>
                           <th class="form-label">Male</th>
-                          <th class="form-label">Female
+                          <th class="form-label">Female</th>
                           <th class="form-label">Total</th>
                           <th class="form-label">Male</th>
-                          <th class="form-label">Female
+                          <th class="form-label">Female</th>
                           <th class="form-label">Total</th>
                           <th class="form-label">Male</th>
-                          <th class="form-label">Female
+                          <th class="form-label">Female</th>
                           <th class="form-label">Total</th>
                         </tr>
                         <tr>
                           <th class="form-label">Permanent Employees</th>
-                          <td><input type="number" id="torpew" name="torpew[]" class="form-control" oninput="calculate20a(this)" required></td>
-                          <td><input type="number" id="torpew" name="torpew[]" class="form-control" oninput="calculate20a(this)" required></td>
-                          <td><input type="number" id="torpew" name="torpew[]" class="form-control" readonly></td>
-                          <td><input type="number" id="torpew" name="torpew[]" class="form-control" oninput="calculate20b(this)" required></td>
-                          <td><input type="number" id="torpew" name="torpew[]" class="form-control" oninput="calculate20b(this)" required></td>
-                          <td><input type="number" id="torpew" name="torpew[]" class="form-control" readonly></td>
-                          <td><input type="number" id="torpew" name="torpew[]" class="form-control" oninput="calculate20c(this)" required></td>
-                          <td><input type="number" id="torpew" name="torpew[]" class="form-control" oninput="calculate20c(this)" required></td>
-                          <td><input type="number" id="torpew" name="torpew[]" class="form-control" readonly></td>
+                          <td><input type="number" step="0.01" id="torpew" name="torpew[]" class="form-control" required></td>
+                          <td><input type="number" step="0.01" id="torpew" name="torpew[]" class="form-control" required></td>
+                          <td><input type="number" step="0.01" id="torpew" name="torpew[]" class="form-control" required></td>
+                          <td><input type="number" step="0.01" id="torpew" name="torpew[]" class="form-control" required></td>
+                          <td><input type="number" step="0.01" id="torpew" name="torpew[]" class="form-control" required></td>
+                          <td><input type="number" step="0.01" id="torpew" name="torpew[]" class="form-control" required></td>
+                          <td><input type="number" step="0.01" id="torpew" name="torpew[]" class="form-control" required></td>
+                          <td><input type="number" step="0.01" id="torpew" name="torpew[]" class="form-control" required></td>
+                          <td><input type="number" step="0.01" id="torpew" name="torpew[]" class="form-control" required></td>
                         </tr>
                         <tr>
                           <th class="form-label">Permanent Workers</th>
-                          <td><input type="number" id="torpew" name="torpew[]" class="form-control" oninput="calculate20a(this)" required></td>
-                          <td><input type="number" id="torpew" name="torpew[]" class="form-control" oninput="calculate20a(this)" required></td>
-                          <td><input type="number" id="torpew" name="torpew[]" class="form-control" readonly></td>
-                          <td><input type="number" id="torpew" name="torpew[]" class="form-control" oninput="calculate20b(this)" required></td>
-                          <td><input type="number" id="torpew" name="torpew[]" class="form-control" oninput="calculate20b(this)" required></td>
-                          <td><input type="number" id="torpew" name="torpew[]" class="form-control" readonly></td>
-                          <td><input type="number" id="torpew" name="torpew[]" class="form-control" oninput="calculate20c(this)" required></td>
-                          <td><input type="number" id="torpew" name="torpew[]" class="form-control" oninput="calculate20c(this)" required></td>
-                          <td><input type="number" id="torpew" name="torpew[]" class="form-control" readonly></td>
+                          <td><input type="number" step="0.01" id="torpew" name="torpew[]" class="form-control" required></td>
+                          <td><input type="number" step="0.01" id="torpew" name="torpew[]" class="form-control" required></td>
+                          <td><input type="number" step="0.01" id="torpew" name="torpew[]" class="form-control" required></td>
+                          <td><input type="number" step="0.01" id="torpew" name="torpew[]" class="form-control" required></td>
+                          <td><input type="number" step="0.01" id="torpew" name="torpew[]" class="form-control" required></td>
+                          <td><input type="number" step="0.01" id="torpew" name="torpew[]" class="form-control" required></td>
+                          <td><input type="number" step="0.01" id="torpew" name="torpew[]" class="form-control" required></td>
+                          <td><input type="number" step="0.01" id="torpew" name="torpew[]" class="form-control" required></td>
+                          <td><input type="number" step="0.01" id="torpew" name="torpew[]" class="form-control" required></td>
                         </tr>
                       </table>
                     </div>
