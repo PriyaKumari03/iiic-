@@ -131,7 +131,7 @@
                         </div>
                         <div class="policy">
                             <label for="telephone2" class="form-label">&nbsp;Telephone (Not Mandatory)</label>
-                            <input type="text" class="form-control" id="telephone" name="telephone[]" placeholder="Telephone(Optional)" required>
+                            <input type="text" class="form-control" id="telephone" name="telephone[]" placeholder="Telephone(Optional)">
                             <span id="telephoneValidationMessage2" style="color: red;"></span>
                         </div>
                     </div>
