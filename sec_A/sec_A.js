@@ -142,7 +142,7 @@
 
     pucInput.addEventListener("input", function () {
         var inputValue = pucInput.value.trim();
-        var uomRegex = /^(Rs\.?|Rs-?|Rs)?\s*((\d+(,\d{2})*(,\d{1,3})*(\.\d+)?))\s*(Hundred|Thousand|Lakh|Crore|Million|Billion|Trillion|Hundreds|Thousands|Lakhs|Crores|Millions|Billions|Trillions)?$/i;
+        var uomRegex = /^(Rs\.?|Rs-?|Rs)?\s*((\d+(,\d{2})*(,\d{1,3})*(\.\d+)?|\d+(\.\d+)?))\s*(Hundred|Thousand|Lakh|Crore|Million|Billion|Trillion|Hundreds|Thousands|Lakhs|Crores|Millions|Billions|Trillions)$/i;
 
         if (uomRegex.test(inputValue)) {
             pucValidationMessage.textContent = "Paid-up capital format is valid.";
