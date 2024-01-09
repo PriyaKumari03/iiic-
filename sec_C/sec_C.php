@@ -280,7 +280,7 @@
                             <div id="conflictComplaints" class="responsive-table">
                                 <table id="p_conflictComplaints">
                                     <tr>
-                                        <th  class="form-label" rowspan=2></th>
+                                        <th  class="form-label" rowspan="2"></th>
                                         <th  class="form-label" colspan="2">FY___(Current Financial Year)</th>
                                         <th  class="form-label" colspan="2">FY___(Previous Financial Year)</th>
                                     </tr>
@@ -865,11 +865,42 @@
                                 </table>
                                 <!--Function to calculate percentages-->
                                 <script>
-                                    // Function to calculate percentages
-                                    function calculatePercentages1a(tableId, rowIndex) {
+                                // Function to calculate column totals for a specific section of the table
+                                    function calculateColumnTotalsForSection1a(tableId, startRowIndex, endRowIndex, totalRowIndex) {
                                         var table = document.getElementById(tableId);
-                                        var row = table.rows[rowIndex];
-                                        
+    
+                                        // Object to hold the sum of each column
+                                        var columnSums = {};
+
+                                        // Initialize column sums
+                                        for (var i = 1; i < table.rows[startRowIndex].cells.length; i++) {
+                                            columnSums[i] = 0;
+                                        }
+
+                                        // Calculate sums for each column
+                                        for (var rowIndex = startRowIndex; rowIndex <= endRowIndex; rowIndex++) {
+                                            var cells = table.rows[rowIndex].cells;
+                                            for (var colIndex = 1; colIndex < cells.length; colIndex++) {
+                                                var input = cells[colIndex].querySelector('input');
+                                                if (input && !input.hasAttribute('readonly')) { // Sum only the input fields that are not readonly
+                                                    var value = parseFloat(input.value) || 0;
+                                                    columnSums[colIndex] += value;
+                                                }
+                                            }
+                                        }
+
+                                        // Update the totals in the 'Total' row
+                                        var totalCells = table.rows[totalRowIndex].cells;
+                                        for (var colIndex = 1; colIndex < totalCells.length; colIndex++) {
+                                            if (columnSums[colIndex] !== undefined) { // Update only if a sum has been calculated
+                                                var totalInput = totalCells[colIndex].querySelector('input');
+                                                if (totalInput) { // If there's an input field, update it
+                                                    totalInput.value = columnSums[colIndex];
+                                                }
+                                            }
+                                        }
+                                        var row = table.rows[totalRowIndex];
+        
                                         var total = parseFloat(row.cells[1].querySelector('input').value) || 0;
                                         var noB = parseFloat(row.cells[2].querySelector('input').value) || 0;
                                         var noC = parseFloat(row.cells[4].querySelector('input').value) || 0;
@@ -885,9 +916,37 @@
                                         row.cells[11].querySelector('input').value = calculatePercentage(noF, total);
                                     }
 
-                                    // Helper function to calculate percentage
-                                    function calculatePercentage(part, whole) {
-                                        return (part / whole * 100).toFixed(2); // Adjust the number of decimal places as needed
+                                    // Calculate totals for each section when the page loads and when values change
+                                    window.onload = function() {
+                                        calculateSectionTotals1a();
+                                    };
+
+                                    function calculateSectionTotals1a() {
+                                        // 'Permanent employees' section is from row 4 to 5, and its 'Total' is at row 6
+                                        calculateColumnTotalsForSection1a('p_employeeWellbeingDetails', 4, 5, 6);
+                                        // 'Other than Permanent employees' section is from row 8 to 9, and its 'Total' is at row 10
+                                        calculateColumnTotalsForSection1a('p_employeeWellbeingDetails', 8, 9, 10);
+                                    }
+
+                                    // Function to calculate percentages
+                                    function calculatePercentages1a(tableId, rowIndex) {
+                                        var table = document.getElementById(tableId);
+                                        var row = table.rows[rowIndex];
+        
+                                        var total = parseFloat(row.cells[1].querySelector('input').value) || 0;
+                                        var noB = parseFloat(row.cells[2].querySelector('input').value) || 0;
+                                        var noC = parseFloat(row.cells[4].querySelector('input').value) || 0;
+                                        var noD = parseFloat(row.cells[6].querySelector('input').value) || 0;
+                                        var noE = parseFloat(row.cells[8].querySelector('input').value) || 0;
+                                        var noF = parseFloat(row.cells[10].querySelector('input').value) || 0;
+
+                                        // Calculate percentages and update the respective cells
+                                        row.cells[3].querySelector('input').value = calculatePercentage(noB, total);
+                                        row.cells[5].querySelector('input').value = calculatePercentage(noC, total);
+                                        row.cells[7].querySelector('input').value = calculatePercentage(noD, total);
+                                        row.cells[9].querySelector('input').value = calculatePercentage(noE, total);
+                                        row.cells[11].querySelector('input').value = calculatePercentage(noF, total);
+                                        calculateSectionTotals1a();
                                     }
                                 </script>
                             </div>
@@ -931,7 +990,7 @@
                                     <tr>
                                         <th class="form-label">Male</th>
                                         <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 4)"></td>
-                                        <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_workerWellbeingDetails', 4)"></td>
+                                        <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 4)"></td>
                                         <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
                                         <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 4)"></td>
                                         <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
@@ -945,7 +1004,7 @@
                                     <tr>
                                         <th class="form-label">Female</th>
                                         <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 5)"></td>
-                                        <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_workerWellbeingDetails', 5)"></td>
+                                        <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 5)"></td>
                                         <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
                                         <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 5)"></td>
                                         <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
@@ -958,16 +1017,16 @@
                                     </tr>
                                     <tr>
                                         <th class="form-label">Total</th>
-                                        <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 6)"></td>
-                                        <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_workerWellbeingDetails', 6)"></td>
                                         <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 6)"></td>
                                         <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 6)"></td>
                                         <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 6)"></td>
                                         <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 6)"></td>
+                                        <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
+                                        <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
+                                        <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
+                                        <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
+                                        <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
+                                        <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
                                         <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
                                     </tr>
                                     <tr>
@@ -976,7 +1035,7 @@
                                     <tr>
                                         <th class="form-label">Male</th>
                                         <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 8)"></td>
-                                        <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_workerWellbeingDetails', 8)"></td>
+                                        <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 8)"></td>
                                         <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
                                         <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 8)"></td>
                                         <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
@@ -990,7 +1049,7 @@
                                     <tr>
                                         <th class="form-label">Female</th>
                                         <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 9)"></td>
-                                        <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_workerWellbeingDetails', 9)"></td>
+                                        <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 9)"></td>
                                         <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
                                         <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 9)"></td>
                                         <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
@@ -1003,21 +1062,84 @@
                                     </tr>
                                     <tr>
                                         <th class="form-label">Total</th>
-                                        <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 10)"></td>
-                                        <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_workerWellbeingDetails', 10)"></td>
                                         <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 10)"></td>
                                         <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 10)"></td>
                                         <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 10)"></td>
                                         <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 10)"></td>
+                                        <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
+                                        <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
+                                        <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
+                                        <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
+                                        <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
+                                        <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
                                         <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
                                     </tr>
                                 </table>
                                 <!--Function to calculate percentages-->
                                 <script>
+                                    // Function to calculate column totals for a specific section of the table
+                                    function calculateColumnTotalsForSection1b(tableId, startRowIndex, endRowIndex, totalRowIndex) {
+                                        var table = document.getElementById(tableId);
+    
+                                        // Object to hold the sum of each column
+                                        var columnSums = {};
+
+                                        // Initialize column sums
+                                        for (var i = 1; i < table.rows[startRowIndex].cells.length; i++) {
+                                            columnSums[i] = 0;
+                                        }
+
+                                        // Calculate sums for each column
+                                        for (var rowIndex = startRowIndex; rowIndex <= endRowIndex; rowIndex++) {
+                                            var cells = table.rows[rowIndex].cells;
+                                            for (var colIndex = 1; colIndex < cells.length; colIndex++) {
+                                                var input = cells[colIndex].querySelector('input');
+                                                if (input && !input.hasAttribute('readonly')) { // Sum only the input fields that are not readonly
+                                                    var value = parseFloat(input.value) || 0;
+                                                    columnSums[colIndex] += value;
+                                                }
+                                            }
+                                        }
+
+                                        // Update the totals in the 'Total' row
+                                        var totalCells = table.rows[totalRowIndex].cells;
+                                        for (var colIndex = 1; colIndex < totalCells.length; colIndex++) {
+                                            if (columnSums[colIndex] !== undefined) { // Update only if a sum has been calculated
+                                                var totalInput = totalCells[colIndex].querySelector('input');
+                                                if (totalInput) { // If there's an input field, update it
+                                                    totalInput.value = columnSums[colIndex];
+                                                }
+                                            }
+                                        }
+                                        var row = table.rows[totalRowIndex];
+        
+                                        var total = parseFloat(row.cells[1].querySelector('input').value) || 0;
+                                        var noB = parseFloat(row.cells[2].querySelector('input').value) || 0;
+                                        var noC = parseFloat(row.cells[4].querySelector('input').value) || 0;
+                                        var noD = parseFloat(row.cells[6].querySelector('input').value) || 0;
+                                        var noE = parseFloat(row.cells[8].querySelector('input').value) || 0;
+                                        var noF = parseFloat(row.cells[10].querySelector('input').value) || 0;
+
+                                        // Calculate percentages and update the respective cells
+                                        row.cells[3].querySelector('input').value = calculatePercentage(noB, total);
+                                        row.cells[5].querySelector('input').value = calculatePercentage(noC, total);
+                                        row.cells[7].querySelector('input').value = calculatePercentage(noD, total);
+                                        row.cells[9].querySelector('input').value = calculatePercentage(noE, total);
+                                        row.cells[11].querySelector('input').value = calculatePercentage(noF, total);
+                                    }
+
+                                    // Calculate totals for each section when the page loads and when values change
+                                    window.onload = function() {
+                                        calculateSectionTotals1b();
+                                    };
+
+                                    function calculateSectionTotals1b() {
+                                        // 'Permanent employees' section is from row 4 to 5, and its 'Total' is at row 6
+                                        calculateColumnTotalsForSection1b('p_workerWellbeingDetails', 4, 5, 6);
+                                        // 'Other than Permanent employees' section is from row 8 to 9, and its 'Total' is at row 10
+                                        calculateColumnTotalsForSection1b('p_workerWellbeingDetails', 8, 9, 10);
+                                    }
+
                                     // Function to calculate percentages
                                     function calculatePercentages1b(tableId, rowIndex) {
                                         var table = document.getElementById(tableId);
@@ -1036,11 +1158,7 @@
                                         row.cells[7].querySelector('input').value = calculatePercentage(noD, total);
                                         row.cells[9].querySelector('input').value = calculatePercentage(noE, total);
                                         row.cells[11].querySelector('input').value = calculatePercentage(noF, total);
-                                    }
-
-                                    // Helper function to calculate percentage
-                                    function calculatePercentage(part, whole) {
-                                        return (part / whole * 100).toFixed(2); // Adjust the number of decimal places as needed
+                                        calculateSectionTotals1b();
                                     }
                                 </script>
                             </div>
@@ -1147,17 +1265,17 @@
                                     </tr>
                                     <tr>
                                         <th align="center" class="form-label">Male</th>
-                                        <td><input type="number" id="returnRetentionRates" name="returnRetentionRates[]" class="form-control" ></td>
-                                        <td><input type="number" id="returnRetentionRates" name="returnRetentionRates[]" class="form-control" ></td>
-                                        <td><input type="number" id="returnRetentionRates" name="returnRetentionRates[]" class="form-control" ></td>
-                                        <td><input type="number" id="returnRetentionRates" name="returnRetentionRates[]" class="form-control" ></td>
+                                        <td><input type="number" id="returnRetentionRates" name="returnRetentionRates[]" class="form-control" oninput="calculateSectionTotals5()"></td>
+                                        <td><input type="number" id="returnRetentionRates" name="returnRetentionRates[]" class="form-control" oninput="calculateSectionTotals5()"></td>
+                                        <td><input type="number" id="returnRetentionRates" name="returnRetentionRates[]" class="form-control" oninput="calculateSectionTotals5()"></td>
+                                        <td><input type="number" id="returnRetentionRates" name="returnRetentionRates[]" class="form-control" oninput="calculateSectionTotals5()"></td>
                                     </tr>
                                     <tr>
                                         <th align="center" class="form-label">Female</th>
-                                        <td><input type="number" id="returnRetentionRates" name="returnRetentionRates[]" class="form-control" ></td>
-                                        <td><input type="number" id="returnRetentionRates" name="returnRetentionRates[]" class="form-control" ></td>
-                                        <td><input type="number" id="returnRetentionRates" name="returnRetentionRates[]" class="form-control" ></td>
-                                        <td><input type="number" id="returnRetentionRates" name="returnRetentionRates[]" class="form-control" ></td>
+                                        <td><input type="number" id="returnRetentionRates" name="returnRetentionRates[]" class="form-control" oninput="calculateSectionTotals5()"></td>
+                                        <td><input type="number" id="returnRetentionRates" name="returnRetentionRates[]" class="form-control" oninput="calculateSectionTotals5()"></td>
+                                        <td><input type="number" id="returnRetentionRates" name="returnRetentionRates[]" class="form-control" oninput="calculateSectionTotals5()"></td>
+                                        <td><input type="number" id="returnRetentionRates" name="returnRetentionRates[]" class="form-control" oninput="calculateSectionTotals5()"></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label">Total</th>
@@ -1171,30 +1289,50 @@
                         </div>
                         <!--Function to calculate percentages-->
                         <script>
-                            document.addEventListener('DOMContentLoaded', function () {
-                                var inputs = document.querySelectorAll('input[name="returnRetentionRates[]"]');
-                                inputs.forEach(function (input) {
-                                    input.addEventListener('input', calculateTotals);
-                                });
+                        function calculateColumnTotalsForSection5(tableId, startRowIndex, endRowIndex, totalRowIndex) {
+                                        var table = document.getElementById(tableId);
+    
+                                        // Object to hold the sum of each column
+                                        var columnSums = {};
 
-                                calculateTotals();
-                            });
-
-                            function calculateTotals() {
-                                for (var i = 0; i < 4; i++) {
-                                    var total = 0;
-
-                                    var inputs = document.querySelectorAll('input[name="returnRetentionRates[]"]');
-                                    inputs.forEach(function (input, index) {
-                                        if (index % 4 === i) {
-                                            total += parseFloat(input.value) || 0;
+                                        // Initialize column sums
+                                        for (var i = 1; i < table.rows[startRowIndex].cells.length; i++) {
+                                            columnSums[i] = 0;
                                         }
-                                    });
 
-                                    var totalCell = document.querySelectorAll('.total-cell')[i].querySelector('input');
-                                    totalCell.value = total;
-                                }
-                            }
+                                        // Calculate sums for each column
+                                        for (var rowIndex = startRowIndex; rowIndex <= endRowIndex; rowIndex++) {
+                                            var cells = table.rows[rowIndex].cells;
+                                            for (var colIndex = 1; colIndex < cells.length; colIndex++) {
+                                                var input = cells[colIndex].querySelector('input');
+                                                if (input && !input.hasAttribute('readonly')) { // Sum only the input fields that are not readonly
+                                                    var value = parseFloat(input.value) || 0;
+                                                    columnSums[colIndex] += value;
+                                                }
+                                            }
+                                        }
+
+                                        // Update the totals in the 'Total' row
+                                        var totalCells = table.rows[totalRowIndex].cells;
+                                        for (var colIndex = 1; colIndex < totalCells.length; colIndex++) {
+                                            if (columnSums[colIndex] !== undefined) { // Update only if a sum has been calculated
+                                                var totalInput = totalCells[colIndex].querySelector('input');
+                                                if (totalInput) { // If there's an input field, update it
+                                                    totalInput.value = columnSums[colIndex];
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                    // Calculate totals for each section when the page loads and when values change
+                                    window.onload = function() {
+                                        calculateSectionTotals5();
+                                    };
+
+                                    function calculateSectionTotals5() {
+                                        // 'Permanent employees' section is from row 2 to 3, and its 'Total' is at row 4
+                                        calculateColumnTotalsForSection5('p_returnRetentionRates', 2, 3, 4);
+                                    }
                         </script>
                         <!--Return to work and Retention rates of permanent employees and workers that took parental leave end-->
 
@@ -1252,11 +1390,11 @@
                                     </tr>
                                     <tr>
                                         <th class="form-label">Total Permanent Employees</th>
-                                        <td><input type="number" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" oninput="calculatePercentages7('p_unionMembershipPercentage', 2)"></td>
-                                        <td><input type="number" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" oninput="calculatePercentages7('p_unionMembershipPercentage', 2)"></td>
                                         <td><input type="number" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" oninput="calculatePercentages7('p_unionMembershipPercentage', 2)"></td>
-                                        <td><input type="number" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" oninput="calculatePercentages7('p_unionMembershipPercentage', 2)"></td>
+                                        <td><input type="number" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" readonly></td>
+                                        <td><input type="number" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" readonly></td>
+                                        <td><input type="number" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" readonly></td>
+                                        <td><input type="number" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" readonly></td>
                                         <td><input type="number" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" readonly></td>
                                     </tr>
                                     <tr>
@@ -1279,11 +1417,11 @@
                                     </tr>
                                     <tr>
                                         <th class="form-label">Total Permanent Workers</th>
-                                        <td><input type="number" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" oninput="calculatePercentages7('p_unionMembershipPercentage', 5)"></td>
-                                        <td><input type="number" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" oninput="calculatePercentages7('p_unionMembershipPercentage', 5)"></td>
                                         <td><input type="number" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" oninput="calculatePercentages7('p_unionMembershipPercentage', 5)"></td>
-                                        <td><input type="number" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" oninput="calculatePercentages7('p_unionMembershipPercentage', 5)"></td>
+                                        <td><input type="number" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" readonly></td>
+                                        <td><input type="number" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" readonly></td>
+                                        <td><input type="number" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" readonly></td>
+                                        <td><input type="number" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" readonly></td>
                                         <td><input type="number" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" readonly></td>
                                     </tr>
                                     <tr>
@@ -1307,6 +1445,63 @@
                                 </table>
                                 <!--Function to calculate percentages-->
                                 <script>
+                                    // Function to calculate column totals for a specific section of the table
+                                    function calculateColumnTotalsForSection7(tableId, startRowIndex, endRowIndex, totalRowIndex) {
+                                        var table = document.getElementById(tableId);
+    
+                                        // Object to hold the sum of each column
+                                        var columnSums = {};
+
+                                        // Initialize column sums
+                                        for (var i = 1; i < table.rows[startRowIndex].cells.length; i++) {
+                                            columnSums[i] = 0;
+                                        }
+
+                                        // Calculate sums for each column
+                                        for (var rowIndex = startRowIndex; rowIndex <= endRowIndex; rowIndex++) {
+                                            var cells = table.rows[rowIndex].cells;
+                                            for (var colIndex = 1; colIndex < cells.length; colIndex++) {
+                                                var input = cells[colIndex].querySelector('input');
+                                                if (input && !input.hasAttribute('readonly')) { // Sum only the input fields that are not readonly
+                                                    var value = parseFloat(input.value) || 0;
+                                                    columnSums[colIndex] += value;
+                                                }
+                                            }
+                                        }
+
+                                        // Update the totals in the 'Total' row
+                                        var totalCells = table.rows[totalRowIndex].cells;
+                                        for (var colIndex = 1; colIndex < totalCells.length; colIndex++) {
+                                            if (columnSums[colIndex] !== undefined) { // Update only if a sum has been calculated
+                                                var totalInput = totalCells[colIndex].querySelector('input');
+                                                if (totalInput) { // If there's an input field, update it
+                                                    totalInput.value = columnSums[colIndex];
+                                                }
+                                            }
+                                        }
+                                        var row = table.rows[totalRowIndex];
+        
+                                        var A = parseFloat(row.cells[1].querySelector('input').value) || 0;
+                                        var B= parseFloat(row.cells[2].querySelector('input').value) || 0;
+                                        var C = parseFloat(row.cells[4].querySelector('input').value) || 0;
+                                        var D = parseFloat(row.cells[5].querySelector('input').value) || 0;
+
+                                        // Calculate percentages and update the respective cells
+                                        row.cells[3].querySelector('input').value = calculatePercentage(B, A);
+                                        row.cells[6].querySelector('input').value = calculatePercentage(D, C);
+                                    }
+
+                                    // Calculate totals for each section when the page loads and when values change
+                                    window.onload = function() {
+                                        calculateSectionTotals7();
+                                    };
+
+                                    function calculateSectionTotals7() {
+                                        // 'Permanent employees' section is from row 4 to 5, and its 'Total' is at row 6
+                                        calculateColumnTotalsForSection7('p_unionMembershipPercentage', 3, 4, 2);
+                                        // 'Other than Permanent employees' section is from row 8 to 9, and its 'Total' is at row 10
+                                        calculateColumnTotalsForSection7('p_unionMembershipPercentage', 6, 7, 5);
+                                    }
                                     // Function to calculate percentages
                                     function calculatePercentages7(tableId, rowIndex) {
                                         var table = document.getElementById(tableId);
@@ -1320,11 +1515,7 @@
                                         // Calculate percentages and update the respective cells
                                         row.cells[3].querySelector('input').value = calculatePercentage(B, A);
                                         row.cells[6].querySelector('input').value = calculatePercentage(D, C);
-                                    }
-
-                                    // Helper function to calculate percentage
-                                    function calculatePercentage(part, whole) {
-                                        return (part / whole * 100).toFixed(2); // Adjust the number of decimal places as needed
+                                        calculateSectionTotals7();
                                     }
                                 </script>
                             </div>
@@ -1393,15 +1584,15 @@
                                     </tr>
                                     <tr>
                                         <th class="form-label">Total</th>
-                                        <td><input type="number" id="trainingDetails" name="trainingDetails[]" class="form-control" oninput="calculatePercentages8('p_trainingDetails', 6)"></td>
-                                        <td><input type="number" id="trainingDetails" name="trainingDetails[]" class="form-control" oninput="calculatePercentages8('p_trainingDetails', 6)"></td>
                                         <td><input type="number" id="trainingDetails" name="trainingDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="trainingDetails" name="trainingDetails[]" class="form-control" oninput="calculatePercentages8('p_trainingDetails', 6)"></td>
                                         <td><input type="number" id="trainingDetails" name="trainingDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="trainingDetails" name="trainingDetails[]" class="form-control" oninput="calculatePercentages8('p_trainingDetails', 6)"></td>
-                                        <td><input type="number" id="trainingDetails" name="trainingDetails[]" class="form-control" oninput="calculatePercentages8('p_trainingDetails', 6)"></td>
                                         <td><input type="number" id="trainingDetails" name="trainingDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="trainingDetails" name="trainingDetails[]" class="form-control" oninput="calculatePercentages8('p_trainingDetails', 6)"></td>
+                                        <td><input type="number" id="trainingDetails" name="trainingDetails[]" class="form-control" readonly></td>
+                                        <td><input type="number" id="trainingDetails" name="trainingDetails[]" class="form-control" readonly></td>
+                                        <td><input type="number" id="trainingDetails" name="trainingDetails[]" class="form-control" readonly></td>
+                                        <td><input type="number" id="trainingDetails" name="trainingDetails[]" class="form-control" readonly></td>
+                                        <td><input type="number" id="trainingDetails" name="trainingDetails[]" class="form-control" readonly></td>
+                                        <td><input type="number" id="trainingDetails" name="trainingDetails[]" class="form-control" readonly></td>
                                         <td><input type="number" id="trainingDetails" name="trainingDetails[]" class="form-control" readonly></td>
                                     </tr>
                                     <tr>
@@ -1435,20 +1626,82 @@
                                     </tr>
                                     <tr>
                                         <th class="form-label">Total</th>
-                                        <td><input type="number" id="trainingDetails" name="trainingDetails[]" class="form-control" oninput="calculatePercentages8('p_trainingDetails', 10)"></td>
-                                        <td><input type="number" id="trainingDetails" name="trainingDetails[]" class="form-control" oninput="calculatePercentages8('p_trainingDetails', 10)"></td>
                                         <td><input type="number" id="trainingDetails" name="trainingDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="trainingDetails" name="trainingDetails[]" class="form-control" oninput="calculatePercentages8('p_trainingDetails', 10)"></td>
                                         <td><input type="number" id="trainingDetails" name="trainingDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="trainingDetails" name="trainingDetails[]" class="form-control" oninput="calculatePercentages8('p_trainingDetails', 10)"></td>
-                                        <td><input type="number" id="trainingDetails" name="trainingDetails[]" class="form-control" oninput="calculatePercentages8('p_trainingDetails', 10)"></td>
                                         <td><input type="number" id="trainingDetails" name="trainingDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="trainingDetails" name="trainingDetails[]" class="form-control" oninput="calculatePercentages8('p_trainingDetails', 10)"></td>
+                                        <td><input type="number" id="trainingDetails" name="trainingDetails[]" class="form-control" readonly></td>
+                                        <td><input type="number" id="trainingDetails" name="trainingDetails[]" class="form-control" readonly></td>
+                                        <td><input type="number" id="trainingDetails" name="trainingDetails[]" class="form-control" readonly></td>
+                                        <td><input type="number" id="trainingDetails" name="trainingDetails[]" class="form-control" readonly></td>
+                                        <td><input type="number" id="trainingDetails" name="trainingDetails[]" class="form-control" readonly></td>
+                                        <td><input type="number" id="trainingDetails" name="trainingDetails[]" class="form-control" readonly></td>
                                         <td><input type="number" id="trainingDetails" name="trainingDetails[]" class="form-control" readonly></td>
                                     </tr>
                                 </table>
                                 <!--Function to calculate percentages-->
                                 <script>
+                                    // Function to calculate column totals for a specific section of the table
+                                    function calculateColumnTotalsForSection8(tableId, startRowIndex, endRowIndex, totalRowIndex) {
+                                        var table = document.getElementById(tableId);
+    
+                                        // Object to hold the sum of each column
+                                        var columnSums = {};
+
+                                        // Initialize column sums
+                                        for (var i = 1; i < table.rows[startRowIndex].cells.length; i++) {
+                                            columnSums[i] = 0;
+                                        }
+
+                                        // Calculate sums for each column
+                                        for (var rowIndex = startRowIndex; rowIndex <= endRowIndex; rowIndex++) {
+                                            var cells = table.rows[rowIndex].cells;
+                                            for (var colIndex = 1; colIndex < cells.length; colIndex++) {
+                                                var input = cells[colIndex].querySelector('input');
+                                                if (input && !input.hasAttribute('readonly')) { // Sum only the input fields that are not readonly
+                                                    var value = parseFloat(input.value) || 0;
+                                                    columnSums[colIndex] += value;
+                                                }
+                                            }
+                                        }
+
+                                        // Update the totals in the 'Total' row
+                                        var totalCells = table.rows[totalRowIndex].cells;
+                                        for (var colIndex = 1; colIndex < totalCells.length; colIndex++) {
+                                            if (columnSums[colIndex] !== undefined) { // Update only if a sum has been calculated
+                                                var totalInput = totalCells[colIndex].querySelector('input');
+                                                if (totalInput) { // If there's an input field, update it
+                                                    totalInput.value = columnSums[colIndex];
+                                                }
+                                            }
+                                        }
+                                        var row = table.rows[totalRowIndex];
+                                        
+                                        var totalA = parseFloat(row.cells[1].querySelector('input').value) || 0;
+                                        var noB = parseFloat(row.cells[2].querySelector('input').value) || 0;
+                                        var noC = parseFloat(row.cells[4].querySelector('input').value) || 0;
+                                        var totalD = parseFloat(row.cells[6].querySelector('input').value) || 0;
+                                        var noE = parseFloat(row.cells[7].querySelector('input').value) || 0;
+                                        var noF = parseFloat(row.cells[9].querySelector('input').value) || 0;
+
+                                        // Calculate percentages and update the respective cells
+                                        row.cells[3].querySelector('input').value = calculatePercentage(noB, totalA);
+                                        row.cells[5].querySelector('input').value = calculatePercentage(noC, totalA);
+                                        row.cells[8].querySelector('input').value = calculatePercentage(noE, totalD);
+                                        row.cells[10].querySelector('input').value = calculatePercentage(noF, totalD);
+                                    }
+
+                                    // Calculate totals for each section when the page loads and when values change
+                                    window.onload = function() {
+                                        calculateSectionTotals8();
+                                    };
+
+                                    function calculateSectionTotals8() {
+                                        // 'Permanent employees' section is from row 4 to 5, and its 'Total' is at row 6
+                                        calculateColumnTotalsForSection8('p_trainingDetails', 4, 5, 6);
+                                        // 'Other than Permanent employees' section is from row 8 to 9, and its 'Total' is at row 10
+                                        calculateColumnTotalsForSection8('p_trainingDetails', 8, 9, 10);
+                                    }   
+
                                     // Function to calculate percentages
                                     function calculatePercentages8(tableId, rowIndex) {
                                         var table = document.getElementById(tableId);
@@ -1466,11 +1719,7 @@
                                         row.cells[5].querySelector('input').value = calculatePercentage(noC, totalA);
                                         row.cells[8].querySelector('input').value = calculatePercentage(noE, totalD);
                                         row.cells[10].querySelector('input').value = calculatePercentage(noF, totalD);
-                                    }
-
-                                    // Helper function to calculate percentage
-                                    function calculatePercentage(part, whole) {
-                                        return (part / whole * 100).toFixed(2); // Adjust the number of decimal places as needed
+                                        calculateSectionTotals8();
                                     }
                                 </script>
                             </div>
@@ -1521,11 +1770,11 @@
                                     </tr>
                                     <tr>
                                         <th class="form-label">Total</th>
-                                        <td><input type="number" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" oninput="calculatePercentages9('p_performanceReviewDetails', 5)"></td>
-                                        <td><input type="number" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" oninput="calculatePercentages9('p_performanceReviewDetails', 5)"></td>
                                         <td><input type="number" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" oninput="calculatePercentages9('p_performanceReviewDetails', 5)"></td>
-                                        <td><input type="number" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" oninput="calculatePercentages9('p_performanceReviewDetails', 5)"></td>
+                                        <td><input type="number" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" readonly></td>
+                                        <td><input type="number" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" readonly></td>
+                                        <td><input type="number" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" readonly></td>
+                                        <td><input type="number" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" readonly></td>
                                         <td><input type="number" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" readonly></td>
                                     </tr>
                                     <tr>
@@ -1551,16 +1800,75 @@
                                     </tr>
                                     <tr>
                                         <th class="form-label">Total</th>
-                                        <td><input type="number" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" oninput="calculatePercentages9('p_performanceReviewDetails', 9)"></td>
-                                        <td><input type="number" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" oninput="calculatePercentages9('p_performanceReviewDetails', 9)"></td>
                                         <td><input type="number" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" oninput="calculatePercentages9('p_performanceReviewDetails', 9)"></td>
-                                        <td><input type="number" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" oninput="calculatePercentages9('p_performanceReviewDetails', 9)"></td>
+                                        <td><input type="number" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" readonly></td>
+                                        <td><input type="number" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" readonly></td>
+                                        <td><input type="number" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" readonly></td>
+                                        <td><input type="number" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" readonly></td>
                                         <td><input type="number" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" readonly></td>
                                     </tr>
                                 </table>
                                 <!--Function to calculate percentages-->
                                 <script>
+                                    // Function to calculate column totals for a specific section of the table
+                                    function calculateColumnTotalsForSection9(tableId, startRowIndex, endRowIndex, totalRowIndex) {
+                                        var table = document.getElementById(tableId);
+    
+                                        // Object to hold the sum of each column
+                                        var columnSums = {};
+
+                                        // Initialize column sums
+                                        for (var i = 1; i < table.rows[startRowIndex].cells.length; i++) {
+                                            columnSums[i] = 0;
+                                        }
+
+                                        // Calculate sums for each column
+                                        for (var rowIndex = startRowIndex; rowIndex <= endRowIndex; rowIndex++) {
+                                            var cells = table.rows[rowIndex].cells;
+                                            for (var colIndex = 1; colIndex < cells.length; colIndex++) {
+                                                var input = cells[colIndex].querySelector('input');
+                                                if (input && !input.hasAttribute('readonly')) { // Sum only the input fields that are not readonly
+                                                    var value = parseFloat(input.value) || 0;
+                                                    columnSums[colIndex] += value;
+                                                }
+                                            }
+                                        }
+
+                                        // Update the totals in the 'Total' row
+                                        var totalCells = table.rows[totalRowIndex].cells;
+                                        for (var colIndex = 1; colIndex < totalCells.length; colIndex++) {
+                                            if (columnSums[colIndex] !== undefined) { // Update only if a sum has been calculated
+                                                var totalInput = totalCells[colIndex].querySelector('input');
+                                                if (totalInput) { // If there's an input field, update it
+                                                    totalInput.value = columnSums[colIndex];
+                                                }
+                                            }
+                                        }
+                                        var row = table.rows[totalRowIndex];
+                                        
+                                        var totalA = parseFloat(row.cells[1].querySelector('input').value) || 0;
+                                        var noB = parseFloat(row.cells[2].querySelector('input').value) || 0;
+                                        var totalC = parseFloat(row.cells[4].querySelector('input').value) || 0;
+                                        var noD = parseFloat(row.cells[5].querySelector('input').value) || 0;
+
+
+                                        // Calculate percentages and update the respective cells
+                                        row.cells[3].querySelector('input').value = calculatePercentage(noB, totalA);
+                                        row.cells[6].querySelector('input').value = calculatePercentage(noD, totalC);
+                                    }
+
+                                    // Calculate totals for each section when the page loads and when values change
+                                    window.onload = function() {
+                                        calculateSectionTotals9();
+                                    };
+
+                                    function calculateSectionTotals9() {
+                                        // 'Permanent employees' section is from row 4 to 5, and its 'Total' is at row 6
+                                        calculateColumnTotalsForSection9('p_performanceReviewDetails', 3, 4, 5);
+                                        // 'Other than Permanent employees' section is from row 8 to 9, and its 'Total' is at row 10
+                                        calculateColumnTotalsForSection9('p_performanceReviewDetails', 7, 8, 9);
+                                    }       
+
                                     // Function to calculate percentages
                                     function calculatePercentages9(tableId, rowIndex) {
                                         var table = document.getElementById(tableId);
@@ -1575,11 +1883,7 @@
                                         // Calculate percentages and update the respective cells
                                         row.cells[3].querySelector('input').value = calculatePercentage(noB, totalA);
                                         row.cells[6].querySelector('input').value = calculatePercentage(noD, totalC);
-                                    }
-
-                                    // Helper function to calculate percentage
-                                    function calculatePercentage(part, whole) {
-                                        return (part / whole * 100).toFixed(2); // Adjust the number of decimal places as needed
+                                        calculateSectionTotals9();
                                     }
                                 </script>
                             </div>
@@ -2087,11 +2391,11 @@
                                     </tr>
                                     <tr>
                                         <th class="form-label">Total Employees</th>
-                                        <td><input type="number" id="humanRightsTrainingDetails" name="humanRightsTrainingDetails[]" class="form-control" oninput="calculatePercentages1('p_humanRightsTrainingDetails', 5)"></td>
-                                        <td><input type="number" id="humanRightsTrainingDetails" name="humanRightsTrainingDetails[]" class="form-control" oninput="calculatePercentages1('p_humanRightsTrainingDetails', 5)"></td>
                                         <td><input type="number" id="humanRightsTrainingDetails" name="humanRightsTrainingDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="humanRightsTrainingDetails" name="humanRightsTrainingDetails[]" class="form-control" oninput="calculatePercentages1('p_humanRightsTrainingDetails', 5)"></td>
-                                        <td><input type="number" id="humanRightsTrainingDetails" name="humanRightsTrainingDetails[]" class="form-control" oninput="calculatePercentages1('p_humanRightsTrainingDetails', 5)"></td>
+                                        <td><input type="number" id="humanRightsTrainingDetails" name="humanRightsTrainingDetails[]" class="form-control" readonly></td>
+                                        <td><input type="number" id="humanRightsTrainingDetails" name="humanRightsTrainingDetails[]" class="form-control" readonly></td>
+                                        <td><input type="number" id="humanRightsTrainingDetails" name="humanRightsTrainingDetails[]" class="form-control" readonly></td>
+                                        <td><input type="number" id="humanRightsTrainingDetails" name="humanRightsTrainingDetails[]" class="form-control" readonly></td>
                                         <td><input type="number" id="humanRightsTrainingDetails" name="humanRightsTrainingDetails[]" class="form-control" readonly></td>
                                     </tr>
                                     <tr>
@@ -2117,16 +2421,75 @@
                                     </tr>
                                     <tr>
                                         <th class="form-label">Total Workers</th>
-                                        <td><input type="number" id="humanRightsTrainingDetails" name="humanRightsTrainingDetails[]" class="form-control" oninput="calculatePercentages1('p_humanRightsTrainingDetails', 9)"></td>
-                                        <td><input type="number" id="humanRightsTrainingDetails" name="humanRightsTrainingDetails[]" class="form-control" oninput="calculatePercentages1('p_humanRightsTrainingDetails', 9)"></td>
                                         <td><input type="number" id="humanRightsTrainingDetails" name="humanRightsTrainingDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="humanRightsTrainingDetails" name="humanRightsTrainingDetails[]" class="form-control" oninput="calculatePercentages1('p_humanRightsTrainingDetails', 9)"></td>
-                                        <td><input type="number" id="humanRightsTrainingDetails" name="humanRightsTrainingDetails[]" class="form-control" oninput="calculatePercentages1('p_humanRightsTrainingDetails', 9)"></td>
+                                        <td><input type="number" id="humanRightsTrainingDetails" name="humanRightsTrainingDetails[]" class="form-control" readonly></td>
+                                        <td><input type="number" id="humanRightsTrainingDetails" name="humanRightsTrainingDetails[]" class="form-control" readonly></td>
+                                        <td><input type="number" id="humanRightsTrainingDetails" name="humanRightsTrainingDetails[]" class="form-control" readonly></td>
+                                        <td><input type="number" id="humanRightsTrainingDetails" name="humanRightsTrainingDetails[]" class="form-control" readonly></td>
                                         <td><input type="number" id="humanRightsTrainingDetails" name="humanRightsTrainingDetails[]" class="form-control" readonly></td>
                                     </tr>
                                 </table>
                                 <!--Function to calculate percentages-->
                                 <script>
+                                    // Function to calculate column totals for a specific section of the table
+                                    function calculateColumnTotalsForSection1(tableId, startRowIndex, endRowIndex, totalRowIndex) {
+                                        var table = document.getElementById(tableId);
+    
+                                        // Object to hold the sum of each column
+                                        var columnSums = {};
+
+                                        // Initialize column sums
+                                        for (var i = 1; i < table.rows[startRowIndex].cells.length; i++) {
+                                            columnSums[i] = 0;
+                                        }
+
+                                        // Calculate sums for each column
+                                        for (var rowIndex = startRowIndex; rowIndex <= endRowIndex; rowIndex++) {
+                                            var cells = table.rows[rowIndex].cells;
+                                            for (var colIndex = 1; colIndex < cells.length; colIndex++) {
+                                                var input = cells[colIndex].querySelector('input');
+                                                if (input && !input.hasAttribute('readonly')) { // Sum only the input fields that are not readonly
+                                                    var value = parseFloat(input.value) || 0;
+                                                    columnSums[colIndex] += value;
+                                                }
+                                            }
+                                        }
+
+                                        // Update the totals in the 'Total' row
+                                        var totalCells = table.rows[totalRowIndex].cells;
+                                        for (var colIndex = 1; colIndex < totalCells.length; colIndex++) {
+                                            if (columnSums[colIndex] !== undefined) { // Update only if a sum has been calculated
+                                                var totalInput = totalCells[colIndex].querySelector('input');
+                                                if (totalInput) { // If there's an input field, update it
+                                                    totalInput.value = columnSums[colIndex];
+                                                }
+                                            }
+                                        }
+                                        var row = table.rows[totalRowIndex];
+                                        
+                                        var totalA = parseFloat(row.cells[1].querySelector('input').value) || 0;
+                                        var noB = parseFloat(row.cells[2].querySelector('input').value) || 0;
+                                        var totalC = parseFloat(row.cells[4].querySelector('input').value) || 0;
+                                        var noD = parseFloat(row.cells[5].querySelector('input').value) || 0;
+
+
+                                        // Calculate percentages and update the respective cells
+                                        row.cells[3].querySelector('input').value = calculatePercentage(noB, totalA);
+                                        row.cells[6].querySelector('input').value = calculatePercentage(noD, totalC);
+                                    }
+
+                                    // Calculate totals for each section when the page loads and when values change
+                                    window.onload = function() {
+                                        calculateSectionTotals1();
+                                    };
+
+                                    function calculateSectionTotals1() {
+                                        // 'Permanent employees' section is from row 4 to 5, and its 'Total' is at row 6
+                                        calculateColumnTotalsForSection1('p_humanRightsTrainingDetails', 3, 4, 5);
+                                        // 'Other than Permanent employees' section is from row 8 to 9, and its 'Total' is at row 10
+                                        calculateColumnTotalsForSection1('p_humanRightsTrainingDetails', 7, 8, 9);
+                                    }
+
                                     // Function to calculate percentages
                                     function calculatePercentages1(tableId, rowIndex) {
                                         var table = document.getElementById(tableId);
@@ -2141,11 +2504,7 @@
                                         // Calculate percentages and update the respective cells
                                         row.cells[3].querySelector('input').value = calculatePercentage(noB, totalA);
                                         row.cells[6].querySelector('input').value = calculatePercentage(noD, totalC);
-                                    }
-
-                                    // Helper function to calculate percentage
-                                    function calculatePercentage(part, whole) {
-                                        return (part / whole * 100).toFixed(2); // Adjust the number of decimal places as needed
+                                        calculateSectionTotals1()
                                     }
                                 </script>
                             </div>
@@ -2255,15 +2614,15 @@
                                     </tr>
                                     <tr>
                                         <th align="center" class="form-label">Total</th>
-                                        <td><input type="number" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 10)"></td>
-                                        <td><input type="number" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 10)"></td>
                                         <td><input type="number" id="wageDetails" name="wageDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 10)"></td>
                                         <td><input type="number" id="wageDetails" name="wageDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 10)"></td>
-                                        <td><input type="number" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 10)"></td>
                                         <td><input type="number" id="wageDetails" name="wageDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 10)"></td>
+                                        <td><input type="number" id="wageDetails" name="wageDetails[]" class="form-control" readonly></td>
+                                        <td><input type="number" id="wageDetails" name="wageDetails[]" class="form-control" readonly></td>
+                                        <td><input type="number" id="wageDetails" name="wageDetails[]" class="form-control" readonly></td>
+                                        <td><input type="number" id="wageDetails" name="wageDetails[]" class="form-control" readonly></td>
+                                        <td><input type="number" id="wageDetails" name="wageDetails[]" class="form-control" readonly></td>
+                                        <td><input type="number" id="wageDetails" name="wageDetails[]" class="form-control" readonly></td>
                                         <td><input type="number" id="wageDetails" name="wageDetails[]" class="form-control" readonly></td>
                                     </tr>
                                     <tr>
@@ -2297,15 +2656,15 @@
                                     </tr>
                                     <tr>
                                         <th align="center" class="form-label">Total</th>
-                                        <td><input type="number" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 14)"></td>
-                                        <td><input type="number" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 14)"></td>
                                         <td><input type="number" id="wageDetails" name="wageDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 14)"></td>
                                         <td><input type="number" id="wageDetails" name="wageDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 14)"></td>
-                                        <td><input type="number" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 14)"></td>
                                         <td><input type="number" id="wageDetails" name="wageDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 14)"></td>
+                                        <td><input type="number" id="wageDetails" name="wageDetails[]" class="form-control" readonly></td>
+                                        <td><input type="number" id="wageDetails" name="wageDetails[]" class="form-control" readonly></td>
+                                        <td><input type="number" id="wageDetails" name="wageDetails[]" class="form-control" readonly></td>
+                                        <td><input type="number" id="wageDetails" name="wageDetails[]" class="form-control" readonly></td>
+                                        <td><input type="number" id="wageDetails" name="wageDetails[]" class="form-control" readonly></td>
+                                        <td><input type="number" id="wageDetails" name="wageDetails[]" class="form-control" readonly></td>
                                         <td><input type="number" id="wageDetails" name="wageDetails[]" class="form-control" readonly></td>
                                     </tr>
                                     <tr>
@@ -2339,20 +2698,83 @@
                                     </tr>
                                     <tr>
                                         <th align="center" class="form-label">Total</th>
-                                        <td><input type="number" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 18)"></td>
-                                        <td><input type="number" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 18)"></td>
                                         <td><input type="number" id="wageDetails" name="wageDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 18)"></td>
                                         <td><input type="number" id="wageDetails" name="wageDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 18)"></td>
-                                        <td><input type="number" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 18)"></td>
                                         <td><input type="number" id="wageDetails" name="wageDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 18)"></td>
+                                        <td><input type="number" id="wageDetails" name="wageDetails[]" class="form-control" readonly></td>
+                                        <td><input type="number" id="wageDetails" name="wageDetails[]" class="form-control" readonly></td>
+                                        <td><input type="number" id="wageDetails" name="wageDetails[]" class="form-control" readonly></td>
+                                        <td><input type="number" id="wageDetails" name="wageDetails[]" class="form-control" readonly></td>
+                                        <td><input type="number" id="wageDetails" name="wageDetails[]" class="form-control" readonly></td>
+                                        <td><input type="number" id="wageDetails" name="wageDetails[]" class="form-control" readonly></td>
                                         <td><input type="number" id="wageDetails" name="wageDetails[]" class="form-control" readonly></td>
                                     </tr>
                                 </table>
                                 <!--Function to calculate percentages-->
                                 <script>
+                                    // Function to calculate column totals for a specific section of the table
+                                    function calculateColumnTotalsForSection2(tableId, startRowIndex, endRowIndex, totalRowIndex) {
+                                        var table = document.getElementById(tableId);
+    
+                                        // Object to hold the sum of each column
+                                        var columnSums = {};
+
+                                        // Initialize column sums
+                                        for (var i = 1; i < table.rows[startRowIndex].cells.length; i++) {
+                                            columnSums[i] = 0;
+                                        }
+
+                                        // Calculate sums for each column
+                                        for (var rowIndex = startRowIndex; rowIndex <= endRowIndex; rowIndex++) {
+                                            var cells = table.rows[rowIndex].cells;
+                                            for (var colIndex = 1; colIndex < cells.length; colIndex++) {
+                                                var input = cells[colIndex].querySelector('input');
+                                                if (input && !input.hasAttribute('readonly')) { // Sum only the input fields that are not readonly
+                                                    var value = parseFloat(input.value) || 0;
+                                                    columnSums[colIndex] += value;
+                                                }
+                                            }
+                                        }
+
+                                        // Update the totals in the 'Total' row
+                                        var totalCells = table.rows[totalRowIndex].cells;
+                                        for (var colIndex = 1; colIndex < totalCells.length; colIndex++) {
+                                            if (columnSums[colIndex] !== undefined) { // Update only if a sum has been calculated
+                                                var totalInput = totalCells[colIndex].querySelector('input');
+                                                if (totalInput) { // If there's an input field, update it
+                                                    totalInput.value = columnSums[colIndex];
+                                                }
+                                            }
+                                        }
+                                        var row = table.rows[totalRowIndex];
+                                        
+                                        var totalA = parseFloat(row.cells[1].querySelector('input').value) || 0;
+                                        var noB = parseFloat(row.cells[2].querySelector('input').value) || 0;
+                                        var noC = parseFloat(row.cells[4].querySelector('input').value) || 0;
+                                        var totalD = parseFloat(row.cells[6].querySelector('input').value) || 0;
+                                        var noE = parseFloat(row.cells[7].querySelector('input').value) || 0;
+                                        var noF = parseFloat(row.cells[9].querySelector('input').value) || 0;
+
+
+                                        // Calculate percentages and update the respective cells
+                                        row.cells[3].querySelector('input').value = calculatePercentage(noB, totalA);
+                                        row.cells[5].querySelector('input').value = calculatePercentage(noC, totalA);
+                                        row.cells[8].querySelector('input').value = calculatePercentage(noE, totalD);
+                                        row.cells[10].querySelector('input').value = calculatePercentage(noF, totalD);
+                                    }
+
+                                    // Calculate totals for each section when the page loads and when values change
+                                    window.onload = function() {
+                                        calculateSectionTotals2();
+                                    };
+
+                                    function calculateSectionTotals2() {
+                                        calculateColumnTotalsForSection2('p_wageDetails', 4, 5, 6);
+                                        calculateColumnTotalsForSection2('p_wageDetails', 8, 9, 10);
+                                        calculateColumnTotalsForSection2('p_wageDetails', 12, 13, 14);
+                                        calculateColumnTotalsForSection2('p_wageDetails', 16, 17, 18);
+                                    }
+
                                     // Function to calculate percentages
                                     function calculatePercentages2(tableId, rowIndex) {
                                         var table = document.getElementById(tableId);
@@ -2371,11 +2793,7 @@
                                         row.cells[5].querySelector('input').value = calculatePercentage(noC, totalA);
                                         row.cells[8].querySelector('input').value = calculatePercentage(noE, totalD);
                                         row.cells[10].querySelector('input').value = calculatePercentage(noF, totalD);
-                                    }
-
-                                    // Helper function to calculate percentage
-                                    function calculatePercentage(part, whole) {
-                                        return (part / whole * 100).toFixed(2); // Adjust the number of decimal places as needed
+                                        calculateSectionTotals2();
                                     }
                                 </script>
                             </div>

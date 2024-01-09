@@ -95,9 +95,13 @@ document.getElementById('equalOpportunity').addEventListener('change', function 
     }
 });*/
 
-
-
-
+// Helper function to calculate percentage
+function calculatePercentage(part, whole) {
+    if (whole == 0)
+        return 0;
+    else
+        return (part / whole * 100).toFixed(2); // Adjust the number of decimal places as needed
+}
 
 // Navigation button based Division visiblility
 let currentDiv = 1;
