@@ -69,7 +69,7 @@
 
     //7-telephone validation
     var telephoneInputs = document.querySelectorAll('input[name="telephone[]"]');
-    var telephoneRegex = /^[0-9+-]+$/;
+    var telephoneRegex = /^[\d\s+\-\(\)]+$/;
 
     telephoneInputs.forEach(function (input, index) {
         input.addEventListener("input", function () {
@@ -142,7 +142,7 @@
 
     pucInput.addEventListener("input", function () {
         var inputValue = pucInput.value.trim();
-        var uomRegex = /^(Rs\.?|Rs-?|Rs)?\s*\d{1,3}(,\d{3})*(\.\d+)? (Hundred|Thousand|Lakh|Crore|Million|Billion|Trillion|Hundreds|Thousands|Lakhs|Crores|Millions|Billions|Trillions)$/i;
+        var uomRegex = /^(Rs\.?|Rs-?|Rs)?\s*((\d+(,\d{2})*(,\d{1,3})*(\.\d+)?))\s*(Hundred|Thousand|Lakh|Crore|Million|Billion|Trillion|Hundreds|Thousands|Lakhs|Crores|Millions|Billions|Trillions)?$/i;
 
         if (uomRegex.test(inputValue)) {
             pucValidationMessage.textContent = "Paid-up capital format is valid.";
@@ -178,13 +178,13 @@
 
             pocPhoneInput.addEventListener("input", function () {
                 const phoneNumber = pocPhoneInput.value;
-                const phoneRegex = /^[0-9()+,-]+$/;
+                const phoneRegex = /^[\d\s()+,-]+$/;
 
-                if (phoneRegex.test(phoneNumber) && phoneNumber.length >= 8 && phoneNumber.length <= 30) {
+                if (phoneRegex.test(phoneNumber) && phoneNumber.length >= 8 && phoneNumber.length <= 50) {
                     pocPhoneValidation.textContent = "Valid phone number";
                     pocPhoneValidation.style.color = "green";
                 } else {
-                    pocPhoneValidation.textContent = "Invalid phone number (must be 8 to 30 digits including +,-,(,)) and can add multiple phone numbers seperated by comma(+9170928506,9812342143)";
+                    pocPhoneValidation.textContent = "Invalid phone number (must be 8 to 50 digits including +,-,(,)) and can add multiple phone numbers seperated by comma(+9170928506,9812342143)";
                     pocPhoneValidation.style.color = "red";
                 }
             });
@@ -331,13 +331,15 @@
 
         input.addEventListener("input", function () {
             var inputValue = input.value.trim();
-            var uomRegex = /^(Rs\.?|Rs-?|Rs)?\s*\d{1,3}(,\d{3})*(\.\d+)? (Hundred|Thousand|Lakh|Crore|Million|Billion|Trillion|Hundreds|Thousands|Lakhs|Crores|Millions|Billions|Trillions)$/i;
+            var uomRegex = /^(Rs\.?|Rs-?|Rs)?\s*((\d+(,\d{2})*(,\d{1,3})*(\.\d+)?))\s*(Hundred|Thousand|Lakh|Crore|Million|Billion|Trillion|Hundreds|Thousands|Lakhs|Crores|Millions|Billions|Trillions)?$/i;
 
+            //internation system
+            //var uomRegex = /^(Rs\.?|Rs-?|Rs)?\s*\d{1,3}(,\d{3})*(\.\d+)? (Hundred|Thousand|Lakh|Crore|Million|Billion|Trillion|Hundreds|Thousands|Lakhs|Crores|Millions|Billions|Trillions)$/i;
             if (uomRegex.test(inputValue)) {
                 validationMessage.textContent = "Format is valid.";
                 validationMessage.style.color = "green";
             } else {
-                validationMessage.textContent = "Please enter valid value with units (e.g., 'Rs.100 Hundred', 'Rs 10,000 Thousand', '50,242,234 Lakh', '10,023,234.5645 Crore', '2.5 Billions').";
+                validationMessage.textContent = "Please enter valid turnover with units (e.g., 'Rs.100 Hundred', 'Rs 10,000 Thousand', '50,22,234 Lakh', '10,03,234.5645 Crore', '2.5 Billions').";
                 validationMessage.style.color = "red";
             }
         });
@@ -346,6 +348,8 @@
     // Example usage:
     validateTurnoverById("csr_turnover", "csr_turnoverValidationMessage");
     validateTurnoverById("csr_networth", "csr_networthValidationMessage");
+
+
 
 /* ************************************************************************************************************************************ */
 /*                                                                                                                                      */
