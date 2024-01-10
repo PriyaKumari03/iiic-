@@ -450,7 +450,7 @@
                       <div class="policy">
                         <label for="drm_types_customers" class="form-label">c. &nbsp; A brief on types of customers:</label>
                       </div>
-                      <input type="text" class="form-control" id="drm_types_customers" name="drm_types_customers" placeholder="A brief on types of customers">
+                      <textarea type="text" class="form-control" id="drm_types_customers" name="drm_types_customers" placeholder="A brief on types of customers"></textarea>
                     </div>
                     <!-- A brief on types of customers END -->
                   </div>
