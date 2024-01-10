@@ -27,6 +27,16 @@ document.getElementById('lcaConducted2').addEventListener('change', function () 
 
 //Principle 3
 
+//EI 10a
+document.getElementById('healthSafetyManagementSystemChoice').addEventListener('change', function () {
+    var healthSafetyManagementSystemDetails = document.getElementById('healthSafetyManagementSystemDetails');
+    if (this.value === 'Yes') {
+        healthSafetyManagementSystemDetails.classList.remove('hidden');
+    } else {
+        healthSafetyManagementSystemDetails.classList.add('hidden');
+    }
+});
+
 //LI 1a
 document.getElementById('lifeInsuranceCompensationa').addEventListener('change', function () {
     var lifeInsuranceCompensationdetailsa = document.getElementById('lifeInsuranceCompensationdetailsa');
@@ -49,6 +59,106 @@ document.getElementById('lifeInsuranceCompensationb').addEventListener('change',
 
 //Principle 6
 
+//EI 1.2
+document.getElementById('energyExternalAgency').addEventListener('change', function () {
+    var energyExternalAgencyName = document.getElementById('energyExternalAgencyName');
+    if (this.value === 'Yes') {
+        energyExternalAgencyName.classList.remove('hidden');
+    } else {
+        energyExternalAgencyName.classList.add('hidden');
+    }
+});
+
+//EI 2
+document.getElementById('designatedConsumers').addEventListener('change', function () {
+    var designatedConsumersDetails = document.getElementById('designatedConsumersDetails');
+    if (this.value === 'Yes') {
+        designatedConsumersDetails.classList.remove('hidden');
+    } else {
+        designatedConsumersDetails.classList.add('hidden');
+    }
+});
+
+//EI 3.2
+document.getElementById('waterExternalAgency').addEventListener('change', function () {
+    var waterExternalAgencyName = document.getElementById('waterExternalAgencyName');
+    if (this.value === 'Yes') {
+        waterExternalAgencyName.classList.remove('hidden');
+    } else {
+        waterExternalAgencyName.classList.add('hidden');
+    }
+});
+
+//EI 4
+document.getElementById('liquidDischarge').addEventListener('change', function () {
+    var liquidDischargeDetails = document.getElementById('liquidDischargeDetails');
+    if (this.value === 'Yes') {
+        liquidDischargeDetails.classList.remove('hidden');
+    } else {
+        liquidDischargeDetails.classList.add('hidden');
+    }
+});
+
+//EI 5.2
+document.getElementById('airExternalAgency').addEventListener('change', function () {
+    var airExternalAgencyName = document.getElementById('airExternalAgencyName');
+    if (this.value === 'Yes') {
+        airExternalAgencyName.classList.remove('hidden');
+    } else {
+        airExternalAgencyName.classList.add('hidden');
+    }
+});
+
+//EI 6.2
+document.getElementById('ghgExternalAgency').addEventListener('change', function () {
+    var ghgExternalAgencyName = document.getElementById('ghgExternalAgencyName');
+    if (this.value === 'Yes') {
+        ghgExternalAgencyName.classList.remove('hidden');
+    } else {
+        ghgExternalAgencyName.classList.add('hidden');
+    }
+});
+
+//EI 7
+document.getElementById('ghgReductionProject').addEventListener('change', function () {
+    var ghgReductionProjectDetails = document.getElementById('ghgReductionProjectDetails');
+    if (this.value === 'Yes') {
+        ghgReductionProjectDetails.classList.remove('hidden');
+    } else {
+        ghgReductionProjectDetails.classList.add('hidden');
+    }
+});
+
+//EI 8.2
+document.getElementById('wasteExternalAgency').addEventListener('change', function () {
+    var wasteExternalAgencyName = document.getElementById('wasteExternalAgencyName');
+    if (this.value === 'Yes') {
+        wasteExternalAgencyName.classList.remove('hidden');
+    } else {
+        wasteExternalAgencyName.classList.add('hidden');
+    }
+});
+
+//LI 1.2
+document.getElementById('totalenergyconsumedAgency').addEventListener('change', function () {
+    var totalenergyconsumedAgencyName = document.getElementById('totalenergyconsumedAgencyName');
+    if (this.value === 'Yes') {
+        totalenergyconsumedAgencyName.classList.remove('hidden');
+    } else {
+        totalenergyconsumedAgencyName.classList.add('hidden');
+    }
+});
+
+//LI 2.2
+document.getElementById('waterdischargedAgency').addEventListener('change', function () {
+    var waterdischargedAgencyName = document.getElementById('waterdischargedAgencyName');
+    if (this.value === 'Yes') {
+        waterdischargedAgencyName.classList.remove('hidden');
+    } else {
+        waterdischargedAgencyName.classList.add('hidden');
+    }
+});
+
 //LI 3.2
 document.getElementById('waterstressAgency').addEventListener('change', function () {
     var waterstressAgencyName = document.getElementById('waterstressAgencyName');
@@ -69,31 +179,38 @@ document.getElementById('totalscopeAgency').addEventListener('change', function 
     }
 });
 
+//Principle 9
 
-/*document.getElementById('accessibilityChoice').addEventListener('change', function () {
-    var accessibilitySteps = document.getElementById('accessibilitySteps');
-    if (this.value === 'No') {
-        accessibilitySteps.classList.remove('hidden');
+//EI 5
+document.getElementById('cyberSecurityPolicy').addEventListener('change', function () {
+    var cyberSecurityPolicyDetails = document.getElementById('cyberSecurityPolicyDetails');
+    if (this.value === 'Yes') {
+        cyberSecurityPolicyDetails.classList.remove('hidden');
     } else {
-        accessibilitySteps.classList.add('hidden');
+        cyberSecurityPolicyDetails.classList.add('hidden');
     }
 });
-document.getElementById('equalOpportunity').addEventListener('change', function () {
-    var equalOpportunityLink = document.getElementById('equalOpportunityLink');
+
+//LI 4.1
+document.getElementById('productInfoDisplay').addEventListener('change', function () {
+    var productInfoDisplayDetails = document.getElementById('productInfoDisplayDetails');
     if (this.value === 'Yes') {
-        equalOpportunityLink.classList.remove('hidden');
+        productInfoDisplayDetails.classList.remove('hidden');
     } else {
-        equalOpportunityLink.classList.add('hidden');
+        productInfoDisplayDetails.classList.add('hidden');
     }
-});*/
-/*document.getElementById('healthSafetyManagementSystemChoice').addEventListener('change', function () {
-    var healthSafetyManagementSystemDetails = document.getElementById('healthSafetyManagementSystemDetails');
-    if (this.value === 'Yes') {
-        healthSafetyManagementSystemDetails.classList.remove('hidden');
+});
+
+//LI 4.2
+document.getElementById('surveyInfo').addEventListener('change', function () {
+    var surveyInfoDetails = document.getElementById('surveyInfoDetails');
+    if (this.value === 'No') {
+        surveyInfoDetails.classList.remove('hidden');
     } else {
-        healthSafetyManagementSystemDetails.classList.add('hidden');
+        surveyInfoDetails.classList.add('hidden');
     }
-});*/
+});
+// End of Yes/No based label visibility
 
 // Helper function to calculate percentage
 function calculatePercentage(part, whole) {

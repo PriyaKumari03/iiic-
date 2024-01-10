@@ -1265,75 +1265,28 @@
                                     </tr>
                                     <tr>
                                         <th align="center" class="form-label">Male</th>
-                                        <td><input type="number" id="returnRetentionRates" name="returnRetentionRates[]" class="form-control" oninput="calculateSectionTotals5()"></td>
-                                        <td><input type="number" id="returnRetentionRates" name="returnRetentionRates[]" class="form-control" oninput="calculateSectionTotals5()"></td>
-                                        <td><input type="number" id="returnRetentionRates" name="returnRetentionRates[]" class="form-control" oninput="calculateSectionTotals5()"></td>
-                                        <td><input type="number" id="returnRetentionRates" name="returnRetentionRates[]" class="form-control" oninput="calculateSectionTotals5()"></td>
+                                        <td><input type="number" id="returnRetentionRates" name="returnRetentionRates[]" class="form-control"></td>
+                                        <td><input type="number" id="returnRetentionRates" name="returnRetentionRates[]" class="form-control"></td>
+                                        <td><input type="number" id="returnRetentionRates" name="returnRetentionRates[]" class="form-control"></td>
+                                        <td><input type="number" id="returnRetentionRates" name="returnRetentionRates[]" class="form-control"></td>
                                     </tr>
                                     <tr>
                                         <th align="center" class="form-label">Female</th>
-                                        <td><input type="number" id="returnRetentionRates" name="returnRetentionRates[]" class="form-control" oninput="calculateSectionTotals5()"></td>
-                                        <td><input type="number" id="returnRetentionRates" name="returnRetentionRates[]" class="form-control" oninput="calculateSectionTotals5()"></td>
-                                        <td><input type="number" id="returnRetentionRates" name="returnRetentionRates[]" class="form-control" oninput="calculateSectionTotals5()"></td>
-                                        <td><input type="number" id="returnRetentionRates" name="returnRetentionRates[]" class="form-control" oninput="calculateSectionTotals5()"></td>
+                                        <td><input type="number" id="returnRetentionRates" name="returnRetentionRates[]" class="form-control"></td>
+                                        <td><input type="number" id="returnRetentionRates" name="returnRetentionRates[]" class="form-control"></td>
+                                        <td><input type="number" id="returnRetentionRates" name="returnRetentionRates[]" class="form-control"></td>
+                                        <td><input type="number" id="returnRetentionRates" name="returnRetentionRates[]" class="form-control"></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label">Total</th>
-                                        <td class="total-cell"><input type="number" id="returnRetentionRates" name="returnRetentionRates[]" class="form-control" readonly></td>
-                                        <td class="total-cell"><input type="number" id="returnRetentionRates" name="returnRetentionRates[]" class="form-control" readonly></td>
-                                        <td class="total-cell"><input type="number" id="returnRetentionRates" name="returnRetentionRates[]" class="form-control" readonly></td>
-                                        <td class="total-cell"><input type="number" id="returnRetentionRates" name="returnRetentionRates[]" class="form-control" readonly></td>
+                                        <td class="total-cell"><input type="number" id="returnRetentionRates" name="returnRetentionRates[]" class="form-control"></td>
+                                        <td class="total-cell"><input type="number" id="returnRetentionRates" name="returnRetentionRates[]" class="form-control"></td>
+                                        <td class="total-cell"><input type="number" id="returnRetentionRates" name="returnRetentionRates[]" class="form-control"></td>
+                                        <td class="total-cell"><input type="number" id="returnRetentionRates" name="returnRetentionRates[]" class="form-control"></td>
                                     </tr>
                                 </table>
                             </div>
                         </div>
-                        <!--Function to calculate percentages-->
-                        <script>
-                        function calculateColumnTotalsForSection5(tableId, startRowIndex, endRowIndex, totalRowIndex) {
-                                        var table = document.getElementById(tableId);
-    
-                                        // Object to hold the sum of each column
-                                        var columnSums = {};
-
-                                        // Initialize column sums
-                                        for (var i = 1; i < table.rows[startRowIndex].cells.length; i++) {
-                                            columnSums[i] = 0;
-                                        }
-
-                                        // Calculate sums for each column
-                                        for (var rowIndex = startRowIndex; rowIndex <= endRowIndex; rowIndex++) {
-                                            var cells = table.rows[rowIndex].cells;
-                                            for (var colIndex = 1; colIndex < cells.length; colIndex++) {
-                                                var input = cells[colIndex].querySelector('input');
-                                                if (input && !input.hasAttribute('readonly')) { // Sum only the input fields that are not readonly
-                                                    var value = parseFloat(input.value) || 0;
-                                                    columnSums[colIndex] += value;
-                                                }
-                                            }
-                                        }
-
-                                        // Update the totals in the 'Total' row
-                                        var totalCells = table.rows[totalRowIndex].cells;
-                                        for (var colIndex = 1; colIndex < totalCells.length; colIndex++) {
-                                            if (columnSums[colIndex] !== undefined) { // Update only if a sum has been calculated
-                                                var totalInput = totalCells[colIndex].querySelector('input');
-                                                if (totalInput) { // If there's an input field, update it
-                                                    totalInput.value = columnSums[colIndex];
-                                                }
-                                            }
-                                        }
-                                    }
-
-                                    // Calculate totals for each section when the page loads and when values change
-                                    window.onload = function() {
-                                        calculateSectionTotals5();
-                                    };
-
-                                    function calculateSectionTotals5() {
-                                        // 'Permanent employees' section is from row 2 to 3, and its 'Total' is at row 4
-                                        calculateColumnTotalsForSection5('p_returnRetentionRates', 2, 3, 4);
-                                    }
-                        </script>
                         <!--Return to work and Retention rates of permanent employees and workers that took parental leave end-->
 
                         <!--Is there a mechanism available to receive and redress grievances start-->
@@ -3141,37 +3094,83 @@
                                     </tr>
                                     <tr>
                                         <th class="form-label">Total electricity consumption (A) </th>
-                                        <td><input type="text" id="energyConsumptionDetails" name="energyConsumptionDetails[]" class="form-control"></td>
-                                        <td><input type="text" id="energyConsumptionDetails" name="energyConsumptionDetails[]" class="form-control"></td>
+                                        <td><input type="number" id="energyConsumptionDetails" name="energyConsumptionDetails[]" class="form-control" oninput="calculateSectionTotals1_1()"></td>
+                                        <td><input type="number" id="energyConsumptionDetails" name="energyConsumptionDetails[]" class="form-control" oninput="calculateSectionTotals1_1()"></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label">Total fuel consumption (B) </th>
-                                        <td><input type="text" id="energyConsumptionDetails" name="energyConsumptionDetails[]" class="form-control"></td>
-                                        <td><input type="text" id="energyConsumptionDetails" name="energyConsumptionDetails[]" class="form-control"></td>
+                                        <td><input type="number" id="energyConsumptionDetails" name="energyConsumptionDetails[]" class="form-control" oninput="calculateSectionTotals1_1()"></td>
+                                        <td><input type="number" id="energyConsumptionDetails" name="energyConsumptionDetails[]" class="form-control" oninput="calculateSectionTotals1_1()"></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label">Energy consumption through other sources (C) </th>
-                                        <td><input type="text" id="energyConsumptionDetails" name="energyConsumptionDetails[]" class="form-control"></td>
-                                        <td><input type="text" id="energyConsumptionDetails" name="energyConsumptionDetails[]" class="form-control"></td>
+                                        <td><input type="number" id="energyConsumptionDetails" name="energyConsumptionDetails[]" class="form-control" oninput="calculateSectionTotals1_1()"></td>
+                                        <td><input type="number" id="energyConsumptionDetails" name="energyConsumptionDetails[]" class="form-control" oninput="calculateSectionTotals1_1()"></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label">Total energy consumption (A+B+C) </th>
-                                        <td><input type="text" id="energyConsumptionDetails" name="energyConsumptionDetails[]" class="form-control"></td>
-                                        <td><input type="text" id="energyConsumptionDetails" name="energyConsumptionDetails[]" class="form-control"></td>
+                                        <td><input type="number" id="energyConsumptionDetails" name="energyConsumptionDetails[]" class="form-control" readonly></td>
+                                        <td><input type="number" id="energyConsumptionDetails" name="energyConsumptionDetails[]" class="form-control" readonly></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label">Energy intensity per rupee of turnover (Total energy consumption/turnover in rupees) </th>
-                                        <td><input type="text" id="energyConsumptionDetails" name="energyConsumptionDetails[]" class="form-control"></td>
-                                        <td><input type="text" id="energyConsumptionDetails" name="energyConsumptionDetails[]" class="form-control"></td>
+                                        <td><input type="number" id="energyConsumptionDetails" name="energyConsumptionDetails[]" class="form-control"></td>
+                                        <td><input type="number" id="energyConsumptionDetails" name="energyConsumptionDetails[]" class="form-control"></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label">Energy intensity (optional) – the relevant metric may be selected by the entity </th>
-                                        <td><input type="text" id="energyConsumptionDetails" name="energyConsumptionDetails[]" class="form-control"></td>
-                                        <td><input type="text" id="energyConsumptionDetails" name="energyConsumptionDetails[]" class="form-control"></td>
+                                        <td><input type="number" id="energyConsumptionDetails" name="energyConsumptionDetails[]" class="form-control"></td>
+                                        <td><input type="number" id="energyConsumptionDetails" name="energyConsumptionDetails[]" class="form-control"></td>
                                     </tr>
                                 </table>
                             </div>
                         </div>
+                        <script>
+                            // Function to calculate column totals for a specific section of the table
+                                    function calculateColumnTotalsForSection1_1(tableId, startRowIndex, endRowIndex, totalRowIndex) {
+                                        var table = document.getElementById(tableId);
+    
+                                        // Object to hold the sum of each column
+                                        var columnSums = {};
+
+                                        // Initialize column sums
+                                        for (var i = 1; i < table.rows[startRowIndex].cells.length; i++) {
+                                            columnSums[i] = 0;
+                                        }
+
+                                        // Calculate sums for each column
+                                        for (var rowIndex = startRowIndex; rowIndex <= endRowIndex; rowIndex++) {
+                                            var cells = table.rows[rowIndex].cells;
+                                            for (var colIndex = 1; colIndex < cells.length; colIndex++) {
+                                                var input = cells[colIndex].querySelector('input');
+                                                if (input && !input.hasAttribute('readonly')) { // Sum only the input fields that are not readonly
+                                                    var value = parseFloat(input.value) || 0;
+                                                    columnSums[colIndex] += value;
+                                                }
+                                            }
+                                        }
+
+                                        // Update the totals in the 'Total' row
+                                        var totalCells = table.rows[totalRowIndex].cells;
+                                        for (var colIndex = 1; colIndex < totalCells.length; colIndex++) {
+                                            if (columnSums[colIndex] !== undefined) { // Update only if a sum has been calculated
+                                                var totalInput = totalCells[colIndex].querySelector('input');
+                                                if (totalInput) { // If there's an input field, update it
+                                                    totalInput.value = columnSums[colIndex];
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                    // Calculate totals for each section when the page loads and when values change
+                                    window.onload = function() {
+                                        calculateSectionTotals1_1();
+                                    };
+
+                                    function calculateSectionTotals1_1() {
+                                        calculateColumnTotalsForSection1_1('p_energyConsumptionDetails', 1, 3, 4);
+                                    }
+                        </script>
                         <!--Total energy consumption and energy intensity end-->
 
                         <!--Independent assessment question 1 start-->
@@ -3231,52 +3230,98 @@
                                     </tr>
                                     <tr>
                                         <td align="center" class="form-label">(i) Surface water </th>
-                                        <td><input type="text" id="waterWithdrawalDetails" name="waterWithdrawalDetails[]" class="form-control"></td>
-                                        <td><input type="text" id="waterWithdrawalDetails" name="waterWithdrawalDetails[]" class="form-control"></td>
+                                        <td><input type="number" id="waterWithdrawalDetails" name="waterWithdrawalDetails[]" class="form-control" oninput="calculateSectionTotals3_1()"></td>
+                                        <td><input type="number" id="waterWithdrawalDetails" name="waterWithdrawalDetails[]" class="form-control" oninput="calculateSectionTotals3_1()"></td>
                                     </tr>
                                     <tr>
                                         <td align="center" class="form-label">(ii) Groundwater </th>
-                                        <td><input type="text" id="waterWithdrawalDetails" name="waterWithdrawalDetails[]" class="form-control"></td>
-                                        <td><input type="text" id="waterWithdrawalDetails" name="waterWithdrawalDetails[]" class="form-control"></td>
+                                        <td><input type="number" id="waterWithdrawalDetails" name="waterWithdrawalDetails[]" class="form-control" oninput="calculateSectionTotals3_1()"></td>
+                                        <td><input type="number" id="waterWithdrawalDetails" name="waterWithdrawalDetails[]" class="form-control" oninput="calculateSectionTotals3_1()"></td>
                                     </tr>
                                     <tr>
                                         <td align="center" class="form-label">(iii) Third party water </th>
-                                        <td><input type="text" id="waterWithdrawalDetails" name="waterWithdrawalDetails[]" class="form-control"></td>
-                                        <td><input type="text" id="waterWithdrawalDetails" name="waterWithdrawalDetails[]" class="form-control"></td>
+                                        <td><input type="number" id="waterWithdrawalDetails" name="waterWithdrawalDetails[]" class="form-control" oninput="calculateSectionTotals3_1()"></td>
+                                        <td><input type="number" id="waterWithdrawalDetails" name="waterWithdrawalDetails[]" class="form-control" oninput="calculateSectionTotals3_1()"></td>
                                     </tr>
                                     <tr>
                                         <td align="center" class="form-label">(iv) Seawater/ desalinated water </th>
-                                        <td><input type="text" id="waterWithdrawalDetails" name="waterWithdrawalDetails[]" class="form-control"></td>
-                                        <td><input type="text" id="waterWithdrawalDetails" name="waterWithdrawalDetails[]" class="form-control"></td>
+                                        <td><input type="number" id="waterWithdrawalDetails" name="waterWithdrawalDetails[]" class="form-control" oninput="calculateSectionTotals3_1()"></td>
+                                        <td><input type="number" id="waterWithdrawalDetails" name="waterWithdrawalDetails[]" class="form-control" oninput="calculateSectionTotals3_1()"></td>
                                     </tr>
                                     <tr>
                                         <td align="center" class="form-label">(v) Others </th>
-                                        <td><input type="text" id="waterWithdrawalDetails" name="waterWithdrawalDetails[]" class="form-control"></td>
-                                        <td><input type="text" id="waterWithdrawalDetails" name="waterWithdrawalDetails[]" class="form-control"></td>
+                                        <td><input type="number" id="waterWithdrawalDetails" name="waterWithdrawalDetails[]" class="form-control" oninput="calculateSectionTotals3_1()"></td>
+                                        <td><input type="number" id="waterWithdrawalDetails" name="waterWithdrawalDetails[]" class="form-control" oninput="calculateSectionTotals3_1()"></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label">Total volume of water withdrawal (in kilolitres) (i + ii + iii + iv + v) </th>
-                                        <td><input type="text" id="waterWithdrawalDetails" name="waterWithdrawalDetails[]" class="form-control"></td>
-                                        <td><input type="text" id="waterWithdrawalDetails" name="waterWithdrawalDetails[]" class="form-control"></td>
+                                        <td><input type="number" id="waterWithdrawalDetails" name="waterWithdrawalDetails[]" class="form-control" readonly></td>
+                                        <td><input type="number" id="waterWithdrawalDetails" name="waterWithdrawalDetails[]" class="form-control" readonly></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label">Total volume of water consumption (in kilolitres) </th>
-                                        <td><input type="text" id="waterWithdrawalDetails" name="waterWithdrawalDetails[]" class="form-control"></td>
-                                        <td><input type="text" id="waterWithdrawalDetails" name="waterWithdrawalDetails[]" class="form-control"></td>
+                                        <td><input type="number" id="waterWithdrawalDetails" name="waterWithdrawalDetails[]" class="form-control"></td>
+                                        <td><input type="number" id="waterWithdrawalDetails" name="waterWithdrawalDetails[]" class="form-control"></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label">Water intensity per rupee of turnover (Water consumed / turnover) </th>
-                                        <td><input type="text" id="waterWithdrawalDetails" name="waterWithdrawalDetails[]" class="form-control"></td>
-                                        <td><input type="text" id="waterWithdrawalDetails" name="waterWithdrawalDetails[]" class="form-control"></td>
+                                        <td><input type="number" id="waterWithdrawalDetails" name="waterWithdrawalDetails[]" class="form-control"></td>
+                                        <td><input type="number" id="waterWithdrawalDetails" name="waterWithdrawalDetails[]" class="form-control"></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label">Water intensity - optional </th>
-                                        <td><input type="text" id="waterWithdrawalDetails" name="waterWithdrawalDetails[]" class="form-control"></td>
-                                        <td><input type="text" id="waterWithdrawalDetails" name="waterWithdrawalDetails[]" class="form-control"></td>
+                                        <td><input type="number" id="waterWithdrawalDetails" name="waterWithdrawalDetails[]" class="form-control"></td>
+                                        <td><input type="number" id="waterWithdrawalDetails" name="waterWithdrawalDetails[]" class="form-control"></td>
                                     </tr>
                                 </table>
                             </div>
                         </div>
+                        <script>
+                            // Function to calculate column totals for a specific section of the table
+                                    function calculateColumnTotalsForSection3_1(tableId, startRowIndex, endRowIndex, totalRowIndex) {
+                                        var table = document.getElementById(tableId);
+    
+                                        // Object to hold the sum of each column
+                                        var columnSums = {};
+
+                                        // Initialize column sums
+                                        for (var i = 1; i < table.rows[startRowIndex].cells.length; i++) {
+                                            columnSums[i] = 0;
+                                        }
+
+                                        // Calculate sums for each column
+                                        for (var rowIndex = startRowIndex; rowIndex <= endRowIndex; rowIndex++) {
+                                            var cells = table.rows[rowIndex].cells;
+                                            for (var colIndex = 1; colIndex < cells.length; colIndex++) {
+                                                var input = cells[colIndex].querySelector('input');
+                                                if (input && !input.hasAttribute('readonly')) { // Sum only the input fields that are not readonly
+                                                    var value = parseFloat(input.value) || 0;
+                                                    columnSums[colIndex] += value;
+                                                }
+                                            }
+                                        }
+
+                                        // Update the totals in the 'Total' row
+                                        var totalCells = table.rows[totalRowIndex].cells;
+                                        for (var colIndex = 1; colIndex < totalCells.length; colIndex++) {
+                                            if (columnSums[colIndex] !== undefined) { // Update only if a sum has been calculated
+                                                var totalInput = totalCells[colIndex].querySelector('input');
+                                                if (totalInput) { // If there's an input field, update it
+                                                    totalInput.value = columnSums[colIndex];
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                    // Calculate totals for each section when the page loads and when values change
+                                    window.onload = function() {
+                                        calculateSectionTotals3_1();
+                                    };
+
+                                    function calculateSectionTotals3_1() {
+                                        calculateColumnTotalsForSection3_1('p_waterWithdrawalDetails', 2, 6, 7);
+                                    }
+                        </script>
                         <!--Disclosures related to water end-->
 
                         <!--Independent assessment question 3 start-->
@@ -3510,48 +3555,48 @@
                                     </tr>
                                     <tr>
                                         <th class="form-label">Plastic waste (A) </th>
-                                        <td><input type="text" id="wasteDetails" name="wasteDetails[]" class="form-control"></td>
-                                        <td><input type="text" id="wasteDetails" name="wasteDetails[]" class="form-control"></td>
+                                        <td><input type="number" id="wasteDetails" name="wasteDetails[]" class="form-control" oninput="calculateSectionTotals8_1()"></td>
+                                        <td><input type="number" id="wasteDetails" name="wasteDetails[]" class="form-control" oninput="calculateSectionTotals8_1()"></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label">E-waste (B) </th>
-                                        <td><input type="text" id="wasteDetails" name="wasteDetails[]" class="form-control"></td>
-                                        <td><input type="text" id="wasteDetails" name="wasteDetails[]" class="form-control"></td>
+                                        <td><input type="number" id="wasteDetails" name="wasteDetails[]" class="form-control" oninput="calculateSectionTotals8_1()"></td>
+                                        <td><input type="number" id="wasteDetails" name="wasteDetails[]" class="form-control" oninput="calculateSectionTotals8_1()"></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label">Bio-medical waste (C) </th>
-                                        <td><input type="text" id="wasteDetails" name="wasteDetails[]" class="form-control"></td>
-                                        <td><input type="text" id="wasteDetails" name="wasteDetails[]" class="form-control"></td>
+                                        <td><input type="number" id="wasteDetails" name="wasteDetails[]" class="form-control" oninput="calculateSectionTotals8_1()"></td>
+                                        <td><input type="number" id="wasteDetails" name="wasteDetails[]" class="form-control" oninput="calculateSectionTotals8_1()"></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label">Construction and demolition waste (D) </th>
-                                        <td><input type="text" id="wasteDetails" name="wasteDetails[]" class="form-control"></td>
-                                        <td><input type="text" id="wasteDetails" name="wasteDetails[]" class="form-control"></td>
+                                        <td><input type="number" id="wasteDetails" name="wasteDetails[]" class="form-control" oninput="calculateSectionTotals8_1()"></td>
+                                        <td><input type="number" id="wasteDetails" name="wasteDetails[]" class="form-control" oninput="calculateSectionTotals8_1()"></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label">Battery waste (E) </th>
-                                        <td><input type="text" id="wasteDetails" name="wasteDetails[]" class="form-control"></td>
-                                        <td><input type="text" id="wasteDetails" name="wasteDetails[]" class="form-control"></td>
+                                        <td><input type="number" id="wasteDetails" name="wasteDetails[]" class="form-control" oninput="calculateSectionTotals8_1()"></td>
+                                        <td><input type="number" id="wasteDetails" name="wasteDetails[]" class="form-control" oninput="calculateSectionTotals8_1()"></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label">Radioactive waste (F) </th>
-                                        <td><input type="text" id="wasteDetails" name="wasteDetails[]" class="form-control"></td>
-                                        <td><input type="text" id="wasteDetails" name="wasteDetails[]" class="form-control"></td>
+                                        <td><input type="number" id="wasteDetails" name="wasteDetails[]" class="form-control" oninput="calculateSectionTotals8_1()"></td>
+                                        <td><input type="number" id="wasteDetails" name="wasteDetails[]" class="form-control" oninput="calculateSectionTotals8_1()"></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label">Other hazardous waste - please specify if any (G) </th>
-                                        <td><input type="text" id="wasteDetails" name="wasteDetails[]" class="form-control"></td>
-                                        <td><input type="text" id="wasteDetails" name="wasteDetails[]" class="form-control"></td>
+                                        <td><input type="number" id="wasteDetails" name="wasteDetails[]" class="form-control" oninput="calculateSectionTotals8_1()"></td>
+                                        <td><input type="number" id="wasteDetails" name="wasteDetails[]" class="form-control" oninput="calculateSectionTotals8_1()"></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label">Other Non-hazardous waste - please specify if any (H) </th>
-                                        <td><input type="text" id="wasteDetails" name="wasteDetails[]" class="form-control"></td>
-                                        <td><input type="text" id="wasteDetails" name="wasteDetails[]" class="form-control"></td>
+                                        <td><input type="number" id="wasteDetails" name="wasteDetails[]" class="form-control" oninput="calculateSectionTotals8_1()"></td>
+                                        <td><input type="number" id="wasteDetails" name="wasteDetails[]" class="form-control" oninput="calculateSectionTotals8_1()"></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label">Total (A + B + C + D + E + F + G + H) </th>
-                                        <td><input type="text" id="wasteDetails" name="wasteDetails[]" class="form-control"></td>
-                                        <td><input type="text" id="wasteDetails" name="wasteDetails[]" class="form-control"></td>
+                                        <td><input type="number" id="wasteDetails" name="wasteDetails[]" class="form-control" readonly></td>
+                                        <td><input type="number" id="wasteDetails" name="wasteDetails[]" class="form-control" readonly></td>
                                     </tr>
                                     <tr>
                                         <th colspan="3" class="form-label">For each category of waste generated, total waste recovered through recycling, re-using or other recovery operations (in metric tonnes) </th>
@@ -3561,23 +3606,23 @@
                                     </tr>
                                     <tr>
                                         <td class="form-label">(i)Recycled </th>
-                                        <td><input type="text" id="wasteDetails" name="wasteDetails[]" class="form-control"></td>
-                                        <td><input type="text" id="wasteDetails" name="wasteDetails[]" class="form-control"></td>
+                                        <td><input type="number" id="wasteDetails" name="wasteDetails[]" class="form-control" oninput="calculateSectionTotals8_1()"></td>
+                                        <td><input type="number" id="wasteDetails" name="wasteDetails[]" class="form-control" oninput="calculateSectionTotals8_1()"></td>
                                     </tr>
                                     <tr>
                                         <td class="form-label">(ii)Re-used </th>
-                                        <td><input type="text" id="wasteDetails" name="wasteDetails[]" class="form-control"></td>
-                                        <td><input type="text" id="wasteDetails" name="wasteDetails[]" class="form-control"></td>
+                                        <td><input type="number" id="wasteDetails" name="wasteDetails[]" class="form-control" oninput="calculateSectionTotals8_1()"></td>
+                                        <td><input type="number" id="wasteDetails" name="wasteDetails[]" class="form-control" oninput="calculateSectionTotals8_1()"></td>
                                     </tr>
                                     <tr>
                                         <td class="form-label">(iii)Other recovery operations </th>
-                                        <td><input type="text" id="wasteDetails" name="wasteDetails[]" class="form-control"></td>
-                                        <td><input type="text" id="wasteDetails" name="wasteDetails[]" class="form-control"></td>
+                                        <td><input type="number" id="wasteDetails" name="wasteDetails[]" class="form-control" oninput="calculateSectionTotals8_1()"></td>
+                                        <td><input type="number" id="wasteDetails" name="wasteDetails[]" class="form-control" oninput="calculateSectionTotals8_1()"></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label" align="left">Total </th>
-                                        <td><input type="text" id="wasteDetails" name="wasteDetails[]" class="form-control"></td>
-                                        <td><input type="text" id="wasteDetails" name="wasteDetails[]" class="form-control"></td>
+                                        <td><input type="number" id="wasteDetails" name="wasteDetails[]" class="form-control" readonly></td>
+                                        <td><input type="number" id="wasteDetails" name="wasteDetails[]" class="form-control" readonly></td>
                                     </tr>
                                     <tr>
                                         <th colspan="3" class="form-label">For each category of waste generated, total waste disposed by nature of disposal method (in metric tonnes) </th>
@@ -3587,27 +3632,75 @@
                                     </tr>
                                     <tr>
                                         <td class="form-label">(i)Incineration </th>
-                                        <td><input type="text" id="wasteDetails" name="wasteDetails[]" class="form-control"></td>
-                                        <td><input type="text" id="wasteDetails" name="wasteDetails[]" class="form-control"></td>
+                                        <td><input type="number" id="wasteDetails" name="wasteDetails[]" class="form-control" oninput="calculateSectionTotals8_1()"></td>
+                                        <td><input type="number" id="wasteDetails" name="wasteDetails[]" class="form-control" oninput="calculateSectionTotals8_1()"></td>
                                     </tr>
                                     <tr>
                                         <td class="form-label">(ii)Landfilling </th>
-                                        <td><input type="text" id="wasteDetails" name="wasteDetails[]" class="form-control"></td>
-                                        <td><input type="text" id="wasteDetails" name="wasteDetails[]" class="form-control"></td>
+                                        <td><input type="number" id="wasteDetails" name="wasteDetails[]" class="form-control" oninput="calculateSectionTotals8_1()"></td>
+                                        <td><input type="number" id="wasteDetails" name="wasteDetails[]" class="form-control" oninput="calculateSectionTotals8_1()"></td>
                                     </tr>
                                     <tr>
                                         <td class="form-label">(iii)Other disposal operations </th>
-                                        <td><input type="text" id="wasteDetails" name="wasteDetails[]" class="form-control"></td>
-                                        <td><input type="text" id="wasteDetails" name="wasteDetails[]" class="form-control"></td>
+                                        <td><input type="number" id="wasteDetails" name="wasteDetails[]" class="form-control" oninput="calculateSectionTotals8_1()"></td>
+                                        <td><input type="number" id="wasteDetails" name="wasteDetails[]" class="form-control" oninput="calculateSectionTotals8_1()"></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label" align="left">Total </th>
-                                        <td><input type="text" id="wasteDetails" name="wasteDetails[]" class="form-control"></td>
-                                        <td><input type="text" id="wasteDetails" name="wasteDetails[]" class="form-control"></td>
+                                        <td><input type="number" id="wasteDetails" name="wasteDetails[]" class="form-control" readonly></td>
+                                        <td><input type="number" id="wasteDetails" name="wasteDetails[]" class="form-control" readonly></td>
                                     </tr>
                                 </table>
                             </div>
                         </div>
+                        <script>
+                            // Function to calculate column totals for a specific section of the table
+                                    function calculateColumnTotalsForSection8_1(tableId, startRowIndex, endRowIndex, totalRowIndex) {
+                                        var table = document.getElementById(tableId);
+    
+                                        // Object to hold the sum of each column
+                                        var columnSums = {};
+
+                                        // Initialize column sums
+                                        for (var i = 1; i < table.rows[startRowIndex].cells.length; i++) {
+                                            columnSums[i] = 0;
+                                        }
+
+                                        // Calculate sums for each column
+                                        for (var rowIndex = startRowIndex; rowIndex <= endRowIndex; rowIndex++) {
+                                            var cells = table.rows[rowIndex].cells;
+                                            for (var colIndex = 1; colIndex < cells.length; colIndex++) {
+                                                var input = cells[colIndex].querySelector('input');
+                                                if (input && !input.hasAttribute('readonly')) { // Sum only the input fields that are not readonly
+                                                    var value = parseFloat(input.value) || 0;
+                                                    columnSums[colIndex] += value;
+                                                }
+                                            }
+                                        }
+
+                                        // Update the totals in the 'Total' row
+                                        var totalCells = table.rows[totalRowIndex].cells;
+                                        for (var colIndex = 1; colIndex < totalCells.length; colIndex++) {
+                                            if (columnSums[colIndex] !== undefined) { // Update only if a sum has been calculated
+                                                var totalInput = totalCells[colIndex].querySelector('input');
+                                                if (totalInput) { // If there's an input field, update it
+                                                    totalInput.value = columnSums[colIndex];
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                    // Calculate totals for each section when the page loads and when values change
+                                    window.onload = function() {
+                                        calculateSectionTotals8_1();
+                                    };
+
+                                    function calculateSectionTotals8_1() {
+                                        calculateColumnTotalsForSection8_1('p_wasteDetails', 2, 9, 10);
+                                        calculateColumnTotalsForSection8_1('p_wasteDetails', 13, 15, 16);
+                                        calculateColumnTotalsForSection8_1('p_wasteDetails', 19, 21, 22);
+                                    }
+                        </script>
                         <!--Details of waste management end-->
 
                         <!--Independent assessment question 8 start-->
@@ -3777,50 +3870,97 @@
                                     </tr>
                                     <tr>
                                         <td class="form-label">Total electricity consumption (A) </th>
-                                        <td><input type="text" id="totalenergyconsumed" name="totalenergyconsumed[]" class="form-control"></td>
-                                        <td><input type="text" id="totalenergyconsumed" name="totalenergyconsumed[]" class="form-control"></td>
+                                        <td><input type="number" id="totalenergyconsumed" name="totalenergyconsumed[]" class="form-control" oninput="calculateSectionTotalsL1_1()"></td>
+                                        <td><input type="number" id="totalenergyconsumed" name="totalenergyconsumed[]" class="form-control" oninput="calculateSectionTotalsL1_1()"></td>
                                     </tr>
                                     <tr>
                                         <td class="form-label">Total fuel consumption (B) </th>
-                                        <td><input type="text" id="totalenergyconsumed" name="totalenergyconsumed[]" class="form-control"></td>
-                                        <td><input type="text" id="totalenergyconsumed" name="totalenergyconsumed[]" class="form-control"></td>
+                                        <td><input type="number" id="totalenergyconsumed" name="totalenergyconsumed[]" class="form-control" oninput="calculateSectionTotalsL1_1()"></td>
+                                        <td><input type="number" id="totalenergyconsumed" name="totalenergyconsumed[]" class="form-control" oninput="calculateSectionTotalsL1_1()"></td>
                                     </tr>
                                     <tr>
                                         <td class="form-label">Energy consumption through other sources (C) </th>
-                                        <td><input type="text" id="totalenergyconsumed" name="totalenergyconsumed[]" class="form-control"></td>
-                                        <td><input type="text" id="totalenergyconsumed" name="totalenergyconsumed[]" class="form-control"></td>
+                                        <td><input type="number" id="totalenergyconsumed" name="totalenergyconsumed[]" class="form-control" oninput="calculateSectionTotalsL1_1()"></td>
+                                        <td><input type="number" id="totalenergyconsumed" name="totalenergyconsumed[]" class="form-control" oninput="calculateSectionTotalsL1_1()"></td>
                                     </tr>
                                     <tr>
                                         <td class="form-label">Total energy consumed from renewable sources (A + B + C) </th>
-                                        <td><input type="text" id="totalenergyconsumed" name="totalenergyconsumed[]" class="form-control"></td>
-                                        <td><input type="text" id="totalenergyconsumed" name="totalenergyconsumed[]" class="form-control"></td>
+                                        <td><input type="number" id="totalenergyconsumed" name="totalenergyconsumed[]" class="form-control" readonly></td>
+                                        <td><input type="number" id="totalenergyconsumed" name="totalenergyconsumed[]" class="form-control" readonly></td>
                                     </tr>
                                     <tr>
                                         <th colspan="3" class="form-label" align="left">From non-renewable sources </th>
                                     </tr>
                                     <tr>
                                         <td class="form-label">Total electricity consumption (D) </th>
-                                        <td><input type="text" id="totalenergyconsumed" name="totalenergyconsumed[]" class="form-control"></td>
-                                        <td><input type="text" id="totalenergyconsumed" name="totalenergyconsumed[]" class="form-control"></td>
+                                        <td><input type="number" id="totalenergyconsumed" name="totalenergyconsumed[]" class="form-control" oninput="calculateSectionTotalsL1_1()"></td>
+                                        <td><input type="number" id="totalenergyconsumed" name="totalenergyconsumed[]" class="form-control" oninput="calculateSectionTotalsL1_1()"></td>
                                     </tr>
                                     <tr>
                                         <td class="form-label">Total fuel consumption (E) </th>
-                                        <td><input type="text" id="totalenergyconsumed" name="totalenergyconsumed[]" class="form-control"></td>
-                                        <td><input type="text" id="totalenergyconsumed" name="totalenergyconsumed[]" class="form-control"></td>
+                                        <td><input type="number" id="totalenergyconsumed" name="totalenergyconsumed[]" class="form-control" oninput="calculateSectionTotalsL1_1()"></td>
+                                        <td><input type="number" id="totalenergyconsumed" name="totalenergyconsumed[]" class="form-control" oninput="calculateSectionTotalsL1_1()"></td>
                                     </tr>
                                     <tr>
                                         <td class="form-label">Energy consumption through other sources (F) </th>
-                                        <td><input type="text" id="totalenergyconsumed" name="totalenergyconsumed[]" class="form-control"></td>
-                                        <td><input type="text" id="totalenergyconsumed" name="totalenergyconsumed[]" class="form-control"></td>
+                                        <td><input type="number" id="totalenergyconsumed" name="totalenergyconsumed[]" class="form-control" oninput="calculateSectionTotalsL1_1()"></td>
+                                        <td><input type="number" id="totalenergyconsumed" name="totalenergyconsumed[]" class="form-control" oninput="calculateSectionTotalsL1_1()"></td>
                                     </tr>
                                     <tr>
                                         <td class="form-label">Total energy consumed from non-renewable sources (D + E + F) </th>
-                                        <td><input type="text" id="totalenergyconsumed" name="totalenergyconsumed[]" class="form-control"></td>
-                                        <td><input type="text" id="totalenergyconsumed" name="totalenergyconsumed[]" class="form-control"></td>
+                                        <td><input type="number" id="totalenergyconsumed" name="totalenergyconsumed[]" class="form-control" readonly></td>
+                                        <td><input type="number" id="totalenergyconsumed" name="totalenergyconsumed[]" class="form-control" readonly></td>
                                     </tr>
                                 </table>
                             </div>   
                         </div>
+                        <script>
+                            // Function to calculate column totals for a specific section of the table
+                                    function calculateColumnTotalsForSectionL1_1(tableId, startRowIndex, endRowIndex, totalRowIndex) {
+                                        var table = document.getElementById(tableId);
+    
+                                        // Object to hold the sum of each column
+                                        var columnSums = {};
+
+                                        // Initialize column sums
+                                        for (var i = 1; i < table.rows[startRowIndex].cells.length; i++) {
+                                            columnSums[i] = 0;
+                                        }
+
+                                        // Calculate sums for each column
+                                        for (var rowIndex = startRowIndex; rowIndex <= endRowIndex; rowIndex++) {
+                                            var cells = table.rows[rowIndex].cells;
+                                            for (var colIndex = 1; colIndex < cells.length; colIndex++) {
+                                                var input = cells[colIndex].querySelector('input');
+                                                if (input && !input.hasAttribute('readonly')) { // Sum only the input fields that are not readonly
+                                                    var value = parseFloat(input.value) || 0;
+                                                    columnSums[colIndex] += value;
+                                                }
+                                            }
+                                        }
+
+                                        // Update the totals in the 'Total' row
+                                        var totalCells = table.rows[totalRowIndex].cells;
+                                        for (var colIndex = 1; colIndex < totalCells.length; colIndex++) {
+                                            if (columnSums[colIndex] !== undefined) { // Update only if a sum has been calculated
+                                                var totalInput = totalCells[colIndex].querySelector('input');
+                                                if (totalInput) { // If there's an input field, update it
+                                                    totalInput.value = columnSums[colIndex];
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                    // Calculate totals for each section when the page loads and when values change
+                                    window.onload = function() {
+                                        calculateSectionTotalsL1_1();
+                                    };
+
+                                    function calculateSectionTotalsL1_1() {
+                                        calculateColumnTotalsForSectionL1_1('p_totalenergyconsumed', 2, 4, 5);
+                                        calculateColumnTotalsForSectionL1_1('p_totalenergyconsumed', 7, 9, 10);
+                                    }
+                        </script>
                         <!--Break-up of the total energy consumed (in Joules or multiples) from renewable and non-renewable sources end-->
 
                         <!--Independent assessment question 1 leadership start-->
@@ -3846,7 +3986,7 @@
                         <!--Details related to water discharged start-->
                         <div class="mb-3">
                             <div class="policy">
-                                <label for="waterdischarged" class="form-label">2.1. Provide break-up of the total energy consumed (in Joules or multiples) from renewable and non-renewable sources, in the following format:</label>
+                                <label for="waterdischarged" class="form-label">2.1. Provide the following details related to water discharged: Water discharge by destination and level of treatment (in kilolitres):</label>
                             </div>
                             <div id="waterdischarged" class="responsive-table">
                                 <table id="p_waterdischarged">
@@ -3860,87 +4000,161 @@
                                     </tr>
                                     <tr>
                                         <td class="form-label">(i) To Surface water </th>
-                                        <td><input type="text" id="waterdischarged" name="waterdischarged[]" class="form-control"></td>
-                                        <td><input type="text" id="waterdischarged" name="waterdischarged[]" class="form-control"></td>
+                                        <td><input type="number" id="waterdischarged" name="waterdischarged[]" class="form-control" readonly></td>
+                                        <td><input type="number" id="waterdischarged" name="waterdischarged[]" class="form-control" readonly></td>
                                     </tr>
                                     <tr>
                                         <td class="form-label"> - No treatment </th>
-                                        <td><input type="text" id="waterdischarged" name="waterdischarged[]" class="form-control"></td>
-                                        <td><input type="text" id="waterdischarged" name="waterdischarged[]" class="form-control"></td>
+                                        <td><input type="number" id="waterdischarged" name="waterdischarged[]" class="form-control" oninput="calculateSectionTotalsL2_1()"></td>
+                                        <td><input type="number" id="waterdischarged" name="waterdischarged[]" class="form-control" oninput="calculateSectionTotalsL2_1()"></td>
                                     </tr>
                                     <tr>
                                         <td class="form-label"> - With treatment - please specify level of treatment </td>
-                                        <td><input type="text" id="waterdischarged" name="waterdischarged[]" class="form-control"></td>
-                                        <td><input type="text" id="waterdischarged" name="waterdischarged[]" class="form-control"></td>
+                                        <td><input type="number" id="waterdischarged" name="waterdischarged[]" class="form-control" oninput="calculateSectionTotalsL2_1()"></td>
+                                        <td><input type="number" id="waterdischarged" name="waterdischarged[]" class="form-control" oninput="calculateSectionTotalsL2_1()"></td>
                                     </tr>
                                     <tr>
                                         <td class="form-label">(ii) To Groundwater </th>
-                                        <td><input type="text" id="waterdischarged" name="waterdischarged[]" class="form-control"></td>
-                                        <td><input type="text" id="waterdischarged" name="waterdischarged[]" class="form-control"></td>
+                                        <td><input type="number" id="waterdischarged" name="waterdischarged[]" class="form-control" readonly></td>
+                                        <td><input type="number" id="waterdischarged" name="waterdischarged[]" class="form-control" readonly></td>
                                     </tr>
                                     <tr>
                                         <td class="form-label"> - No treatment </th>
-                                        <td><input type="text" id="waterdischarged" name="waterdischarged[]" class="form-control"></td>
-                                        <td><input type="text" id="waterdischarged" name="waterdischarged[]" class="form-control"></td>
+                                        <td><input type="number" id="waterdischarged" name="waterdischarged[]" class="form-control" oninput="calculateSectionTotalsL2_1()"></td>
+                                        <td><input type="number" id="waterdischarged" name="waterdischarged[]" class="form-control" oninput="calculateSectionTotalsL2_1()"></td>
                                     </tr>
                                     <tr>
                                         <td class="form-label"> - With treatment - please specify level of treatment </td>
-                                        <td><input type="text" id="waterdischarged" name="waterdischarged[]" class="form-control"></td>
-                                        <td><input type="text" id="waterdischarged" name="waterdischarged[]" class="form-control"></td>
+                                        <td><input type="number" id="waterdischarged" name="waterdischarged[]" class="form-control" oninput="calculateSectionTotalsL2_1()"></td>
+                                        <td><input type="number" id="waterdischarged" name="waterdischarged[]" class="form-control" oninput="calculateSectionTotalsL2_1()"></td>
                                     </tr>
                                     <tr>
                                         <td class="form-label">(iii) To Seawater </th>
-                                        <td><input type="text" id="waterdischarged" name="waterdischarged[]" class="form-control"></td>
-                                        <td><input type="text" id="waterdischarged" name="waterdischarged[]" class="form-control"></td>
+                                        <td><input type="number" id="waterdischarged" name="waterdischarged[]" class="form-control" readonly></td>
+                                        <td><input type="number" id="waterdischarged" name="waterdischarged[]" class="form-control" readonly></td>
                                     </tr>
                                     <tr>
                                         <td class="form-label"> - No treatment </th>
-                                        <td><input type="text" id="waterdischarged" name="waterdischarged[]" class="form-control"></td>
-                                        <td><input type="text" id="waterdischarged" name="waterdischarged[]" class="form-control"></td>
+                                        <td><input type="number" id="waterdischarged" name="waterdischarged[]" class="form-control" oninput="calculateSectionTotalsL2_1()"></td>
+                                        <td><input type="number" id="waterdischarged" name="waterdischarged[]" class="form-control" oninput="calculateSectionTotalsL2_1()"></td>
                                     </tr>
                                     <tr>
                                         <td class="form-label"> - With treatment - please specify level of treatment </td>
-                                        <td><input type="text" id="waterdischarged" name="waterdischarged[]" class="form-control"></td>
-                                        <td><input type="text" id="waterdischarged" name="waterdischarged[]" class="form-control"></td>
+                                        <td><input type="number" id="waterdischarged" name="waterdischarged[]" class="form-control" oninput="calculateSectionTotalsL2_1()"></td>
+                                        <td><input type="number" id="waterdischarged" name="waterdischarged[]" class="form-control" oninput="calculateSectionTotalsL2_1()"></td>
                                     </tr>
                                     <tr>
                                         <td class="form-label">(iv) Sent to third-parties </th>
-                                        <td><input type="text" id="waterdischarged" name="waterdischarged[]" class="form-control"></td>
-                                        <td><input type="text" id="waterdischarged" name="waterdischarged[]" class="form-control"></td>
+                                        <td><input type="number" id="waterdischarged" name="waterdischarged[]" class="form-control" readonly></td>
+                                        <td><input type="number" id="waterdischarged" name="waterdischarged[]" class="form-control" readonly></td>
                                     </tr>
                                     <tr>
                                         <td class="form-label"> - No treatment </th>
-                                        <td><input type="text" id="waterdischarged" name="waterdischarged[]" class="form-control"></td>
-                                        <td><input type="text" id="waterdischarged" name="waterdischarged[]" class="form-control"></td>
+                                        <td><input type="number" id="waterdischarged" name="waterdischarged[]" class="form-control" oninput="calculateSectionTotalsL2_1()"></td>
+                                        <td><input type="number" id="waterdischarged" name="waterdischarged[]" class="form-control" oninput="calculateSectionTotalsL2_1()"></td>
                                     </tr>
                                     <tr>
                                         <td class="form-label"> - With treatment - please specify level of treatment </td>
-                                        <td><input type="text" id="waterdischarged" name="waterdischarged[]" class="form-control"></td>
-                                        <td><input type="text" id="waterdischarged" name="waterdischarged[]" class="form-control"></td>
+                                        <td><input type="number" id="waterdischarged" name="waterdischarged[]" class="form-control" oninput="calculateSectionTotalsL2_1()"></td>
+                                        <td><input type="number" id="waterdischarged" name="waterdischarged[]" class="form-control" oninput="calculateSectionTotalsL2_1()"></td>
                                     </tr>
                                     <tr>
                                         <td class="form-label">(v) Others </th>
-                                        <td><input type="text" id="waterdischarged" name="waterdischarged[]" class="form-control"></td>
-                                        <td><input type="text" id="waterdischarged" name="waterdischarged[]" class="form-control"></td>
+                                        <td><input type="number" id="waterdischarged" name="waterdischarged[]" class="form-control" readonly></td>
+                                        <td><input type="number" id="waterdischarged" name="waterdischarged[]" class="form-control" readonly></td>
                                     </tr>
                                     <tr>
                                         <td class="form-label"> - No treatment </th>
-                                        <td><input type="text" id="waterdischarged" name="waterdischarged[]" class="form-control"></td>
-                                        <td><input type="text" id="waterdischarged" name="waterdischarged[]" class="form-control"></td>
+                                        <td><input type="number" id="waterdischarged" name="waterdischarged[]" class="form-control" oninput="calculateSectionTotalsL2_1()"></td>
+                                        <td><input type="number" id="waterdischarged" name="waterdischarged[]" class="form-control" oninput="calculateSectionTotalsL2_1()"></td>
                                     </tr>
                                     <tr>
                                         <td class="form-label"> - With treatment - please specify level of treatment </td>
-                                        <td><input type="text" id="waterdischarged" name="waterdischarged[]" class="form-control"></td>
-                                        <td><input type="text" id="waterdischarged" name="waterdischarged[]" class="form-control"></td>
+                                        <td><input type="number" id="waterdischarged" name="waterdischarged[]" class="form-control" oninput="calculateSectionTotalsL2_1()"></td>
+                                        <td><input type="number" id="waterdischarged" name="waterdischarged[]" class="form-control" oninput="calculateSectionTotalsL2_1()"></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label" align="left">Total water discharged (in kilolitres) </th>
-                                        <td><input type="text" id="waterdischarged" name="waterdischarged[]" class="form-control"></td>
-                                        <td><input type="text" id="waterdischarged" name="waterdischarged[]" class="form-control"></td>
+                                        <td><input type="number" id="waterdischarged" name="waterdischarged[]" class="form-control" readonly></td>
+                                        <td><input type="number" id="waterdischarged" name="waterdischarged[]" class="form-control" readonly></td>
                                     </tr>
                                 </table>
                             </div>   
                         </div>
+                        <script>
+                            // Function to calculate column totals for a specific section of the table
+                                    function calculateColumnTotalsForSectionL2_1(tableId, startRowIndex, endRowIndex, totalRowIndex) {
+                                        var table = document.getElementById(tableId);
+    
+                                        // Object to hold the sum of each column
+                                        var columnSums = {};
+
+                                        // Initialize column sums
+                                        for (var i = 1; i < table.rows[startRowIndex].cells.length; i++) {
+                                            columnSums[i] = 0;
+                                        }
+
+                                        // Calculate sums for each column
+                                        for (var rowIndex = startRowIndex; rowIndex <= endRowIndex; rowIndex++) {
+                                            var cells = table.rows[rowIndex].cells;
+                                            for (var colIndex = 1; colIndex < cells.length; colIndex++) {
+                                                var input = cells[colIndex].querySelector('input');
+                                                if (input && !input.hasAttribute('readonly')) { // Sum only the input fields that are not readonly
+                                                    var value = parseFloat(input.value) || 0;
+                                                    columnSums[colIndex] += value;
+                                                }
+                                            }
+                                        }
+
+                                        // Update the totals in the 'Total' row
+                                        var totalCells = table.rows[totalRowIndex].cells;
+                                        for (var colIndex = 1; colIndex < totalCells.length; colIndex++) {
+                                            if (columnSums[colIndex] !== undefined) { // Update only if a sum has been calculated
+                                                var totalInput = totalCells[colIndex].querySelector('input');
+                                                if (totalInput) { // If there's an input field, update it
+                                                    totalInput.value = columnSums[colIndex];
+                                                }
+                                            }
+                                        }
+
+                                        var row1 = table.rows[2];
+                                        var row2 = table.rows[5];
+                                        var row3 = table.rows[8];
+                                        var row4 = table.rows[11];
+                                        var row5 = table.rows[14];
+                                        var total_row = table.rows[17];
+                                        
+                                        var cy_row1 = parseFloat(row1.cells[1].querySelector('input').value) || 0;
+                                        var py_row1 = parseFloat(row1.cells[2].querySelector('input').value) || 0;
+                                        var cy_row2 = parseFloat(row2.cells[1].querySelector('input').value) || 0;
+                                        var py_row2 = parseFloat(row2.cells[2].querySelector('input').value) || 0;
+                                        var cy_row3 = parseFloat(row3.cells[1].querySelector('input').value) || 0;
+                                        var py_row3 = parseFloat(row3.cells[2].querySelector('input').value) || 0;
+                                        var cy_row4 = parseFloat(row4.cells[1].querySelector('input').value) || 0;
+                                        var py_row4 = parseFloat(row4.cells[2].querySelector('input').value) || 0;
+                                        var cy_row5 = parseFloat(row5.cells[1].querySelector('input').value) || 0;
+                                        var py_row5 = parseFloat(row5.cells[2].querySelector('input').value) || 0;
+
+                                        var total_cy = cy_row1 + cy_row2 + cy_row3 + cy_row4 + cy_row5;
+                                        var total_py = py_row1 + py_row2 + py_row3 + py_row4 + py_row5;
+
+                                        total_row.cells[1].querySelector('input').value = total_cy;
+                                        total_row.cells[2].querySelector('input').value = total_py;
+                                    }
+
+                                    // Calculate totals for each section when the page loads and when values change
+                                    window.onload = function() {
+                                        calculateSectionTotalsL2_1();
+                                    };
+
+                                    function calculateSectionTotalsL2_1() {
+                                        calculateColumnTotalsForSectionL2_1('p_waterdischarged', 3, 4, 2);
+                                        calculateColumnTotalsForSectionL2_1('p_waterdischarged', 6, 7, 5);
+                                        calculateColumnTotalsForSectionL2_1('p_waterdischarged', 9, 10, 8);
+                                        calculateColumnTotalsForSectionL2_1('p_waterdischarged', 12, 13, 11);
+                                        calculateColumnTotalsForSectionL2_1('p_waterdischarged', 15, 16, 14);
+                                    }
+                        </script>
                         <!--Details related to water discharged end-->
 
                         <!--Independent assessment question 2 leadership start-->
@@ -3992,136 +4206,211 @@
                                         </tr>
                                         <tr>
                                             <td class="form-label">(i) Surface water </td>
-                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control"></td>
-                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control"></td>
+                                            <td><input type="number" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
+                                            <td><input type="number" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
                                         </tr>
                                         <tr>
                                             <td class="form-label">(ii) Groundwater </td>
-                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control"></td>
-                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control"></td>
+                                            <td><input type="number" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
+                                            <td><input type="number" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
                                         </tr>
                                         <tr>
                                             <td class="form-label">(iii) Third party water </td>
-                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control"></td>
-                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control"></td>
+                                            <td><input type="number" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
+                                            <td><input type="number" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
                                         </tr>
                                         <tr>
                                             <td class="form-label">(iv) Seawater / desalinated water </td>
-                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control"></td>
-                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control"></td>
+                                            <td><input type="number" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
+                                            <td><input type="number" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
                                         </tr>
                                         <tr>
                                             <td class="form-label">(v) Others </td>
-                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control"></td>
-                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control"></td>
+                                            <td><input type="number" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
+                                            <td><input type="number" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
                                         </tr>
                                         <tr>
                                             <th class="form-label">Total volume of water withdrawal (in kilolitres) </th>
-                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control"></td>
-                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control"></td>
+                                            <td><input type="number" id="waterstress" name="waterstress[]" class="form-control" readonly></td>
+                                            <td><input type="number" id="waterstress" name="waterstress[]" class="form-control" readonly></td>
                                         </tr>
                                         <tr>
                                             <th class="form-label">Total volume of water consumption (in kilolitres) </th>
-                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control"></td>
-                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control"></td>
+                                            <td><input type="number" id="waterstress" name="waterstress[]" class="form-control"></td>
+                                            <td><input type="number" id="waterstress" name="waterstress[]" class="form-control"></td>
                                         </tr>
                                         <tr>
                                             <th class="form-label">Water intensity per rupee of turnover (Water consumed / turnover) </th>
-                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control"></td>
-                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control"></td>
+                                            <td><input type="number" id="waterstress" name="waterstress[]" class="form-control"></td>
+                                            <td><input type="number" id="waterstress" name="waterstress[]" class="form-control"></td>
                                         </tr>
                                         <tr>
                                             <th class="form-label">Water intensity (optional) </th>
-                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control"></td>
-                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control"></td>
+                                            <td><input type="number" id="waterstress" name="waterstress[]" class="form-control"></td>
+                                            <td><input type="number" id="waterstress" name="waterstress[]" class="form-control"></td>
                                         </tr>
                                         <tr>
                                             <th colspan="3" class="form-label" align="left">Water discharge by destination and level of treatment (in kilolitres) </th>
                                         </tr>
                                         <tr>
                                             <td class="form-label">(i) Into Surface water </td>
-                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control"></td>
-                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control"></td>
+                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control" readonly></td>
+                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control" readonly></td>
                                         </tr>
                                         <tr>
                                             <td class="form-label"> - No treatment </td>
-                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control"></td>
-                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control"></td>
+                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
+                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
                                         </tr>
                                         <tr>
                                             <td class="form-label"> - With treatment – please specify level of treatment </td>
-                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control"></td>
-                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control"></td>
+                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
+                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
                                         </tr>
                                         <tr>
                                             <td class="form-label">(ii) Into Ground water </td>
-                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control"></td>
-                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control"></td>
+                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control" readonly></td>
+                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control" readonly></td>
                                         </tr>
                                         <tr>
                                             <td class="form-label"> - No treatment </td>
-                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control"></td>
-                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control"></td>
+                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
+                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
                                         </tr>
                                         <tr>
                                             <td class="form-label"> - With treatment – please specify level of treatment </td>
-                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control"></td>
-                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control"></td>
+                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
+                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
                                         </tr>
                                         <tr>
                                             <td class="form-label">(iii) Into Seawater </td>
-                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control"></td>
-                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control"></td>
+                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control" readonly></td>
+                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control" readonly></td>
                                         </tr>
                                         <tr>
                                             <td class="form-label"> - No treatment </td>
-                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control"></td>
-                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control"></td>
+                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
+                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
                                         </tr>
                                         <tr>
                                             <td class="form-label"> - With treatment – please specify level of treatment </td>
-                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control"></td>
-                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control"></td>
+                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
+                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
                                         </tr>
                                         <tr>
                                             <td class="form-label">(iv) Sent to third parties </td>
-                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control"></td>
-                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control"></td>
+                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control" readonly></td>
+                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control" readonly></td>
                                         </tr>
                                         <tr>
                                             <td class="form-label"> - No treatment </td>
-                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control"></td>
-                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control"></td>
+                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
+                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
                                         </tr>
                                         <tr>
                                             <td class="form-label"> - With treatment – please specify level of treatment </td>
-                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control"></td>
-                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control"></td>
+                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
+                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
                                         </tr>
                                         <tr>
                                             <td class="form-label">(v) Others </td>
-                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control"></td>
-                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control"></td>
+                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control" readonly></td>
+                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control" readonly></td>
                                         </tr>
                                         <tr>
                                             <td class="form-label"> - No treatment </td>
-                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control"></td>
-                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control"></td>
+                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
+                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
                                         </tr>
                                         <tr>
                                             <td class="form-label"> - With treatment – please specify level of treatment </td>
-                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control"></td>
-                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control"></td>
+                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
+                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
                                         </tr>
                                         <tr>
                                             <th class="form-label">Total water discharged (in kilolitres) </th>
-                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control"></td>
-                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control"></td>
+                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control" readonly></td>
+                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control" readonly></td>
                                         </tr>
                                     </table>
                                 </div>
                             </div>  
                         </div>
+                        <script>
+                            // Function to calculate column totals for a specific section of the table
+                                    function calculateColumnTotalsForSectionL3_1(tableId, startRowIndex, endRowIndex, totalRowIndex) {
+                                        var table = document.getElementById(tableId);
+    
+                                        // Object to hold the sum of each column
+                                        var columnSums = {};
+
+                                        // Initialize column sums
+                                        for (var i = 1; i < table.rows[startRowIndex].cells.length; i++) {
+                                            columnSums[i] = 0;
+                                        }
+
+                                        // Calculate sums for each column
+                                        for (var rowIndex = startRowIndex; rowIndex <= endRowIndex; rowIndex++) {
+                                            var cells = table.rows[rowIndex].cells;
+                                            for (var colIndex = 1; colIndex < cells.length; colIndex++) {
+                                                var input = cells[colIndex].querySelector('input');
+                                                if (input && !input.hasAttribute('readonly')) { // Sum only the input fields that are not readonly
+                                                    var value = parseFloat(input.value) || 0;
+                                                    columnSums[colIndex] += value;
+                                                }
+                                            }
+                                        }
+
+                                        // Update the totals in the 'Total' row
+                                        var totalCells = table.rows[totalRowIndex].cells;
+                                        for (var colIndex = 1; colIndex < totalCells.length; colIndex++) {
+                                            if (columnSums[colIndex] !== undefined) { // Update only if a sum has been calculated
+                                                var totalInput = totalCells[colIndex].querySelector('input');
+                                                if (totalInput) { // If there's an input field, update it
+                                                    totalInput.value = columnSums[colIndex];
+                                                }
+                                            }
+                                        }
+
+                                        var row1 = table.rows[12];
+                                        var row2 = table.rows[15];
+                                        var row3 = table.rows[18];
+                                        var row4 = table.rows[21];
+                                        var row5 = table.rows[24];
+                                        var total_row = table.rows[27];
+                                        
+                                        var cy_row1 = parseFloat(row1.cells[1].querySelector('input').value) || 0;
+                                        var py_row1 = parseFloat(row1.cells[2].querySelector('input').value) || 0;
+                                        var cy_row2 = parseFloat(row2.cells[1].querySelector('input').value) || 0;
+                                        var py_row2 = parseFloat(row2.cells[2].querySelector('input').value) || 0;
+                                        var cy_row3 = parseFloat(row3.cells[1].querySelector('input').value) || 0;
+                                        var py_row3 = parseFloat(row3.cells[2].querySelector('input').value) || 0;
+                                        var cy_row4 = parseFloat(row4.cells[1].querySelector('input').value) || 0;
+                                        var py_row4 = parseFloat(row4.cells[2].querySelector('input').value) || 0;
+                                        var cy_row5 = parseFloat(row5.cells[1].querySelector('input').value) || 0;
+                                        var py_row5 = parseFloat(row5.cells[2].querySelector('input').value) || 0;
+
+                                        var total_cy = cy_row1 + cy_row2 + cy_row3 + cy_row4 + cy_row5;
+                                        var total_py = py_row1 + py_row2 + py_row3 + py_row4 + py_row5;
+
+                                        total_row.cells[1].querySelector('input').value = total_cy;
+                                        total_row.cells[2].querySelector('input').value = total_py;
+                                    }
+
+                                    // Calculate totals for each section when the page loads and when values change
+                                    window.onload = function() {
+                                        calculateSectionTotalsL3_1();
+                                    };
+
+                                    function calculateSectionTotalsL3_1() {
+                                        calculateColumnTotalsForSectionL3_1('p_waterstress', 2, 6, 7);
+                                        calculateColumnTotalsForSectionL3_1('p_waterstress', 13, 14, 12);
+                                        calculateColumnTotalsForSectionL3_1('p_waterstress', 16, 17, 15);
+                                        calculateColumnTotalsForSectionL3_1('p_waterstress', 19, 20, 18);
+                                        calculateColumnTotalsForSectionL3_1('p_waterstress', 22, 23, 21);
+                                        calculateColumnTotalsForSectionL3_1('p_waterstress', 25, 26, 24);
+                                    }
+                        </script>
                         <!--Water withdrawal, consumption and discharge in areas of water stress end-->
 
                         <!--Independent assessment question 3 leadership start-->
@@ -4681,7 +4970,6 @@
                                     <option value="No">No</option>
                                 </select>
                             </div>
-                            <!--hidden-->
                             <div class="policy">
                                 <label for="procurementPolicyMarginalized" class="form-label">3.b. From which marginalized /vulnerable groups do you procure?</label>
                                 <textarea id="procurementPolicyMarginalized" name="procurementPolicyMarginalized" class="form-control" placeholder="Enter the details" ></textarea>

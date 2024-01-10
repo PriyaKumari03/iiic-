@@ -41,9 +41,11 @@ try {
     if (isset($_SESSION['cin'])) {
         $cin = $_SESSION['cin'];
     }
+    /*
     else {
         $cin = 'U74140DL2014PTC272628'; // Hardcoded CIN for unit testing. Delete before production deployment.
     }
+    */
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $response = [];
