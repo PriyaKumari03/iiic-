@@ -80,6 +80,7 @@
                     </div>
                     <!--2-Name of the Listed Entity End -->
 
+                   
                     <!--3-Year of incorporation Start -->
                     <div class="mb-3">
                         <div class="policy">
@@ -286,9 +287,9 @@
                         <tbody>
                           <tr>
                             <td style="width:5%;"><input type="number" id="doba" id="p_doba" name="doba[]" class="table-control" required value="1" readonly></td>
-                            <td><input type="text" id="doba" name="doba[]" class="form-control" required></td>
-                            <td><input type="text" id="doba" name="doba[]" class="form-control" required></td>
-                            <td><input type="text" id="doba" name="doba[]" class="form-control" required></td>
+                            <td><input type="text" id="doba" name="doba[]" class="form-control"></td>
+                            <td><input type="text" id="doba" name="doba[]" class="form-control"></td>
+                            <td><input type="text" id="doba" name="doba[]" class="form-control"></td>
                           </tr>
                         </tbody>
                       </table>
@@ -321,9 +322,9 @@
                         <tbody>
                           <tr>
                             <td style="width:5%;"><input type="number" id="dops" id="p_dops" name="dops[]" class="table-control" value="1" readonly required ></td>
-                            <td><input type="text" id="dops" name="dops[]" class="form-control" required></td>
-                            <td><input type="text" id="dops" name="dops[]" class="form-control" required></td>
-                            <td><input type="text" id="dops" name="dops[]" class="form-control" required></td>
+                            <td><input type="text" id="dops" name="dops[]" class="form-control"></td>
+                            <td><input type="text" id="dops" name="dops[]" class="form-control"></td>
+                            <td><input type="text" id="dops" name="dops[]" class="form-control"></td>
                           </tr>
                         </tbody>
                       </table>
@@ -409,7 +410,7 @@
                           <tbody>
                             <tr>
                               <th class="form-label" id="drm" id="p_drm" name="drm[]" class="form-control">National (No. of States)</th>
-                              <td><input type="number" id="drm" name="drm[]" class="form-control"></td>
+                              <td><input type="text" id="drm" name="drm[]" class="form-control"></td>
                               <td>
                                 <select id="drm" name="drm[]" class="form-control">
                                     <option value="">Select Union Territory</option>
@@ -427,7 +428,7 @@
                             </tr>
                             <tr>
                               <th class="form-label" id="drm" id="p_drm" name="drm[]" class="form-control">International (No. of Countries)</th>
-                              <td><input type="number" id="drm" name="drm[]" class="form-control"></td>
+                              <td><input type="text" id="drm" name="drm[]" class="form-control"></td>
                             </tr>
                           </tbody>
                         </table>
@@ -501,28 +502,28 @@
                         <tr>
                           <th class="form-label">1.</th>
                           <th class="form-label">Permanent(D)</th>
-                          <td><input type="number" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 3)" required></td>
-                          <td><input type="number" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 3)" required></td>
+                          <td><input type="number" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 3)"></td>
+                          <td><input type="number" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 3)"></td>
                           <td><input type="number" id="dew" name="dew[]" class="form-control" readonly></td>
-                          <td><input type="number" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 3)" required></td>
+                          <td><input type="number" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 3)"></td>
                           <td><input type="number" id="dew" name="dew[]" class="form-control" readonly></td>
                         </tr>
                         <tr>
                           <th class="form-label">2.</th>
                           <th class="form-label">Other than Permanent(E)</th>  
-                          <td><input type="number" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 4)" required></td>
-                          <td><input type="number" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 4)" required></td>
+                          <td><input type="number" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 4)"></td>
+                          <td><input type="number" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 4)"></td>
                           <td><input type="number" id="dew" name="dew[]" class="form-control" readonly></td>
-                          <td><input type="number" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 4)" required></td>
+                          <td><input type="number" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 4)"></td>
                           <td><input type="number" id="dew" name="dew[]" class="form-control" readonly></td>
                         </tr>
                         <tr>
                           <th class="form-label">3.</th>
                           <th class="form-label">Total employees(D + E)</th>
-                          <td><input type="number" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 5)" required></td>
-                          <td><input type="number" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 5)" required></td>
+                          <td><input type="number" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 5)"></td>
+                          <td><input type="number" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 5)"></td>
                           <td><input type="number" id="dew" name="dew[]" class="form-control" readonly></td>
-                          <td><input type="number" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 5)" required></td>
+                          <td><input type="number" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 5)"></td>
                           <td><input type="number" id="dew" name="dew[]" class="form-control" readonly></td>
                         </tr>
                         <tr>
@@ -531,31 +532,32 @@
                         <tr>
                           <th class="form-label">4.</th>
                           <th class="form-label">Permanent (F)</th>
-                          <td><input type="number" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 7)" required></td>
-                          <td><input type="number" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 7)" required></td>
+                          <td><input type="number" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 7)"></td>
+                          <td><input type="number" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 7)"></td>
                           <td><input type="number" id="dew" name="dew[]" class="form-control" readonly></td>
-                          <td><input type="number" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 7)" required></td>
+                          <td><input type="number" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 7)"></td>
                           <td><input type="number" id="dew" name="dew[]" class="form-control" readonly></td>
                         </tr>
                         <tr>
                           <th class="form-label">5.</th>
                           <th class="form-label">Other than Permanent (G)</th>
-                          <td><input type="number" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 8)" required></td>
-                          <td><input type="number" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 8)" required></td>
+                          <td><input type="number" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 8)"></td>
+                          <td><input type="number" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 8)"></td>
                           <td><input type="number" id="dew" name="dew[]" class="form-control" readonly></td>
-                          <td><input type="number" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 8)" required></td>
+                          <td><input type="number" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 8)"></td>
                           <td><input type="number" id="dew" name="dew[]" class="form-control" readonly></td>
                         </tr>
                         <tr>
                           <th class="form-label">6.</th>
                           <th class="form-label">Total workers (F + G)</th>
-                          <td><input type="number" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 9)" required></td>
-                          <td><input type="number" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 9)" required></td>
+                          <td><input type="number" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 9)"></td>
+                          <td><input type="number" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 9)"></td>
                           <td><input type="number" id="dew" name="dew[]" class="form-control" readonly></td>
-                          <td><input type="number" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 9)" required></td>
+                          <td><input type="number" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 9)"></td>
                           <td><input type="number" id="dew" name="dew[]" class="form-control" readonly></td>
                         </tr>
                       </table>
+                      
                     </div>
                     <!-- 18a. Employees and workers (including differently abled) End -->
 
@@ -584,28 +586,28 @@
                         <tr>
                           <th class="form-label" id="dewda" name="dewda[]">1.</th>
                           <th class="form-label" id="dewda" name="dewda[]">Permanent(D)</th>
-                          <td><input type="number" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 3)" required></td>
-                          <td><input type="number" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 3)" required></td>
+                          <td><input type="number" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 3)"></td>
+                          <td><input type="number" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 3)"></td>
                           <td><input type="number" id="dewda" name="dewda[]" class="form-control" readonly></td>
-                          <td><input type="number" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 3)" required></td>
+                          <td><input type="number" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 3)"></td>
                           <td><input type="number" id="dewda" name="dewda[]" class="form-control" readonly></td>
                         </tr>
                         <tr>
                           <th class="form-label" id="dewda" name="dewda[]">2.</th>
                           <th class="form-label" id="dewda" name="dewda[]">Other than Permanent(E)</th>
-                          <td><input type="number" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 4)"  required></td>
-                          <td><input type="number" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 4)"  required></td>
+                          <td><input type="number" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 4)"></td>
+                          <td><input type="number" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 4)"></td>
                           <td><input type="number" id="dewda" name="dewda[]" class="form-control" readonly></td>
-                          <td><input type="number" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 4)"  required></td>
+                          <td><input type="number" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 4)"></td>
                           <td><input type="number" id="dewda" name="dewda[]" class="form-control" readonly></td>
                         </tr>
                         <tr>
                           <th class="form-label" id="dewda" name="dewda[]">3.</th>
                           <th class="form-label" id="dewda" name="dewda[]">Total differently abled employees(D + E)</th>
-                          <td><input type="number" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 5)"  required></td>
-                          <td><input type="number" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 5)"  required></td>
+                          <td><input type="number" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 5)"></td>
+                          <td><input type="number" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 5)"></td>
                           <td><input type="number" id="dewda" name="dewda[]" class="form-control" readonly></td>
-                          <td><input type="number" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 5)"  required></td>
+                          <td><input type="number" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 5)"></td>
                           <td><input type="number" id="dewda" name="dewda[]" class="form-control" readonly></td>
                         </tr>
                         <tr>
@@ -614,28 +616,28 @@
                         <tr>
                           <th class="form-label" id="dewda" name="dewda[]">4.</th>
                           <th class="form-label" id="dewda" name="dewda[]">Permanent (F)</th>
-                          <td><input type="number" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 7)"  required></td>
-                          <td><input type="number" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 7)"  required></td>
+                          <td><input type="number" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 7)"></td>
+                          <td><input type="number" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 7)"></td>
                           <td><input type="number" id="dewda" name="dewda[]" class="form-control" readonly></td>
-                          <td><input type="number" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 7)"  required></td>
+                          <td><input type="number" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 7)"></td>
                           <td><input type="number" id="dewda" name="dewda[]" class="form-control" readonly></td>
                         </tr>
                         <tr>
                           <th class="form-label" id="dewda" name="dewda[]">5.</th>
                           <th class="form-label" id="dewda" name="dewda[]">Other than Permanent (G)</th>
-                          <td><input type="number" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 8)" required></td>
-                          <td><input type="number" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 8)" required></td>
+                          <td><input type="number" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 8)"></td>
+                          <td><input type="number" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 8)"></td>
                           <td><input type="number" id="dewda" name="dewda[]" class="form-control" readonly></td>
-                          <td><input type="number" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 8)" required></td>
+                          <td><input type="number" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 8)"></td>
                           <td><input type="number" id="dewda" name="dewda[]" class="form-control" readonly></td>
                         </tr>
                         <tr>
                           <th class="form-label" id="dewda" name="dewda[]">6.</th>
                           <th class="form-label" id="dewda" name="dewda[]">Total differently abled workers (F + G)</th>
-                          <td><input type="number" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 9)" required></td>
-                          <td><input type="number" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 9)" required></td>
+                          <td><input type="number" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 9)"></td>
+                          <td><input type="number" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 9)"></td>
                           <td><input type="number" id="dewda" name="dewda[]" class="form-control" readonly></td>
-                          <td><input type="number" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 9)" required></td>
+                          <td><input type="number" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 9)"></td>
                           <td><input type="number" id="dewda" name="dewda[]" class="form-control" readonly></td>
                         </tr>
                       </table>
@@ -661,15 +663,15 @@
                         </tr>
                         <tr>
                           <th class="form-label">Board of Directors</th>
-                          <td><input type="number" id="pirw" name="pirw[]" oninput="calculate19(this)" class="form-control" required></td>
-                          <td><input type="number" id="pirw" name="pirw[]" oninput="calculate19(this)" class="form-control" required></td>
-                          <td><input type="number" id="pirw" name="pirw[]" class="form-control" required></td>
+                          <td><input type="number" step="0.01" id="pirw" name="pirw[]" oninput="calculate19(this)" class="form-control"></td>
+                          <td><input type="number" step="0.01" id="pirw" name="pirw[]" oninput="calculate19(this)" class="form-control"></td>
+                          <td><input type="number" step="0.01" id="pirw" name="pirw[]" class="form-control"></td>
                         </tr>
                         <tr>
                           <th class="form-label">Key Management <br> Personnel</th>
-                          <td><input type="number" id="pirw" name="pirw[]" oninput="calculate19(this)" class="form-control" required></td>
-                          <td><input type="number" id="pirw" name="pirw[]" oninput="calculate19(this)" class="form-control" required></td>
-                          <td><input type="number" id="pirw" name="pirw[]" class="form-control" required></td>
+                          <td><input type="number" id="pirw" name="pirw[]" oninput="calculate19(this)" class="form-control"></td>
+                          <td><input type="number" id="pirw" name="pirw[]" oninput="calculate19(this)" class="form-control"></td>
+                          <td><input type="number" id="pirw" name="pirw[]" class="form-control"></td>
                         </tr>
                       </table>
                     </div>
@@ -702,27 +704,27 @@
                         </tr>
                         <tr>
                           <th class="form-label">Permanent Employees</th>
-                          <td><input type="number" step="0.01" id="torpew" name="torpew[]" class="form-control" required></td>
-                          <td><input type="number" step="0.01" id="torpew" name="torpew[]" class="form-control" required></td>
-                          <td><input type="number" step="0.01" id="torpew" name="torpew[]" class="form-control" required></td>
-                          <td><input type="number" step="0.01" id="torpew" name="torpew[]" class="form-control" required></td>
-                          <td><input type="number" step="0.01" id="torpew" name="torpew[]" class="form-control" required></td>
-                          <td><input type="number" step="0.01" id="torpew" name="torpew[]" class="form-control" required></td>
-                          <td><input type="number" step="0.01" id="torpew" name="torpew[]" class="form-control" required></td>
-                          <td><input type="number" step="0.01" id="torpew" name="torpew[]" class="form-control" required></td>
-                          <td><input type="number" step="0.01" id="torpew" name="torpew[]" class="form-control" required></td>
+                          <td><input type="number" step="0.01" id="torpew" name="torpew[]" class="form-control"></td>
+                          <td><input type="number" step="0.01" id="torpew" name="torpew[]" class="form-control"></td>
+                          <td><input type="number" step="0.01" id="torpew" name="torpew[]" class="form-control"></td>
+                          <td><input type="number" step="0.01" id="torpew" name="torpew[]" class="form-control"></td>
+                          <td><input type="number" step="0.01" id="torpew" name="torpew[]" class="form-control"></td>
+                          <td><input type="number" step="0.01" id="torpew" name="torpew[]" class="form-control"></td>
+                          <td><input type="number" step="0.01" id="torpew" name="torpew[]" class="form-control"></td>
+                          <td><input type="number" step="0.01" id="torpew" name="torpew[]" class="form-control"></td>
+                          <td><input type="number" step="0.01" id="torpew" name="torpew[]" class="form-control"></td>
                         </tr>
                         <tr>
                           <th class="form-label">Permanent Workers</th>
-                          <td><input type="number" step="0.01" id="torpew" name="torpew[]" class="form-control" required></td>
-                          <td><input type="number" step="0.01" id="torpew" name="torpew[]" class="form-control" required></td>
-                          <td><input type="number" step="0.01" id="torpew" name="torpew[]" class="form-control" required></td>
-                          <td><input type="number" step="0.01" id="torpew" name="torpew[]" class="form-control" required></td>
-                          <td><input type="number" step="0.01" id="torpew" name="torpew[]" class="form-control" required></td>
-                          <td><input type="number" step="0.01" id="torpew" name="torpew[]" class="form-control" required></td>
-                          <td><input type="number" step="0.01" id="torpew" name="torpew[]" class="form-control" required></td>
-                          <td><input type="number" step="0.01" id="torpew" name="torpew[]" class="form-control" required></td>
-                          <td><input type="number" step="0.01" id="torpew" name="torpew[]" class="form-control" required></td>
+                          <td><input type="number" step="0.01" id="torpew" name="torpew[]" class="form-control"></td>
+                          <td><input type="number" step="0.01" id="torpew" name="torpew[]" class="form-control"></td>
+                          <td><input type="number" step="0.01" id="torpew" name="torpew[]" class="form-control"></td>
+                          <td><input type="number" step="0.01" id="torpew" name="torpew[]" class="form-control"></td>
+                          <td><input type="number" step="0.01" id="torpew" name="torpew[]" class="form-control"></td>
+                          <td><input type="number" step="0.01" id="torpew" name="torpew[]" class="form-control"></td>
+                          <td><input type="number" step="0.01" id="torpew" name="torpew[]" class="form-control"></td>
+                          <td><input type="number" step="0.01" id="torpew" name="torpew[]" class="form-control"></td>
+                          <td><input type="number" step="0.01" id="torpew" name="torpew[]" class="form-control"></td>
                         </tr>
                       </table>
                     </div>
@@ -762,14 +764,14 @@
                         </thead>
                         <tbody>
                           <tr>
-                            <td style="width:5%;"><input type="number" id="holding" id="p_holding" name="holding[]" class="table-control" required value="1" readonly></td>
-                            <td><input type="text" id="holding" name="holding[]" class="form-control" required></td>
-                            <td><input type="text" id="holding" name="holding[]" class="form-control" required></td>
+                            <td style="width:5%;"><input type="number" id="holding" id="p_holding" name="holding[]" class="table-control" value="1" readonly></td>
+                            <td><input type="text" id="holding" name="holding[]" class="form-control"></td>
+                            <td><input type="text" id="holding" name="holding[]" class="form-control"></td>
                             <td>
-                                </br><input type="text" id="holding1" name="holding[]" class="form-control" required>
+                                </br><input type="text" id="holding1" name="holding[]" class="form-control">
                                 <p id="holdingValidationMessage" style="color: red;"></p>
                             </td>
-                            <td><input type="text" id="holding" name="holding[]" class="form-control" required></td>
+                            <td><input type="text" id="holding" name="holding[]" class="form-control"></td>
                           </tr>
                         <tbody>
                       </table>
@@ -844,195 +846,235 @@
         
                 <!-- Transparency and Disclosures Compliances START -->
                 <div class="bold_border_container">
-                  <div class="mb-3">
-                    <div class="policy">
-                      <h3><label class="form-label"><span style="color: ;">VII.</span>&nbsp;&nbsp;&nbsp;<u>Transparency and Disclosures Compliances</u></label><h3>
+                    <div class="mb-3">
+                        <div class="policy">
+                            <h3><label class="form-label"><span style="color: ;">VII.</span>&nbsp;&nbsp;&nbsp;<u>Transparency and Disclosures Compliances</u></label><h3>
+                        </div>
                     </div>
-                  </div>
 
-                  <!-- Grievance redressal Start -->
-                  <div class="mb-3">
-                    <div class="policy">
-                      <label for="gre" class="form-label">23. Complaints/Grievances on any of the principles (Principles 1 to 9) under the National
+                    <!-- Grievance redressal Start -->
+                    <div class="mb-3">
+                        <div class="policy">
+                            <label for="gre" class="form-label">23. Complaints/Grievances on any of the principles (Principles 1 to 9) under the National
                                                           Guidelines on Responsible Business Conduct:<span style="color: red;"> * </span></label>
+                        </div>
+                        <div id="gre" class="responsive-table">
+                            <table id="p_gre">
+                                <tr>
+                                    <th class="form-label" colspan="1" rowspan="2"> Stakeholder group</br>from whom complaint</br>is received.</th>
+                                    <th class="form-label" colspan="1" rowspan="2">Grievance</br>Redressal Mechanism </br> in Place (Yes/No)</br>(If Yes, then </br>provide web-link </br>for grievance redress policy)</th>
+                                    <th class="form-label" colspan="3">FY _____ Current </br>Financial Year</th>
+                                    <th class="form-label" colspan="3">FY _____ Previous </br>Financial Year</th>
+                                </tr>
+                                <tr>
+                                    <th class="form-label">Number of</br>complaints filed</br>during the year</th>
+                                    <th class="form-label">Number of</br>complaints pending</br>resolution at</br>close of</br>the year</th>
+                                    <th class="form-label">Remarks</th>
+                                    <th class="form-label">Number of</br>complaints filed</br>during the</br>year</th>
+                                    <th class="form-label">Number of</br>complaints pending</br>resolution at</br>close of</br>the year</th>
+                                    <th class="form-label">Remarks</th>
+                                </tr>
+                                <tr>
+                                    <th class="form-label" id="gre" name="gre[]">Customers</th>
+                                    <td></br>
+                                        <div class="mb-3">
+                                            <select class="form-select" id="gre1" name="gre[]" required>
+                                                <option value="">Select an option</option>
+                                                <option value="Yes">Yes</option>
+                                                <option value="No">No</option>
+                                            </select>
+                                        </div>
+                                        <!--hidden question ( only display if option is yes )-->
+                                        <div class="mb-3 hidden" id="h_gre1"> 
+                                            <textarea class="form-control" id="h_gre1" name="gre[]"></textarea>
+                                        </div>
+                                    </td>
+                                    <td><input type="number" id="gre" name="gre[]" class="form-control"></td>
+                                    <td><input type="number" id="gre" name="gre[]" class="form-control"></td>
+                                    <td><textarea id="gre" name="gre[]" class="form-control" required></textarea></td>
+                                    <td><input type="number" id="gre" name="gre[]" class="form-control"></td>
+                                    <td><input type="number" id="gre" name="gre[]" class="form-control"></td>
+                                    <td><textarea id="gre" name="gre[]" class="form-control"></textarea></td>
+                                </tr>
+                                <tr>
+                                    <th class="form-label" id="gre" name="gre[]">Customers</th>
+                                    <td></br>
+                                        <div class="mb-3">
+                                            <select class="form-select" id="gre2" name="gre[]" required>
+                                                <option value="">Select an option</option>
+                                                <option value="Yes">Yes</option>
+                                                <option value="No">No</option>
+                                            </select>
+                                        </div>
+                                        <!--hidden question ( only display if option is yes )-->
+                                        <div class="mb-3 hidden" id="h_gre2"> 
+                                            <textarea class="form-control" id="h_gre2" name="gre[]"></textarea>
+                                        </div>
+                                    </td>
+                                    <td><input type="number" id="gre" name="gre[]" class="form-control"></td>
+                                    <td><input type="number" id="gre" name="gre[]" class="form-control"></td>
+                                    <td><textarea id="gre" name="gre[]" class="form-control" required></textarea></td>
+                                    <td><input type="number" id="gre" name="gre[]" class="form-control"></td>
+                                    <td><input type="number" id="gre" name="gre[]" class="form-control"></td>
+                                    <td><textarea id="gre" name="gre[]" class="form-control"></textarea></td>
+                                </tr>
+                                <tr>
+                                    <th class="form-label" id="gre" name="gre[]">Customers</th>
+                                    <td></br>
+                                        <div class="mb-3">
+                                            <select class="form-select" id="gre3" name="gre[]" required>
+                                                <option value="">Select an option</option>
+                                                <option value="Yes">Yes</option>
+                                                <option value="No">No</option>
+                                            </select>
+                                        </div>
+                                        <!--hidden question ( only display if option is yes )-->
+                                        <div class="mb-3 hidden" id="h_gre3"> 
+                                            <textarea class="form-control" id="h_gre3" name="gre[]"></textarea>
+                                        </div>
+                                    </td>
+                                    <td><input type="number" id="gre" name="gre[]" class="form-control"></td>
+                                    <td><input type="number" id="gre" name="gre[]" class="form-control"></td>
+                                    <td><textarea id="gre" name="gre[]" class="form-control" required></textarea></td>
+                                    <td><input type="number" id="gre" name="gre[]" class="form-control"></td>
+                                    <td><input type="number" id="gre" name="gre[]" class="form-control"></td>
+                                    <td><textarea id="gre" name="gre[]" class="form-control"></textarea></td>
+                                </tr>
+                                <tr>
+                                    <th class="form-label" id="gre" name="gre[]">Employees and workers</th>
+                                    <td></br>
+                                        <div class="mb-3">
+                                            <select class="form-select" id="gre4" name="gre[]" required>
+                                                <option value="">Select an option</option>
+                                                <option value="Yes">Yes</option>
+                                                <option value="No">No</option>
+                                            </select>
+                                        </div>
+                                        <!--hidden question ( only display if option is yes )-->
+                                        <div class="mb-3 hidden" id="h_gre4"> 
+                                            <textarea class="form-control" id="gre4" name="gre[]"></textarea>
+                                        </div>
+                                        </td>
+                                    <td><input type="number" id="gre" name="gre[]" class="form-control"></td>
+                                    <td><input type="number" id="gre" name="gre[]" class="form-control"></td>
+                                    <td><textarea id="gre" name="gre[]" class="form-control" required></textarea></td>
+                                    <td><input type="number" id="gre" name="gre[]" class="form-control"></td>
+                                    <td><input type="number" id="gre" name="gre[]" class="form-control"></td>
+                                    <td><textarea id="gre" name="gre[]" class="form-control"></textarea></td>
+                                </tr>
+                                <tr>
+                                    <th class="form-label" id="gre" name="gre[]">Customers</th>
+                                    <td></br>
+                                        <div class="mb-3">
+                                            <select class="form-select" id="gre5" name="gre[]" required>
+                                                <option value="">Select an option</option>
+                                                <option value="Yes">Yes</option>
+                                                <option value="No">No</option>
+                                            </select>
+                                        </div>
+                                        <!--hidden question ( only display if option is yes )-->
+                                        <div class="mb-3 hidden" id="h_gre5"> 
+                                            <textarea class="form-control" id="h_gre5" name="gre[]"></textarea>
+                                        </div>
+                                    </td>
+                                    <td><input type="number" id="gre" name="gre[]" class="form-control"></td>
+                                    <td><input type="number" id="gre" name="gre[]" class="form-control"></td>
+                                    <td><textarea id="gre" name="gre[]" class="form-control" required></textarea></td>
+                                    <td><input type="number" id="gre" name="gre[]" class="form-control"></td>
+                                    <td><input type="number" id="gre" name="gre[]" class="form-control"></td>
+                                    <td><textarea id="gre" name="gre[]" class="form-control"></textarea></td>
+                                </tr>
+                                <tr>
+                                    <th class="form-label" id="gre" name="gre[]">Customers</th>
+                                    <td></br>
+                                        <div class="mb-3">
+                                            <select class="form-select" id="gre6" name="gre[]" required>
+                                                <option value="">Select an option</option>
+                                                <option value="Yes">Yes</option>
+                                                <option value="No">No</option>
+                                            </select>
+                                        </div>
+                                        <!--hidden question ( only display if option is yes )-->
+                                        <div class="mb-3 hidden" id="h_gre6"> 
+                                            <textarea class="form-control" id="h_gre6" name="gre[]"></textarea>
+                                        </div>
+                                    </td>
+                                    <td><input type="number" id="gre" name="gre[]" class="form-control"></td>
+                                    <td><input type="number" id="gre" name="gre[]" class="form-control"></td>
+                                    <td><textarea id="gre" name="gre[]" class="form-control" required></textarea></td>
+                                    <td><input type="number" id="gre" name="gre[]" class="form-control"></td>
+                                    <td><input type="number" id="gre" name="gre[]" class="form-control"></td>
+                                    <td><textarea id="gre" name="gre[]" class="form-control"></textarea></td>
+                                </tr>
+                                <tr>
+                                    <th class="form-label" id="gre" name="gre[]">Customers</th>
+                                    <td></br>
+                                        <div class="mb-3">
+                                            <select class="form-select" id="gre7" name="gre[]" required>
+                                                <option value="">Select an option</option>
+                                                <option value="Yes">Yes</option>
+                                                <option value="No">No</option>
+                                            </select>
+                                        </div>
+                                        <!--hidden question ( only display if option is yes )-->
+                                        <div class="mb-3 hidden" id="h_gre6"> 
+                                            <textarea class="form-control" id="h_gre7" name="gre[]"></textarea>
+                                        </div>
+                                    </td>
+                                    <td><input type="number" id="gre" name="gre[]" class="form-control"></td>
+                                    <td><input type="number" id="gre" name="gre[]" class="form-control"></td>
+                                    <td><textarea id="gre" name="gre[]" class="form-control" required></textarea></td>
+                                    <td><input type="number" id="gre" name="gre[]" class="form-control"></td>
+                                    <td><input type="number" id="gre" name="gre[]" class="form-control"></td>
+                                    <td><textarea id="gre" name="gre[]" class="form-control"></textarea></td>
+                                </tr>
+                            </table>
+                        </div>
                     </div>
-                    <div id="gre" class="responsive-table">
-                      <table id="p_gre">
-                        <tr>
-                          <th class="form-label" colspan="1" rowspan="2"> Stakeholder group</br>from whom complaint</br>is received.</th>
-                          <th class="form-label" colspan="1" rowspan="2">Grievance</br>Redressal Mechanism </br> in Place (Yes/No)</br>(If Yes, then </br>provide web-link </br>for grievance redress policy)</th>
-                          <th class="form-label" colspan="3">FY _____ Current </br>Financial Year</th>
-                          <th class="form-label" colspan="3">FY _____ Previous </br>Financial Year</th>
-                        </tr>
-                        <tr>
-                          <th class="form-label">Number of</br>complaints filed</br>during the year</th>
-                          <th class="form-label">Number of</br>complaints pending</br>resolution at</br>close of</br>the year</th>
-                          <th class="form-label">Remarks</th>
-                          <th class="form-label">Number of</br>complaints filed</br>during the</br>year</th>
-                          <th class="form-label">Number of</br>complaints pending</br>resolution at</br>close of</br>the year</th>
-                          <th class="form-label">Remarks</th>
-                        </tr>
-                        <tr>
-                          <th class="form-label" id="gre" name="gre[]">Communities</th>
-                          <td>
-                              <select id="gre" name="gre[]" class="form-control" required>
-                                <option value="">Select an option</option>
-                                <option value="yes">Yes</option>
-                                <option value="no">No</option>
-                              </select>
-                          </td>
-                          <td><input type="number" id="gre" name="gre[]" class="form-control" required></td>
-                          <td><input type="number" id="gre" name="gre[]" class="form-control" required></td>
-                          <td><input type="number" id="gre" name="gre[]" class="form-control" required></td>
-                          <td><input type="number" id="gre" name="gre[]" class="form-control" required></td>
-                          <td><input type="number" id="gre" name="gre[]" class="form-control" required></td>
-                          <td><textarea id="gre" name="gre[]" class="form-control" required></textarea></td>
-                        </tr>
-                        <tr>
-                          <th class="form-label" id="gre" name="gre[]">Investors (other than shareholders)</th>
-                          <td>
-                              <select id="gre" name="gre[]" class="form-control" required>
-                                <option value="">Select an option</option>
-                                <option value="yes">Yes</option>
-                                <option value="no">No</option>
-                              </select>
-                          </td>
-                          <td><input type="number" id="gre" name="gre[]" class="form-control" required></td>
-                          <td><input type="number" id="gre" name="gre[]" class="form-control" required></td>
-                          <td><input type="number" id="gre" name="gre[]" class="form-control" required></td>
-                          <td><input type="number" id="gre" name="gre[]" class="form-control" required></td>
-                          <td><input type="number" id="gre" name="gre[]" class="form-control" required></td>
-                          <td><textarea id="gre" name="gre[]" class="form-control" required></textarea></td>
-                        </tr>
-                        <tr>
-                          <th class="form-label" id="gre" name="gre[]">Shareholders</th>
-                          <td>
-                              <select id="gre" name="gre[]" class="form-control" required>
-                                <option value="">Select an option</option>
-                                <option value="yes">Yes</option>
-                                <option value="no">No</option>
-                              </select>
-                          </td>
-                          <td><input type="number" id="gre" name="gre[]" class="form-control" required></td>
-                          <td><input type="number" id="gre" name="gre[]" class="form-control" required></td>
-                          <td><input type="number" id="gre" name="gre[]" class="form-control" required></td>
-                          <td><input type="number" id="gre" name="gre[]" class="form-control" required></td>
-                          <td><input type="number" id="gre" name="gre[]" class="form-control" required></td>
-                          <td><textarea id="gre" name="gre[]" class="form-control" required></textarea></td>
-                        </tr>
-                        <tr>
-                          <th class="form-label" id="gre" name="gre[]">Employees and workers</th>
-                          <td>
-                              <select id="gre" name="gre[]" class="form-control" required>
-                                <option value="">Select an option</option>
-                                <option value="yes">Yes</option>
-                                <option value="no">No</option>
-                              </select>
-                          </td>
-                          <td><input type="number" id="gre" name="gre[]" class="form-control" required></td>
-                          <td><input type="number" id="gre" name="gre[]" class="form-control" required></td>
-                          <td><input type="number" id="gre" name="gre[]" class="form-control" required></td>
-                          <td><input type="number" id="gre" name="gre[]" class="form-control" required></td>
-                          <td><input type="number" id="gre" name="gre[]" class="form-control" required></td>
-                          <td><textarea id="gre" name="gre[]" class="form-control" required></textarea></td>
-                        </tr>
-                        <tr>
-                          <th class="form-label" id="gre" name="gre[]">Customers</th>
-                          <td>
-                              <select id="gre" name="gre[]" class="form-control" required>
-                                <option value="">Select an option</option>
-                                <option value="yes">Yes</option>
-                                <option value="no">No</option>
-                              </select>
-                          </td>
-                          <td><input type="number" id="gre" name="gre[]" class="form-control" required></td>
-                          <td><input type="number" id="gre" name="gre[]" class="form-control" required></td>
-                          <td><input type="number" id="gre" name="gre[]" class="form-control" required></td>
-                          <td><input type="number" id="gre" name="gre[]" class="form-control" required></td>
-                          <td><input type="number" id="gre" name="gre[]" class="form-control" required></td>
-                          <td><textarea id="gre" name="gre[]" class="form-control" required></textarea></td>
-                        </tr>
-                        <tr>
-                          <th class="form-label" id="gre" name="gre[]">Value Chain Partners</th>
-                          <td>
-                              <select id="gre" name="gre[]" class="form-control" required>
-                                <option value="">Select an option</option>
-                                <option value="yes">Yes</option>
-                                <option value="no">No</option>
-                              </select>
-                          </td>
-                          <td><input type="number" id="gre" name="gre[]" class="form-control" required></td>
-                          <td><input type="number" id="gre" name="gre[]" class="form-control" required></td>
-                          <td><input type="number" id="gre" name="gre[]" class="form-control" required></td>
-                          <td><input type="number" id="gre" name="gre[]" class="form-control" required></td>
-                          <td><input type="number" id="gre" name="gre[]" class="form-control" required></td>
-                          <td><textarea id="gre" name="gre[]" class="form-control" required></textarea></td>
-                        </tr>
-                        <tr>
-                          <th class="form-label" id="gre" name="gre[]">Other (please specify)</th>
-                          <td>
-                              <select id="gre" name="gre[]" class="form-control" required>
-                                <option value="">Select an option</option>
-                                <option value="yes">Yes</option>
-                                <option value="no">No</option>
-                              </select>
-                          </td>
-                          <td><input type="number" id="gre" name="gre[]" class="form-control" required></td>
-                          <td><input type="number" id="gre" name="gre[]" class="form-control" required></td>
-                          <td><input type="number" id="gre" name="gre[]" class="form-control" required></td>
-                          <td><input type="number" id="gre" name="gre[]" class="form-control" required></td>
-                          <td><input type="number" id="gre" name="gre[]" class="form-control" required></td>
-                          <td><textarea id="gre" name="gre[]" class="form-control" required></textarea></td>
-                        </tr>
-                      </table>
-                    </div>
-                  </div>
-                  <!-- Grievance redressal End -->
+                    <!-- Grievance redressal End -->
 
-                  <!-- Overview of the entity’s material responsible business conduct issues Start -->
-                  <div class="mb-3">
-                    <div class="policy">
-                      <label for="overview" class="form-label">24. &nbsp;Overview of the entity’s material responsible business conduct issues <span style="color: red;"> * </span></label>
+                    <!-- Overview of the entity’s material responsible business conduct issues Start -->
+                    <div class="mb-3">
+                        <div class="policy">
+                            <label for="overview" class="form-label">24. &nbsp;Overview of the entity’s material responsible business conduct issues <span style="color: red;"> * </span></label>
+                        </div>
+                        <p for="overview" class="form-label">Please indicate material responsible business conduct and sustainability issues pertaining to
+                                environmental and social matters that present a risk or an opportunity to your business,
+                                rationale for identifying the same, approach to adapt or mitigate the risk along-with its
+                                financial implications, as per the following format </p>
+                        <div id="overview" class="responsive-table">
+                            <table id="p_overview">
+                                <thead>
+                                    <tr>
+                                        <th class="form-label">S.No.</th>
+                                        <th class="form-label">Material issue identified</th>
+                                        <th class="form-label">identified Indicate whether risk or opportunity (R/O)</th>
+                                        <th class="form-label">Rationale for identifying the risk / opportunity</th>
+                                        <th class="form-label">identifying the risk / opportunity In case of risk, approach to adapt or mitigate</th>
+                                        <th class="form-label">Financial implications of the risk or opportunity (Indicate positive or negative implications)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td style="width:5%;"><input type="number" id="overview" id="p_overview" name="overview[]" class="table-control" value="1" readonly ></th>
+                                        <td><textarea type="text" id="overview" name="overview[]" class="form-control"></textarea>
+                                        <td><textarea type="text" id="overview" name="overview[]" class="form-control"></textarea>
+                                        <td><textarea type="text" id="overview" name="overview[]" class="form-control"></textarea>
+                                        <td><textarea type="text" id="overview" name="overview[]" class="form-control"></textarea>
+                                        <td><textarea type="text" id="overview" name="overview[]" class="form-control"></textarea>
+                                    </tr>          
+                                </tbody>
+                            </table>
+                            <div>
+                                <input type="number" id="indexInput_overview" placeholder="Enter S.No.">
+                                <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex('overview')">Add S.No.</button>
+                                <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow('overview')">Remove S.No.</button>
+                                <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow('overview')">Add Row</button>
+                                <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow('overview')">Remove Row</button>
+                            </div>
+                        </div>  
                     </div>
-                    <p for="overview" class="form-label">Please indicate material responsible business conduct and sustainability issues pertaining to
-                            environmental and social matters that present a risk or an opportunity to your business,
-                            rationale for identifying the same, approach to adapt or mitigate the risk along-with its
-                            financial implications, as per the following format </p>
-                    <div id="overview" class="responsive-table">
-                      <table id="p_overview">
-                        <thead>
-                          <tr>
-                            <th class="form-label">S. No.</th>
-                            <th class="form-label">Material issue identified</th>
-                            <th class="form-label">identified Indicate whether risk or opportunity (R/O)</th>
-                            <th class="form-label">Rationale for identifying the risk / opportunity</th>
-                            <th class="form-label">identifying the risk / opportunity In case of risk, approach to adapt or mitigate</th>
-                            <th class="form-label">Financial implications of the risk or opportunity (Indicate positive or negative implications)</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td style="width:5%;"><input type="number" id="overview" id="p_overview" name="overview[]" class="table-control" value="1" readonly required ></th>
-                            <td><input type="text" id="overview" name="overview[]" class="form-control"></td>
-                            <td><input type="text" id="overview" name="overview[]" class="form-control"></td>
-                            <td><input type="text" id="overview" name="overview[]" class="form-control"></td>
-                            <td><input type="text" id="overview" name="overview[]" class="form-control"></td>
-                            <td><input type="text" id="overview" name="overview[]" class="form-control"></td>
-                          </tr>          
-                        </tbody>
-                        </tbody>
-                      </table>
-                      <div>
-                        <input type="number" id="indexInput_overview" placeholder="Enter S.No.">
-                        <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex('overview')">Add S.No.</button>
-                        <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow('overview')">Remove S.No.</button>
-                        <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow('overview')">Add Row</button>
-                        <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow('overview')">Remove Row</button>
-                      </div>
-                      </table>
-                    </div>  
-                  </div>
-                  <!-- Overview of the entity’s material responsible business conduct issues End -->
+                    <!-- Overview of the entity’s material responsible business conduct issues End -->
                 </div>
                 <!-- Transparency and Disclosures Compliances END -->
 
