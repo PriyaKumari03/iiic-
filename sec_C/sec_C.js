@@ -1,4 +1,12 @@
-// Yes/No based label visibility
+/* ************************************************************************************************************************************ */
+/*                                                                                                                                      */
+/*                                                           Yes/No based label visibility                                              */
+/*                                                                                                                                      */
+/* ************************************************************************************************************************************ */
+
+//Principle 1
+
+//LI 7
 document.getElementById('conflictOfInterest').addEventListener('change', function () {
     var conflictDetails = document.getElementById('conflictDetails');
     if (this.value === 'Yes') {
@@ -8,6 +16,9 @@ document.getElementById('conflictOfInterest').addEventListener('change', functio
     }
 });
 
+//Principle 2
+
+//EI 4
 document.getElementById('eprApplicable').addEventListener('change', function () {
     var eprCollectionPlan = document.getElementById('eprCollectionPlan');
     if (this.value === 'Yes' || this.value === 'No') {
@@ -16,6 +27,8 @@ document.getElementById('eprApplicable').addEventListener('change', function () 
         eprCollectionPlan.classList.add('hidden');
     }
 });
+
+//LI 1
 document.getElementById('lcaConducted2').addEventListener('change', function () {
     var lcaDetails = document.getElementById('lcaDetails');
     if (this.value === 'Yes') {
@@ -210,15 +223,12 @@ document.getElementById('surveyInfo').addEventListener('change', function () {
         surveyInfoDetails.classList.add('hidden');
     }
 });
-// End of Yes/No based label visibility
 
-// Helper function to calculate percentage
-function calculatePercentage(part, whole) {
-    if (whole == 0)
-        return 0;
-    else
-        return (part / whole * 100).toFixed(2); // Adjust the number of decimal places as needed
-}
+/* ************************************************************************************************************************************ */
+/*                                                                                                                                      */
+/*                                                           Navigation button                                                          */
+/*                                                                                                                                      */
+/* ************************************************************************************************************************************ */
 
 // Navigation button based Division visiblility
 let currentDiv = 1;
@@ -237,6 +247,12 @@ function navigate(direction) {
     document.getElementById('prin' + currentDiv).style.display = 'block';
     window.scrollTo(0, 0);
 }
+
+/* ************************************************************************************************************************************ */
+/*                                                                                                                                      */
+/*                                                           Required fields                                                            */
+/*                                                                                                                                      */
+/* ************************************************************************************************************************************ */
 
 // Enforce filling of required fields in each div
 function areRequiredFieldsFilled(divId) {
@@ -266,6 +282,13 @@ function triggerNativeValidation(divId) {
 function scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 }
+
+
+/* ************************************************************************************************************************************ */
+/*                                                                                                                                      */
+/*                                                           Validations                                                                */
+/*                                                                                                                                      */
+/* ************************************************************************************************************************************ */
 
 //Principle 1
 // coverage
@@ -308,6 +331,936 @@ document.getElementById("recycledPercentage2").addEventListener("input", functio
         this.value = 100;
     }
 });
+
+
+/* ************************************************************************************************************************************ */
+/*                                                                                                                                      */
+/*                                                           Table calculations                                                         */
+/*                                                                                                                                      */
+/* ************************************************************************************************************************************ */
+
+// Helper function to calculate percentage
+function calculatePercentage(part, whole) {
+    if (whole == 0)
+        return 0;
+    else
+        return (part / whole * 100).toFixed(2); // Adjust the number of decimal places as needed
+}
+
+// Principle 3 EI 1a
+// Function to calculate column totals for a specific section of the table
+function calculateColumnTotalsForSection1a(tableId, startRowIndex, endRowIndex, totalRowIndex) {
+    var table = document.getElementById(tableId);
+
+    // Object to hold the sum of each column
+    var columnSums = {};
+
+    // Initialize column sums
+    for (var i = 1; i < table.rows[startRowIndex].cells.length; i++) {
+        columnSums[i] = 0;
+    }
+
+    // Calculate sums for each column
+    for (var rowIndex = startRowIndex; rowIndex <= endRowIndex; rowIndex++) {
+        var cells = table.rows[rowIndex].cells;
+        for (var colIndex = 1; colIndex < cells.length; colIndex++) {
+            var input = cells[colIndex].querySelector('input');
+            if (input && !input.hasAttribute('readonly')) { // Sum only the input fields that are not readonly
+                var value = parseFloat(input.value) || 0;
+                columnSums[colIndex] += value;
+            }
+        }
+    }
+
+    // Update the totals in the 'Total' row
+    var totalCells = table.rows[totalRowIndex].cells;
+    for (var colIndex = 1; colIndex < totalCells.length; colIndex++) {
+        if (columnSums[colIndex] !== undefined) { // Update only if a sum has been calculated
+            var totalInput = totalCells[colIndex].querySelector('input');
+            if (totalInput) { // If there's an input field, update it
+                totalInput.value = columnSums[colIndex];
+            }
+        }
+    }
+    var row = table.rows[totalRowIndex];
+
+    var total = parseFloat(row.cells[1].querySelector('input').value) || 0;
+    var noB = parseFloat(row.cells[2].querySelector('input').value) || 0;
+    var noC = parseFloat(row.cells[4].querySelector('input').value) || 0;
+    var noD = parseFloat(row.cells[6].querySelector('input').value) || 0;
+    var noE = parseFloat(row.cells[8].querySelector('input').value) || 0;
+    var noF = parseFloat(row.cells[10].querySelector('input').value) || 0;
+
+    // Calculate percentages and update the respective cells
+    row.cells[3].querySelector('input').value = calculatePercentage(noB, total);
+    row.cells[5].querySelector('input').value = calculatePercentage(noC, total);
+    row.cells[7].querySelector('input').value = calculatePercentage(noD, total);
+    row.cells[9].querySelector('input').value = calculatePercentage(noE, total);
+    row.cells[11].querySelector('input').value = calculatePercentage(noF, total);
+}
+
+// Calculate totals for each section when the page loads and when values change
+window.onload = function () {
+    calculateSectionTotals1a();
+};
+
+function calculateSectionTotals1a() {
+    // 'Permanent employees' section is from row 4 to 5, and its 'Total' is at row 6
+    calculateColumnTotalsForSection1a('p_employeeWellbeingDetails', 4, 5, 6);
+    // 'Other than Permanent employees' section is from row 8 to 9, and its 'Total' is at row 10
+    calculateColumnTotalsForSection1a('p_employeeWellbeingDetails', 8, 9, 10);
+}
+
+// Function to calculate percentages
+function calculatePercentages1a(tableId, rowIndex) {
+    var table = document.getElementById(tableId);
+    var row = table.rows[rowIndex];
+
+    var total = parseFloat(row.cells[1].querySelector('input').value) || 0;
+    var noB = parseFloat(row.cells[2].querySelector('input').value) || 0;
+    var noC = parseFloat(row.cells[4].querySelector('input').value) || 0;
+    var noD = parseFloat(row.cells[6].querySelector('input').value) || 0;
+    var noE = parseFloat(row.cells[8].querySelector('input').value) || 0;
+    var noF = parseFloat(row.cells[10].querySelector('input').value) || 0;
+
+    // Calculate percentages and update the respective cells
+    row.cells[3].querySelector('input').value = calculatePercentage(noB, total);
+    row.cells[5].querySelector('input').value = calculatePercentage(noC, total);
+    row.cells[7].querySelector('input').value = calculatePercentage(noD, total);
+    row.cells[9].querySelector('input').value = calculatePercentage(noE, total);
+    row.cells[11].querySelector('input').value = calculatePercentage(noF, total);
+    calculateSectionTotals1a();
+}
+// End of Principle 3 EI 1a
+
+// Principle 3 EI 1b
+// Function to calculate column totals for a specific section of the table
+function calculateColumnTotalsForSection1b(tableId, startRowIndex, endRowIndex, totalRowIndex) {
+    var table = document.getElementById(tableId);
+
+    // Object to hold the sum of each column
+    var columnSums = {};
+
+    // Initialize column sums
+    for (var i = 1; i < table.rows[startRowIndex].cells.length; i++) {
+        columnSums[i] = 0;
+    }
+
+    // Calculate sums for each column
+    for (var rowIndex = startRowIndex; rowIndex <= endRowIndex; rowIndex++) {
+        var cells = table.rows[rowIndex].cells;
+        for (var colIndex = 1; colIndex < cells.length; colIndex++) {
+            var input = cells[colIndex].querySelector('input');
+            if (input && !input.hasAttribute('readonly')) { // Sum only the input fields that are not readonly
+                var value = parseFloat(input.value) || 0;
+                columnSums[colIndex] += value;
+            }
+        }
+    }
+
+    // Update the totals in the 'Total' row
+    var totalCells = table.rows[totalRowIndex].cells;
+    for (var colIndex = 1; colIndex < totalCells.length; colIndex++) {
+        if (columnSums[colIndex] !== undefined) { // Update only if a sum has been calculated
+            var totalInput = totalCells[colIndex].querySelector('input');
+            if (totalInput) { // If there's an input field, update it
+                totalInput.value = columnSums[colIndex];
+            }
+        }
+    }
+    var row = table.rows[totalRowIndex];
+
+    var total = parseFloat(row.cells[1].querySelector('input').value) || 0;
+    var noB = parseFloat(row.cells[2].querySelector('input').value) || 0;
+    var noC = parseFloat(row.cells[4].querySelector('input').value) || 0;
+    var noD = parseFloat(row.cells[6].querySelector('input').value) || 0;
+    var noE = parseFloat(row.cells[8].querySelector('input').value) || 0;
+    var noF = parseFloat(row.cells[10].querySelector('input').value) || 0;
+
+    // Calculate percentages and update the respective cells
+    row.cells[3].querySelector('input').value = calculatePercentage(noB, total);
+    row.cells[5].querySelector('input').value = calculatePercentage(noC, total);
+    row.cells[7].querySelector('input').value = calculatePercentage(noD, total);
+    row.cells[9].querySelector('input').value = calculatePercentage(noE, total);
+    row.cells[11].querySelector('input').value = calculatePercentage(noF, total);
+}
+
+// Calculate totals for each section when the page loads and when values change
+window.onload = function () {
+    calculateSectionTotals1b();
+};
+
+function calculateSectionTotals1b() {
+    // 'Permanent employees' section is from row 4 to 5, and its 'Total' is at row 6
+    calculateColumnTotalsForSection1b('p_workerWellbeingDetails', 4, 5, 6);
+    // 'Other than Permanent employees' section is from row 8 to 9, and its 'Total' is at row 10
+    calculateColumnTotalsForSection1b('p_workerWellbeingDetails', 8, 9, 10);
+}
+
+// Function to calculate percentages
+function calculatePercentages1b(tableId, rowIndex) {
+    var table = document.getElementById(tableId);
+    var row = table.rows[rowIndex];
+
+    var total = parseFloat(row.cells[1].querySelector('input').value) || 0;
+    var noB = parseFloat(row.cells[2].querySelector('input').value) || 0;
+    var noC = parseFloat(row.cells[4].querySelector('input').value) || 0;
+    var noD = parseFloat(row.cells[6].querySelector('input').value) || 0;
+    var noE = parseFloat(row.cells[8].querySelector('input').value) || 0;
+    var noF = parseFloat(row.cells[10].querySelector('input').value) || 0;
+
+    // Calculate percentages and update the respective cells
+    row.cells[3].querySelector('input').value = calculatePercentage(noB, total);
+    row.cells[5].querySelector('input').value = calculatePercentage(noC, total);
+    row.cells[7].querySelector('input').value = calculatePercentage(noD, total);
+    row.cells[9].querySelector('input').value = calculatePercentage(noE, total);
+    row.cells[11].querySelector('input').value = calculatePercentage(noF, total);
+    calculateSectionTotals1b();
+}
+// End of Principle 3 EI 1b
+
+// Principle 3 EI 7
+// Function to calculate column totals for a specific section of the table
+function calculateColumnTotalsForSection7(tableId, startRowIndex, endRowIndex, totalRowIndex) {
+    var table = document.getElementById(tableId);
+
+    // Object to hold the sum of each column
+    var columnSums = {};
+
+    // Initialize column sums
+    for (var i = 1; i < table.rows[startRowIndex].cells.length; i++) {
+        columnSums[i] = 0;
+    }
+
+    // Calculate sums for each column
+    for (var rowIndex = startRowIndex; rowIndex <= endRowIndex; rowIndex++) {
+        var cells = table.rows[rowIndex].cells;
+        for (var colIndex = 1; colIndex < cells.length; colIndex++) {
+            var input = cells[colIndex].querySelector('input');
+            if (input && !input.hasAttribute('readonly')) { // Sum only the input fields that are not readonly
+                var value = parseFloat(input.value) || 0;
+                columnSums[colIndex] += value;
+            }
+        }
+    }
+
+    // Update the totals in the 'Total' row
+    var totalCells = table.rows[totalRowIndex].cells;
+    for (var colIndex = 1; colIndex < totalCells.length; colIndex++) {
+        if (columnSums[colIndex] !== undefined) { // Update only if a sum has been calculated
+            var totalInput = totalCells[colIndex].querySelector('input');
+            if (totalInput) { // If there's an input field, update it
+                totalInput.value = columnSums[colIndex];
+            }
+        }
+    }
+    var row = table.rows[totalRowIndex];
+
+    var A = parseFloat(row.cells[1].querySelector('input').value) || 0;
+    var B = parseFloat(row.cells[2].querySelector('input').value) || 0;
+    var C = parseFloat(row.cells[4].querySelector('input').value) || 0;
+    var D = parseFloat(row.cells[5].querySelector('input').value) || 0;
+
+    // Calculate percentages and update the respective cells
+    row.cells[3].querySelector('input').value = calculatePercentage(B, A);
+    row.cells[6].querySelector('input').value = calculatePercentage(D, C);
+}
+
+// Calculate totals for each section when the page loads and when values change
+window.onload = function () {
+    calculateSectionTotals7();
+};
+
+function calculateSectionTotals7() {
+    // 'Permanent employees' section is from row 4 to 5, and its 'Total' is at row 6
+    calculateColumnTotalsForSection7('p_unionMembershipPercentage', 3, 4, 2);
+    // 'Other than Permanent employees' section is from row 8 to 9, and its 'Total' is at row 10
+    calculateColumnTotalsForSection7('p_unionMembershipPercentage', 6, 7, 5);
+}
+// Function to calculate percentages
+function calculatePercentages7(tableId, rowIndex) {
+    var table = document.getElementById(tableId);
+    var row = table.rows[rowIndex];
+
+    var A = parseFloat(row.cells[1].querySelector('input').value) || 0;
+    var B = parseFloat(row.cells[2].querySelector('input').value) || 0;
+    var C = parseFloat(row.cells[4].querySelector('input').value) || 0;
+    var D = parseFloat(row.cells[5].querySelector('input').value) || 0;
+
+    // Calculate percentages and update the respective cells
+    row.cells[3].querySelector('input').value = calculatePercentage(B, A);
+    row.cells[6].querySelector('input').value = calculatePercentage(D, C);
+    calculateSectionTotals7();
+}
+// End of Principle 3 EI 7
+
+// Principle 3 EI 8
+// Function to calculate column totals for a specific section of the table
+function calculateColumnTotalsForSection8(tableId, startRowIndex, endRowIndex, totalRowIndex) {
+    var table = document.getElementById(tableId);
+
+    // Object to hold the sum of each column
+    var columnSums = {};
+
+    // Initialize column sums
+    for (var i = 1; i < table.rows[startRowIndex].cells.length; i++) {
+        columnSums[i] = 0;
+    }
+
+    // Calculate sums for each column
+    for (var rowIndex = startRowIndex; rowIndex <= endRowIndex; rowIndex++) {
+        var cells = table.rows[rowIndex].cells;
+        for (var colIndex = 1; colIndex < cells.length; colIndex++) {
+            var input = cells[colIndex].querySelector('input');
+            if (input && !input.hasAttribute('readonly')) { // Sum only the input fields that are not readonly
+                var value = parseFloat(input.value) || 0;
+                columnSums[colIndex] += value;
+            }
+        }
+    }
+
+    // Update the totals in the 'Total' row
+    var totalCells = table.rows[totalRowIndex].cells;
+    for (var colIndex = 1; colIndex < totalCells.length; colIndex++) {
+        if (columnSums[colIndex] !== undefined) { // Update only if a sum has been calculated
+            var totalInput = totalCells[colIndex].querySelector('input');
+            if (totalInput) { // If there's an input field, update it
+                totalInput.value = columnSums[colIndex];
+            }
+        }
+    }
+    var row = table.rows[totalRowIndex];
+
+    var totalA = parseFloat(row.cells[1].querySelector('input').value) || 0;
+    var noB = parseFloat(row.cells[2].querySelector('input').value) || 0;
+    var noC = parseFloat(row.cells[4].querySelector('input').value) || 0;
+    var totalD = parseFloat(row.cells[6].querySelector('input').value) || 0;
+    var noE = parseFloat(row.cells[7].querySelector('input').value) || 0;
+    var noF = parseFloat(row.cells[9].querySelector('input').value) || 0;
+
+    // Calculate percentages and update the respective cells
+    row.cells[3].querySelector('input').value = calculatePercentage(noB, totalA);
+    row.cells[5].querySelector('input').value = calculatePercentage(noC, totalA);
+    row.cells[8].querySelector('input').value = calculatePercentage(noE, totalD);
+    row.cells[10].querySelector('input').value = calculatePercentage(noF, totalD);
+}
+
+// Calculate totals for each section when the page loads and when values change
+window.onload = function () {
+    calculateSectionTotals8();
+};
+
+function calculateSectionTotals8() {
+    // 'Permanent employees' section is from row 4 to 5, and its 'Total' is at row 6
+    calculateColumnTotalsForSection8('p_trainingDetails', 4, 5, 6);
+    // 'Other than Permanent employees' section is from row 8 to 9, and its 'Total' is at row 10
+    calculateColumnTotalsForSection8('p_trainingDetails', 8, 9, 10);
+}
+
+// Function to calculate percentages
+function calculatePercentages8(tableId, rowIndex) {
+    var table = document.getElementById(tableId);
+    var row = table.rows[rowIndex];
+
+    var totalA = parseFloat(row.cells[1].querySelector('input').value) || 0;
+    var noB = parseFloat(row.cells[2].querySelector('input').value) || 0;
+    var noC = parseFloat(row.cells[4].querySelector('input').value) || 0;
+    var totalD = parseFloat(row.cells[6].querySelector('input').value) || 0;
+    var noE = parseFloat(row.cells[7].querySelector('input').value) || 0;
+    var noF = parseFloat(row.cells[9].querySelector('input').value) || 0;
+
+    // Calculate percentages and update the respective cells
+    row.cells[3].querySelector('input').value = calculatePercentage(noB, totalA);
+    row.cells[5].querySelector('input').value = calculatePercentage(noC, totalA);
+    row.cells[8].querySelector('input').value = calculatePercentage(noE, totalD);
+    row.cells[10].querySelector('input').value = calculatePercentage(noF, totalD);
+    calculateSectionTotals8();
+}
+// End of Principle 3 EI 8
+
+// Principle 3 EI 9
+// Function to calculate column totals for a specific section of the table
+function calculateColumnTotalsForSection9(tableId, startRowIndex, endRowIndex, totalRowIndex) {
+    var table = document.getElementById(tableId);
+
+    // Object to hold the sum of each column
+    var columnSums = {};
+
+    // Initialize column sums
+    for (var i = 1; i < table.rows[startRowIndex].cells.length; i++) {
+        columnSums[i] = 0;
+    }
+
+    // Calculate sums for each column
+    for (var rowIndex = startRowIndex; rowIndex <= endRowIndex; rowIndex++) {
+        var cells = table.rows[rowIndex].cells;
+        for (var colIndex = 1; colIndex < cells.length; colIndex++) {
+            var input = cells[colIndex].querySelector('input');
+            if (input && !input.hasAttribute('readonly')) { // Sum only the input fields that are not readonly
+                var value = parseFloat(input.value) || 0;
+                columnSums[colIndex] += value;
+            }
+        }
+    }
+
+    // Update the totals in the 'Total' row
+    var totalCells = table.rows[totalRowIndex].cells;
+    for (var colIndex = 1; colIndex < totalCells.length; colIndex++) {
+        if (columnSums[colIndex] !== undefined) { // Update only if a sum has been calculated
+            var totalInput = totalCells[colIndex].querySelector('input');
+            if (totalInput) { // If there's an input field, update it
+                totalInput.value = columnSums[colIndex];
+            }
+        }
+    }
+    var row = table.rows[totalRowIndex];
+
+    var totalA = parseFloat(row.cells[1].querySelector('input').value) || 0;
+    var noB = parseFloat(row.cells[2].querySelector('input').value) || 0;
+    var totalC = parseFloat(row.cells[4].querySelector('input').value) || 0;
+    var noD = parseFloat(row.cells[5].querySelector('input').value) || 0;
+
+
+    // Calculate percentages and update the respective cells
+    row.cells[3].querySelector('input').value = calculatePercentage(noB, totalA);
+    row.cells[6].querySelector('input').value = calculatePercentage(noD, totalC);
+}
+
+// Calculate totals for each section when the page loads and when values change
+window.onload = function () {
+    calculateSectionTotals9();
+};
+
+function calculateSectionTotals9() {
+    // 'Permanent employees' section is from row 4 to 5, and its 'Total' is at row 6
+    calculateColumnTotalsForSection9('p_performanceReviewDetails', 3, 4, 5);
+    // 'Other than Permanent employees' section is from row 8 to 9, and its 'Total' is at row 10
+    calculateColumnTotalsForSection9('p_performanceReviewDetails', 7, 8, 9);
+}
+
+// Function to calculate percentages
+function calculatePercentages9(tableId, rowIndex) {
+    var table = document.getElementById(tableId);
+    var row = table.rows[rowIndex];
+
+    var totalA = parseFloat(row.cells[1].querySelector('input').value) || 0;
+    var noB = parseFloat(row.cells[2].querySelector('input').value) || 0;
+    var totalC = parseFloat(row.cells[4].querySelector('input').value) || 0;
+    var noD = parseFloat(row.cells[5].querySelector('input').value) || 0;
+
+
+    // Calculate percentages and update the respective cells
+    row.cells[3].querySelector('input').value = calculatePercentage(noB, totalA);
+    row.cells[6].querySelector('input').value = calculatePercentage(noD, totalC);
+    calculateSectionTotals9();
+}
+// End of Principle 3 EI 9
+
+// Principle 5 EI 1
+// Function to calculate column totals for a specific section of the table
+function calculateColumnTotalsForSection1(tableId, startRowIndex, endRowIndex, totalRowIndex) {
+    var table = document.getElementById(tableId);
+
+    // Object to hold the sum of each column
+    var columnSums = {};
+
+    // Initialize column sums
+    for (var i = 1; i < table.rows[startRowIndex].cells.length; i++) {
+        columnSums[i] = 0;
+    }
+
+    // Calculate sums for each column
+    for (var rowIndex = startRowIndex; rowIndex <= endRowIndex; rowIndex++) {
+        var cells = table.rows[rowIndex].cells;
+        for (var colIndex = 1; colIndex < cells.length; colIndex++) {
+            var input = cells[colIndex].querySelector('input');
+            if (input && !input.hasAttribute('readonly')) { // Sum only the input fields that are not readonly
+                var value = parseFloat(input.value) || 0;
+                columnSums[colIndex] += value;
+            }
+        }
+    }
+
+    // Update the totals in the 'Total' row
+    var totalCells = table.rows[totalRowIndex].cells;
+    for (var colIndex = 1; colIndex < totalCells.length; colIndex++) {
+        if (columnSums[colIndex] !== undefined) { // Update only if a sum has been calculated
+            var totalInput = totalCells[colIndex].querySelector('input');
+            if (totalInput) { // If there's an input field, update it
+                totalInput.value = columnSums[colIndex];
+            }
+        }
+    }
+    var row = table.rows[totalRowIndex];
+
+    var totalA = parseFloat(row.cells[1].querySelector('input').value) || 0;
+    var noB = parseFloat(row.cells[2].querySelector('input').value) || 0;
+    var totalC = parseFloat(row.cells[4].querySelector('input').value) || 0;
+    var noD = parseFloat(row.cells[5].querySelector('input').value) || 0;
+
+
+    // Calculate percentages and update the respective cells
+    row.cells[3].querySelector('input').value = calculatePercentage(noB, totalA);
+    row.cells[6].querySelector('input').value = calculatePercentage(noD, totalC);
+}
+
+// Calculate totals for each section when the page loads and when values change
+window.onload = function () {
+    calculateSectionTotals1();
+};
+
+function calculateSectionTotals1() {
+    // 'Permanent employees' section is from row 4 to 5, and its 'Total' is at row 6
+    calculateColumnTotalsForSection1('p_humanRightsTrainingDetails', 3, 4, 5);
+    // 'Other than Permanent employees' section is from row 8 to 9, and its 'Total' is at row 10
+    calculateColumnTotalsForSection1('p_humanRightsTrainingDetails', 7, 8, 9);
+}
+
+// Function to calculate percentages
+function calculatePercentages1(tableId, rowIndex) {
+    var table = document.getElementById(tableId);
+    var row = table.rows[rowIndex];
+
+    var totalA = parseFloat(row.cells[1].querySelector('input').value) || 0;
+    var noB = parseFloat(row.cells[2].querySelector('input').value) || 0;
+    var totalC = parseFloat(row.cells[4].querySelector('input').value) || 0;
+    var noD = parseFloat(row.cells[5].querySelector('input').value) || 0;
+
+
+    // Calculate percentages and update the respective cells
+    row.cells[3].querySelector('input').value = calculatePercentage(noB, totalA);
+    row.cells[6].querySelector('input').value = calculatePercentage(noD, totalC);
+    calculateSectionTotals1()
+}
+// End of Principle 5 EI 1
+
+// Principle 5 EI 2
+// Function to calculate column totals for a specific section of the table
+function calculateColumnTotalsForSection2(tableId, startRowIndex, endRowIndex, totalRowIndex) {
+    var table = document.getElementById(tableId);
+
+    // Object to hold the sum of each column
+    var columnSums = {};
+
+    // Initialize column sums
+    for (var i = 1; i < table.rows[startRowIndex].cells.length; i++) {
+        columnSums[i] = 0;
+    }
+
+    // Calculate sums for each column
+    for (var rowIndex = startRowIndex; rowIndex <= endRowIndex; rowIndex++) {
+        var cells = table.rows[rowIndex].cells;
+        for (var colIndex = 1; colIndex < cells.length; colIndex++) {
+            var input = cells[colIndex].querySelector('input');
+            if (input && !input.hasAttribute('readonly')) { // Sum only the input fields that are not readonly
+                var value = parseFloat(input.value) || 0;
+                columnSums[colIndex] += value;
+            }
+        }
+    }
+
+    // Update the totals in the 'Total' row
+    var totalCells = table.rows[totalRowIndex].cells;
+    for (var colIndex = 1; colIndex < totalCells.length; colIndex++) {
+        if (columnSums[colIndex] !== undefined) { // Update only if a sum has been calculated
+            var totalInput = totalCells[colIndex].querySelector('input');
+            if (totalInput) { // If there's an input field, update it
+                totalInput.value = columnSums[colIndex];
+            }
+        }
+    }
+    var row = table.rows[totalRowIndex];
+
+    var totalA = parseFloat(row.cells[1].querySelector('input').value) || 0;
+    var noB = parseFloat(row.cells[2].querySelector('input').value) || 0;
+    var noC = parseFloat(row.cells[4].querySelector('input').value) || 0;
+    var totalD = parseFloat(row.cells[6].querySelector('input').value) || 0;
+    var noE = parseFloat(row.cells[7].querySelector('input').value) || 0;
+    var noF = parseFloat(row.cells[9].querySelector('input').value) || 0;
+
+
+    // Calculate percentages and update the respective cells
+    row.cells[3].querySelector('input').value = calculatePercentage(noB, totalA);
+    row.cells[5].querySelector('input').value = calculatePercentage(noC, totalA);
+    row.cells[8].querySelector('input').value = calculatePercentage(noE, totalD);
+    row.cells[10].querySelector('input').value = calculatePercentage(noF, totalD);
+}
+
+// Calculate totals for each section when the page loads and when values change
+window.onload = function () {
+    calculateSectionTotals2();
+};
+
+function calculateSectionTotals2() {
+    calculateColumnTotalsForSection2('p_wageDetails', 4, 5, 6);
+    calculateColumnTotalsForSection2('p_wageDetails', 8, 9, 10);
+    calculateColumnTotalsForSection2('p_wageDetails', 12, 13, 14);
+    calculateColumnTotalsForSection2('p_wageDetails', 16, 17, 18);
+}
+
+// Function to calculate percentages
+function calculatePercentages2(tableId, rowIndex) {
+    var table = document.getElementById(tableId);
+    var row = table.rows[rowIndex];
+
+    var totalA = parseFloat(row.cells[1].querySelector('input').value) || 0;
+    var noB = parseFloat(row.cells[2].querySelector('input').value) || 0;
+    var noC = parseFloat(row.cells[4].querySelector('input').value) || 0;
+    var totalD = parseFloat(row.cells[6].querySelector('input').value) || 0;
+    var noE = parseFloat(row.cells[7].querySelector('input').value) || 0;
+    var noF = parseFloat(row.cells[9].querySelector('input').value) || 0;
+
+
+    // Calculate percentages and update the respective cells
+    row.cells[3].querySelector('input').value = calculatePercentage(noB, totalA);
+    row.cells[5].querySelector('input').value = calculatePercentage(noC, totalA);
+    row.cells[8].querySelector('input').value = calculatePercentage(noE, totalD);
+    row.cells[10].querySelector('input').value = calculatePercentage(noF, totalD);
+    calculateSectionTotals2();
+}
+// End of Principle 5 EI 2
+
+// Principle 6 EI 1.1
+// Function to calculate column totals for a specific section of the table
+function calculateColumnTotalsForSection1_1(tableId, startRowIndex, endRowIndex, totalRowIndex) {
+    var table = document.getElementById(tableId);
+
+    // Object to hold the sum of each column
+    var columnSums = {};
+
+    // Initialize column sums
+    for (var i = 1; i < table.rows[startRowIndex].cells.length; i++) {
+        columnSums[i] = 0;
+    }
+
+    // Calculate sums for each column
+    for (var rowIndex = startRowIndex; rowIndex <= endRowIndex; rowIndex++) {
+        var cells = table.rows[rowIndex].cells;
+        for (var colIndex = 1; colIndex < cells.length; colIndex++) {
+            var input = cells[colIndex].querySelector('input');
+            if (input && !input.hasAttribute('readonly')) { // Sum only the input fields that are not readonly
+                var value = parseFloat(input.value) || 0;
+                columnSums[colIndex] += value;
+            }
+        }
+    }
+
+    // Update the totals in the 'Total' row
+    var totalCells = table.rows[totalRowIndex].cells;
+    for (var colIndex = 1; colIndex < totalCells.length; colIndex++) {
+        if (columnSums[colIndex] !== undefined) { // Update only if a sum has been calculated
+            var totalInput = totalCells[colIndex].querySelector('input');
+            if (totalInput) { // If there's an input field, update it
+                totalInput.value = columnSums[colIndex];
+            }
+        }
+    }
+}
+
+// Calculate totals for each section when the page loads and when values change
+window.onload = function () {
+    calculateSectionTotals1_1();
+};
+
+function calculateSectionTotals1_1() {
+    calculateColumnTotalsForSection1_1('p_energyConsumptionDetails', 1, 3, 4);
+}
+// End of Principle 6 EI 1.1
+
+// Principle 6 EI 3.1
+// Function to calculate column totals for a specific section of the table
+function calculateColumnTotalsForSection3_1(tableId, startRowIndex, endRowIndex, totalRowIndex) {
+    var table = document.getElementById(tableId);
+
+    // Object to hold the sum of each column
+    var columnSums = {};
+
+    // Initialize column sums
+    for (var i = 1; i < table.rows[startRowIndex].cells.length; i++) {
+        columnSums[i] = 0;
+    }
+
+    // Calculate sums for each column
+    for (var rowIndex = startRowIndex; rowIndex <= endRowIndex; rowIndex++) {
+        var cells = table.rows[rowIndex].cells;
+        for (var colIndex = 1; colIndex < cells.length; colIndex++) {
+            var input = cells[colIndex].querySelector('input');
+            if (input && !input.hasAttribute('readonly')) { // Sum only the input fields that are not readonly
+                var value = parseFloat(input.value) || 0;
+                columnSums[colIndex] += value;
+            }
+        }
+    }
+
+    // Update the totals in the 'Total' row
+    var totalCells = table.rows[totalRowIndex].cells;
+    for (var colIndex = 1; colIndex < totalCells.length; colIndex++) {
+        if (columnSums[colIndex] !== undefined) { // Update only if a sum has been calculated
+            var totalInput = totalCells[colIndex].querySelector('input');
+            if (totalInput) { // If there's an input field, update it
+                totalInput.value = columnSums[colIndex];
+            }
+        }
+    }
+}
+
+// Calculate totals for each section when the page loads and when values change
+window.onload = function () {
+    calculateSectionTotals3_1();
+};
+
+function calculateSectionTotals3_1() {
+    calculateColumnTotalsForSection3_1('p_waterWithdrawalDetails', 2, 6, 7);
+}
+// End of Principle 6 EI 3.1
+
+// Principle 6 EI 8.1
+// Function to calculate column totals for a specific section of the table
+function calculateColumnTotalsForSection8_1(tableId, startRowIndex, endRowIndex, totalRowIndex) {
+    var table = document.getElementById(tableId);
+
+    // Object to hold the sum of each column
+    var columnSums = {};
+
+    // Initialize column sums
+    for (var i = 1; i < table.rows[startRowIndex].cells.length; i++) {
+        columnSums[i] = 0;
+    }
+
+    // Calculate sums for each column
+    for (var rowIndex = startRowIndex; rowIndex <= endRowIndex; rowIndex++) {
+        var cells = table.rows[rowIndex].cells;
+        for (var colIndex = 1; colIndex < cells.length; colIndex++) {
+            var input = cells[colIndex].querySelector('input');
+            if (input && !input.hasAttribute('readonly')) { // Sum only the input fields that are not readonly
+                var value = parseFloat(input.value) || 0;
+                columnSums[colIndex] += value;
+            }
+        }
+    }
+
+    // Update the totals in the 'Total' row
+    var totalCells = table.rows[totalRowIndex].cells;
+    for (var colIndex = 1; colIndex < totalCells.length; colIndex++) {
+        if (columnSums[colIndex] !== undefined) { // Update only if a sum has been calculated
+            var totalInput = totalCells[colIndex].querySelector('input');
+            if (totalInput) { // If there's an input field, update it
+                totalInput.value = columnSums[colIndex];
+            }
+        }
+    }
+}
+
+// Calculate totals for each section when the page loads and when values change
+window.onload = function () {
+    calculateSectionTotals8_1();
+};
+
+function calculateSectionTotals8_1() {
+    calculateColumnTotalsForSection8_1('p_wasteDetails', 2, 9, 10);
+    calculateColumnTotalsForSection8_1('p_wasteDetails', 13, 15, 16);
+    calculateColumnTotalsForSection8_1('p_wasteDetails', 19, 21, 22);
+}
+// End of Principle 6 EI 8.1
+
+// Principle 6 LI 1.1
+// Function to calculate column totals for a specific section of the table
+function calculateColumnTotalsForSectionL1_1(tableId, startRowIndex, endRowIndex, totalRowIndex) {
+    var table = document.getElementById(tableId);
+
+    // Object to hold the sum of each column
+    var columnSums = {};
+
+    // Initialize column sums
+    for (var i = 1; i < table.rows[startRowIndex].cells.length; i++) {
+        columnSums[i] = 0;
+    }
+
+    // Calculate sums for each column
+    for (var rowIndex = startRowIndex; rowIndex <= endRowIndex; rowIndex++) {
+        var cells = table.rows[rowIndex].cells;
+        for (var colIndex = 1; colIndex < cells.length; colIndex++) {
+            var input = cells[colIndex].querySelector('input');
+            if (input && !input.hasAttribute('readonly')) { // Sum only the input fields that are not readonly
+                var value = parseFloat(input.value) || 0;
+                columnSums[colIndex] += value;
+            }
+        }
+    }
+
+    // Update the totals in the 'Total' row
+    var totalCells = table.rows[totalRowIndex].cells;
+    for (var colIndex = 1; colIndex < totalCells.length; colIndex++) {
+        if (columnSums[colIndex] !== undefined) { // Update only if a sum has been calculated
+            var totalInput = totalCells[colIndex].querySelector('input');
+            if (totalInput) { // If there's an input field, update it
+                totalInput.value = columnSums[colIndex];
+            }
+        }
+    }
+}
+
+// Calculate totals for each section when the page loads and when values change
+window.onload = function () {
+    calculateSectionTotalsL1_1();
+};
+
+function calculateSectionTotalsL1_1() {
+    calculateColumnTotalsForSectionL1_1('p_totalenergyconsumed', 2, 4, 5);
+    calculateColumnTotalsForSectionL1_1('p_totalenergyconsumed', 7, 9, 10);
+}
+// End of Principle 6 LI 1.1
+
+// Principle 6 LI 2.1
+// Function to calculate column totals for a specific section of the table
+function calculateColumnTotalsForSectionL2_1(tableId, startRowIndex, endRowIndex, totalRowIndex) {
+    var table = document.getElementById(tableId);
+
+    // Object to hold the sum of each column
+    var columnSums = {};
+
+    // Initialize column sums
+    for (var i = 1; i < table.rows[startRowIndex].cells.length; i++) {
+        columnSums[i] = 0;
+    }
+
+    // Calculate sums for each column
+    for (var rowIndex = startRowIndex; rowIndex <= endRowIndex; rowIndex++) {
+        var cells = table.rows[rowIndex].cells;
+        for (var colIndex = 1; colIndex < cells.length; colIndex++) {
+            var input = cells[colIndex].querySelector('input');
+            if (input && !input.hasAttribute('readonly')) { // Sum only the input fields that are not readonly
+                var value = parseFloat(input.value) || 0;
+                columnSums[colIndex] += value;
+            }
+        }
+    }
+
+    // Update the totals in the 'Total' row
+    var totalCells = table.rows[totalRowIndex].cells;
+    for (var colIndex = 1; colIndex < totalCells.length; colIndex++) {
+        if (columnSums[colIndex] !== undefined) { // Update only if a sum has been calculated
+            var totalInput = totalCells[colIndex].querySelector('input');
+            if (totalInput) { // If there's an input field, update it
+                totalInput.value = columnSums[colIndex];
+            }
+        }
+    }
+
+    var row1 = table.rows[2];
+    var row2 = table.rows[5];
+    var row3 = table.rows[8];
+    var row4 = table.rows[11];
+    var row5 = table.rows[14];
+    var total_row = table.rows[17];
+
+    var cy_row1 = parseFloat(row1.cells[1].querySelector('input').value) || 0;
+    var py_row1 = parseFloat(row1.cells[2].querySelector('input').value) || 0;
+    var cy_row2 = parseFloat(row2.cells[1].querySelector('input').value) || 0;
+    var py_row2 = parseFloat(row2.cells[2].querySelector('input').value) || 0;
+    var cy_row3 = parseFloat(row3.cells[1].querySelector('input').value) || 0;
+    var py_row3 = parseFloat(row3.cells[2].querySelector('input').value) || 0;
+    var cy_row4 = parseFloat(row4.cells[1].querySelector('input').value) || 0;
+    var py_row4 = parseFloat(row4.cells[2].querySelector('input').value) || 0;
+    var cy_row5 = parseFloat(row5.cells[1].querySelector('input').value) || 0;
+    var py_row5 = parseFloat(row5.cells[2].querySelector('input').value) || 0;
+
+    var total_cy = cy_row1 + cy_row2 + cy_row3 + cy_row4 + cy_row5;
+    var total_py = py_row1 + py_row2 + py_row3 + py_row4 + py_row5;
+
+    total_row.cells[1].querySelector('input').value = total_cy;
+    total_row.cells[2].querySelector('input').value = total_py;
+}
+
+// Calculate totals for each section when the page loads and when values change
+window.onload = function () {
+    calculateSectionTotalsL2_1();
+};
+
+function calculateSectionTotalsL2_1() {
+    calculateColumnTotalsForSectionL2_1('p_waterdischarged', 3, 4, 2);
+    calculateColumnTotalsForSectionL2_1('p_waterdischarged', 6, 7, 5);
+    calculateColumnTotalsForSectionL2_1('p_waterdischarged', 9, 10, 8);
+    calculateColumnTotalsForSectionL2_1('p_waterdischarged', 12, 13, 11);
+    calculateColumnTotalsForSectionL2_1('p_waterdischarged', 15, 16, 14);
+}
+// End of Principle 6 LI 2.1
+
+// Principle 6 LI 3.1c
+// Function to calculate column totals for a specific section of the table
+function calculateColumnTotalsForSectionL3_1(tableId, startRowIndex, endRowIndex, totalRowIndex) {
+    var table = document.getElementById(tableId);
+
+    // Object to hold the sum of each column
+    var columnSums = {};
+
+    // Initialize column sums
+    for (var i = 1; i < table.rows[startRowIndex].cells.length; i++) {
+        columnSums[i] = 0;
+    }
+
+    // Calculate sums for each column
+    for (var rowIndex = startRowIndex; rowIndex <= endRowIndex; rowIndex++) {
+        var cells = table.rows[rowIndex].cells;
+        for (var colIndex = 1; colIndex < cells.length; colIndex++) {
+            var input = cells[colIndex].querySelector('input');
+            if (input && !input.hasAttribute('readonly')) { // Sum only the input fields that are not readonly
+                var value = parseFloat(input.value) || 0;
+                columnSums[colIndex] += value;
+            }
+        }
+    }
+
+    // Update the totals in the 'Total' row
+    var totalCells = table.rows[totalRowIndex].cells;
+    for (var colIndex = 1; colIndex < totalCells.length; colIndex++) {
+        if (columnSums[colIndex] !== undefined) { // Update only if a sum has been calculated
+            var totalInput = totalCells[colIndex].querySelector('input');
+            if (totalInput) { // If there's an input field, update it
+                totalInput.value = columnSums[colIndex];
+            }
+        }
+    }
+
+    var row1 = table.rows[12];
+    var row2 = table.rows[15];
+    var row3 = table.rows[18];
+    var row4 = table.rows[21];
+    var row5 = table.rows[24];
+    var total_row = table.rows[27];
+
+    var cy_row1 = parseFloat(row1.cells[1].querySelector('input').value) || 0;
+    var py_row1 = parseFloat(row1.cells[2].querySelector('input').value) || 0;
+    var cy_row2 = parseFloat(row2.cells[1].querySelector('input').value) || 0;
+    var py_row2 = parseFloat(row2.cells[2].querySelector('input').value) || 0;
+    var cy_row3 = parseFloat(row3.cells[1].querySelector('input').value) || 0;
+    var py_row3 = parseFloat(row3.cells[2].querySelector('input').value) || 0;
+    var cy_row4 = parseFloat(row4.cells[1].querySelector('input').value) || 0;
+    var py_row4 = parseFloat(row4.cells[2].querySelector('input').value) || 0;
+    var cy_row5 = parseFloat(row5.cells[1].querySelector('input').value) || 0;
+    var py_row5 = parseFloat(row5.cells[2].querySelector('input').value) || 0;
+
+    var total_cy = cy_row1 + cy_row2 + cy_row3 + cy_row4 + cy_row5;
+    var total_py = py_row1 + py_row2 + py_row3 + py_row4 + py_row5;
+
+    total_row.cells[1].querySelector('input').value = total_cy;
+    total_row.cells[2].querySelector('input').value = total_py;
+}
+
+// Calculate totals for each section when the page loads and when values change
+window.onload = function () {
+    calculateSectionTotalsL3_1();
+};
+
+function calculateSectionTotalsL3_1() {
+    calculateColumnTotalsForSectionL3_1('p_waterstress', 2, 6, 7);
+    calculateColumnTotalsForSectionL3_1('p_waterstress', 13, 14, 12);
+    calculateColumnTotalsForSectionL3_1('p_waterstress', 16, 17, 15);
+    calculateColumnTotalsForSectionL3_1('p_waterstress', 19, 20, 18);
+    calculateColumnTotalsForSectionL3_1('p_waterstress', 22, 23, 21);
+    calculateColumnTotalsForSectionL3_1('p_waterstress', 25, 26, 24);
+}
+// End of Principle 6 LI 3.1c
 
 
 /* ************************************************************************************************************************************ */

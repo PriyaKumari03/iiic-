@@ -80,7 +80,7 @@
                                 <label for="coverage" class="form-label"><span style="color: red;"> * </span>1. Percentage coverage by training & awareness programmes on any of the Principles during the financial year :</label>
                             </div>
                             <div id="coverage" class="responsive-table">
-                                <table id=p_coverage>
+                                <table id="p_coverage">
                                     <thead>
                                         <tr>
                                             <th class="form-label">Segment</th>
@@ -116,6 +116,12 @@
                                         </tr>
                                     </tbody>
                                 </table>
+                            </div>
+                            <div class="policy">
+                                <details class="add_comment_detail">
+                                    <summary>Add comments</summary>
+                                    <textarea class="detail-control" id="p_coverage_comments" name="p_coverage_comments" placeholder="Enter additional information (if required)"></textarea>
+                                </details>
                             </div>
                         </div>
                         <!--Percentage coverage by training and awareness programmes end-->
@@ -191,6 +197,12 @@
                                     </tr>
                                 </table>
                             </div>
+                            <div class="policy">
+                                <details class="add_comment_detail">
+                                    <summary>Add comments</summary>
+                                    <textarea class="detail-control" id="p_details_comments" name="p_details_comments" placeholder="Enter additional information (if required)"></textarea>
+                                </details>
+                            </div>
                         </div>
                          <!--Details of fines/penalties/punishment/award/compounding fees/settlement amount paid end-->
 
@@ -223,6 +235,12 @@
                                     <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow('appeal')">Add Row</button>
                                     <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow('appeal')">Remove Row</button>
                                 </div>
+                            </div>
+                            <div class="policy">
+                                <details class="add_comment_detail">
+                                    <summary>Add comments</summary>
+                                    <textarea class="detail-control" id="p_appeal_comments" name="p_appeal_comments" placeholder="Enter additional information (if required)"></textarea>
+                                </details>
                             </div>
                         </div>
                         <!--Details of appeal/revision preferred in cases where monetary or non-monetary actions has been appealed end-->
@@ -267,7 +285,14 @@
                                         <th class="form-label">workers</th>
                                         <td><input type="text" id="disciplinaryAction" name="disciplinaryAction[]" class="form-control" ></td>
                                         <td><input type="text" id="disciplinaryAction" name="disciplinaryAction[]" class="form-control" ></td>
+                                    </tr>
                                 </table>
+                            </div>
+                            <div class="policy">
+                                <details class="add_comment_detail">
+                                    <summary>Add comments</summary>
+                                    <textarea class="detail-control" id="p_disciplinaryAction_comments" name="p_disciplinaryAction_comments" placeholder="Enter additional information (if required)"></textarea>
+                                </details>
                             </div>
                         </div>
                         <!--Number of Directors/KMPs/employees/workers against whom disciplinary action was taken end-->
@@ -306,6 +331,12 @@
                                     </tr>
                                 </table>
                             </div>
+                            <div class="policy">
+                                <details class="add_comment_detail">
+                                    <summary>Add comments</summary>
+                                    <textarea class="detail-control" id="p_conflictComplaints_comments" name="p_conflictComplaints_comments" placeholder="Enter additional information (if required)"></textarea>
+                                </details>
+                            </div>
                         </div>
                         <!--Details of complaints with regard to conflict of interest end-->
                     
@@ -332,7 +363,6 @@
                             <div class="policy">
                                 <label for="awarenessProgrammes" class="form-label"><span style="color: red;"> * </span>1. Awareness programmes conducted for value chain partners on any of the Principles during the financial year:</label>
                             </div>
-                            <textarea class="form-control" id="awarenessProgrammesdetails" name="awarenessProgrammesdetails" placeholder="Enter awareness program details"></textarea>
                             <div id="awarenessProgrammes" class="responsive-table">
                                 <table id="p_awarenessProgrammes">
                                     <thead>
@@ -358,6 +388,12 @@
                                     <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow('awarenessProgrammes')">Add Row</button>
                                     <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow('awarenessProgrammes')">Remove Row</button>
                                 </div>
+                            </div>
+                            <div class="policy">
+                                <details class="add_comment_detail">
+                                    <summary>Add comments</summary>
+                                    <textarea class="detail-control" id="p_awarenessProgrammes_comments" name="p_awarenessProgrammes_comments" placeholder="Enter additional information (if required)"></textarea>
+                                </details>
                             </div>
                         </div>
                         <!--Awareness programmes conducted for value chain partners on any of the Principles end-->
@@ -429,6 +465,12 @@
                                     </tr>
                                 </table>
                             </div>
+                            <div class="policy">
+                                <details class="add_comment_detail">
+                                    <summary>Add comments</summary>
+                                    <textarea class="detail-control" id="p_rdPercentage_comments" name="p_rdPercentage_comments" placeholder="Enter additional information (if required)"></textarea>
+                                </details>
+                            </div>
                         </div>
                         <!--Percentage of R&D and CAPEX investments end-->
                 
@@ -470,6 +512,12 @@
                                     <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow('sustainableSourcingPercentage')">Add Row</button>
                                     <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow('sustainableSourcingPercentage')">Remove Row</button>
                                 </div>
+                            </div>
+                            <div class="policy">
+                                <details class="add_comment_detail">
+                                    <summary>Add comments</summary>
+                                    <textarea class="detail-control" id="p_sustainableSourcingPercentage_comments" name="p_sustainableSourcingPercentage_comments" placeholder="Enter additional information (if required)"></textarea>
+                                </details>
                             </div>
                         </div>
                         <!--If yes, what percentage of inputs were sourced sustainably? end-->
@@ -550,6 +598,12 @@
                                     <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow('lcaConducted2')">Remove Row</button>
                                 </div>
                             </div>
+                            <div class="policy">
+                                <details class="add_comment_detail">
+                                    <summary>Add comments</summary>
+                                    <textarea class="detail-control" id="p_lcaConducted2_comments" name="p_lcaConducted2_comments" placeholder="Enter additional information (if required)"></textarea>
+                                </details>
+                            </div>
                         </div>
                         <!--Life Cycle Perspective / Assessments (LCA) for any of the products or for its services end-->
                 
@@ -584,6 +638,12 @@
                                     <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow('concernsMitigation2')">Add Row</button>
                                     <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow('concernsMitigation2')">Remove Row</button>
                                 </div>
+                            </div>
+                            <div class="policy">
+                                <details class="add_comment_detail">
+                                    <summary>Add comments</summary>
+                                    <textarea class="detail-control" id="p_concernsMitigation2_comments" name="p_concernsMitigation2_comments" placeholder="Enter additional information (if required)"></textarea>
+                                </details>
                             </div>
                         </div>
                         <!--Significant social or environmental concerns as identified in the Life Cycle Perspective/Assessments (LCA) end-->
@@ -623,6 +683,12 @@
                                     <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow('recycledPercentage2')">Remove Row</button>
                                 </div>
                             </div>
+                            <div class="policy">
+                                <details class="add_comment_detail">
+                                    <summary>Add comments</summary>
+                                    <textarea class="detail-control" id="p_recycledPercentage2_comments" name="p_recycledPercentage2_comments" placeholder="Enter additional information (if required)"></textarea>
+                                </details>
+                            </div>
                         </div>
                         <!--Percentage of recycled or reused input material to total material used in production end-->
                    
@@ -634,7 +700,7 @@
                             <div id="reclaimedProducts2" class="responsive-table">
                                 <table id="p_reclaimedProducts2">
                                     <tr>
-                                        <th rowspan=2></th>
+                                        <th rowspan="2"></th>
                                         <th class="form-label" colspan="3">FY___(Current Financial Year)</th>
                                         <th class="form-label" colspan="3">FY___(Previous Financial Year)</th>
                                     </tr>
@@ -684,6 +750,12 @@
                                     </tr>
                                 </table>
                             </div>
+                            <div class="policy">
+                                <details class="add_comment_detail">
+                                    <summary>Add comments</summary>
+                                    <textarea class="detail-control" id="p_reclaimedProducts2_comments" name="p_reclaimedProducts2_comments" placeholder="Enter additional information (if required)"></textarea>
+                                </details>
+                            </div>
                         </div>
                         <!--Products and packaging reclaimed at end of life of products, amount reused, recycled, and safely disposed end-->
                    
@@ -696,7 +768,7 @@
                                 <table id="p_reclaimedPercentages2">
                                     <thead>
                                         <tr>
-                                            <th class="form=label">S.No.</th>
+                                            <th class="form-label">S.No.</th>
                                             <th class="form-label">Indicate product category</th>
                                             <th class="form-label">Reclaimed products and their packaging materials as % of total products sold in respective category</th>
                                         </tr>
@@ -716,6 +788,12 @@
                                     <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow('reclaimedPercentages2')">Add Row</button>
                                     <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow('reclaimedPercentages2')">Remove Row</button>
                                 </div>
+                            </div>
+                            <div class="policy">
+                                <details class="add_comment_detail">
+                                    <summary>Add comments</summary>
+                                    <textarea class="detail-control" id="p_reclaimedPercentages2_comments" name="p_reclaimedPercentages2_comments" placeholder="Enter additional information (if required)"></textarea>
+                                </details>
                             </div>
                         </div>
                         <!--Reclaimed products and their packaging materials for each product category end-->  
@@ -863,92 +941,12 @@
                                         <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" readonly></td>
                                     </tr>
                                 </table>
-                                <!--Function to calculate percentages-->
-                                <script>
-                                // Function to calculate column totals for a specific section of the table
-                                    function calculateColumnTotalsForSection1a(tableId, startRowIndex, endRowIndex, totalRowIndex) {
-                                        var table = document.getElementById(tableId);
-    
-                                        // Object to hold the sum of each column
-                                        var columnSums = {};
-
-                                        // Initialize column sums
-                                        for (var i = 1; i < table.rows[startRowIndex].cells.length; i++) {
-                                            columnSums[i] = 0;
-                                        }
-
-                                        // Calculate sums for each column
-                                        for (var rowIndex = startRowIndex; rowIndex <= endRowIndex; rowIndex++) {
-                                            var cells = table.rows[rowIndex].cells;
-                                            for (var colIndex = 1; colIndex < cells.length; colIndex++) {
-                                                var input = cells[colIndex].querySelector('input');
-                                                if (input && !input.hasAttribute('readonly')) { // Sum only the input fields that are not readonly
-                                                    var value = parseFloat(input.value) || 0;
-                                                    columnSums[colIndex] += value;
-                                                }
-                                            }
-                                        }
-
-                                        // Update the totals in the 'Total' row
-                                        var totalCells = table.rows[totalRowIndex].cells;
-                                        for (var colIndex = 1; colIndex < totalCells.length; colIndex++) {
-                                            if (columnSums[colIndex] !== undefined) { // Update only if a sum has been calculated
-                                                var totalInput = totalCells[colIndex].querySelector('input');
-                                                if (totalInput) { // If there's an input field, update it
-                                                    totalInput.value = columnSums[colIndex];
-                                                }
-                                            }
-                                        }
-                                        var row = table.rows[totalRowIndex];
-        
-                                        var total = parseFloat(row.cells[1].querySelector('input').value) || 0;
-                                        var noB = parseFloat(row.cells[2].querySelector('input').value) || 0;
-                                        var noC = parseFloat(row.cells[4].querySelector('input').value) || 0;
-                                        var noD = parseFloat(row.cells[6].querySelector('input').value) || 0;
-                                        var noE = parseFloat(row.cells[8].querySelector('input').value) || 0;
-                                        var noF = parseFloat(row.cells[10].querySelector('input').value) || 0;
-
-                                        // Calculate percentages and update the respective cells
-                                        row.cells[3].querySelector('input').value = calculatePercentage(noB, total);
-                                        row.cells[5].querySelector('input').value = calculatePercentage(noC, total);
-                                        row.cells[7].querySelector('input').value = calculatePercentage(noD, total);
-                                        row.cells[9].querySelector('input').value = calculatePercentage(noE, total);
-                                        row.cells[11].querySelector('input').value = calculatePercentage(noF, total);
-                                    }
-
-                                    // Calculate totals for each section when the page loads and when values change
-                                    window.onload = function() {
-                                        calculateSectionTotals1a();
-                                    };
-
-                                    function calculateSectionTotals1a() {
-                                        // 'Permanent employees' section is from row 4 to 5, and its 'Total' is at row 6
-                                        calculateColumnTotalsForSection1a('p_employeeWellbeingDetails', 4, 5, 6);
-                                        // 'Other than Permanent employees' section is from row 8 to 9, and its 'Total' is at row 10
-                                        calculateColumnTotalsForSection1a('p_employeeWellbeingDetails', 8, 9, 10);
-                                    }
-
-                                    // Function to calculate percentages
-                                    function calculatePercentages1a(tableId, rowIndex) {
-                                        var table = document.getElementById(tableId);
-                                        var row = table.rows[rowIndex];
-        
-                                        var total = parseFloat(row.cells[1].querySelector('input').value) || 0;
-                                        var noB = parseFloat(row.cells[2].querySelector('input').value) || 0;
-                                        var noC = parseFloat(row.cells[4].querySelector('input').value) || 0;
-                                        var noD = parseFloat(row.cells[6].querySelector('input').value) || 0;
-                                        var noE = parseFloat(row.cells[8].querySelector('input').value) || 0;
-                                        var noF = parseFloat(row.cells[10].querySelector('input').value) || 0;
-
-                                        // Calculate percentages and update the respective cells
-                                        row.cells[3].querySelector('input').value = calculatePercentage(noB, total);
-                                        row.cells[5].querySelector('input').value = calculatePercentage(noC, total);
-                                        row.cells[7].querySelector('input').value = calculatePercentage(noD, total);
-                                        row.cells[9].querySelector('input').value = calculatePercentage(noE, total);
-                                        row.cells[11].querySelector('input').value = calculatePercentage(noF, total);
-                                        calculateSectionTotals1a();
-                                    }
-                                </script>
+                            </div>
+                            <div class="policy">
+                                <details class="add_comment_detail">
+                                    <summary>Add comments</summary>
+                                    <textarea class="detail-control" id="p_employeeWellbeingDetails_comments" name="p_employeeWellbeingDetails_comments" placeholder="Enter additional information (if required)"></textarea>
+                                </details>
                             </div>
                         </div>
                         <!--Details of measures for the well-being of employees end-->
@@ -1075,92 +1073,12 @@
                                         <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
                                     </tr>
                                 </table>
-                                <!--Function to calculate percentages-->
-                                <script>
-                                    // Function to calculate column totals for a specific section of the table
-                                    function calculateColumnTotalsForSection1b(tableId, startRowIndex, endRowIndex, totalRowIndex) {
-                                        var table = document.getElementById(tableId);
-    
-                                        // Object to hold the sum of each column
-                                        var columnSums = {};
-
-                                        // Initialize column sums
-                                        for (var i = 1; i < table.rows[startRowIndex].cells.length; i++) {
-                                            columnSums[i] = 0;
-                                        }
-
-                                        // Calculate sums for each column
-                                        for (var rowIndex = startRowIndex; rowIndex <= endRowIndex; rowIndex++) {
-                                            var cells = table.rows[rowIndex].cells;
-                                            for (var colIndex = 1; colIndex < cells.length; colIndex++) {
-                                                var input = cells[colIndex].querySelector('input');
-                                                if (input && !input.hasAttribute('readonly')) { // Sum only the input fields that are not readonly
-                                                    var value = parseFloat(input.value) || 0;
-                                                    columnSums[colIndex] += value;
-                                                }
-                                            }
-                                        }
-
-                                        // Update the totals in the 'Total' row
-                                        var totalCells = table.rows[totalRowIndex].cells;
-                                        for (var colIndex = 1; colIndex < totalCells.length; colIndex++) {
-                                            if (columnSums[colIndex] !== undefined) { // Update only if a sum has been calculated
-                                                var totalInput = totalCells[colIndex].querySelector('input');
-                                                if (totalInput) { // If there's an input field, update it
-                                                    totalInput.value = columnSums[colIndex];
-                                                }
-                                            }
-                                        }
-                                        var row = table.rows[totalRowIndex];
-        
-                                        var total = parseFloat(row.cells[1].querySelector('input').value) || 0;
-                                        var noB = parseFloat(row.cells[2].querySelector('input').value) || 0;
-                                        var noC = parseFloat(row.cells[4].querySelector('input').value) || 0;
-                                        var noD = parseFloat(row.cells[6].querySelector('input').value) || 0;
-                                        var noE = parseFloat(row.cells[8].querySelector('input').value) || 0;
-                                        var noF = parseFloat(row.cells[10].querySelector('input').value) || 0;
-
-                                        // Calculate percentages and update the respective cells
-                                        row.cells[3].querySelector('input').value = calculatePercentage(noB, total);
-                                        row.cells[5].querySelector('input').value = calculatePercentage(noC, total);
-                                        row.cells[7].querySelector('input').value = calculatePercentage(noD, total);
-                                        row.cells[9].querySelector('input').value = calculatePercentage(noE, total);
-                                        row.cells[11].querySelector('input').value = calculatePercentage(noF, total);
-                                    }
-
-                                    // Calculate totals for each section when the page loads and when values change
-                                    window.onload = function() {
-                                        calculateSectionTotals1b();
-                                    };
-
-                                    function calculateSectionTotals1b() {
-                                        // 'Permanent employees' section is from row 4 to 5, and its 'Total' is at row 6
-                                        calculateColumnTotalsForSection1b('p_workerWellbeingDetails', 4, 5, 6);
-                                        // 'Other than Permanent employees' section is from row 8 to 9, and its 'Total' is at row 10
-                                        calculateColumnTotalsForSection1b('p_workerWellbeingDetails', 8, 9, 10);
-                                    }
-
-                                    // Function to calculate percentages
-                                    function calculatePercentages1b(tableId, rowIndex) {
-                                        var table = document.getElementById(tableId);
-                                        var row = table.rows[rowIndex];
-                                        
-                                        var total = parseFloat(row.cells[1].querySelector('input').value) || 0;
-                                        var noB = parseFloat(row.cells[2].querySelector('input').value) || 0;
-                                        var noC = parseFloat(row.cells[4].querySelector('input').value) || 0;
-                                        var noD = parseFloat(row.cells[6].querySelector('input').value) || 0;
-                                        var noE = parseFloat(row.cells[8].querySelector('input').value) || 0;
-                                        var noF = parseFloat(row.cells[10].querySelector('input').value) || 0;
-
-                                        // Calculate percentages and update the respective cells
-                                        row.cells[3].querySelector('input').value = calculatePercentage(noB, total);
-                                        row.cells[5].querySelector('input').value = calculatePercentage(noC, total);
-                                        row.cells[7].querySelector('input').value = calculatePercentage(noD, total);
-                                        row.cells[9].querySelector('input').value = calculatePercentage(noE, total);
-                                        row.cells[11].querySelector('input').value = calculatePercentage(noF, total);
-                                        calculateSectionTotals1b();
-                                    }
-                                </script>
+                            </div>
+                            <div class="policy">
+                                <details class="add_comment_detail">
+                                    <summary>Add comments</summary>
+                                    <textarea class="detail-control" id="p_workerWellbeingDetails_comments" name="p_workerWellbeingDetails_comments" placeholder="Enter additional information (if required)"></textarea>
+                                </details>
                             </div>
                         </div>
                         <!--Details of measures for the well-being of workers end-->
@@ -1222,6 +1140,12 @@
                                         <td><input type="text" id="retirementBenefitsDetails" name="retirementBenefitsDetails[]" class="form-control" ></td>
                                     </tr>
                                 </table>
+                            </div>
+                            <div class="policy">
+                                <details class="add_comment_detail">
+                                    <summary>Add comments</summary>
+                                    <textarea class="detail-control" id="p_retirementBenefitsDetails_comments" name="p_retirementBenefitsDetails_comments" placeholder="Enter additional information (if required)"></textarea>
+                                </details>
                             </div>
                         </div>
                         <!--Details of retirement benefits end-->
@@ -1286,6 +1210,12 @@
                                     </tr>
                                 </table>
                             </div>
+                            <div class="policy">
+                                <details class="add_comment_detail">
+                                    <summary>Add comments</summary>
+                                    <textarea class="detail-control" id="p_returnRetentionRates_comments" name="p_returnRetentionRates_comments" placeholder="Enter additional information (if required)"></textarea>
+                                </details>
+                            </div>
                         </div>
                         <!--Return to work and Retention rates of permanent employees and workers that took parental leave end-->
 
@@ -1317,6 +1247,12 @@
                                         <td><input type="text" id="grievanceMechanismDetails" name="grievanceMechanismDetails[]" class="form-control" ></td>
                                     </tr>
                                 </table>
+                            </div>
+                            <div class="policy">
+                                <details class="add_comment_detail">
+                                    <summary>Add comments</summary>
+                                    <textarea class="detail-control" id="p_grievanceMechanismDetails_comments" name="p_grievanceMechanismDetails_comments" placeholder="Enter additional information (if required)"></textarea>
+                                </details>
                             </div>
                         </div>
                         <!--Is there a mechanism available to receive and redress grievances end-->
@@ -1396,81 +1332,12 @@
                                         <td><input type="number" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" readonly></td>
                                     </tr>
                                 </table>
-                                <!--Function to calculate percentages-->
-                                <script>
-                                    // Function to calculate column totals for a specific section of the table
-                                    function calculateColumnTotalsForSection7(tableId, startRowIndex, endRowIndex, totalRowIndex) {
-                                        var table = document.getElementById(tableId);
-    
-                                        // Object to hold the sum of each column
-                                        var columnSums = {};
-
-                                        // Initialize column sums
-                                        for (var i = 1; i < table.rows[startRowIndex].cells.length; i++) {
-                                            columnSums[i] = 0;
-                                        }
-
-                                        // Calculate sums for each column
-                                        for (var rowIndex = startRowIndex; rowIndex <= endRowIndex; rowIndex++) {
-                                            var cells = table.rows[rowIndex].cells;
-                                            for (var colIndex = 1; colIndex < cells.length; colIndex++) {
-                                                var input = cells[colIndex].querySelector('input');
-                                                if (input && !input.hasAttribute('readonly')) { // Sum only the input fields that are not readonly
-                                                    var value = parseFloat(input.value) || 0;
-                                                    columnSums[colIndex] += value;
-                                                }
-                                            }
-                                        }
-
-                                        // Update the totals in the 'Total' row
-                                        var totalCells = table.rows[totalRowIndex].cells;
-                                        for (var colIndex = 1; colIndex < totalCells.length; colIndex++) {
-                                            if (columnSums[colIndex] !== undefined) { // Update only if a sum has been calculated
-                                                var totalInput = totalCells[colIndex].querySelector('input');
-                                                if (totalInput) { // If there's an input field, update it
-                                                    totalInput.value = columnSums[colIndex];
-                                                }
-                                            }
-                                        }
-                                        var row = table.rows[totalRowIndex];
-        
-                                        var A = parseFloat(row.cells[1].querySelector('input').value) || 0;
-                                        var B= parseFloat(row.cells[2].querySelector('input').value) || 0;
-                                        var C = parseFloat(row.cells[4].querySelector('input').value) || 0;
-                                        var D = parseFloat(row.cells[5].querySelector('input').value) || 0;
-
-                                        // Calculate percentages and update the respective cells
-                                        row.cells[3].querySelector('input').value = calculatePercentage(B, A);
-                                        row.cells[6].querySelector('input').value = calculatePercentage(D, C);
-                                    }
-
-                                    // Calculate totals for each section when the page loads and when values change
-                                    window.onload = function() {
-                                        calculateSectionTotals7();
-                                    };
-
-                                    function calculateSectionTotals7() {
-                                        // 'Permanent employees' section is from row 4 to 5, and its 'Total' is at row 6
-                                        calculateColumnTotalsForSection7('p_unionMembershipPercentage', 3, 4, 2);
-                                        // 'Other than Permanent employees' section is from row 8 to 9, and its 'Total' is at row 10
-                                        calculateColumnTotalsForSection7('p_unionMembershipPercentage', 6, 7, 5);
-                                    }
-                                    // Function to calculate percentages
-                                    function calculatePercentages7(tableId, rowIndex) {
-                                        var table = document.getElementById(tableId);
-                                        var row = table.rows[rowIndex];
-                                        
-                                        var A = parseFloat(row.cells[1].querySelector('input').value) || 0;
-                                        var B= parseFloat(row.cells[2].querySelector('input').value) || 0;
-                                        var C = parseFloat(row.cells[4].querySelector('input').value) || 0;
-                                        var D = parseFloat(row.cells[5].querySelector('input').value) || 0;
-
-                                        // Calculate percentages and update the respective cells
-                                        row.cells[3].querySelector('input').value = calculatePercentage(B, A);
-                                        row.cells[6].querySelector('input').value = calculatePercentage(D, C);
-                                        calculateSectionTotals7();
-                                    }
-                                </script>
+                            </div>
+                            <div class="policy">
+                                <details class="add_comment_detail">
+                                    <summary>Add comments</summary>
+                                    <textarea class="detail-control" id="p_unionMembershipPercentage_comments" name="p_unionMembershipPercentage_comments" placeholder="Enter additional information (if required)"></textarea>
+                                </details>
                             </div>
                         </div>
                         <!--Membership of employees and worker in association(s) or Unions recognised by the listed entity end-->
@@ -1591,90 +1458,12 @@
                                         <td><input type="number" id="trainingDetails" name="trainingDetails[]" class="form-control" readonly></td>
                                     </tr>
                                 </table>
-                                <!--Function to calculate percentages-->
-                                <script>
-                                    // Function to calculate column totals for a specific section of the table
-                                    function calculateColumnTotalsForSection8(tableId, startRowIndex, endRowIndex, totalRowIndex) {
-                                        var table = document.getElementById(tableId);
-    
-                                        // Object to hold the sum of each column
-                                        var columnSums = {};
-
-                                        // Initialize column sums
-                                        for (var i = 1; i < table.rows[startRowIndex].cells.length; i++) {
-                                            columnSums[i] = 0;
-                                        }
-
-                                        // Calculate sums for each column
-                                        for (var rowIndex = startRowIndex; rowIndex <= endRowIndex; rowIndex++) {
-                                            var cells = table.rows[rowIndex].cells;
-                                            for (var colIndex = 1; colIndex < cells.length; colIndex++) {
-                                                var input = cells[colIndex].querySelector('input');
-                                                if (input && !input.hasAttribute('readonly')) { // Sum only the input fields that are not readonly
-                                                    var value = parseFloat(input.value) || 0;
-                                                    columnSums[colIndex] += value;
-                                                }
-                                            }
-                                        }
-
-                                        // Update the totals in the 'Total' row
-                                        var totalCells = table.rows[totalRowIndex].cells;
-                                        for (var colIndex = 1; colIndex < totalCells.length; colIndex++) {
-                                            if (columnSums[colIndex] !== undefined) { // Update only if a sum has been calculated
-                                                var totalInput = totalCells[colIndex].querySelector('input');
-                                                if (totalInput) { // If there's an input field, update it
-                                                    totalInput.value = columnSums[colIndex];
-                                                }
-                                            }
-                                        }
-                                        var row = table.rows[totalRowIndex];
-                                        
-                                        var totalA = parseFloat(row.cells[1].querySelector('input').value) || 0;
-                                        var noB = parseFloat(row.cells[2].querySelector('input').value) || 0;
-                                        var noC = parseFloat(row.cells[4].querySelector('input').value) || 0;
-                                        var totalD = parseFloat(row.cells[6].querySelector('input').value) || 0;
-                                        var noE = parseFloat(row.cells[7].querySelector('input').value) || 0;
-                                        var noF = parseFloat(row.cells[9].querySelector('input').value) || 0;
-
-                                        // Calculate percentages and update the respective cells
-                                        row.cells[3].querySelector('input').value = calculatePercentage(noB, totalA);
-                                        row.cells[5].querySelector('input').value = calculatePercentage(noC, totalA);
-                                        row.cells[8].querySelector('input').value = calculatePercentage(noE, totalD);
-                                        row.cells[10].querySelector('input').value = calculatePercentage(noF, totalD);
-                                    }
-
-                                    // Calculate totals for each section when the page loads and when values change
-                                    window.onload = function() {
-                                        calculateSectionTotals8();
-                                    };
-
-                                    function calculateSectionTotals8() {
-                                        // 'Permanent employees' section is from row 4 to 5, and its 'Total' is at row 6
-                                        calculateColumnTotalsForSection8('p_trainingDetails', 4, 5, 6);
-                                        // 'Other than Permanent employees' section is from row 8 to 9, and its 'Total' is at row 10
-                                        calculateColumnTotalsForSection8('p_trainingDetails', 8, 9, 10);
-                                    }   
-
-                                    // Function to calculate percentages
-                                    function calculatePercentages8(tableId, rowIndex) {
-                                        var table = document.getElementById(tableId);
-                                        var row = table.rows[rowIndex];
-                                        
-                                        var totalA = parseFloat(row.cells[1].querySelector('input').value) || 0;
-                                        var noB = parseFloat(row.cells[2].querySelector('input').value) || 0;
-                                        var noC = parseFloat(row.cells[4].querySelector('input').value) || 0;
-                                        var totalD = parseFloat(row.cells[6].querySelector('input').value) || 0;
-                                        var noE = parseFloat(row.cells[7].querySelector('input').value) || 0;
-                                        var noF = parseFloat(row.cells[9].querySelector('input').value) || 0;
-
-                                        // Calculate percentages and update the respective cells
-                                        row.cells[3].querySelector('input').value = calculatePercentage(noB, totalA);
-                                        row.cells[5].querySelector('input').value = calculatePercentage(noC, totalA);
-                                        row.cells[8].querySelector('input').value = calculatePercentage(noE, totalD);
-                                        row.cells[10].querySelector('input').value = calculatePercentage(noF, totalD);
-                                        calculateSectionTotals8();
-                                    }
-                                </script>
+                            </div>
+                            <div class="policy">
+                                <details class="add_comment_detail">
+                                    <summary>Add comments</summary>
+                                    <textarea class="detail-control" id="p_trainingDetails_comments" name="p_trainingDetails_comments" placeholder="Enter additional information (if required)"></textarea>
+                                </details>
                             </div>
                         </div>
                         <!--Details of training given to employees and workers end-->
@@ -1761,84 +1550,12 @@
                                         <td><input type="number" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" readonly></td>
                                     </tr>
                                 </table>
-                                <!--Function to calculate percentages-->
-                                <script>
-                                    // Function to calculate column totals for a specific section of the table
-                                    function calculateColumnTotalsForSection9(tableId, startRowIndex, endRowIndex, totalRowIndex) {
-                                        var table = document.getElementById(tableId);
-    
-                                        // Object to hold the sum of each column
-                                        var columnSums = {};
-
-                                        // Initialize column sums
-                                        for (var i = 1; i < table.rows[startRowIndex].cells.length; i++) {
-                                            columnSums[i] = 0;
-                                        }
-
-                                        // Calculate sums for each column
-                                        for (var rowIndex = startRowIndex; rowIndex <= endRowIndex; rowIndex++) {
-                                            var cells = table.rows[rowIndex].cells;
-                                            for (var colIndex = 1; colIndex < cells.length; colIndex++) {
-                                                var input = cells[colIndex].querySelector('input');
-                                                if (input && !input.hasAttribute('readonly')) { // Sum only the input fields that are not readonly
-                                                    var value = parseFloat(input.value) || 0;
-                                                    columnSums[colIndex] += value;
-                                                }
-                                            }
-                                        }
-
-                                        // Update the totals in the 'Total' row
-                                        var totalCells = table.rows[totalRowIndex].cells;
-                                        for (var colIndex = 1; colIndex < totalCells.length; colIndex++) {
-                                            if (columnSums[colIndex] !== undefined) { // Update only if a sum has been calculated
-                                                var totalInput = totalCells[colIndex].querySelector('input');
-                                                if (totalInput) { // If there's an input field, update it
-                                                    totalInput.value = columnSums[colIndex];
-                                                }
-                                            }
-                                        }
-                                        var row = table.rows[totalRowIndex];
-                                        
-                                        var totalA = parseFloat(row.cells[1].querySelector('input').value) || 0;
-                                        var noB = parseFloat(row.cells[2].querySelector('input').value) || 0;
-                                        var totalC = parseFloat(row.cells[4].querySelector('input').value) || 0;
-                                        var noD = parseFloat(row.cells[5].querySelector('input').value) || 0;
-
-
-                                        // Calculate percentages and update the respective cells
-                                        row.cells[3].querySelector('input').value = calculatePercentage(noB, totalA);
-                                        row.cells[6].querySelector('input').value = calculatePercentage(noD, totalC);
-                                    }
-
-                                    // Calculate totals for each section when the page loads and when values change
-                                    window.onload = function() {
-                                        calculateSectionTotals9();
-                                    };
-
-                                    function calculateSectionTotals9() {
-                                        // 'Permanent employees' section is from row 4 to 5, and its 'Total' is at row 6
-                                        calculateColumnTotalsForSection9('p_performanceReviewDetails', 3, 4, 5);
-                                        // 'Other than Permanent employees' section is from row 8 to 9, and its 'Total' is at row 10
-                                        calculateColumnTotalsForSection9('p_performanceReviewDetails', 7, 8, 9);
-                                    }       
-
-                                    // Function to calculate percentages
-                                    function calculatePercentages9(tableId, rowIndex) {
-                                        var table = document.getElementById(tableId);
-                                        var row = table.rows[rowIndex];
-                                        
-                                        var totalA = parseFloat(row.cells[1].querySelector('input').value) || 0;
-                                        var noB = parseFloat(row.cells[2].querySelector('input').value) || 0;
-                                        var totalC = parseFloat(row.cells[4].querySelector('input').value) || 0;
-                                        var noD = parseFloat(row.cells[5].querySelector('input').value) || 0;
-
-
-                                        // Calculate percentages and update the respective cells
-                                        row.cells[3].querySelector('input').value = calculatePercentage(noB, totalA);
-                                        row.cells[6].querySelector('input').value = calculatePercentage(noD, totalC);
-                                        calculateSectionTotals9();
-                                    }
-                                </script>
+                            </div>
+                            <div class="policy">
+                                <details class="add_comment_detail">
+                                    <summary>Add comments</summary>
+                                    <textarea class="detail-control" id="p_performanceReviewDetails_comments" name="p_performanceReviewDetails_comments" placeholder="Enter additional information (if required)"></textarea>
+                                </details>
                             </div>
                         </div>
                         <!--Details of performance and career development reviews of employees and workers end-->
@@ -1946,6 +1663,12 @@
                                     </tr>
                                 </table>
                             </div>
+                            <div class="policy">
+                                <details class="add_comment_detail">
+                                    <summary>Add comments</summary>
+                                    <textarea class="detail-control" id="p_workplaceSafetyMeasures_comments" name="p_workplaceSafetyMeasures_comments" placeholder="Enter additional information (if required)"></textarea>
+                                </details>
+                            </div>
                         </div>
                         <!--Details of safety related incidents end-->
 
@@ -1998,6 +1721,12 @@
                                     </tr>
                                 </table>
                             </div>
+                            <div class="policy">
+                                <details class="add_comment_detail">
+                                    <summary>Add comments</summary>
+                                    <textarea class="detail-control" id="p_complaintsemployees_comments" name="p_complaintsemployees_comments" placeholder="Enter additional information (if required)"></textarea>
+                                </details>
+                            </div>
                         </div>
                         <!--Number of Complaints end-->
 
@@ -2007,7 +1736,7 @@
                                 <label for="assesmentyr" class="form-label">14. Assessments for the year:</label>
                             </div>
                             <div id="assesmentyr" class="responsive-table">
-                                <table id="assesmentyr">
+                                <table id="p_assesmentyr">
                                     <tr>
                                         <th class="form-label"></th>
                                         <th class="form-label">%of your plants and offices that were assessed(by entity or statutory authorities or third parties)</th>
@@ -2021,6 +1750,12 @@
                                         <td><input type="text" id="assesmentyr" name="assesmentyr[]" class="form-control" ></td>
                                     </tr>
                                 </table>
+                            </div>
+                            <div class="policy">
+                                <details class="add_comment_detail">
+                                    <summary>Add comments</summary>
+                                    <textarea class="detail-control" id="p_assesmentyr_comments" name="p_assesmentyr_comments" placeholder="Enter additional information (if required)"></textarea>
+                                </details>
                             </div>
                         </div>
                         <!--Assessments for the year end-->
@@ -2129,6 +1864,12 @@
                                     </tr>
                                 </table>
                             </div>
+                            <div class="policy">
+                                <details class="add_comment_detail">
+                                    <summary>Add comments</summary>
+                                    <textarea class="detail-control" id="p_workRelatedInjuryRehabilitation_comments" name="p_workRelatedInjuryRehabilitation_comments" placeholder="Enter additional information (if required)"></textarea>
+                                </details>
+                            </div>
                         </div>
                         <!--Number of employees / workers having suffered high consequence work-related injury / ill-health / fatalities end-->
 
@@ -2151,7 +1892,7 @@
                                 <label for="rdPercentageassesment" class="form-label"><span style="color: red;"> * </span>5.Details on assessment of value chain partners</label>
                             </div>
                             <div id="rdPercentageassesment" class="responsive-table">
-                                <table id="rdPercentageassesment">
+                                <table id="p_rdPercentageassesment">
                                     <tr>
                                         <th class="form-label"></th>
                                         <th class="form-label">%of value chain partners(by value of business done with such partners)that were assessed</th>
@@ -2165,6 +1906,12 @@
                                         <td><input type="text" id="rdPercentageassesment" name="rdPercentageassesment[]" class="form-control" ></td>
                                     </tr>
                                 </table>
+                            </div>
+                            <div class="policy">
+                                <details class="add_comment_detail">
+                                    <summary>Add comments</summary>
+                                    <textarea class="detail-control" id="p_rdPercentageassesment_comments" name="p_rdPercentageassesment_comments" placeholder="Enter additional information (if required)"></textarea>
+                                </details>
                             </div>
                         </div>
                         <!--Details on assessment of value chain partners end-->
@@ -2236,12 +1983,18 @@
                                     </tbody>
                                 </table>
                                 <div>
-                                     <input type="number" id="indexInput_stakeholderEngagementDetails" placeholder="Enter Index">
+                                    <input type="number" id="indexInput_stakeholderEngagementDetails" placeholder="Enter Index">
                                     <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex('stakeholderEngagementDetails')">Add S.No.</button>
                                     <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow('stakeholderEngagementDetails')">Remove S.No.</button>
                                     <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow('stakeholderEngagementDetails')">Add Row</button>
                                     <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow('stakeholderEngagementDetails')">Remove Row</button>
-                                </div>    
+                                </div>
+                                <div class="policy">
+                                    <details class="add_comment_detail">
+                                        <summary>Add comments</summary>
+                                        <textarea class="detail-control" id="p_stakeholderEngagementDetails_comments" name="p_stakeholderEngagementDetails_comments" placeholder="Enter additional information (if required)"></textarea>
+                                    </details>
+                                </div>
                             </div>
                         </div>
                         <!--List stakeholder groups end-->
@@ -2382,84 +2135,12 @@
                                         <td><input type="number" id="humanRightsTrainingDetails" name="humanRightsTrainingDetails[]" class="form-control" readonly></td>
                                     </tr>
                                 </table>
-                                <!--Function to calculate percentages-->
-                                <script>
-                                    // Function to calculate column totals for a specific section of the table
-                                    function calculateColumnTotalsForSection1(tableId, startRowIndex, endRowIndex, totalRowIndex) {
-                                        var table = document.getElementById(tableId);
-    
-                                        // Object to hold the sum of each column
-                                        var columnSums = {};
-
-                                        // Initialize column sums
-                                        for (var i = 1; i < table.rows[startRowIndex].cells.length; i++) {
-                                            columnSums[i] = 0;
-                                        }
-
-                                        // Calculate sums for each column
-                                        for (var rowIndex = startRowIndex; rowIndex <= endRowIndex; rowIndex++) {
-                                            var cells = table.rows[rowIndex].cells;
-                                            for (var colIndex = 1; colIndex < cells.length; colIndex++) {
-                                                var input = cells[colIndex].querySelector('input');
-                                                if (input && !input.hasAttribute('readonly')) { // Sum only the input fields that are not readonly
-                                                    var value = parseFloat(input.value) || 0;
-                                                    columnSums[colIndex] += value;
-                                                }
-                                            }
-                                        }
-
-                                        // Update the totals in the 'Total' row
-                                        var totalCells = table.rows[totalRowIndex].cells;
-                                        for (var colIndex = 1; colIndex < totalCells.length; colIndex++) {
-                                            if (columnSums[colIndex] !== undefined) { // Update only if a sum has been calculated
-                                                var totalInput = totalCells[colIndex].querySelector('input');
-                                                if (totalInput) { // If there's an input field, update it
-                                                    totalInput.value = columnSums[colIndex];
-                                                }
-                                            }
-                                        }
-                                        var row = table.rows[totalRowIndex];
-                                        
-                                        var totalA = parseFloat(row.cells[1].querySelector('input').value) || 0;
-                                        var noB = parseFloat(row.cells[2].querySelector('input').value) || 0;
-                                        var totalC = parseFloat(row.cells[4].querySelector('input').value) || 0;
-                                        var noD = parseFloat(row.cells[5].querySelector('input').value) || 0;
-
-
-                                        // Calculate percentages and update the respective cells
-                                        row.cells[3].querySelector('input').value = calculatePercentage(noB, totalA);
-                                        row.cells[6].querySelector('input').value = calculatePercentage(noD, totalC);
-                                    }
-
-                                    // Calculate totals for each section when the page loads and when values change
-                                    window.onload = function() {
-                                        calculateSectionTotals1();
-                                    };
-
-                                    function calculateSectionTotals1() {
-                                        // 'Permanent employees' section is from row 4 to 5, and its 'Total' is at row 6
-                                        calculateColumnTotalsForSection1('p_humanRightsTrainingDetails', 3, 4, 5);
-                                        // 'Other than Permanent employees' section is from row 8 to 9, and its 'Total' is at row 10
-                                        calculateColumnTotalsForSection1('p_humanRightsTrainingDetails', 7, 8, 9);
-                                    }
-
-                                    // Function to calculate percentages
-                                    function calculatePercentages1(tableId, rowIndex) {
-                                        var table = document.getElementById(tableId);
-                                        var row = table.rows[rowIndex];
-                                        
-                                        var totalA = parseFloat(row.cells[1].querySelector('input').value) || 0;
-                                        var noB = parseFloat(row.cells[2].querySelector('input').value) || 0;
-                                        var totalC = parseFloat(row.cells[4].querySelector('input').value) || 0;
-                                        var noD = parseFloat(row.cells[5].querySelector('input').value) || 0;
-
-
-                                        // Calculate percentages and update the respective cells
-                                        row.cells[3].querySelector('input').value = calculatePercentage(noB, totalA);
-                                        row.cells[6].querySelector('input').value = calculatePercentage(noD, totalC);
-                                        calculateSectionTotals1()
-                                    }
-                                </script>
+                            </div>
+                            <div class="policy">
+                                    <details class="add_comment_detail">
+                                        <summary>Add comments</summary>
+                                        <textarea class="detail-control" id="p_humanRightsTrainingDetails_comments" name="p_humanRightsTrainingDetails_comments" placeholder="Enter additional information (if required)"></textarea>
+                                    </details>
                             </div>
                         </div>
                         <!--Training provided on human right issues end-->
@@ -2663,92 +2344,12 @@
                                         <td><input type="number" id="wageDetails" name="wageDetails[]" class="form-control" readonly></td>
                                     </tr>
                                 </table>
-                                <!--Function to calculate percentages-->
-                                <script>
-                                    // Function to calculate column totals for a specific section of the table
-                                    function calculateColumnTotalsForSection2(tableId, startRowIndex, endRowIndex, totalRowIndex) {
-                                        var table = document.getElementById(tableId);
-    
-                                        // Object to hold the sum of each column
-                                        var columnSums = {};
-
-                                        // Initialize column sums
-                                        for (var i = 1; i < table.rows[startRowIndex].cells.length; i++) {
-                                            columnSums[i] = 0;
-                                        }
-
-                                        // Calculate sums for each column
-                                        for (var rowIndex = startRowIndex; rowIndex <= endRowIndex; rowIndex++) {
-                                            var cells = table.rows[rowIndex].cells;
-                                            for (var colIndex = 1; colIndex < cells.length; colIndex++) {
-                                                var input = cells[colIndex].querySelector('input');
-                                                if (input && !input.hasAttribute('readonly')) { // Sum only the input fields that are not readonly
-                                                    var value = parseFloat(input.value) || 0;
-                                                    columnSums[colIndex] += value;
-                                                }
-                                            }
-                                        }
-
-                                        // Update the totals in the 'Total' row
-                                        var totalCells = table.rows[totalRowIndex].cells;
-                                        for (var colIndex = 1; colIndex < totalCells.length; colIndex++) {
-                                            if (columnSums[colIndex] !== undefined) { // Update only if a sum has been calculated
-                                                var totalInput = totalCells[colIndex].querySelector('input');
-                                                if (totalInput) { // If there's an input field, update it
-                                                    totalInput.value = columnSums[colIndex];
-                                                }
-                                            }
-                                        }
-                                        var row = table.rows[totalRowIndex];
-                                        
-                                        var totalA = parseFloat(row.cells[1].querySelector('input').value) || 0;
-                                        var noB = parseFloat(row.cells[2].querySelector('input').value) || 0;
-                                        var noC = parseFloat(row.cells[4].querySelector('input').value) || 0;
-                                        var totalD = parseFloat(row.cells[6].querySelector('input').value) || 0;
-                                        var noE = parseFloat(row.cells[7].querySelector('input').value) || 0;
-                                        var noF = parseFloat(row.cells[9].querySelector('input').value) || 0;
-
-
-                                        // Calculate percentages and update the respective cells
-                                        row.cells[3].querySelector('input').value = calculatePercentage(noB, totalA);
-                                        row.cells[5].querySelector('input').value = calculatePercentage(noC, totalA);
-                                        row.cells[8].querySelector('input').value = calculatePercentage(noE, totalD);
-                                        row.cells[10].querySelector('input').value = calculatePercentage(noF, totalD);
-                                    }
-
-                                    // Calculate totals for each section when the page loads and when values change
-                                    window.onload = function() {
-                                        calculateSectionTotals2();
-                                    };
-
-                                    function calculateSectionTotals2() {
-                                        calculateColumnTotalsForSection2('p_wageDetails', 4, 5, 6);
-                                        calculateColumnTotalsForSection2('p_wageDetails', 8, 9, 10);
-                                        calculateColumnTotalsForSection2('p_wageDetails', 12, 13, 14);
-                                        calculateColumnTotalsForSection2('p_wageDetails', 16, 17, 18);
-                                    }
-
-                                    // Function to calculate percentages
-                                    function calculatePercentages2(tableId, rowIndex) {
-                                        var table = document.getElementById(tableId);
-                                        var row = table.rows[rowIndex];
-                                        
-                                        var totalA = parseFloat(row.cells[1].querySelector('input').value) || 0;
-                                        var noB = parseFloat(row.cells[2].querySelector('input').value) || 0;
-                                        var noC = parseFloat(row.cells[4].querySelector('input').value) || 0;
-                                        var totalD = parseFloat(row.cells[6].querySelector('input').value) || 0;
-                                        var noE = parseFloat(row.cells[7].querySelector('input').value) || 0;
-                                        var noF = parseFloat(row.cells[9].querySelector('input').value) || 0;
-
-
-                                        // Calculate percentages and update the respective cells
-                                        row.cells[3].querySelector('input').value = calculatePercentage(noB, totalA);
-                                        row.cells[5].querySelector('input').value = calculatePercentage(noC, totalA);
-                                        row.cells[8].querySelector('input').value = calculatePercentage(noE, totalD);
-                                        row.cells[10].querySelector('input').value = calculatePercentage(noF, totalD);
-                                        calculateSectionTotals2();
-                                    }
-                                </script>
+                            </div>
+                            <div class="policy">
+                                    <details class="add_comment_detail">
+                                        <summary>Add comments</summary>
+                                        <textarea class="detail-control" id="p_wageDetails_comments" name="p_wageDetails_comments" placeholder="Enter additional information (if required)"></textarea>
+                                    </details>
                             </div>
                         </div>
                         <!--Details of human wages end-->
@@ -2761,7 +2362,7 @@
                             <div id="remunerationDetails" class="responsive-table">
                                 <table id="p_remunerationDetails">
                                     <tr>
-                                        <th rowspan=2></th>
+                                        <th rowspan="2"></th>
                                         <th colspan="2" class="form-label">Male</th>
                                         <th colspan="2" class="form-label">Female</th>
                                     </tr>
@@ -2801,6 +2402,12 @@
                                     </tr>
                                 </table>
                             </div>
+                            <div class="policy">
+                                    <details class="add_comment_detail">
+                                        <summary>Add comments</summary>
+                                        <textarea class="detail-control" id="p_remunerationDetails_comments" name="p_remunerationDetails_comments" placeholder="Enter additional information (if required)"></textarea>
+                                    </details>
+                            </div>
                         </div>
                         <!--Details of renumeratiion/salary/wages end-->
 
@@ -2834,7 +2441,7 @@
                             <div id="complaintsDetails" class="responsive-table">
                                 <table id="p_complaintsDetails">
                                     <tr>
-                                        <th rowspan=2></th>
+                                        <th rowspan="2"></th>
                                         <th colspan="3" class="form-label">FY___(Current Financial Year)</th>
                                         <th colspan="3" class="form-label">FY___(Previous Financial Year)</th>
                                     </tr>
@@ -2902,6 +2509,12 @@
                                     </tr>
                                 </table>
                             </div>
+                            <div class="policy">
+                                    <details class="add_comment_detail">
+                                        <summary>Add comments</summary>
+                                        <textarea class="detail-control" id="p_complaintsDetails_comments" name="p_complaintsDetails_comments" placeholder="Enter additional information (if required)"></textarea>
+                                    </details>
+                            </div>
                         </div>
                         <!--Number of complaints made by employees and workers end-->
 
@@ -2963,6 +2576,12 @@
                                         <td><input type="text" id="assessedPlantPercentage" name="assessedPlantPercentage[]" class="form-control"></td>
                                     </tr>
                                 </table>
+                            </div>
+                            <div class="policy">
+                                    <details class="add_comment_detail">
+                                        <summary>Add comments</summary>
+                                        <textarea class="detail-control" id="p_assessedPlantPercentage_comments" name="p_assessedPlantPercentage_comments" placeholder="Enter additional information (if required)"></textarea>
+                                    </details>
                             </div>
                         </div>
                         <!--Assessments for the year end-->
@@ -3048,6 +2667,12 @@
                                     </tr>
                                 </table>
                             </div>
+                            <div class="policy">
+                                    <details class="add_comment_detail">
+                                        <summary>Add comments</summary>
+                                        <textarea class="detail-control" id="p_valueChainAssessment_comments" name="p_valueChainAssessment_comments" placeholder="Enter additional information (if required)"></textarea>
+                                    </details>
+                            </div>
                         </div>
                         <!--Assessment of value chain partners end-->
 
@@ -3124,53 +2749,13 @@
                                     </tr>
                                 </table>
                             </div>
+                            <div class="policy">
+                                    <details class="add_comment_detail">
+                                        <summary>Add comments</summary>
+                                        <textarea class="detail-control" id="p_energyConsumptionDetails_comments" name="p_energyConsumptionDetails_comments" placeholder="Enter additional information (if required)"></textarea>
+                                    </details>
+                            </div>
                         </div>
-                        <script>
-                            // Function to calculate column totals for a specific section of the table
-                                    function calculateColumnTotalsForSection1_1(tableId, startRowIndex, endRowIndex, totalRowIndex) {
-                                        var table = document.getElementById(tableId);
-    
-                                        // Object to hold the sum of each column
-                                        var columnSums = {};
-
-                                        // Initialize column sums
-                                        for (var i = 1; i < table.rows[startRowIndex].cells.length; i++) {
-                                            columnSums[i] = 0;
-                                        }
-
-                                        // Calculate sums for each column
-                                        for (var rowIndex = startRowIndex; rowIndex <= endRowIndex; rowIndex++) {
-                                            var cells = table.rows[rowIndex].cells;
-                                            for (var colIndex = 1; colIndex < cells.length; colIndex++) {
-                                                var input = cells[colIndex].querySelector('input');
-                                                if (input && !input.hasAttribute('readonly')) { // Sum only the input fields that are not readonly
-                                                    var value = parseFloat(input.value) || 0;
-                                                    columnSums[colIndex] += value;
-                                                }
-                                            }
-                                        }
-
-                                        // Update the totals in the 'Total' row
-                                        var totalCells = table.rows[totalRowIndex].cells;
-                                        for (var colIndex = 1; colIndex < totalCells.length; colIndex++) {
-                                            if (columnSums[colIndex] !== undefined) { // Update only if a sum has been calculated
-                                                var totalInput = totalCells[colIndex].querySelector('input');
-                                                if (totalInput) { // If there's an input field, update it
-                                                    totalInput.value = columnSums[colIndex];
-                                                }
-                                            }
-                                        }
-                                    }
-
-                                    // Calculate totals for each section when the page loads and when values change
-                                    window.onload = function() {
-                                        calculateSectionTotals1_1();
-                                    };
-
-                                    function calculateSectionTotals1_1() {
-                                        calculateColumnTotalsForSection1_1('p_energyConsumptionDetails', 1, 3, 4);
-                                    }
-                        </script>
                         <!--Total energy consumption and energy intensity end-->
 
                         <!--Independent assessment question 1 start-->
@@ -3275,53 +2860,13 @@
                                     </tr>
                                 </table>
                             </div>
+                            <div class="policy">
+                                    <details class="add_comment_detail">
+                                        <summary>Add comments</summary>
+                                        <textarea class="detail-control" id="p_waterWithdrawalDetails_comments" name="p_waterWithdrawalDetails_comments" placeholder="Enter additional information (if required)"></textarea>
+                                    </details>
+                            </div>
                         </div>
-                        <script>
-                            // Function to calculate column totals for a specific section of the table
-                                    function calculateColumnTotalsForSection3_1(tableId, startRowIndex, endRowIndex, totalRowIndex) {
-                                        var table = document.getElementById(tableId);
-    
-                                        // Object to hold the sum of each column
-                                        var columnSums = {};
-
-                                        // Initialize column sums
-                                        for (var i = 1; i < table.rows[startRowIndex].cells.length; i++) {
-                                            columnSums[i] = 0;
-                                        }
-
-                                        // Calculate sums for each column
-                                        for (var rowIndex = startRowIndex; rowIndex <= endRowIndex; rowIndex++) {
-                                            var cells = table.rows[rowIndex].cells;
-                                            for (var colIndex = 1; colIndex < cells.length; colIndex++) {
-                                                var input = cells[colIndex].querySelector('input');
-                                                if (input && !input.hasAttribute('readonly')) { // Sum only the input fields that are not readonly
-                                                    var value = parseFloat(input.value) || 0;
-                                                    columnSums[colIndex] += value;
-                                                }
-                                            }
-                                        }
-
-                                        // Update the totals in the 'Total' row
-                                        var totalCells = table.rows[totalRowIndex].cells;
-                                        for (var colIndex = 1; colIndex < totalCells.length; colIndex++) {
-                                            if (columnSums[colIndex] !== undefined) { // Update only if a sum has been calculated
-                                                var totalInput = totalCells[colIndex].querySelector('input');
-                                                if (totalInput) { // If there's an input field, update it
-                                                    totalInput.value = columnSums[colIndex];
-                                                }
-                                            }
-                                        }
-                                    }
-
-                                    // Calculate totals for each section when the page loads and when values change
-                                    window.onload = function() {
-                                        calculateSectionTotals3_1();
-                                    };
-
-                                    function calculateSectionTotals3_1() {
-                                        calculateColumnTotalsForSection3_1('p_waterWithdrawalDetails', 2, 6, 7);
-                                    }
-                        </script>
                         <!--Disclosures related to water end-->
 
                         <!--Independent assessment question 3 start-->
@@ -3421,6 +2966,12 @@
                                     </tr>
                                 </table>
                             </div>
+                            <div class="policy">
+                                    <details class="add_comment_detail">
+                                        <summary>Add comments</summary>
+                                        <textarea class="detail-control" id="p_airEmissionDetails_comments" name="p_airEmissionDetails_comments" placeholder="Enter additional information (if required)"></textarea>
+                                    </details>
+                            </div>
                         </div>
                         <!--Details of air emissions end-->
 
@@ -3494,6 +3045,12 @@
                                         <td><input type="text" id="greenhouseGasEmissionDetails" name="greenhouseGasEmissionDetails[]" class="form-control"></td>
                                     </tr>
                                 </table>
+                            </div>
+                            <div class="policy">
+                                    <details class="add_comment_detail">
+                                        <summary>Add comments</summary>
+                                        <textarea class="detail-control" id="p_greenhouseGasEmissionDetails_comments" name="p_greenhouseGasEmissionDetails_comments" placeholder="Enter additional information (if required)"></textarea>
+                                    </details>
                             </div>
                         </div>
                         <!--Details of greenhouse gas emissions end-->
@@ -3652,55 +3209,13 @@
                                     </tr>
                                 </table>
                             </div>
+                            <div class="policy">
+                                    <details class="add_comment_detail">
+                                        <summary>Add comments</summary>
+                                        <textarea class="detail-control" id="p_wasteDetails_comments" name="p_wasteDetails_comments" placeholder="Enter additional information (if required)"></textarea>
+                                    </details>
+                            </div>
                         </div>
-                        <script>
-                            // Function to calculate column totals for a specific section of the table
-                                    function calculateColumnTotalsForSection8_1(tableId, startRowIndex, endRowIndex, totalRowIndex) {
-                                        var table = document.getElementById(tableId);
-    
-                                        // Object to hold the sum of each column
-                                        var columnSums = {};
-
-                                        // Initialize column sums
-                                        for (var i = 1; i < table.rows[startRowIndex].cells.length; i++) {
-                                            columnSums[i] = 0;
-                                        }
-
-                                        // Calculate sums for each column
-                                        for (var rowIndex = startRowIndex; rowIndex <= endRowIndex; rowIndex++) {
-                                            var cells = table.rows[rowIndex].cells;
-                                            for (var colIndex = 1; colIndex < cells.length; colIndex++) {
-                                                var input = cells[colIndex].querySelector('input');
-                                                if (input && !input.hasAttribute('readonly')) { // Sum only the input fields that are not readonly
-                                                    var value = parseFloat(input.value) || 0;
-                                                    columnSums[colIndex] += value;
-                                                }
-                                            }
-                                        }
-
-                                        // Update the totals in the 'Total' row
-                                        var totalCells = table.rows[totalRowIndex].cells;
-                                        for (var colIndex = 1; colIndex < totalCells.length; colIndex++) {
-                                            if (columnSums[colIndex] !== undefined) { // Update only if a sum has been calculated
-                                                var totalInput = totalCells[colIndex].querySelector('input');
-                                                if (totalInput) { // If there's an input field, update it
-                                                    totalInput.value = columnSums[colIndex];
-                                                }
-                                            }
-                                        }
-                                    }
-
-                                    // Calculate totals for each section when the page loads and when values change
-                                    window.onload = function() {
-                                        calculateSectionTotals8_1();
-                                    };
-
-                                    function calculateSectionTotals8_1() {
-                                        calculateColumnTotalsForSection8_1('p_wasteDetails', 2, 9, 10);
-                                        calculateColumnTotalsForSection8_1('p_wasteDetails', 13, 15, 16);
-                                        calculateColumnTotalsForSection8_1('p_wasteDetails', 19, 21, 22);
-                                    }
-                        </script>
                         <!--Details of waste management end-->
 
                         <!--Independent assessment question 8 start-->
@@ -3764,6 +3279,12 @@
                                     <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow('ecologicalAreaOperations')">Remove Row</button>
                                 </div>
                             </div>
+                            <div class="policy">
+                                    <details class="add_comment_detail">
+                                        <summary>Add comments</summary>
+                                        <textarea class="detail-control" id="p_ecologicalAreaOperations_comments" name="p_ecologicalAreaOperations_comments" placeholder="Enter additional information (if required)"></textarea>
+                                    </details>
+                            </div>
                         </div>
                         <!--If the entity has operations/offices where environmental approvals / clearances are required end-->
 
@@ -3805,6 +3326,12 @@
                                     <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow('eiaExternalAgency')">Remove Row</button>
                                 </div>
                             </div>
+                            <div class="policy">
+                                    <details class="add_comment_detail">
+                                        <summary>Add comments</summary>
+                                        <textarea class="detail-control" id="p_eiaExternalAgency_comments" name="p_eiaExternalAgency_comments" placeholder="Enter additional information (if required)"></textarea>
+                                    </details>
+                            </div>
                         </div>
                         <!--Details of environmental impact assessments of projects undertaken end-->
 
@@ -3841,6 +3368,12 @@
                                     <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow('environmentalComplianceStatus')">Add Row</button>
                                     <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow('environmentalComplianceStatus')">Remove Row</button>
                                 </div>
+                            </div>
+                            <div class="policy">
+                                    <details class="add_comment_detail">
+                                        <summary>Add comments</summary>
+                                        <textarea class="detail-control" id="p_environmentalComplianceStatus_comments" name="p_environmentalComplianceStatus_comments" placeholder="Enter additional information (if required)"></textarea>
+                                    </details>
                             </div>
                         </div>
                         <!--Is the entity compliant with the applicable environmental law in India; such as the Water Act, Air Act end-->
@@ -3912,55 +3445,14 @@
                                         <td><input type="number" id="totalenergyconsumed" name="totalenergyconsumed[]" class="form-control" readonly></td>
                                     </tr>
                                 </table>
-                            </div>   
+                            </div>
+                            <div class="policy">
+                                <details class="add_comment_detail">
+                                    <summary>Add comments</summary>
+                                    <textarea class="detail-control" id="p_totalenergyconsumed_comments" name="p_totalenergyconsumed_comments" placeholder="Enter additional information (if required)"></textarea>
+                                </details>
+                            </div>
                         </div>
-                        <script>
-                            // Function to calculate column totals for a specific section of the table
-                                    function calculateColumnTotalsForSectionL1_1(tableId, startRowIndex, endRowIndex, totalRowIndex) {
-                                        var table = document.getElementById(tableId);
-    
-                                        // Object to hold the sum of each column
-                                        var columnSums = {};
-
-                                        // Initialize column sums
-                                        for (var i = 1; i < table.rows[startRowIndex].cells.length; i++) {
-                                            columnSums[i] = 0;
-                                        }
-
-                                        // Calculate sums for each column
-                                        for (var rowIndex = startRowIndex; rowIndex <= endRowIndex; rowIndex++) {
-                                            var cells = table.rows[rowIndex].cells;
-                                            for (var colIndex = 1; colIndex < cells.length; colIndex++) {
-                                                var input = cells[colIndex].querySelector('input');
-                                                if (input && !input.hasAttribute('readonly')) { // Sum only the input fields that are not readonly
-                                                    var value = parseFloat(input.value) || 0;
-                                                    columnSums[colIndex] += value;
-                                                }
-                                            }
-                                        }
-
-                                        // Update the totals in the 'Total' row
-                                        var totalCells = table.rows[totalRowIndex].cells;
-                                        for (var colIndex = 1; colIndex < totalCells.length; colIndex++) {
-                                            if (columnSums[colIndex] !== undefined) { // Update only if a sum has been calculated
-                                                var totalInput = totalCells[colIndex].querySelector('input');
-                                                if (totalInput) { // If there's an input field, update it
-                                                    totalInput.value = columnSums[colIndex];
-                                                }
-                                            }
-                                        }
-                                    }
-
-                                    // Calculate totals for each section when the page loads and when values change
-                                    window.onload = function() {
-                                        calculateSectionTotalsL1_1();
-                                    };
-
-                                    function calculateSectionTotalsL1_1() {
-                                        calculateColumnTotalsForSectionL1_1('p_totalenergyconsumed', 2, 4, 5);
-                                        calculateColumnTotalsForSectionL1_1('p_totalenergyconsumed', 7, 9, 10);
-                                    }
-                        </script>
                         <!--Break-up of the total energy consumed (in Joules or multiples) from renewable and non-renewable sources end-->
 
                         <!--Independent assessment question 1 leadership start-->
@@ -4079,82 +3571,14 @@
                                         <td><input type="number" id="waterdischarged" name="waterdischarged[]" class="form-control" readonly></td>
                                     </tr>
                                 </table>
-                            </div>   
+                            </div>
+                            <div class="policy">
+                                <details class="add_comment_detail">
+                                    <summary>Add comments</summary>
+                                    <textarea class="detail-control" id="p_waterdischarged_comments" name="p_waterdischarged_comments" placeholder="Enter additional information (if required)"></textarea>
+                                </details>
+                            </div>
                         </div>
-                        <script>
-                            // Function to calculate column totals for a specific section of the table
-                                    function calculateColumnTotalsForSectionL2_1(tableId, startRowIndex, endRowIndex, totalRowIndex) {
-                                        var table = document.getElementById(tableId);
-    
-                                        // Object to hold the sum of each column
-                                        var columnSums = {};
-
-                                        // Initialize column sums
-                                        for (var i = 1; i < table.rows[startRowIndex].cells.length; i++) {
-                                            columnSums[i] = 0;
-                                        }
-
-                                        // Calculate sums for each column
-                                        for (var rowIndex = startRowIndex; rowIndex <= endRowIndex; rowIndex++) {
-                                            var cells = table.rows[rowIndex].cells;
-                                            for (var colIndex = 1; colIndex < cells.length; colIndex++) {
-                                                var input = cells[colIndex].querySelector('input');
-                                                if (input && !input.hasAttribute('readonly')) { // Sum only the input fields that are not readonly
-                                                    var value = parseFloat(input.value) || 0;
-                                                    columnSums[colIndex] += value;
-                                                }
-                                            }
-                                        }
-
-                                        // Update the totals in the 'Total' row
-                                        var totalCells = table.rows[totalRowIndex].cells;
-                                        for (var colIndex = 1; colIndex < totalCells.length; colIndex++) {
-                                            if (columnSums[colIndex] !== undefined) { // Update only if a sum has been calculated
-                                                var totalInput = totalCells[colIndex].querySelector('input');
-                                                if (totalInput) { // If there's an input field, update it
-                                                    totalInput.value = columnSums[colIndex];
-                                                }
-                                            }
-                                        }
-
-                                        var row1 = table.rows[2];
-                                        var row2 = table.rows[5];
-                                        var row3 = table.rows[8];
-                                        var row4 = table.rows[11];
-                                        var row5 = table.rows[14];
-                                        var total_row = table.rows[17];
-                                        
-                                        var cy_row1 = parseFloat(row1.cells[1].querySelector('input').value) || 0;
-                                        var py_row1 = parseFloat(row1.cells[2].querySelector('input').value) || 0;
-                                        var cy_row2 = parseFloat(row2.cells[1].querySelector('input').value) || 0;
-                                        var py_row2 = parseFloat(row2.cells[2].querySelector('input').value) || 0;
-                                        var cy_row3 = parseFloat(row3.cells[1].querySelector('input').value) || 0;
-                                        var py_row3 = parseFloat(row3.cells[2].querySelector('input').value) || 0;
-                                        var cy_row4 = parseFloat(row4.cells[1].querySelector('input').value) || 0;
-                                        var py_row4 = parseFloat(row4.cells[2].querySelector('input').value) || 0;
-                                        var cy_row5 = parseFloat(row5.cells[1].querySelector('input').value) || 0;
-                                        var py_row5 = parseFloat(row5.cells[2].querySelector('input').value) || 0;
-
-                                        var total_cy = cy_row1 + cy_row2 + cy_row3 + cy_row4 + cy_row5;
-                                        var total_py = py_row1 + py_row2 + py_row3 + py_row4 + py_row5;
-
-                                        total_row.cells[1].querySelector('input').value = total_cy;
-                                        total_row.cells[2].querySelector('input').value = total_py;
-                                    }
-
-                                    // Calculate totals for each section when the page loads and when values change
-                                    window.onload = function() {
-                                        calculateSectionTotalsL2_1();
-                                    };
-
-                                    function calculateSectionTotalsL2_1() {
-                                        calculateColumnTotalsForSectionL2_1('p_waterdischarged', 3, 4, 2);
-                                        calculateColumnTotalsForSectionL2_1('p_waterdischarged', 6, 7, 5);
-                                        calculateColumnTotalsForSectionL2_1('p_waterdischarged', 9, 10, 8);
-                                        calculateColumnTotalsForSectionL2_1('p_waterdischarged', 12, 13, 11);
-                                        calculateColumnTotalsForSectionL2_1('p_waterdischarged', 15, 16, 14);
-                                    }
-                        </script>
                         <!--Details related to water discharged end-->
 
                         <!--Independent assessment question 2 leadership start-->
@@ -4334,83 +3758,14 @@
                                         </tr>
                                     </table>
                                 </div>
+                                <div class="policy">
+                                    <details class="add_comment_detail">
+                                        <summary>Add comments</summary>
+                                        <textarea class="detail-control" id="p_waterstress_comments" name="p_waterstress_comments" placeholder="Enter additional information (if required)"></textarea>
+                                    </details>
+                                </div>
                             </div>  
                         </div>
-                        <script>
-                            // Function to calculate column totals for a specific section of the table
-                                    function calculateColumnTotalsForSectionL3_1(tableId, startRowIndex, endRowIndex, totalRowIndex) {
-                                        var table = document.getElementById(tableId);
-    
-                                        // Object to hold the sum of each column
-                                        var columnSums = {};
-
-                                        // Initialize column sums
-                                        for (var i = 1; i < table.rows[startRowIndex].cells.length; i++) {
-                                            columnSums[i] = 0;
-                                        }
-
-                                        // Calculate sums for each column
-                                        for (var rowIndex = startRowIndex; rowIndex <= endRowIndex; rowIndex++) {
-                                            var cells = table.rows[rowIndex].cells;
-                                            for (var colIndex = 1; colIndex < cells.length; colIndex++) {
-                                                var input = cells[colIndex].querySelector('input');
-                                                if (input && !input.hasAttribute('readonly')) { // Sum only the input fields that are not readonly
-                                                    var value = parseFloat(input.value) || 0;
-                                                    columnSums[colIndex] += value;
-                                                }
-                                            }
-                                        }
-
-                                        // Update the totals in the 'Total' row
-                                        var totalCells = table.rows[totalRowIndex].cells;
-                                        for (var colIndex = 1; colIndex < totalCells.length; colIndex++) {
-                                            if (columnSums[colIndex] !== undefined) { // Update only if a sum has been calculated
-                                                var totalInput = totalCells[colIndex].querySelector('input');
-                                                if (totalInput) { // If there's an input field, update it
-                                                    totalInput.value = columnSums[colIndex];
-                                                }
-                                            }
-                                        }
-
-                                        var row1 = table.rows[12];
-                                        var row2 = table.rows[15];
-                                        var row3 = table.rows[18];
-                                        var row4 = table.rows[21];
-                                        var row5 = table.rows[24];
-                                        var total_row = table.rows[27];
-                                        
-                                        var cy_row1 = parseFloat(row1.cells[1].querySelector('input').value) || 0;
-                                        var py_row1 = parseFloat(row1.cells[2].querySelector('input').value) || 0;
-                                        var cy_row2 = parseFloat(row2.cells[1].querySelector('input').value) || 0;
-                                        var py_row2 = parseFloat(row2.cells[2].querySelector('input').value) || 0;
-                                        var cy_row3 = parseFloat(row3.cells[1].querySelector('input').value) || 0;
-                                        var py_row3 = parseFloat(row3.cells[2].querySelector('input').value) || 0;
-                                        var cy_row4 = parseFloat(row4.cells[1].querySelector('input').value) || 0;
-                                        var py_row4 = parseFloat(row4.cells[2].querySelector('input').value) || 0;
-                                        var cy_row5 = parseFloat(row5.cells[1].querySelector('input').value) || 0;
-                                        var py_row5 = parseFloat(row5.cells[2].querySelector('input').value) || 0;
-
-                                        var total_cy = cy_row1 + cy_row2 + cy_row3 + cy_row4 + cy_row5;
-                                        var total_py = py_row1 + py_row2 + py_row3 + py_row4 + py_row5;
-
-                                        total_row.cells[1].querySelector('input').value = total_cy;
-                                        total_row.cells[2].querySelector('input').value = total_py;
-                                    }
-
-                                    // Calculate totals for each section when the page loads and when values change
-                                    window.onload = function() {
-                                        calculateSectionTotalsL3_1();
-                                    };
-
-                                    function calculateSectionTotalsL3_1() {
-                                        calculateColumnTotalsForSectionL3_1('p_waterstress', 2, 6, 7);
-                                        calculateColumnTotalsForSectionL3_1('p_waterstress', 13, 14, 12);
-                                        calculateColumnTotalsForSectionL3_1('p_waterstress', 16, 17, 15);
-                                        calculateColumnTotalsForSectionL3_1('p_waterstress', 19, 20, 18);
-                                        calculateColumnTotalsForSectionL3_1('p_waterstress', 22, 23, 21);
-                                        calculateColumnTotalsForSectionL3_1('p_waterstress', 25, 26, 24);
-                                    }
-                        </script>
                         <!--Water withdrawal, consumption and discharge in areas of water stress end-->
 
                         <!--Independent assessment question 3 leadership start-->
@@ -4465,6 +3820,12 @@
                                         <td><input type="text" id="totalscope" name="totalscope[]" class="form-control"></td>
                                     </tr>
                                 </table>
+                            </div>
+                            <div class="policy">
+                                <details class="add_comment_detail">
+                                    <summary>Add comments</summary>
+                                    <textarea class="detail-control" id="p_totalscope_comments" name="p_totalscope_comments" placeholder="Enter additional information (if required)"></textarea>
+                                </details>
                             </div>
                         </div>
                         <!--Details of Total scope 3 emissions and its intensity end-->
@@ -4525,6 +3886,12 @@
                                     <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow('resourceefficiency')">Add Row</button>
                                     <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow('resourceefficiency')">Remove Row</button>
                                 </div>
+                            </div>
+                            <div class="policy">
+                                <details class="add_comment_detail">
+                                    <summary>Add comments</summary>
+                                    <textarea class="detail-control" id="p_resourceefficiency_comments" name="p_resourceefficiency_comments" placeholder="Enter additional information (if required)"></textarea>
+                                </details>
                             </div>
                         </div>
                         <!--Details of specific initiatives or innovative technology to improve resource efficiency end-->
@@ -4653,6 +4020,12 @@
                                     </tbody>
                                 </table>
                             </div>
+                            <div class="policy">
+                                <details class="add_comment_detail">
+                                    <summary>Add comments</summary>
+                                    <textarea class="detail-control" id="p_tradeAffiliations_comments" name="p_tradeAffiliations_comments" placeholder="Enter additional information (if required)"></textarea>
+                                </details>
+                            </div>
                         </div>
 
                         <!--Details of AntiCompetitive Actions start-->
@@ -4686,6 +4059,12 @@
                                     <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow('antiCompetitiveActions')">Add Row</button>
                                     <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow('antiCompetitiveActions')">Remove Row</button>
                                 </div>
+                            </div>
+                            <div class="policy">
+                                <details class="add_comment_detail">
+                                    <summary>Add comments</summary>
+                                    <textarea class="detail-control" id="p_antiCompetitiveActions_comments" name="p_antiCompetitiveActions_comments" placeholder="Enter additional information (if required)"></textarea>
+                                </details>
                             </div>
                         </div>
                         <!--Details of AntiCompetitive Actions end-->
@@ -4726,13 +4105,19 @@
                                         </tr>          
                                     </tbody>
                                 </table>
+                                <div>
+                                    <input type="number" id="indexInput_publicPolicyAdvocacy" placeholder="Enter Index">
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex('publicPolicyAdvocacy')">Add S.No.</button>
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow('publicPolicyAdvocacy')">Remove S.No.</button>
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow('publicPolicyAdvocacy')">Add Row</button>
+                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow('publicPolicyAdvocacy')">Remove Row</button>
+                                </div>
                             </div>
-                            <div>
-                                <input type="number" id="indexInput_publicPolicyAdvocacy" placeholder="Enter Index">
-                                <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex('publicPolicyAdvocacy')">Add S.No.</button>
-                                <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow('publicPolicyAdvocacy')">Remove S.No.</button>
-                                <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow('publicPolicyAdvocacy')">Add Row</button>
-                                <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow('publicPolicyAdvocacy')">Remove Row</button>
+                            <div class="policy">
+                                <details class="add_comment_detail">
+                                    <summary>Add comments</summary>
+                                    <textarea class="detail-control" id="p_publicPolicyAdvocacy_comments" name="p_publicPolicyAdvocacy_comments" placeholder="Enter additional information (if required)"></textarea>
+                                </details>
                             </div>
                         </div>
                         <!-- Details of public policy positions advocated by the entity end-->
@@ -4796,6 +4181,12 @@
                                     <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow('socialImpactAssessments')">Remove Row</button>
                                 </div>
                             </div>
+                            <div class="policy">
+                                <details class="add_comment_detail">
+                                    <summary>Add comments</summary>
+                                    <textarea class="detail-control" id="p_socialImpactAssessments_comments" name="p_socialImpactAssessments_comments" placeholder="Enter additional information (if required)"></textarea>
+                                </details>
+                            </div>
                         </div>
                         <!--Details of Social Impact Assessments (SIA) of projects end-->
 
@@ -4837,6 +4228,12 @@
                                     <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow('rehabilitationProject')">Remove Row</button>
                                 </div>
                             </div>
+                            <div class="policy">
+                                <details class="add_comment_detail">
+                                    <summary>Add comments</summary>
+                                    <textarea class="detail-control" id="p_rehabilitationProject_comments" name="p_rehabilitationProject_comments" placeholder="Enter additional information (if required)"></textarea>
+                                </details>
+                            </div>
                         </div>  
                         <!--Details on project(s) for which ongoing Rehabilitation and Resettlement(R&R) end-->
 
@@ -4876,6 +4273,12 @@
                                         </tr>
                                     </tbody>
                                 </table>
+                            </div>
+                            <div class="policy">
+                                <details class="add_comment_detail">
+                                    <summary>Add comments</summary>
+                                    <textarea class="detail-control" id="p_inputMaterialPercentage_comments" name="p_inputMaterialPercentage_comments" placeholder="Enter additional information (if required)"></textarea>
+                                </details>
                             </div>
                         </div>
                         <!--Percentage of input material (inputs to total inputs by value) sourced from suppliers end-->
@@ -4917,7 +4320,13 @@
                                     <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow('socialImpactActions')">Add Row</button>
                                     <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow('socialImpactActions')">Remove Row</button>
                                 </div>
-                            </div>  
+                            </div>
+                            <div class="policy">
+                                <details class="add_comment_detail">
+                                    <summary>Add comments</summary>
+                                    <textarea class="detail-control" id="p_socialImpactActions_comments" name="p_socialImpactActions_comments" placeholder="Enter additional information (if required)"></textarea>
+                                </details>
+                            </div>
                         </div>
                         <!--Details of actions taken to mitigate any negative social impacts identified in the Social Impact Assessments end-->
 
@@ -4954,7 +4363,13 @@
                                     <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow('csrAspirationalDistricts')">Add Row</button>
                                     <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow('csrAspirationalDistricts')">Remove Row</button>
                                 </div>
-                            </div>  
+                            </div>
+                            <div class="policy">
+                                <details class="add_comment_detail">
+                                    <summary>Add comments</summary>
+                                    <textarea class="detail-control" id="p_csrAspirationalDistricts_comments" name="p_csrAspirationalDistricts_comments" placeholder="Enter additional information (if required)"></textarea>
+                                </details>
+                            </div>
                         </div>
                         <!--Details on CSR projects end-->
 
@@ -5015,6 +4430,12 @@
                                     <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow('intellectualPropertiesBenefits')">Remove Row</button>
                                 </div>
                             </div>
+                            <div class="policy">
+                                <details class="add_comment_detail">
+                                    <summary>Add comments</summary>
+                                    <textarea class="detail-control" id="p_intellectualPropertiesBenefits_comments" name="p_intellectualPropertiesBenefits_comments" placeholder="Enter additional information (if required)"></textarea>
+                                </details>
+                            </div>
                         </div> 
                         <!--Benefits derived and shared from the intellectual properties end-->
 
@@ -5050,6 +4471,12 @@
                                     <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow('correctiveActionsIntellectualProperty')">Remove Row</button>
                                 </div>
                             </div>
+                            <div class="policy">
+                                <details class="add_comment_detail">
+                                    <summary>Add comments</summary>
+                                    <textarea class="detail-control" id="p_correctiveActionsIntellectualProperty_comments" name="p_correctiveActionsIntellectualProperty_comments" placeholder="Enter additional information (if required)"></textarea>
+                                </details>
+                            </div>
                         </div> 
                         <!--Details of corrective actions taken or underway, based on any adverse order in intellectual property related disputes end-->
 
@@ -5084,6 +4511,12 @@
                                     <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow('csrProjectBeneficiaries')">Add Row</button>
                                     <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow('csrProjectBeneficiaries')">Remove Row</button>
                                 </div>
+                            </div>
+                            <div class="policy">
+                                <details class="add_comment_detail">
+                                    <summary>Add comments</summary>
+                                    <textarea class="detail-control" id="p_csrProjectBeneficiaries_comments" name="p_csrProjectBeneficiaries_comments" placeholder="Enter additional information (if required)"></textarea>
+                                </details>
                             </div>
                         </div> 
                         <!--Details of beneficiaries of CSR Projects end-->
@@ -5141,6 +4574,12 @@
                                         <td><input type="number" id="productTurnover" name="productTurnover[]" class="form-control"></td>
                                     </tr>
                                 </table>
+                            </div>
+                            <div class="policy">
+                                <details class="add_comment_detail">
+                                    <summary>Add comments</summary>
+                                    <textarea class="detail-control" id="p_productTurnover_comments" name="p_productTurnover_comments" placeholder="Enter additional information (if required)"></textarea>
+                                </details>
                             </div>
                         </div>
                         <!--Turnover of products and/ services as a percentage of turnover from all products end-->
@@ -5232,6 +4671,12 @@
                                     </tr>
                                 </table>
                             </div>
+                            <div class="policy">
+                                <details class="add_comment_detail">
+                                    <summary>Add comments</summary>
+                                    <textarea class="detail-control" id="p_consumerComplaints_comments" name="p_consumerComplaints_comments" placeholder="Enter additional information (if required)"></textarea>
+                                </details>
+                            </div>
                         </div>
                         <!--Number of consumer complaints end-->
 
@@ -5258,6 +4703,12 @@
                                         <td><input type="text" id="productRecallInstances" name="productRecallInstances[]" class="form-control" ></td>
                                     </tr>
                                 </table>
+                            </div>
+                            <div class="policy">
+                                <details class="add_comment_detail">
+                                    <summary>Add comments</summary>
+                                    <textarea class="detail-control" id="p_productRecallInstances_comments" name="p_productRecallInstances_comments" placeholder="Enter additional information (if required)"></textarea>
+                                </details>
                             </div>
                         </div>
                         <!--Details of instances of product recalls on account of safety issues end-->
