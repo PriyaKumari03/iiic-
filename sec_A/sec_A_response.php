@@ -25,15 +25,15 @@ try {
         if (isCINUnique($cin, $pdo)) {
             $cin = $_POST['cin'];
             $name = $_POST['name'];
-            $incorp_date = $_POST['incorp_date'];
+            $incorp_date = implode('| ', $_POST['incorp_date']);
             $office_address = $_POST['office_address'];
             $corporate_address = $_POST['corporate_address'];
 
-            $email = implode(', ', $_POST["email"]);
-            $telephone = implode(', ', $_POST['telephone']);
+            $email = implode('| ', $_POST["email"]);
+            $telephone = implode('| ', $_POST['telephone']);
             $website = $_POST['website'];
             $reporting_fin_year = $_POST['reporting_fin_year'];
-            $stock_name = implode(', ', $_POST['stock_name']);
+            $stock_name = implode('| ', $_POST['stock_name']);
             
             $puc = $_POST['puc'];
             $poc_name = $_POST['poc_name'];
@@ -41,25 +41,39 @@ try {
             $poc_email = $_POST['poc_email'];
             $rep_b  = $_POST['rep_b'];
             
-            $doba =  implode(', ', $_POST['doba']);
-            $dops = implode(', ', $_POST['dops']);
-            $nol = implode(', ', $_POST['nol']);
-            $drm = implode(', ', $_POST['drm']);
+            $doba =  implode('|', $_POST['doba']);
+            $doba_comments = $_POST['p_doba_comments'];             //new column
+            $dops = implode('| ', $_POST['dops']);
+            $dops_comments = $_POST['p_dops_comments'];             //new column
+            $nol = implode('| ', $_POST['nol']);
+
+            $nol_comments = $_POST['p_nol_comments'];
+            $drm = implode('| ', $_POST['drm']);
+            $drm_comments = $_POST['p_drm_comments'];
             $drm_contribution_export = $_POST['drm_contribution_export'];
-            
             $drm_types_customers = $_POST['drm_types_customers'];
-            $dew = implode(', ', $_POST['dew']);
-            $dewda = implode(', ', $_POST['dewda']);
-            $pirw = implode(', ', $_POST['pirw']);
-            $torpew = implode(', ', $_POST['torpew']);
             
-            $holding = implode(', ', $_POST['holding']);
+            $dew = implode('| ', $_POST['dew']);
+            $dew_comments = $_POST['p_dew_comments'];
+            $dewda = implode('| ', $_POST['dewda']);
+            $dewda_comments = $_POST['p_dewda_comments'];
+            $pirw = implode('| ', $_POST['pirw']);
+            
+            $pirw_comments = $_POST['p_pirw_comments'];
+            $torpew = implode('| ', $_POST['torpew']);
+            $torpew_comments = $_POST['p_torpew_comments'];
+            $holding = implode('| ', $_POST['holding']);
+            $holding_comments    = $_POST['p_holding_comments'];
+
             $csr_act = $_POST['csr_act'];
+            
             $csr_turnover = $_POST['csr_turnover'];
             $csr_networth = $_POST['csr_networth'];
-            $gre = implode(', ', $_POST['gre']);
-            
-            $overview = implode(', ', $_POST['overview']);
+            $gre = implode('| ', $_POST['gre']);
+            $gre_comments = $_POST['p_gre_comments'];
+            $overview = implode('| ', $_POST['overview']);
+            $overview_comments = $_POST['p_overview_comments'];
+
             $incorporation_certificate = null;
 
             if (isset($_FILES['uploadedFiles']) && is_array($_FILES['uploadedFiles']['error'])) {
@@ -97,18 +111,22 @@ try {
                     cin, name, incorp_date, office_address, corporate_address,
                     email, telephone, website, reporting_fin_year, incorporation_certificate,
                     stock_name, puc, poc_name, poc_phone, poc_email,
-                    rep_b, doba, dops, nol, drm,
-                    drm_contribution_export, drm_types_customers, dew, dewda, pirw, 
-                    torpew, holding, csr_act, csr_turnover, csr_networth, 
-                    gre, overview
+                    rep_b, doba, doba_comments, dops, dops_comments,
+                    nol, nol_comments, drm, drm_comments, drm_contribution_export,
+                    drm_types_customers, dew, dew_comments, dewda, dewda_comments,
+                    pirw, pirw_comments, torpew, torpew_comments, holding,
+                    holding_comments, csr_act, csr_turnover, csr_networth, gre, 
+                    gre_comments, overview, overview_comments
                 ) VALUES (
-                    ?, ?, ?, ?, ?,
                     ?, ?, ?, ?, ?, 
                     ?, ?, ?, ?, ?, 
                     ?, ?, ?, ?, ?,
                     ?, ?, ?, ?, ?, 
+                    ?, ?, ?, ?, ?, 
                     ?, ?, ?, ?, ?,
-                    ?, ?
+                    ?, ?, ?, ?, ?,
+                    ?, ?, ?, ?, ?,
+                    ?, ?, ?
                 )
             ");
 
@@ -116,10 +134,12 @@ try {
                 $cin, $name, $incorp_date, $office_address, $corporate_address,
                 $email, $telephone, $website, $reporting_fin_year, $incorporation_certificate,
                 $stock_name, $puc, $poc_name, $poc_phone, $poc_email,
-                $rep_b, $doba, $dops, $nol, $drm,
-                $drm_contribution_export, $drm_types_customers, $dew, $dewda, $pirw,
-                $torpew, $holding, $csr_act, $csr_turnover, $csr_networth,
-                $gre, $overview
+                $rep_b, $doba, $doba_comments, $dops, $dops_comments,
+                $nol, $nol_comments, $drm, $drm_comments, $drm_contribution_export,
+                $drm_types_customers, $dew, $dew_comments, $dewda, $dewda_comments,
+                $pirw, $pirw_comments, $torpew, $torpew_comments, $holding, 
+                $holding_comments, $csr_act, $csr_turnover, $csr_networth,  $gre, 
+                $gre_comments, $overview, $overview_comments
             ]);
 
             $response['status'] = 'success';

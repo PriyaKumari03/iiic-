@@ -8,15 +8,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Rashu">
         <meta name="description" content="CRUS">
-        <meta name="description" content="Ashu">
+        <meta name="description" content="Christ">
         <meta name="description" content="Your page description">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
         <link rel="icon" type="image/jpg" href="../images/cusrrs.jpg"> 
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="stylesheet" href="sec_A.css">
-        <style>
+        <style> 
             .hidden {
                 display: none;
             }
@@ -51,7 +52,7 @@
                 <!--------------------------------------------------------------------------------------------------------------------------------------------------> 
         
                 <!-- DETAILS OF THE LISTED ENTITY START -->
-                <div class="bold_border_container">
+                <div class="bold_border_container"> 
                     <!--Detail Of Listed Entity Start-->
                     <div class="mb-3">
                         <div class="policy">
@@ -86,7 +87,8 @@
                         <div class="policy">
                             <label for="incorp_date" class="form-label">3. &nbsp;Year of incorporation<span style="color: red;"> * </span></label>
                         </div>
-                        <select class="form-control" id="incorp_date" name="incorp_date" required></select>
+                        <input class="form-control1" id="day_month" name="incorp_date[]" placeholder="Day and Month">
+                        <select class="form-control1" id="incorp_date" name="incorp_date[]" required></select>
                     </div>
                     <!--3-Year of incorporation End -->
 
@@ -261,82 +263,94 @@
         
                 <!-- PRODECT/SERVIC START -->
                 <div class="bold_border_container">
-                  <!--Products/services Start-->
-                  <div class="mb-3">
-                    <div class="policy">
-                      <h3><label class="form-label"><span style="color: ;">II.</span>&nbsp;&nbsp;&nbsp;<u>Products/services</u></label><h3>
+                    <!--Products/services Start-->
+                    <div class="mb-3">
+                        <div class="policy">
+                            <h3><label class="form-label"><span style="color: ;">II.</span>&nbsp;&nbsp;&nbsp;<u>Products/services</u></label><h3>
+                        </div>
                     </div>
-                  </div>
-                  <!--Products/services END-->
+                    <!--Products/services END-->
 
-                  <!-- Details of Business activities Start -->
-                  <div class="mb-3">
-                    <div class="policy">
-                      <label for="doba" class="form-label">14. &nbsp; Details of business activities (accounting for 90% of the turnover):</label>
+                    <!--14-Details of Business activities Start -->
+                    <div class="mb-3">
+                        <div class="policy">
+                            <label for="doba" class="form-label">14. &nbsp; Details of business activities (accounting for 90% of the turnover):</label>
+                        </div>
+                        <div id="doba">
+                            <table id="p_doba">
+                                <thead>
+                                    <tr>
+                                        <th class="form-label">S.No.</th>
+                                        <th class="form-label">Description of Main Activity</th>
+                                        <th class="form-label">Description of Business Activity</th>
+                                        <th class="form-label">% of Turnover of the entity</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td style="width:5%;"><input type="number" id="doba" id="p_doba" name="doba[]" class="table-control" required value="1" readonly></td>
+                                        <td><input type="text" id="doba" name="doba[]" class="form-control"></td>
+                                        <td><input type="text" id="doba" name="doba[]" class="form-control"></td>
+                                        <td><input type="text" id="doba" name="doba[]" class="form-control"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div>
+                                <input type="number" id="indexInput_doba" placeholder="Enter S.No.">
+                                <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex('doba')">Add S.No.</button>
+                                <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow('doba')">Remove S.No.</button>
+                                <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow('doba')">Add Row</button>
+                                <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow('doba')">Remove Row</button>
+                            </div>
+                        </div>
+                        <div class="policy">
+                            <details class="add_comment_detail">
+                                <summary>Add comments</summary>
+                                <textarea class="detail-control" id="p_doba_comments" name="p_doba_comments" placeholder="Enter additional information (if required)"></textarea>
+                            </details>
+                        </div>
                     </div>
-                    <div id="doba">
-                      <table id="p_doba">
-                        <thead>
-                          <tr>
-                            <th class="form-label">S.No.</th>
-                            <th class="form-label">Description of Main Activity</th>
-                            <th class="form-label">Description of Business Activity</th>
-                            <th class="form-label">% of Turnover of the entity</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td style="width:5%;"><input type="number" id="doba" id="p_doba" name="doba[]" class="table-control" required value="1" readonly></td>
-                            <td><input type="text" id="doba" name="doba[]" class="form-control"></td>
-                            <td><input type="text" id="doba" name="doba[]" class="form-control"></td>
-                            <td><input type="text" id="doba" name="doba[]" class="form-control"></td>
-                          </tr>
-                        </tbody>
-                      </table>
-                      <div>
-                        <input type="number" id="indexInput_doba" placeholder="Enter S.No.">
-                        <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex('doba')">Add S.No.</button>
-                        <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow('doba')">Remove S.No.</button>
-                        <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow('doba')">Add Row</button>
-                        <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow('doba')">Remove Row</button>
-                      </div>
-                    </div>  
-                  </div>
-                  <!-- Details of Business activities End -->
+                    <!-- Details of Business activities End -->
 
-                  <!-- Details of the products & services Start -->
-                  <div class="mb-3">
-                    <div class="policy">
-                      <label for="dops" class="form-label">15. &nbsp; Products/Services sold by the entity (accounting for 90% of the entity’s Turnover):</label>
+                    <!--15-Details of the products & services Start -->
+                    <div class="mb-3">
+                        <div class="policy">
+                            <label for="dops" class="form-label">15. &nbsp; Products/Services sold by the entity (accounting for 90% of the entity’s Turnover):</label>
+                        </div>
+                        <div id="dops">
+                            <table id="p_dops">
+                                <thead>
+                                    <tr>
+                                        <th class="form-label">S.No.</th>
+                                        <th class="form-label">Product/Service</th>
+                                        <th class="form-label">NIC Code</th>
+                                        <th class="form-label">% of total Turnover contributed</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td style="width:5%;"><input type="number" id="dops" id="p_dops" name="dops[]" class="table-control" value="1" readonly required ></td>
+                                        <td><input type="text" id="dops" name="dops[]" class="form-control"></td>
+                                        <td><input type="text" id="dops" name="dops[]" class="form-control"></td>
+                                        <td><input type="text" id="dops" name="dops[]" class="form-control"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div>
+                                <input type="number" id="indexInput_dops" placeholder="Enter S.No.">
+                                <button class="form-label" type="button" onclick="addRowAtIndex('dops')">Add S.No.</button>
+                                <button class="form-label" type="button" onclick="removeSpecificRow('dops')">Remove S.No.</button>
+                                <button class="form-label" type="button" onclick="addBottomRow('dops')">Add Row</button>
+                                <button class="form-label" type="button" onclick="removeBottomRow('dops')">Remove Row</button>
+                            </div>
+                        </div>
+                        <div class="policy">
+                            <details class="add_comment_detail">
+                                <summary>Add comments</summary>
+                                <textarea class="detail-control" id="p_dops_comments" name="p_dops_comments" placeholder="Enter additional information (if required)"></textarea>
+                            </details>
+                        </div>
                     </div>
-                    <div id="dops">
-                      <table id="p_dops">
-                        <thead>
-                          <tr>
-                            <th class="form-label">S.No.</th>
-                            <th class="form-label">Product/Service</th>
-                            <th class="form-label">NIC Code</th>
-                            <th class="form-label">% of total Turnover contributed</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td style="width:5%;"><input type="number" id="dops" id="p_dops" name="dops[]" class="table-control" value="1" readonly required ></td>
-                            <td><input type="text" id="dops" name="dops[]" class="form-control"></td>
-                            <td><input type="text" id="dops" name="dops[]" class="form-control"></td>
-                            <td><input type="text" id="dops" name="dops[]" class="form-control"></td>
-                          </tr>
-                        </tbody>
-                      </table>
-                      <div>
-                        <input type="number" id="indexInput_dops" placeholder="Enter S.No.">
-                        <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex('dops')">Add S.No.</button>
-                        <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow('dops')">Remove S.No.</button>
-                        <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow('dops')">Add Row</button>
-                        <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow('dops')">Remove Row</button>
-                      </div>
-                    </div>
-                  </div>
                 </div>
                 <!-- PRODECT/SERVIC END -->
 
@@ -348,113 +362,112 @@
         
                 <!-- OPERATIONS START -->
                 <div class="bold_border_container">
-                  <div class="mb-3">
-                    <div class="policy">
-                      <h3><label class="form-label"><span style="color: ;">III.</span>&nbsp;&nbsp;&nbsp;<u>OPERATIONS</u></label><h3>
+                    <div class="mb-3">
+                        <div class="policy">
+                            <h3><label class="form-label"><span style="color: ;">III.</span>&nbsp;&nbsp;&nbsp;<u>OPERATIONS</u></label><h3>
+                        </div>
                     </div>
-                  </div>
 
-                  <!-- Number of locations Start -->
-                  <div class="mb-3">
-                    <div class="policy">
-                      <label for="nol" class="form-label">16. &nbsp;National + International  locations where plants and/or operations/offices of the entity are situated:</label>
+                    <!--16-Number of locations Start -->
+                    <div class="mb-3">
+                        <div class="policy">
+                            <label for="nol" class="form-label">16. &nbsp;National + International  locations where plants and/or operations/offices of the entity are situated:</label>
+                        </div>
+                        <div id="nol">
+                            <table id="p_nol">
+                                <thead>
+                                    <tr>
+                                        <th class="form-label">Location</th>
+                                        <th class="form-label">Number of plants</th>
+                                        <th class="form-label">Number of offices</th>
+                                        <th class="form-label">Total</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th class="form-label" id="nol" id="p_nol" name="nol[]" class="form-control">National</th>
+                                        <td><input type="number" name="nol[]" oninput="calculate16(this)" class="form-control nol-input"></td>
+                                        <td><input type="number" name="nol[]" oninput="calculate16(this)" class="form-control nol-input"></td>
+                                        <td><input type="number" name="nol[]" class="form-control nol-total" readonly></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="form-label" id="nol" id="p_nol" name="nol[]" class="form-control">International</th>
+                                        <td><input type="number" id="nol" name="nol[]" oninput="calculate16(this)" class="form-control nol-input"></td>
+                                        <td><input type="number" id="nol" name="nol[]" oninput="calculate16(this)" class="form-control nol-input"></td>
+                                        <td><input type="number" id="nol" name="nol[]" class="form-control nol-total" readonly></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <details class="add_comment_detail">
+                            <summary>Add comments</summary>
+                            <textarea class="detail-control" id="p_nol_comments" name="p_nol_comments" placeholder="Enter additional information (if required)"></textarea>
+                        </details>
                     </div>
-                    <div id="nol">
-                      <table id="p_nol">
-                        <thead>
-                          <tr>
-                            <th class="form-label">Location</th>
-                            <th class="form-label">Number of plants</th>
-                            <th class="form-label">Number of offices</th>
-                            <th class="form-label">Total</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <th class="form-label" id="nol" id="p_nol" name="nol[]" class="form-control">National</th>
-                            <td><input type="number" name="nol[]" oninput="calculate16(this)" class="form-control nol-input"></td>
-                            <td><input type="number" name="nol[]" oninput="calculate16(this)" class="form-control nol-input"></td>
-                            <td><input type="number" name="nol[]" class="form-control nol-total" readonly></td>
-                          </tr>
-                          <tr>
-                            <th class="form-label" id="nol" id="p_nol" name="nol[]" class="form-control">International</th>
-                            <td><input type="number" id="nol" name="nol[]" oninput="calculate16(this)" class="form-control nol-input"></td>
-                            <td><input type="number" id="nol" name="nol[]" oninput="calculate16(this)" class="form-control nol-input"></td>
-                            <td><input type="number" id="nol" name="nol[]" class="form-control nol-total" readonly></td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>  
-                  </div>
-                  <!-- Number of locations End -->
+                    <!-- Number of locations End -->
 
-                  <!-- Details regarding markets served by the entity Start -->
-                  <div class="mb-3">
-                    <div class="policy">
-                      <label for="drm" class="form-label">17. &nbsp;Markets served by the entity:</label>
-                    </div>
-                    <!-- Number of locations START -->
-                    <div class="mb-3 invisible_container">
-                      <div class="policy">
-                        <label for="drm" class="form-label">a. &nbsp;National + International locations:</label>
-                      </div>
-                      <div id="drm">
-                        <table id="p_drm">
-                          <thead>
-                            <tr>
-                              <th class="form-label">Location</th>
-                              <th class="form-label">Number of plants</th>
-                              <th class="form-label">Union Territories</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <th class="form-label" id="drm" id="p_drm" name="drm[]" class="form-control">National (No. of States)</th>
-                              <td><input type="text" id="drm" name="drm[]" class="form-control"></td>
-                              <td>
-                                <select id="drm" name="drm[]" class="form-control">
-                                    <option value="">Select Union Territory</option>
-                                    <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
-                                    <option value="Chandigarh">Chandigarh</option>
-                                    <option value="Dadra and Nagar Haveli and Daman and Diu">Dadra and Nagar Haveli and Daman and Diu</option>
-                                    <option value="Lakshadweep">Lakshadweep</option>
-                                    <option value="Delhi">Delhi</option>
-                                    <option value="Puducherry">Puducherry</option>
-                                    <option value="Jammu&Kashmir">Jammu&Kashmir</option>
-                                    <option value="Ladkah">Ladakh</option>
-                                    <!-- Add more Union Territories as needed -->
-                                </select>
-                              </td>
-                            </tr>
-                            <tr>
-                              <th class="form-label" id="drm" id="p_drm" name="drm[]" class="form-control">International (No. of Countries)</th>
-                              <td><input type="text" id="drm" name="drm[]" class="form-control"></td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </div>
-                    <!-- Number of locations START -->
+                    <!--17-Details regarding markets served by the entity Start -->
+                    <div class="mb-3">
+                        <div class="policy">
+                            <label for="drm" class="form-label">17. &nbsp;Markets served by the entity:</label>
+                        </div>
+                        <!--17a Number of locations START -->
+                        <div class="mb-3 invisible_container">
+                            <div class="policy">
+                                <label for="drm" class="form-label">a. &nbsp;National + International locations:</label>
+                            </div>
+                            <div id="drm">
+                                <table id="p_drm">
+                                    <thead>
+                                        <tr>
+                                            <th class="form-label">Location</th>
+                                            <th class="form-label">Number of plants</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th class="form-label" id="drm" id="p_drm" name="drm[]" class="form-control">National (No. of States)</th>
+                                            <td><input type="text" id="drm" name="drm[]" class="form-control"></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="form-label" id="drm" id="p_drm" name="drm[]" class="form-control">National (No. of Union Territories)</th>
+                                            <td><input type="text" id="drm" name="drm[]" class="form-control"></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="form-label" id="drm" id="p_drm" name="drm[]" class="form-control">International (No. of Countries)</th>
+                                            <td><input type="text" id="drm" name="drm[]" class="form-control"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="policy">
+                            <details class="add_comment_detail">
+                                <summary>Add comments</summary>
+                                <textarea class="detail-control" id="p_drm_comments" name="p_drm_comments" placeholder="Enter additional information (if required)"></textarea>
+                            </details>
+                        </div>
+                        </div>
+                        <!--17a Number of locations START -->
             
-                    <!-- What is the contribution of exports as a percentage of the total turnover of the entity? START -->
-                    <div class="mb-3 invisible_container">
-                      <div class="policy">
-                        <label for="drm_contribution_export" class="form-label">b. &nbsp;What is the contribution of exports as a percentage of the total turnover of the entity?:</label>
-                      </div>
-                      <input type="text" class="form-control" id="drm_contribution_export" name="drm_contribution_export" placeholder="What is the contribution of exports as a percentage of the total turnover of the entity?">
-                    </div>
-                    <!-- What is the contribution of exports as a percentage of the total turnover of the entity? END -->
+                        <!--17b What is the contribution of exports as a percentage of the total turnover of the entity? START -->
+                        <div class="mb-3 invisible_container">
+                            <div class="policy">
+                                <label for="drm_contribution_export" class="form-label">b. &nbsp;What is the contribution of exports as a percentage of the total turnover of the entity?:</label>
+                            </div>
+                            <input type="text" class="form-control" id="drm_contribution_export" name="drm_contribution_export" placeholder="What is the contribution of exports as a percentage of the total turnover of the entity?">
+                        </div>
+                        <!--17b What is the contribution of exports as a percentage of the total turnover of the entity? END -->
             
-                    <!-- A brief on types of customers START -->
-                    <div class="mb-3 invisible_container">
-                      <div class="policy">
-                        <label for="drm_types_customers" class="form-label">c. &nbsp; A brief on types of customers:</label>
-                      </div>
-                      <textarea type="text" class="form-control" id="drm_types_customers" name="drm_types_customers" placeholder="A brief on types of customers"></textarea>
+                        <!--17c A brief on types of customers START -->
+                        <div class="mb-3 invisible_container">
+                            <div class="policy">
+                                <label for="drm_types_customers" class="form-label">c. &nbsp; A brief on types of customers:</label>
+                            </div>
+                            <textarea type="text" class="form-control" id="drm_types_customers" name="drm_types_customers" placeholder="A brief on types of customers"></textarea>
+                        </div>
+                        <!--17c A brief on types of customers END -->
                     </div>
-                    <!-- A brief on types of customers END -->
-                  </div>
-                  <!-- Details regarding markets served by the entity End -->
+                    <!-- Details regarding markets served by the entity End -->
                 </div>        
                 <!-- OPERATIONS END -->
 
@@ -464,274 +477,291 @@
                 <!--                                                                                                                                              -->
                 <!-------------------------------------------------------------------------------------------------------------------------------------------------->
         
-                <!-- Employees SRART -->
+                <!-- EMPLOYEES SRART -->
                 <div class="bold_border_container">
-                  <div class="mb-3">
-                    <div class="policy">
-                      <h3><label class="form-label"><span style="color: ;">IV.</span>&nbsp;&nbsp;&nbsp;<u>Employees</u></label><h3>
-                    </div> 
-                  </div>
-                  <div class="mb-3">
-                    <div class="policy">
-                      <label class="form-label">18. &nbsp;Details as at the end of Financial Year:</label>
+                    <div class="mb-3">
+                        <div class="policy">
+                            <h3><label class="form-label"><span style="color: ;">IV.</span>&nbsp;&nbsp;&nbsp;<u>Employees</u></label><h3>
+                        </div> 
                     </div>
-                  </div>
-                  <!-- Details of Employees & Workers Start -->
-                  <div class="mb-3 invisible_container">
-                    <div class="policy">
-                      <label for="dew" class="form-label">a. &nbsp; Details of Employees & Workers</label>
+                    <div class="mb-3">
+                        <div class="policy">
+                            <label class="form-label">18. &nbsp;Details as at the end of Financial Year:</label>
+                        </div>
                     </div>
-                    <div id="dew">
-                      <table id="p_dew">
-                        <tr>
-                          <th class="form-label" colspan="1" rowspan="2"> S. NO.</th>
-                          <th class="form-label" colspan="1" rowspan="2">Particulars</th>
-                          <th class="form-label" colspan="1" rowspan="2">Total (A)</th>
-                          <th class="form-label" colspan="2">Male</th>
-                          <th class="form-label" colspan="2">Female</th>
-                        </tr>
-                        <tr>
-                          <th class="form-label">No. (B)</th>
-                          <th class="form-label">%(B/A)</th>
-                          <th class="form-label">No. (C)</th>
-                          <th class="form-label">%(C/A)</th>
-                        </tr>
-                        <tr>
-                          <th class="form-label" colspan="7"><u> EMPLOYEES </u></th>
-                        </tr>
-                        <tr>
-                          <th class="form-label">1.</th>
-                          <th class="form-label">Permanent(D)</th>
-                          <td><input type="number" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 3)"></td>
-                          <td><input type="number" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 3)"></td>
-                          <td><input type="number" id="dew" name="dew[]" class="form-control" readonly></td>
-                          <td><input type="number" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 3)"></td>
-                          <td><input type="number" id="dew" name="dew[]" class="form-control" readonly></td>
-                        </tr>
-                        <tr>
-                          <th class="form-label">2.</th>
-                          <th class="form-label">Other than Permanent(E)</th>  
-                          <td><input type="number" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 4)"></td>
-                          <td><input type="number" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 4)"></td>
-                          <td><input type="number" id="dew" name="dew[]" class="form-control" readonly></td>
-                          <td><input type="number" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 4)"></td>
-                          <td><input type="number" id="dew" name="dew[]" class="form-control" readonly></td>
-                        </tr>
-                        <tr>
-                          <th class="form-label">3.</th>
-                          <th class="form-label">Total employees(D + E)</th>
-                          <td><input type="number" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 5)"></td>
-                          <td><input type="number" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 5)"></td>
-                          <td><input type="number" id="dew" name="dew[]" class="form-control" readonly></td>
-                          <td><input type="number" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 5)"></td>
-                          <td><input type="number" id="dew" name="dew[]" class="form-control" readonly></td>
-                        </tr>
-                        <tr>
-                          <th class="form-label" colspan="7"><u> WORKERS </u></th>
-                        </tr>
-                        <tr>
-                          <th class="form-label">4.</th>
-                          <th class="form-label">Permanent (F)</th>
-                          <td><input type="number" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 7)"></td>
-                          <td><input type="number" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 7)"></td>
-                          <td><input type="number" id="dew" name="dew[]" class="form-control" readonly></td>
-                          <td><input type="number" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 7)"></td>
-                          <td><input type="number" id="dew" name="dew[]" class="form-control" readonly></td>
-                        </tr>
-                        <tr>
-                          <th class="form-label">5.</th>
-                          <th class="form-label">Other than Permanent (G)</th>
-                          <td><input type="number" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 8)"></td>
-                          <td><input type="number" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 8)"></td>
-                          <td><input type="number" id="dew" name="dew[]" class="form-control" readonly></td>
-                          <td><input type="number" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 8)"></td>
-                          <td><input type="number" id="dew" name="dew[]" class="form-control" readonly></td>
-                        </tr>
-                        <tr>
-                          <th class="form-label">6.</th>
-                          <th class="form-label">Total workers (F + G)</th>
-                          <td><input type="number" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 9)"></td>
-                          <td><input type="number" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 9)"></td>
-                          <td><input type="number" id="dew" name="dew[]" class="form-control" readonly></td>
-                          <td><input type="number" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 9)"></td>
-                          <td><input type="number" id="dew" name="dew[]" class="form-control" readonly></td>
-                        </tr>
-                      </table>
-                      
-                    </div>
-                    <!-- 18a. Employees and workers (including differently abled) End -->
+                    <!--18a-Details of Employees & Workers Start -->
+                    <div class="mb-3 invisible_container">
+                        <!-- 18a. Employees and workers (including differently abled) Start -->
+                        <div class="policy">
+                            <label for="dew" class="form-label">a. &nbsp; Details of Employees & Workers</label>
+                        </div>
+                        <div id="dew">
+                            <table id="p_dew">
+                                <tr>
+                                    <th class="form-label" colspan="1" rowspan="2"> S. NO.</th>
+                                    <th class="form-label" colspan="1" rowspan="2">Particulars</th>
+                                    <th class="form-label" colspan="1" rowspan="2">Total (A)</th>
+                                    <th class="form-label" colspan="2">Male</th>
+                                    <th class="form-label" colspan="2">Female</th>
+                                </tr>
+                                <tr>
+                                    <th class="form-label">No. (B)</th>
+                                    <th class="form-label">%(B/A)</th>
+                                    <th class="form-label">No. (C)</th>
+                                    <th class="form-label">%(C/A)</th>
+                                </tr>
+                                <tr>
+                                    <th class="form-label" colspan="7"><u> EMPLOYEES </u></th>
+                                </tr>
+                                <tr>
+                                    <th class="form-label">1.</th>
+                                    <th class="form-label">Permanent(D)</th>
+                                    <td><input type="number" step="0.01" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 3)"></td>
+                                    <td><input type="number" step="0.01" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 3)"></td>
+                                    <td><input type="number" step="0.01" id="dew" name="dew[]" class="form-control"></td>
+                                    <td><input type="number" step="0.01" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 3)"></td>
+                                    <td><input type="number" step="0.01" id="dew" name="dew[]" class="form-control"</td>
+                                </tr>
+                                <tr>
+                                    <th class="form-label">2.</th>
+                                    <th class="form-label">Other than Permanent(E)</th>  
+                                    <td><input type="number" step="0.01" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 4)"></td>
+                                    <td><input type="number" step="0.01" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 4)"></td>
+                                    <td><input type="number" step="0.01" id="dew" name="dew[]" class="form-control"></td>
+                                    <td><input type="number" step="0.01" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 4)"></td>
+                                    <td><input type="number" step="0.01" id="dew" name="dew[]" class="form-control"></td>
+                                </tr>
+                                <tr>
+                                    <th class="form-label">3.</th>
+                                    <th class="form-label">Total employees(D + E)</th>
+                                    <td><input type="number" step="0.01" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 5)"></td>
+                                    <td><input type="number" step="0.01" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 5)"></td>
+                                    <td><input type="number" step="0.01" id="dew" name="dew[]" class="form-control"></td>
+                                    <td><input type="number" step="0.01" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 5)"></td>
+                                    <td><input type="number" step="0.01" id="dew" name="dew[]" class="form-control"></td>
+                                </tr>
+                                <tr>
+                                    <th class="form-label" colspan="7"><u> WORKERS </u></th>
+                                </tr>
+                                <tr>
+                                    <th class="form-label">4.</th>
+                                    <th class="form-label">Permanent (F)</th>
+                                    <td><input type="number" step="0.01" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 7)"></td>
+                                    <td><input type="number" step="0.01" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 7)"></td>
+                                    <td><input type="number" step="0.01" id="dew" name="dew[]" class="form-control"></td>
+                                    <td><input type="number" step="0.01" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 7)"></td>
+                                    <td><input type="number" step="0.01" id="dew" name="dew[]" class="form-control"></td>
+                                </tr>
+                                <tr>
+                                    <th class="form-label">5.</th>
+                                    <th class="form-label">Other than Permanent (G)</th>
+                                    <td><input type="number" step="0.01" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 8)"></td>
+                                    <td><input type="number" step="0.01" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 8)"></td>
+                                    <td><input type="number" step="0.01" id="dew" name="dew[]" class="form-control"></td>
+                                    <td><input type="number" step="0.01" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 8)"></td>
+                                    <td><input type="number" step="0.01" id="dew" name="dew[]" class="form-control"></td>
+                                </tr>
+                                <tr>
+                                    <th class="form-label">6.</th>
+                                    <th class="form-label">Total workers (F + G)</th>
+                                    <td><input type="number" step="0.01" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 9)"></td>
+                                    <td><input type="number" step="0.01" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 9)"></td>
+                                    <td><input type="number" step="0.01" id="dew" name="dew[]" class="form-control"></td>
+                                    <td><input type="number" step="0.01" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 9)"></td>
+                                    <td><input type="number" step="0.01" id="dew" name="dew[]" class="form-control"></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <details class="add_comment_detail">
+                            <summary>Add comments</summary>
+                            <textarea class="detail-control" id="p_dew_comments" name="p_dew_comments" placeholder="Enter additional information (if required)"></textarea>
+                        </details>
+                        <!-- 18a. Employees and workers (including differently abled) End -->
 
-                    <!-- 18b. Differently abled employees and workers start -->
-                    <div class="policy">
-                      <label for="dewda" class="form-label"><br>b. &nbsp; differently abled employees and workers:</label>
+                        <!-- 18b. Differently abled employees and workers start -->
+                        <div class="policy">
+                            <label for="dewda" class="form-label"><br>b. &nbsp; differently abled employees and workers:</label>
+                        </div>
+                        <div id="dewda">
+                            <table id="p_dewda">
+                                <tr>
+                                    <th class="form-label" colspan="1" rowspan="2"> S. NO.</th>
+                                    <th class="form-label" colspan="1" rowspan="2">Particulars</th>
+                                    <th class="form-label" colspan="1" rowspan="2">Total (A)</th>
+                                    <th class="form-label" colspan="2">Male</th>
+                                    <th class="form-label" colspan="2">Female</th>
+                                </tr>
+                                <tr>
+                                    <th class="form-label">No. (B)</th>
+                                    <th class="form-label">%(B/A)</th>
+                                    <th class="form-label">No. (C)</th>
+                                    <th class="form-label">%(C/A)</th>
+                                </tr>
+                                <tr>
+                                    <th class="form-label" colspan="7"><u> DIFFERENTLY ABLED EMPLOYEES </u></th>
+                                </tr>
+                                <tr>
+                                    <th class="form-label" id="dewda" name="dewda[]">1.</th>
+                                    <th class="form-label" id="dewda" name="dewda[]">Permanent(D)</th>
+                                    <td><input type="number" step="0.01" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 3)"></td>
+                                    <td><input type="number" step="0.01" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 3)"></td>
+                                    <td><input type="number" step="0.01" id="dewda" name="dewda[]" class="form-control" readonly></td>
+                                    <td><input type="number" step="0.01" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 3)"></td>
+                                    <td><input type="number" step="0.01" id="dewda" name="dewda[]" class="form-control" readonly></td>
+                                </tr>
+                                <tr>
+                                    <th class="form-label" id="dewda" name="dewda[]">2.</th>
+                                    <th class="form-label" id="dewda" name="dewda[]">Other than Permanent(E)</th>
+                                    <td><input type="number" step="0.01" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 4)"></td>
+                                    <td><input type="number" step="0.01" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 4)"></td>
+                                    <td><input type="number" step="0.01" id="dewda" name="dewda[]" class="form-control" readonly></td>
+                                    <td><input type="number" step="0.01" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 4)"></td>
+                                    <td><input type="number" step="0.01" id="dewda" name="dewda[]" class="form-control" readonly></td>
+                                </tr>
+                                <tr>
+                                    <th class="form-label" id="dewda" name="dewda[]">3.</th>
+                                    <th class="form-label" id="dewda" name="dewda[]">Total differently abled employees(D + E)</th>
+                                    <td><input type="number" step="0.01" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 5)"></td>
+                                    <td><input type="number" step="0.01" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 5)"></td>
+                                    <td><input type="number" step="0.01" id="dewda" name="dewda[]" class="form-control" readonly></td>
+                                    <td><input type="number" step="0.01" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 5)"></td>
+                                    <td><input type="number" step="0.01" id="dewda" name="dewda[]" class="form-control" readonly></td>
+                                </tr>
+                                <tr>
+                                    <th class="form-label" colspan="7"><u> DIFFERENTLY ABLED WORKERS </u></th>
+                                </tr>
+                                <tr>
+                                    <th class="form-label" id="dewda" name="dewda[]">4.</th>
+                                    <th class="form-label" id="dewda" name="dewda[]">Permanent (F)</th>
+                                    <td><input type="number" step="0.01" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 7)"></td>
+                                    <td><input type="number" step="0.01" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 7)"></td>
+                                    <td><input type="number" step="0.01" id="dewda" name="dewda[]" class="form-control" readonly></td>
+                                    <td><input type="number" step="0.01" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 7)"></td>
+                                    <td><input type="number" step="0.01" id="dewda" name="dewda[]" class="form-control" readonly></td>
+                                </tr>
+                                <tr>
+                                    <th class="form-label" id="dewda" name="dewda[]">5.</th>
+                                    <th class="form-label" id="dewda" name="dewda[]">Other than Permanent (G)</th>
+                                    <td><input type="number" step="0.01" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 8)"></td>
+                                    <td><input type="number" step="0.01" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 8)"></td>
+                                    <td><input type="number" step="0.01" id="dewda" name="dewda[]" class="form-control" readonly></td>
+                                    <td><input type="number" step="0.01" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 8)"></td>
+                                    <td><input type="number" step="0.01" id="dewda" name="dewda[]" class="form-control" readonly></td>
+                                </tr>
+                                <tr>
+                                    <th class="form-label" id="dewda" name="dewda[]">6.</th>
+                                    <th class="form-label" id="dewda" name="dewda[]">Total differently abled workers (F + G)</th>
+                                    <td><input type="number" step="0.01" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 9)"></td>
+                                    <td><input type="number" step="0.01" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 9)"></td>
+                                    <td><input type="number" step="0.01" id="dewda" name="dewda[]" class="form-control" readonly></td>
+                                    <td><input type="number" step="0.01" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 9)"></td>
+                                    <td><input type="number" step="0.01" id="dewda" name="dewda[]" class="form-control" readonly></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <details class="add_comment_detail">
+                            <summary>Add comments</summary>
+                            <textarea class="detail-control" id="p_dewda_comments" name="p_dewda_comments" placeholder="Enter additional information (if required)"></textarea>
+                        </details>
+                        <!-- 18b. Differently abled employees and workers End -->
                     </div>
-                    <div id="dewda">
-                      <table id="p_dewda">
-                        <tr>
-                          <th class="form-label" colspan="1" rowspan="2"> S. NO.</th>
-                          <th class="form-label" colspan="1" rowspan="2">Particulars</th>
-                          <th class="form-label" colspan="1" rowspan="2">Total (A)</th>
-                          <th class="form-label" colspan="2">Male</th>
-                          <th class="form-label" colspan="2">Female</th>
-                        </tr>
-                        <tr>
-                          <th class="form-label">No. (B)</th>
-                          <th class="form-label">%(B/A)</th>
-                          <th class="form-label">No. (C)</th>
-                          <th class="form-label">%(C/A)</th>
-                        </tr>
-                        <tr>
-                          <th class="form-label" colspan="7"><u> DIFFERENTLY ABLED EMPLOYEES </u></th>
-                        </tr>
-                        <tr>
-                          <th class="form-label" id="dewda" name="dewda[]">1.</th>
-                          <th class="form-label" id="dewda" name="dewda[]">Permanent(D)</th>
-                          <td><input type="number" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 3)"></td>
-                          <td><input type="number" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 3)"></td>
-                          <td><input type="number" id="dewda" name="dewda[]" class="form-control" readonly></td>
-                          <td><input type="number" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 3)"></td>
-                          <td><input type="number" id="dewda" name="dewda[]" class="form-control" readonly></td>
-                        </tr>
-                        <tr>
-                          <th class="form-label" id="dewda" name="dewda[]">2.</th>
-                          <th class="form-label" id="dewda" name="dewda[]">Other than Permanent(E)</th>
-                          <td><input type="number" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 4)"></td>
-                          <td><input type="number" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 4)"></td>
-                          <td><input type="number" id="dewda" name="dewda[]" class="form-control" readonly></td>
-                          <td><input type="number" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 4)"></td>
-                          <td><input type="number" id="dewda" name="dewda[]" class="form-control" readonly></td>
-                        </tr>
-                        <tr>
-                          <th class="form-label" id="dewda" name="dewda[]">3.</th>
-                          <th class="form-label" id="dewda" name="dewda[]">Total differently abled employees(D + E)</th>
-                          <td><input type="number" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 5)"></td>
-                          <td><input type="number" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 5)"></td>
-                          <td><input type="number" id="dewda" name="dewda[]" class="form-control" readonly></td>
-                          <td><input type="number" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 5)"></td>
-                          <td><input type="number" id="dewda" name="dewda[]" class="form-control" readonly></td>
-                        </tr>
-                        <tr>
-                          <th class="form-label" colspan="7"><u> DIFFERENTLY ABLED WORKERS </u></th>
-                        </tr>
-                        <tr>
-                          <th class="form-label" id="dewda" name="dewda[]">4.</th>
-                          <th class="form-label" id="dewda" name="dewda[]">Permanent (F)</th>
-                          <td><input type="number" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 7)"></td>
-                          <td><input type="number" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 7)"></td>
-                          <td><input type="number" id="dewda" name="dewda[]" class="form-control" readonly></td>
-                          <td><input type="number" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 7)"></td>
-                          <td><input type="number" id="dewda" name="dewda[]" class="form-control" readonly></td>
-                        </tr>
-                        <tr>
-                          <th class="form-label" id="dewda" name="dewda[]">5.</th>
-                          <th class="form-label" id="dewda" name="dewda[]">Other than Permanent (G)</th>
-                          <td><input type="number" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 8)"></td>
-                          <td><input type="number" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 8)"></td>
-                          <td><input type="number" id="dewda" name="dewda[]" class="form-control" readonly></td>
-                          <td><input type="number" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 8)"></td>
-                          <td><input type="number" id="dewda" name="dewda[]" class="form-control" readonly></td>
-                        </tr>
-                        <tr>
-                          <th class="form-label" id="dewda" name="dewda[]">6.</th>
-                          <th class="form-label" id="dewda" name="dewda[]">Total differently abled workers (F + G)</th>
-                          <td><input type="number" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 9)"></td>
-                          <td><input type="number" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 9)"></td>
-                          <td><input type="number" id="dewda" name="dewda[]" class="form-control" readonly></td>
-                          <td><input type="number" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 9)"></td>
-                          <td><input type="number" id="dewda" name="dewda[]" class="form-control" readonly></td>
-                        </tr>
-                      </table>
-                    </div>
-                  </div>
-                  <!-- 18b. Differently abled employees and workers start -->
+                    <!--18a-Details of Employees & Workers End -->
           
-                  <!--19-Participation/Inclusion/Representation of Women Start -->
-                  <div class="mb-3">
-                    <div class="policy">
-                      <label for="pirw" class="form-label"> 19. &nbsp; Participation/Inclusion/Representation of women <br></label>
+                    <!--19-Participation/Inclusion/Representation of Women Start -->
+                    <div class="mb-3">
+                        <div class="policy">
+                            <label for="pirw" class="form-label"> 19. &nbsp; Participation/Inclusion/Representation of women <br></label>
+                        </div>
+                        <div id="pirw">
+                            <table id="p_pirw">
+                                <tr>
+                                    <th class="form-label" colspan="1" rowspan="2"></th>
+                                    <th class="form-label" colspan="1" rowspan="2">Total (A)</th>
+                                    <th class="form-label" colspan="2" rowspan="1">No. and percentage of Females</th>
+                                </tr>
+                                <tr>
+                                    <th class="form-label">No. (B)</th>
+                                    <th class="form-label">%(B/A)</th>
+                                </tr>
+                                <tr>
+                                    <th class="form-label">Board of Directors</th>
+                                    <td><input type="number" step="0.01" id="pirw" name="pirw[]" oninput="calculate19(this)" class="form-control"></td>
+                                    <td><input type="number" step="0.01" id="pirw" name="pirw[]" oninput="calculate19(this)" class="form-control"></td>
+                                    <td><input type="number" step="0.01" id="pirw" name="pirw[]" class="form-control"></td>
+                                </tr>
+                                <tr>
+                                    <th class="form-label">Key Management <br> Personnel</th>
+                                    <td><input type="number" step="0.01" id="pirw" name="pirw[]" oninput="calculate19(this)" class="form-control"></td>
+                                    <td><input type="number" step="0.01" id="pirw" name="pirw[]" oninput="calculate19(this)" class="form-control"></td>
+                                    <td><input type="number" step="0.01" id="pirw" name="pirw[]" class="form-control"></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <details class="add_comment_detail">
+                            <summary>Add comments</summary>
+                            <textarea class="detail-control" id="p_pirw_comments" name="p_pirw_comments" placeholder="Enter additional information (if required)"></textarea>
+                        </details>
                     </div>
-                    <div id="pirw">
-                      <table id="p_pirw">
-                        <tr>
-                          <th class="form-label" colspan="1" rowspan="2"></th>
-                          <th class="form-label" colspan="1" rowspan="2">Total (A)</th>
-                          <th class="form-label" colspan="2" rowspan="1">No. and percentage of Females</th>
-                        </tr>
-                        <tr>
-                          <th class="form-label">No. (B)</th>
-                          <th class="form-label">%(B/A)</th>
-                        </tr>
-                        <tr>
-                          <th class="form-label">Board of Directors</th>
-                          <td><input type="number" step="0.01" id="pirw" name="pirw[]" oninput="calculate19(this)" class="form-control"></td>
-                          <td><input type="number" step="0.01" id="pirw" name="pirw[]" oninput="calculate19(this)" class="form-control"></td>
-                          <td><input type="number" step="0.01" id="pirw" name="pirw[]" class="form-control"></td>
-                        </tr>
-                        <tr>
-                          <th class="form-label">Key Management <br> Personnel</th>
-                          <td><input type="number" id="pirw" name="pirw[]" oninput="calculate19(this)" class="form-control"></td>
-                          <td><input type="number" id="pirw" name="pirw[]" oninput="calculate19(this)" class="form-control"></td>
-                          <td><input type="number" id="pirw" name="pirw[]" class="form-control"></td>
-                        </tr>
-                      </table>
-                    </div>
-                  </div>
-                  <!-- Participation/Inclusion/Representation of Women End -->
+                    <!--19-Participation/Inclusion/Representation of Women End -->
 
-                  <!-- 20 Turnover rate for permanent employees & workers (For past 3 years) Start -->
-                  <div class="mb-3">
-                    <div class="policy">
-                      <br><label for="torpew" class="form-label"> 20. &nbsp;Turnover rate for permanent employees and workers<p style="padding-left:2.5%;">(Disclose trends for the past 3 years)</p></label>
+                    <!--20-Turnover rate for permanent employees & workers (For past 3 years) Start -->
+                    <div class="mb-3">
+                        <div class="policy">
+                            <br><label for="torpew" class="form-label"> 20. &nbsp;Turnover rate for permanent employees and workers<p style="padding-left:2.5%;">(Disclose trends for the past 3 years)</p></label>
+                        </div>
+                        <div id="torpew" class="responsive-table">
+                            <table id="p_torpew">
+                                <tr>
+                                    <th class="form-label" rowspan="2"></th>
+                                    <th class="form-label" colspan="3">FY _____<br>(Turnover rate in current<br> FY)</th>
+                                    <th class="form-label" colspan="3">FY _____<br>(Turnover rate in<br> previous FY)</th>
+                                    <th class="form-label" colspan="3">FY _____<br>(Turnover rate in the year prior to the<br> previous FY)</th>
+                                </tr>
+                                <tr>
+                                    <th class="form-label">Male</th>
+                                    <th class="form-label">Female</th>
+                                    <th class="form-label">Total</th>
+                                    <th class="form-label">Male</th>
+                                    <th class="form-label">Female</th>
+                                    <th class="form-label">Total</th>
+                                    <th class="form-label">Male</th>
+                                    <th class="form-label">Female</th>
+                                    <th class="form-label">Total</th>
+                                </tr>
+                                <tr>
+                                    <th class="form-label">Permanent Employees</th>
+                                    <td><input type="number" step="0.01" id="torpew" name="torpew[]" class="form-control"></td>
+                                    <td><input type="number" step="0.01" id="torpew" name="torpew[]" class="form-control"></td>
+                                    <td><input type="number" step="0.01" id="torpew" name="torpew[]" class="form-control"></td>
+                                    <td><input type="number" step="0.01" id="torpew" name="torpew[]" class="form-control"></td>
+                                    <td><input type="number" step="0.01" id="torpew" name="torpew[]" class="form-control"></td>
+                                    <td><input type="number" step="0.01" id="torpew" name="torpew[]" class="form-control"></td>
+                                    <td><input type="number" step="0.01" id="torpew" name="torpew[]" class="form-control"></td>
+                                    <td><input type="number" step="0.01" id="torpew" name="torpew[]" class="form-control"></td>
+                                    <td><input type="number" step="0.01" id="torpew" name="torpew[]" class="form-control"></td>
+                                </tr>
+                                <tr>
+                                    <th class="form-label">Permanent Workers</th>
+                                    <td><input type="number" step="0.01" id="torpew" name="torpew[]" class="form-control"></td>
+                                    <td><input type="number" step="0.01" id="torpew" name="torpew[]" class="form-control"></td>
+                                    <td><input type="number" step="0.01" id="torpew" name="torpew[]" class="form-control"></td>
+                                    <td><input type="number" step="0.01" id="torpew" name="torpew[]" class="form-control"></td>
+                                    <td><input type="number" step="0.01" id="torpew" name="torpew[]" class="form-control"></td>
+                                    <td><input type="number" step="0.01" id="torpew" name="torpew[]" class="form-control"></td>
+                                    <td><input type="number" step="0.01" id="torpew" name="torpew[]" class="form-control"></td>
+                                    <td><input type="number" step="0.01" id="torpew" name="torpew[]" class="form-control"></td>
+                                    <td><input type="number" step="0.01" id="torpew" name="torpew[]" class="form-control"></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <details class="add_comment_detail">
+                            <summary>Add comments</summary>
+                            <textarea class="detail-control" id="p_torpew_comments" name="p_torpew_comments" placeholder="Enter additional information (if required)"></textarea>
+                        </details>
                     </div>
-                    <div id="torpew" class="responsive-table">
-                      <table id="p_torpew">
-                        <tr>
-                          <th class="form-label" rowspan="2"></th>
-                          <th class="form-label" colspan="3">FY _____<br>(Turnover rate in current<br> FY)</th>
-                          <th class="form-label" colspan="3">FY _____<br>(Turnover rate in<br> previous FY)</th>
-                          <th class="form-label" colspan="3">FY _____<br>(Turnover rate in the year prior to the<br> previous FY)</th>
-                        </tr>
-                        <tr>
-                          <th class="form-label">Male</th>
-                          <th class="form-label">Female</th>
-                          <th class="form-label">Total</th>
-                          <th class="form-label">Male</th>
-                          <th class="form-label">Female</th>
-                          <th class="form-label">Total</th>
-                          <th class="form-label">Male</th>
-                          <th class="form-label">Female</th>
-                          <th class="form-label">Total</th>
-                        </tr>
-                        <tr>
-                          <th class="form-label">Permanent Employees</th>
-                          <td><input type="number" step="0.01" id="torpew" name="torpew[]" class="form-control"></td>
-                          <td><input type="number" step="0.01" id="torpew" name="torpew[]" class="form-control"></td>
-                          <td><input type="number" step="0.01" id="torpew" name="torpew[]" class="form-control"></td>
-                          <td><input type="number" step="0.01" id="torpew" name="torpew[]" class="form-control"></td>
-                          <td><input type="number" step="0.01" id="torpew" name="torpew[]" class="form-control"></td>
-                          <td><input type="number" step="0.01" id="torpew" name="torpew[]" class="form-control"></td>
-                          <td><input type="number" step="0.01" id="torpew" name="torpew[]" class="form-control"></td>
-                          <td><input type="number" step="0.01" id="torpew" name="torpew[]" class="form-control"></td>
-                          <td><input type="number" step="0.01" id="torpew" name="torpew[]" class="form-control"></td>
-                        </tr>
-                        <tr>
-                          <th class="form-label">Permanent Workers</th>
-                          <td><input type="number" step="0.01" id="torpew" name="torpew[]" class="form-control"></td>
-                          <td><input type="number" step="0.01" id="torpew" name="torpew[]" class="form-control"></td>
-                          <td><input type="number" step="0.01" id="torpew" name="torpew[]" class="form-control"></td>
-                          <td><input type="number" step="0.01" id="torpew" name="torpew[]" class="form-control"></td>
-                          <td><input type="number" step="0.01" id="torpew" name="torpew[]" class="form-control"></td>
-                          <td><input type="number" step="0.01" id="torpew" name="torpew[]" class="form-control"></td>
-                          <td><input type="number" step="0.01" id="torpew" name="torpew[]" class="form-control"></td>
-                          <td><input type="number" step="0.01" id="torpew" name="torpew[]" class="form-control"></td>
-                          <td><input type="number" step="0.01" id="torpew" name="torpew[]" class="form-control"></td>
-                        </tr>
-                      </table>
-                    </div>
-                  </div>
-                  <!-- Turnover rate for permanent employees & workers (For past 3 years) End -->
+                    <!--20 Turnover rate for permanent employees & workers (For past 3 years) End -->
                 </div>
-                <!-- Employees END -->
+                <!-- EMPLOYEES END -->
         
                 <!-------------------------------------------------------------------------------------------------------------------------------------------------->
                 <!--                                                                                                                                              -->
@@ -741,50 +771,54 @@
         
                 <!-- Names of holding / subsidiary / associate companies / joint ventures START -->
                 <div class="bold_border_container">
-                  <div class="mb-3">
-                    <div class="policy">
-                      <h3><label class="form-label"><span style="color: ;">V.</span>&nbsp;&nbsp;&nbsp;<u>Holding, Subsidiary and Associate Companies (including joint ventures)</u></label><h3>
-                    </div> 
-                  </div>
-                  <!-- (a) Names of holding / subsidiary / associate companies / joint ventures Start -->
-                  <div class="mb-3">
-                    <div class="policy">
-                      <label for="holding" class="form-label">21. &nbsp;(a) Names of holding / subsidiary / associate companies / joint ventures</label>
+                    <div class="mb-3">
+                        <div class="policy">
+                            <h3><label class="form-label"><span style="color: ;">V.</span>&nbsp;&nbsp;&nbsp;<u>Holding, Subsidiary and Associate Companies (including joint ventures)</u></label><h3>
+                        </div> 
                     </div>
-                    <div id="holding" class="responsive-table">
-                      <table id="p_holding">
-                        <thead>
-                          <tr>
-                            <th class="form-label">S.No.</th>
-                            <th class="form-label">Name of the holding &ensp;/ subsidiary / associate &emsp;companies / joint ventures (A)</th>
-                            <th class="form-label">Indicate whether holding/ Subsidiary/ Associate/ Joint Venture</th>
-                            <th class="form-label">% of shares held by listed entity</th>
-                            <th class="form-label">Does the entity indicated at column A, participate in the Business Responsibility initiatives of the listed entity? (Yes/No) </th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td style="width:5%;"><input type="number" id="holding" id="p_holding" name="holding[]" class="table-control" value="1" readonly></td>
-                            <td><input type="text" id="holding" name="holding[]" class="form-control"></td>
-                            <td><input type="text" id="holding" name="holding[]" class="form-control"></td>
-                            <td>
-                                </br><input type="text" id="holding1" name="holding[]" class="form-control">
-                                <p id="holdingValidationMessage" style="color: red;"></p>
-                            </td>
-                            <td><input type="text" id="holding" name="holding[]" class="form-control"></td>
-                          </tr>
-                        <tbody>
-                      </table>
-                      <div>
-                        <input type="number" id="indexInput_holding" placeholder="Enter S.No.">
-                        <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex('holding')">Add S.No.</button>
-                        <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow('holding')">Remove S.No.</button>
-                        <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow('holding')">Add Row</button>
-                        <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow('holding')">Remove Row</button>
-                      </div>
-                    </div>  
-                  </div>
-                  <!-- (a) Names of holding / subsidiary / associate companies / joint ventures End -->
+                    <!-- (a) Names of holding / subsidiary / associate companies / joint ventures Start -->
+                    <div class="mb-3">
+                        <div class="policy">
+                            <label for="holding" class="form-label">21. &nbsp;(a) Names of holding / subsidiary / associate companies / joint ventures</label>
+                        </div>
+                        <div id="holding" class="responsive-table">
+                            <table id="p_holding">
+                                <thead>
+                                    <tr>
+                                        <th class="form-label">S.No.</th>
+                                        <th class="form-label">Name of the holding &ensp;/ subsidiary / associate &emsp;companies / joint ventures (A)</th>
+                                        <th class="form-label">Indicate whether holding/ Subsidiary/ Associate/ Joint Venture</th>
+                                        <th class="form-label">% of shares held by listed entity</th>
+                                        <th class="form-label">Does the entity indicated at column A, participate in the Business Responsibility initiatives of the listed entity? (Yes/No) </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td style="width:5%;"><input type="number" id="holding" id="p_holding" name="holding[]" class="table-control" value="1" readonly></td>
+                                        <td><input type="text" id="holding" name="holding[]" class="form-control"></td>
+                                        <td><input type="text" id="holding" name="holding[]" class="form-control"></td>
+                                        <td>
+                                            </br><input type="text" id="holding1" name="holding[]" class="form-control">
+                                            <p id="holdingValidationMessage" style="color: red;"></p>
+                                        </td>
+                                        <td><input type="text" id="holding" name="holding[]" class="form-control"></td>
+                                    </tr>
+                                <tbody>
+                            </table>
+                            <div>
+                                <input type="number" id="indexInput_holding" placeholder="Enter S.No.">
+                                <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex('holding')">Add S.No.</button>
+                                <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow('holding')">Remove S.No.</button>
+                                <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow('holding')">Add Row</button>
+                                <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow('holding')">Remove Row</button>
+                            </div>
+                        </div>
+                        <details class="add_comment_detail">
+                            <summary>Add comments</summary>
+                            <textarea class="detail-control" id="p_holding_comments" name="p_holding_comments" placeholder="Enter additional information (if required)"></textarea>
+                        </details>
+                    </div>
+                    <!-- (a) Names of holding / subsidiary / associate companies / joint ventures End -->
                 </div>
                 <!-- Names of holding / subsidiary / associate companies / joint ventures END -->
 
@@ -796,45 +830,45 @@
 
                 <!-- CSR DETAILS START -->
                 <div class="bold_border_container">
-                  <div class="mb-3">
-                    <div class="policy">
-                      <h3><label class="form-label"><span style="color: ;">VI.</span>&nbsp;&nbsp;&nbsp;<u>CSR Details</u></label><h3>
+                    <div class="mb-3">
+                        <div class="policy">
+                            <h3><label class="form-label"><span style="color: ;">VI.</span>&nbsp;&nbsp;&nbsp;<u>CSR Details</u></label><h3>
+                        </div> 
+                    </div>
+                    <div class="mb-3">
+                        <div class="policy">
+                            <label for="csr_act" class="form-label">22. (i) Whether CSR is applicable as per section 135 of Companies Act, 2013:</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="csr_act" id="csr_act_yes" value="yes" required>
+                            <label class="form-check-label form-label" for="csr_act_yes">Yes</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="csr_act" id="csr_act_no" value="no" required>
+                            <label class="form-check-label form-label" for="csr_act_no">No</label>
+                        </div>
+                    </div>
+                    <!-- (i) Whether CSR is applicable as per section 135 of Companies Act, 2013: (Yes/No) End -->
+
+                    <!-- (ii) Turnover (in Rs.) Start -->
+                    <div class="mb-3">
+                        <div class="policy">
+                            <label for="csr_turnover" class="form-label">(ii) Turnover (in Rs.)</label>
+                        </div>
+                        <input type="text" class="form-control" id="csr_turnover" name="csr_turnover" placeholder="Enter the Turnover (in Rs.)" required>
+                        <p id="csr_turnoverValidationMessage" style="color: red;"></p>
                     </div> 
-                  </div>
-                  <div class="mb-3">
-                    <div class="policy">
-                        <label for="csr_act" class="form-label">(i) Whether CSR is applicable as per section 135 of Companies Act, 2013:</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="csr_act" id="csr_act_yes" value="yes" required>
-                        <label class="form-check-label form-label" for="csr_act_yes">Yes</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="csr_act" id="csr_act_no" value="no" required>
-                        <label class="form-check-label form-label" for="csr_act_no">No</label>
-                    </div>
-                  </div>
-                  <!-- (i) Whether CSR is applicable as per section 135 of Companies Act, 2013: (Yes/No) End -->
+                    <!-- (ii) Turnover (in Rs.) End -->
 
-                  <!-- (ii) Turnover (in Rs.) Start -->
-                  <div class="mb-3">
-                    <div class="policy">
-                      <label for="csr_turnover" class="form-label">(ii) Turnover (in Rs.)</label>
+                    <!-- (iii) Net worth (in Rs.) Start -->
+                    <div class="mb-3">
+                        <div class="policy">
+                        <label for="csr_networth" class="form-label">(iii) Net worth (in Rs.)</label>
                     </div>
-                    <input type="text" class="form-control" id="csr_turnover" name="csr_turnover" placeholder="Enter the Turnover (in Rs.)" required>
-                    <p id="csr_turnoverValidationMessage" style="color: red;"></p>
-                  </div> 
-                   <!-- (ii) Turnover (in Rs.) End -->
-
-                  <!-- (iii) Net worth (in Rs.) Start -->
-                  <div class="mb-3">
-                    <div class="policy">
-                      <label for="csr_networth" class="form-label">(iii) Net worth (in Rs.)</label>
+                        <input type="text" class="form-control" id="csr_networth" name="csr_networth" placeholder="Enter Net worth (in Rs.)" required>
+                        <p id="csr_networthValidationMessage" style="color: red;"></p>
                     </div>
-                    <input type="text" class="form-control" id="csr_networth" name="csr_networth" placeholder="Enter Net worth (in Rs.)" required>
-                    <p id="csr_networthValidationMessage" style="color: red;"></p>
-                  </div>
-                  <!-- (iii) Net worth (in Rs) End -->
+                    <!-- (iii) Net worth (in Rs) End -->
                 </div>
                 <!-- CSR DETAILS END -->
         
@@ -848,11 +882,11 @@
                 <div class="bold_border_container">
                     <div class="mb-3">
                         <div class="policy">
-                            <h3><label class="form-label"><span style="color: ;">VII.</span>&nbsp;&nbsp;&nbsp;<u>Transparency and Disclosures Compliances</u></label><h3>
+                            <h3><label class="form-label"><span style="color: ;">VII.</span>&nbsp;&nbsp;&nbsp;<u>Transparency and Disclosures Compliances</u></label></h3>
                         </div>
                     </div>
 
-                    <!-- Grievance redressal Start -->
+                    <!--23-Grievance redressal Start -->
                     <div class="mb-3">
                         <div class="policy">
                             <label for="gre" class="form-label">23. Complaints/Grievances on any of the principles (Principles 1 to 9) under the National
@@ -875,161 +909,81 @@
                                     <th class="form-label">Remarks</th>
                                 </tr>
                                 <tr>
-                                    <th class="form-label" id="gre" name="gre[]">Customers</th>
-                                    <td></br>
-                                        <div class="mb-3">
-                                            <select class="form-select" id="gre1" name="gre[]" required>
-                                                <option value="">Select an option</option>
-                                                <option value="Yes">Yes</option>
-                                                <option value="No">No</option>
-                                            </select>
-                                        </div>
-                                        <!--hidden question ( only display if option is yes )-->
-                                        <div class="mb-3 hidden" id="h_gre1"> 
-                                            <textarea class="form-control" id="h_gre1" name="gre[]"></textarea>
-                                        </div>
-                                    </td>
+                                    <th class="form-label" id="gre" name="gre[]">Communities</th>
+                                    <td><textarea id="gre" name="gre[]" class="form-control"></textarea></td>
                                     <td><input type="number" id="gre" name="gre[]" class="form-control"></td>
                                     <td><input type="number" id="gre" name="gre[]" class="form-control"></td>
-                                    <td><textarea id="gre" name="gre[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="gre" name="gre[]" class="form-control"></textarea></td>
                                     <td><input type="number" id="gre" name="gre[]" class="form-control"></td>
                                     <td><input type="number" id="gre" name="gre[]" class="form-control"></td>
                                     <td><textarea id="gre" name="gre[]" class="form-control"></textarea></td>
                                 </tr>
                                 <tr>
-                                    <th class="form-label" id="gre" name="gre[]">Customers</th>
-                                    <td></br>
-                                        <div class="mb-3">
-                                            <select class="form-select" id="gre2" name="gre[]" required>
-                                                <option value="">Select an option</option>
-                                                <option value="Yes">Yes</option>
-                                                <option value="No">No</option>
-                                            </select>
-                                        </div>
-                                        <!--hidden question ( only display if option is yes )-->
-                                        <div class="mb-3 hidden" id="h_gre2"> 
-                                            <textarea class="form-control" id="h_gre2" name="gre[]"></textarea>
-                                        </div>
-                                    </td>
+                                    <th class="form-label" id="gre" name="gre[]">Investors (other than shareholders)</th>
+                                    <td><textarea id="gre" name="gre[]" class="form-control"></textarea></td>
                                     <td><input type="number" id="gre" name="gre[]" class="form-control"></td>
                                     <td><input type="number" id="gre" name="gre[]" class="form-control"></td>
-                                    <td><textarea id="gre" name="gre[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="gre" name="gre[]" class="form-control"></textarea></td>
                                     <td><input type="number" id="gre" name="gre[]" class="form-control"></td>
                                     <td><input type="number" id="gre" name="gre[]" class="form-control"></td>
                                     <td><textarea id="gre" name="gre[]" class="form-control"></textarea></td>
                                 </tr>
                                 <tr>
-                                    <th class="form-label" id="gre" name="gre[]">Customers</th>
-                                    <td></br>
-                                        <div class="mb-3">
-                                            <select class="form-select" id="gre3" name="gre[]" required>
-                                                <option value="">Select an option</option>
-                                                <option value="Yes">Yes</option>
-                                                <option value="No">No</option>
-                                            </select>
-                                        </div>
-                                        <!--hidden question ( only display if option is yes )-->
-                                        <div class="mb-3 hidden" id="h_gre3"> 
-                                            <textarea class="form-control" id="h_gre3" name="gre[]"></textarea>
-                                        </div>
-                                    </td>
+                                    <th class="form-label" id="gre" name="gre[]">Shareholders</th>
+                                    <td><textarea id="gre" name="gre[]" class="form-control"></textarea></td>
                                     <td><input type="number" id="gre" name="gre[]" class="form-control"></td>
                                     <td><input type="number" id="gre" name="gre[]" class="form-control"></td>
-                                    <td><textarea id="gre" name="gre[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="gre" name="gre[]" class="form-control"></textarea></td>
                                     <td><input type="number" id="gre" name="gre[]" class="form-control"></td>
                                     <td><input type="number" id="gre" name="gre[]" class="form-control"></td>
                                     <td><textarea id="gre" name="gre[]" class="form-control"></textarea></td>
                                 </tr>
                                 <tr>
                                     <th class="form-label" id="gre" name="gre[]">Employees and workers</th>
-                                    <td></br>
-                                        <div class="mb-3">
-                                            <select class="form-select" id="gre4" name="gre[]" required>
-                                                <option value="">Select an option</option>
-                                                <option value="Yes">Yes</option>
-                                                <option value="No">No</option>
-                                            </select>
-                                        </div>
-                                        <!--hidden question ( only display if option is yes )-->
-                                        <div class="mb-3 hidden" id="h_gre4"> 
-                                            <textarea class="form-control" id="gre4" name="gre[]"></textarea>
-                                        </div>
-                                        </td>
+                                    <td><textarea id="gre" name="gre[]" class="form-control"></textarea></td>
                                     <td><input type="number" id="gre" name="gre[]" class="form-control"></td>
                                     <td><input type="number" id="gre" name="gre[]" class="form-control"></td>
-                                    <td><textarea id="gre" name="gre[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="gre" name="gre[]" class="form-control"></textarea></td>
                                     <td><input type="number" id="gre" name="gre[]" class="form-control"></td>
                                     <td><input type="number" id="gre" name="gre[]" class="form-control"></td>
                                     <td><textarea id="gre" name="gre[]" class="form-control"></textarea></td>
                                 </tr>
                                 <tr>
                                     <th class="form-label" id="gre" name="gre[]">Customers</th>
-                                    <td></br>
-                                        <div class="mb-3">
-                                            <select class="form-select" id="gre5" name="gre[]" required>
-                                                <option value="">Select an option</option>
-                                                <option value="Yes">Yes</option>
-                                                <option value="No">No</option>
-                                            </select>
-                                        </div>
-                                        <!--hidden question ( only display if option is yes )-->
-                                        <div class="mb-3 hidden" id="h_gre5"> 
-                                            <textarea class="form-control" id="h_gre5" name="gre[]"></textarea>
-                                        </div>
-                                    </td>
+                                    <td><textarea id="gre" name="gre[]" class="form-control"></textarea></td>
                                     <td><input type="number" id="gre" name="gre[]" class="form-control"></td>
                                     <td><input type="number" id="gre" name="gre[]" class="form-control"></td>
-                                    <td><textarea id="gre" name="gre[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="gre" name="gre[]" class="form-control"></textarea></td>
                                     <td><input type="number" id="gre" name="gre[]" class="form-control"></td>
                                     <td><input type="number" id="gre" name="gre[]" class="form-control"></td>
                                     <td><textarea id="gre" name="gre[]" class="form-control"></textarea></td>
                                 </tr>
                                 <tr>
-                                    <th class="form-label" id="gre" name="gre[]">Customers</th>
-                                    <td></br>
-                                        <div class="mb-3">
-                                            <select class="form-select" id="gre6" name="gre[]" required>
-                                                <option value="">Select an option</option>
-                                                <option value="Yes">Yes</option>
-                                                <option value="No">No</option>
-                                            </select>
-                                        </div>
-                                        <!--hidden question ( only display if option is yes )-->
-                                        <div class="mb-3 hidden" id="h_gre6"> 
-                                            <textarea class="form-control" id="h_gre6" name="gre[]"></textarea>
-                                        </div>
-                                    </td>
+                                    <th class="form-label" id="gre" name="gre[]">Value Chain Partners</th>
+                                    <td><textarea id="gre" name="gre[]" class="form-control"></textarea></td>
                                     <td><input type="number" id="gre" name="gre[]" class="form-control"></td>
                                     <td><input type="number" id="gre" name="gre[]" class="form-control"></td>
-                                    <td><textarea id="gre" name="gre[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="gre" name="gre[]" class="form-control"></textarea></td>
                                     <td><input type="number" id="gre" name="gre[]" class="form-control"></td>
                                     <td><input type="number" id="gre" name="gre[]" class="form-control"></td>
                                     <td><textarea id="gre" name="gre[]" class="form-control"></textarea></td>
                                 </tr>
                                 <tr>
-                                    <th class="form-label" id="gre" name="gre[]">Customers</th>
-                                    <td></br>
-                                        <div class="mb-3">
-                                            <select class="form-select" id="gre7" name="gre[]" required>
-                                                <option value="">Select an option</option>
-                                                <option value="Yes">Yes</option>
-                                                <option value="No">No</option>
-                                            </select>
-                                        </div>
-                                        <!--hidden question ( only display if option is yes )-->
-                                        <div class="mb-3 hidden" id="h_gre6"> 
-                                            <textarea class="form-control" id="h_gre7" name="gre[]"></textarea>
-                                        </div>
-                                    </td>
+                                    <th class="form-label" id="gre" name="gre[]">Other (please specify)</th>
+                                    <td><textarea id="gre" name="gre[]" class="form-control"></textarea></td>
                                     <td><input type="number" id="gre" name="gre[]" class="form-control"></td>
                                     <td><input type="number" id="gre" name="gre[]" class="form-control"></td>
-                                    <td><textarea id="gre" name="gre[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="gre" name="gre[]" class="form-control"></textarea></td>
                                     <td><input type="number" id="gre" name="gre[]" class="form-control"></td>
                                     <td><input type="number" id="gre" name="gre[]" class="form-control"></td>
                                     <td><textarea id="gre" name="gre[]" class="form-control"></textarea></td>
                                 </tr>
                             </table>
                         </div>
+                        <details class="add_comment_detail">
+                            <summary>Add comments</summary>
+                            <textarea class="detail-control" id="p_gre_comments" name="p_gre_comments" placeholder="Enter additional information (if required)"></textarea>
+                        </details>
                     </div>
                     <!-- Grievance redressal End -->
 
@@ -1072,7 +1026,11 @@
                                 <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow('overview')">Add Row</button>
                                 <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow('overview')">Remove Row</button>
                             </div>
-                        </div>  
+                        </div>
+                        <details class="add_comment_detail">
+                            <summary>Add comments</summary>
+                            <textarea class="detail-control" id="p_overview_comments" name="p_overview_comments" placeholder="Enter additional information (if required)"></textarea>
+                        </details>
                     </div>
                     <!-- Overview of the entity’s material responsible business conduct issues End -->
                 </div>
@@ -1080,14 +1038,14 @@
 
                 <!-- Add this part at the end of your form -->
                 <div class="mb-3">
-                  <!-- <button type="button" class="btn btn-primary" onclick="printReview()">Review Form</button> -->
-                  <button type="submit" class="btn btn-primary" onclick="return confirmSubmission()">Submit</button>
+                    <!-- <button type="button" class="btn btn-primary" onclick="printReview()">Review Form</button> -->
+                    <button type="submit" class="btn btn-primary" onclick="return confirmSubmission()">Submit</button>
                 </div>
             </form>
         </div>
  
         <script src="sec_A.js"></script>
-        <script src="sec_A_form_submit_validation.js"></script> 
+        <script src="sec_A_form_submit_validation.js"></script>
   
         <!-------------------------------------------------------------------------------------------------------------------------------------------------->
         <!--                                                                                                                                              -->
@@ -1097,34 +1055,34 @@
     
         <!-- FOOTER START -->
         <footer class="footer">
-           <div class="row">
-            <div class="column">
-              <h4>About Us</h4>
-              <p> Christ University Sustainable development and Research group</p>
+            <div class="row">
+                <div class="column">
+                    <h4>About Us</h4>
+                    <p> Christ University Sustainable development and Research group</p>
+                </div>
+                <div class="column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> Sustainable Goals</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> Contact us</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> About us</a></li>
+                        </ul>
+                </div>
+                <div class="column">
+                    <h4>Connect with Us</h4>
+                    <ul class="social-icons">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="column">
-              <h4>Quick Links</h4>
-              <ul>
-                <li><a href="#"><i class="fa fa-angle-right"></i> Sustainable Goals</a></li>
-                <li><a href="#"><i class="fa fa-angle-right"></i> Contact us</a></li>
-                <li><a href="#"><i class="fa fa-angle-right"></i> About us</a></li>
-              </ul>
-            </div>
-            <div class="column">
-              <h4>Connect with Us</h4>
-              <ul class="social-icons">
-                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-              </ul>
-            </div>
-          </div>
-          <p class="copyright">© 2023 All Rights Reserved</p>
+            <p class="copyright">© 2023 All Rights Reserved</p>
         </footer>
         <!-- FOOTER END -->
 
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-      </body>
+    </body>
 </html>

@@ -488,71 +488,10 @@ validateTurnoverById("csr_networth", "csr_networthValidationMessage");
 
 /* ************************************************************************************************************************************ *
 /*                                                                                                                                      */
-/*                                             VIII. Transparency and Disclosures Compliances                                           */
+/*                                             VII. Transparency and Disclosures Compliances                                            */
 /*                                                                                                                                      */
 /* ************************************************************************************************************************************ */  
-document.getElementById('gre1').addEventListener('change', function () {
-    var conflictDetails = document.getElementById('h_gre1');
-    if (this.value === 'Yes') {
-        conflictDetails.classList.remove('hidden');
-    } else {
-        conflictDetails.classList.add('hidden');
-    }
-});
 
-document.getElementById('gre2').addEventListener('change', function () {
-    var conflictDetails = document.getElementById('h_gre2');
-    if (this.value === 'Yes') {
-        conflictDetails.classList.remove('hidden');
-    } else {
-        conflictDetails.classList.add('hidden');
-    }
-});
-
-document.getElementById('gre3').addEventListener('change', function () {
-    var conflictDetails = document.getElementById('h_gre3');
-    if (this.value === 'Yes') {
-        conflictDetails.classList.remove('hidden');
-    } else {
-        conflictDetails.classList.add('hidden');
-    }
-});
-
-document.getElementById('gre4').addEventListener('change', function () {
-    var conflictDetails = document.getElementById('h_gre4');
-    if (this.value === 'Yes') {
-        conflictDetails.classList.remove('hidden');
-    } else {
-        conflictDetails.classList.add('hidden');
-    }
-});
-
-document.getElementById('gre5').addEventListener('change', function () {
-    var conflictDetails = document.getElementById('h_gre5');
-    if (this.value === 'Yes') {
-        conflictDetails.classList.remove('hidden');
-    } else {
-        conflictDetails.classList.add('hidden');
-    }
-});
-
-document.getElementById('gre6').addEventListener('change', function () {
-    var conflictDetails = document.getElementById('h_gre6');
-    if (this.value === 'Yes') {
-        conflictDetails.classList.remove('hidden');
-    } else {
-        conflictDetails.classList.add('hidden');
-    }
-});
-
-document.getElementById('gre7').addEventListener('change', function () {
-    var conflictDetails = document.getElementById('h_gre7');
-    if (this.value === 'Yes') {
-        conflictDetails.classList.remove('hidden');
-    } else {
-        conflictDetails.classList.add('hidden');
-    }
-});
 
 /* ************************************************************************************************************************************ */
 /*                                                                                                                                      */

@@ -1,4 +1,4 @@
-* {
+﻿* {
     box-sizing: border-box;
 }
 
@@ -196,6 +196,13 @@ h1 {
 .form-select,
 .form-control {
     width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ced4da;
+}
+
+.form-control1 {
+    width: 8%;
     padding: 10px;
     border-radius: 4px;
     border: 1px solid #ced4da;
@@ -531,4 +538,42 @@ ul.social-icons li:hover a {
     color: black;
     text-decoration: none;
     cursor: pointer;
+}
+
+/*************************************************************************************************************************************/
+/*                                                                                                                                   */
+/*                                              TABLE COMMENTS                                                                       */
+/*                                                                                                                                   */
+/*************************************************************************************************************************************/
+/* Style for the summary within add_comment_detail class */
+.add_comment_detail summary {
+    font-family: 'Montserrat', sans-serif;
+    color: #2d6a4f; /* Change the color as needed */
+    padding-top: 14px; /* Add spacing on top */
+    list-style: none; /* Remove default list-style */
+    cursor: pointer;
+}
+
+    .add_comment_detail summary::-webkit-details-marker {
+        display: none; /* Hide the default arrow icon */
+    }
+
+    /* Adding a '+' symbol before the summary text when add_comment_detail is not expanded */
+    .add_comment_detail summary:before {
+        content: "+ ";
+        color: #2d6a4f; /* Change the color as needed, if you want a different color for the icon */
+    }
+
+/* Changing to a '-' symbol when add_comment_detail is expanded */
+.add_comment_detail[open] summary:before {
+    content: "- ";
+}
+
+.detail-control {
+    width: 100%;
+    padding: 10px;
+    margin-top: 14px;
+    border-radius: 4px;
+    border: 1px solid #ced4da;
+    min-height: 150px;
 }
