@@ -81,99 +81,99 @@
                                 <!-- Policy and management processes Start -->
                                 <tr>
                                     <th class="form-label" style="text-align: left;">1. &nbsp;&nbsp; a. Whether your entity’s policy/policies cover each &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;principle and its core elements of the NGRBCs. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Yes/No)</th>
-                                    <td><input type="text" id="dew" name="dew[]" class="form-control" required></td>
-                                    <td><input type="text" id="dew" name="dew[]" class="form-control" required></td>
-                                    <td><input type="text" id="dew" name="dew[]" class="form-control" required></td>
-                                    <td><input type="text" id="dew" name="dew[]" class="form-control" required></td>
-                                    <td><input type="text" id="dew" name="dew[]" class="form-control" required></td>
-                                    <td><input type="text" id="dew" name="dew[]" class="form-control" required></td>
-                                    <td><input type="text" id="dew" name="dew[]" class="form-control" required></td>
-                                    <td><input type="text" id="dew" name="dew[]" class="form-control" required></td>
-                                    <td><input type="text" id="dew" name="dew[]" class="form-control" required></td>
+                                    <td><textarea id="dew" name="dew[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="dew" name="dew[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="dew" name="dew[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="dew" name="dew[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="dew" name="dew[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="dew" name="dew[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="dew" name="dew[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="dew" name="dew[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="dew" name="dew[]" class="form-control" required></textarea></td>
                                 </tr>
                                 <tr>
                                     <th class="form-label" style="text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b. Has the policy been approved by the Board? &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Yes/No)</th>
-                                    <td><input type="text" id="dew" name="dew[]" class="form-control" required></td>
-                                    <td><input type="text" id="dew" name="dew[]" class="form-control" required></td>
-                                    <td><input type="text" id="dew" name="dew[]" class="form-control" required></td>
-                                    <td><input type="text" id="dew" name="dew[]" class="form-control" required></td>
-                                    <td><input type="text" id="dew" name="dew[]" class="form-control" required></td>
-                                    <td><input type="text" id="dew" name="dew[]" class="form-control" required></td>
-                                    <td><input type="text" id="dew" name="dew[]" class="form-control" required></td>
-                                    <td><input type="text" id="dew" name="dew[]" class="form-control" required></td>
-                                    <td><input type="text" id="dew" name="dew[]" class="form-control" required></td>
+                                    <td><textarea id="dew" name="dew[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="dew" name="dew[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="dew" name="dew[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="dew" name="dew[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="dew" name="dew[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="dew" name="dew[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="dew" name="dew[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="dew" name="dew[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="dew" name="dew[]" class="form-control" required></textarea></td>
                                 </tr>
                                 <tr>
                                     <th class="form-label" style="text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c. Web Link of the Policies, if available</th>
-                                    <td><input type="text" id="dew" name="dew[]" class="form-control" required></td>
-                                    <td><input type="text" id="dew" name="dew[]" class="form-control" required></td>
-                                    <td><input type="text" id="dew" name="dew[]" class="form-control" required></td>
-                                    <td><input type="text" id="dew" name="dew[]" class="form-control" required></td>
-                                    <td><input type="text" id="dew" name="dew[]" class="form-control" required></td>
-                                    <td><input type="text" id="dew" name="dew[]" class="form-control" required></td>
-                                    <td><input type="text" id="dew" name="dew[]" class="form-control" required></td>
-                                    <td><input type="text" id="dew" name="dew[]" class="form-control" required></td>
-                                    <td><input type="text" id="dew" name="dew[]" class="form-control" required></td>
+                                    <td><textarea id="dew" name="dew[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="dew" name="dew[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="dew" name="dew[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="dew" name="dew[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="dew" name="dew[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="dew" name="dew[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="dew" name="dew[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="dew" name="dew[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="dew" name="dew[]" class="form-control" required></textarea></td>
                                 </tr>
                                 <tr>
                                     <th class="form-label" style="text-align: left;">2. &nbsp;&nbsp;&nbsp;Whether the entity has translated the policy into &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;procedures. (Yes / No) </th>
-                                    <td><input type="text" id="dew" name="dew[]" class="form-control" required></td>
-                                    <td><input type="text" id="dew" name="dew[]" class="form-control" required></td>
-                                    <td><input type="text" id="dew" name="dew[]" class="form-control" required></td>
-                                    <td><input type="text" id="dew" name="dew[]" class="form-control" required></td>
-                                    <td><input type="text" id="dew" name="dew[]" class="form-control" required></td>
-                                    <td><input type="text" id="dew" name="dew[]" class="form-control" required></td>
-                                    <td><input type="text" id="dew" name="dew[]" class="form-control" required></td>
-                                    <td><input type="text" id="dew" name="dew[]" class="form-control" required></td>
-                                    <td><input type="text" id="dew" name="dew[]" class="form-control" required></td>
+                                    <td><textarea id="dew" name="dew[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="dew" name="dew[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="dew" name="dew[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="dew" name="dew[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="dew" name="dew[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="dew" name="dew[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="dew" name="dew[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="dew" name="dew[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="dew" name="dew[]" class="form-control" required></textarea></td>
                                 </tr>
                                 <tr>
                                     <th class="form-label" style="text-align: left;">3. &nbsp;&nbsp; Do the enlisted policies extend to your value chain &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;partners? (Yes/No)</th>
-                                    <td><input type="text" id="dew" name="dew[]" class="form-control" required></td>
-                                    <td><input type="text" id="dew" name="dew[]" class="form-control" required></td>
-                                    <td><input type="text" id="dew" name="dew[]" class="form-control" required></td>
-                                    <td><input type="text" id="dew" name="dew[]" class="form-control" required></td>
-                                    <td><input type="text" id="dew" name="dew[]" class="form-control" required></td>
-                                    <td><input type="text" id="dew" name="dew[]" class="form-control" required></td>
-                                    <td><input type="text" id="dew" name="dew[]" class="form-control" required></td>
-                                    <td><input type="text" id="dew" name="dew[]" class="form-control" required></td>
-                                    <td><input type="text" id="dew" name="dew[]" class="form-control" required></td>
+                                    <td><textarea id="dew" name="dew[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="dew" name="dew[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="dew" name="dew[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="dew" name="dew[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="dew" name="dew[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="dew" name="dew[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="dew" name="dew[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="dew" name="dew[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="dew" name="dew[]" class="form-control" required></textarea></td>
                                 </tr>
                                 <tr>
                                     <th class="form-label" style="text-align: left;">4. &nbsp;&nbsp; Name of the national and international &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;codes/certifications/labels/ standards (e.g. Forest &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Stewardship Council, Fairtrade, Rainforest Alliance, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Trustea) standards (e.g. SA 8000, OHSAS, ISO, BIS) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;adopted by your entity and mapped to each principle</th>
-                                    <td><input type="text" id="dew" name="dew[]" class="form-control" required></td>
-                                    <td><input type="text" id="dew" name="dew[]" class="form-control" required></td>
-                                    <td><input type="text" id="dew" name="dew[]" class="form-control" required></td>
-                                    <td><input type="text" id="dew" name="dew[]" class="form-control" required></td>
-                                    <td><input type="text" id="dew" name="dew[]" class="form-control" required></td>
-                                    <td><input type="text" id="dew" name="dew[]" class="form-control" required></td>
-                                    <td><input type="text" id="dew" name="dew[]" class="form-control" required></td>
-                                    <td><input type="text" id="dew" name="dew[]" class="form-control" required></td>
-                                    <td><input type="text" id="dew" name="dew[]" class="form-control" required></td>
+                                    <td><textarea id="dew" name="dew[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="dew" name="dew[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="dew" name="dew[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="dew" name="dew[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="dew" name="dew[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="dew" name="dew[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="dew" name="dew[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="dew" name="dew[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="dew" name="dew[]" class="form-control" required></textarea></td>
                                 </tr>
                                 <tr>
                                     <th class="form-label" style="text-align: left;">5. &nbsp;&nbsp;&nbsp;Specific commitments, goals and targets set by the &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;entity with defined timelines, if any.</th>
-                                    <td><input type="text" id="dew" name="dew[]" class="form-control" required></td>
-                                    <td><input type="text" id="dew" name="dew[]" class="form-control" required></td>
-                                    <td><input type="text" id="dew" name="dew[]" class="form-control" required></td>
-                                    <td><input type="text" id="dew" name="dew[]" class="form-control" required></td>
-                                    <td><input type="text" id="dew" name="dew[]" class="form-control" required></td>
-                                    <td><input type="text" id="dew" name="dew[]" class="form-control" required></td>
-                                    <td><input type="text" id="dew" name="dew[]" class="form-control" required></td>
-                                    <td><input type="text" id="dew" name="dew[]" class="form-control" required></td>
-                                    <td><input type="text" id="dew" name="dew[]" class="form-control" required></td>
+                                    <td><textarea id="dew" name="dew[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="dew" name="dew[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="dew" name="dew[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="dew" name="dew[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="dew" name="dew[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="dew" name="dew[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="dew" name="dew[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="dew" name="dew[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="dew" name="dew[]" class="form-control" required></textarea></td>
                                 </tr>
                                 <tr>
                                     <th class="form-label" style="text-align: left;">6. &nbsp;&nbsp; Performance of the entity against the specific &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;commitments, goals and targets along-with reasons &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;in case the same are not met</th>
-                                    <td><input type="text" id="dew" name="dew[]" class="form-control" required></td>
-                                    <td><input type="text" id="dew" name="dew[]" class="form-control" required></td>
-                                    <td><input type="text" id="dew" name="dew[]" class="form-control" required></td>
-                                    <td><input type="text" id="dew" name="dew[]" class="form-control" required></td>
-                                    <td><input type="text" id="dew" name="dew[]" class="form-control" required></td>
-                                    <td><input type="text" id="dew" name="dew[]" class="form-control" required></td>
-                                    <td><input type="text" id="dew" name="dew[]" class="form-control" required></td>
-                                    <td><input type="text" id="dew" name="dew[]" class="form-control" required></td>
-                                    <td><input type="text" id="dew" name="dew[]" class="form-control" required></td>
+                                    <td><textarea id="dew" name="dew[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="dew" name="dew[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="dew" name="dew[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="dew" name="dew[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="dew" name="dew[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="dew" name="dew[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="dew" name="dew[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="dew" name="dew[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="dew" name="dew[]" class="form-control" required></textarea></td>
                                 </tr>
                                 <!-- Policy and management processes End -->
                         
@@ -183,15 +183,15 @@
                                 </tbody>
                                 <tr>
                                     <th style="text-align: left;" class="form-label" >7. &nbsp;&nbsp; Statement by director responsible for the business &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;responsibility report, highlighting ESG related &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;challenges, targets and achievements (listed entity &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;has flexibility regarding the placement of this &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;disclosure)</th>
-                                    <td colspan="9"><input type="text" id="stmtdir" name="stmtdir" class="form-control" required></td>
+                                    <td colspan="9"><textarea id="stmtdir" name="stmtdir" class="form-control" required></textarea></td>
                                 </tr>
                                 <tr>
                                     <th style="text-align: left;" class="form-label" >8. &nbsp;&nbsp; Details of the highest authority responsible for &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;implementation and oversight of the Business &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Responsibility policy (ies).</th>
-                                    <td colspan="9"><input type="text" id="dthi" name="dthi" class="form-control" required></td>
+                                    <td colspan="9"><textarea id="dthi" name="dthi" class="form-control" required></textarea></td>
                                 </tr>
                                 <tr>
                                     <th style="text-align: left;" class="form-label" >9. &nbsp;&nbsp; Does the entity have a specified Committee of the &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Board/ Director responsible for decision making on &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sustainability related issues? (Yes / No). If yes, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;provide details.</th>
-                                    <td colspan="9"><input type="text" id="enspec" name="enspec" class="form-control" required></td>
+                                    <td colspan="9"><textarea id="enspec" name="enspec" class="form-control" required></textarea></td>
                                 </tr>
                                 <!-- Governance, leadership and oversight End -->
                             </table>
@@ -233,45 +233,45 @@
                                 <tbody>
                                 <tr>
                                     <th style="text-align: left;" class="form-label" id="gre" name="gre[]">Performance against above policies and follow up action</th>
-                                    <td><input type="text" id="gre" name="gre[]" class="form-control" required></td>
-                                    <td><input type="text" id="gre" name="gre[]" class="form-control" required></td>
-                                    <td><input type="text" id="gre" name="gre[]" class="form-control" required></td>
-                                    <td><input type="text" id="gre" name="gre[]" class="form-control" required></td>
-                                    <td><input type="text" id="gre" name="gre[]" class="form-control" required></td>
-                                    <td><input type="text" id="gre" name="gre[]" class="form-control" required></td>
-                                    <td><input type="text" id="gre" name="gre[]" class="form-control" required></td>
-                                    <td><input type="text" id="gre" name="gre[]" class="form-control" required></td>
-                                    <td><input type="text" id="gre" name="gre[]" class="form-control" required></td>
-                                    <td><input type="text" id="gre" name="gre[]" class="form-control" required></td>
-                                    <td><input type="text" id="gre" name="gre[]" class="form-control" required></td>
-                                    <td><input type="text" id="gre" name="gre[]" class="form-control" required></td>
-                                    <td><input type="text" id="gre" name="gre[]" class="form-control" required></td>
-                                    <td><input type="text" id="gre" name="gre[]" class="form-control" required></td>
-                                    <td><input type="text" id="gre" name="gre[]" class="form-control" required></td>
-                                    <td><input type="text" id="gre" name="gre[]" class="form-control" required></td>
-                                    <td><input type="text" id="gre" name="gre[]" class="form-control" required></td>
-                                    <td><input type="text" id="gre" name="gre[]" class="form-control" required></td>
+                                    <td><textarea id="gre" name="gre[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="gre" name="gre[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="gre" name="gre[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="gre" name="gre[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="gre" name="gre[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="gre" name="gre[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="gre" name="gre[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="gre" name="gre[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="gre" name="gre[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="gre" name="gre[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="gre" name="gre[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="gre" name="gre[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="gre" name="gre[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="gre" name="gre[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="gre" name="gre[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="gre" name="gre[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="gre" name="gre[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="gre" name="gre[]" class="form-control" required></textarea></td>
                                 </tr>
                                 <tr>
                                     <th style="text-align: left;" class="form-label" id="gre" name="gre[]">Compliance with statutory requirements of relevance to the principles, and, rectification of any non-compliances</th>
-                                    <td><input type="text" id="gre" name="gre[]" class="form-control" required></td>
-                                    <td><input type="text" id="gre" name="gre[]" class="form-control" required></td>
-                                    <td><input type="text" id="gre" name="gre[]" class="form-control" required></td>
-                                    <td><input type="text" id="gre" name="gre[]" class="form-control" required></td>
-                                    <td><input type="text" id="gre" name="gre[]" class="form-control" required></td>
-                                    <td><input type="text" id="gre" name="gre[]" class="form-control" required></td>
-                                    <td><input type="text" id="gre" name="gre[]" class="form-control" required></td>
-                                    <td><input type="text" id="gre" name="gre[]" class="form-control" required></td>
-                                    <td><input type="text" id="gre" name="gre[]" class="form-control" required></td>
-                                    <td><input type="text" id="gre" name="gre[]" class="form-control" required></td>
-                                    <td><input type="text" id="gre" name="gre[]" class="form-control" required></td>
-                                    <td><input type="text" id="gre" name="gre[]" class="form-control" required></td>
-                                    <td><input type="text" id="gre" name="gre[]" class="form-control" required></td>
-                                    <td><input type="text" id="gre" name="gre[]" class="form-control" required></td>
-                                    <td><input type="text" id="gre" name="gre[]" class="form-control" required></td>
-                                    <td><input type="text" id="gre" name="gre[]" class="form-control" required></td>
-                                    <td><input type="text" id="gre" name="gre[]" class="form-control" required></td>
-                                    <td><input type="text" id="gre" name="gre[]" class="form-control" required></td>
+                                    <td><textarea id="gre" name="gre[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="gre" name="gre[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="gre" name="gre[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="gre" name="gre[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="gre" name="gre[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="gre" name="gre[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="gre" name="gre[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="gre" name="gre[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="gre" name="gre[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="gre" name="gre[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="gre" name="gre[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="gre" name="gre[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="gre" name="gre[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="gre" name="gre[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="gre" name="gre[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="gre" name="gre[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="gre" name="gre[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="gre" name="gre[]" class="form-control" required></textarea></td>
                                 </tr>
                             </table>
                         </div>
@@ -297,22 +297,22 @@
                                     <th class="form-label" colspan="1" rowspan="1">P9</th>
                                 </tr>
                                 <tr>
-                                    <td><input type="text" id="question11" name="question11[]" class="form-control" required></td>
-                                    <td><input type="text" id="question11" name="question11[]" class="form-control" required></td>
-                                    <td><input type="text" id="question11" name="question11[]" class="form-control" required></td>
-                                    <td><input type="text" id="question11" name="question11[]" class="form-control" required></td>
-                                    <td><input type="text" id="question11" name="question11[]" class="form-control" required></td>
-                                    <td><input type="text" id="question11" name="question11[]" class="form-control" required></td>
-                                    <td><input type="text" id="question11" name="question11[]" class="form-control" required></td>
-                                    <td><input type="text" id="question11" name="question11[]" class="form-control" required></td>
-                                    <td><input type="text" id="question11" name="question11[]" class="form-control" required></td>
+                                    <td><textarea id="question11" name="question11[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="question11" name="question11[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="question11" name="question11[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="question11" name="question11[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="question11" name="question11[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="question11" name="question11[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="question11" name="question11[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="question11" name="question11[]" class="form-control" required></textarea></td>
+                                    <td><textarea id="question11" name="question11[]" class="form-control" required></textarea></td>
                                 </tr>
                             </table>
                         </div>
                     </div>
                     <!-- Has the entity carried out independent assessment/ evaluation of the working of its policies by an external agency? (Yes/No). If yes, provide name of the agency End -->
                 </div></br></br> 
-                <!--  Q1 to Q11 START -->          
+                <!--  Q1 to Q11 END -->          
 
                 <!-------------------------------------------------------------------------------------------------------------------------------------------------->
                 <!--                                                                                                                                              -->
@@ -342,68 +342,69 @@
                                 </thead>
                                 <tr>
                                     <th class="form-label" style="text-align: left;">The entity does not consider the Principles smaterial to its business (Yes/No) </th>
-                                    <td><input type="text" id="question12" name="question12[]" class="form-control" required></td>
-                                    <td><input type="text" id="question12" name="question12[]" class="form-control" required></td>
-                                    <td><input type="text" id="question12" name="question12[]" class="form-control" required></td>
-                                    <td><input type="text" id="question12" name="question12[]" class="form-control" required></td>
-                                    <td><input type="text" id="question12" name="question12[]" class="form-control" required></td>
-                                    <td><input type="text" id="question12" name="question12[]" class="form-control" required></td>
-                                    <td><input type="text" id="question12" name="question12[]" class="form-control" required></td>
-                                    <td><input type="text" id="question12" name="question12[]" class="form-control" required></td>
-                                    <td><input type="text" id="question12" name="question12[]" class="form-control" required></td>
+                                    <td><textarea type="text" id="question12" name="question12[]" class="form-control" required></textarea></td>
+                                    <td><textarea type="text" id="question12" name="question12[]" class="form-control" required></textarea></td>
+                                    <td><textarea type="text" id="question12" name="question12[]" class="form-control" required></textarea></td>
+                                    <td><textarea type="text" id="question12" name="question12[]" class="form-control" required></textarea></td>
+                                    <td><textarea type="text" id="question12" name="question12[]" class="form-control" required></textarea></td>
+                                    <td><textarea type="text" id="question12" name="question12[]" class="form-control" required></textarea></td>
+                                    <td><textarea type="text" id="question12" name="question12[]" class="form-control" required></textarea></td>
+                                    <td><textarea type="text" id="question12" name="question12[]" class="form-control" required></textarea></td>
+                                    <td><textarea type="text" id="question12" name="question12[]" class="form-control" required></textarea></td>
                                 </tr>
                                 <tr>
                                     <th class="form-label" style="text-align: left;">The entity is not at a stage where it is in a position to formulate and implement the policies on specified principles (Yes/No)</th>
-                                    <td><input type="text" id="question12" name="question12[]" class="form-control" required></td>
-                                    <td><input type="text" id="question12" name="question12[]" class="form-control" required></td>
-                                    <td><input type="text" id="question12" name="question12[]" class="form-control" required></td>
-                                    <td><input type="text" id="question12" name="question12[]" class="form-control" required></td>
-                                    <td><input type="text" id="question12" name="question12[]" class="form-control" required></td>
-                                    <td><input type="text" id="question12" name="question12[]" class="form-control" required></td>
-                                    <td><input type="text" id="question12" name="question12[]" class="form-control" required></td>
-                                    <td><input type="text" id="question12" name="question12[]" class="form-control" required></td>
-                                    <td><input type="text" id="question12" name="question12[]" class="form-control" required></td>
+                                    <td><textarea type="text" id="question12" name="question12[]" class="form-control" required></textarea></td>
+                                    <td><textarea type="text" id="question12" name="question12[]" class="form-control" required></textarea></td>
+                                    <td><textarea type="text" id="question12" name="question12[]" class="form-control" required></textarea></td>
+                                    <td><textarea type="text" id="question12" name="question12[]" class="form-control" required></textarea></td>
+                                    <td><textarea type="text" id="question12" name="question12[]" class="form-control" required></textarea></td>
+                                    <td><textarea type="text" id="question12" name="question12[]" class="form-control" required></textarea></td>
+                                    <td><textarea type="text" id="question12" name="question12[]" class="form-control" required></textarea></td>
+                                    <td><textarea type="text" id="question12" name="question12[]" class="form-control" required></textarea></td>
+                                    <td><textarea type="text" id="question12" name="question12[]" class="form-control" required></textarea></td>
                                 </tr>
                                 <tr>
                                     <th class="form-label" style="text-align: left;">The entity does not have the financial or/human and technical resources available for the task (Yes/No) </th>
-                                    <td><input type="text" id="question12" name="question12[]" class="form-control" required></td>
-                                    <td><input type="text" id="question12" name="question12[]" class="form-control" required></td>
-                                    <td><input type="text" id="question12" name="question12[]" class="form-control" required></td>
-                                    <td><input type="text" id="question12" name="question12[]" class="form-control" required></td>
-                                    <td><input type="text" id="question12" name="question12[]" class="form-control" required></td>
-                                    <td><input type="text" id="question12" name="question12[]" class="form-control" required></td>
-                                    <td><input type="text" id="question12" name="question12[]" class="form-control" required></td>
-                                    <td><input type="text" id="question12" name="question12[]" class="form-control" required></td>
-                                    <td><input type="text" id="question12" name="question12[]" class="form-control" required></td>
+                                    <td><textarea type="text" id="question12" name="question12[]" class="form-control" required></textarea></td>
+                                    <td><textarea type="text" id="question12" name="question12[]" class="form-control" required></textarea></td>
+                                    <td><textarea type="text" id="question12" name="question12[]" class="form-control" required></textarea></td>
+                                    <td><textarea type="text" id="question12" name="question12[]" class="form-control" required></textarea></td>
+                                    <td><textarea type="text" id="question12" name="question12[]" class="form-control" required></textarea></td>
+                                    <td><textarea type="text" id="question12" name="question12[]" class="form-control" required></textarea></td>
+                                    <td><textarea type="text" id="question12" name="question12[]" class="form-control" required></textarea></td>
+                                    <td><textarea type="text" id="question12" name="question12[]" class="form-control" required></textarea></td>
+                                    <td><textarea type="text" id="question12" name="question12[]" class="form-control" required></textarea></td>
                                 </tr>
                                 <tr>
                                     <th class="form-label" style="text-align: left;">It is planned to be done in the next financial year (Yes/No)</th>
-                                    <td><input type="text" id="question12" name="question12[]" class="form-control" required></td>
-                                    <td><input type="text" id="question12" name="question12[]" class="form-control" required></td>
-                                    <td><input type="text" id="question12" name="question12[]" class="form-control" required></td>
-                                    <td><input type="text" id="question12" name="question12[]" class="form-control" required></td>
-                                    <td><input type="text" id="question12" name="question12[]" class="form-control" required></td>
-                                    <td><input type="text" id="question12" name="question12[]" class="form-control" required></td>
-                                    <td><input type="text" id="question12" name="question12[]" class="form-control" required></td>
-                                    <td><input type="text" id="question12" name="question12[]" class="form-control" required></td>
-                                    <td><input type="text" id="question12" name="question12[]" class="form-control" required></td>
+                                    <td><textarea type="text" id="question12" name="question12[]" class="form-control" required></textarea></td>
+                                    <td><textarea type="text" id="question12" name="question12[]" class="form-control" required></textarea></td>
+                                    <td><textarea type="text" id="question12" name="question12[]" class="form-control" required></textarea></td>
+                                    <td><textarea type="text" id="question12" name="question12[]" class="form-control" required></textarea></td>
+                                    <td><textarea type="text" id="question12" name="question12[]" class="form-control" required></textarea></td>
+                                    <td><textarea type="text" id="question12" name="question12[]" class="form-control" required></textarea></td>
+                                    <td><textarea type="text" id="question12" name="question12[]" class="form-control" required></textarea></td>
+                                    <td><textarea type="text" id="question12" name="question12[]" class="form-control" required></textarea></td>
+                                    <td><textarea type="text" id="question12" name="question12[]" class="form-control" required></textarea></td>
                                 </tr>
                                 <tr>
                                     <th class="form-label" style="text-align: left;">Any other reason (please specify) </th>
-                                    <td><input type="text" id="question12" name="question12[]" class="form-control" required></td>
-                                    <td><input type="text" id="question12" name="question12[]" class="form-control" required></td>
-                                    <td><input type="text" id="question12" name="question12[]" class="form-control" required></td>
-                                    <td><input type="text" id="question12" name="question12[]" class="form-control" required></td>
-                                    <td><input type="text" id="question12" name="question12[]" class="form-control" required></td>
-                                    <td><input type="text" id="question12" name="question12[]" class="form-control" required></td>
-                                    <td><input type="text" id="question12" name="question12[]" class="form-control" required></td>
-                                    <td><input type="text" id="question12" name="question12[]" class="form-control" required></td>
-                                    <td><input type="text" id="question12" name="question12[]" class="form-control" required></td>
+                                    <td><textarea type="text" id="question12" name="question12[]" class="form-control" required></textarea></td>
+                                    <td><textarea type="text" id="question12" name="question12[]" class="form-control" required></textarea></td>
+                                    <td><textarea type="text" id="question12" name="question12[]" class="form-control" required></textarea></td>
+                                    <td><textarea type="text" id="question12" name="question12[]" class="form-control" required></textarea></td>
+                                    <td><textarea type="text" id="question12" name="question12[]" class="form-control" required></textarea></td>
+                                    <td><textarea type="text" id="question12" name="question12[]" class="form-control" required></textarea></td>
+                                    <td><textarea type="text" id="question12" name="question12[]" class="form-control" required></textarea></td>
+                                    <td><textarea type="text" id="question12" name="question12[]" class="form-control" required></textarea></td>
+                                    <td><textarea type="text" id="question12" name="question12[]" class="form-control" required></textarea></td>
                                 </tr>
                             </table>
                         </div>
                     </div>
                 </div>
+                <!-- If answer to question (1) above is “No” i.e. not all Principles are covered by a policy, reasons to be stated: End -->
                 <button type="submit" class="btn btn-primary" onclick="return confirmSubmission()">Submit</button>
             </form>
         </div>

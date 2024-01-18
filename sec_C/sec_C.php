@@ -883,16 +883,16 @@
                                     </tr>
                                     <tr>
                                         <th class="form-label">Total</th>
-                                        <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 6)"></td>
-                                        <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 6)"></td>
                                         <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 6)"></td>
                                         <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 6)"></td>
                                         <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 6)"></td>
                                         <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 6)"></td>
+                                        <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" readonly></td>
+                                        <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" readonly></td>
+                                        <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" readonly></td>
+                                        <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" readonly></td>
+                                        <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" readonly></td>
+                                        <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" readonly></td>
                                         <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" readonly></td>
                                     </tr>
                                     <tr>
@@ -928,16 +928,16 @@
                                     </tr>
                                     <tr>
                                         <th class="form-label">Total</th>
-                                        <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 10)"></td>
-                                        <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 10)"></td>
                                         <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 10)"></td>
                                         <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 10)"></td>
                                         <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 10)"></td>
                                         <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 10)"></td>
+                                        <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" readonly></td>
+                                        <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" readonly></td>
+                                        <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" readonly></td>
+                                        <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" readonly></td>
+                                        <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" readonly></td>
+                                        <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" readonly></td>
                                         <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" readonly></td>
                                     </tr>
                                 </table>
@@ -2206,15 +2206,15 @@
                                     </tr>
                                     <tr>
                                         <th align="center" class="form-label">Total</th>
-                                        <td><input type="number" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 6)"></td>
-                                        <td><input type="number" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 6)"></td>
                                         <td><input type="number" id="wageDetails" name="wageDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 6)"></td>
                                         <td><input type="number" id="wageDetails" name="wageDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 6)"></td>
-                                        <td><input type="number" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 6)"></td>
                                         <td><input type="number" id="wageDetails" name="wageDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 6)"></td>
+                                        <td><input type="number" id="wageDetails" name="wageDetails[]" class="form-control" readonly></td>
+                                        <td><input type="number" id="wageDetails" name="wageDetails[]" class="form-control" readonly></td>
+                                        <td><input type="number" id="wageDetails" name="wageDetails[]" class="form-control" readonly></td>
+                                        <td><input type="number" id="wageDetails" name="wageDetails[]" class="form-control" readonly></td>
+                                        <td><input type="number" id="wageDetails" name="wageDetails[]" class="form-control" readonly></td>
+                                        <td><input type="number" id="wageDetails" name="wageDetails[]" class="form-control" readonly></td>
                                         <td><input type="number" id="wageDetails" name="wageDetails[]" class="form-control" readonly></td>
                                     </tr>
                                     <tr>
