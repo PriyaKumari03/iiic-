@@ -117,6 +117,25 @@ for (var year = start; year <= end; year++) {
 }
 document.getElementById("reporting_fin_year").innerHTML = options;
 
+//9-taking value for printing year in other tables
+function updateYearPlaceholders() {
+    // Get the selected fiscal year
+    var selectedYear = document.getElementById("reporting_fin_year").value;
+    var year1 = selectedYear.split(" ")[1].split("-")[0];
+    var year2 = selectedYear.split(" ")[1].split("-")[1];
+
+    // Set the placeholders in the table 20
+    document.getElementById("currentYearPlaceholder").textContent = selectedYear;
+    document.getElementById("prevYearPlaceholder1").textContent = year1 - 1;
+    document.getElementById("prevYearPlaceholder2").textContent = year2 - 1;
+    document.getElementById("yearBeforePrevPlaceholder1").textContent = year1 - 2;
+    document.getElementById("yearBeforePrevPlaceholder2").textContent = year2 - 2;
+    // Set the placeholders in the table 23
+    document.getElementById("currentYearPlaceholder_23").textContent = selectedYear;
+    document.getElementById("prevYearPlaceholder1_23").textContent = year1 - 1;
+    document.getElementById("prevYearPlaceholder2_23").textContent = year2 - 1;
+}
+
 //pdf validation
 document.getElementById('incorporation_certificate').addEventListener('change', function () {
     const fileInput = this;

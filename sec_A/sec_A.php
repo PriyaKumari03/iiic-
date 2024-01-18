@@ -155,7 +155,7 @@
                         <div class="policy">
                             <label for="reporting_fin_year" class="form-label">9. &nbsp;Financial year for which reporting is being done<span style="color: red;"> * </span></label>
                         </div>
-                        <select class="form-control" id="reporting_fin_year" name="reporting_fin_year" required></select>
+                        <select class="form-control" id="reporting_fin_year" name="reporting_fin_year" onchange="updateYearPlaceholders()" required></select>
                     </div>
                     <!--9-Reporting Financial year End -->
 
@@ -713,9 +713,9 @@
                             <table id="p_torpew">
                                 <tr>
                                     <th class="form-label" rowspan="2"></th>
-                                    <th class="form-label" colspan="3">FY _____<br>(Turnover rate in current<br> FY)</th>
-                                    <th class="form-label" colspan="3">FY _____<br>(Turnover rate in<br> previous FY)</th>
-                                    <th class="form-label" colspan="3">FY _____<br>(Turnover rate in the year prior to the<br> previous FY)</th>
+                                    <th class="form-label" colspan="3"> <span id="currentYearPlaceholder"></span><br>(Turnover rate in current<br> FY)</th>
+                                    <th class="form-label" colspan="3">FY <span id="prevYearPlaceholder1"></span>-<span id="prevYearPlaceholder2"></span><br>(Turnover rate in<br> previous FY)</th>
+                                    <th class="form-label" colspan="3">FY <span id="yearBeforePrevPlaceholder1"></span>-<span id="yearBeforePrevPlaceholder2"></span><br>(Turnover rate in the year prior to the<br> previous FY)</th>
                                 </tr>
                                 <tr>
                                     <th class="form-label">Male</th>
@@ -897,8 +897,8 @@
                                 <tr>
                                     <th class="form-label" colspan="1" rowspan="2"> Stakeholder group</br>from whom complaint</br>is received.</th>
                                     <th class="form-label" colspan="1" rowspan="2">Grievance</br>Redressal Mechanism </br> in Place (Yes/No)</br>(If Yes, then </br>provide web-link </br>for grievance redress policy)</th>
-                                    <th class="form-label" colspan="3">FY _____ Current </br>Financial Year</th>
-                                    <th class="form-label" colspan="3">FY _____ Previous </br>Financial Year</th>
+                                    <th class="form-label" colspan="3"><span id="currentYearPlaceholder_23"></span> Current </br>Financial Year</th>
+                                    <th class="form-label" colspan="3">FY <span id="prevYearPlaceholder1_23"></span>-<span id="prevYearPlaceholder2_23"></span> Previous </br>Financial Year</th>
                                 </tr>
                                 <tr>
                                     <th class="form-label">Number of</br>complaints filed</br>during the year</th>
