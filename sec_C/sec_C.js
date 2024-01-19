@@ -70,6 +70,38 @@ document.getElementById('lifeInsuranceCompensationb').addEventListener('change',
     }
 });
 
+//LI 4
+document.getElementById('transitionAssistanceProgram').addEventListener('change', function () {
+    var transitionAssistanceProgramDetails = document.getElementById('transitionAssistanceProgramDetails');
+    if (this.value === 'Yes') {
+        transitionAssistanceProgramDetails.classList.remove('hidden');
+    } else {
+        transitionAssistanceProgramDetails.classList.add('hidden');
+    }
+});
+
+//Principle 5
+
+//EI 4
+document.getElementById('humanRightsResponsible').addEventListener('change', function () {
+    var humanRightsResponsibleDetails = document.getElementById('humanRightsResponsibleDetails');
+    if (this.value === 'Yes') {
+        humanRightsResponsibleDetails.classList.remove('hidden');
+    } else {
+        humanRightsResponsibleDetails.classList.add('hidden');
+    }
+});
+
+//EI 8
+document.getElementById('humanRightsInBusiness').addEventListener('change', function () {
+    var humanRightsInBusinessDetails = document.getElementById('humanRightsInBusinessDetails');
+    if (this.value === 'Yes') {
+        humanRightsInBusinessDetails.classList.remove('hidden');
+    } else {
+        humanRightsInBusinessDetails.classList.add('hidden');
+    }
+});
+
 //Principle 6
 
 //EI 1.2
@@ -189,6 +221,18 @@ document.getElementById('totalscopeAgency').addEventListener('change', function 
         totalscopeAgencyName.classList.remove('hidden');
     } else {
         totalscopeAgencyName.classList.add('hidden');
+    }
+});
+
+//Principle 8
+
+//LI 3a
+document.getElementById('procurementPolicyMarginalizedChoice').addEventListener('change', function () {
+    var procurementPolicyMarginalizedDetails = document.getElementById('procurementPolicyMarginalizedDetails');
+    if (this.value === 'Yes') {
+        procurementPolicyMarginalizedDetails.classList.remove('hidden');
+    } else {
+        procurementPolicyMarginalizedDetails.classList.add('hidden');
     }
 });
 
@@ -1291,6 +1335,23 @@ function addBottomRow(Id) {
     updateSNoValues(Id);
 }
 
+// Function to add a new row at the bottom of the table for tables without serial number
+function addBottomRowNoSno(Id) {
+    const table = document.querySelector(`#${Id} table tbody`);
+    const rows = table.getElementsByTagName("tr");
+    const lastRow = rows[rows.length - 1].cloneNode(true);
+
+    // Clear other input fields in the new row
+    const inputs = lastRow.getElementsByTagName("input");
+    for (let i = 0; i < inputs.length; i++) {
+        inputs[i].value = "";
+    }
+
+    // Add the new row at the bottom
+    table.appendChild(lastRow);
+
+}
+
 // Function to remove a specific row from the table with confirmation
 function removeSpecificRow(Id) {
     const indexInput = document.getElementById(`indexInput_${Id}`);
@@ -1319,6 +1380,19 @@ function removeSpecificRow(Id) {
 
     // Clear the input value after removing the row
     indexInput.value = "";
+}
+
+// Function to remove the last row from the table with confirmation for tables without serial number
+function removeBottomRowNoSno(Id, limit) {
+    const table = document.querySelector(`#${Id} table tbody`);
+    const rows = table.getElementsByTagName("tr");
+
+    if (rows.length > limit) { // Ensure there is more than one row
+        // Ask for confirmation before removing the row
+        if (confirm("Are you sure you want to remove the last row?")) {
+            table.removeChild(rows[rows.length - 1]);
+        }
+    }
 }
 
 // Function to remove the last row from the table with confirmation

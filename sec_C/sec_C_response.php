@@ -151,6 +151,7 @@ try {
                         $workRelatedInjuryRehabilitation_comments = $_POST["p_workRelatedInjuryRehabilitation_comments"];
                             
                         $transitionAssistanceProgram = $_POST["transitionAssistanceProgram"];
+                        $transitionAssistanceProgramDetails = $_POST["transitionAssistanceProgramDetails"];
                         $rdPercentageassesment = implode(', ', $_POST["rdPercentageassesment"]);
                         $rdPercentageassesment_comments = $_POST["p_rdPercentageassesment_comments"];
                         $correctiveactions = $_POST["correctiveactions"];
@@ -176,12 +177,14 @@ try {
                         $remunerationDetails_comments = $_POST['p_remunerationDetails_comments'];
                             
                         $humanRightsResponsible = $_POST['humanRightsResponsible'];
+                        $humanRightsResponsibleDetails = $_POST['humanRightsResponsibleDetails'];
                         $grievanceMechanism = $_POST['grievanceMechanism'];
                         $complaintsDetails = implode(', ', $_POST['complaintsDetails']);
                         $complaintsDetails_comments = $_POST['p_complaintsDetails_comments'];
                            
                         $discriminationProtectionMechanisms = $_POST['discriminationProtectionMechanisms'];
                         $humanRightsInBusiness = $_POST['humanRightsInBusiness'];
+                        $humanRightsInBusinessDetails = $_POST['humanRightsInBusinessDetails'];
                         $assessedPlantPercentage = implode(', ', $_POST['assessedPlantPercentage']);
                         $assessedPlantPercentage_comments = $_POST['p_assessedPlantPercentage_comments'];
                             
@@ -295,7 +298,8 @@ try {
                        $socialImpactActions_comments = $_POST['p_socialImpactActions_comments'];
                        $csrAspirationalDistricts = implode(', ', $_POST['csrAspirationalDistricts']);
                        $csrAspirationalDistricts_comments = $_POST['p_csrAspirationalDistricts_comments'];
-                       $procurementPolicyMarginalized = $_POST['procurementPolicyMarginalized'];
+                       $procurementPolicyMarginalized = $_POST['procurementPolicyMarginalizedChoice'];
+                       $procurementPolicyMarginalizedDetails = $_POST['procurementPolicyMarginalizedDetails'];
                        $intellectualPropertiesBenefits = implode(', ', $_POST['intellectualPropertiesBenefits']);
                        $intellectualPropertiesBenefits_comments = $_POST['p_intellectualPropertiesBenefits_comments'];
                        $correctiveActionsIntellectualProperty = implode(', ', $_POST['correctiveActionsIntellectualProperty']);
@@ -424,9 +428,10 @@ try {
                             '3_27_workRelatedInjuryRehabilitation_comments' => $workRelatedInjuryRehabilitation_comments,
                             
                             '3_28_transitionAssistanceProgram' => $transitionAssistanceProgram,
-                            '3_29_rdPercentageassesment' => $rdPercentageassesment,
-                            '3_29_rdPercentageassesment_comments' => $rdPercentageassesment_comments,
-                            '3_30_correctiveactions' => $correctiveactions,
+                            '3_29_transitionAssistanceProgramDetails' => $transitionAssistanceProgramDetails,
+                            '3_30_rdPercentageassesment' => $rdPercentageassesment,
+                            '3_30_rdPercentageassesment_comments' => $rdPercentageassesment_comments,
+                            '3_31_correctiveactions' => $correctiveactions,
 
                         // Principle 4
                             //ESSENTIAL INDICATORS
@@ -448,25 +453,27 @@ try {
                             '5_3_remunerationDetails_comments' => $remunerationDetails_comments,
                             
                             '5_4_humanRightsResponsible' => $humanRightsResponsible,
-                            '5_5_grievanceMechanism' => $grievanceMechanism,
-                            '5_6_complaintsDetails' => $complaintsDetails,
-                            '5_6_complaintsDetails_comments' => $complaintsDetails_comments,
+                            '5_5_humanRightsResponsibleDetails' => $humanRightsResponsibleDetails,
+                            '5_6_grievanceMechanism' => $grievanceMechanism,
+                            '5_7_complaintsDetails' => $complaintsDetails,
+                            '5_7_complaintsDetails_comments' => $complaintsDetails_comments,
                             
-                            '5_7_discriminationProtectionMechanisms' => $discriminationProtectionMechanisms,
-                            '5_8_humanRightsInBusiness' => $humanRightsInBusiness,
-                            '5_9_assessedPlantPercentage' => $assessedPlantPercentage,
-                            '5_9_assessedPlantPercentage_comments' => $assessedPlantPercentage_comments,
+                            '5_8_discriminationProtectionMechanisms' => $discriminationProtectionMechanisms,
+                            '5_9_humanRightsInBusiness' => $humanRightsInBusiness,
+                            '5_10_humanRightsInBusinessDetails' => $humanRightsInBusinessDetails,
+                            '5_11_assessedPlantPercentage' => $assessedPlantPercentage,
+                            '5_11_assessedPlantPercentage_comments' => $assessedPlantPercentage_comments,
                             
-                            '5_10_correctiveActionsForAssessments' => $correctiveActionsForAssessments,
+                            '5_12_correctiveActionsForAssessments' => $correctiveActionsForAssessments,
                             
                             //LEADERSHIP INDICATORS
-                            '5_11_businessProcessModifications' => $businessProcessModifications,
-                            '5_12_humanRightsDueDiligence' => $humanRightsDueDiligence,
-                            '5_13_premiseAccessibility' => $premiseAccessibility,
+                            '5_13_businessProcessModifications' => $businessProcessModifications,
+                            '5_14_humanRightsDueDiligence' => $humanRightsDueDiligence,
+                            '5_15_premiseAccessibility' => $premiseAccessibility,
                             
-                            '5_14_valueChainAssessment' => $valueChainAssessment,
-                            '5_14_valueChainAssessment_comments' => $valueChainAssessment_comments,
-                            '5_15_correctiveActionsFromAssessments' => $correctiveActionsFromAssessments,
+                            '5_16_valueChainAssessment' => $valueChainAssessment,
+                            '5_16_valueChainAssessment_comments' => $valueChainAssessment_comments,
+                            '5_17_correctiveActionsFromAssessments' => $correctiveActionsFromAssessments,
 
                          // Principle 6
                              //ESSENTIAL INDICATORS   
@@ -569,12 +576,13 @@ try {
                             '8_6_csrAspirationalDistricts' => $csrAspirationalDistricts,
                             '8_6_csrAspirationalDistricts_comments' => $csrAspirationalDistricts_comments,
                             '8_7_procurementPolicyMarginalized' => $procurementPolicyMarginalized,
-                            '8_8_intellectualPropertiesBenefits' => $intellectualPropertiesBenefits,
-                            '8_8_intellectualPropertiesBenefits_comments' => $intellectualPropertiesBenefits_comments,
-                            '8_9_correctiveActionsIntellectualProperty' => $correctiveActionsIntellectualProperty,
-                            '8_9_correctiveActionsIntellectualProperty_comments' => $correctiveActionsIntellectualProperty_comments,
-                            '8_10_csrProjectBeneficiaries' => $csrProjectBeneficiaries,
-                            '8_10_csrProjectBeneficiaries_comments' => $csrProjectBeneficiaries_comments,
+                            '8_8_procurementPolicyMarginalizedDetails' => $procurementPolicyMarginalizedDetails,
+                            '8_9_intellectualPropertiesBenefits' => $intellectualPropertiesBenefits,
+                            '8_9_intellectualPropertiesBenefits_comments' => $intellectualPropertiesBenefits_comments,
+                            '8_10_correctiveActionsIntellectualProperty' => $correctiveActionsIntellectualProperty,
+                            '8_10_correctiveActionsIntellectualProperty_comments' => $correctiveActionsIntellectualProperty_comments,
+                            '8_11_csrProjectBeneficiaries' => $csrProjectBeneficiaries,
+                            '8_11_csrProjectBeneficiaries_comments' => $csrProjectBeneficiaries_comments,
 
                             // Principle 9
                            //ESSENTIAL INDICATORS

@@ -155,9 +155,7 @@ a {
     border: 2px solid #186b38; /* Add this line to make the border solid with the same color */
 }
 .invisible_container {
-    margin: 10px auto;
-    max-width: 100%;
-    padding: 1%;
+    margin-left: 20px;
     background-color: #f1f9f4;
 }
 
@@ -187,6 +185,21 @@ h3 {
 
 .mb-3 {
     margin-bottom: 1.3rem;
+}
+
+.mb-3-sub-last {
+    margin-bottom: 2.15rem; /* Value unifies spacing after last sub question and normal question */
+}
+
+.add-remove-row-btn {
+    font-family: 'Montserrat', sans-serif;
+    color: #2d6a4f;
+}
+
+.add-remove-row-btn-nosno {
+    font-family: 'Montserrat', sans-serif;
+    color: #2d6a4f;
+    margin-top: 10px;
 }
 
 .form-select,
@@ -271,9 +284,10 @@ h3 {
     .button-7:active {
         background-color: #17a2b8;
         border-color: #17a2b8;
-        ;
         box-shadow: none;
     }
+
+
 
 .prin-div {
     display: none;
@@ -294,13 +308,6 @@ table input[type="text"] {
     background-color: transparent;
     width: 100%;
     padding: 5px;
-}
-table input[type="number"][readonly] {
-    background-color: transparent;
-    border: 1px solid #2d6a4f;
-    padding: 5px;
-    width: 100%;
-    font-weight: bold;
 }
 /**table end**/
 /* Table p7 Start */

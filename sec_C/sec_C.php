@@ -54,7 +54,7 @@
         <!-------------------------------------------------------------------------------------------------------------------------> 
         <div class="container">
             <form method="post"  id="myForm" action="" enctype="multipart/form-data" novalidate>
-                <h1>SECTION C : PRINCIPLE WISE PERFORMANCE DISCLOSURE</h1>
+                <h1>SECTION C: PRINCIPLE WISE PERFORMANCE DISCLOSURE</h1>
    
                 <!------------------------------------------------------------------------------------------------------------------------->
                 <!--                                                                                                                     -->
@@ -77,7 +77,7 @@
                         <!--Percentage coverage by training and awareness programmes start-->
                         <div class="mb-3">
                             <div class="policy">
-                                <label for="coverage" class="form-label"><span style="color: red;"> * </span>1. Percentage coverage by training & awareness programmes on any of the Principles during the financial year :</label>
+                                <label for="coverage" class="form-label">1. Percentage coverage by training & awareness programmes on any of the Principles during the financial year:</label>
                             </div>
                             <div id="coverage" class="responsive-table">
                                 <table id="p_coverage">
@@ -129,7 +129,7 @@
                         <!--Details of fines/penalties/punishment/award/compounding fees/settlement amount paid start-->
                         <div class="mb-3">
                             <div class="policy">
-                                <label for="details" class="form-label"><span style="color: red;"> * </span>2. Details of fines / penalties /punishment/ award/ compounding fees/ settlement amount paid in proceedings (by the entity or by directors / KMPs) with regulators/ law enforcement agencies/ judicial institutions, in the financial year:</label>
+                                <label for="details" class="form-label">2. Details of fines/penalties/punishment/award/compounding fees/settlement amount paid in proceedings (by the entity or by directors/KMPs) with regulators/law enforcement agencies/judicial institutions, in the financial year:</label>
                             </div>
                             <div id="details" class="responsive-table">
                                 <table id="p_details">
@@ -209,7 +209,7 @@
                         <!--Details of appeal/revision preferred in cases where monetary or non-monetary actions has been appealed start-->
                         <div class="mb-3">
                             <div class="policy">
-                                <label for="appeal" class="form-label">3. Of the instances disclosed in Question 2 above, details of the Appeal/ Revision preferred in cases where monetary or non-monetary action has been appealed.</label>
+                                <label for="appeal" class="form-label">3. Of the instances disclosed in Question 2 above, details of the Appeal/Revision preferred in cases where monetary or non-monetary action has been appealed.</label>
                             </div>
                             <div id="appeal" class="responsive-table">
                                 <table id="p_appeal">
@@ -230,10 +230,10 @@
                                 </table>
                                 <div>
                                     <input type="number" id="indexInput_appeal" placeholder="Enter S.No.">
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex('appeal')">Add S.No.</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow('appeal')">Remove S.No.</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow('appeal')">Add Row</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow('appeal')">Remove Row</button>
+                                    <button class="add-remove-row-btn" type="button" onclick="addRowAtIndex('appeal')">Add S.No.</button>
+                                    <button class="add-remove-row-btn" type="button" onclick="removeSpecificRow('appeal')">Remove S.No.</button>
+                                    <button class="add-remove-row-btn" type="button" onclick="addBottomRow('appeal')">Add Row</button>
+                                    <button class="add-remove-row-btn" type="button" onclick="removeBottomRow('appeal')">Remove Row</button>
                                 </div>
                             </div>
                             <div class="policy">
@@ -250,14 +250,16 @@
                             <div class="policy">
                                 <label for="antiCorruptionPolicy" class="form-label">4. Does the entity have an anti-corruption or anti-bribery policy? If yes, provide details in brief & if available, provide a web-link to the policy:</label>
                             </div>
-                            <textarea class="form-control" id="antiCorruptionPolicy" name="antiCorruptionPolicy" placeholder="Enter anti-corruption/anti-bribery policy details"></textarea>
+                            <div class="policy">
+                                <textarea class="form-control" id="antiCorruptionPolicy" name="antiCorruptionPolicy" placeholder="Enter anti-corruption/anti-bribery policy details"></textarea>
+                            </div>
                         </div>
                         <!--Does the entity have an anti-corruption or anti-bribery policy - details end-->
 
                         <!--Number of Directors/KMPs/employees/workers against whom disciplinary action was taken start-->
                         <div class="mb-3">
                             <div class="policy">
-                                <label for="disciplinaryAction" class="form-label"><span style="color: red;"> * </span>5. Number of Directors/KMPs/employees/workers against whom disciplinary action was taken by any law enforcement agency for the charges of bribery/ corruption:</label>
+                                <label for="disciplinaryAction" class="form-label">5. Number of Directors/KMPs/employees/workers against whom disciplinary action was taken by any law enforcement agency for the charges of bribery/corruption:</label>
                             </div>
                             <div id="disciplinaryAction" class="responsive-table">
                                 <table id="p_disciplinaryAction">
@@ -340,14 +342,16 @@
                         </div>
                         <!--Details of complaints with regard to conflict of interest end-->
                     
-                        <!--Details of corrective action taken or underway on issues related to fines / penalties / action taken by regulators start-->
+                        <!--Details of corrective action taken or underway on issues related to fines/penalties/action taken by regulators start-->
                         <div class="mb-3">
                             <div class="policy">
-                                <label for="correctiveAction" class="form-label">7. Provide details of any corrective action taken or underway on issues related to fines / penalties / action taken by regulators/ law enforcement agencies/ judicial institutions, on cases of corruption & conflicts of interest:</label>
+                                <label for="correctiveAction" class="form-label">7. Provide details of any corrective action taken or underway on issues related to fines/penalties/action taken by regulators/law enforcement agencies/judicial institutions, on cases of corruption & conflicts of interest:</label>
                             </div>
-                            <textarea class="form-control" id="correctiveAction" name="correctiveAction" placeholder="Enter corrective action details"></textarea>
+                            <div class="policy">
+                                <textarea class="form-control" id="correctiveAction" name="correctiveAction" placeholder="Enter corrective action details"></textarea>
+                            </div>
                         </div>
-                        <!--Details of corrective action taken or underway on issues related to fines / penalties / action taken by regulators end-->
+                        <!--Details of corrective action taken or underway on issues related to fines/penalties/action taken by regulators end-->
                     </div>
 
                     <!------------------------------------------------------------------------------------------------------------------------->
@@ -361,7 +365,7 @@
                         <!--Awareness programmes conducted for value chain partners on any of the Principles start-->
                         <div class="mb-3">
                             <div class="policy">
-                                <label for="awarenessProgrammes" class="form-label"><span style="color: red;"> * </span>1. Awareness programmes conducted for value chain partners on any of the Principles during the financial year:</label>
+                                <label for="awarenessProgrammes" class="form-label">1. Awareness programmes conducted for value chain partners on any of the Principles during the financial year:</label>
                             </div>
                             <div id="awarenessProgrammes" class="responsive-table">
                                 <table id="p_awarenessProgrammes">
@@ -383,10 +387,10 @@
                                 </table>
                                 <div>
                                     <input type="number" id="indexInput_awarenessProgrammes" placeholder="Enter Index">
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex('awarenessProgrammes')">Add S.No.</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow('awarenessProgrammes')">Remove S.No.</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow('awarenessProgrammes')">Add Row</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow('awarenessProgrammes')">Remove Row</button>
+                                    <button class="add-remove-row-btn" type="button" onclick="addRowAtIndex('awarenessProgrammes')">Add S.No.</button>
+                                    <button class="add-remove-row-btn" type="button" onclick="removeSpecificRow('awarenessProgrammes')">Remove S.No.</button>
+                                    <button class="add-remove-row-btn" type="button" onclick="addBottomRow('awarenessProgrammes')">Add Row</button>
+                                    <button class="add-remove-row-btn" type="button" onclick="removeBottomRow('awarenessProgrammes')">Remove Row</button>
                                 </div>
                             </div>
                             <div class="policy">
@@ -398,25 +402,29 @@
                         </div>
                         <!--Awareness programmes conducted for value chain partners on any of the Principles end-->
                 
-                        <!--Does the entity have processes in place to avoid/ manage conflict of interests involving members of the Board? start-->
+                        <!--Does the entity have processes in place to avoid/manage conflict of interests involving members of the Board? start-->
                         <div class="mb-3">
                             <div class="policy">
-                                 <label for="conflictOfInterest" class="form-label"><span style="color: red;"> * </span>2. Does the entity have processes in place to avoid/manage conflict of interests involving members of the Board?(Yes/No). If yes, provide details of the same:</label>
+                                 <label for="conflictOfInterest" class="form-label">2. Does the entity have processes in place to avoid/manage conflict of interests involving members of the Board?(Yes/No). If yes, provide details of the same:</label>
                             </div>
-                            <select class="form-select" id="conflictOfInterest" name="conflictOfInterest" required>
-                                <option value="">Select an option</option>
-                                <option value="Yes">Yes</option>
-                                <option value="No">No</option>
-                            </select>
+                            <div class="policy">
+                                <select class="form-select" id="conflictOfInterest" name="conflictOfInterest" required>
+                                    <option value="">Select an option</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+                            </div>
                         </div>
                         <!--hidden question ( only display if option is yes )-->
                         <div class="mb-3 hidden" id="conflictDetails">
                             <div class="policy">
                                  <label for="conflictDetails" class="form-label">Enter conflict of interest details:</label>
                             </div>
-                            <textarea class="form-control" id="conflictDetails" name="conflictDetails"></textarea>
+                            <div class="policy">
+                                <textarea class="form-control" id="conflictDetails" name="conflictDetails"></textarea>
+                            </div>
                         </div>
-                        <!--Does the entity have processes in place to avoid/ manage conflict of interests involving members of the Board? end-->
+                        <!--Does the entity have processes in place to avoid/manage conflict of interests involving members of the Board? end-->
                     </div>
                     <button type="button" class="btn-primary" onclick="navigate(1)">Next</button>
                 </div>
@@ -428,7 +436,7 @@
                 <!-------------------------------------------------------------------------------------------------------------------------> 
                 <div id="prin2" class="prin-div">
                     <div class="policy">
-                        <h3>PRINCIPLE 2:BUSINESSES SHOULD PROVIDE GOODS AND SERVICES IN A MANNER THAT IS SUSTAINABLE AND SAFE.</h3>
+                        <h3>PRINCIPLE 2: BUSINESSES SHOULD PROVIDE GOODS AND SERVICES IN A MANNER THAT IS SUSTAINABLE AND SAFE.</h3>
                     </div>
 
                     <!------------------------------------------------------------------------------------------------------------------------->
@@ -441,7 +449,7 @@
                         <!--Percentage of R&D and CAPEX investments start-->
                         <div class="mb-3">
                             <div class="policy">
-                                <label for="rdPercentage" class="form-label"><span style="color: red;"> * </span>1. Percentage of R&D & capital expenditure (capex) investments in specific technologies to improve the environmental & social impacts of product & processes to total R&D & capex investments made by the entity in current & previous FY:</label>
+                                <label for="rdPercentage" class="form-label">1. Percentage of R&D & capital expenditure (capex) investments in specific technologies to improve the environmental & social impacts of product & processes to total R&D & capex investments made by the entity in current & previous FY:</label>
                             </div>
                             <div id="rdPercentage" class="responsive-table">
                                 <table id="p_rdPercentage">
@@ -474,81 +482,91 @@
                         </div>
                         <!--Percentage of R&D and CAPEX investments end-->
                 
-                        <!--Does the entity have procedures in place for sustainable sourcing? start-->
+                        <!--Sustainable sourced input details start-->
                         <div class="mb-3">
                             <div class="policy">
-                                <label for="sustainableSourcing2" class="form-label"><span style="color: red;"> * </span>2. a. Does the entity have procedures in place for sustainable sourcing? (Yes/No). Enter the details:</label>
+                                <label for="sustainableSourcing2" class="form-label">2. Sustainably sourced input details:</label>
                             </div>
-                            <textarea class="form-control" id="sustainableSourcing2" name="sustainableSourcing2" placeholder="Enter details"></textarea>
-                        </div>
-                        <!--Does the entity have procedures in place for sustainable sourcing? end-->
-
-                        <!--If yes, what percentage of inputs were sourced sustainably? start-->
-                        <div class="mb-3">
-                            <div class="policy">
-                                 <label for="sustainableSourcingPercentage" class="form-label">2. b. If yes, what percentage of inputs were sourced sustainably?</label>
-                            </div>
-                            <div id="sustainableSourcingPercentage" class="responsive-table">
-                                <table id="p_sustainableSourcingPercentage">
-                                    <thead>
-                                        <tr>
-                                            <th class="form-label">S.No.</th>
-                                            <th class="form-label">Input</th>
-                                            <th class="form-label">% of input sourced sustainably</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td style="width:5%;"><input type="number" id="sustainableSourcingPercentage" id="p_sustainableSourcingPercentage" name="sustainableSourcingPercentage[]" class="table-control" required value="1" readonly></td>
-                                            <td><input type="text" id="sustainableSourcingPercentage" name="sustainableSourcingPercentage[]" class="form-control" ></td>
-                                            <td><input type="text" id="sustainableSourcingPercentage" name="sustainableSourcingPercentage[]" class="form-control" ></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <div>
-                                    <input type="number" id="indexInput_sustainableSourcingPercentage" placeholder="Enter Index">
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex('sustainableSourcingPercentage')">Add S.No.</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow('sustainableSourcingPercentage')">Remove S.No.</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow('sustainableSourcingPercentage')">Add Row</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow('sustainableSourcingPercentage')">Remove Row</button>
+                            <div class="invisible_container">
+                                <div class="mb-3">
+                                    <div class="policy">
+                                        <label for="sustainableSourcing2" class="form-label">a. Does the entity have procedures in place for sustainable sourcing? (Yes/No). Enter the details:</label>
+                                    </div>
+                                    <textarea class="form-control" id="sustainableSourcing2" name="sustainableSourcing2" placeholder="Enter the details"></textarea>
+                                </div>
+                                <div class="mb-3">
+                                    <div class="policy">
+                                         <label for="sustainableSourcingPercentage" class="form-label">b. If yes, what percentage of inputs were sourced sustainably?</label>
+                                    </div>
+                                    <div id="sustainableSourcingPercentage" class="responsive-table">
+                                        <table id="p_sustainableSourcingPercentage">
+                                            <thead>
+                                                <tr>
+                                                    <th class="form-label">S.No.</th>
+                                                    <th class="form-label">Input</th>
+                                                    <th class="form-label">% of input sourced sustainably</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td style="width:5%;"><input type="number" id="sustainableSourcingPercentage" id="p_sustainableSourcingPercentage" name="sustainableSourcingPercentage[]" class="table-control" required value="1" readonly></td>
+                                                    <td><input type="text" id="sustainableSourcingPercentage" name="sustainableSourcingPercentage[]" class="form-control" ></td>
+                                                    <td><input type="text" id="sustainableSourcingPercentage" name="sustainableSourcingPercentage[]" class="form-control" ></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <div>
+                                            <input type="number" id="indexInput_sustainableSourcingPercentage" placeholder="Enter Index">
+                                            <button class="add-remove-row-btn" type="button" onclick="addRowAtIndex('sustainableSourcingPercentage')">Add S.No.</button>
+                                            <button class="add-remove-row-btn" type="button" onclick="removeSpecificRow('sustainableSourcingPercentage')">Remove S.No.</button>
+                                            <button class="add-remove-row-btn" type="button" onclick="addBottomRow('sustainableSourcingPercentage')">Add Row</button>
+                                            <button class="add-remove-row-btn" type="button" onclick="removeBottomRow('sustainableSourcingPercentage')">Remove Row</button>
+                                        </div>
+                                    </div>
+                                    <div class="policy">
+                                        <details class="add_comment_detail">
+                                            <summary>Add comments</summary>
+                                            <textarea class="detail-control" id="p_sustainableSourcingPercentage_comments" name="p_sustainableSourcingPercentage_comments" placeholder="Enter additional information (if required)"></textarea>
+                                        </details>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="policy">
-                                <details class="add_comment_detail">
-                                    <summary>Add comments</summary>
-                                    <textarea class="detail-control" id="p_sustainableSourcingPercentage_comments" name="p_sustainableSourcingPercentage_comments" placeholder="Enter additional information (if required)"></textarea>
-                                </details>
-                            </div>
                         </div>
-                        <!--If yes, what percentage of inputs were sourced sustainably? end-->
+                        <!--Sustainable sourced input details  end-->
                 
                         <!--Processes to safely reclaim products for reusing, recycling and disposing at the end of life start-->
                         <div class="mb-3">
                             <div class="policy">
-                                <label for="reclaimProcesses2" class="form-label"><span style="color: red;"> * </span>3. Describe the processes in place to safely reclaim your products for reusing, recycling & disposing at the end of life, for (a) Plastics (including packaging) (b) E-waste (c) Hazardous waste & (d) Other waste:</label>
+                                <label for="reclaimProcesses2" class="form-label">3. Describe the processes in place to safely reclaim your products for reusing, recycling & disposing at the end of life, for (a) Plastics (including packaging) (b) E-waste (c) Hazardous waste & (d) Other waste:</label>
                             </div>
-                            <textarea id="reclaimProcesses2" name="reclaimProcesses2" class="form-control" placeholder="Enter processes for product reclamation"></textarea>
+                            <div class="policy">
+                                <textarea id="reclaimProcesses2" name="reclaimProcesses2" class="form-control" placeholder="Enter processes for product reclamation"></textarea>
+                            </div>
                         </div>
                         <!--Processes to safely reclaim products for reusing, recycling and disposing at the end of life end-->
 
                         <!--Whether Extended Producer Responsibility (EPR) is applicable to the entity’s activities start-->
                         <div class="mb-3">
                             <div class="policy">
-                                <label for="eprApplicable" class="form-label"><span style="color: red;"> * </span>4. Whether Extended Producer Responsibility (EPR) is applicable to the entity’s activities (Yes/No). If yes, whether the waste collection plan is in line with the Extended Producer Responsibility (EPR) plan submitted to Pollution Control Boards? If not, provide steps taken to address the same:</label>
+                                <label for="eprApplicable" class="form-label">4. Whether Extended Producer Responsibility (EPR) is applicable to the entity’s activities (Yes/No). If yes, whether the waste collection plan is in line with the Extended Producer Responsibility (EPR) plan submitted to Pollution Control Boards? If not, provide steps taken to address the same:</label>
                             </div>
-                            <select class="form-select" id="eprApplicable" name="eprApplicable">
-                                <option value="">Select an option</option>
-                                <option value="Yes">Yes</option>
-                                <option value="No">No</option>
-                                <option value="Still under process">Still under process</option>
-                            </select>
+                            <div class="policy">
+                                <select class="form-select" id="eprApplicable" name="eprApplicable">
+                                    <option value="">Select an option</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                    <option value="Still under process">Still under process</option>
+                                </select>
+                            </div>
                         </div>
                         <!--hidden-->
                         <div class="mb-3 hidden" id="eprCollectionPlan">
                             <div class="policy">
                                 <label for="eprCollectionPlan" class="form-label">Specify the relevant details:</label>
                             </div>
-                            <textarea class="form-control" id="eprCollectionPlan" name="eprCollectionPlan" placeholder="Enter the details"></textarea>
+                            <div class="policy">
+                                <textarea class="form-control" id="eprCollectionPlan" name="eprCollectionPlan" placeholder="Enter the details"></textarea>
+                            </div>
                         </div>
                         <!--Whether Extended Producer Responsibility (EPR) is applicable to the entity’s activities end-->
                     </div>
@@ -560,10 +578,10 @@
                         <div class="policy">
                             <h3 style="text-align: center; border-bottom: 2px solid #2d6a4f; padding-bottom: 15px;">Leadership Indicators</h3>
                         </div>
-                        <!--Life Cycle Perspective / Assessments (LCA) for any of the products or for its services start-->
+                        <!--Life Cycle Perspective/Assessments (LCA) for any of the products or for its services start-->
                         <div class="mb-3">
                             <div class="policy">
-                                 <label for="lcaConducted2" class="form-label">1. Has the entity conducted Life Cycle Perspective / Assessments (LCA) for any of its products or for its services If yes, provide details, i.e. Name of Product /Service, % of total Turnover contributed, Boundary for which the Life Cycle Perspective/Assessment was conducted, whether conducted by external agency:</label>
+                                 <label for="lcaConducted2" class="form-label">1. Has the entity conducted Life Cycle Perspective/Assessments (LCA) for any of its products or for its services If yes, provide details, i.e. Name of Product/Service, % of total Turnover contributed, Boundary for which the Life Cycle Perspective/Assessment was conducted, whether conducted by external agency:</label>
                             </div>
                             <div id="lcaConducted2" class="responsive-table">
                                 <table id="p_lcaConducted2">
@@ -592,10 +610,10 @@
                                 </table>
                                 <div>
                                     <input type="number" id="indexInput_lcaConducted2" placeholder="Enter Index">
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex('lcaConducted2')">Add S.No.</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow('lcaConducted2')">Remove S.No.</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow('lcaConducted2')">Add Row</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow('lcaConducted2')">Remove Row</button>
+                                    <button class="add-remove-row-btn" type="button" onclick="addRowAtIndex('lcaConducted2')">Add S.No.</button>
+                                    <button class="add-remove-row-btn" type="button" onclick="removeSpecificRow('lcaConducted2')">Remove S.No.</button>
+                                    <button class="add-remove-row-btn" type="button" onclick="addBottomRow('lcaConducted2')">Add Row</button>
+                                    <button class="add-remove-row-btn" type="button" onclick="removeBottomRow('lcaConducted2')">Remove Row</button>
                                 </div>
                             </div>
                             <div class="policy">
@@ -605,12 +623,12 @@
                                 </details>
                             </div>
                         </div>
-                        <!--Life Cycle Perspective / Assessments (LCA) for any of the products or for its services end-->
+                        <!--Life Cycle Perspective/Assessments (LCA) for any of the products or for its services end-->
                 
                         <!--Significant social or environmental concerns as identified in the Life Cycle Perspective/Assessments (LCA) start-->
                         <div class="mb-3">
                             <div class="policy">
-                                <label for="concernsMitigation2" class="form-label">2. If there are any significant social or environmental concerns &/or risks arising from production or disposal of your products / services, as identified in the Life Cycle Perspective / Assessments (LCA) or through any other means, briefly describe the same along-with action taken to mitigate the same:</label>
+                                <label for="concernsMitigation2" class="form-label">2. If there are any significant social or environmental concerns &/or risks arising from production or disposal of your products/services, as identified in the Life Cycle Perspective/Assessments (LCA) or through any other means, briefly describe the same along-with action taken to mitigate the same:</label>
                             </div>
                             <div id="concernsMitigation2" class="responsive-table">
                                 <table id="p_concernsMitigation2">
@@ -633,10 +651,10 @@
                                 </table>
                                 <div>
                                     <input type="number" id="indexInput_concernsMitigation2" placeholder="Enter Index">
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex('concernsMitigation2')">Add S.No.</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow('concernsMitigation2')">Remove S.No.</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow('concernsMitigation2')">Add Row</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow('concernsMitigation2')">Remove Row</button>
+                                    <button class="add-remove-row-btn" type="button" onclick="addRowAtIndex('concernsMitigation2')">Add S.No.</button>
+                                    <button class="add-remove-row-btn" type="button" onclick="removeSpecificRow('concernsMitigation2')">Remove S.No.</button>
+                                    <button class="add-remove-row-btn" type="button" onclick="addBottomRow('concernsMitigation2')">Add Row</button>
+                                    <button class="add-remove-row-btn" type="button" onclick="removeBottomRow('concernsMitigation2')">Remove Row</button>
                                 </div>
                             </div>
                             <div class="policy">
@@ -651,7 +669,7 @@
                         <!--Percentage of recycled or reused input material to total material used in production start-->
                         <div class="mb-3">
                             <div class="policy">
-                                <label for="recycledPercentage2" class="form-label"><span style="color: red;"> * </span>3. Percentage of recycled or reused input material to total material (by value) used in production or providing services in current & previous FY:</label>
+                                <label for="recycledPercentage2" class="form-label">3. Percentage of recycled or reused input material to total material (by value) used in production or providing services in current & previous FY:</label>
                             </div>
                             <div id="recycledPercentage2" class="responsive-table">
                                 <table id="p_recycledPercentage2">
@@ -677,10 +695,10 @@
                                 </table>
                                 <div>
                                     <input type="number" id="indexInput_recycledPercentage2" placeholder="Enter Index">
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex('recycledPercentage2')">Add S.No.</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow('recycledPercentage2')">Remove S.No.</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow('recycledPercentage2')">Add Row</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow('recycledPercentage2')">Remove Row</button>
+                                    <button class="add-remove-row-btn" type="button" onclick="addRowAtIndex('recycledPercentage2')">Add S.No.</button>
+                                    <button class="add-remove-row-btn" type="button" onclick="removeSpecificRow('recycledPercentage2')">Remove S.No.</button>
+                                    <button class="add-remove-row-btn" type="button" onclick="addBottomRow('recycledPercentage2')">Add Row</button>
+                                    <button class="add-remove-row-btn" type="button" onclick="removeBottomRow('recycledPercentage2')">Remove Row</button>
                                 </div>
                             </div>
                             <div class="policy">
@@ -783,10 +801,10 @@
                                 </table>
                                 <div>
                                     <input type="number" id="indexInput_reclaimedPercentages2" placeholder="Enter Index">
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex('reclaimedPercentages2')">Add S.No.</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow('reclaimedPercentages2')">Remove S.No.</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow('reclaimedPercentages2')">Add Row</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow('reclaimedPercentages2')">Remove Row</button>
+                                    <button class="add-remove-row-btn" type="button" onclick="addRowAtIndex('reclaimedPercentages2')">Add S.No.</button>
+                                    <button class="add-remove-row-btn" type="button" onclick="removeSpecificRow('reclaimedPercentages2')">Remove S.No.</button>
+                                    <button class="add-remove-row-btn" type="button" onclick="addBottomRow('reclaimedPercentages2')">Add Row</button>
+                                    <button class="add-remove-row-btn" type="button" onclick="removeBottomRow('reclaimedPercentages2')">Remove Row</button>
                                 </div>
                             </div>
                             <div class="policy">
@@ -819,274 +837,278 @@
                         <div class="policy">
                             <h3 style="text-align: center; border-bottom: 2px solid #2d6a4f; padding-bottom: 15px;">Essential Indicators</h3>
                         </div>
-                        <!--Details of measures for the well-being of employees start-->
+                        <!--Employee/Worker well-being details start-->
                         <div class="mb-3">
                             <div class="policy">
-                                <label for="employeeWellbeingDetails" class="form-label"><span style="color: red;"> * </span>1.a Details of measures for the well-being of employees :</label>
+                                <label for="employeeWellbeingDetails" class="form-label">1. Employee/Worker well-being details:</label>
                             </div>
-                            <div id="employeeWellbeingDetails" class="responsive-table">
-                                <table id="p_employeeWellbeingDetails">
-                                    <tr>
-                                        <th class="form-label" rowspan="3">Category</th>
-                                        <th class="form-label" colspan="12">%of employees covered by</th>
-                                    </tr>
-                                    <tr>
-                                        <th class="form-label" rowspan="2">Total employees</th>
-                                        <th class="form-label" colspan="2">Health insurance</th>
-                                        <th class="form-label" colspan="2">Accident insurance</th>
-                                        <th class="form-label" colspan="2">Maternity Benefits</th>
-                                        <th class="form-label" colspan="2">Paternity Benefits</th>
-                                        <th class="form-label" colspan="2">Day-care facilities</th>
-                                    </tr>
-                                    <tr>
-                                        <th class="form-label">Number (B)</th>
-                                        <th class="form-label">%(B/A)</th>
-                                        <th class="form-label">Number (C)</th>
-                                        <th class="form-label">%(C/A)</th>
-                                        <th class="form-label">Number (D)</th>
-                                        <th class="form-label">%(D/A)</th>
-                                        <th class="form-label">Number (E)</th>
-                                        <th class="form-label">%(E/A)</th>
-                                        <th class="form-label">Number (F)</th>
-                                        <th class="form-label">%(F/A)</th>
-                                    </tr>
-                                    <tr>
-                                        <th class="form-label" colspan="12">Permanent employees</th>
-                                    </tr>
-                                    <tr>
-                                        <th class="form-label">Male</th>
-                                        <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 4)"></td>
-                                        <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 4)"></td>
-                                        <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 4)"></td>
-                                        <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 4)"></td>
-                                        <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 4)"></td>
-                                        <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 4)"></td>
-                                        <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" readonly></td>
-                                    </tr>
-                                    <tr>
-                                        <th class="form-label">Female</th>
-                                        <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 5)"></td>
-                                        <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 5)"></td>
-                                        <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 5)"></td>
-                                        <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 5)"></td>
-                                        <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 5)"></td>
-                                        <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 5)"></td>
-                                        <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" readonly></td>
-                                    </tr>
-                                    <tr>
-                                        <th class="form-label">Total</th>
-                                        <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" readonly></td>
-                                    </tr>
-                                    <tr>
-                                        <th class="form-label" colspan="12">Other than Permanent employees</th>
-                                    </tr>
-                                    <tr>
-                                        <th class="form-label">Male</th>
-                                        <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 8)"></td>
-                                        <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 8)"></td>
-                                        <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 8)"></td>
-                                        <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 8)"></td>
-                                        <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 8)"></td>
-                                        <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 8)"></td>
-                                        <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" readonly></td>
-                                    </tr>
-                                    <tr>
-                                        <th class="form-label">Female</th>
-                                        <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 9)"></td>
-                                        <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 9)"></td>
-                                        <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 9)"></td>
-                                        <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 9)"></td>
-                                        <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 9)"></td>
-                                        <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 9)"></td>
-                                        <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" readonly></td>
-                                    </tr>
-                                    <tr>
-                                        <th class="form-label">Total</th>
-                                        <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" readonly></td>
-                                    </tr>
-                                </table>
-                            </div>
-                            <div class="policy">
-                                <details class="add_comment_detail">
-                                    <summary>Add comments</summary>
-                                    <textarea class="detail-control" id="p_employeeWellbeingDetails_comments" name="p_employeeWellbeingDetails_comments" placeholder="Enter additional information (if required)"></textarea>
-                                </details>
+                            <div class="invisible_container">
+                                <div class="mb-3">
+                                    <div class="policy">
+                                        <label for="employeeWellbeingDetails" class="form-label">a. Details of measures for the well-being of employees:</label>
+                                    </div>
+                                    <div id="employeeWellbeingDetails" class="responsive-table">
+                                        <table id="p_employeeWellbeingDetails">
+                                            <tr>
+                                                <th class="form-label" rowspan="3">Category</th>
+                                                <th class="form-label" colspan="12">% of employees covered by</th>
+                                            </tr>
+                                            <tr>
+                                                <th class="form-label" rowspan="2">Total employees</th>
+                                                <th class="form-label" colspan="2">Health insurance</th>
+                                                <th class="form-label" colspan="2">Accident insurance</th>
+                                                <th class="form-label" colspan="2">Maternity Benefits</th>
+                                                <th class="form-label" colspan="2">Paternity Benefits</th>
+                                                <th class="form-label" colspan="2">Day-care facilities</th>
+                                            </tr>
+                                            <tr>
+                                                <th class="form-label">Number (B)</th>
+                                                <th class="form-label">%(B/A)</th>
+                                                <th class="form-label">Number (C)</th>
+                                                <th class="form-label">%(C/A)</th>
+                                                <th class="form-label">Number (D)</th>
+                                                <th class="form-label">%(D/A)</th>
+                                                <th class="form-label">Number (E)</th>
+                                                <th class="form-label">%(E/A)</th>
+                                                <th class="form-label">Number (F)</th>
+                                                <th class="form-label">%(F/A)</th>
+                                            </tr>
+                                            <tr>
+                                                <th class="form-label" colspan="12">Permanent employees</th>
+                                            </tr>
+                                            <tr>
+                                                <th class="form-label">Male</th>
+                                                <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 4)"></td>
+                                                <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 4)"></td>
+                                                <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" readonly></td>
+                                                <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 4)"></td>
+                                                <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" readonly></td>
+                                                <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 4)"></td>
+                                                <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" readonly></td>
+                                                <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 4)"></td>
+                                                <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" readonly></td>
+                                                <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 4)"></td>
+                                                <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" readonly></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="form-label">Female</th>
+                                                <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 5)"></td>
+                                                <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 5)"></td>
+                                                <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" readonly></td>
+                                                <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 5)"></td>
+                                                <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" readonly></td>
+                                                <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 5)"></td>
+                                                <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" readonly></td>
+                                                <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 5)"></td>
+                                                <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" readonly></td>
+                                                <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 5)"></td>
+                                                <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" readonly></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="form-label">Total</th>
+                                                <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 6)"></td>
+                                                <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 6)"></td>
+                                                <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" readonly></td>
+                                                <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 6)"></td>
+                                                <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" readonly></td>
+                                                <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 6)"></td>
+                                                <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" readonly></td>
+                                                <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 6)"></td>
+                                                <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" readonly></td>
+                                                <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 6)"></td>
+                                                <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" readonly></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="form-label" colspan="12">Other than Permanent employees</th>
+                                            </tr>
+                                            <tr>
+                                                <th class="form-label">Male</th>
+                                                <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 8)"></td>
+                                                <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 8)"></td>
+                                                <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" readonly></td>
+                                                <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 8)"></td>
+                                                <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" readonly></td>
+                                                <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 8)"></td>
+                                                <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" readonly></td>
+                                                <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 8)"></td>
+                                                <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" readonly></td>
+                                                <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 8)"></td>
+                                                <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" readonly></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="form-label">Female</th>
+                                                <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 9)"></td>
+                                                <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 9)"></td>
+                                                <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" readonly></td>
+                                                <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 9)"></td>
+                                                <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" readonly></td>
+                                                <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 9)"></td>
+                                                <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" readonly></td>
+                                                <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 9)"></td>
+                                                <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" readonly></td>
+                                                <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 9)"></td>
+                                                <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" readonly></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="form-label">Total</th>
+                                                <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 10)"></td>
+                                                <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 10)"></td>
+                                                <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" readonly></td>
+                                                <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 10)"></td>
+                                                <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" readonly></td>
+                                                <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 10)"></td>
+                                                <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" readonly></td>
+                                                <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 10)"></td>
+                                                <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" readonly></td>
+                                                <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 10)"></td>
+                                                <td><input type="number" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" readonly></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div class="policy">
+                                        <details class="add_comment_detail">
+                                            <summary>Add comments</summary>
+                                            <textarea class="detail-control" id="p_employeeWellbeingDetails_comments" name="p_employeeWellbeingDetails_comments" placeholder="Enter additional information (if required)"></textarea>
+                                        </details>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <div class="policy">
+                                        <label for="workerWellbeingDetails" class="form-label">b. Details of measures for the well-being of workers:</label>
+                                    </div>
+                                    <div id="workerWellbeingDetails" class="responsive-table">
+                                        <table id="p_workerWellbeingDetails">
+                                            <tr>
+                                                <th class="form-label" rowspan="3">Category</th>
+                                                <th class="form-label" colspan="12">% of workers covered by</th>
+                                            </tr>
+                                            <tr>
+                                                <th class="form-label" rowspan="2">Total employees</th>
+                                                <th class="form-label" colspan="2">Health insurance</th>
+                                                <th class="form-label" colspan="2">Accident insurance</th>
+                                                <th class="form-label" colspan="2">Maternity Benefits</th>
+                                                <th class="form-label" colspan="2">Paternity Benefits</th>
+                                                <th class="form-label" colspan="2">Day-care facilities</th>
+                                            </tr>
+                                            <tr>
+                                                <th class="form-label">Number (B)</th>
+                                                <th class="form-label">%(B/A)</th>
+                                                <th class="form-label">Number (C)</th>
+                                                <th class="form-label">%(C/A)</th>
+                                                <th class="form-label">Number (D)</th>
+                                                <th class="form-label">%(D/A)</th>
+                                                <th class="form-label">Number (E)</th>
+                                                <th class="form-label">%(E/A)</th>
+                                                <th class="form-label">Number (F)</th>
+                                                <th class="form-label">%(F/A)</th>
+                                            </tr>
+                                            <tr>
+                                                <th class="form-label" colspan="12">Permanent workers</th>
+                                            </tr>
+                                            <tr>
+                                                <th class="form-label">Male</th>
+                                                <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 4)"></td>
+                                                <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 4)"></td>
+                                                <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
+                                                <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 4)"></td>
+                                                <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
+                                                <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 4)"></td>
+                                                <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
+                                                <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 4)"></td>
+                                                <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
+                                                <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 4)"></td>
+                                                <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="form-label">Female</th>
+                                                <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 5)"></td>
+                                                <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 5)"></td>
+                                                <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
+                                                <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 5)"></td>
+                                                <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
+                                                <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 5)"></td>
+                                                <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
+                                                <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 5)"></td>
+                                                <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
+                                                <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 5)"></td>
+                                                <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="form-label">Total</th>
+                                                <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
+                                                <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
+                                                <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
+                                                <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
+                                                <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
+                                                <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
+                                                <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
+                                                <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
+                                                <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
+                                                <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
+                                                <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="form-label" colspan="12">Other than Permanent workers</th>
+                                            </tr>
+                                            <tr>
+                                                <th class="form-label">Male</th>
+                                                <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 8)"></td>
+                                                <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 8)"></td>
+                                                <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
+                                                <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 8)"></td>
+                                                <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
+                                                <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 8)"></td>
+                                                <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
+                                                <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 8)"></td>
+                                                <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
+                                                <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 8)"></td>
+                                                <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="form-label">Female</th>
+                                                <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 9)"></td>
+                                                <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 9)"></td>
+                                                <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
+                                                <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 9)"></td>
+                                                <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
+                                                <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 9)"></td>
+                                                <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
+                                                <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 9)"></td>
+                                                <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
+                                                <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 9)"></td>
+                                                <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="form-label">Total</th>
+                                                <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
+                                                <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
+                                                <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
+                                                <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
+                                                <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
+                                                <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
+                                                <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
+                                                <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
+                                                <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
+                                                <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
+                                                <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div class="policy">
+                                        <details class="add_comment_detail">
+                                            <summary>Add comments</summary>
+                                            <textarea class="detail-control" id="p_workerWellbeingDetails_comments" name="p_workerWellbeingDetails_comments" placeholder="Enter additional information (if required)"></textarea>
+                                        </details>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <!--Details of measures for the well-being of employees end-->
-
-                        <!--Details of measures for the well-being of workers start-->
-                        <div class="mb-3">
-                            <div class="policy">
-                                <label for="workerWellbeingDetails" class="form-label"><span style="color: red;"> * </span>1.b Details of measures for the well-being of workers :</label>
-                            </div>
-                            <div id="workerWellbeingDetails" class="responsive-table">
-                                <table id="p_workerWellbeingDetails">
-                                    <tr>
-                                        <th class="form-label" rowspan="3">Category</th>
-                                        <th class="form-label" colspan="12">%of workers covered by</th>
-                                    </tr>
-                                    <tr>
-                                        <th class="form-label" rowspan="2">Total employees</th>
-                                        <th class="form-label" colspan="2">Health insurance</th>
-                                        <th class="form-label" colspan="2">Accident insurance</th>
-                                        <th class="form-label" colspan="2">Maternity Benefits</th>
-                                        <th class="form-label" colspan="2">Paternity Benefits</th>
-                                        <th class="form-label" colspan="2">Day-care facilities</th>
-                                    </tr>
-                                    <tr>
-                                        <th class="form-label">Number (B)</th>
-                                        <th class="form-label">%(B/A)</th>
-                                        <th class="form-label">Number (C)</th>
-                                        <th class="form-label">%(C/A)</th>
-                                        <th class="form-label">Number (D)</th>
-                                        <th class="form-label">%(D/A)</th>
-                                        <th class="form-label">Number (E)</th>
-                                        <th class="form-label">%(E/A)</th>
-                                        <th class="form-label">Number (F)</th>
-                                        <th class="form-label">%(F/A)</th>
-                                    </tr>
-                                    <tr>
-                                        <th class="form-label" colspan="12">Permanent workers</th>
-                                    </tr>
-                                    <tr>
-                                        <th class="form-label">Male</th>
-                                        <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 4)"></td>
-                                        <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 4)"></td>
-                                        <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 4)"></td>
-                                        <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 4)"></td>
-                                        <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 4)"></td>
-                                        <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 4)"></td>
-                                        <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
-                                    </tr>
-                                    <tr>
-                                        <th class="form-label">Female</th>
-                                        <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 5)"></td>
-                                        <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 5)"></td>
-                                        <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 5)"></td>
-                                        <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 5)"></td>
-                                        <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 5)"></td>
-                                        <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 5)"></td>
-                                        <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
-                                    </tr>
-                                    <tr>
-                                        <th class="form-label">Total</th>
-                                        <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
-                                    </tr>
-                                    <tr>
-                                        <th class="form-label" colspan="12">Other than Permanent workers</th>
-                                    </tr>
-                                    <tr>
-                                        <th class="form-label">Male</th>
-                                        <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 8)"></td>
-                                        <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 8)"></td>
-                                        <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 8)"></td>
-                                        <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 8)"></td>
-                                        <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 8)"></td>
-                                        <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 8)"></td>
-                                        <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
-                                    </tr>
-                                    <tr>
-                                        <th class="form-label">Female</th>
-                                        <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 9)"></td>
-                                        <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 9)"></td>
-                                        <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 9)"></td>
-                                        <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 9)"></td>
-                                        <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 9)"></td>
-                                        <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 9)"></td>
-                                        <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
-                                    </tr>
-                                    <tr>
-                                        <th class="form-label">Total</th>
-                                        <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
-                                    </tr>
-                                </table>
-                            </div>
-                            <div class="policy">
-                                <details class="add_comment_detail">
-                                    <summary>Add comments</summary>
-                                    <textarea class="detail-control" id="p_workerWellbeingDetails_comments" name="p_workerWellbeingDetails_comments" placeholder="Enter additional information (if required)"></textarea>
-                                </details>
-                            </div>
-                        </div>
-                        <!--Details of measures for the well-being of workers end-->
+                        <!--Employee/Worker well-being details end-->
 
                         <!--Details of retirement benefits start-->
                         <div class="mb-3">
                             <div class="policy">
-                                <label for="retirementBenefitsDetails" class="form-label"><span style="color: red;"> * </span>2. Details of retirement benefits offered to workers & employees, for Current FY & Previous Financial Year:</label>
+                                <label for="retirementBenefitsDetails" class="form-label">2. Details of retirement benefits offered to workers & employees, for Current FY & Previous Financial Year:</label>
                             </div>
                             <div id="retirementBenefitsDetails" class="responsive-table">
                                 <table id="p_retirementBenefitsDetails">
@@ -1131,7 +1153,10 @@
                                         <td><input type="text" id="retirementBenefitsDetails" name="retirementBenefitsDetails[]" class="form-control" ></td>      
                                     </tr>
                                     <tr>
-                                        <th class="form-label">Others-please specify</th>
+                                        <th class="form-label">
+                                            Others - please specify
+                                            <input type="text" id="retirementBenefitsDetails" name="retirementBenefitsDetails[]" class="form-control">
+                                        </th>
                                         <td><input type="text" id="retirementBenefitsDetails" name="retirementBenefitsDetails[]" class="form-control" ></td>
                                         <td><input type="text" id="retirementBenefitsDetails" name="retirementBenefitsDetails[]" class="form-control" ></td>
                                         <td><input type="text" id="retirementBenefitsDetails" name="retirementBenefitsDetails[]" class="form-control" ></td>
@@ -1140,6 +1165,10 @@
                                         <td><input type="text" id="retirementBenefitsDetails" name="retirementBenefitsDetails[]" class="form-control" ></td>
                                     </tr>
                                 </table>
+                                <div>
+                                    <button class="add-remove-row-btn-nosno" type="button" onclick="addBottomRowNoSno('retirementBenefitsDetails')">Add Row</button>
+                                    <button class="add-remove-row-btn-nosno" type="button" onclick="removeBottomRowNoSno('retirementBenefitsDetails', 6)">Remove Row</button>
+                                </div>
                             </div>
                             <div class="policy">
                                 <details class="add_comment_detail">
@@ -1155,7 +1184,9 @@
                             <div class="policy">
                                 <label for="accessibilitySteps" class="form-label">3. Are the premises/offices of the entity accessible to differently-abled employees & workers, as per the requirements of the Rights of Persons with Disabilities Act, 2016? If not, whether any steps are being taken by the entity in this regard:</label>
                             </div>
-                            <textarea id="accessibilitySteps" name="accessibilitySteps" class="form-control" placeholder="Enter the steps being taken"></textarea>
+                            <div class="policy">
+                                <textarea id="accessibilitySteps" name="accessibilitySteps" class="form-control" placeholder="Enter the steps being taken"></textarea>
+                            </div>
                         </div>
                         <!--Accessibility of workplaces end-->
 
@@ -1164,7 +1195,9 @@
                             <div class="policy">
                                 <label for="equalOpportunityLink" class="form-label">4. Does the entity have an equal opportunity policy as per the Rights of Persons with Disabilities Act, 2016? If yes, provide a web link to the policy:</label>
                             </div>
-                            <textarea id="equalOpportunityLink" name="equalOpportunityLink" class="form-control" placeholder="Enter the link"></textarea>
+                            <div class="policy">
+                                <textarea id="equalOpportunityLink" name="equalOpportunityLink" class="form-control" placeholder="Enter the link"></textarea>
+                            </div>
                         </div>
                         <!--Does the entity have an equal opportunity policy as per the Rights of Persons with Disabilities Act, 2016? end-->
 
@@ -1239,11 +1272,11 @@
                                         <td><input type="text" id="grievanceMechanismDetails" name="grievanceMechanismDetails[]" class="form-control" ></td>
                                     </tr>
                                     <tr>
-                                        <th class="form-label">Permanent employees</th>
+                                        <th class="form-label">Permanent Employees</th>
                                         <td><input type="text" id="grievanceMechanismDetails" name="grievanceMechanismDetails[]" class="form-control" ></td>
                                     </tr>
                                     <tr>
-                                        <th class="form-label">other than permanent employees</th>
+                                        <th class="form-label">Other than Permanent Employees</th>
                                         <td><input type="text" id="grievanceMechanismDetails" name="grievanceMechanismDetails[]" class="form-control" ></td>
                                     </tr>
                                 </table>
@@ -1260,7 +1293,7 @@
                         <!--Membership of employees and worker in association(s) or Unions recognised by the listed entity start-->
                         <div class="mb-3">
                             <div class="policy">
-                                <label for="unionMembershipPercentage" class="form-label"><span style="color: red;"> * </span>7. Disclose No. & percentage of Membership of total permanent male & female both categories employees & workers in association(s) or Unions recognized by the listed entity for both current & previous Financial Years:</label>
+                                <label for="unionMembershipPercentage" class="form-label">7. Disclose No. & percentage of Membership of total permanent male & female both categories employees & workers in association(s) or Unions recognized by the listed entity for both current & previous Financial Years:</label>
                             </div>
                             <div id="unionMembershipPercentage" class="responsive-table">
                                 <table id="p_unionMembershipPercentage">
@@ -1270,12 +1303,12 @@
                                         <th class="form-label" colspan="3">FY____Previous Financial Year</th>
                                     </tr>
                                     <tr>
-                                        <th class="form-label">Total employees / workers in respective category (A)</th>
-                                        <th class="form-label">No. of employees / workers in respective category, who are part of association(s) or Union(B)</th>
-                                        <th class="form-label">% (B/A)</th>
-                                        <th class="form-label">Total employees / workers in respective category (C)</th>
-                                        <th class="form-label">No. of employees / workers in respective category, who are part of association(s) or Union(D)</th>
-                                        <th class="form-label">% (D/C)</th>
+                                        <th class="form-label">Total employees/workers in respective category (A)</th>
+                                        <th class="form-label">No. of employees/workers in respective category, who are part of association(s) or Union(B)</th>
+                                        <th class="form-label">%(B/A)</th>
+                                        <th class="form-label">Total employees/workers in respective category (C)</th>
+                                        <th class="form-label">No. of employees/workers in respective category, who are part of association(s) or Union(D)</th>
+                                        <th class="form-label">%(D/C)</th>
                                     </tr>
                                     <tr>
                                         <th class="form-label">Total Permanent Employees</th>
@@ -1364,13 +1397,13 @@
                                     </tr>
                                     <tr>
                                         <th class="form-label">No.(B)</th>
-                                        <th class="form-label">% (B/A)</th>
+                                        <th class="form-label">%(B/A)</th>
                                         <th class="form-label">No.(C)</th>
-                                        <th class="form-label">% (C/A)</th>
+                                        <th class="form-label">%(C/A)</th>
                                         <th class="form-label">No.(E)</th>
-                                        <th class="form-label">% (E/D)</th>
+                                        <th class="form-label">%(E/D)</th>
                                         <th class="form-label">No.(F)</th>
-                                        <th class="form-label">% (F/D)</th>
+                                        <th class="form-label">%(F/D)</th>
                                     </tr>
                                     <tr>
                                         <th class="form-label" colspan="11">Employees</th>
@@ -1565,15 +1598,17 @@
                             <div class="policy">
                                 <label for="healthSafetyManagementSystemChoice" class="form-label">10. Health and safety management system:</label>
                             </div>
-                            <div class="mb-3 invisible_container">
-                                <div class="policy">
-                                    <label for="healthSafetyManagementSystemChoice" class="form-label">a. Whether an occupational health & safety management system has been implemented by the entity? (Yes/ No). If yes, the coverage of such system?</label>
+                            <div class="invisible_container">
+                                <div class="mb-3">
+                                    <div class="policy">
+                                        <label for="healthSafetyManagementSystemChoice" class="form-label">a. Whether an occupational health & safety management system has been implemented by the entity? (Yes/No). If yes, the coverage of such system?</label>
+                                    </div>
+                                    <select id="healthSafetyManagementSystemChoice" name="healthSafetyManagementSystemChoice" class="form-control">
+                                        <option value="">Select an option</option>
+                                        <option value="Yes">Yes</option>
+                                        <option value="No">No</option>
+                                    </select>
                                 </div>
-                                <select id="healthSafetyManagementSystemChoice" name="healthSafetyManagementSystemChoice" class="form-control">
-                                    <option value="">Select an option</option>
-                                    <option value="Yes">Yes</option>
-                                    <option value="No">No</option>
-                                </select>
                                 <!--hidden-->
                                 <div id="healthSafetyManagementSystemDetails" class="mb-3 hidden">
                                     <div class="policy">
@@ -1584,7 +1619,7 @@
                                  
                                 <div class="mb-3">
                                     <div class="policy">
-                                        <label for="workplaceSafetyMeasures2" class="form-label"><br>b. What are the processes used to identify work-related harzards and assess risks on a routine and non-routine basis by the entity? </label>
+                                        <label for="workplaceSafetyMeasures2" class="form-label">b. What are the processes used to identify work-related harzards and assess risks on a routine and non-routine basis by the entity? </label>
                                     </div>
                                     <textarea id="workplaceSafetyMeasures2" name="workplaceSafetyMeasures2" class="form-control" placeholder="Enter the details"></textarea>
                                 </div>
@@ -1592,13 +1627,13 @@
                                     <div class="policy">
                                         <label for="healthSafetyManagementSystem3" class="form-label">c. Whether you have processes for workers to report the work related hazards and to remove themselves from such risks</label>
                                     </div>
-                                    <textarea id="healthSafetyManagementSystem3" name="healthSafetyManagementSystem3" class="form-control" placeholder="Enter details"></textarea>
+                                    <textarea id="healthSafetyManagementSystem3" name="healthSafetyManagementSystem3" class="form-control" placeholder="Enter the details"></textarea>
                                 </div>
-                                <div class="mb-3">
+                                <div class="mb-3-sub-last">
                                     <div class="policy">
                                         <label for="healthSafetyManagementSystem4" class="form-label">d. Do the employees/workers of the entity have access to non-occupational medical and healthcare services?</label>
                                     </div>
-                                    <textarea id="healthSafetyManagementSystem4" name="healthSafetyManagementSystem4" class="form-control" placeholder="Enter details"></textarea>
+                                    <textarea id="healthSafetyManagementSystem4" name="healthSafetyManagementSystem4" class="form-control" placeholder="Enter the details"></textarea>
                                 </div>
                             </div>
                         </div>
@@ -1640,7 +1675,7 @@
                                         <td><input type="text" id="workplaceSafetyMeasures" name="workplaceSafetyMeasures[]" class="form-control" ></td>
                                     </tr>
                                     <tr>
-                                        <th class="form-label" rowspan="2">no.of fatalities</th>
+                                        <th class="form-label" rowspan="2">No.of fatalities</th>
                                         <td align="center" class="form-label">Employees</td>
                                         <td><input type="text" id="workplaceSafetyMeasures" name="workplaceSafetyMeasures[]" class="form-control" ></td>
                                         <td><input type="text" id="workplaceSafetyMeasures" name="workplaceSafetyMeasures[]" class="form-control" ></td>
@@ -1677,7 +1712,9 @@
                             <div class="policy">
                                 <label for="workplaceSafetyMeasures12" class="form-label">12. Describe the measures taken by the entity to ensure a safe & healthy workplace:</label>
                             </div>
-                            <textarea id="workplaceSafetyMeasures12" name="workplaceSafetyMeasures12" class="form-control" placeholder="Enter the measures taken"></textarea>
+                            <div class="policy">
+                                <textarea id="workplaceSafetyMeasures12" name="workplaceSafetyMeasures12" class="form-control" placeholder="Enter the measures taken"></textarea>
+                            </div>
                         </div>
                         <!--Describe the measures taken by the entity to ensure safe and healthy work place end-->
 
@@ -1739,14 +1776,14 @@
                                 <table id="p_assesmentyr">
                                     <tr>
                                         <th class="form-label"></th>
-                                        <th class="form-label">%of your plants and offices that were assessed(by entity or statutory authorities or third parties)</th>
+                                        <th class="form-label">% of your plants and offices that were assessed(by entity or statutory authorities or third parties)</th>
                                     </tr>
                                     <tr>
-                                        <th class="form-label">Health and saftey practies</th>
+                                        <th class="form-label">Health and safety practices</th>
                                         <td><input type="text" id="assesmentyr" name="assesmentyr[]" class="form-control" ></td>
                                     </tr>
                                     <tr>
-                                        <th class="form-label">working conditions</th>
+                                        <th class="form-label">Working conditions</th>
                                         <td><input type="text" id="assesmentyr" name="assesmentyr[]" class="form-control" ></td>
                                     </tr>
                                 </table>
@@ -1765,7 +1802,9 @@
                             <div class="policy">
                                 <label for="workplaceSafetyMeasures15" class="form-label">15. Provide details of any corrective action taken or underway to address safety-related incidents(if any) and on significant risks/concerns arising from assessments of health & safety practices and working conditions</label>
                             </div>
-                            <textarea id="workplaceSafetyMeasures15" name="workplaceSafetyMeasures15" class="form-control" placeholder="Enter the measures taken"></textarea>
+                            <div class="policy">
+                                <textarea id="workplaceSafetyMeasures15" name="workplaceSafetyMeasures15" class="form-control" placeholder="Enter the measures taken"></textarea>
+                            </div>
                         </div>
                         <!--Corrective action taken or underway to address safety-related incidents end-->
                     </div>
@@ -1782,7 +1821,7 @@
                             <div class="policy">
                                 <label for="lifeInsuranceCompensation" class="form-label">1. Does the entity extend any life insurance or any compensatory package in the event of death of (A) Employees  (B) Workers ?</label>
                             </div>
-                            <div class="mb-3 invisible_container">
+                            <div class="invisible_container mb-3-sub-last">
                                 <div class="mb-3">
                                     <div class="policy">
                                         <label for="lifeInsuranceCompensationa" class="form-label">a. Employees</label>
@@ -1825,11 +1864,13 @@
                             <div class="policy">
                                 <label for="statutoryDuesMeasures" class="form-label">2. Provide the measures undertaken by the entity to ensure that statutory dues have been deducted & deposited by the value chain partners:</label>
                             </div>
-                            <textarea id="statutoryDuesMeasures" name="statutoryDuesMeasures" class="form-control" placeholder="Enter measures details"></textarea>
+                            <div class="policy">
+                                <textarea id="statutoryDuesMeasures" name="statutoryDuesMeasures" class="form-control" placeholder="Enter measures details"></textarea>
+                            </div>
                         </div>
                         <!--Measures undertaken by the entity to ensure that statutory dues have been deducted and deposited by the value chain partners end-->
 
-                        <!--Number of employees / workers having suffered high consequence work-related injury / ill-health / fatalities start-->
+                        <!--Number of employees/workers having suffered high consequence work-related injury/ill-health/fatalities start-->
                         <div class="mb-3">
                             <div class="policy">
                                 <label for="workRelatedInjuryRehabilitation" class="form-label">3. Provide the number of employees/workers having suffered high consequence work-related injury/ill-health/fatalities (as reported in Q11 of Essential Indicators above), who have been rehabilitated & placed in suitable employment or whose family members have been placed in suitable employment for both employee & workers categories for current & previous FYs:</label>
@@ -1871,38 +1912,49 @@
                                 </details>
                             </div>
                         </div>
-                        <!--Number of employees / workers having suffered high consequence work-related injury / ill-health / fatalities end-->
+                        <!--Number of employees/workers having suffered high consequence work-related injury/ill-health/fatalities end-->
 
                         <!--Does the entity provide transition assistance programs to facilitate continued employability start-->
                         <div class="mb-3">
                             <div class="policy">
                                 <label for="transitionAssistanceProgram" class="form-label">4. Does the entity provide transition assistance programs to facilitate continued employability & the management of career endings resulting from retirement or termination of employment?</label>
                             </div>
-                            <select id="transitionAssistanceProgram" name="transitionAssistanceProgram" class="form-control">
-                                <option value="">Select an option</option>
-                                <option value="Yes">Yes</option>
-                                <option value="No">No</option>
-                            </select>
+                            <div class="policy">
+                                <select id="transitionAssistanceProgram" name="transitionAssistanceProgram" class="form-control">
+                                    <option value="">Select an option</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!--hidden-->
+                        <div class="mb-3 hidden" id="transitionAssistanceProgramDetails">
+                            <div class="policy">
+                                <label for="transitionAssistanceProgramDetails" class="form-label">Specify the relevant details:</label>
+                            </div>
+                            <div class="policy">
+                                <textarea class="form-control" id="transitionAssistanceProgramDetails" name="transitionAssistanceProgramDetails" placeholder="Enter the details"></textarea>
+                            </div>
                         </div>
                         <!--Does the entity provide transition assistance programs to facilitate continued employability end-->
 
                         <!--Details on assessment of value chain partners start-->
                         <div class="mb-3">
                             <div class="policy">
-                                <label for="rdPercentageassesment" class="form-label"><span style="color: red;"> * </span>5.Details on assessment of value chain partners</label>
+                                <label for="rdPercentageassesment" class="form-label">5.Details on assessment of value chain partners</label>
                             </div>
                             <div id="rdPercentageassesment" class="responsive-table">
                                 <table id="p_rdPercentageassesment">
                                     <tr>
                                         <th class="form-label"></th>
-                                        <th class="form-label">%of value chain partners(by value of business done with such partners)that were assessed</th>
+                                        <th class="form-label">% of value chain partners(by value of business done with such partners)that were assessed</th>
                                     </tr>
                                     <tr>
-                                        <th class="form-label">Health and saftey practies</th>
+                                        <th class="form-label">Health and safety practices</th>
                                         <td><input type="text" id="rdPercentageassesment" name="rdPercentageassesment[]" class="form-control" ></td>
                                     </tr>
                                     <tr>
-                                        <th class="form-label">working conditions</th>
+                                        <th class="form-label">Working conditions</th>
                                         <td><input type="text" id="rdPercentageassesment" name="rdPercentageassesment[]" class="form-control" ></td>
                                     </tr>
                                 </table>
@@ -1916,14 +1968,16 @@
                         </div>
                         <!--Details on assessment of value chain partners end-->
 
-                        <!--Details of any corrective actions taken or underway to address significant risks / concerns arising from assessments of health and safety practices start-->
+                        <!--Details of any corrective actions taken or underway to address significant risks/concerns arising from assessments of health and safety practices start-->
                         <div class="mb-3">
                             <div class="policy">
                                 <label for="correctiveactions" class="form-label">6. Provide details of any corrective actions taken or underway to adderss significant risks/concerns arising from assignments of health and saftey parctices and working conditions of value chain partners</label>
-                                </div>
-                            <textarea id="correctiveactions" name="correctiveactions" class="form-control" placeholder="Enter details" required></textarea>
+                            </div>
+                            <div class="policy">
+                                <textarea id="correctiveactions" name="correctiveactions" class="form-control" placeholder="Enter the details" required></textarea>
+                            </div>
                         </div>
-                        <!--Details of any corrective actions taken or underway to address significant risks / concerns arising from assessments of health and safety practices end-->
+                        <!--Details of any corrective actions taken or underway to address significant risks/concerns arising from assessments of health and safety practices end-->
                     </div>
                     <button type="button" class="btn-primary" onclick="navigate(-1)">Previous</button>
                     <button type="button" class="btn-primary" onclick="navigate(1)">Next</button>
@@ -1950,7 +2004,9 @@
                             <div class="policy">
                                 <label for="stakeholderIdentificationDetails" class="form-label">1. Describe the processes for identifying key stakeholder groups of the entity:</label>
                             </div>
-                            <textarea id="stakeholderIdentificationDetails" name="stakeholderIdentificationDetails" class="form-control" placeholder="Enter stakeholder identification details"></textarea>
+                            <div class="policy">
+                                <textarea id="stakeholderIdentificationDetails" name="stakeholderIdentificationDetails" class="form-control" placeholder="Enter stakeholder identification details"></textarea>
+                            </div>
                         </div>
                         <!--Processes for identifying key stakeholder groups end-->
 
@@ -1984,10 +2040,10 @@
                                 </table>
                                 <div>
                                     <input type="number" id="indexInput_stakeholderEngagementDetails" placeholder="Enter Index">
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex('stakeholderEngagementDetails')">Add S.No.</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow('stakeholderEngagementDetails')">Remove S.No.</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow('stakeholderEngagementDetails')">Add Row</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow('stakeholderEngagementDetails')">Remove Row</button>
+                                    <button class="add-remove-row-btn" type="button" onclick="addRowAtIndex('stakeholderEngagementDetails')">Add S.No.</button>
+                                    <button class="add-remove-row-btn" type="button" onclick="removeSpecificRow('stakeholderEngagementDetails')">Remove S.No.</button>
+                                    <button class="add-remove-row-btn" type="button" onclick="addBottomRow('stakeholderEngagementDetails')">Add Row</button>
+                                    <button class="add-remove-row-btn" type="button" onclick="removeBottomRow('stakeholderEngagementDetails')">Remove Row</button>
                                 </div>
                                 <div class="policy">
                                     <details class="add_comment_detail">
@@ -2012,25 +2068,31 @@
                             <div class="policy">
                                 <label for="boardConsultationDetails" class="form-label">1. Provide the processes for consultation between stakeholders & the Board on economic, environmental, & social topics or if consultation is delegated, how is feedback from such consultations provided to the Board:</label>
                             </div>
-                            <textarea id="boardConsultationDetails" name="boardConsultationDetails" class="form-control" placeholder="Enter board consultation details"></textarea>
+                            <div class="policy">
+                                <textarea id="boardConsultationDetails" name="boardConsultationDetails" class="form-control" placeholder="Enter board consultation details"></textarea>
+                            </div>
                         </div>
                         <!--Processes for consultation between stakeholders and the Board end-->
 
                         <!--Is stakeholder consultation used to support the identification and management of environmental and social topics start-->
                         <div class="mb-3">
                             <div class="policy">
-                                <label for="stakeholderConsultationPolicy" class="form-label">2. Whether stakeholder consultation is used to support the identification and management of environmental, and social topics (Yes / No). If so, provide details of instances as to how the inputs received from stakeholders on these topics were incorporated into policies and activities of the entity.  :</label>
+                                <label for="stakeholderConsultationPolicy" class="form-label">2. Whether stakeholder consultation is used to support the identification and management of environmental, and social topics (Yes/No). If so, provide details of instances as to how the inputs received from stakeholders on these topics were incorporated into policies and activities of the entity. :</label>
                             </div>
-                            <textarea id="stakeholderConsultationPolicy" name="stakeholderConsultationPolicy" class="form-control" placeholder="Enter stakeholder consultation details"></textarea>
+                            <div class="policy">
+                                <textarea id="stakeholderConsultationPolicy" name="stakeholderConsultationPolicy" class="form-control" placeholder="Enter stakeholder consultation details"></textarea>
+                            </div>
                         </div>
                         <!--Is stakeholder consultation used to support the identification and management of environmental and social topics end-->
 
                         <!--Details of instances of engagement with, and actions taken to, address the concerns stakeholder groups start-->
                         <div class="mb-3">
                             <div class="policy">
-                                <label for="vulnerableEngagementDetails" class="form-label">3. Provide details of instances of engagement with, & actions taken to, address the concerns of vulnerable/ marginalized stakeholder groups:</label>
+                                <label for="vulnerableEngagementDetails" class="form-label">3. Provide details of instances of engagement with, & actions taken to, address the concerns of vulnerable/marginalized stakeholder groups:</label>
                             </div>
-                            <textarea id="vulnerableEngagementDetails" name="vulnerableEngagementDetails" class="form-control" placeholder="Enter engagement details" required></textarea>
+                            <div class="policy">
+                                <textarea id="vulnerableEngagementDetails" name="vulnerableEngagementDetails" class="form-control" placeholder="Enter engagement details" required></textarea>
+                            </div>
                         </div>
                         <!--Details of instances of engagement with, and actions taken to, address the concerns stakeholder groups end-->
                     </div>
@@ -2069,10 +2131,10 @@
                                     <tr>
                                         <th class="form-label">Total(A)</th>
                                         <th class="form-label">No. of employees/workers covered (B)</th>
-                                        <th class="form-label">% (B/A)</th>
+                                        <th class="form-label">%(B/A)</th>
                                         <th class="form-label">Total(C)</th>
                                         <th class="form-label">No. of employees/workers covered (D)</th>
-                                        <th class="form-label">% (D/C)</th>
+                                        <th class="form-label">%(D/C)</th>
                                     </tr>
                                     <tr>
                                         <th colspan="7" class="form-label">Employees</th>
@@ -2167,13 +2229,13 @@
                                     </tr>
                                     <tr>
                                         <th class="form-label">No.(B)</th>
-                                        <th class="form-label">% (B/A)</th>
+                                        <th class="form-label">%(B/A)</th>
                                         <th class="form-label">No.(C)</th>
-                                        <th class="form-label">% (C/A)</th>
+                                        <th class="form-label">%(C/A)</th>
                                         <th class="form-label">No.(E)</th>
-                                        <th class="form-label">% (E/D)</th>
+                                        <th class="form-label">%(E/D)</th>
                                         <th class="form-label">No.(F)</th>
-                                        <th class="form-label">% (F/D)</th>
+                                        <th class="form-label">%(F/D)</th>
                                     </tr>
                                     <tr>
                                         <th colspan="11" class="form-label">Permanent Employees</th>
@@ -2206,15 +2268,15 @@
                                     </tr>
                                     <tr>
                                         <th align="center" class="form-label">Total</th>
+                                        <td><input type="number" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 6)"></td>
+                                        <td><input type="number" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 6)"></td>
                                         <td><input type="number" id="wageDetails" name="wageDetails[]" class="form-control" readonly></td>
+                                        <td><input type="number" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 6)"></td>
                                         <td><input type="number" id="wageDetails" name="wageDetails[]" class="form-control" readonly></td>
+                                        <td><input type="number" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 6)"></td>
+                                        <td><input type="number" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 6)"></td>
                                         <td><input type="number" id="wageDetails" name="wageDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="wageDetails" name="wageDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="wageDetails" name="wageDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="wageDetails" name="wageDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="wageDetails" name="wageDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="wageDetails" name="wageDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" id="wageDetails" name="wageDetails[]" class="form-control" readonly></td>
+                                        <td><input type="number" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 6)"></td>
                                         <td><input type="number" id="wageDetails" name="wageDetails[]" class="form-control" readonly></td>
                                     </tr>
                                     <tr>
@@ -2357,7 +2419,7 @@
                         <!--Details of renumeratiion/salary/wages start-->
                         <div class="mb-3">
                             <div class="policy">
-                                <label for="remunerationDetails" class="form-label">3. Details of remuneration/salary/wages :</label>
+                                <label for="remunerationDetails" class="form-label">3. Details of remuneration/salary/wages:</label>
                             </div>
                             <div id="remunerationDetails" class="responsive-table">
                                 <table id="p_remunerationDetails">
@@ -2368,9 +2430,9 @@
                                     </tr>
                                     <tr>
                                         <th class="form-label">Number</th>
-                                        <th class="form-label">Median remuneration/ salary/ wages of respective category</th>
+                                        <th class="form-label">Median remuneration/salary/wages of respective category</th>
                                         <th class="form-label">Number</th>
-                                        <th class="form-label">Median remuneration/ salary/ wages of respective category</th>
+                                        <th class="form-label">Median remuneration/salary/wages of respective category</th>
                                     </tr>
                                     <tr>
                                         <th class="form-label">Board of Directors (BoD)</th>
@@ -2414,13 +2476,24 @@
                         <!--Do you have a focal point responsible for addressing human rights impacts start-->
                         <div class="mb-3">
                             <div class="policy">
-                                <label for="humanRightsResponsible" class="form-label">4. Does the organization have an Individual /Committee responsible for addressing human rights impacts or issues caused or contributed to by the business?</label>
+                                <label for="humanRightsResponsible" class="form-label">4. Does the organization have an Individual/Committee responsible for addressing human rights impacts or issues caused or contributed to by the business?</label>
                             </div>
-                            <select name="humanRightsResponsible" id="humanRightsResponsible" class="form-control">
-                                <option value="">Select an option</option>
-                                <option value="Yes">Yes</option>
-                                <option value="No">No</option>
-                            </select>
+                            <div class="policy">
+                                <select name="humanRightsResponsible" id="humanRightsResponsible" class="form-control">
+                                    <option value="">Select an option</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!--hidden-->
+                        <div class="mb-3 hidden" id="humanRightsResponsibleDetails">
+                            <div class="policy">
+                                <label for="humanRightsResponsibleDetails" class="form-label">Specify the relevant details:</label>
+                            </div>
+                            <div class="policy">
+                                <textarea class="form-control" id="humanRightsResponsibleDetails" name="humanRightsResponsibleDetails" placeholder="Enter the details"></textarea>
+                            </div>
                         </div>
                         <!--Do you have a focal point responsible for addressing human rights impacts end-->
 
@@ -2429,7 +2502,9 @@
                             <div class="policy">
                                 <label for="grievanceMechanism" class="form-label">5. Details of the internal mechanisms in place to redress grievances related to human rights issues:</label>
                             </div>
-                            <textarea id="grievanceMechanism" name="grievanceMechanism" class="form-control" placeholder="Enter details of the internal mechanism"></textarea>
+                            <div class="policy">
+                                <textarea id="grievanceMechanism" name="grievanceMechanism" class="form-control" placeholder="Enter the details of the internal mechanism"></textarea>
+                            </div>
                         </div>
                         <!--Internal mechanisms in place to redress grievances end-->
 
@@ -2481,7 +2556,7 @@
                                         <td><input type="text" id="complaintsDetails" name="complaintsDetails[]" class="form-control"></td>
                                     </tr>
                                     <tr>
-                                        <th class="form-label">Forced Labour/ Involuntary Labour</th>
+                                        <th class="form-label">Forced Labour/Involuntary Labour</th>
                                         <td><input type="text" id="complaintsDetails" name="complaintsDetails[]" class="form-control"></td>
                                         <td><input type="text" id="complaintsDetails" name="complaintsDetails[]" class="form-control"></td>
                                         <td><input type="text" id="complaintsDetails" name="complaintsDetails[]" class="form-control"></td>
@@ -2521,9 +2596,11 @@
                         <!--Mechanisms to prevent adverse consequences to the complainant in discrimination and harassment cases start-->
                         <div class="mb-3">
                             <div class="policy">
-                                <label for="discriminationProtectionMechanisms" class="form-label"><span style="color: red;"> * </span>7. Mechanisms to prevent adverse consequences to the complainant in discrimination & harassment cases:</label>
+                                <label for="discriminationProtectionMechanisms" class="form-label">7. Mechanisms to prevent adverse consequences to the complainant in discrimination & harassment cases:</label>
                             </div>
-                            <textarea id="discriminationProtectionMechanisms" name="discriminationProtectionMechanisms" class="form-control" placeholder="Provide details of Mechanisms to prevent adverse consequences"></textarea>
+                            <div class="policy">
+                                <textarea id="discriminationProtectionMechanisms" name="discriminationProtectionMechanisms" class="form-control" placeholder="Provide details of Mechanisms to prevent adverse consequences"></textarea>
+                            </div>
                         </div>
                         <!--Mechanisms to prevent adverse consequences to the complainant in discrimination and harassment cases end-->
 
@@ -2532,11 +2609,22 @@
                             <div class="policy">
                                 <label for="humanRightsInBusiness" class="form-label">8. Do human rights requirements form part of your business agreements & contracts?</label>
                             </div>
-                            <select name="humanRightsInBusiness" id="humanRightsInBusiness" class="form-control">
-                                <option value="">Select an option</option>
-                                <option value="Yes">Yes</option>
-                                <option value="No">No</option>
-                            </select>
+                            <div class="policy">
+                                <select name="humanRightsInBusiness" id="humanRightsInBusiness" class="form-control">
+                                    <option value="">Select an option</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!--hidden-->
+                        <div class="mb-3 hidden" id="humanRightsInBusinessDetails">
+                            <div class="policy">
+                                <label for="humanRightsInBusinessDetails" class="form-label">Specify the relevant details:</label>
+                            </div>
+                            <div class="policy">
+                                <textarea class="form-control" id="humanRightsInBusinessDetails" name="humanRightsInBusinessDetails" placeholder="Enter the details"></textarea>
+                            </div>
                         </div>
                         <!--Do human rights requirements form part of your business agreements and contracts end-->
 
@@ -2556,15 +2644,15 @@
                                         <td><input type="text" id="assessedPlantPercentage" name="assessedPlantPercentage[]" class="form-control" ></td>
                                     </tr>
                                     <tr>
-                                        <th class="form-label">Forced/involuntary Labour</th>
+                                        <th class="form-label">Forced/Involuntary Labour</th>
                                         <td><input type="text" id="assessedPlantPercentage" name="assessedPlantPercentage[]" class="form-control" ></td>
                                     </tr>
                                     <tr>
-                                        <th class="form-label">Sexual harassment</th>
+                                        <th class="form-label">Sexual Harassment</th>
                                         <td><input type="text" id="assessedPlantPercentage" name="assessedPlantPercentage[]" class="form-control" ></td>
                                     </tr>
                                     <tr>
-                                        <th class="form-label">Discrimination at workplace</th>
+                                        <th class="form-label">Discrimination at Workplace</th>
                                         <td><input type="text" id="assessedPlantPercentage" name="assessedPlantPercentage[]" class="form-control" ></td>
                                     </tr>
                                     <tr>
@@ -2572,10 +2660,17 @@
                                         <td><input type="text" id="assessedPlantPercentage" name="assessedPlantPercentage[]" class="form-control" ></td>
                                     </tr>
                                     <tr>
-                                        <th class="form-label">Others - please specify</th>
+                                        <th class="form-label">
+                                            Others - please specify
+                                            <input type="text" id="assessedPlantPercentage" name="assessedPlantPercentage[]" class="form-control">
+                                        </th>
                                         <td><input type="text" id="assessedPlantPercentage" name="assessedPlantPercentage[]" class="form-control"></td>
                                     </tr>
                                 </table>
+                                <div>
+                                    <button class="add-remove-row-btn-nosno" type="button" onclick="addBottomRowNoSno('assessedPlantPercentage')">Add Row</button>
+                                    <button class="add-remove-row-btn-nosno" type="button" onclick="removeBottomRowNoSno('assessedPlantPercentage', 7)">Remove Row</button>
+                                </div>
                             </div>
                             <div class="policy">
                                     <details class="add_comment_detail">
@@ -2586,14 +2681,16 @@
                         </div>
                         <!--Assessments for the year end-->
 
-                        <!--Corrective actions taken to address significant risks / concerns arising from the assessments at Question 9 start-->
+                        <!--Corrective actions taken to address significant risks/concerns arising from the assessments at Question 9 start-->
                         <div class="mb-3">
                             <div class="policy">
-                                <label for="correctiveActionsForAssessments" class="form-label"><span style="color: red;"> * </span>10. Provide details of any corrective actions taken or underway to address significant risks / concerns arising from the assessments at Question 9 above:</label>
+                                <label for="correctiveActionsForAssessments" class="form-label">10. Provide details of any corrective actions taken or underway to address significant risks/concerns arising from the assessments at Question 9 above:</label>
                             </div>
-                            <textarea id="correctiveActionsForAssessments" name="correctiveActionsForAssessments" class="form-control" placeholder="Enter details of any corrective actions taken or underway to address significant risks."></textarea>
+                            <div class="policy">
+                                <textarea id="correctiveActionsForAssessments" name="correctiveActionsForAssessments" class="form-control" placeholder="Enter the details of any corrective actions taken or underway to address significant risks."></textarea>
+                            </div>
                         </div>
-                        <!--Corrective actions taken to address significant risks / concerns arising from the assessments at Question 9 end-->
+                        <!--Corrective actions taken to address significant risks/concerns arising from the assessments at Question 9 end-->
                     </div>
            
                     <!------------------------------------------------------------------------------------------------------------------------->
@@ -2606,18 +2703,22 @@
                         <!--Details of a business process being modified as a result of addressing human rights grievances/complaints start-->
                         <div class="mb-3">
                             <div class="policy">
-                                <label for="businessProcessModifications" class="form-label"><span style="color: red;"> * </span>1. Details of a business process being modified / introduced as a result of addressing human rights grievances/complaints:</label>
+                                <label for="businessProcessModifications" class="form-label">1. Details of a business process being modified/introduced as a result of addressing human rights grievances/complaints:</label>
                             </div>
-                            <textarea id="businessProcessModifications" name="businessProcessModifications" class="form-control" placeholder="Enter details of a business process being modified."></textarea>
+                            <div class="policy">
+                                <textarea id="businessProcessModifications" name="businessProcessModifications" class="form-control" placeholder="Enter the details of a business process being modified."></textarea>
+                            </div>
                         </div>
                         <!--Details of a business process being modified as a result of addressing human rights grievances/complaints end-->
                     
                         <!--Details of scope and coverage of any Human rights due-diligence conducted start-->
                         <div class="mb-3">
                             <div class="policy">
-                                <label for="humanRightsDueDiligence" class="form-label"><span style="color: red;"> * </span>2. Details of the scope & coverage of any Human rights due-diligence conducted:</label>
+                                <label for="humanRightsDueDiligence" class="form-label">2. Details of the scope & coverage of any Human rights due-diligence conducted:</label>
                             </div>
-                            <textarea id="humanRightsDueDiligence" name="humanRightsDueDiligence" class="form-control" placeholder="Enter Details of the scope & coverage of any Human rights due-diligence conducted."></textarea>
+                            <div class="policy">
+                                <textarea id="humanRightsDueDiligence" name="humanRightsDueDiligence" class="form-control" placeholder="Enter Details of the scope & coverage of any Human rights due-diligence conducted."></textarea>
+                            </div>
                         </div>
                         <!--Details of scope and coverage of any Human rights due-diligence conducted end-->
                     
@@ -2626,7 +2727,9 @@
                             <div class="policy">
                                 <label for="premiseAccessibility" class="form-label">3. Is the premise/office of the entity accessible to differently abled visitors, as per the requirements of the Rights of Persons with Disabilities Act, 2016?</label>
                             </div>
-                            <textarea id="premiseAccessibility" name="premiseAccessibility" class="form-control" placeholder="Enter if the premise/office of the entity accessible to differently abled visitors, as per the requirements of the Rights of Persons with Disabilities Act, 2016? (Yes/No)"></textarea>
+                            <div class="policy">
+                                <textarea id="premiseAccessibility" name="premiseAccessibility" class="form-control" placeholder="Enter if the premise/office of the entity accessible to differently abled visitors, as per the requirements of the Rights of Persons with Disabilities Act, 2016? (Yes/No)"></textarea>
+                            </div>
                         </div>
                         <!--Is the premise/office of the entity accessible to differently abled visitors end-->
                     
@@ -2646,7 +2749,7 @@
                                         <td><input type="text" id="valueChainAssessment" name="valueChainAssessment[]" class="form-control"></td>
                                     </tr>
                                     <tr>
-                                        <th class="form-label">Discrimination at workplace</th>
+                                        <th class="form-label">Discrimination at Workplace</th>
                                         <td><input type="text" id="valueChainAssessment" name="valueChainAssessment[]" class="form-control"></td>
                                     </tr>
                                     <tr>
@@ -2654,7 +2757,7 @@
                                         <td><input type="text" id="valueChainAssessment" name="valueChainAssessment[]" class="form-control"></td>
                                     </tr>
                                     <tr>
-                                        <th class="form-label">Forced Labour/ Involuntary Labour</th>
+                                        <th class="form-label">Forced Labour/Involuntary Labour</th>
                                         <td><input type="text" id="valueChainAssessment" name="valueChainAssessment[]" class="form-control"></td>
                                     </tr>
                                     <tr>
@@ -2662,10 +2765,17 @@
                                         <td><input type="text" id="valueChainAssessment" name="valueChainAssessment[]" class="form-control"></td>
                                     </tr>
                                     <tr>
-                                        <th class="form-label">Others - please specify</th>
+                                        <th class="form-label">
+                                            Others - please specify
+                                            <input type="text" id="valueChainAssessment" name="valueChainAssessment[]" class="form-control">
+                                        </th>
                                         <td><input type="text" id="valueChainAssessment" name="valueChainAssessment[]" class="form-control"></td>
                                     </tr>
                                 </table>
+                                <div>
+                                    <button class="add-remove-row-btn-nosno" type="button" onclick="addBottomRowNoSno('valueChainAssessment')">Add Row</button>
+                                    <button class="add-remove-row-btn-nosno" type="button" onclick="removeBottomRowNoSno('valueChainAssessment', 7)">Remove Row</button>
+                                </div>
                             </div>
                             <div class="policy">
                                     <details class="add_comment_detail">
@@ -2676,14 +2786,16 @@
                         </div>
                         <!--Assessment of value chain partners end-->
 
-                        <!--Corrective actions taken or underway to address significant risks / concerns arising from the assessments at Question 4 start-->
+                        <!--Corrective actions taken or underway to address significant risks/concerns arising from the assessments at Question 4 start-->
                         <div class="mb-3">
                             <div class="policy">
-                                <label for="correctiveActionsFromAssessments" class="form-label"><span style="color: red;"> * </span>5. Provide details of any corrective actions taken or underway to address significant risks / concerns arising from the assessments at Question 4 above:</label>
+                                <label for="correctiveActionsFromAssessments" class="form-label">5. Provide details of any corrective actions taken or underway to address significant risks/concerns arising from the assessments at Question 4 above:</label>
                             </div>
-                            <textarea id="correctiveActionsFromAssessments" name="correctiveActionsFromAssessments" class="form-control" placeholder="Provide the concerns arising from the assessments at Question 4 above." required></textarea>
+                            <div class="policy">
+                                <textarea id="correctiveActionsFromAssessments" name="correctiveActionsFromAssessments" class="form-control" placeholder="Provide the concerns arising from the assessments at Question 4 above." required></textarea>
+                            </div>
                         </div>
-                        <!--Corrective actions taken or underway to address significant risks / concerns arising from the assessments at Question 4 end-->
+                        <!--Corrective actions taken or underway to address significant risks/concerns arising from the assessments at Question 4 end-->
                     </div>
                     <button type="button" class="btn-primary" onclick="navigate(-1)">Previous</button>
                     <button type="button" class="btn-primary" onclick="navigate(1)">Next</button>       
@@ -2761,47 +2873,55 @@
                         <!--Independent assessment question 1 start-->
                         <div class="mb-3">
                             <div class="policy">
-                                <label for="energyExternalAgency" class="form-label">1.2 Indicate if any independent assessment/ evaluation/assurance of energy consumption has been carried out by an external agency? If yes, provide the name of the external agency:</label>
+                                <label for="energyExternalAgency" class="form-label">1.2 Indicate if any independent assessment/evaluation/assurance of energy consumption has been carried out by an external agency? If yes, provide the name of the external agency:</label>
                             </div>
-                            <select name="energyExternalAgency" id="energyExternalAgency" class="form-control">
-                                <option value="">Select an option</option>
-                                <option value="Yes">Yes</option>
-                                <option value="No">No</option>
-                            </select>
+                            <div class="policy">
+                                <select name="energyExternalAgency" id="energyExternalAgency" class="form-control">
+                                    <option value="">Select an option</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+                            </div>
                         </div>
                         <!--hidden-->
                         <div id="energyExternalAgencyName" class="mb-3 hidden">
                             <div class="policy">
                                 <label for="energyExternalAgencyName" class="form-label">Specify the name of the external agency:</label>
                             </div>
-                            <textarea id="energyExternalAgencyName" name="energyExternalAgencyName" class="form-control" placeholder="Enter the name"></textarea>
+                            <div class="policy">
+                                <textarea id="energyExternalAgencyName" name="energyExternalAgencyName" class="form-control" placeholder="Enter the name"></textarea>
+                            </div>
                         </div>
                         <!--Independent assessment question 1 end-->
 
-                        <!--Does the entity have any sites / facilities identified as DC under PAT scheme start-->
+                        <!--Does the entity have any sites/facilities identified as DC under PAT scheme start-->
                         <div class="mb-3">
                             <div class="policy">
                                 <label for="designatedConsumers" class="form-label">2. Does the entity have any sites/facilities identified as designated consumers (DCs) under the Performance, Achieve, & Trade (PAT) Scheme of the Government of India?  If yes, disclose whether targets set under the PAT scheme have been achieved. In case targets have not been achieved, provide the remedial action taken if any:</label>
                             </div>
-                            <select name="designatedConsumers" id="designatedConsumers" class="form-control">
-                                <option value="">Select an option</option>
-                                <option value="Yes">Yes</option>
-                                <option value="No">No</option>
-                            </select>
+                            <div class="policy">
+                                <select name="designatedConsumers" id="designatedConsumers" class="form-control">
+                                    <option value="">Select an option</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+                            </div>
                         </div>
                         <!--hidden-->
                         <div id="designatedConsumersDetails" class="mb-3 hidden">
                             <div class="policy">
                                 <label for="designatedConsumersDetails" class="form-label">Specify the details of PAT scheme targets:</label>
                             </div>
-                            <textarea id="designatedConsumersDetails" name="designatedConsumersDetails" class="form-control" placeholder="Enter the details"></textarea>
+                            <div class="policy">
+                                <textarea id="designatedConsumersDetails" name="designatedConsumersDetails" class="form-control" placeholder="Enter the details"></textarea>
+                            </div>
                         </div>
-                        <!--Does the entity have any sites / facilities identified as DC under PAT scheme end-->
+                        <!--Does the entity have any sites/facilities identified as DC under PAT scheme end-->
 
                         <!--Disclosures related to water start-->
                         <div class="mb-3">
                             <div class="policy">
-                                <label for="waterWithdrawalDetails" class="form-label">3.1. Provide details of water withdrawal from different sources, total volume of water withdrawal & consumed, & Water intensity per rupee of turnover (Water consumed / turnover) as per BRSR format:</label>
+                                <label for="waterWithdrawalDetails" class="form-label">3.1. Provide details of water withdrawal from different sources, total volume of water withdrawal & consumed, & Water intensity per rupee of turnover (Water consumed/turnover) as per BRSR format:</label>
                             </div>
                             <div id="waterWithdrawalDetails" class="responsive-table">
                                 <table id="p_waterWithdrawalDetails">
@@ -2829,7 +2949,7 @@
                                         <td><input type="number" id="waterWithdrawalDetails" name="waterWithdrawalDetails[]" class="form-control" oninput="calculateSectionTotals3_1()"></td>
                                     </tr>
                                     <tr>
-                                        <td align="center" class="form-label">(iv) Seawater/ desalinated water </th>
+                                        <td align="center" class="form-label">(iv) Seawater/desalinated water </th>
                                         <td><input type="number" id="waterWithdrawalDetails" name="waterWithdrawalDetails[]" class="form-control" oninput="calculateSectionTotals3_1()"></td>
                                         <td><input type="number" id="waterWithdrawalDetails" name="waterWithdrawalDetails[]" class="form-control" oninput="calculateSectionTotals3_1()"></td>
                                     </tr>
@@ -2849,7 +2969,7 @@
                                         <td><input type="number" id="waterWithdrawalDetails" name="waterWithdrawalDetails[]" class="form-control"></td>
                                     </tr>
                                     <tr>
-                                        <th class="form-label">Water intensity per rupee of turnover (Water consumed / turnover) </th>
+                                        <th class="form-label">Water intensity per rupee of turnover (Water consumed/turnover) </th>
                                         <td><input type="number" id="waterWithdrawalDetails" name="waterWithdrawalDetails[]" class="form-control"></td>
                                         <td><input type="number" id="waterWithdrawalDetails" name="waterWithdrawalDetails[]" class="form-control"></td>
                                     </tr>
@@ -2872,47 +2992,55 @@
                         <!--Independent assessment question 3 start-->
                         <div class="mb-3">
                             <div class="policy">
-                                <label for="waterExternalAgency" class="form-label">3.2. Indicate if any independent assessment/ evaluation/assurance of water withdrawal has been carried out by an external agency? If yes, provide the name of the external agency:</label>
+                                <label for="waterExternalAgency" class="form-label">3.2. Indicate if any independent assessment/evaluation/assurance of water withdrawal has been carried out by an external agency? If yes, provide the name of the external agency:</label>
                             </div>
-                            <select name="waterExternalAgency" id="waterExternalAgency" class="form-control">
-                                <option value="">Select an option</option>
-                                <option value="Yes">Yes</option>
-                                <option value="No">No</option>
-                            </select>
+                            <div class="policy">
+                                <select name="waterExternalAgency" id="waterExternalAgency" class="form-control">
+                                    <option value="">Select an option</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+                            </div>
                         </div>
                         <!--hidden-->
                         <div id="waterExternalAgencyName" class="mb-3 hidden">
                             <div class="policy">
                                 <label for="waterExternalAgencyName" class="form-label">Specify the name of the external agency:</label>
                             </div>
-                            <textarea id="waterExternalAgencyName" name="waterExternalAgencyName" class="form-control" placeholder="Enter the name"></textarea>
+                            <div class="policy">
+                                <textarea id="waterExternalAgencyName" name="waterExternalAgencyName" class="form-control" placeholder="Enter the name"></textarea>
+                            </div>
                         </div>
                         <!--Independent assessment question 3 end-->
 
                         <!--Has the entity implemented a mechanism for Zero Liquid Discharge start-->
                         <div class="mb-3">
                             <div class="policy">
-                                <label for="liquidDischarge" class="form-label"><span style="color: red;"> * </span>4. Has the entity implemented a mechanism for Zero Liquid Discharge? If yes, provide details of its coverage & implementation:</label>
+                                <label for="liquidDischarge" class="form-label">4. Has the entity implemented a mechanism for Zero Liquid Discharge? If yes, provide details of its coverage & implementation:</label>
                             </div>
-                            <select name="liquidDischarge" id="liquidDischarge" class="form-control">
-                                <option value="">Select an option</option>
-                                <option value="Yes">Yes</option>
-                                <option value="No">No</option>
-                            </select>
+                            <div class="policy">
+                                <select name="liquidDischarge" id="liquidDischarge" class="form-control">
+                                    <option value="">Select an option</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+                            </div>
                         </div>
                         <!--hidden-->
                         <div id="liquidDischargeDetails" class="mb-3 hidden">
                             <div class="policy">
                                 <label for="liquidDischargeDetails" class="form-label">Specify the details of its coverage & implementation:</label>
                             </div>
-                            <textarea id="liquidDischargeDetails" name="liquidDischargeDetails" class="form-control" placeholder="Enter the details"></textarea>
+                            <div class="policy">
+                                <textarea id="liquidDischargeDetails" name="liquidDischargeDetails" class="form-control" placeholder="Enter the details"></textarea>
+                            </div>
                         </div>
                         <!--Has the entity implemented a mechanism for Zero Liquid Discharge end-->
 
                         <!--Details of air emissions start-->
                         <div class="mb-3">
                             <div class="policy">
-                                <label for="airEmissionDetails" class="form-label">5.1. Please provide details of air emissions (other than GHG emissions) by the entity, in BRSR format. Also, indicate if any independent assessment/ evaluation/assurance has been carried out by an external agency?</label>
+                                <label for="airEmissionDetails" class="form-label">5.1. Please provide details of air emissions (other than GHG emissions) by the entity, in BRSR format. Also, indicate if any independent assessment/evaluation/assurance has been carried out by an external agency?</label>
                             </div>
                             <div id="airEmissionDetails" class="responsive-table">
                                 <table id="p_airEmissionDetails">
@@ -2935,42 +3063,49 @@
                                         <td><input type="text" id="airEmissionDetails" name="airEmissionDetails[]" class="form-control"></td>
                                     </tr>
                                     <tr>
-                                        <th class="form-label">Particulate matter (PM) </th>
+                                        <th class="form-label">Particulate Matter (PM) </th>
                                         <td><input type="text" id="airEmissionDetails" name="airEmissionDetails[]" class="form-control"></td>
                                         <td><input type="text" id="airEmissionDetails" name="airEmissionDetails[]" class="form-control"></td>
                                         <td><input type="text" id="airEmissionDetails" name="airEmissionDetails[]" class="form-control"></td>
                                     </tr>
                                     <tr>
-                                        <th class="form-label">Persistent organic pollutants (POP) </th>
+                                        <th class="form-label">Persistent organic Pollutants (POP) </th>
                                         <td><input type="text" id="airEmissionDetails" name="airEmissionDetails[]" class="form-control"></td>
                                         <td><input type="text" id="airEmissionDetails" name="airEmissionDetails[]" class="form-control"></td>
                                         <td><input type="text" id="airEmissionDetails" name="airEmissionDetails[]" class="form-control"></td>
                                     </tr>
                                     <tr>
-                                        <th class="form-label">Volatile organic compounds (VOC) </th>
+                                        <th class="form-label">Volatile Organic Compounds (VOC) </th>
                                         <td><input type="text" id="airEmissionDetails" name="airEmissionDetails[]" class="form-control"></td>
                                         <td><input type="text" id="airEmissionDetails" name="airEmissionDetails[]" class="form-control"></td>
                                         <td><input type="text" id="airEmissionDetails" name="airEmissionDetails[]" class="form-control"></td>
                                     </tr>
                                     <tr>
-                                        <th class="form-label">Hazardous air pollutants (HAP) </th>
+                                        <th class="form-label">Hazardous Air Pollutants (HAP) </th>
                                         <td><input type="text" id="airEmissionDetails" name="airEmissionDetails[]" class="form-control"></td>
                                         <td><input type="text" id="airEmissionDetails" name="airEmissionDetails[]" class="form-control"></td>
                                         <td><input type="text" id="airEmissionDetails" name="airEmissionDetails[]" class="form-control"></td>
                                     </tr>
                                     <tr>
-                                        <th class="form-label">Others - please specify </th>
+                                        <th class="form-label">
+                                            Others - please specify
+                                            <input type="text" id="airEmissionDetails" name="airEmissionDetails[]" class="form-control">
+                                        </th>
                                         <td><input type="text" id="airEmissionDetails" name="airEmissionDetails[]" class="form-control"></td>
                                         <td><input type="text" id="airEmissionDetails" name="airEmissionDetails[]" class="form-control"></td>
                                         <td><input type="text" id="airEmissionDetails" name="airEmissionDetails[]" class="form-control"></td>
                                     </tr>
                                 </table>
+                                <div>
+                                    <button class="add-remove-row-btn-nosno" type="button" onclick="addBottomRowNoSno('airEmissionDetails')">Add Row</button>
+                                    <button class="add-remove-row-btn-nosno" type="button" onclick="removeBottomRowNoSno('airEmissionDetails', 8)">Remove Row</button>
+                                </div>
                             </div>
                             <div class="policy">
-                                    <details class="add_comment_detail">
-                                        <summary>Add comments</summary>
-                                        <textarea class="detail-control" id="p_airEmissionDetails_comments" name="p_airEmissionDetails_comments" placeholder="Enter additional information (if required)"></textarea>
-                                    </details>
+                                <details class="add_comment_detail">
+                                    <summary>Add comments</summary>
+                                    <textarea class="detail-control" id="p_airEmissionDetails_comments" name="p_airEmissionDetails_comments" placeholder="Enter additional information (if required)"></textarea>
+                                </details>
                             </div>
                         </div>
                         <!--Details of air emissions end-->
@@ -2978,20 +3113,24 @@
                         <!--Independent assessment question 5 start-->
                         <div class="mb-3">
                             <div class="policy">
-                                <label for="airExternalAgency" class="form-label">5.2. Indicate if any independent assessment/ evaluation/assurance of air emissions has been carried out by an external agency? If yes, provide the name of the external agency:</label>
+                                <label for="airExternalAgency" class="form-label">5.2. Indicate if any independent assessment/evaluation/assurance of air emissions has been carried out by an external agency? If yes, provide the name of the external agency:</label>
                             </div>
-                            <select name="airExternalAgency" id="airExternalAgency" class="form-control">
-                                <option value="">Select an option</option>
-                                <option value="Yes">Yes</option>
-                                <option value="No">No</option>
-                            </select>
+                            <div class="policy">
+                                <select name="airExternalAgency" id="airExternalAgency" class="form-control">
+                                    <option value="">Select an option</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+                            </div>
                         </div>
                         <!--hidden-->
                         <div id="airExternalAgencyName" class="mb-3 hidden">
                             <div class="policy">
                                 <label for="airExternalAgencyName" class="form-label">Specify the name of the external agency:</label>
                             </div>
-                            <textarea id="airExternalAgencyName" name="airExternalAgencyName" class="form-control" placeholder="Enter the name"></textarea>
+                            <div class="policy">
+                                <textarea id="airExternalAgencyName" name="airExternalAgencyName" class="form-control" placeholder="Enter the name"></textarea>
+                            </div>
                         </div>
                         <!--Independent assessment question 5 end-->
 
@@ -3033,18 +3172,25 @@
                                         <td><input type="text" id="greenhouseGasEmissionDetails" name="greenhouseGasEmissionDetails[]" class="form-control"></td>
                                     </tr>
                                     <tr>
-                                        <th class="form-label">Hazardous air pollutants (HAP) </th>
+                                        <th class="form-label">Hazardous Air Pollutants (HAP) </th>
                                         <td><input type="text" id="greenhouseGasEmissionDetails" name="greenhouseGasEmissionDetails[]" class="form-control"></td>
                                         <td><input type="text" id="greenhouseGasEmissionDetails" name="greenhouseGasEmissionDetails[]" class="form-control"></td>
                                         <td><input type="text" id="greenhouseGasEmissionDetails" name="greenhouseGasEmissionDetails[]" class="form-control"></td>
                                     </tr>
                                     <tr>
-                                        <th class="form-label">Others - please specify </th>
+                                        <th class="form-label">
+                                            Others - please specify
+                                            <input type="text" id="greenhouseGasEmissionDetails" name="greenhouseGasEmissionDetails[]" class="form-control">
+                                        </th>
                                         <td><input type="text" id="greenhouseGasEmissionDetails" name="greenhouseGasEmissionDetails[]" class="form-control"></td>
                                         <td><input type="text" id="greenhouseGasEmissionDetails" name="greenhouseGasEmissionDetails[]" class="form-control"></td>
                                         <td><input type="text" id="greenhouseGasEmissionDetails" name="greenhouseGasEmissionDetails[]" class="form-control"></td>
                                     </tr>
                                 </table>
+                                <div>
+                                    <button class="add-remove-row-btn-nosno" type="button" onclick="addBottomRowNoSno('greenhouseGasEmissionDetails')">Add Row</button>
+                                    <button class="add-remove-row-btn-nosno" type="button" onclick="removeBottomRowNoSno('greenhouseGasEmissionDetails', 7)">Remove Row</button>
+                                </div>
                             </div>
                             <div class="policy">
                                     <details class="add_comment_detail">
@@ -3058,20 +3204,24 @@
                         <!--Independent assessment question 6 start-->
                         <div class="mb-3">
                             <div class="policy">
-                                <label for="ghgExternalAgency" class="form-label">6.2. Indicate if any independent assessment/ evaluation/assurance of greenhouse gas emissions has been carried out by an external agency? If yes, provide the name of the external agency:</label>
+                                <label for="ghgExternalAgency" class="form-label">6.2. Indicate if any independent assessment/evaluation/assurance of greenhouse gas emissions has been carried out by an external agency? If yes, provide the name of the external agency:</label>
                             </div>
-                            <select name="ghgExternalAgency" id="ghgExternalAgency" class="form-control">
-                                <option value="">Select an option</option>
-                                <option value="Yes">Yes</option>
-                                <option value="No">No</option>
-                            </select>
+                            <div class="policy">
+                                <select name="ghgExternalAgency" id="ghgExternalAgency" class="form-control">
+                                    <option value="">Select an option</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+                            </div>
                         </div>
                         <!--hidden-->
                         <div id="ghgExternalAgencyName" class="mb-3 hidden">
                             <div class="policy">
                                 <label for="ghgExternalAgencyName" class="form-label">Specify the name of the external agency:</label>
                             </div>
-                            <textarea id="ghgExternalAgencyName" name="ghgExternalAgencyName" class="form-control" placeholder="Enter the name"></textarea>
+                            <div class="policy">
+                                <textarea id="ghgExternalAgencyName" name="ghgExternalAgencyName" class="form-control" placeholder="Enter the name"></textarea>
+                            </div>
                         </div>
                         <!--Independent assessment question 6 end-->
 
@@ -3080,18 +3230,22 @@
                             <div class="policy">
                                 <label for="ghgReductionProject" class="form-label">7. Does the entity have any project related to reducing Green House Gas emission? If yes, provide details about the project:</label>
                             </div>
-                            <select name="ghgReductionProject" id="ghgReductionProject" class="form-control">
-                                <option value="">Select an option</option>
-                                <option value="Yes">Yes</option>
-                                <option value="No">No</option>
-                            </select>
+                            <div class="policy">
+                                <select name="ghgReductionProject" id="ghgReductionProject" class="form-control">
+                                    <option value="">Select an option</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+                            </div>
                         </div>
                         <!--hidden-->
                         <div id="ghgReductionProjectDetails" class="mb-3 hidden">
                             <div class="policy">
                                 <label for="ghgReductionProjectDetails" class="form-label">Specify the details of the project:</label>
                             </div>
-                            <textarea id="ghgReductionProjectDetails" name="ghgReductionProjectDetails" class="form-control" placeholder="Enter the details"></textarea>
+                            <div class="policy">
+                                <textarea id="ghgReductionProjectDetails" name="ghgReductionProjectDetails" class="form-control" placeholder="Enter the details"></textarea>
+                            </div>
                         </div>
                         <!--Does the entity have any project related to reducing Green House Gas emission end-->
 
@@ -3141,12 +3295,18 @@
                                         <td><input type="number" id="wasteDetails" name="wasteDetails[]" class="form-control" oninput="calculateSectionTotals8_1()"></td>
                                     </tr>
                                     <tr>
-                                        <th class="form-label">Other hazardous waste - please specify if any (G) </th>
+                                        <th class="form-label">
+                                            Other hazardous waste - please specify if any (G)
+                                            <input type="text" id="wasteDetails" name="wasteDetails[]" class="form-control">
+                                        </th>
                                         <td><input type="number" id="wasteDetails" name="wasteDetails[]" class="form-control" oninput="calculateSectionTotals8_1()"></td>
                                         <td><input type="number" id="wasteDetails" name="wasteDetails[]" class="form-control" oninput="calculateSectionTotals8_1()"></td>
                                     </tr>
                                     <tr>
-                                        <th class="form-label">Other Non-hazardous waste - please specify if any (H) </th>
+                                        <th class="form-label">
+                                            Other Non-hazardous waste - please specify if any (H) 
+                                            <input type="text" id="wasteDetails" name="wasteDetails[]" class="form-control">
+                                        </th>
                                         <td><input type="number" id="wasteDetails" name="wasteDetails[]" class="form-control" oninput="calculateSectionTotals8_1()"></td>
                                         <td><input type="number" id="wasteDetails" name="wasteDetails[]" class="form-control" oninput="calculateSectionTotals8_1()"></td>
                                     </tr>
@@ -3162,17 +3322,17 @@
                                         <th colspan="3" align="left" class="form-label">Category of waste </th>
                                     </tr>
                                     <tr>
-                                        <td class="form-label">(i)Recycled </th>
+                                        <td class="form-label">(i) Recycled </th>
                                         <td><input type="number" id="wasteDetails" name="wasteDetails[]" class="form-control" oninput="calculateSectionTotals8_1()"></td>
                                         <td><input type="number" id="wasteDetails" name="wasteDetails[]" class="form-control" oninput="calculateSectionTotals8_1()"></td>
                                     </tr>
                                     <tr>
-                                        <td class="form-label">(ii)Re-used </th>
+                                        <td class="form-label">(ii) Re-used </th>
                                         <td><input type="number" id="wasteDetails" name="wasteDetails[]" class="form-control" oninput="calculateSectionTotals8_1()"></td>
                                         <td><input type="number" id="wasteDetails" name="wasteDetails[]" class="form-control" oninput="calculateSectionTotals8_1()"></td>
                                     </tr>
                                     <tr>
-                                        <td class="form-label">(iii)Other recovery operations </th>
+                                        <td class="form-label">(iii) Other recovery operations </th>
                                         <td><input type="number" id="wasteDetails" name="wasteDetails[]" class="form-control" oninput="calculateSectionTotals8_1()"></td>
                                         <td><input type="number" id="wasteDetails" name="wasteDetails[]" class="form-control" oninput="calculateSectionTotals8_1()"></td>
                                     </tr>
@@ -3188,17 +3348,17 @@
                                         <th colspan="3" align="left" class="form-label">Category of waste </th>
                                     </tr>
                                     <tr>
-                                        <td class="form-label">(i)Incineration </th>
+                                        <td class="form-label">(i) Incineration </th>
                                         <td><input type="number" id="wasteDetails" name="wasteDetails[]" class="form-control" oninput="calculateSectionTotals8_1()"></td>
                                         <td><input type="number" id="wasteDetails" name="wasteDetails[]" class="form-control" oninput="calculateSectionTotals8_1()"></td>
                                     </tr>
                                     <tr>
-                                        <td class="form-label">(ii)Landfilling </th>
+                                        <td class="form-label">(ii) Landfilling </th>
                                         <td><input type="number" id="wasteDetails" name="wasteDetails[]" class="form-control" oninput="calculateSectionTotals8_1()"></td>
                                         <td><input type="number" id="wasteDetails" name="wasteDetails[]" class="form-control" oninput="calculateSectionTotals8_1()"></td>
                                     </tr>
                                     <tr>
-                                        <td class="form-label">(iii)Other disposal operations </th>
+                                        <td class="form-label">(iii) Other disposal operations </th>
                                         <td><input type="number" id="wasteDetails" name="wasteDetails[]" class="form-control" oninput="calculateSectionTotals8_1()"></td>
                                         <td><input type="number" id="wasteDetails" name="wasteDetails[]" class="form-control" oninput="calculateSectionTotals8_1()"></td>
                                     </tr>
@@ -3221,20 +3381,24 @@
                         <!--Independent assessment question 8 start-->
                         <div class="mb-3">
                             <div class="policy">
-                                <label for="wasteExternalAgency" class="form-label">8.2. Indicate if any independent assessment/ evaluation/assurance of greenhouse waste management has been carried out by an external agency? If yes, provide the name of the external agency:</label>
+                                <label for="wasteExternalAgency" class="form-label">8.2. Indicate if any independent assessment/evaluation/assurance of greenhouse waste management has been carried out by an external agency? If yes, provide the name of the external agency:</label>
                             </div>
-                            <select name="wasteExternalAgency" id="wasteExternalAgency" class="form-control">
-                                <option value="">Select an option</option>
-                                <option value="Yes">Yes</option>
-                                <option value="No">No</option>
-                            </select>
+                            <div class="policy">
+                                <select name="wasteExternalAgency" id="wasteExternalAgency" class="form-control">
+                                    <option value="">Select an option</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+                            </div>
                         </div>
                         <!--hidden-->
                         <div id="wasteExternalAgencyName" class="mb-3 hidden">
                             <div class="policy">
                                 <label for="wasteExternalAgencyName" class="form-label">Specify the name of the external agency:</label>
                             </div>
-                            <textarea id="wasteExternalAgencyName" name="wasteExternalAgencyName" class="form-control" placeholder="Enter the name"></textarea>
+                            <div class="policy">
+                                <textarea id="wasteExternalAgencyName" name="wasteExternalAgencyName" class="form-control" placeholder="Enter the name"></textarea>
+                            </div>
                         </div>
                         <!--Independent assessment question 8 end-->
 
@@ -3243,14 +3407,16 @@
                             <div class="policy">
                                 <label for="wasteManagementPractices" class="form-label">9. Briefly describe the waste management practices adopted in your establishments. Describe the strategy adopted by your entity to reduce usage of hazardous & toxic chemicals in your products & processes & the practices adopted to manage such wastes:</label>
                             </div>
-                            <textarea id="wasteManagementPractices" name="wasteManagementPractices" class="form-control" placeholder="Enter the details"></textarea>
+                            <div class="policy">
+                                <textarea id="wasteManagementPractices" name="wasteManagementPractices" class="form-control" placeholder="Enter the details"></textarea>
+                            </div>
                         </div>
                         <!--Details of waste management practices adopted end-->
 
-                        <!--If the entity has operations/offices where environmental approvals / clearances are required start-->
+                        <!--If the entity has operations/offices where environmental approvals/clearances are required start-->
                         <div class="mb-3">
                             <div class="policy">
-                                <label for="ecologicalAreaOperations" class="form-label">10. If the entity have operations/offices in/around ecologically sensitive areas (such as national parks, wildlife sanctuaries, biosphere reserves, wetlands, biodiversity hotspots, forests, coastal regulation zones etc.) where environmental approvals / clearances are required. If yes, please specify details like: Location of operations/offices; Type of operations; the conditions of environmental approval / clearance are required, please specify details in the following format :</label>
+                                <label for="ecologicalAreaOperations" class="form-label">10. If the entity have operations/offices in/around ecologically sensitive areas (such as national parks, wildlife sanctuaries, biosphere reserves, wetlands, biodiversity hotspots, forests, coastal regulation zones etc.) where environmental approvals/clearances are required. If yes, please specify details like: Location of operations/offices; Type of operations; the conditions of environmental approval/clearance are required, please specify details in the following format:</label>
                             </div>
                             <div id="ecologicalAreaOperations" class="responsive-table">
                                 <table id="p_ecologicalAreaOperations">
@@ -3259,7 +3425,7 @@
                                             <th class="form-label">S. No.</th>
                                             <th class="form-label">Location of operations/offices</th>
                                             <th class="form-label">Types of operations</th>
-                                            <th class="form-label">Whether the conditions of environmental approval / clearance are being complied with? (Y/N) If no, the reasons thereof and corrective action taken, if any</th>
+                                            <th class="form-label">Whether the conditions of environmental approval/clearance are being complied with? (Y/N) If no, the reasons thereof and corrective action taken, if any</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -3273,10 +3439,10 @@
                                 </table>
                                 <div>
                                     <input type="number" id="indexInput_ecologicalAreaOperations" placeholder="Enter Index">
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex('ecologicalAreaOperations')">Add S.No.</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow('ecologicalAreaOperations')">Remove S.No.</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow('ecologicalAreaOperations')">Add Row</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow('ecologicalAreaOperations')">Remove Row</button>
+                                    <button class="add-remove-row-btn" type="button" onclick="addRowAtIndex('ecologicalAreaOperations')">Add S.No.</button>
+                                    <button class="add-remove-row-btn" type="button" onclick="removeSpecificRow('ecologicalAreaOperations')">Remove S.No.</button>
+                                    <button class="add-remove-row-btn" type="button" onclick="addBottomRow('ecologicalAreaOperations')">Add Row</button>
+                                    <button class="add-remove-row-btn" type="button" onclick="removeBottomRow('ecologicalAreaOperations')">Remove Row</button>
                                 </div>
                             </div>
                             <div class="policy">
@@ -3286,7 +3452,7 @@
                                     </details>
                             </div>
                         </div>
-                        <!--If the entity has operations/offices where environmental approvals / clearances are required end-->
+                        <!--If the entity has operations/offices where environmental approvals/clearances are required end-->
 
                         <!--Details of environmental impact assessments of projects undertaken start-->
                         <div class="mb-3">
@@ -3320,10 +3486,10 @@
                                 </table>
                                 <div>
                                     <input type="number" id="indexInput_eiaExternalAgency" placeholder="Enter Index">
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex('eiaExternalAgency')">Add S.No.</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow('eiaExternalAgency')">Remove S.No.</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow('eiaExternalAgency')">Add Row</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow('eiaExternalAgency')">Remove Row</button>
+                                    <button class="add-remove-row-btn" type="button" onclick="addRowAtIndex('eiaExternalAgency')">Add S.No.</button>
+                                    <button class="add-remove-row-btn" type="button" onclick="removeSpecificRow('eiaExternalAgency')">Remove S.No.</button>
+                                    <button class="add-remove-row-btn" type="button" onclick="addBottomRow('eiaExternalAgency')">Add Row</button>
+                                    <button class="add-remove-row-btn" type="button" onclick="removeBottomRow('eiaExternalAgency')">Remove Row</button>
                                 </div>
                             </div>
                             <div class="policy">
@@ -3338,16 +3504,16 @@
                         <!--Is the entity compliant with the applicable environmental law in India; such as the Water Act, Air Act start-->
                         <div class="mb-3">
                             <div class="policy">
-                                <label for="environmentalComplianceStatus" class="form-label">12. Is the entity compliant with the applicable environmental law/ regulations/ guidelines in India; such as the Water (Prevention & Control of Pollution) Act, Air (Prevention & Control of Pollution) Act, Environment Protection Act & rules thereunder. If yes, provide relevant details:</label>
+                                <label for="environmentalComplianceStatus" class="form-label">12. Is the entity compliant with the applicable environmental law/regulations/guidelines in India; such as the Water (Prevention & Control of Pollution) Act, Air (Prevention & Control of Pollution) Act, Environment Protection Act & rules thereunder. If yes, provide relevant details:</label>
                             </div>
                             <div id="environmentalComplianceStatus" class="responsive-table">
                                 <table id="p_environmentalComplianceStatus">
                                     <thead>
                                         <tr>
                                             <th class="form-label">S. No. </th>
-                                            <th class="form-label">Specify the law / regulation / guidelines which was not complied with</th>
+                                            <th class="form-label">Specify the law/regulation/guidelines which was not complied with</th>
                                             <th class="form-label">Provide details of the noncompliance</th>
-                                            <th class="form-label">Any fines / penalties / action taken by regulatory agencies such as pollution control boards or by courts</th>
+                                            <th class="form-label">Any fines/penalties/action taken by regulatory agencies such as pollution control boards or by courts</th>
                                             <th class="form-label">Corrective action taken, if any </th>
                                         </tr>
                                     </thead>
@@ -3363,10 +3529,10 @@
                                 </table>
                                 <div>
                                     <input type="number" id="indexInput_environmentalComplianceStatus" placeholder="Enter Index">
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex('environmentalComplianceStatus')">Add S.No.</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow('environmentalComplianceStatus')">Remove S.No.</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow('environmentalComplianceStatus')">Add Row</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow('environmentalComplianceStatus')">Remove Row</button>
+                                    <button class="add-remove-row-btn" type="button" onclick="addRowAtIndex('environmentalComplianceStatus')">Add S.No.</button>
+                                    <button class="add-remove-row-btn" type="button" onclick="removeSpecificRow('environmentalComplianceStatus')">Remove S.No.</button>
+                                    <button class="add-remove-row-btn" type="button" onclick="addBottomRow('environmentalComplianceStatus')">Add Row</button>
+                                    <button class="add-remove-row-btn" type="button" onclick="removeBottomRow('environmentalComplianceStatus')">Remove Row</button>
                                 </div>
                             </div>
                             <div class="policy">
@@ -3458,20 +3624,24 @@
                         <!--Independent assessment question 1 leadership start-->
                         <div class="mb-3">
                             <div class="policy">
-                                <label for="totalenergyconsumedAgency" name="totalenergyconsumedAgency" class="form-label">1.2. Indicate if any independent assessment/ evaluation/assurance has been carried out by an external agency? If yes, provide the name of the external agency:</label>
+                                <label for="totalenergyconsumedAgency" name="totalenergyconsumedAgency" class="form-label">1.2. Indicate if any independent assessment/evaluation/assurance has been carried out by an external agency? If yes, provide the name of the external agency:</label>
                             </div>
-                            <select name="totalenergyconsumedAgency" name="totalenergyconsumedAgency" id="totalenergyconsumedAgency" name="totalenergyconsumedAgency" class="form-control">
-                                <option value="">Select an option</option>
-                                <option value="Yes">Yes</option>
-                                <option value="No">No</option>
-                            </select>
+                            <div class="policy">
+                                <select name="totalenergyconsumedAgency" name="totalenergyconsumedAgency" id="totalenergyconsumedAgency" name="totalenergyconsumedAgency" class="form-control">
+                                    <option value="">Select an option</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+                            </div>
                         </div>
                         <!--hidden-->
                         <div id="totalenergyconsumedAgencyName" class="mb-3 hidden">
                             <div class="policy">
                                 <label for="totalenergyconsumedAgencyName" class="form-label">Specify the name of the external agency:</label>
                             </div>
-                            <textarea id="totalenergyconsumedAgencyName" name="totalenergyconsumedAgencyName" class="form-control" placeholder="Enter the name"></textarea>
+                            <div class="policy">
+                                <textarea id="totalenergyconsumedAgencyName" name="totalenergyconsumedAgencyName" class="form-control" placeholder="Enter the name"></textarea>
+                            </div>
                         </div>
                         <!--Independent assessment question 1 leadership end-->
 
@@ -3501,7 +3671,10 @@
                                         <td><input type="number" id="waterdischarged" name="waterdischarged[]" class="form-control" oninput="calculateSectionTotalsL2_1()"></td>
                                     </tr>
                                     <tr>
-                                        <td class="form-label"> - With treatment - please specify level of treatment </td>
+                                        <td class="form-label">
+                                            - With treatment - please specify level of treatment
+                                            <input type="text" id="waterdischarged" name="waterdischarged[]" class="form-control">
+                                        </td>
                                         <td><input type="number" id="waterdischarged" name="waterdischarged[]" class="form-control" oninput="calculateSectionTotalsL2_1()"></td>
                                         <td><input type="number" id="waterdischarged" name="waterdischarged[]" class="form-control" oninput="calculateSectionTotalsL2_1()"></td>
                                     </tr>
@@ -3516,7 +3689,10 @@
                                         <td><input type="number" id="waterdischarged" name="waterdischarged[]" class="form-control" oninput="calculateSectionTotalsL2_1()"></td>
                                     </tr>
                                     <tr>
-                                        <td class="form-label"> - With treatment - please specify level of treatment </td>
+                                        <td class="form-label">
+                                            - With treatment - please specify level of treatment
+                                            <input type="text" id="waterdischarged" name="waterdischarged[]" class="form-control">
+                                        </td>
                                         <td><input type="number" id="waterdischarged" name="waterdischarged[]" class="form-control" oninput="calculateSectionTotalsL2_1()"></td>
                                         <td><input type="number" id="waterdischarged" name="waterdischarged[]" class="form-control" oninput="calculateSectionTotalsL2_1()"></td>
                                     </tr>
@@ -3531,7 +3707,10 @@
                                         <td><input type="number" id="waterdischarged" name="waterdischarged[]" class="form-control" oninput="calculateSectionTotalsL2_1()"></td>
                                     </tr>
                                     <tr>
-                                        <td class="form-label"> - With treatment - please specify level of treatment </td>
+                                        <td class="form-label">
+                                            - With treatment - please specify level of treatment
+                                            <input type="text" id="waterdischarged" name="waterdischarged[]" class="form-control">
+                                        </td>
                                         <td><input type="number" id="waterdischarged" name="waterdischarged[]" class="form-control" oninput="calculateSectionTotalsL2_1()"></td>
                                         <td><input type="number" id="waterdischarged" name="waterdischarged[]" class="form-control" oninput="calculateSectionTotalsL2_1()"></td>
                                     </tr>
@@ -3546,7 +3725,10 @@
                                         <td><input type="number" id="waterdischarged" name="waterdischarged[]" class="form-control" oninput="calculateSectionTotalsL2_1()"></td>
                                     </tr>
                                     <tr>
-                                        <td class="form-label"> - With treatment - please specify level of treatment </td>
+                                        <td class="form-label">
+                                            - With treatment - please specify level of treatment
+                                            <input type="text" id="waterdischarged" name="waterdischarged[]" class="form-control">
+                                        </td>
                                         <td><input type="number" id="waterdischarged" name="waterdischarged[]" class="form-control" oninput="calculateSectionTotalsL2_1()"></td>
                                         <td><input type="number" id="waterdischarged" name="waterdischarged[]" class="form-control" oninput="calculateSectionTotalsL2_1()"></td>
                                     </tr>
@@ -3561,7 +3743,10 @@
                                         <td><input type="number" id="waterdischarged" name="waterdischarged[]" class="form-control" oninput="calculateSectionTotalsL2_1()"></td>
                                     </tr>
                                     <tr>
-                                        <td class="form-label"> - With treatment - please specify level of treatment </td>
+                                        <td class="form-label">
+                                            - With treatment - please specify level of treatment
+                                            <input type="text" id="waterdischarged" name="waterdischarged[]" class="form-control">
+                                        </td>
                                         <td><input type="number" id="waterdischarged" name="waterdischarged[]" class="form-control" oninput="calculateSectionTotalsL2_1()"></td>
                                         <td><input type="number" id="waterdischarged" name="waterdischarged[]" class="form-control" oninput="calculateSectionTotalsL2_1()"></td>
                                     </tr>
@@ -3584,185 +3769,210 @@
                         <!--Independent assessment question 2 leadership start-->
                         <div class="mb-3">
                             <div class="policy">
-                                <label for="waterdischargedAgency" name="waterdischargedAgency" class="form-label">2.2. Indicate if any independent assessment/ evaluation/assurance has been carried out by an external agency? If yes, provide the name of the external agency:</label>
+                                <label for="waterdischargedAgency" name="waterdischargedAgency" class="form-label">2.2. Indicate if any independent assessment/evaluation/assurance has been carried out by an external agency? If yes, provide the name of the external agency:</label>
                             </div>
-                            <select name="waterdischargedAgency" name="waterdischargedAgency" id="waterdischargedAgency" class="form-control">
-                                <option value="">Select an option</option>
-                                <option value="Yes">Yes</option>
-                                <option value="No">No</option>
-                            </select>
+                            <div class="policy">
+                                <select name="waterdischargedAgency" name="waterdischargedAgency" id="waterdischargedAgency" class="form-control">
+                                    <option value="">Select an option</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+                            </div>
                         </div>
                         <!--hidden-->
                         <div id="waterdischargedAgencyName" class="mb-3 hidden">
                             <div class="policy">
                                 <label for="waterdischargedAgencyName" class="form-label">Specify the name of the external agency:</label>
                             </div>
-                            <textarea id="waterdischargedAgencyName" name="waterdischargedAgencyName" class="form-control" placeholder="Enter the name"></textarea>
+                            <div class="policy">
+                                <textarea id="waterdischargedAgencyName" name="waterdischargedAgencyName" class="form-control" placeholder="Enter the name"></textarea>
+                            </div>
                         </div>
                         <!--Independent assessment question 2 leadership end-->
 
                         <!--Water withdrawal, consumption and discharge in areas of water stress start-->
                         <div class="mb-3">
                             <div class="policy">
-                                <label for="waterstress" class="form-label">3.1. For each facility / plant located in areas of water stress, provide the following information::</label>
+                                <label for="waterstress" class="form-label">3.1. For each facility/plant located in areas of water stress, provide the following information:</label>
                             </div>
-                            <div class="mb-3 invisible_container">
-                                <div class="policy">
-                                    <label for="waterstressa" class="form-label"><br>a. Name of the area : </label>
+                            <div class="invisible_container">
+                                <div class="mb-3">
+                                    <div class="policy">
+                                        <label for="waterstressa" class="form-label">a. Name of the area:</label>
+                                    </div>
+                                    <input type="text" id="waterstressa" name="waterstressa" class="form-control" placeholder="Enter the details" ></textarea>
                                 </div>
-                                <input type="text" id="waterstressa" name="waterstressa" class="form-control" placeholder="Enter the details" ></textarea>
-                                <div class="policy">
-                                    <label for="waterstressb" class="form-label"><br>b. Nature of operations : </label>
+                                <div class="mb-3">
+                                    <div class="policy">
+                                        <label for="waterstressb" class="form-label">b. Nature of operations:</label>
+                                    </div>
+                                    <textarea id="waterstressb" name="waterstressb" class="form-control" placeholder="Enter the details" ></textarea>
                                 </div>
-                                <textarea id="waterstressb" name="waterstressb" class="form-control" placeholder="Enter the details" ></textarea>
-                                <div class="policy">
-                                    <label for="waterstress" class="form-label"><br>c. Water withdrawal, consumption and discharge in the following format : </label>
-                                </div>
-                                <div id="waterstress" class="responsive-table">
-                                    <table id="p_waterstress">
-                                        <tr>
-                                            <th class="form-label">Parameter</th>
-                                            <th class="form-label">FY _____(Current Financial Year)</th>
-                                            <th class="form-label">FY _____(Previous Financial Year)</th>
-                                        </tr>
-                                        <tr>
-                                            <th colspan="3" class="form-label" align="left">Water withdrawal by source (in kilolitres) </th>
-                                        </tr>
-                                        <tr>
-                                            <td class="form-label">(i) Surface water </td>
-                                            <td><input type="number" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
-                                            <td><input type="number" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="form-label">(ii) Groundwater </td>
-                                            <td><input type="number" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
-                                            <td><input type="number" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="form-label">(iii) Third party water </td>
-                                            <td><input type="number" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
-                                            <td><input type="number" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="form-label">(iv) Seawater / desalinated water </td>
-                                            <td><input type="number" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
-                                            <td><input type="number" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="form-label">(v) Others </td>
-                                            <td><input type="number" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
-                                            <td><input type="number" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
-                                        </tr>
-                                        <tr>
-                                            <th class="form-label">Total volume of water withdrawal (in kilolitres) </th>
-                                            <td><input type="number" id="waterstress" name="waterstress[]" class="form-control" readonly></td>
-                                            <td><input type="number" id="waterstress" name="waterstress[]" class="form-control" readonly></td>
-                                        </tr>
-                                        <tr>
-                                            <th class="form-label">Total volume of water consumption (in kilolitres) </th>
-                                            <td><input type="number" id="waterstress" name="waterstress[]" class="form-control"></td>
-                                            <td><input type="number" id="waterstress" name="waterstress[]" class="form-control"></td>
-                                        </tr>
-                                        <tr>
-                                            <th class="form-label">Water intensity per rupee of turnover (Water consumed / turnover) </th>
-                                            <td><input type="number" id="waterstress" name="waterstress[]" class="form-control"></td>
-                                            <td><input type="number" id="waterstress" name="waterstress[]" class="form-control"></td>
-                                        </tr>
-                                        <tr>
-                                            <th class="form-label">Water intensity (optional) </th>
-                                            <td><input type="number" id="waterstress" name="waterstress[]" class="form-control"></td>
-                                            <td><input type="number" id="waterstress" name="waterstress[]" class="form-control"></td>
-                                        </tr>
-                                        <tr>
-                                            <th colspan="3" class="form-label" align="left">Water discharge by destination and level of treatment (in kilolitres) </th>
-                                        </tr>
-                                        <tr>
-                                            <td class="form-label">(i) Into Surface water </td>
-                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control" readonly></td>
-                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control" readonly></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="form-label"> - No treatment </td>
-                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
-                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="form-label"> - With treatment – please specify level of treatment </td>
-                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
-                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="form-label">(ii) Into Ground water </td>
-                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control" readonly></td>
-                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control" readonly></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="form-label"> - No treatment </td>
-                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
-                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="form-label"> - With treatment – please specify level of treatment </td>
-                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
-                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="form-label">(iii) Into Seawater </td>
-                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control" readonly></td>
-                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control" readonly></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="form-label"> - No treatment </td>
-                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
-                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="form-label"> - With treatment – please specify level of treatment </td>
-                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
-                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="form-label">(iv) Sent to third parties </td>
-                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control" readonly></td>
-                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control" readonly></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="form-label"> - No treatment </td>
-                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
-                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="form-label"> - With treatment – please specify level of treatment </td>
-                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
-                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="form-label">(v) Others </td>
-                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control" readonly></td>
-                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control" readonly></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="form-label"> - No treatment </td>
-                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
-                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="form-label"> - With treatment – please specify level of treatment </td>
-                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
-                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
-                                        </tr>
-                                        <tr>
-                                            <th class="form-label">Total water discharged (in kilolitres) </th>
-                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control" readonly></td>
-                                            <td><input type="text" id="waterstress" name="waterstress[]" class="form-control" readonly></td>
-                                        </tr>
-                                    </table>
-                                </div>
-                                <div class="policy">
-                                    <details class="add_comment_detail">
-                                        <summary>Add comments</summary>
-                                        <textarea class="detail-control" id="p_waterstress_comments" name="p_waterstress_comments" placeholder="Enter additional information (if required)"></textarea>
-                                    </details>
+                                <div class="mb-3">
+                                    <div class="policy">
+                                        <label for="waterstress" class="form-label">c. Water withdrawal, consumption and discharge in the following format: </label>
+                                    </div>
+                                    <div id="waterstress" class="responsive-table">
+                                        <table id="p_waterstress">
+                                            <tr>
+                                                <th class="form-label">Parameter</th>
+                                                <th class="form-label">FY _____(Current Financial Year)</th>
+                                                <th class="form-label">FY _____(Previous Financial Year)</th>
+                                            </tr>
+                                            <tr>
+                                                <th colspan="3" class="form-label" align="left">Water withdrawal by source (in kilolitres) </th>
+                                            </tr>
+                                            <tr>
+                                                <td class="form-label">(i) Surface water </td>
+                                                <td><input type="number" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
+                                                <td><input type="number" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="form-label">(ii) Groundwater </td>
+                                                <td><input type="number" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
+                                                <td><input type="number" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="form-label">(iii) Third party water </td>
+                                                <td><input type="number" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
+                                                <td><input type="number" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="form-label">(iv) Seawater/Desalinated water </td>
+                                                <td><input type="number" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
+                                                <td><input type="number" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="form-label">(v) Others </td>
+                                                <td><input type="number" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
+                                                <td><input type="number" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="form-label">Total volume of water withdrawal (in kilolitres) </th>
+                                                <td><input type="number" id="waterstress" name="waterstress[]" class="form-control" readonly></td>
+                                                <td><input type="number" id="waterstress" name="waterstress[]" class="form-control" readonly></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="form-label">Total volume of water consumption (in kilolitres) </th>
+                                                <td><input type="number" id="waterstress" name="waterstress[]" class="form-control"></td>
+                                                <td><input type="number" id="waterstress" name="waterstress[]" class="form-control"></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="form-label">Water intensity per rupee of turnover (Water consumed/turnover) </th>
+                                                <td><input type="number" id="waterstress" name="waterstress[]" class="form-control"></td>
+                                                <td><input type="number" id="waterstress" name="waterstress[]" class="form-control"></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="form-label">Water intensity (optional) </th>
+                                                <td><input type="number" id="waterstress" name="waterstress[]" class="form-control"></td>
+                                                <td><input type="number" id="waterstress" name="waterstress[]" class="form-control"></td>
+                                            </tr>
+                                            <tr>
+                                                <th colspan="3" class="form-label" align="left">Water discharge by destination and level of treatment (in kilolitres) </th>
+                                            </tr>
+                                            <tr>
+                                                <td class="form-label">(i) Into Surface water </td>
+                                                <td><input type="text" id="waterstress" name="waterstress[]" class="form-control" readonly></td>
+                                                <td><input type="text" id="waterstress" name="waterstress[]" class="form-control" readonly></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="form-label"> - No treatment </td>
+                                                <td><input type="text" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
+                                                <td><input type="text" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="form-label">
+                                                    - With treatment - please specify level of treatment
+                                                    <input type="text" id="waterstress" name="waterstress[]" class="form-control">
+                                                </td>
+                                                <td><input type="text" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
+                                                <td><input type="text" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="form-label">(ii) Into Ground water </td>
+                                                <td><input type="text" id="waterstress" name="waterstress[]" class="form-control" readonly></td>
+                                                <td><input type="text" id="waterstress" name="waterstress[]" class="form-control" readonly></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="form-label"> - No treatment </td>
+                                                <td><input type="text" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
+                                                <td><input type="text" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="form-label">
+                                                    - With treatment - please specify level of treatment
+                                                    <input type="text" id="waterstress" name="waterstress[]" class="form-control">
+                                                </td>
+                                                <td><input type="text" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
+                                                <td><input type="text" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="form-label">(iii) Into Seawater </td>
+                                                <td><input type="text" id="waterstress" name="waterstress[]" class="form-control" readonly></td>
+                                                <td><input type="text" id="waterstress" name="waterstress[]" class="form-control" readonly></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="form-label"> - No treatment </td>
+                                                <td><input type="text" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
+                                                <td><input type="text" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="form-label">
+                                                    - With treatment - please specify level of treatment
+                                                    <input type="text" id="waterstress" name="waterstress[]" class="form-control">
+                                                </td>
+                                                <td><input type="text" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
+                                                <td><input type="text" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="form-label">(iv) Sent to third parties </td>
+                                                <td><input type="text" id="waterstress" name="waterstress[]" class="form-control" readonly></td>
+                                                <td><input type="text" id="waterstress" name="waterstress[]" class="form-control" readonly></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="form-label"> - No treatment </td>
+                                                <td><input type="text" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
+                                                <td><input type="text" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="form-label">
+                                                    - With treatment - please specify level of treatment
+                                                    <input type="text" id="waterstress" name="waterstress[]" class="form-control">
+                                                </td>
+                                                <td><input type="text" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
+                                                <td><input type="text" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="form-label">(v) Others </td>
+                                                <td><input type="text" id="waterstress" name="waterstress[]" class="form-control" readonly></td>
+                                                <td><input type="text" id="waterstress" name="waterstress[]" class="form-control" readonly></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="form-label"> - No treatment </td>
+                                                <td><input type="text" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
+                                                <td><input type="text" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="form-label">
+                                                    - With treatment - please specify level of treatment
+                                                    <input type="text" id="waterstress" name="waterstress[]" class="form-control">
+                                                </td>
+                                                <td><input type="text" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
+                                                <td><input type="text" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="form-label">Total water discharged (in kilolitres) </th>
+                                                <td><input type="text" id="waterstress" name="waterstress[]" class="form-control" readonly></td>
+                                                <td><input type="text" id="waterstress" name="waterstress[]" class="form-control" readonly></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div class="policy">
+                                        <details class="add_comment_detail">
+                                            <summary>Add comments</summary>
+                                            <textarea class="detail-control" id="p_waterstress_comments" name="p_waterstress_comments" placeholder="Enter additional information (if required)"></textarea>
+                                        </details>
+                                    </div>
                                 </div>
                             </div>  
                         </div>
@@ -3771,27 +3981,31 @@
                         <!--Independent assessment question 3 leadership start-->
                         <div class="mb-3">
                             <div class="policy">
-                                <label for="waterstressAgency" name="waterstressAgency" class="form-label">3.2. Indicate if any independent assessment/ evaluation/assurance has been carried out by an external agency? If yes, provide the name of the external agency:</label>
+                                <label for="waterstressAgency" name="waterstressAgency" class="form-label">3.2. Indicate if any independent assessment/evaluation/assurance has been carried out by an external agency? If yes, provide the name of the external agency:</label>
                             </div>
-                            <select name="waterstressAgency" id="waterstressAgency" class="form-control">
-                                <option value="">Select an option</option>
-                                <option value="Yes">Yes</option>
-                                <option value="No">No</option>
-                            </select>
+                            <div class="policy">
+                                <select name="waterstressAgency" id="waterstressAgency" class="form-control">
+                                    <option value="">Select an option</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+                            </div>
                         </div>
                         <!--hidden-->
                         <div id="waterstressAgencyName" class="mb-3 hidden">
                             <div class="policy">
                                 <label for="waterstressAgencyName" class="form-label">Specify the name of the external agency:</label>
                             </div>
-                            <textarea id="waterstressAgencyName" name="waterstressAgencyName" class="form-control" placeholder="Enter the name"></textarea>
+                            <div class="policy">
+                                <textarea id="waterstressAgencyName" name="waterstressAgencyName" class="form-control" placeholder="Enter the name"></textarea>
+                            </div>
                         </div>
                         <!--Independent assessment question 3 leadership end-->
 
                         <!--Details of Total scope 3 emissions and its intensity start-->
                         <div class="mb-3">
                             <div class="policy">
-                                <label for="totalscope" class="form-label">4.1. Please provide details of total Scope 3 emissions & its intensity, in the following format :</label>
+                                <label for="totalscope" class="form-label">4.1. Please provide details of total Scope 3 emissions & its intensity, in the following format:</label>
                             </div>
                             <div id="totalscope" class="responsive-table">
                                 <table id="p_totalscope">
@@ -3802,19 +4016,19 @@
                                         <th class="form-label">FY _____(Previous Financial Year)</th>
                                     </tr>
                                     <tr>
-                                        <th align="center" class="form-label">Total Scope 3 emissions (Break-up of the GHG into CO2, CH4, N2O, HFCs, PFCs,SF6, NF3, if available) :</th>
+                                        <th align="center" class="form-label">Total Scope 3 emissions (Break-up of the GHG into CO2, CH4, N2O, HFCs, PFCs,SF6, NF3, if available)</th>
                                         <td><input type="text" id="totalscope" name="totalscope[]" class="form-control"></td>
                                         <td><input type="text" id="totalscope" name="totalscope[]" class="form-control"></td>
                                         <td><input type="text" id="totalscope" name="totalscope[]" class="form-control"></td>
                                     </tr>
                                     <tr>
-                                        <th align="center" class="form-label">Total Scope 3 emissions per rupee of turnover:</th>
+                                        <th align="center" class="form-label">Total Scope 3 emissions per rupee of turnover</th>
                                         <td><input type="text" id="totalscope" name="totalscope[]" class="form-control"></td>
                                         <td><input type="text" id="totalscope" name="totalscope[]" class="form-control"></td>
                                         <td><input type="text" id="totalscope" name="totalscope[]" class="form-control"></td>
                                     </tr>
                                     <tr>
-                                        <th align="center" class="form-label">Total Scope 3 intensity (optional) :</th>
+                                        <th align="center" class="form-label">Total Scope 3 intensity (optional)</th>
                                         <td><input type="text" id="totalscope" name="totalscope[]" class="form-control"></td>
                                         <td><input type="text" id="totalscope" name="totalscope[]" class="form-control"></td>
                                         <td><input type="text" id="totalscope" name="totalscope[]" class="form-control"></td>
@@ -3833,36 +4047,42 @@
                         <!--Independent assessment question 4 leadership start-->
                         <div class="mb-3">
                             <div class="policy">
-                                <label for="totalscopeAgency" name="totalscopeAgency" class="form-label">4.2. Indicate if any independent assessment/ evaluation/assurance has been carried out by an external agency? If yes, provide the name of the external agency:</label>
+                                <label for="totalscopeAgency" name="totalscopeAgency" class="form-label">4.2. Indicate if any independent assessment/evaluation/assurance has been carried out by an external agency? If yes, provide the name of the external agency:</label>
                             </div>
-                            <select name="totalscopeAgency" id="totalscopeAgency" class="form-control">
-                                <option value="">Select an option</option>
-                                <option value="Yes">Yes</option>
-                                <option value="No">No</option>
-                            </select>
+                            <div class="policy">
+                                <select name="totalscopeAgency" id="totalscopeAgency" class="form-control">
+                                    <option value="">Select an option</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+                            </div>
                         </div>
                         <!--hidden-->
                         <div id="totalscopeAgencyName" class="mb-3 hidden">
                             <div class="policy">
                                 <label for="totalscopeAgencyName" class="form-label">Specify the name of the external agency:</label>
                             </div>
-                            <textarea id="totalscopeAgencyName" name="totalscopeAgencyName" class="form-control" placeholder="Enter the name"></textarea>
+                            <div class="policy">
+                                <textarea id="totalscopeAgencyName" name="totalscopeAgencyName" class="form-control" placeholder="Enter the name"></textarea>
+                            </div>
                         </div>
                         <!--Independent assessment question 4 leadership end-->
 
                         <!--Significant direct & indirect impact of the entity on biodiversity start-->
                         <div class="mb-3">
                             <div class="policy">
-                                <label for="significantdirect" class="form-label">5. With respect to the ecologically sensitive areas reported at Question 10 of Essential Indicators above, provide details of significant direct & indirect impact of the entity on biodiversity in such areas along-with prevention and remediation activities :</label>
+                                <label for="significantdirect" class="form-label">5. With respect to the ecologically sensitive areas reported at Question 10 of Essential Indicators above, provide details of significant direct & indirect impact of the entity on biodiversity in such areas along-with prevention and remediation activities:</label>
                             </div>
-                            <textarea id="significantdirect" name="significantdirect" class="form-control" placeholder="Enter the details" ></textarea>
+                            <div class="policy">
+                                <textarea id="significantdirect" name="significantdirect" class="form-control" placeholder="Enter the details" ></textarea>
+                            </div>
                         </div>
                         <!--Significant direct & indirect impact of the entity on biodiversity end-->
 
                         <!--Details of specific initiatives or innovative technology to improve resource efficiency start-->
                         <div class="mb-3">
                             <div class="policy">
-                                <label for="resourceefficiency" class="form-label">6. If the entity has undertaken any specific initiatives or used innovative technology or solutions to improve resource efficiency, or reduce impact due to emissions / effluent discharge / waste generated, please provide details of the same as well as outcome of such initiatives, as per the following format :</label>
+                                <label for="resourceefficiency" class="form-label">6. If the entity has undertaken any specific initiatives or used innovative technology or solutions to improve resource efficiency, or reduce impact due to emissions/effluent discharge/waste generated, please provide details of the same as well as outcome of such initiatives, as per the following format:</label>
                             </div>
                             <div id="resourceefficiency" class="responsive-table">
                                 <table id="p_resourceefficiency">
@@ -3881,10 +4101,10 @@
                                 </table>
                                 <div>
                                     <input type="number" id="indexInput_resourceefficiency" placeholder="Enter Index">
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex('resourceefficiency')">Add S.No.</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow('resourceefficiency')">Remove S.No.</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow('resourceefficiency')">Add Row</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow('resourceefficiency')">Remove Row</button>
+                                    <button class="add-remove-row-btn" type="button" onclick="addRowAtIndex('resourceefficiency')">Add S.No.</button>
+                                    <button class="add-remove-row-btn" type="button" onclick="removeSpecificRow('resourceefficiency')">Remove S.No.</button>
+                                    <button class="add-remove-row-btn" type="button" onclick="addBottomRow('resourceefficiency')">Add Row</button>
+                                    <button class="add-remove-row-btn" type="button" onclick="removeBottomRow('resourceefficiency')">Remove Row</button>
                                 </div>
                             </div>
                             <div class="policy">
@@ -3899,27 +4119,33 @@
                         <!--Details of business continuity and disaster management plan start-->
                         <div class="mb-3">
                             <div class="policy">
-                                <label for="disastermanagement" class="form-label">7. Does the entity have a business continuity and disaster management plan? Give details in 100 words/ web link :</label>
+                                <label for="disastermanagement" class="form-label">7. Does the entity have a business continuity and disaster management plan? Give details in 100 words/web link:</label>
                             </div>
-                            <textarea id="disastermanagement" name="disastermanagement" class="form-control" placeholder="Enter the details" ></textarea>
+                            <div class="policy">
+                                <textarea id="disastermanagement" name="disastermanagement" class="form-control" placeholder="Enter the details" ></textarea>
+                            </div>
                         </div>
                         <!--Details of business continuity and disaster management plan end-->
 
                         <!--Mitigation or adaptation measures taken by the entity to disclose any significant adverse impact to environment arising from value chain of entity start-->
                         <div class="mb-3">
                             <div class="policy">
-                                <label for="valuechainentity" class="form-label">8. Disclose any significant adverse impact to the environment, arising from the value chain of the entity. What mitigation or adaptation measures have been taken by the entity in this regard :</label>
+                                <label for="valuechainentity" class="form-label">8. Disclose any significant adverse impact to the environment, arising from the value chain of the entity. What mitigation or adaptation measures have been taken by the entity in this regard:</label>
                             </div>
-                            <textarea id="valuechainentity" name="valuechainentity" class="form-control" placeholder="Enter the details" ></textarea>
+                            <div class="policy">
+                                <textarea id="valuechainentity" name="valuechainentity" class="form-control" placeholder="Enter the details" ></textarea>
+                            </div>
                         </div>
                         <!--Mitigation or adaptation measures taken by the entity to disclose any significant adverse impact to environment arising from value chain of entity end-->
 
                         <!--Percentage of value chain partners that were assessed for environmental imapcts start-->
                         <div class="mb-3">
                             <div class="policy">
-                                <label for="valuechainbusiness" class="form-label">9. Percentage of value chain partners (by value of business done with such partners) that were assessed for environmental impacts :</label>
+                                <label for="valuechainbusiness" class="form-label">9. Percentage of value chain partners (by value of business done with such partners) that were assessed for environmental impacts:</label>
                             </div>
-                            <textarea id="valuechainbusiness" name="valuechainbusiness" class="form-control" placeholder="Enter the details" required></textarea>
+                            <div class="policy">
+                                <textarea id="valuechainbusiness" name="valuechainbusiness" class="form-control" placeholder="Enter the details" required></textarea>
+                            </div>
                         </div>
                         <!--Percentage of value chain partners that were assessed for environmental imapcts end-->
                     </div>
@@ -3944,87 +4170,92 @@
                         <div class="policy">
                             <h3 style="text-align: center; border-bottom: 2px solid #2d6a4f; padding-bottom: 15px;">Essential Indicators</h3>
                         </div>
-                        <!--Details of trade and industry chambers/ associations start-->
+                        <!--Details of trade and industry chambers/associations start-->
                         <div class="mb-3">
                             <div class="policy">
-                                <label for="noTradeAffiliations" class="form-label">1.a. Number of affiliations with trade & industry chambers/associations (Names of top 10 trade & industry chambers):</label>
+                                <label for="noTradeAffiliations" class="form-label">1. Details of trade and industry chambers/associations:</label>
                             </div>
-                            <textarea id="noTradeAffiliations" name="noTradeAffiliations" class="form-control" placeholder="Enter the details" ></textarea><br>
-                        </div>
-                       
-                        <!--Details of trade and industry chambers/ associations end-->
-                        <div class="mb-3">
-                            <div class="policy">
-                                <label for="tradeAffiliations" class="form-label">1.b. List the top 10 trade & industry chambers/associations (determined based on the total members of such body) the entity is a member of/affiliated to:</label>
-                            </div>
-                            <div id="tradeAffiliations" class="responsive-table">
-                                <table id="p_tradeAffiliations">
-                                    <thead>
-                                        <tr>
-                                            <th class="form-label">S.No.</th>
-                                            <th class="form-label">Name of the trade and industry chambers/associations</th>
-                                            <th class="form-label">Reach of trade and industry chambers/ associations (State/National)</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td style="width:5%;"><input type="number" id="tradeAffiliations" id="tradeAffiliations" name="tradeAffiliations[]" required value="1" class="form-control" readonly></td>
-                                            <td><input type="text" id="tradeAffiliations" name="tradeAffiliations[]" class="form-control" ></td>
-                                            <td><input type="text" id="tradeAffiliations" name="tradeAffiliations[]" class="form-control" ></td>
-                                        </tr>
-                                        <tr>
-                                            <td style="width:5%;"><input type="number" id="tradeAffiliations" id="tradeAffiliations" name="tradeAffiliations[]" required value="2" class="form-control" readonly></td>
-                                            <td><input type="text" id="tradeAffiliations" name="tradeAffiliations[]" class="form-control" ></td>
-                                            <td><input type="text" id="tradeAffiliations" name="tradeAffiliations[]" class="form-control" ></td>
-                                        </tr>
-                                        <tr>
-                                            <td style="width:5%;"><input type="number" id="tradeAffiliations" id="tradeAffiliations" name="tradeAffiliations[]" required value="3" class="form-control" readonly></td>
-                                            <td><input type="text" id="tradeAffiliations" name="tradeAffiliations[]" class="form-control" ></td>
-                                            <td><input type="text" id="tradeAffiliations" name="tradeAffiliations[]" class="form-control" ></td>
-                                        </tr>
-                                        <tr>
-                                            <td style="width:5%;"><input type="number" id="tradeAffiliations" id="tradeAffiliations" name="tradeAffiliations[]" required value="4" class="form-control" readonly></td>
-                                            <td><input type="text" id="tradeAffiliations" name="tradeAffiliations[]" class="form-control" ></td>
-                                            <td><input type="text" id="tradeAffiliations" name="tradeAffiliations[]" class="form-control" ></td>
-                                        </tr>
-                                        <tr>
-                                            <td style="width:5%;"><input type="number" id="tradeAffiliations" id="tradeAffiliations" name="tradeAffiliations[]" required value="5" class="form-control" readonly></td>
-                                            <td><input type="text" id="tradeAffiliations" name="tradeAffiliations[]" class="form-control" ></td>
-                                            <td><input type="text" id="tradeAffiliations" name="tradeAffiliations[]" class="form-control" ></td>
-                                        </tr>
-                                        <tr>
-                                            <td style="width:5%;"><input type="number" id="tradeAffiliations" id="tradeAffiliations" name="tradeAffiliations[]" required value="6" class="form-control" readonly></td>
-                                            <td><input type="text" id="tradeAffiliations" name="tradeAffiliations[]" class="form-control" ></td>
-                                            <td><input type="text" id="tradeAffiliations" name="tradeAffiliations[]" class="form-control" ></td>
-                                        </tr>
-                                        <tr>
-                                            <td style="width:5%;"><input type="number" id="tradeAffiliations" id="tradeAffiliations" name="tradeAffiliations[]" required value="7" class="form-control" readonly></td>
-                                            <td><input type="text" id="tradeAffiliations" name="tradeAffiliations[]" class="form-control" ></td>
-                                            <td><input type="text" id="tradeAffiliations" name="tradeAffiliations[]" class="form-control" ></td>
-                                        </tr>
-                                        <tr>
-                                            <td style="width:5%;"><input type="number" id="tradeAffiliations" id="tradeAffiliations" name="tradeAffiliations[]" required value="8" class="form-control" readonly></td>
-                                            <td><input type="text" id="tradeAffiliations" name="tradeAffiliations[]" class="form-control" ></td>
-                                            <td><input type="text" id="tradeAffiliations" name="tradeAffiliations[]" class="form-control" ></td>
-                                        </tr>
-                                        <tr>
-                                            <td style="width:5%;"><input type="number" id="tradeAffiliations" id="tradeAffiliations" name="tradeAffiliations[]" required value="9" class="form-control" readonly></td>
-                                            <td><input type="text" id="tradeAffiliations" name="tradeAffiliations[]" class="form-control" ></td>
-                                            <td><input type="text" id="tradeAffiliations" name="tradeAffiliations[]" class="form-control" ></td>
-                                        </tr>
-                                        <tr>
-                                            <td style="width:5%;"><input type="number" id="tradeAffiliations" id="tradeAffiliations" name="tradeAffiliations[]" required value="10" class="form-control" readonly></td>
-                                            <td><input type="text" id="tradeAffiliations" name="tradeAffiliations[]" class="form-control" ></td>
-                                            <td><input type="text" id="tradeAffiliations" name="tradeAffiliations[]" class="form-control" ></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            <div class="policy">
-                                <details class="add_comment_detail">
-                                    <summary>Add comments</summary>
-                                    <textarea class="detail-control" id="p_tradeAffiliations_comments" name="p_tradeAffiliations_comments" placeholder="Enter additional information (if required)"></textarea>
-                                </details>
+                            <div class="invisible_container">
+                                <div class="mb-3">
+                                    <div class="policy">
+                                        <label for="noTradeAffiliations" class="form-label">a. Number of affiliations with trade & industry chambers/associations (Names of top 10 trade & industry chambers):</label>
+                                    </div>
+                                    <textarea id="noTradeAffiliations" name="noTradeAffiliations" class="form-control" placeholder="Enter the details" ></textarea>
+                                </div>
+                                <div class="mb-3">
+                                    <div class="policy">
+                                        <label for="tradeAffiliations" class="form-label">b. List the top 10 trade & industry chambers/associations (determined based on the total members of such body) the entity is a member of/affiliated to:</label>
+                                    </div>
+                                    <div id="tradeAffiliations" class="responsive-table">
+                                        <table id="p_tradeAffiliations">
+                                            <thead>
+                                                <tr>
+                                                    <th class="form-label">S.No.</th>
+                                                    <th class="form-label">Name of the trade and industry chambers/associations</th>
+                                                    <th class="form-label">Reach of trade and industry chambers/associations (State/National)</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td style="width:5%;"><input type="number" id="tradeAffiliations" id="tradeAffiliations" name="tradeAffiliations[]" required value="1" class="form-control" readonly></td>
+                                                    <td><input type="text" id="tradeAffiliations" name="tradeAffiliations[]" class="form-control" ></td>
+                                                    <td><input type="text" id="tradeAffiliations" name="tradeAffiliations[]" class="form-control" ></td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="width:5%;"><input type="number" id="tradeAffiliations" id="tradeAffiliations" name="tradeAffiliations[]" required value="2" class="form-control" readonly></td>
+                                                    <td><input type="text" id="tradeAffiliations" name="tradeAffiliations[]" class="form-control" ></td>
+                                                    <td><input type="text" id="tradeAffiliations" name="tradeAffiliations[]" class="form-control" ></td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="width:5%;"><input type="number" id="tradeAffiliations" id="tradeAffiliations" name="tradeAffiliations[]" required value="3" class="form-control" readonly></td>
+                                                    <td><input type="text" id="tradeAffiliations" name="tradeAffiliations[]" class="form-control" ></td>
+                                                    <td><input type="text" id="tradeAffiliations" name="tradeAffiliations[]" class="form-control" ></td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="width:5%;"><input type="number" id="tradeAffiliations" id="tradeAffiliations" name="tradeAffiliations[]" required value="4" class="form-control" readonly></td>
+                                                    <td><input type="text" id="tradeAffiliations" name="tradeAffiliations[]" class="form-control" ></td>
+                                                    <td><input type="text" id="tradeAffiliations" name="tradeAffiliations[]" class="form-control" ></td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="width:5%;"><input type="number" id="tradeAffiliations" id="tradeAffiliations" name="tradeAffiliations[]" required value="5" class="form-control" readonly></td>
+                                                    <td><input type="text" id="tradeAffiliations" name="tradeAffiliations[]" class="form-control" ></td>
+                                                    <td><input type="text" id="tradeAffiliations" name="tradeAffiliations[]" class="form-control" ></td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="width:5%;"><input type="number" id="tradeAffiliations" id="tradeAffiliations" name="tradeAffiliations[]" required value="6" class="form-control" readonly></td>
+                                                    <td><input type="text" id="tradeAffiliations" name="tradeAffiliations[]" class="form-control" ></td>
+                                                    <td><input type="text" id="tradeAffiliations" name="tradeAffiliations[]" class="form-control" ></td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="width:5%;"><input type="number" id="tradeAffiliations" id="tradeAffiliations" name="tradeAffiliations[]" required value="7" class="form-control" readonly></td>
+                                                    <td><input type="text" id="tradeAffiliations" name="tradeAffiliations[]" class="form-control" ></td>
+                                                    <td><input type="text" id="tradeAffiliations" name="tradeAffiliations[]" class="form-control" ></td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="width:5%;"><input type="number" id="tradeAffiliations" id="tradeAffiliations" name="tradeAffiliations[]" required value="8" class="form-control" readonly></td>
+                                                    <td><input type="text" id="tradeAffiliations" name="tradeAffiliations[]" class="form-control" ></td>
+                                                    <td><input type="text" id="tradeAffiliations" name="tradeAffiliations[]" class="form-control" ></td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="width:5%;"><input type="number" id="tradeAffiliations" id="tradeAffiliations" name="tradeAffiliations[]" required value="9" class="form-control" readonly></td>
+                                                    <td><input type="text" id="tradeAffiliations" name="tradeAffiliations[]" class="form-control" ></td>
+                                                    <td><input type="text" id="tradeAffiliations" name="tradeAffiliations[]" class="form-control" ></td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="width:5%;"><input type="number" id="tradeAffiliations" id="tradeAffiliations" name="tradeAffiliations[]" required value="10" class="form-control" readonly></td>
+                                                    <td><input type="text" id="tradeAffiliations" name="tradeAffiliations[]" class="form-control" ></td>
+                                                    <td><input type="text" id="tradeAffiliations" name="tradeAffiliations[]" class="form-control" ></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="policy">
+                                        <details class="add_comment_detail">
+                                            <summary>Add comments</summary>
+                                            <textarea class="detail-control" id="p_tradeAffiliations_comments" name="p_tradeAffiliations_comments" placeholder="Enter additional information (if required)"></textarea>
+                                        </details>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
@@ -4054,10 +4285,10 @@
                                 </table>
                                 <div>
                                     <input type="number" id="indexInput_antiCompetitiveActions" placeholder="Enter Index">
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex('antiCompetitiveActions')">Add S.No.</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow('antiCompetitiveActions')">Remove S.No.</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow('antiCompetitiveActions')">Add Row</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow('antiCompetitiveActions')">Remove Row</button>
+                                    <button class="add-remove-row-btn" type="button" onclick="addRowAtIndex('antiCompetitiveActions')">Add S.No.</button>
+                                    <button class="add-remove-row-btn" type="button" onclick="removeSpecificRow('antiCompetitiveActions')">Remove S.No.</button>
+                                    <button class="add-remove-row-btn" type="button" onclick="addBottomRow('antiCompetitiveActions')">Add Row</button>
+                                    <button class="add-remove-row-btn" type="button" onclick="removeBottomRow('antiCompetitiveActions')">Remove Row</button>
                                 </div>
                             </div>
                             <div class="policy">
@@ -4090,7 +4321,7 @@
                                             <th class="form-label">Public policy advocated</th>
                                             <th class="form-label">Method resorted for such advocacy</th>
                                             <th class="form-label">Whether information available in public domain? (Yes/No)</th>
-                                            <th class="form-label">Frequency of Review by Board (Annually/ Half yearly/ Quaterly/ Others - please specify)</th>
+                                            <th class="form-label">Frequency of Review by Board (Annually/Half yearly/Quaterly/Others - please specify)</th>
                                             <th class="form-label">Web link, if available</th>
                                         </tr>
                                     </thead>
@@ -4107,10 +4338,10 @@
                                 </table>
                                 <div>
                                     <input type="number" id="indexInput_publicPolicyAdvocacy" placeholder="Enter Index">
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex('publicPolicyAdvocacy')">Add S.No.</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow('publicPolicyAdvocacy')">Remove S.No.</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow('publicPolicyAdvocacy')">Add Row</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow('publicPolicyAdvocacy')">Remove Row</button>
+                                    <button class="add-remove-row-btn" type="button" onclick="addRowAtIndex('publicPolicyAdvocacy')">Add S.No.</button>
+                                    <button class="add-remove-row-btn" type="button" onclick="removeSpecificRow('publicPolicyAdvocacy')">Remove S.No.</button>
+                                    <button class="add-remove-row-btn" type="button" onclick="addBottomRow('publicPolicyAdvocacy')">Add Row</button>
+                                    <button class="add-remove-row-btn" type="button" onclick="removeBottomRow('publicPolicyAdvocacy')">Remove Row</button>
                                 </div>
                             </div>
                             <div class="policy">
@@ -4146,7 +4377,7 @@
                         <!--Details of Social Impact Assessments (SIA) of projects start-->
                         <div class="mb-3">
                             <div class="policy">
-                                <label for="socialImpactAssessments" class="form-label"><span style="color: red;"> * </span>1. Details of Social Impact Assessments (SIA) of projects undertaken by the entity based on applicable laws, in the current financial year:</label>
+                                <label for="socialImpactAssessments" class="form-label">1. Details of Social Impact Assessments (SIA) of projects undertaken by the entity based on applicable laws, in the current financial year:</label>
                             </div>
                             <div id="socialImpactAssessments" class="responsive-table">
                                 <table id="p_socialImpactAssessments">
@@ -4156,8 +4387,8 @@
                                             <th class="form-label">Name and brief details of project</th>
                                             <th class="form-label">SIA Notification No.</th>
                                             <th class="form-label">Date of notification</th>
-                                            <th class="form-label">Whether conducted by independent external agency (Yes / No)</th>
-                                            <th class="form-label">Results communicated in public domain(Yes / No)</th>
+                                            <th class="form-label">Whether conducted by independent external agency (Yes/No)</th>
+                                            <th class="form-label">Results communicated in public domain(Yes/No)</th>
                                             <th class="form-label">Relevant Web link</th>
                                         </tr>
                                     </thead>
@@ -4175,10 +4406,10 @@
                                 </table>
                                 <div>
                                     <input type="number" id="indexInput_socialImpactAssessments" placeholder="Enter Index">
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex('socialImpactAssessments')">Add S.No.</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow('socialImpactAssessments')">Remove S.No.</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow('socialImpactAssessments')">Add Row</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow('socialImpactAssessments')">Remove Row</button>
+                                    <button class="add-remove-row-btn" type="button" onclick="addRowAtIndex('socialImpactAssessments')">Add S.No.</button>
+                                    <button class="add-remove-row-btn" type="button" onclick="removeSpecificRow('socialImpactAssessments')">Remove S.No.</button>
+                                    <button class="add-remove-row-btn" type="button" onclick="addBottomRow('socialImpactAssessments')">Add Row</button>
+                                    <button class="add-remove-row-btn" type="button" onclick="removeBottomRow('socialImpactAssessments')">Remove Row</button>
                                 </div>
                             </div>
                             <div class="policy">
@@ -4193,7 +4424,7 @@
                         <!--Details on project(s) for which ongoing Rehabilitation and Resettlement(R&R) start-->
                         <div class="mb-3">
                             <div class="policy">
-                                <label for="rehabilitationProject" class="form-label"><span style="color: red;"> * </span>2. Provide information on project(s) for which ongoing Rehabilitation & Resettlement (R&R) is being undertaken by your entity, in the following format:</label>
+                                <label for="rehabilitationProject" class="form-label">2. Provide information on project(s) for which ongoing Rehabilitation & Resettlement (R&R) is being undertaken by your entity, in the following format:</label>
                             </div>
                             <div id="rehabilitationProject" class="responsive-table">
                                 <table id="p_rehabilitationProject">
@@ -4222,10 +4453,10 @@
                                 </table>
                                 <div>
                                     <input type="number" id="indexInput_rehabilitationProject" placeholder="Enter Index">
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex('rehabilitationProject')">Add S.No.</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow('rehabilitationProject')">Remove S.No.</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow('rehabilitationProject')">Add Row</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow('rehabilitationProject')">Remove Row</button>
+                                    <button class="add-remove-row-btn" type="button" onclick="addRowAtIndex('rehabilitationProject')">Add S.No.</button>
+                                    <button class="add-remove-row-btn" type="button" onclick="removeSpecificRow('rehabilitationProject')">Remove S.No.</button>
+                                    <button class="add-remove-row-btn" type="button" onclick="addBottomRow('rehabilitationProject')">Add Row</button>
+                                    <button class="add-remove-row-btn" type="button" onclick="removeBottomRow('rehabilitationProject')">Remove Row</button>
                                 </div>
                             </div>
                             <div class="policy">
@@ -4240,16 +4471,18 @@
                         <!--Describe the mechanisms to receive and redress grievances of the community start-->
                         <div class="mb-3">
                             <div class="policy">
-                                <label for="grievanceRedressMechanism" class="form-label"><span style="color: red;"> * </span>3. Describe the mechanisms to receive & redress grievances of the community:</label>
+                                <label for="grievanceRedressMechanism" class="form-label">3. Describe the mechanisms to receive & redress grievances of the community:</label>
                             </div>
-                            <textarea id="grievanceRedressMechanism" name="grievanceRedressMechanism" class="form-control" placeholder="Enter the details" ></textarea>
+                            <div class="policy">
+                                <textarea id="grievanceRedressMechanism" name="grievanceRedressMechanism" class="form-control" placeholder="Enter the details" ></textarea>
+                            </div>
                         </div>
                         <!--Describe the mechanisms to receive and redress grievances of the community end-->
 
                         <!--Percentage of input material (inputs to total inputs by value) sourced from suppliers start-->
                         <div class="mb-3">
                             <div class="policy">
-                                <label for="inputMaterialPercentage" class="form-label"><span style="color: red;"> * </span>4. Percentage of input material (inputs to total inputs by value) sourced from suppliers:</label>
+                                <label for="inputMaterialPercentage" class="form-label">4. Percentage of input material (inputs to total inputs by value) sourced from suppliers:</label>
                             </div>
                             <div id="inputMaterialPercentage" class="responsive-table">
                                 <table id="p_inputMaterialPercentage">
@@ -4262,7 +4495,7 @@
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <th class="form-label" id="inputMaterialPercentage" id="p_inputMaterialPercentage" name="inputMaterialPercentage[]" class="form-control">Directly sourced from MSMEs/ small producers</th>
+                                            <th class="form-label" id="inputMaterialPercentage" id="p_inputMaterialPercentage" name="inputMaterialPercentage[]" class="form-control">Directly sourced from MSMEs/small producers</th>
                                             <td><input type="number" id="inputMaterialPercentage" name="inputMaterialPercentage[]" class="form-control"></td>
                                             <td><input type="number" id="inputMaterialPercentage" name="inputMaterialPercentage[]" class="form-control"></td>
                                         </tr>
@@ -4294,7 +4527,7 @@
                         <!--Details of actions taken to mitigate any negative social impacts identified in the Social Impact Assessments start-->
                         <div class="mb-3">
                             <div class="policy">
-                                <label for="socialImpactActions" class="form-label"><span style="color: red;"> * </span>1. Provide details of actions taken to mitigate any negative social impacts identified in Social Impact Assessments (Reference: Question 1 of Essential Indicators above):</label>
+                                <label for="socialImpactActions" class="form-label">1. Provide details of actions taken to mitigate any negative social impacts identified in Social Impact Assessments (Reference: Question 1 of Essential Indicators above):</label>
                             </div>
                             <div id="socialImpactActions" class="responsive-table">
                                 <table id="p_socialImpactActions">
@@ -4315,10 +4548,10 @@
                                 </table>
                                 <div>
                                     <input type="number" id="indexInput_socialImpactActions" placeholder="Enter Index">
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex('socialImpactActions')">Add S.No.</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow('socialImpactActions')">Remove S.No.</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow('socialImpactActions')">Add Row</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow('socialImpactActions')">Remove Row</button>
+                                    <button class="add-remove-row-btn" type="button" onclick="addRowAtIndex('socialImpactActions')">Add S.No.</button>
+                                    <button class="add-remove-row-btn" type="button" onclick="removeSpecificRow('socialImpactActions')">Remove S.No.</button>
+                                    <button class="add-remove-row-btn" type="button" onclick="addBottomRow('socialImpactActions')">Add Row</button>
+                                    <button class="add-remove-row-btn" type="button" onclick="removeBottomRow('socialImpactActions')">Remove Row</button>
                                 </div>
                             </div>
                             <div class="policy">
@@ -4333,7 +4566,7 @@
                         <!--Details on CSR projects start-->
                         <div class="mb-3">
                             <div class="policy">
-                                <label for="csrAspirationalDistricts" class="form-label"><span style="color: red;"> * </span>2. Provide the following information on CSR projects undertaken by your entity in designated aspirational districts as identified by government bodies:</label>
+                                <label for="csrAspirationalDistricts" class="form-label">2. Provide the following information on CSR projects undertaken by your entity in designated aspirational districts as identified by government bodies:</label>
                             </div>
                             <div id="csrAspirationalDistricts" class="responsive-table">
                                 <table id="p_csrAspirationalDistricts">
@@ -4358,10 +4591,10 @@
                                 </table>
                                 <div>
                                     <input type="number" id="indexInput_csrAspirationalDistricts" placeholder="Enter Index">
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex('csrAspirationalDistricts')">Add S.No.</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow('csrAspirationalDistricts')">Remove S.No.</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow('csrAspirationalDistricts')">Add Row</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow('csrAspirationalDistricts')">Remove Row</button>
+                                    <button class="add-remove-row-btn" type="button" onclick="addRowAtIndex('csrAspirationalDistricts')">Add S.No.</button>
+                                    <button class="add-remove-row-btn" type="button" onclick="removeSpecificRow('csrAspirationalDistricts')">Remove S.No.</button>
+                                    <button class="add-remove-row-btn" type="button" onclick="addBottomRow('csrAspirationalDistricts')">Add Row</button>
+                                    <button class="add-remove-row-btn" type="button" onclick="removeBottomRow('csrAspirationalDistricts')">Remove Row</button>
                                 </div>
                             </div>
                             <div class="policy">
@@ -4373,33 +4606,49 @@
                         </div>
                         <!--Details on CSR projects end-->
 
-                        <!--Marginalized /vulnerable groups start-->
+                        <!--Marginalized/vulnerable groups start-->
                         <div class="mb-3">
                             <div class="policy">
-                                <label for="procurementPolicyMarginalized" class="form-label"><span style="color: red;"> * </span>3.a. Do you have a preferential procurement policy where you give preference to purchase from suppliers comprising marginalized /vulnerable groups? (Yes/No)</label>
+                                <label for="procurementPolicyMarginalizedChoice" class="form-label">3. Marginalized/vulnerable groups details:</label>
                             </div>
-                            <div class="policy">
-                                <select class="form-select" id="procurementPolicyMarginalized" name="procurementPolicyMarginalized" >
-                                    <option value="">Select an option</option>
-                                    <option value="Yes">Yes</option>
-                                    <option value="No">No</option>
-                                </select>
-                            </div>
-                            <div class="policy">
-                                <label for="procurementPolicyMarginalized" class="form-label">3.b. From which marginalized /vulnerable groups do you procure?</label>
-                                <textarea id="procurementPolicyMarginalized" name="procurementPolicyMarginalized" class="form-control" placeholder="Enter the details" ></textarea>
-                            </div>
-                            <div class="policy">
-                                <label for="procurementPolicyMarginalized" class="form-label">3.c. What percentage of total procurement (by value) does it constitute?</label>
-                                <textarea id="procurementPolicyMarginalized" name="procurementPolicyMarginalized" class="form-control" placeholder="Enter the details" ></textarea>
+                            <div class="invisible_container">
+                                <div class="mb-3">
+                                    <div class="policy">
+                                        <label for="procurementPolicyMarginalizedChoice" class="form-label">a. Do you have a preferential procurement policy where you give preference to purchase from suppliers comprising marginalized/vulnerable groups? (Yes/No)</label>
+                                    </div>
+                                    <select id="procurementPolicyMarginalizedChoice" name="procurementPolicyMarginalizedChoice" class="form-control">
+                                        <option value="">Select an option</option>
+                                        <option value="Yes">Yes</option>
+                                        <option value="No">No</option>
+                                    </select>
+                                </div>
+                                <!--hidden-->
+                                <div id="procurementPolicyMarginalizedDetails" class="mb-3 hidden">
+                                    <div class="policy">
+                                        <label for="procurementPolicyMarginalizedDetails" class="form-label">Specify the relevant details:</label>
+                                    </div>
+                                    <textarea id="procurementPolicyMarginalizedDetails" name="procurementPolicyMarginalizedDetails" class="form-control" placeholder="Enter the details"></textarea>
+                                </div>
+                                <div class="mb-3">
+                                    <div class="policy">
+                                        <label for="procurementPolicyMarginalized" class="form-label">b. From which marginalized/vulnerable groups do you procure?</label>
+                                    </div>
+                                    <textarea id="procurementPolicyMarginalized" name="procurementPolicyMarginalized" class="form-control" placeholder="Enter the details" ></textarea>
+                                </div>
+                                <div class="mb-3-sub-last">
+                                    <div class="policy">
+                                        <label for="procurementPolicyMarginalized" class="form-label">c. What percentage of total procurement (by value) does it constitute?</label>
+                                    </div>
+                                    <textarea id="procurementPolicyMarginalized" name="procurementPolicyMarginalized" class="form-control" placeholder="Enter the details" ></textarea>
+                                </div>
                             </div>
                         </div>
-                        <!--Marginalized /vulnerable groups end-->
+                        <!--Marginalized/vulnerable groups end-->
 
                         <!--Benefits derived and shared from the intellectual properties start-->
                         <div class="mb-3">
                             <div class="policy">
-                                <label for="intellectualPropertiesBenefits" class="form-label"><span style="color: red;"> * </span>4. Details of the benefits derived & shared from the intellectual properties owned or acquired by your entity (in the current financial year), based on traditional knowledge:</label>
+                                <label for="intellectualPropertiesBenefits" class="form-label">4. Details of the benefits derived & shared from the intellectual properties owned or acquired by your entity (in the current financial year), based on traditional knowledge:</label>
                             </div>
                             <div id="intellectualPropertiesBenefits" class="responsive-table">
                                 <table id="p_intellectualPropertiesBenefits">
@@ -4407,8 +4656,8 @@
                                         <tr>
                                             <th class="form-label">S.No.</th>
                                             <th class="form-label">Intellectual Property based on traditional knowledge</th>
-                                            <th class="form-label">Owned/ Acquired (Yes/No)</th>
-                                            <th class="form-label">Benefit shared(Yes / No)</th>
+                                            <th class="form-label">Owned/Acquired (Yes/No)</th>
+                                            <th class="form-label">Benefit shared(Yes/No)</th>
                                             <th class="form-label">Basis of calculating benefit share</th>
                                         </tr>
                                     </thead>
@@ -4424,10 +4673,10 @@
                                 </table>
                                 <div>
                                     <input type="number" id="indexInput_intellectualPropertiesBenefits" placeholder="Enter Index">
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex('intellectualPropertiesBenefits')">Add S.No.</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow('intellectualPropertiesBenefits')">Remove S.No.</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow('intellectualPropertiesBenefits')">Add Row</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow('intellectualPropertiesBenefits')">Remove Row</button>
+                                    <button class="add-remove-row-btn" type="button" onclick="addRowAtIndex('intellectualPropertiesBenefits')">Add S.No.</button>
+                                    <button class="add-remove-row-btn" type="button" onclick="removeSpecificRow('intellectualPropertiesBenefits')">Remove S.No.</button>
+                                    <button class="add-remove-row-btn" type="button" onclick="addBottomRow('intellectualPropertiesBenefits')">Add Row</button>
+                                    <button class="add-remove-row-btn" type="button" onclick="removeBottomRow('intellectualPropertiesBenefits')">Remove Row</button>
                                 </div>
                             </div>
                             <div class="policy">
@@ -4442,7 +4691,7 @@
                         <!--Details of corrective actions taken or underway, based on any adverse order in intellectual property related disputes start-->
                         <div class="mb-3">
                             <div class="policy">
-                                <label for="correctiveActionsIntellectualProperty" class="form-label"><span style="color: red;"> * </span>5. Details of corrective actions taken or underway, based on any adverse order in intellectual property related disputes wherein usage of traditional knowledge is involved:</label>
+                                <label for="correctiveActionsIntellectualProperty" class="form-label">5. Details of corrective actions taken or underway, based on any adverse order in intellectual property related disputes wherein usage of traditional knowledge is involved:</label>
                             </div>
                             <div id="correctiveActionsIntellectualProperty" class="responsive-table">
                                 <table id="p_correctiveActionsIntellectualProperty">
@@ -4465,10 +4714,10 @@
                                 </table>
                                 <div>
                                     <input type="number" id="indexInput_correctiveActionsIntellectualProperty" placeholder="Enter Index">
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex('correctiveActionsIntellectualProperty')">Add S.No.</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow('correctiveActionsIntellectualProperty')">Remove S.No.</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow('correctiveActionsIntellectualProperty')">Add Row</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow('correctiveActionsIntellectualProperty')">Remove Row</button>
+                                    <button class="add-remove-row-btn" type="button" onclick="addRowAtIndex('correctiveActionsIntellectualProperty')">Add S.No.</button>
+                                    <button class="add-remove-row-btn" type="button" onclick="removeSpecificRow('correctiveActionsIntellectualProperty')">Remove S.No.</button>
+                                    <button class="add-remove-row-btn" type="button" onclick="addBottomRow('correctiveActionsIntellectualProperty')">Add Row</button>
+                                    <button class="add-remove-row-btn" type="button" onclick="removeBottomRow('correctiveActionsIntellectualProperty')">Remove Row</button>
                                 </div>
                             </div>
                             <div class="policy">
@@ -4483,7 +4732,7 @@
                         <!--Details of beneficiaries of CSR Projects start-->
                         <div class="mb-3">
                             <div class="policy">
-                                <label for="csrProjectBeneficiaries" class="form-label"><span style="color: red;"> * </span>6. Details of beneficiaries of CSR Projects:</label>
+                                <label for="csrProjectBeneficiaries" class="form-label">6. Details of beneficiaries of CSR Projects:</label>
                             </div>
                             <div id="csrProjectBeneficiaries" class="responsive-table">
                                 <table id="p_csrProjectBeneficiaries">
@@ -4506,10 +4755,10 @@
                                 </table>
                                 <div>
                                     <input type="number" id="indexInput_csrProjectBeneficiaries" placeholder="Enter Index">
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="addRowAtIndex('csrProjectBeneficiaries')">Add S.No.</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeSpecificRow('csrProjectBeneficiaries')">Remove S.No.</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="addBottomRow('csrProjectBeneficiaries')">Add Row</button>
-                                    <button class="add-remove-row-btn form-label" type="button" onclick="removeBottomRow('csrProjectBeneficiaries')">Remove Row</button>
+                                    <button class="add-remove-row-btn" type="button" onclick="addRowAtIndex('csrProjectBeneficiaries')">Add S.No.</button>
+                                    <button class="add-remove-row-btn" type="button" onclick="removeSpecificRow('csrProjectBeneficiaries')">Remove S.No.</button>
+                                    <button class="add-remove-row-btn" type="button" onclick="addBottomRow('csrProjectBeneficiaries')">Add Row</button>
+                                    <button class="add-remove-row-btn" type="button" onclick="removeBottomRow('csrProjectBeneficiaries')">Remove Row</button>
                                 </div>
                             </div>
                             <div class="policy">
@@ -4544,13 +4793,15 @@
                         <!--Describe the mechanisms to receive & respond to consumer complaints & feedback start-->
                         <div class="mb-3">
                             <div class="policy">
-                                <label for="consumerFeedbackMechanism" class="form-label"><br><span style="color: red;"> * </span>1. Describe the mechanisms to receive & respond to consumer complaints & feedback:</label>
+                                <label for="consumerFeedbackMechanism" class="form-label">1. Describe the mechanisms to receive & respond to consumer complaints & feedback:</label>
                             </div>
-                            <textarea id="consumerFeedbackMechanism" name="consumerFeedbackMechanism" class="form-control" placeholder="Enter the details" ></textarea>
+                            <div class="policy">
+                                <textarea id="consumerFeedbackMechanism" name="consumerFeedbackMechanism" class="form-control" placeholder="Enter the details" ></textarea>
+                            </div>
                         </div>
                         <!--Describe the mechanisms to receive & respond to consumer complaints & feedback end-->
 
-                        <!--Turnover of products and/ services as a percentage of turnover from all products start-->
+                        <!--Turnover of products and/services as a percentage of turnover from all products start-->
                         <div class="mb-3">
                             <div class="policy">
                                 <label for="productTurnover" class="form-label">2. Turnover of products and/or services as a percentage of turnover from all products/service that carry information about:</label>
@@ -4582,12 +4833,12 @@
                                 </details>
                             </div>
                         </div>
-                        <!--Turnover of products and/ services as a percentage of turnover from all products end-->
+                        <!--Turnover of products and/services as a percentage of turnover from all products end-->
 
                         <!--Number of consumer complaints start-->
                         <div class="mb-3">
                             <div class="policy">
-                                <label for="consumerComplaints" class="form-label"><span style="color: red;"> * </span>3. Number of consumer complaints with respect to the following:</label>
+                                <label for="consumerComplaints" class="form-label">3. Number of consumer complaints with respect to the following:</label>
                             </div>
                             <div id="consumerComplaints" class="responsive-table">
                                 <table id="p_consumerComplaints">
@@ -4683,7 +4934,7 @@
                         <!--Details of instances of product recalls on account of safety issues start-->
                         <div class="mb-3">
                             <div class="policy">
-                                <label for="productRecallInstances" class="form-label"><span style="color: red;"> * </span>4. Details of instances of product recalls on account of safety issues:</label>
+                                <label for="productRecallInstances" class="form-label">4. Details of instances of product recalls on account of safety issues:</label>
                             </div>
                             <div id="productRecallInstances" class="responsive-table">
                                 <table id="p_productRecallInstances">
@@ -4713,32 +4964,38 @@
                         </div>
                         <!--Details of instances of product recalls on account of safety issues end-->
 
-                        <!--Does the entity have a framework/ policy on cyber security and risks related to data privacy start-->
+                        <!--Does the entity have a framework/policy on cyber security and risks related to data privacy start-->
                         <div class="mb-3">
                             <div class="policy">
-                                <label for="cyberSecurityPolicy" class="form-label"><span style="color: red;"> * </span>5. Does the entity have a framework/policy on cyber security & risks related to data privacy? If yes, provide details and a web-link of the policy if available:</label>
+                                <label for="cyberSecurityPolicy" class="form-label">5. Does the entity have a framework/policy on cyber security & risks related to data privacy? If yes, provide details and a web-link of the policy if available:</label>
                             </div>
-                            <select name="cyberSecurityPolicy" id="cyberSecurityPolicy" class="form-control" >
-                                <option value="">Select an option</option>
-                                <option value="Yes">Yes</option>
-                                <option value="No">No</option>
-                            </select>
+                            <div class="policy">
+                                <select name="cyberSecurityPolicy" id="cyberSecurityPolicy" class="form-control" >
+                                    <option value="">Select an option</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+                            </div>
                         </div>
                         <!--hidden-->
                         <div id="cyberSecurityPolicyDetails" class="mb-3 hidden">
                             <div class="policy">
                                 <label for="cyberSecurityPolicyDetails" class="form-label">Specify the relevant details:</label>
                             </div>
-                            <textarea id="cyberSecurityPolicyDetails" name="cyberSecurityPolicyDetails" class="form-control" placeholder="Enter the details"></textarea>
+                            <div class="policy">
+                                <textarea id="cyberSecurityPolicyDetails" name="cyberSecurityPolicyDetails" class="form-control" placeholder="Enter the details"></textarea>
+                            </div>
                         </div>
-                        <!--Does the entity have a framework/ policy on cyber security and risks related to data privacy end-->
+                        <!--Does the entity have a framework/policy on cyber security and risks related to data privacy end-->
 
                         <!--Details of any corrective actions taken on issues relating to advertising, and delivery of essential services start-->
                         <div class="mb-3">
                             <div class="policy">
-                                <label for="correctiveActions" class="form-label"><span style="color: red;"> * </span>6. Provide details of any corrective actions taken or underway on issues relating to advertising, & delivery of essential services; cyber security & data privacy of customers; re-occurrence of instances of product recalls; penalty/action taken by regulatory authorities on safety of products/services:</label>
+                                <label for="correctiveActions" class="form-label">6. Provide details of any corrective actions taken or underway on issues relating to advertising, & delivery of essential services; cyber security & data privacy of customers; re-occurrence of instances of product recalls; penalty/action taken by regulatory authorities on safety of products/services:</label>
                             </div>
-                            <textarea id="correctiveActions" name="correctiveActions" class="form-control" placeholder="Enter the details" ></textarea>
+                            <div class="policy">
+                                <textarea id="correctiveActions" name="correctiveActions" class="form-control" placeholder="Enter the details" ></textarea>
+                            </div>
                         </div>
                         <!--Details of any corrective actions taken on issues relating to advertising, and delivery of essential services end-->
                     </div>
@@ -4750,88 +5007,106 @@
                         <div class="policy">
                             <h3 style="text-align: center; border-bottom: 2px solid #2d6a4f; padding-bottom: 15px;">Leadership Indicators</h3>
                         </div>
-                        <!--Channels / platforms where information on products and services of the entity can be accessed start-->
+                        <!--Channels/platforms where information on products and services of the entity can be accessed start-->
                         <div class="mb-3">
                             <div class="policy">
-                                <label for="infoChannels" class="form-label"><br><span style="color: red;"> * </span>1. Channels/platforms where information on products & services of the entity can be accessed (provide web link, if available):</label>
+                                <label for="infoChannels" class="form-label">1. Channels/platforms where information on products & services of the entity can be accessed (provide web link, if available):</label>
                             </div>
-                            <textarea id="infoChannels" name="infoChannels" class="form-control" placeholder="Enter the details" ></textarea>
+                            <div class="policy">
+                                <textarea id="infoChannels" name="infoChannels" class="form-control" placeholder="Enter the details" ></textarea>
+                            </div>
                         </div>
-                        <!--Channels / platforms where information on products and services of the entity can be accessed end-->
+                        <!--Channels/platforms where information on products and services of the entity can be accessed end-->
 
                         <!--Steps taken to inform and educate consumers about safe and responsible usage of products and/or services start-->
                         <div class="mb-3">
                             <div class="policy">
-                                <label for="consumerEducation" class="form-label"><span style="color: red;"> * </span>2. Steps taken to inform & educate consumers about safe & responsible usage of products and/or services:</label>
+                                <label for="consumerEducation" class="form-label">2. Steps taken to inform & educate consumers about safe & responsible usage of products and/or services:</label>
                             </div>
-                            <textarea id="consumerEducation" name="consumerEducation" class="form-control" placeholder="Enter the details" ></textarea>
+                            <div class="policy">
+                                <textarea id="consumerEducation" name="consumerEducation" class="form-control" placeholder="Enter the details" ></textarea>
+                            </div>
                         </div>
                         <!--Steps taken to inform and educate consumers about safe and responsible usage of products and/or services end-->
 
                         <!--Mechanisms in place to inform consumers of any risk of disruption/discontinuation of essential services start-->
                         <div class="mb-3">
                             <div class="policy">
-                                <label for="serviceDisruptionInfo" class="form-label"><span style="color: red;"> * </span>3. Mechanisms in place to inform consumers of any risk of disruption/discontinuation of essential services:</label>
+                                <label for="serviceDisruptionInfo" class="form-label">3. Mechanisms in place to inform consumers of any risk of disruption/discontinuation of essential services:</label>
                             </div>
-                            <textarea id="serviceDisruptionInfo" name="serviceDisruptionInfo" class="form-control" placeholder="Enter the details" ></textarea>
+                            <div class="policy">
+                                <textarea id="serviceDisruptionInfo" name="serviceDisruptionInfo" class="form-control" placeholder="Enter the details" ></textarea>
+                            </div>
                         </div>
                         <!--Mechanisms in place to inform consumers of any risk of disruption/discontinuation of essential services end-->
 
                         <!--Does the entity display product information on the product over and above what is mandated as per local laws start-->
                         <div class="mb-3">
                             <div class="policy">
-                                <label for="productInfoDisplay" class="form-label"><span style="color: red;"> * </span>4.1 Does the entity display product information on the product over & above what is mandated as per local laws? If yes, provide details in brief:</label>
+                                <label for="productInfoDisplay" class="form-label">4.1 Does the entity display product information on the product over & above what is mandated as per local laws? If yes, provide details in brief:</label>
                             </div>
-                            <select name="productInfoDisplay" id="productInfoDisplay" class="form-control" >
-                                <option value="">Select an option</option>
-                                <option value="Yes">Yes</option>
-                                <option value="No">No</option>
-                                <option value="NA">Not Applicable</option>
-                            </select>
+                            <div class="policy">
+                                <select name="productInfoDisplay" id="productInfoDisplay" class="form-control" >
+                                    <option value="">Select an option</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                    <option value="NA">Not Applicable</option>
+                                </select>
+                            </div>
                         </div>
                         <!--hidden-->
                         <div id="productInfoDisplayDetails" class="mb-3 hidden">
                             <div class="policy">
                                 <label for="productInfoDisplayDetails" class="form-label">Specify the relevant details:</label>
                             </div>
-                            <textarea id="productInfoDisplayDetails" name="productInfoDisplayDetails" class="form-control" placeholder="Enter the details"></textarea>
+                            <div class="policy">
+                                <textarea id="productInfoDisplayDetails" name="productInfoDisplayDetails" class="form-control" placeholder="Enter the details"></textarea>
+                            </div>
                         </div>
                         <!--Does the entity display product information on the product over and above what is mandated as per local laws end-->
 
                         <!--Did your entity carry out any survey with regard to consumer satisfaction start-->
                         <div class="mb-3">
                             <div class="policy">
-                                <label for="surveyInfo" class="form-label"><span style="color: red;"> * </span>4.2. Did your entity carry out any survey with regard to consumer satisfaction relating to the major products/services of the entity, significant locations of operation of the entity or the entity as a whole? If no, the reasons thereof & corrective actions taken, if any:</label>
+                                <label for="surveyInfo" class="form-label">4.2. Did your entity carry out any survey with regard to consumer satisfaction relating to the major products/services of the entity, significant locations of operation of the entity or the entity as a whole? If no, the reasons thereof & corrective actions taken, if any:</label>
                             </div>
-                            <select name="surveyInfo" id="surveyInfo" class="form-control" >
-                                <option value="">Select an option</option>
-                                <option value="Yes">Yes</option>
-                                <option value="No">No</option>
-                            </select>
+                            <div class="policy">
+                                <select name="surveyInfo" id="surveyInfo" class="form-control" >
+                                    <option value="">Select an option</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+                            </div>
                         </div>
                         <!--hidden-->
                         <div id="surveyInfoDetails" class="mb-3 hidden">
                             <div class="policy">
                                 <label for="surveyInfoDetails" class="form-label">Specify the reson and corrective actions taken, if any:</label>
                             </div>
-                            <textarea id="surveyInfoDetails" name="surveyInfoDetails" class="form-control" placeholder="Enter the details"></textarea>
+                            <div class="policy">
+                                <textarea id="surveyInfoDetails" name="surveyInfoDetails" class="form-control" placeholder="Enter the details"></textarea>
+                            </div>
                         </div>
                         <!--Did your entity carry out any survey with regard to consumer satisfaction end-->
 
                         <!--Data breaches start-->
                         <div class="mb-3">
                             <div class="policy">
-                                <label for="dataBreachesInfo" class="form-label"><span style="color: red;"> * </span>5. Provide the information relating to data breaches: </label>
+                                <label for="dataBreachesInfo" class="form-label">5. Provide the information relating to data breaches: </label>
                             </div>
-                            <div class="mb-3 invisible_container">
-                                <div class="policy">
-                                    <label for="dataBreachesInfo" class="form-label"><br>a. Number of instances of data breaches along with impact </label>
+                            <div class="invisible_container">
+                                <div class="mb-3">
+                                    <div class="policy">
+                                        <label for="dataBreachesInfo" class="form-label">a. Number of instances of data breaches along with impact </label>
+                                    </div>
+                                    <textarea id="dataBreachesInfo" name="dataBreachesInfo" class="form-control" placeholder="Enter the details" ></textarea>
                                 </div>
-                                <textarea id="dataBreachesInfo" name="dataBreachesInfo" class="form-control" placeholder="Enter the details" ></textarea>
-                                <div class="policy">
-                                    <label for="dataBreachesInfo" class="form-label"><br>b. Percentage of data breaches involving personally identifiable information of customers</label>
+                                <div class="mb-3-sub-last">
+                                    <div class="policy">
+                                        <label for="dataBreachesInfo" class="form-label">b. Percentage of data breaches involving personally identifiable information of customers</label>
+                                    </div>
+                                    <textarea id="dataBreachesInfo" name="dataBreachesInfo" class="form-control" placeholder="Enter the details" required></textarea>
                                 </div>
-                                <textarea id="dataBreachesInfo" name="dataBreachesInfo" class="form-control" placeholder="Enter the details" required></textarea>
                             </div>
                         </div>
                         <!--Data breaches end-->
