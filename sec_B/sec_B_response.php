@@ -38,28 +38,38 @@ try {
 
         if (!isCINUnique_sec_A($cin, $pdo)) {
             if (isCINUnique_sec_B($cin, $pdo)) {
-                $dew = implode(', ', $_POST["dew"]);
+                $dew = implode('| ', $_POST["dew"]);
                 $stmtdir = $_POST["stmtdir"];
                 $dthi = $_POST["dthi"];
                 $enspec = $_POST["enspec"];
-                $gre = implode(', ', $_POST["gre"]);
-                $question11 = implode(', ', $_POST["question11"]);
-                $question12 = implode(', ', $_POST["question12"]);
+
+                $dew_comments = $_POST["p_dew_comments"];
                 
+                $gre = implode('| ', $_POST["gre"]);
+                $gre_comments = $_POST["p_gre_comments"];
+
+                $question11 = implode('| ', $_POST["question11"]);
+                $question11_comments = $_POST["p_question11_comments"];
+                
+                $question12 = implode('| ', $_POST["question12"]);
+                $question12_comments = $_POST["p_question12_comments"];
 
                 $stmt = $pdo->prepare("
                     INSERT INTO section_b_form (
                         cin, dew, stmtdir, dthi, enspec,
-                        gre, question11, question12
+                        dew_comments, gre, gre_comments, question11, question11_comments,
+                        question12, question12_comments
                     ) VALUES (
                         ?, ?, ?, ?, ?,
-                        ?, ?, ?
+                        ?, ?, ?, ?, ?,
+                        ?, ?
                     )
                 ");
 
                 $stmt->execute([
                     $cin, $dew, $stmtdir, $dthi, $enspec,
-                    $gre, $question11, $question12
+                    $dew_comments, $gre, $gre_comments, $question11, $question11_comments,
+                    $question12, $question12_comments
                 ]);
 
                 $response['status'] = 'success';
