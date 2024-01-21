@@ -40,6 +40,7 @@
                 ?>
             </div>
             <ul class="main-nav">
+                <li><a href="../print/print_B.php" target="_blank">Print Section B</a></li>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Portfolio</a></li>
