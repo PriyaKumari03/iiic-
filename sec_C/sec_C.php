@@ -21,8 +21,58 @@
 
     <?php
         session_start();
+        include_once '../connection.php';
+
         if (isset($_SESSION['cin'])) 
             $cin = $_SESSION['cin'];
+        else 
+            $cin = 'L28920MH1945PLC004520'; // Hardcoded CIN for unit testing. Delete before production deployment.
+
+        $pdo = new PDO($dsn, $user, $pass, $options);
+
+        // Function to check if the provided CIN is unique for section_a_form (replace with your database logic)
+        function isCINUnique_sec_A($cin, $pdo) {
+                $query = $pdo->prepare("SELECT COUNT(*) FROM section_a_form WHERE cin = :cin");
+                $query->bindParam(':cin', $cin, PDO::PARAM_STR);
+                $query->execute();
+
+                $count = $query->fetchColumn();
+
+                return $count === 0;
+        }
+
+        // If form A is not filled, display error and force filling before proceeding.
+        if (isCINUnique_sec_A($cin, $pdo)) {
+            echo '<script>';
+            echo 'alert("This form uses data from section A. Please fill and submit section A before proceeding.");';
+            echo 'window.location.href = "../sec_A/sec_A.php";';
+            echo '</script>';
+        }
+
+        $query = $pdo->prepare("SELECT reporting_fin_year FROM section_a_form WHERE cin = :cin");
+        $query->bindParam(':cin', $cin, PDO::PARAM_STR);
+        $query->execute();
+        $fin_year = $query->fetchColumn();
+
+        // Extract the period using regular expression
+        preg_match('/\d{4}-\d{2}/', $fin_year, $matches);
+        $currentFY = $matches[0];
+
+        // Split the current FY to get the start and end years
+        list($startYear, $endYearSuffix) = explode('-', $currentFY);
+
+        // Convert the end year suffix to a full year for comparison
+        $endYear = ($endYearSuffix <= substr($startYear, -2)) ? substr($startYear, 0, 2) . $endYearSuffix : (substr($startYear, 0, 2) + 1) . $endYearSuffix;
+
+        // Calculate the previous FY start year
+        $previousStartYear = $startYear - 1;
+
+        // Determine the correct century for the previous FY end year
+        $previousEndYear = $previousStartYear + 1;
+        $previousEndYearSuffix = substr($previousEndYear, -2);
+
+        // Format the previous FY
+        $previousFY = $previousStartYear . "-" . $previousEndYearSuffix;
     ?>
     <body>
         <!------------------------------------------------------------------------------------------------------------------------->
@@ -87,7 +137,7 @@
                                             <th class="form-label">Segment</th>
                                             <th class="form-label">Total number of training and awareness programmes held</th>
                                             <th class="form-label">Topics/Principles covered under the training and its impact</th>
-                                            <th class="form-label">%age of persons in respective category covered by the awareness programmes</th>
+                                            <th class="form-label">% of persons in respective category covered by the awareness programmes</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -154,7 +204,7 @@
                                         <td><input type="text" id="details" name="details[]" class="form-control" ></td>
                                     </tr>
                                     <tr>
-                                        <th class="form-label">settlement</th>
+                                        <th class="form-label">Settlement</th>
                                         <td><input type="text" id="details" name="details[]" class="form-control" ></td>
                                         <td><input type="text" id="details" name="details[]" class="form-control" ></td>
                                         <td><input type="text" id="details" name="details[]" class="form-control" ></td>
@@ -266,8 +316,8 @@
                                 <table id="p_disciplinaryAction">
                                     <tr>
                                         <th></th>
-                                        <th class="form-label">FY___(Current Financial Year)</th>
-                                        <th class="form-label">FY___(Previous Financial Year)</th>
+                                        <th class="form-label">FY <?php echo $currentFY ?><br>(Current Financial Year)</th>
+                                        <th class="form-label">FY <?php echo $previousFY ?><br>(Previous Financial Year)</th>
                                     </tr>
                                     <tr>
                                         <th class="form-label">Directors</th>
@@ -285,7 +335,7 @@
                                         <td><input type="text" id="disciplinaryAction" name="disciplinaryAction[]" class="form-control" ></td>    
                                     </tr>
                                     <tr>
-                                        <th class="form-label">workers</th>
+                                        <th class="form-label">Workers</th>
                                         <td><input type="text" id="disciplinaryAction" name="disciplinaryAction[]" class="form-control" ></td>
                                         <td><input type="text" id="disciplinaryAction" name="disciplinaryAction[]" class="form-control" ></td>
                                     </tr>
@@ -309,8 +359,8 @@
                                 <table id="p_conflictComplaints">
                                     <tr>
                                         <th  class="form-label" rowspan="2"></th>
-                                        <th  class="form-label" colspan="2">FY___(Current Financial Year)</th>
-                                        <th  class="form-label" colspan="2">FY___(Previous Financial Year)</th>
+                                        <th  class="form-label" colspan="2">FY <?php echo $currentFY ?><br>(Current Financial Year)</th>
+                                        <th  class="form-label" colspan="2">FY <?php echo $previousFY ?><br>(Previous Financial Year)</th>
                                     </tr>
                                     <tr>
                                         <th class="form-label">Number</th>
@@ -375,7 +425,7 @@
                                             <th class="form-label">S.No</th>
                                             <th class="form-label">Total number of awareness programes held</th>
                                             <th class="form-label">Topics/Principles Covered Under the training</th>
-                                            <th class="form-label">%age of value chain partners covered (by value of business done with such partners)under the awareness programmes</th>
+                                            <th class="form-label">% of value chain partners covered (by value of business done with such partners)under the awareness programmes</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -456,8 +506,8 @@
                                 <table id="p_rdPercentage">
                                     <tr>
                                         <th></th>
-                                        <th class="form-label">Current Financial Year</th>
-                                        <th class="form-label">Previous financial Year</th>
+                                        <th class="form-label">FY <?php echo $currentFY ?><br>(Current Financial Year)</th>
+                                        <th class="form-label">FY <?php echo $previousFY ?><br>(Previous Financial Year)</th>
                                         <th class="form-label">Details of improvements in environmental and social impacts</th>
                                     </tr>
                                     <tr>
@@ -681,8 +731,8 @@
                                             <th class="form-label" colspan="2">Recycled or re-used input material to total material </th>
                                         </tr>
                                         <tr>
-                                            <th class="form-label"> FY___current Financial Year</th>
-                                            <th class="form-label"> FY___Previous Financial Year</th>
+                                            <th class="form-label">FY <?php echo $currentFY ?><br>(Current Financial Year)</th>
+                                            <th class="form-label">FY <?php echo $previousFY ?><br>(Previous Financial Year)</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -720,8 +770,8 @@
                                 <table id="p_reclaimedProducts2">
                                     <tr>
                                         <th rowspan="2"></th>
-                                        <th class="form-label" colspan="3">FY___(Current Financial Year)</th>
-                                        <th class="form-label" colspan="3">FY___(Previous Financial Year)</th>
+                                        <th class="form-label" colspan="3">FY <?php echo $currentFY ?><br>(Current Financial Year)</th>
+                                        <th class="form-label" colspan="3">FY <?php echo $previousFY ?><br>(Previous Financial Year)</th>
                                     </tr>
                                     <tr>
                                         <th class="form-label">Re-used</th>
@@ -1115,8 +1165,8 @@
                                 <table id="p_retirementBenefitsDetails">
                                     <tr>
                                         <th class="form-label" rowspan="2">Benefits</th>
-                                        <th class="form-label" colspan="3">FY____current Financial Year</th>
-                                        <th class="form-label" colspan="3">FY____Previous Financial Year</th>
+                                        <th class="form-label" colspan="3">FY <?php echo $currentFY ?><br>(Current Financial Year)</th>
+                                        <th class="form-label" colspan="3">FY <?php echo $previousFY ?><br>(Previous Financial Year)</th>
                                     </tr>
                                     <tr>
                                         <th class="form-label">No. of employees covered as a % of total employees</th>
@@ -1300,8 +1350,8 @@
                                 <table id="p_unionMembershipPercentage">
                                     <tr>
                                         <th class="form-label" rowspan="2">Category</th>
-                                        <th class="form-label" colspan="3">FY____Current Financial Year</th>
-                                        <th class="form-label" colspan="3">FY____Previous Financial Year</th>
+                                        <th class="form-label" colspan="3">FY <?php echo $currentFY ?><br>(Current Financial Year)</th>
+                                        <th class="form-label" colspan="3">FY <?php echo $previousFY ?><br>(Previous Financial Year)</th>
                                     </tr>
                                     <tr>
                                         <th class="form-label">Total employees/workers in respective category (A)</th>
@@ -1385,8 +1435,8 @@
                                 <table id="p_trainingDetails">
                                     <tr>
                                         <th class="form-label" rowspan="3">Category</th>
-                                        <th class="form-label" colspan="5">FY____Current Financial Year</th>
-                                        <th class="form-label" colspan="5">FY____Previous Financial Year</th>
+                                        <th class="form-label" colspan="5">FY <?php echo $currentFY ?><br>(Current Financial Year)</th>
+                                        <th class="form-label" colspan="5">FY <?php echo $previousFY ?><br>(Previous Financial Year)</th>
                                     </tr>
                                     <tr>
                                         <th class="form-label" rowspan="2">Total(A)</th>
@@ -1511,8 +1561,8 @@
                                 <table id="p_performanceReviewDetails">
                                     <tr>
                                         <th class="form-label" rowspan="2">Category</th>
-                                        <th class="form-label" colspan="3">FY____Current Financial Year</th>
-                                        <th class="form-label" colspan="3">FY____Previous Financial Year</th>
+                                        <th class="form-label" colspan="3">FY <?php echo $currentFY ?><br>(Current Financial Year)</th>
+                                        <th class="form-label" colspan="3">FY <?php echo $previousFY ?><br>(Previous Financial Year)</th>
                                     </tr>
                                     <tr>
                                         <th class="form-label">Total(A)</th>
@@ -1650,8 +1700,8 @@
                                     <tr>
                                         <th class="form-label"> Safety Incident/Number</th>
                                         <th class="form-label"> Category</th>
-                                        <th class="form-label"> FY____Current Financial Year</th>
-                                        <th class="form-label"> FY____Previous Financial Year</th>
+                                        <th class="form-label">FY <?php echo $currentFY ?><br>(Current Financial Year)</th>
+                                        <th class="form-label">FY <?php echo $previousFY ?><br>(Previous Financial Year)</th>
                                     </tr>
                                     <tr>
                                         <th class="form-label" rowspan="2">Lost Time Injury Frequency Rate(LTIFR)(per one million-person hours worked)</th>
@@ -1728,8 +1778,8 @@
                                 <table id="p_complaintsemployees">
                                     <tr>
                                         <th rowspan="2"></th>
-                                        <th class="form-label" colspan="3">FY _____(Current Financial Year)</th>
-                                        <th class="form-label" colspan="3">FY _____(Previous Financial Year)</th>
+                                        <th class="form-label" colspan="3">FY <?php echo $currentFY ?><br>(Current Financial Year)</th>
+                                        <th class="form-label" colspan="3">FY <?php echo $previousFY ?><br>(Previous Financial Year)</th>
                                     </tr>
                                     <tr>
                                         <th class="form-label">Filed during the year</th>
@@ -1885,10 +1935,10 @@
                                     </tr>
                                     <tr>
                                         <th></th>
-                                        <th class="form-label">FY____(current financial year)</th>
-                                        <th class="form-label">FY____(previous financial year)</th>
-                                        <th class="form-label">FY____(current financial year)</th>
-                                        <th class="form-label">FY____(previous financial year)</th>
+                                        <th class="form-label">FY <?php echo $currentFY ?><br>(Current Financial Year)</th>
+                                        <th class="form-label">FY <?php echo $previousFY ?><br>(Previous Financial Year)</th>
+                                        <th class="form-label">FY <?php echo $currentFY ?><br>(Current Financial Year)</th>
+                                        <th class="form-label">FY <?php echo $previousFY ?><br>(Previous Financial Year)</th>
                                     </tr>
                                     <tr>
                                         <th class="form-label">Employees</th>
@@ -2126,8 +2176,8 @@
                                 <table id="p_humanRightsTrainingDetails">
                                     <tr>
                                         <th rowspan="2" class="form-label">Category</th>
-                                        <th colspan="3" class="form-label">FY___(Current Financial Year)</th>
-                                        <th colspan="3" class="form-label">FY___(Previous Financial Year)</th>
+                                        <th colspan="3" class="form-label">FY <?php echo $currentFY ?><br>(Current Financial Year)</th>
+                                        <th colspan="3" class="form-label">FY <?php echo $previousFY ?><br>(Previous Financial Year)</th>
                                     </tr>
                                     <tr>
                                         <th class="form-label">Total(A)</th>
@@ -2217,8 +2267,8 @@
                                 <table id="p_wageDetails">
                                     <tr>
                                         <th rowspan="3" class="form-label">Category</th>
-                                        <th colspan="5" class="form-label">FY___(Current Financial Year)</th>
-                                        <th colspan="5" class="form-label">FY___(Previous Financial Year)</th>
+                                        <th colspan="5" class="form-label">FY <?php echo $currentFY ?><br>(Current Financial Year)</th>
+                                        <th colspan="5" class="form-label">FY <?php echo $previousFY ?><br>(Previous Financial Year)</th>
                                     </tr>
                                     <tr>
                                         <th rowspan="2" class="form-label">Total(A)</th>
@@ -2518,8 +2568,8 @@
                                 <table id="p_complaintsDetails">
                                     <tr>
                                         <th rowspan="2"></th>
-                                        <th colspan="3" class="form-label">FY___(Current Financial Year)</th>
-                                        <th colspan="3" class="form-label">FY___(Previous Financial Year)</th>
+                                        <th colspan="3" class="form-label">FY <?php echo $currentFY ?><br>(Current Financial Year)</th>
+                                        <th colspan="3" class="form-label">FY <?php echo $previousFY ?><br>(Previous Financial Year)</th>
                                     </tr>
                                     <tr>
                                         <th class="form-label">Filed during the year</th>
@@ -2827,8 +2877,8 @@
                                 <table id="p_energyConsumptionDetails">
                                     <tr>
                                         <th class="form-label">Parameter</th>
-                                        <th class="form-label">FY _____(Current Financial Year)</th>
-                                        <th class="form-label">FY _____(Previous Financial Year)</th>
+                                        <th class="form-label">FY <?php echo $currentFY ?><br>(Current Financial Year)</th>
+                                        <th class="form-label">FY <?php echo $previousFY ?><br>(Previous Financial Year)</th>
                                     </tr>
                                     <tr>
                                         <th class="form-label">Total electricity consumption (A) </th>
@@ -2928,8 +2978,8 @@
                                 <table id="p_waterWithdrawalDetails">
                                     <tr>
                                         <th class="form-label">Parameter</th>
-                                        <th class="form-label">FY _____(Current Financial Year)</th>
-                                        <th class="form-label">FY _____(Previous Financial Year)</th>
+                                        <th class="form-label">FY <?php echo $currentFY ?><br>(Current Financial Year)</th>
+                                        <th class="form-label">FY <?php echo $previousFY ?><br>(Previous Financial Year)</th>
                                     </tr>
                                     <tr>
                                         <th colspan="3" class="form-label">Water withdrawal by source (in kilolitres)</th>
@@ -3048,8 +3098,8 @@
                                     <tr>
                                         <th class="form-label">Parameter</th>
                                         <th class="form-label">Please specify unit</th>
-                                        <th class="form-label">FY _____(Current Financial Year)</th>
-                                        <th class="form-label">FY _____(Previous Financial Year)</th>
+                                        <th class="form-label">FY <?php echo $currentFY ?><br>(Current Financial Year)</th>
+                                        <th class="form-label">FY <?php echo $previousFY ?><br>(Previous Financial Year)</th>
                                     </tr>
                                     <tr>
                                         <th class="form-label">NOx </th>
@@ -3145,17 +3195,23 @@
                                     <tr>
                                         <th class="form-label">Parameter</th>
                                         <th class="form-label">Unit</th>
-                                        <th class="form-label">FY _____(Current Financial Year)</th>
-                                        <th class="form-label">FY _____(Previous Financial Year)</th>
+                                        <th class="form-label">FY <?php echo $currentFY ?><br>(Current Financial Year)</th>
+                                        <th class="form-label">FY <?php echo $previousFY ?><br>(Previous Financial Year)</th>
                                     </tr>
                                     <tr>
-                                        <th class="form-label">Total Scope 1 emissions (Break-up of the GHG into CO2, CH4, N2O, HFCs, PFCs, SF6, NF3, if available) </th>
+                                        <th class="form-label">
+                                            Total Scope 1 emissions (Break-up of the GHG into CO2, CH4, N2O, HFCs, PFCs, SF6, NF3, if available)
+                                            <input type="text" id="greenhouseGasEmissionDetails" name="greenhouseGasEmissionDetails[]" class="form-control">
+                                        </th>
                                         <td><input type="text" id="greenhouseGasEmissionDetails" name="greenhouseGasEmissionDetails[]" class="form-control"></td>
                                         <td><input type="text" id="greenhouseGasEmissionDetails" name="greenhouseGasEmissionDetails[]" class="form-control"></td>
                                         <td><input type="text" id="greenhouseGasEmissionDetails" name="greenhouseGasEmissionDetails[]" class="form-control"></td>
                                     </tr>
                                     <tr>
-                                        <th class="form-label">Total Scope 2 emissions (Break-up of the GHG into CO2, CH4, N2O, HFCs, PFCs, SF6, NF3, if available) </th>
+                                        <th class="form-label">
+                                            Total Scope 2 emissions (Break-up of the GHG into CO2, CH4, N2O, HFCs, PFCs, SF6, NF3, if available)
+                                            <input type="text" id="greenhouseGasEmissionDetails" name="greenhouseGasEmissionDetails[]" class="form-control">
+                                        </th>
                                         <td><input type="text" id="greenhouseGasEmissionDetails" name="greenhouseGasEmissionDetails[]" class="form-control"></td>
                                         <td><input type="text" id="greenhouseGasEmissionDetails" name="greenhouseGasEmissionDetails[]" class="form-control"></td>
                                         <td><input type="text" id="greenhouseGasEmissionDetails" name="greenhouseGasEmissionDetails[]" class="form-control"></td>
@@ -3259,8 +3315,8 @@
                                 <table id="p_wasteDetails">
                                     <tr>
                                         <th class="form-label">Parameter</th>
-                                        <th class="form-label">FY _____(Current Financial Year)</th>
-                                        <th class="form-label">FY _____(Previous Financial Year)</th>
+                                        <th class="form-label">FY <?php echo $currentFY ?><br>(Current Financial Year)</th>
+                                        <th class="form-label">FY <?php echo $previousFY ?><br>(Previous Financial Year)</th>
                                     </tr>
                                     <tr>
                                         <th colspan="3" class="form-label">Total Waste generated (in metric tonnes)</th>
@@ -3562,8 +3618,8 @@
                                 <table id="p_totalenergyconsumed">
                                     <tr>
                                         <th class="form-label">Parameter</th>
-                                        <th class="form-label">FY _____(Current Financial Year)</th>
-                                        <th class="form-label">FY _____(Previous Financial Year)</th>
+                                        <th class="form-label">FY <?php echo $currentFY ?><br>(Current Financial Year)</th>
+                                        <th class="form-label">FY <?php echo $previousFY ?><br>(Previous Financial Year)</th>
                                     </tr>
                                     <tr>
                                         <th colspan="3" class="form-label" align="left">From renewable sources </th>
@@ -3655,8 +3711,8 @@
                                 <table id="p_waterdischarged">
                                     <tr>
                                         <th class="form-label">Parameter</th>
-                                        <th class="form-label">FY _____(Current Financial Year)</th>
-                                        <th class="form-label">FY _____(Previous Financial Year)</th>
+                                        <th class="form-label">FY <?php echo $currentFY ?><br>(Current Financial Year)</th>
+                                        <th class="form-label">FY <?php echo $previousFY ?><br>(Previous Financial Year)</th>
                                     </tr>
                                     <tr>
                                         <th colspan="3" class="form-label" align="left">Water discharge by destination and level of treatment (in kilolitres) </th>
@@ -3817,8 +3873,8 @@
                                         <table id="p_waterstress">
                                             <tr>
                                                 <th class="form-label">Parameter</th>
-                                                <th class="form-label">FY _____(Current Financial Year)</th>
-                                                <th class="form-label">FY _____(Previous Financial Year)</th>
+                                                <th class="form-label">FY <?php echo $currentFY ?><br>(Current Financial Year)</th>
+                                                <th class="form-label">FY <?php echo $previousFY ?><br>(Previous Financial Year)</th>
                                             </tr>
                                             <tr>
                                                 <th colspan="3" class="form-label" align="left">Water withdrawal by source (in kilolitres) </th>
@@ -4013,8 +4069,8 @@
                                     <tr>
                                         <th class="form-label">Parameter</th>
                                         <th class="form-label">Unit</th>
-                                        <th class="form-label">FY _____(Current Financial Year)</th>
-                                        <th class="form-label">FY _____(Previous Financial Year)</th>
+                                        <th class="form-label">FY <?php echo $currentFY ?><br>(Current Financial Year)</th>
+                                        <th class="form-label">FY <?php echo $previousFY ?><br>(Previous Financial Year)</th>
                                     </tr>
                                     <tr>
                                         <th align="center" class="form-label">Total Scope 3 emissions (Break-up of the GHG into CO2, CH4, N2O, HFCs, PFCs,SF6, NF3, if available)</th>
@@ -4490,8 +4546,8 @@
                                     <thead>
                                         <tr>
                                             <th class="form-label"></th>
-                                            <th class="form-label">FY _____ Current Financial Year</th>
-                                            <th class="form-label">FY _____ Previous Financial Year</th>
+                                            <th class="form-label">FY <?php echo $currentFY ?><br>(Current Financial Year)</th>
+                                            <th class="form-label">FY <?php echo $previousFY ?><br>(Previous Financial Year)</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -4845,9 +4901,9 @@
                                 <table id="p_consumerComplaints">
                                     <tr>
                                         <th class="form-label" colspan="1" rowspan="2"></th>
-                                        <th class="form-label" colspan="2">FY _____ Current </br>Financial Year</th>
+                                        <th class="form-label" colspan="2">FY <?php echo $currentFY ?><br>(Current Financial Year)</th>
                                         <th class="form-label" colspan="1"> Remarks</th>
-                                        <th class="form-label" colspan="2">FY _____ Previous </br>Financial Year</th>
+                                        <th class="form-label" colspan="2">FY <?php echo $previousFY ?><br>(Previous Financial Year)</th>
                                         <th class="form-label" colspan="1"> Remarks</th>
                                     </tr>
                                     <tr>
