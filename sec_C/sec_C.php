@@ -221,7 +221,7 @@
                                     </tr>
                                     <tr>
                                         <th class="form-label" colspan="6">Non-Monetary</th>
-                                    <tr>
+                                    </tr>
                                     <tr>
                                         <th></th>
                                         <th class="form-label">NGRBC Principle</th>
