@@ -6,6 +6,7 @@
    - **sec_A:** Contains the frontend and backend code for Section A of the form.
    - **sec_B:** Contains the frontend and backend code for Section B of the form.
    - **sec_C:** Contains the frontend and backend code for Section C of the form.
+   - **print:** Contains the php and js code for fetching the data from database and printing it using pdfMake js plugin.
    - **uploads:** All PDF files uploaded through any form will be stored in this directory.
 
 2. **File Info**
