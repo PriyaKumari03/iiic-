@@ -1909,6 +1909,7 @@
                                 </div>
                             </div>
                         </div>
+                        <!--Does the entity extend any life insurance or any compensatory package in the event of death end-->
 
                         <!--Measures undertaken by the entity to ensure that statutory dues have been deducted and deposited by the value chain partners start-->
                         <div class="mb-3">
