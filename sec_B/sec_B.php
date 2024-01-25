@@ -53,8 +53,7 @@
         <div class="container">
             <form method="post"  id="myForm" action="" enctype="multipart/form-data" novalidate>
                 <h1>SECTION B: MANAGEMENT AND PROCESS DISCLOSURES</h1>
-                <p class="form-label" style="text-align:center;font: size 18px;px;">This section is aimed at helping businesses demonstrate the structures,
-                                                                        policies and processes put in place towards adopting the NGRBC Principles and Core Elements.</p>
+                <h3>This section is aimed at helping businesses demonstrate the structures, policies and processes put in place towards adopting the NGRBC Principles and Core Elements</h3>    
                 <!-------------------------------------------------------------------------------------------------------------------------------------------------->
                 <!--                                                                                                                                              -->
                 <!--                                                                 Q1 to Q11                                                                    -->
@@ -64,9 +63,8 @@
                 <!--  Q1 to Q9 START -->
                 <div class="bold_border_container">
                     <div class="mb-3">
-                        <div class="policy">
-                        </div>
-                        <div id="dew" class="responsive-table"></br>
+                        <div class="policy"></div>
+                        <div id="dew" class="responsive-table">
                             <table id="p_dew">    
                                 <thead>
                                     <th class="form-label" colspan="1" rowspan="2" style="width: 450px;">Disclosure Questions</th>
@@ -81,11 +79,11 @@
                                     <th class="form-label" colspan="1" rowspan="2">P9</th>
                                 </thead>
                                 <tbody>
-                                    <th style="text-align: center;" class="form-label" colspan="10">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Policy and management <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;processes </th>
+                                    <th style="text-align: center;" class="form-label-table" colspan="10"> Policy and management processes</th>
                                 </tbody>
                                 <!-- Policy and management processes Start -->
                                 <tr>
-                                    <th class="form-label" style="text-align: left;">1. &nbsp;&nbsp; a. Whether your entity’s policy/policies cover each &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;principle and its core elements of the NGRBCs. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Yes/No)</th>
+                                    <td class="form-label" style="text-align: left;">1. a. Whether your entity’s policy/policies cover each principle and its core elements of the NGRBCs. (Yes/No)</td>
                                     <td><textarea id="dew" name="dew[]" class="form-control"></textarea></td>
                                     <td><textarea id="dew" name="dew[]" class="form-control"></textarea></td>
                                     <td><textarea id="dew" name="dew[]" class="form-control"></textarea></td>
@@ -97,7 +95,7 @@
                                     <td><textarea id="dew" name="dew[]" class="form-control"></textarea></td>
                                 </tr>
                                 <tr>
-                                    <th class="form-label" style="text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b. Has the policy been approved by the Board? &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Yes/No)</th>
+                                    <td class="form-label" style="text-align: left; padding-left: 20px;"> b. Has the policy been approved by the Board? (Yes/No)</td>
                                     <td><textarea id="dew" name="dew[]" class="form-control"></textarea></td>
                                     <td><textarea id="dew" name="dew[]" class="form-control"></textarea></td>
                                     <td><textarea id="dew" name="dew[]" class="form-control"></textarea></td>
@@ -109,7 +107,7 @@
                                     <td><textarea id="dew" name="dew[]" class="form-control"></textarea></td>
                                 </tr>
                                 <tr>
-                                    <th class="form-label" style="text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c. Web Link of the Policies, if available</th>
+                                    <td class="form-label" style="text-align: left; padding-left: 20px;"> c. Web Link of the Policies, if available</td>
                                     <td><textarea id="dew" name="dew[]" class="form-control"></textarea></td>
                                     <td><textarea id="dew" name="dew[]" class="form-control"></textarea></td>
                                     <td><textarea id="dew" name="dew[]" class="form-control"></textarea></td>
@@ -121,7 +119,7 @@
                                     <td><textarea id="dew" name="dew[]" class="form-control"></textarea></td>
                                 </tr>
                                 <tr>
-                                    <th class="form-label" style="text-align: left;">2. &nbsp;&nbsp;&nbsp;Whether the entity has translated the policy into &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;procedures. (Yes / No) </th>
+                                    <td class="form-label" style="text-align: left;">2. Whether the entity has translated the policy into procedures. (Yes / No) </td>
                                     <td><textarea id="dew" name="dew[]" class="form-control"></textarea></td>
                                     <td><textarea id="dew" name="dew[]" class="form-control"></textarea></td>
                                     <td><textarea id="dew" name="dew[]" class="form-control"></textarea></td>
@@ -133,7 +131,7 @@
                                     <td><textarea id="dew" name="dew[]" class="form-control"></textarea></td>
                                 </tr>
                                 <tr>
-                                    <th class="form-label" style="text-align: left;">3. &nbsp;&nbsp; Do the enlisted policies extend to your value chain &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;partners? (Yes/No)</th>
+                                    <td class="form-label" style="text-align: left;">3.  Do the enlisted policies extend to your value chain partners? (Yes/No)</td>
                                     <td><textarea id="dew" name="dew[]" class="form-control"></textarea></td>
                                     <td><textarea id="dew" name="dew[]" class="form-control"></textarea></td>
                                     <td><textarea id="dew" name="dew[]" class="form-control"></textarea></td>
@@ -145,7 +143,7 @@
                                     <td><textarea id="dew" name="dew[]" class="form-control"></textarea></td>
                                 </tr>
                                 <tr>
-                                    <th class="form-label" style="text-align: left;">4. &nbsp;&nbsp; Name of the national and international &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;codes/certifications/labels/ standards (e.g. Forest &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Stewardship Council, Fairtrade, Rainforest Alliance, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Trustea) standards (e.g. SA 8000, OHSAS, ISO, BIS) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;adopted by your entity and mapped to each principle</th>
+                                    <td class="form-label" style="text-align: left;">4.  Name of the national and international codes/certifications/labels/ standards (e.g. Forest Stewardship Council, Fairtrade, Rainforest Alliance, Trustea) standards (e.g. SA 8000, OHSAS, ISO, BIS) adopted by your entity and mapped to each principle</td>
                                     <td><textarea id="dew" name="dew[]" class="form-control"></textarea></td>
                                     <td><textarea id="dew" name="dew[]" class="form-control"></textarea></td>
                                     <td><textarea id="dew" name="dew[]" class="form-control"></textarea></td>
@@ -157,7 +155,7 @@
                                     <td><textarea id="dew" name="dew[]" class="form-control"></textarea></td>
                                 </tr>
                                 <tr>
-                                    <th class="form-label" style="text-align: left;">5. &nbsp;&nbsp;&nbsp;Specific commitments, goals and targets set by the &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;entity with defined timelines, if any.</th>
+                                    <td class="form-label" style="text-align: left;">5. Specific commitments, goals and targets set by the entity with defined timelines, if any.</td>
                                     <td><textarea id="dew" name="dew[]" class="form-control"></textarea></td>
                                     <td><textarea id="dew" name="dew[]" class="form-control"></textarea></td>
                                     <td><textarea id="dew" name="dew[]" class="form-control"></textarea></td>
@@ -169,7 +167,7 @@
                                     <td><textarea id="dew" name="dew[]" class="form-control"></textarea></td>
                                 </tr>
                                 <tr>
-                                    <th class="form-label" style="text-align: left;">6. &nbsp;&nbsp; Performance of the entity against the specific &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;commitments, goals and targets along-with reasons &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;in case the same are not met</th>
+                                    <td class="form-label" style="text-align: left;">6.  Performance of the entity against the specific commitments, goals and targets along-with reasons in case the same are not met</td>
                                     <td><textarea id="dew" name="dew[]" class="form-control"></textarea></td>
                                     <td><textarea id="dew" name="dew[]" class="form-control"></textarea></td>
                                     <td><textarea id="dew" name="dew[]" class="form-control"></textarea></td>
@@ -184,18 +182,18 @@
                         
                                 <!-- Governance, leadership and oversight Start -->
                                 <tbody>
-                                    <th class="form-label" colspan="10" style="text-align: center;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Governance, leadership <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; and oversight </th>
+                                    <th class="form-label-table" colspan="10" style="text-align: center;"> Governance, leadership  and oversight </th>
                                 </tbody>
                                 <tr>
-                                    <th style="text-align: left;" class="form-label" >7. &nbsp;&nbsp; Statement by director responsible for the business &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;responsibility report, highlighting ESG related &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;challenges, targets and achievements (listed entity &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;has flexibility regarding the placement of this &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;disclosure)</th>
+                                    <td style="text-align: left;" class="form-label" >7. Statement by director responsible for the business responsibility report, highlighting ESG related challenges, targets and achievements (listed entity has flexibility regarding the placement of this disclosure)</td>
                                     <td colspan="9"><textarea id="stmtdir" name="stmtdir" class="form-control"></textarea></td>
                                 </tr>
                                 <tr>
-                                    <th style="text-align: left;" class="form-label" >8. &nbsp;&nbsp; Details of the highest authority responsible for &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;implementation and oversight of the Business &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Responsibility policy (ies).</th>
+                                    <td style="text-align: left;" class="form-label" >8. Details of the highest authority responsible for implementation and oversight of the Business Responsibility policy (ies).</td>
                                     <td colspan="9"><textarea id="dthi" name="dthi" class="form-control"></textarea></td>
                                 </tr>
                                 <tr>
-                                    <th style="text-align: left;" class="form-label" >9. &nbsp;&nbsp; Does the entity have a specified Committee of the &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Board/ Director responsible for decision making on &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sustainability related issues? (Yes / No). If yes, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;provide details.</th>
+                                    <td style="text-align: left;" class="form-label" >9. Does the entity have a specified Committee of the Board/ Director responsible for decision making on sustainability related issues? (Yes/No). If yes, provide details.</td>
                                     <td colspan="9"><textarea id="enspec" name="enspec" class="form-control"></textarea></td>
                                 </tr>
                                 <!-- Governance, leadership and oversight End -->
@@ -207,17 +205,17 @@
                                 </details>
                             </div>
                         </div>
-                    </div></br></br>
+                    </div>
 
                     <!--10-Details of Review of NGRBCs by the Company Start -->
-                    <div class="mb-3">
+                    <div class="mb-3-special">
                         <div class="policy">
                             <label for="gre" class="form-label">10. Details of Review of NGRBCs by the Company: </label>
                         </div>
                             <div id="gre" class="responsive-table">
                                 <table id="p_gre">
                                     <tr>
-                                        <th style="width: 427px;" class="form-label" colspan="1" rowspan="2"> Subject for Review </th>
+                                        <th style="width: 450px;" class="form-label" colspan="1" rowspan="2"> Subject for Review </th>
                                         <th class="form-label" colspan="9" rowspan="2">Indicate whether review was undertaken by Director / Committee of the Board/ Any other Committee</th>
                                         <th class="form-label" colspan="9" rowspan="2">Frequency(Annually/ Half yearly/ Quarterly/ Any other – please specify)</th>
                                     </tr>
@@ -243,7 +241,7 @@
                                         <th class="form-label" colspan="1" rowspan="2">P9</th>
                                     </tbody>
                                     <tr>
-                                        <th style="text-align: left;" class="form-label" id="gre" name="gre[]">Performance against above policies and follow up action</th>
+                                        <th class="form-label" id="gre" name="gre[]">Performance against above policies and follow up action</th>
                                         <td><textarea id="gre" name="gre[]" class="form-control"></textarea></td>
                                         <td><textarea id="gre" name="gre[]" class="form-control"></textarea></td>
                                         <td><textarea id="gre" name="gre[]" class="form-control"></textarea></td>
@@ -264,7 +262,7 @@
                                         <td><textarea id="gre" name="gre[]" class="form-control"></textarea></td>
                                     </tr>
                                     <tr>
-                                        <th style="text-align: left;" class="form-label" id="gre" name="gre[]">Compliance with statutory requirements of relevance to the principles, and, rectification of any non-compliances</th>
+                                        <th class="form-label" id="gre" name="gre[]">Compliance with statutory requirements of relevance to the principles, and, rectification of any non-compliances</th>
                                         <td><textarea id="gre" name="gre[]" class="form-control"></textarea></td>
                                         <td><textarea id="gre" name="gre[]" class="form-control"></textarea></td>
                                         <td><textarea id="gre" name="gre[]" class="form-control"></textarea></td>
@@ -286,21 +284,21 @@
                                     </tr>
                                 </table>
                             </div>
-                        <details class="add_comment_detail">
-                            <summary>Add comments</summary>
-                            <textarea class="detail-control" id="p_gre_comments" name="p_gre_comments" placeholder="Enter additional information (if required)"></textarea>
-                        </details>
+                            <div class="policy">
+                                <details class="add_comment_detail">
+                                    <summary>Add comments</summary>
+                                    <textarea class="detail-control" id="p_gre_comments" name="p_gre_comments" placeholder="Enter additional information (if required)"></textarea>
+                                </details>
+                            </div>
                     </div>
                     <!--10-Details of Review of NGRBCs by the Company End -->
 
                     <!--11-Has the entity carried out independent assessment/ evaluation of the working of its policies by an external agency? (Yes/No). If yes, provide name of the agency. Start -->
                     <div class="mb-3">
-                        <div class="policy">
-                        </div> 
                         <div id="question11" class="responsive-table"> 
                             <table id="p_question11">
                                 <tr>
-                                    <th style="width: 450px; text-align: left;" class="form-label" colspan="1" rowspan="2">11. Has the entity carried out independent assessment/ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;evaluation of the working of its policies by an external &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;agency? (Yes/No). If yes, provide name of the agency</th>
+                                    <td style="width: 450px; text-align: left;" class="form-label" colspan="1" rowspan="2">11. Has the entity carried out independent assessment/ evaluation of the working of its policies by an external agency? (Yes/No). If yes, provide name of the agency</td>
                                     <th class="form-label" colspan="1" rowspan="1">P1</th>
                                     <th class="form-label" colspan="1" rowspan="1">P2</th>
                                     <th class="form-label" colspan="1" rowspan="1">P3</th>
@@ -324,13 +322,14 @@
                                 </tr>
                             </table>
                         </div>
-                        <details class="add_comment_detail">
-                            <summary>Add comments</summary>
-                            <textarea class="detail-control" id="p_question11_comments" name="p_question11_comments" placeholder="Enter additional information (if required)"></textarea>
-                        </details>
+                        <div class="policy">
+                            <details class="add_comment_detail">
+                                <summary>Add comments</summary>
+                                <textarea class="detail-control" id="p_question11_comments" name="p_question11_comments" placeholder="Enter additional information (if required)"></textarea>
+                            </details>
+                        </div>
                     </div>
                     <!-- Has the entity carried out independent assessment/ evaluation of the working of its policies by an external agency? (Yes/No). If yes, provide name of the agency End -->
-                </div>
                 <!--  Q1 to Q11 END -->          
 
                 <!-------------------------------------------------------------------------------------------------------------------------------------------------->
@@ -340,7 +339,6 @@
                 <!--------------------------------------------------------------------------------------------------------------------------------------------------> 
 
                 <!-- If answer to question (1) above is “No” i.e. not all Principles are covered by a policy, reasons to be stated: Start -->
-                <div class="bold_border_container">
                     <div class="mb-3">
                         <div class="policy">
                             <label for="gre" class="form-label">12. If answer to question (1) above is “No” i.e. not all Principles are covered by a policy, reasons to be stated:</label>
@@ -360,7 +358,7 @@
                                     <th class="form-label" colspan="1" rowspan="2">P9</th>
                                 </thead>
                                 <tr>
-                                    <th class="form-label" style="text-align: left;">The entity does not consider the Principles smaterial to its business (Yes/No) </th>
+                                    <th class="form-label">The entity does not consider the Principles smaterial to its business (Yes/No) </th>
                                     <td><textarea type="text" id="question12" name="question12[]" class="form-control"></textarea></td>
                                     <td><textarea type="text" id="question12" name="question12[]" class="form-control"></textarea></td>
                                     <td><textarea type="text" id="question12" name="question12[]" class="form-control"></textarea></td>
@@ -372,7 +370,7 @@
                                     <td><textarea type="text" id="question12" name="question12[]" class="form-control"></textarea></td>
                                 </tr>
                                 <tr>
-                                    <th class="form-label" style="text-align: left;">The entity is not at a stage where it is in a position to formulate and implement the policies on specified principles (Yes/No)</th>
+                                    <th class="form-label">The entity is not at a stage where it is in a position to formulate and implement the policies on specified principles (Yes/No)</th>
                                     <td><textarea type="text" id="question12" name="question12[]" class="form-control"></textarea></td>
                                     <td><textarea type="text" id="question12" name="question12[]" class="form-control"></textarea></td>
                                     <td><textarea type="text" id="question12" name="question12[]" class="form-control"></textarea></td>
@@ -384,7 +382,7 @@
                                     <td><textarea type="text" id="question12" name="question12[]" class="form-control"></textarea></td>
                                 </tr>
                                 <tr>
-                                    <th class="form-label" style="text-align: left;">The entity does not have the financial or/human and technical resources available for the task (Yes/No) </th>
+                                    <th class="form-label">The entity does not have the financial or/human and technical resources available for the task (Yes/No) </th>
                                     <td><textarea type="text" id="question12" name="question12[]" class="form-control"></textarea></td>
                                     <td><textarea type="text" id="question12" name="question12[]" class="form-control"></textarea></td>
                                     <td><textarea type="text" id="question12" name="question12[]" class="form-control"></textarea></td>
@@ -396,7 +394,7 @@
                                     <td><textarea type="text" id="question12" name="question12[]" class="form-control"></textarea></td>
                                 </tr>
                                 <tr>
-                                    <th class="form-label" style="text-align: left;">It is planned to be done in the next financial year (Yes/No)</th>
+                                    <th class="form-label">It is planned to be done in the next financial year (Yes/No)</th>
                                     <td><textarea type="text" id="question12" name="question12[]" class="form-control"></textarea></td>
                                     <td><textarea type="text" id="question12" name="question12[]" class="form-control"></textarea></td>
                                     <td><textarea type="text" id="question12" name="question12[]" class="form-control"></textarea></td>
@@ -408,7 +406,7 @@
                                     <td><textarea type="text" id="question12" name="question12[]" class="form-control"></textarea></td>
                                 </tr>
                                 <tr>
-                                    <th class="form-label" style="text-align: left;">Any other reason (please specify) </th>
+                                    <th class="form-label">Any other reason (please specify) </th>
                                     <td><textarea type="text" id="question12" name="question12[]" class="form-control"></textarea></td>
                                     <td><textarea type="text" id="question12" name="question12[]" class="form-control"></textarea></td>
                                     <td><textarea type="text" id="question12" name="question12[]" class="form-control"></textarea></td>

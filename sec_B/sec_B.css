@@ -179,6 +179,14 @@ h1 {
     font-weight: 500;
 }
 
+h3 {
+    text-align: center;
+    color: #2d6a4f;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    margin-bottom: 33px;
+}
+
 .policy {
     padding-bottom: 14px;
 }
@@ -189,8 +197,18 @@ h1 {
     margin-bottom: 1rem;
 }
 
+.form-label-table {
+    font-family: 'Montserrat', sans-serif;
+    color: #2d6a4f;
+    padding: 6px;
+}
+
 .mb-3 {
     margin-bottom: 1.3rem;
+}
+
+.mb-3-special {
+    margin-bottom: 1.5rem;
 }
 
 .form-select,
