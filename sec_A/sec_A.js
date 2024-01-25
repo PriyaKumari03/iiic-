@@ -78,7 +78,7 @@ telephoneInputs.forEach(function (input, index) {
         var validationMessage = document.getElementById("telephoneValidationMessage" + (index + 1));
 
         if (telephoneRegex.test(inputValue)) {
-            validationMessage.textContent = "telephone number is valid.";
+            validationMessage.textContent = "Telephone number is valid.";
             validationMessage.style.color = "green";
         } else {
             validationMessage.textContent = "Please enter a valid telephone number.";
@@ -121,20 +121,45 @@ document.getElementById("reporting_fin_year").innerHTML = options;
 function updateYearPlaceholders() {
     // Get the selected fiscal year
     var selectedYear = document.getElementById("reporting_fin_year").value;
-    var year1 = selectedYear.split(" ")[1].split("-")[0];
-    var year2 = selectedYear.split(" ")[1].split("-")[1];
+    var years = selectedYear.split(" ")[1].split("-");
+    var fd_year1 = parseInt(years[0], 10); // The full year (e.g., 2022)
+    var year2 = parseInt(years[1], 10); // The last two digits of the following year (e.g., 23)
+    var fd_year2 = 0;
+
+    if (year2 == 0) {
+        var str_temp = years[0][0] + years[0][1];
+        var int_temp = parseInt(str_temp, 10);
+        int_temp = int_temp + 1;
+        var str_fd_year2 = int_temp.toString() + years[1];
+        fd_year2 = parseInt(str_fd_year2, 10);
+    }
+    else {
+        var str_temp = years[0][0] + years[0][1];
+        var int_temp = parseInt(str_temp, 10);
+        var str_fd_year2 = int_temp.toString() + years[1];
+        fd_year2 = parseInt(str_fd_year2, 10);
+    }
+
+    // Calculate the previous fiscal years
+    var prevYear1 = fd_year1 - 1;
+    var prevYear2 = fd_year2 - 1;
+
+    // Calculate the year before the previous fiscal years
+    var yearBeforePrev1 = prevYear1 - 1;
+    var yearBeforePrev2 = prevYear2 - 1;
 
     // Set the placeholders in the table 20
     document.getElementById("currentYearPlaceholder").textContent = selectedYear;
-    document.getElementById("prevYearPlaceholder1").textContent = year1 - 1;
-    document.getElementById("prevYearPlaceholder2").textContent = year2 - 1;
-    document.getElementById("yearBeforePrevPlaceholder1").textContent = year1 - 2;
-    document.getElementById("yearBeforePrevPlaceholder2").textContent = year2 - 2;
+    document.getElementById("prevYearPlaceholder1").textContent = prevYear1;
+    document.getElementById("prevYearPlaceholder2").textContent = (prevYear2 % 100) > 9 ? prevYear2 % 100 : '0' + (prevYear2 % 100).toString();
+    document.getElementById("yearBeforePrevPlaceholder1").textContent = yearBeforePrev1;
+    document.getElementById("yearBeforePrevPlaceholder2").textContent = (yearBeforePrev2 % 100) > 9 ? yearBeforePrev2 % 100 : '0' + (yearBeforePrev2 % 100).toString();
     // Set the placeholders in the table 23
     document.getElementById("currentYearPlaceholder_23").textContent = selectedYear;
-    document.getElementById("prevYearPlaceholder1_23").textContent = year1 - 1;
-    document.getElementById("prevYearPlaceholder2_23").textContent = year2 - 1;
+    document.getElementById("prevYearPlaceholder1_23").textContent = prevYear1;
+    document.getElementById("prevYearPlaceholder2_23").textContent = (prevYear2 % 100) > 9 ? prevYear2 % 100 : '0' + (prevYear2 % 100).toString();
 }
+
 
 //pdf validation
 document.getElementById('incorporation_certificate').addEventListener('change', function () {
