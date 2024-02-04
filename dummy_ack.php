@@ -27,6 +27,16 @@
     ?>
 
     <body>
+        <header class="header">
+            
+            <ul class="main-nav">
+                <li><a href="print/print_C.php" target="_blank">Print Section C</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
         <div class="container">
             <h1>THANK YOU!</h1>
             <div class="policy">
