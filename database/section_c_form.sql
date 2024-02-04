@@ -3,8 +3,8 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Jan 19, 2024 at 02:14 PM
--- Server version: 8.0.31
+-- Generation Time: Feb 04, 2024 at 03:01 PM
+-- Server version: 5.7.40
 -- PHP Version: 8.0.26
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
@@ -128,12 +128,14 @@ CREATE TABLE IF NOT EXISTS `section_c_form` (
   `5_9_humanRightsInBusiness` text,
   `5_10_humanRightsInBusinessDetails` text,
   `5_11_assessedPlantPercentage` text,
+  `5_11_assessedPlantPercentageOthers` text NOT NULL,
   `5_11_assessedPlantPercentage_comments` text,
   `5_12_correctiveActionsForAssessments` text,
   `5_13_businessProcessModifications` text,
   `5_14_humanRightsDueDiligence` text,
   `5_15_premiseAccessibility` text,
   `5_16_valueChainAssessment` text,
+  `5_16_valueChainAssessmentOthers` text NOT NULL,
   `5_16_valueChainAssessment_comments` text,
   `5_17_correctiveActionsFromAssessments` text,
   `6_1_energyConsumptionDetails` text,
@@ -177,6 +179,8 @@ CREATE TABLE IF NOT EXISTS `section_c_form` (
   `6_34_waterdischarged_comments` text,
   `6_35_waterdischargedAgency` text,
   `6_36_waterdischargedAgencyName` text,
+  `6_37_waterstressa` text NOT NULL,
+  `6_37_waterstressb` text NOT NULL,
   `6_37_waterstress` text,
   `6_37_waterstress_comments` text,
   `6_38_waterstressAgency` text,
@@ -211,6 +215,8 @@ CREATE TABLE IF NOT EXISTS `section_c_form` (
   `8_6_csrAspirationalDistricts_comments` text,
   `8_7_procurementPolicyMarginalized` text,
   `8_8_procurementPolicyMarginalizedDetails` text,
+  `8_7_B_procurementPolicyMarginalized` text,
+  `8_7_C_procurementPolicyMarginalized` text,
   `8_9_intellectualPropertiesBenefits` text,
   `8_9_intellectualPropertiesBenefits_comments` text,
   `8_10_correctiveActionsIntellectualProperty` text,
@@ -235,8 +241,9 @@ CREATE TABLE IF NOT EXISTS `section_c_form` (
   `9_11_surveyInfo` text,
   `9_11_1_surveyInfoDetails` text,
   `9_12_dataBreachesInfo` text,
+  `9_13_dataBreachesInfoPercentage` text,
   PRIMARY KEY (`cin`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
