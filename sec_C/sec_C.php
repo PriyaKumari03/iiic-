@@ -2714,9 +2714,9 @@
                                     <tr>
                                         <th class="form-label">
                                             Others - please specify
-                                            <input type="text" id="assessedPlantPercentage" name="assessedPlantPercentage[]" class="form-control">
+                                            <input type="text" id="assessedPlantPercentage" name="assessedPlantPercentageOthers[]" class="form-control">
                                         </th>
-                                        <td><input type="text" id="assessedPlantPercentage" name="assessedPlantPercentage[]" class="form-control"></td>
+                                        <td><input type="text" id="assessedPlantPercentage" name="assessedPlantPercentageOthers[]" class="form-control"></td>
                                     </tr>
                                 </table>
                                 <div>
