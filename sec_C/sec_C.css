@@ -167,7 +167,7 @@ h1 {
     font-weight: 500;
 }
 
-h3 {
+h2,h3 {
     text-align: center;
     color: #2d6a4f;
     font-family: 'Montserrat', sans-serif;
