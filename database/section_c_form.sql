@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Feb 04, 2024 at 03:01 PM
+-- Generation Time: Feb 19, 2024 at 01:23 PM
 -- Server version: 5.7.40
 -- PHP Version: 8.0.26
 
@@ -96,9 +96,7 @@ CREATE TABLE IF NOT EXISTS `section_c_form` (
   `3_21_assesmentyr` text,
   `3_21_assesmentyr_comments` text,
   `3_22_lifeInsuranceCompensationa` text,
-  `3_23_lifeInsuranceCompensationdetailsa` text,
   `3_24_lifeInsuranceCompensationb` text,
-  `3_25_lifeInsuranceCompensationdetailsb` text,
   `3_26_statutoryDuesMeasures` text,
   `3_27_workRelatedInjuryRehabilitation` text,
   `3_27_workRelatedInjuryRehabilitation_comments` text,
