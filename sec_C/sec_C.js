@@ -576,6 +576,53 @@ function calculatePercentages1b(tableId, rowIndex) {
 }
 // End of Principle 3 EI 1b
 
+// Principle 3 EI 5
+// Function to calculate column totals for a specific section of the table
+function calculateColumnTotalsP3EI5(tableId, startRowIndex, endRowIndex, totalRowIndex) {
+    var table = document.getElementById(tableId);
+
+    // Object to hold the sum of each column
+    var columnSums = {};
+
+    // Initialize column sums
+    for (var i = 1; i < table.rows[startRowIndex].cells.length; i++) {
+        columnSums[i] = 0;
+    }
+
+    // Calculate sums for each column
+    for (var rowIndex = startRowIndex; rowIndex <= endRowIndex; rowIndex++) {
+        var cells = table.rows[rowIndex].cells;
+        for (var colIndex = 1; colIndex < cells.length; colIndex++) {
+            var input = cells[colIndex].querySelector('input');
+            if (input && !input.hasAttribute('readonly')) { // Sum only the input fields that are not readonly
+                var value = parseFloat(input.value) || 0;
+                columnSums[colIndex] += value;
+            }
+        }
+    }
+
+    // Update the totals in the 'Total' row
+    var totalCells = table.rows[totalRowIndex].cells;
+    for (var colIndex = 1; colIndex < totalCells.length; colIndex++) {
+        if (columnSums[colIndex] !== undefined) { // Update only if a sum has been calculated
+            var totalInput = totalCells[colIndex].querySelector('input');
+            if (totalInput) { // If there's an input field, update it
+                totalInput.value = columnSums[colIndex];
+            }
+        }
+    }
+}
+
+// Calculate totals for each section when the page loads and when values change
+window.onload = function () {
+    calculateSectionTotalsP3_5();
+};
+
+function calculateSectionTotalsP3_5() {
+    calculateColumnTotalsP3EI5('p_returnRetentionRates', 2, 3, 4);
+}
+// End Principle 3 EI 5
+
 // Principle 3 EI 7
 // Function to calculate column totals for a specific section of the table
 function calculateColumnTotalsForSection7(tableId, startRowIndex, endRowIndex, totalRowIndex) {
@@ -1318,6 +1365,19 @@ function calculateSectionTotalsL3_1() {
     calculateColumnTotalsForSectionL3_1('p_waterstress', 25, 26, 24);
 }
 // End of Principle 6 LI 3.1c
+
+// Principle 8 LI 2
+function calculateAmount() {
+    var total = 0;
+    var amountInputs = document.querySelectorAll('.amount-input');
+    
+    amountInputs.forEach(function(input) {
+        total += parseFloat(input.value) || 0;
+    });
+    
+    document.getElementById('totalAmount').textContent = total;
+}
+// End Principle 8 LI 2
 
 
 /* ************************************************************************************************************************************ */
