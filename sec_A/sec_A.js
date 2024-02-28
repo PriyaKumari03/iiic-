@@ -394,7 +394,7 @@ function calculatePercentage(a, b) {
         return '0%';
     }
     var percentage = (a / b) * 100;
-    return percentage.toFixed(4) + '%';
+    return percentage.toFixed(2) + '%';
 }
 /*************************************************************************************************************************************/
 
@@ -471,29 +471,12 @@ function calculatePercentages18b(tableId, rowIndex) {
     calculateSectionTotals18b();
 }
 
-// Function to calculate percentages
-function calculatePercentage(a, b) {
-    if (b === 0) {
-        return '0%';
-    }
-    var percentage = (a / b) * 100;
-    return percentage.toFixed(4) + '%';
-}
-
-// Helper function to calculate percentage
-function calculatePercentage(part, whole) {
-    if (whole == 0)
-        return 0;
-    else
-        return (part / whole * 100).toFixed(2); // Adjust the number of decimal places as needed
-}
-
 //19-Participation/Inclusion/Representation of Women
 function calculate19(input) {
     var row = input.closest('tr'); // Get the closest parent row
     var A = parseInt(row.cells[1].querySelector('input').value) || 0;
     var B = parseInt(row.cells[2].querySelector('input').value) || 0;
-    var per = (B / A * 100).toFixed(2);
+    var per = calculatePercentage(B, A);
 
     row.cells[3].querySelector('input').value = per;
 }
