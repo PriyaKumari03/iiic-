@@ -366,9 +366,9 @@ document.getElementById("recycledPercentage2").addEventListener("input", functio
 // Helper function to calculate percentage
 function calculatePercentage(part, whole) {
     if (whole == 0)
-        return 0;
+        return '0%';
     else
-        return (part / whole * 100).toFixed(2); // Adjust the number of decimal places as needed
+        return (part / whole * 100).toFixed(2) + '%'; // Adjust the number of decimal places as needed
 }
 
 //Validate numbers
@@ -383,6 +383,11 @@ function validateNumericInput(input) {
     const decimalCount = (value.match(/\./g) || []).length;
     if (decimalCount > 1) {
         value = value.substr(0, value.lastIndexOf('.'));
+    }
+
+    const numericValue = parseFloat(value);
+    if (numericValue > 100) {
+        value = '100';
     }
 
     // Update the value of the input field
@@ -402,6 +407,12 @@ function updatePercentage(input) {
 
     // Update the value of the input field
     input.value = value;
+
+    // Calculate the new cursor position (right before the percentage sign)
+    const newPosition = input.value.length - 1;
+
+    // Set the cursor position to right before the percentage sign
+    input.setSelectionRange(newPosition, newPosition);
 }
 
 // Principle 3 EI 1a
@@ -1399,7 +1410,12 @@ function addBottomRow(Id) {
     // Clear other input fields in the new row
     const inputs = lastRow.getElementsByTagName("input");
     for (let i = 1; i < inputs.length; i++) {
-        inputs[i].value = "";
+        if (inputs[i].value.endsWith("%")) {
+            inputs[i].value = "%";
+        }
+        else {
+            inputs[i].value = "";
+        }
     }
 
     // Add the new row at the bottom
@@ -1417,7 +1433,12 @@ function addBottomRowNoSno(Id) {
     // Clear other input fields in the new row
     const inputs = lastRow.getElementsByTagName("input");
     for (let i = 0; i < inputs.length; i++) {
-        inputs[i].value = "";
+        if (inputs[i].value.endsWith("%")) {
+            inputs[i].value = "%";
+        }
+        else {
+            inputs[i].value = "";
+        }
     }
 
     // Add the new row at the bottom
@@ -1497,7 +1518,12 @@ function addRowAtIndex(Id) {
         // Clear input fields in the new row
         const inputs = newRow.getElementsByTagName("input");
         for (let i = 0; i < inputs.length; i++) {
-            inputs[i].value = "";
+            if (inputs[i].value.endsWith("%")) {
+                inputs[i].value = "%";
+            }
+            else {
+                inputs[i].value = "";
+            }
         }
 
         // Add the new row at the specified index

@@ -173,6 +173,17 @@ h2,h3 {
     font-family: 'Montserrat', sans-serif;
 }
 
+.sdg-img {
+    display: flex; /* Use flexbox layout */
+    justify-content: center; /* Center items on the main-axis (horizontally) */
+    align-items: center; /* Center items on the cross-axis (vertically), if needed */
+    flex-wrap: wrap; /* Allow items to wrap onto multiple lines */
+}
+
+    .sdg-img img {
+        margin: 0 5px; /* Optional: Add some space between images */
+    }
+
 .policy {
     padding-bottom: 14px;
 }
