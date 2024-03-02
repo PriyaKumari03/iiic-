@@ -444,15 +444,15 @@
                                 <tbody>
                                     <tr>
                                         <th class="form-label" id="nol" id="p_nol" name="nol[]" class="form-control">National</th>
-                                        <td><input type="number" name="nol[]" oninput="calculate16(this)" class="form-control nol-input"></td>
-                                        <td><input type="number" name="nol[]" oninput="calculate16(this)" class="form-control nol-input"></td>
-                                        <td><input type="number" name="nol[]" class="form-control nol-total" readonly></td>
+                                        <td><input type="number" name="nol[]" oninput="calculate16(this)" class="form-control nol-input" value="0"></td>
+                                        <td><input type="number" name="nol[]" oninput="calculate16(this)" class="form-control nol-input" value="0"></td>
+                                        <td><input type="number" name="nol[]" class="form-control nol-total" value="0" readonly></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label" id="nol" id="p_nol" name="nol[]" class="form-control">International</th>
-                                        <td><input type="number" id="nol" name="nol[]" oninput="calculate16(this)" class="form-control nol-input"></td>
-                                        <td><input type="number" id="nol" name="nol[]" oninput="calculate16(this)" class="form-control nol-input"></td>
-                                        <td><input type="number" id="nol" name="nol[]" class="form-control nol-total" readonly></td>
+                                        <td><input type="number" id="nol" name="nol[]" oninput="calculate16(this)" class="form-control nol-input" value="0"></td>
+                                        <td><input type="number" id="nol" name="nol[]" oninput="calculate16(this)" class="form-control nol-input" value="0"></td>
+                                        <td><input type="number" id="nol" name="nol[]" class="form-control nol-total" value="0" readonly></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -488,15 +488,15 @@
                                         <tbody>
                                             <tr>
                                                 <th class="form-label" id="drm" id="p_drm" name="drm[]" class="form-control">National (No. of States)</th>
-                                                <td><input type="number" id="drm" name="drm[]" class="form-control"></td>
+                                                <td><input type="number" id="drm" name="drm[]" class="form-control" value="0"></td>
                                             </tr>
                                             <tr>
                                                 <th class="form-label" id="drm" id="p_drm" name="drm[]" class="form-control">National (No. of Union Territories)</th>
-                                                <td><input type="number" id="drm" name="drm[]" class="form-control"></td>
+                                                <td><input type="number" id="drm" name="drm[]" class="form-control" value="0"></td>
                                             </tr>
                                             <tr>
                                                 <th class="form-label" id="drm" id="p_drm" name="drm[]" class="form-control">International (No. of Countries)</th>
-                                                <td><input type="number" id="drm" name="drm[]" class="form-control"></td>
+                                                <td><input type="number" id="drm" name="drm[]" class="form-control" value="0"></td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -575,29 +575,29 @@
                                         <tr>
                                             <th class="form-label">1.</th>
                                             <th class="form-label">Permanent (D)</th>
-                                            <td><input type="number" step="0.01" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 3)"></td>
-                                            <td><input type="number" step="0.01" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 3)"></td>
-                                            <td><input type="text" step="0.01" id="dew" name="dew[]" class="form-control" readonly></td>
-                                            <td><input type="number" step="0.01" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 3)"></td>
-                                            <td><input type="text" step="0.01" id="dew" name="dew[]" class="form-control" readonly</td>
+                                            <td><input type="number" step="0.01" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 3)" value="0" readonly></td>
+                                            <td><input type="number" step="0.01" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 3)" value="0"></td>
+                                            <td><input type="text" step="0.01" id="dew" name="dew[]" class="form-control" value="0%" readonly></td>
+                                            <td><input type="number" step="0.01" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 3)" value="0"></td>
+                                            <td><input type="text" step="0.01" id="dew" name="dew[]" class="form-control" value="0%" readonly</td>
                                         </tr>
                                         <tr>
                                             <th class="form-label">2.</th>
                                             <th class="form-label">Other than Permanent (E)</th>  
-                                            <td><input type="number" step="0.01" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 4)"></td>
-                                            <td><input type="number" step="0.01" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 4)"></td>
-                                            <td><input type="text" step="0.01" id="dew" name="dew[]" class="form-control" readonly></td>
-                                            <td><input type="number" step="0.01" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 4)"></td>
-                                            <td><input type="text" step="0.01" id="dew" name="dew[]" class="form-control" readonly></td>
+                                            <td><input type="number" step="0.01" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 4)" value="0" readonly></td>
+                                            <td><input type="number" step="0.01" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 4)" value="0"></td>
+                                            <td><input type="text" step="0.01" id="dew" name="dew[]" class="form-control" value="0%" readonly></td>
+                                            <td><input type="number" step="0.01" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 4)" value="0"></td>
+                                            <td><input type="text" step="0.01" id="dew" name="dew[]" class="form-control" value="0%" readonly></td>
                                         </tr>
                                         <tr>
                                             <th class="form-label">3.</th>
                                             <th class="form-label">Total employees (D + E)</th>
-                                            <td><input type="number" step="0.01" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 5)"></td>
-                                            <td><input type="number" step="0.01" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 5)"></td>
-                                            <td><input type="text" step="0.01" id="dew" name="dew[]" class="form-control" readonly></td>
-                                            <td><input type="number" step="0.01" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 5)"></td>
-                                            <td><input type="text" step="0.01" id="dew" name="dew[]" class="form-control" readonly></td>
+                                            <td><input type="number" step="0.01" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 5)" value="0" readonly></td>
+                                            <td><input type="number" step="0.01" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 5)" value="0"></td>
+                                            <td><input type="text" step="0.01" id="dew" name="dew[]" class="form-control" value="0%" readonly></td>
+                                            <td><input type="number" step="0.01" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 5)" value="0"></td>
+                                            <td><input type="text" step="0.01" id="dew" name="dew[]" class="form-control" value="0%" readonly></td>
                                         </tr>
                                         <tr>
                                             <th class="form-label" colspan="7"><u> WORKERS </u></th>
@@ -605,29 +605,29 @@
                                         <tr>
                                             <th class="form-label">4.</th>
                                             <th class="form-label">Permanent (F)</th>
-                                            <td><input type="number" step="0.01" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 7)"></td>
-                                            <td><input type="number" step="0.01" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 7)"></td>
-                                            <td><input type="text" step="0.01" id="dew" name="dew[]" class="form-control" readonly></td>
-                                            <td><input type="number" step="0.01" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 7)"></td>
-                                            <td><input type="text" step="0.01" id="dew" name="dew[]" class="form-control" readonly></td>
+                                            <td><input type="number" step="0.01" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 7)" value="0" readonly></td>
+                                            <td><input type="number" step="0.01" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 7)" value="0"></td>
+                                            <td><input type="text" step="0.01" id="dew" name="dew[]" class="form-control" value="0%" readonly></td>
+                                            <td><input type="number" step="0.01" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 7)" value="0"></td>
+                                            <td><input type="text" step="0.01" id="dew" name="dew[]" class="form-control" value="0%" readonly></td>
                                         </tr>
                                         <tr>
                                             <th class="form-label">5.</th>
                                             <th class="form-label">Other than Permanent (G)</th>
-                                            <td><input type="number" step="0.01" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 8)"></td>
-                                            <td><input type="number" step="0.01" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 8)"></td>
-                                            <td><input type="text" step="0.01" id="dew" name="dew[]" class="form-control" readonly></td>
-                                            <td><input type="number" step="0.01" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 8)"></td>
-                                            <td><input type="text" step="0.01" id="dew" name="dew[]" class="form-control" readonly></td>
+                                            <td><input type="number" step="0.01" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 8)" value="0" readonly></td>
+                                            <td><input type="number" step="0.01" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 8)" value="0"></td>
+                                            <td><input type="text" step="0.01" id="dew" name="dew[]" class="form-control" value="0%" readonly></td>
+                                            <td><input type="number" step="0.01" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 8)" value="0"></td>
+                                            <td><input type="text" step="0.01" id="dew" name="dew[]" class="form-control" value="0%" readonly></td>
                                         </tr>
                                         <tr>
                                             <th class="form-label">6.</th>
                                             <th class="form-label">Total workers (F + G)</th>
-                                            <td><input type="number" step="0.01" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 9)"></td>
-                                            <td><input type="number" step="0.01" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 9)"></td>
-                                            <td><input type="text" step="0.01" id="dew" name="dew[]" class="form-control" readonly></td>
-                                            <td><input type="number" step="0.01" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 9)"></td>
-                                            <td><input type="text" step="0.01" id="dew" name="dew[]" class="form-control" readonly></td>
+                                            <td><input type="number" step="0.01" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 9)" value="0" readonly></td>
+                                            <td><input type="number" step="0.01" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 9)" value="0"></td>
+                                            <td><input type="text" step="0.01" id="dew" name="dew[]" class="form-control" value="0%" readonly></td>
+                                            <td><input type="number" step="0.01" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 9)" value="0"></td>
+                                            <td><input type="text" step="0.01" id="dew" name="dew[]" class="form-control" value="0%" readonly></td>
                                         </tr>
                                     </table>
                                 </div>
@@ -664,29 +664,29 @@
                                         <tr>
                                             <th class="form-label" id="dewda" name="dewda[]">1.</th>
                                             <th class="form-label" id="dewda" name="dewda[]">Permanent (D)</th>
-                                            <td><input type="number" step="0.01" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 3)"></td>
-                                            <td><input type="number" step="0.01" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 3)"></td>
-                                            <td><input type="text" step="0.01" id="dewda" name="dewda[]" class="form-control" readonly></td>
-                                            <td><input type="number" step="0.01" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 3)"></td>
-                                            <td><input type="text" step="0.01" id="dewda" name="dewda[]" class="form-control" readonly></td>
+                                            <td><input type="number" step="0.01" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 3)" value="0" readonly></td>
+                                            <td><input type="number" step="0.01" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 3)" value="0"></td>
+                                            <td><input type="text" step="0.01" id="dewda" name="dewda[]" class="form-control" value="0%" readonly></td>
+                                            <td><input type="number" step="0.01" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 3)" value="0"></td>
+                                            <td><input type="text" step="0.01" id="dewda" name="dewda[]" class="form-control" value="0%" readonly></td>
                                         </tr>
                                         <tr>
                                             <th class="form-label" id="dewda" name="dewda[]">2.</th>
                                             <th class="form-label" id="dewda" name="dewda[]">Other than Permanent (E)</th>
-                                            <td><input type="number" step="0.01" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 4)"></td>
-                                            <td><input type="number" step="0.01" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 4)"></td>
-                                            <td><input type="text" step="0.01" id="dewda" name="dewda[]" class="form-control" readonly></td>
-                                            <td><input type="number" step="0.01" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 4)"></td>
-                                            <td><input type="text" step="0.01" id="dewda" name="dewda[]" class="form-control" readonly></td>
+                                            <td><input type="number" step="0.01" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 4)" value="0" readonly></td>
+                                            <td><input type="number" step="0.01" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 4)" value="0"></td>
+                                            <td><input type="text" step="0.01" id="dewda" name="dewda[]" class="form-control" value="0%" readonly></td>
+                                            <td><input type="number" step="0.01" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 4)" value="0"></td>
+                                            <td><input type="text" step="0.01" id="dewda" name="dewda[]" class="form-control" value="0%" readonly></td>
                                         </tr>
                                         <tr>
                                             <th class="form-label" id="dewda" name="dewda[]">3.</th>
                                             <th class="form-label" id="dewda" name="dewda[]">Total differently abled employees (D + E)</th>
-                                            <td><input type="number" step="0.01" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 5)"></td>
-                                            <td><input type="number" step="0.01" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 5)"></td>
-                                            <td><input type="text" step="0.01" id="dewda" name="dewda[]" class="form-control" readonly></td>
-                                            <td><input type="number" step="0.01" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 5)"></td>
-                                            <td><input type="text" step="0.01" id="dewda" name="dewda[]" class="form-control" readonly></td>
+                                            <td><input type="number" step="0.01" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 5)" value="0" readonly></td>
+                                            <td><input type="number" step="0.01" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 5)" value="0"></td>
+                                            <td><input type="text" step="0.01" id="dewda" name="dewda[]" class="form-control" value="0%" readonly></td>
+                                            <td><input type="number" step="0.01" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 5)" value="0"></td>
+                                            <td><input type="text" step="0.01" id="dewda" name="dewda[]" class="form-control" value="0%" readonly></td>
                                         </tr>
                                         <tr>
                                             <th class="form-label" colspan="7"><u> DIFFERENTLY ABLED WORKERS </u></th>
@@ -694,29 +694,29 @@
                                         <tr>
                                             <th class="form-label" id="dewda" name="dewda[]">4.</th>
                                             <th class="form-label" id="dewda" name="dewda[]">Permanent (F)</th>
-                                            <td><input type="number" step="0.01" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 7)"></td>
-                                            <td><input type="number" step="0.01" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 7)"></td>
-                                            <td><input type="text" step="0.01" id="dewda" name="dewda[]" class="form-control" readonly></td>
-                                            <td><input type="number" step="0.01" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 7)"></td>
-                                            <td><input type="text" step="0.01" id="dewda" name="dewda[]" class="form-control" readonly></td>
+                                            <td><input type="number" step="0.01" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 7)" value="0" readonly></td>
+                                            <td><input type="number" step="0.01" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 7)" value="0"></td>
+                                            <td><input type="text" step="0.01" id="dewda" name="dewda[]" class="form-control" value="0%" readonly></td>
+                                            <td><input type="number" step="0.01" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 7)" value="0"></td>
+                                            <td><input type="text" step="0.01" id="dewda" name="dewda[]" class="form-control"  value="0%" readonly></td>
                                         </tr>
                                         <tr>
                                             <th class="form-label" id="dewda" name="dewda[]">5.</th>
                                             <th class="form-label" id="dewda" name="dewda[]">Other than Permanent (G)</th>
-                                            <td><input type="number" step="0.01" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 8)"></td>
-                                            <td><input type="number" step="0.01" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 8)"></td>
-                                            <td><input type="text" step="0.01" id="dewda" name="dewda[]" class="form-control" readonly></td>
-                                            <td><input type="number" step="0.01" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 8)"></td>
-                                            <td><input type="text" step="0.01" id="dewda" name="dewda[]" class="form-control" readonly></td>
+                                            <td><input type="number" step="0.01" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 8)" value="0" readonly></td>
+                                            <td><input type="number" step="0.01" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 8)" value="0"></td>
+                                            <td><input type="text" step="0.01" id="dewda" name="dewda[]" class="form-control" value="0%" readonly></td>
+                                            <td><input type="number" step="0.01" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 8)" value="0"></td>
+                                            <td><input type="text" step="0.01" id="dewda" name="dewda[]" class="form-control" value="0%" readonly></td>
                                         </tr>
                                         <tr>
                                             <th class="form-label" id="dewda" name="dewda[]">6.</th>
                                             <th class="form-label" id="dewda" name="dewda[]">Total differently abled workers (F + G)</th>
-                                            <td><input type="number" step="0.01" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 9)"></td>
-                                            <td><input type="number" step="0.01" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 9)"></td>
-                                            <td><input type="text" step="0.01" id="dewda" name="dewda[]" class="form-control" readonly></td>
-                                            <td><input type="number" step="0.01" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 9)"></td>
-                                            <td><input type="text" step="0.01" id="dewda" name="dewda[]" class="form-control" readonly></td>
+                                            <td><input type="number" step="0.01" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 9)" value="0" readonly></td>
+                                            <td><input type="number" step="0.01" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 9)" value="0"></td>
+                                            <td><input type="text" step="0.01" id="dewda" name="dewda[]" class="form-control" value="0%" readonly></td>
+                                            <td><input type="number" step="0.01" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 9)" value="0"></td>
+                                            <td><input type="text" step="0.01" id="dewda" name="dewda[]" class="form-control" value="0%" readonly></td>
                                         </tr>
                                     </table>
                                 </div>
@@ -747,15 +747,15 @@
                                 </tr>
                                 <tr>
                                     <th class="form-label">Board of Directors</th>
-                                    <td><input type="number" step="0.01" id="pirw" name="pirw[]" oninput="calculate19(this)" class="form-control"></td>
-                                    <td><input type="number" step="0.01" id="pirw" name="pirw[]" oninput="calculate19(this)" class="form-control"></td>
-                                    <td><input type="text" step="0.01" id="pirw" name="pirw[]" class="form-control" readonly></td>
+                                    <td><input type="number" step="0.01" id="pirw" name="pirw[]" oninput="calculate19(this)" class="form-control" value="0"></td>
+                                    <td><input type="number" step="0.01" id="pirw" name="pirw[]" oninput="calculate19(this)" class="form-control" value="0"></td>
+                                    <td><input type="text" step="0.01" id="pirw" name="pirw[]" class="form-control" value="0%" readonly></td>
                                 </tr>
                                 <tr>
                                     <th class="form-label">Key Management <br> Personnel</th>
-                                    <td><input type="number" step="0.01" id="pirw" name="pirw[]" oninput="calculate19(this)" class="form-control"></td>
-                                    <td><input type="number" step="0.01" id="pirw" name="pirw[]" oninput="calculate19(this)" class="form-control"></td>
-                                    <td><input type="text" step="0.01" id="pirw" name="pirw[]" class="form-control" readonly></td>
+                                    <td><input type="number" step="0.01" id="pirw" name="pirw[]" oninput="calculate19(this)" class="form-control" value="0"></td>
+                                    <td><input type="number" step="0.01" id="pirw" name="pirw[]" oninput="calculate19(this)" class="form-control" value="0"></td>
+                                    <td><input type="text" step="0.01" id="pirw" name="pirw[]" class="form-control" value="0%" readonly></td>
                                 </tr>
                             </table>
                         </div>
@@ -794,27 +794,27 @@
                                 </tr>
                                 <tr>
                                     <th class="form-label">Permanent Employees</th>
-                                    <td><input type="text" step="0.01" id="torpew" name="torpew[]" class="form-control" oninput="validateInput(this)"></td>
-                                    <td><input type="text" step="0.01" id="torpew" name="torpew[]" class="form-control" oninput="validateInput(this)"></td>
-                                    <td><input type="text" step="0.01" id="torpew" name="torpew[]" class="form-control" oninput="validateInput(this)"></td>
-                                    <td><input type="text" step="0.01" id="torpew" name="torpew[]" class="form-control" oninput="validateInput(this)"></td>
-                                    <td><input type="text" step="0.01" id="torpew" name="torpew[]" class="form-control" oninput="validateInput(this)"></td>
-                                    <td><input type="text" step="0.01" id="torpew" name="torpew[]" class="form-control" oninput="validateInput(this)"></td>
-                                    <td><input type="text" step="0.01" id="torpew" name="torpew[]" class="form-control" oninput="validateInput(this)"></td>
-                                    <td><input type="text" step="0.01" id="torpew" name="torpew[]" class="form-control" oninput="validateInput(this)"></td>
-                                    <td><input type="text" step="0.01" id="torpew" name="torpew[]" class="form-control" oninput="validateInput(this)"></td>
+                                    <td><input type="text" step="0.01" id="torpew" name="torpew[]" class="form-control" value="%" oninput="validateNumericInput(this); updatePercentage(this);"></td>
+                                    <td><input type="text" step="0.01" id="torpew" name="torpew[]" class="form-control" value="%" oninput="validateNumericInput(this); updatePercentage(this);"></td>
+                                    <td><input type="text" step="0.01" id="torpew" name="torpew[]" class="form-control" value="%" oninput="validateNumericInput(this); updatePercentage(this);"></td>
+                                    <td><input type="text" step="0.01" id="torpew" name="torpew[]" class="form-control" value="%" oninput="validateNumericInput(this); updatePercentage(this);"></td>
+                                    <td><input type="text" step="0.01" id="torpew" name="torpew[]" class="form-control" value="%" oninput="validateNumericInput(this); updatePercentage(this);"></td>
+                                    <td><input type="text" step="0.01" id="torpew" name="torpew[]" class="form-control" value="%" oninput="validateNumericInput(this); updatePercentage(this);"></td>
+                                    <td><input type="text" step="0.01" id="torpew" name="torpew[]" class="form-control" value="%" oninput="validateNumericInput(this); updatePercentage(this);"></td>
+                                    <td><input type="text" step="0.01" id="torpew" name="torpew[]" class="form-control" value="%" oninput="validateNumericInput(this); updatePercentage(this);"></td>
+                                    <td><input type="text" step="0.01" id="torpew" name="torpew[]" class="form-control" value="%" oninput="validateNumericInput(this); updatePercentage(this);"></td>
                                 </tr>
                                 <tr>
                                     <th class="form-label">Permanent Workers</th>
-                                    <td><input type="text" step="0.01" id="torpew" name="torpew[]" class="form-control" oninput="validateInput(this)"></td>
-                                    <td><input type="text" step="0.01" id="torpew" name="torpew[]" class="form-control" oninput="validateInput(this)"></td>
-                                    <td><input type="text" step="0.01" id="torpew" name="torpew[]" class="form-control" oninput="validateInput(this)"></td>
-                                    <td><input type="text" step="0.01" id="torpew" name="torpew[]" class="form-control" oninput="validateInput(this)"></td>
-                                    <td><input type="text" step="0.01" id="torpew" name="torpew[]" class="form-control" oninput="validateInput(this)"></td>
-                                    <td><input type="text" step="0.01" id="torpew" name="torpew[]" class="form-control" oninput="validateInput(this)"></td>
-                                    <td><input type="text" step="0.01" id="torpew" name="torpew[]" class="form-control" oninput="validateInput(this)"></td>
-                                    <td><input type="text" step="0.01" id="torpew" name="torpew[]" class="form-control" oninput="validateInput(this)"></td>
-                                    <td><input type="text" step="0.01" id="torpew" name="torpew[]" class="form-control" oninput="validateInput(this)"></td>
+                                    <td><input type="text" step="0.01" id="torpew" name="torpew[]" class="form-control" value="%" oninput="validateNumericInput(this); updatePercentage(this);"></td>
+                                    <td><input type="text" step="0.01" id="torpew" name="torpew[]" class="form-control" value="%" oninput="validateNumericInput(this); updatePercentage(this);"></td>
+                                    <td><input type="text" step="0.01" id="torpew" name="torpew[]" class="form-control" value="%" oninput="validateNumericInput(this); updatePercentage(this);"></td>
+                                    <td><input type="text" step="0.01" id="torpew" name="torpew[]" class="form-control" value="%" oninput="validateNumericInput(this); updatePercentage(this);"></td>
+                                    <td><input type="text" step="0.01" id="torpew" name="torpew[]" class="form-control" value="%" oninput="validateNumericInput(this); updatePercentage(this);"></td>
+                                    <td><input type="text" step="0.01" id="torpew" name="torpew[]" class="form-control" value="%" oninput="validateNumericInput(this); updatePercentage(this);"></td>
+                                    <td><input type="text" step="0.01" id="torpew" name="torpew[]" class="form-control" value="%" oninput="validateNumericInput(this); updatePercentage(this);"></td>
+                                    <td><input type="text" step="0.01" id="torpew" name="torpew[]" class="form-control" value="%" oninput="validateNumericInput(this); updatePercentage(this);"></td>
+                                    <td><input type="text" step="0.01" id="torpew" name="torpew[]" class="form-control" value="%" oninput="validateNumericInput(this); updatePercentage(this);"></td>
                                 </tr>
                             </table>
                         </div>
@@ -863,10 +863,7 @@
                                         <td style="width:5%;"><input type="number" id="holding" id="p_holding" name="holding[]" class="table-control" value="1" readonly></td>
                                         <td><input type="text" id="holding" name="holding[]" class="form-control"></td>
                                         <td><input type="text" id="holding" name="holding[]" class="form-control"></td>
-                                        <td>
-                                            </br><input type="text" id="holding1" name="holding[]" class="form-control">
-                                            <p id="holdingValidationMessage" style="color: red;"></p>
-                                        </td>
+                                        <td><input type="text" id="holding" name="holding[]" class="form-control" value="%" oninput="validateNumericInput(this); updatePercentage(this);"></td>
                                         <td><input type="text" id="holding" name="holding[]" class="form-control"></td>
                                     </tr>
                                 <tbody>
@@ -908,7 +905,7 @@
                             <label for="csr_act" class="form-label">22. (i) Whether CSR is applicable as per section 135 of Companies Act, 2013:</label>
                         </div>
                         <div class="invisible_container-sub22">
-                            <input type="text" class="form-control" id="csr_act" name="csr_act" required>
+                            <input type="text" class="form-control" id="csr_act" name="csr_act" placeholder="Enter CSR details as per section 135 of Companies Act, 2013" required>
                         </div>
                     </div>
                     <!-- (i) Whether CSR is applicable as per section 135 of Companies Act, 2013: (Yes/No) End -->
@@ -979,71 +976,71 @@
                                 <tr>
                                     <th class="form-label" id="gre" name="gre[]">Communities</th>
                                     <td><textarea id="gre" name="gre[]" class="form-control"></textarea></td>
-                                    <td><input type="number" id="gre" name="gre[]" class="form-control"></td>
-                                    <td><input type="number" id="gre" name="gre[]" class="form-control"></td>
+                                    <td><input type="number" id="gre" name="gre[]" class="form-control" value="0"></td>
+                                    <td><input type="number" id="gre" name="gre[]" class="form-control" value="0"></td>
                                     <td><textarea id="gre" name="gre[]" class="form-control"></textarea></td>
-                                    <td><input type="number" id="gre" name="gre[]" class="form-control"></td>
-                                    <td><input type="number" id="gre" name="gre[]" class="form-control"></td>
+                                    <td><input type="number" id="gre" name="gre[]" class="form-control" value="0"></td>
+                                    <td><input type="number" id="gre" name="gre[]" class="form-control" value="0"></td>
                                     <td><textarea id="gre" name="gre[]" class="form-control"></textarea></td>
                                 </tr>
                                 <tr>
                                     <th class="form-label" id="gre" name="gre[]">Investors (other than shareholders)</th>
                                     <td><textarea id="gre" name="gre[]" class="form-control"></textarea></td>
-                                    <td><input type="number" id="gre" name="gre[]" class="form-control"></td>
-                                    <td><input type="number" id="gre" name="gre[]" class="form-control"></td>
+                                    <td><input type="number" id="gre" name="gre[]" class="form-control" value="0"></td>
+                                    <td><input type="number" id="gre" name="gre[]" class="form-control" value="0"></td>
                                     <td><textarea id="gre" name="gre[]" class="form-control"></textarea></td>
-                                    <td><input type="number" id="gre" name="gre[]" class="form-control"></td>
-                                    <td><input type="number" id="gre" name="gre[]" class="form-control"></td>
+                                    <td><input type="number" id="gre" name="gre[]" class="form-control" value="0"></td>
+                                    <td><input type="number" id="gre" name="gre[]" class="form-control" value="0"></td>
                                     <td><textarea id="gre" name="gre[]" class="form-control"></textarea></td>
                                 </tr>
                                 <tr>
                                     <th class="form-label" id="gre" name="gre[]">Shareholders</th>
                                     <td><textarea id="gre" name="gre[]" class="form-control"></textarea></td>
-                                    <td><input type="number" id="gre" name="gre[]" class="form-control"></td>
-                                    <td><input type="number" id="gre" name="gre[]" class="form-control"></td>
+                                    <td><input type="number" id="gre" name="gre[]" class="form-control" value="0"></td>
+                                    <td><input type="number" id="gre" name="gre[]" class="form-control" value="0"></td>
                                     <td><textarea id="gre" name="gre[]" class="form-control"></textarea></td>
-                                    <td><input type="number" id="gre" name="gre[]" class="form-control"></td>
-                                    <td><input type="number" id="gre" name="gre[]" class="form-control"></td>
+                                    <td><input type="number" id="gre" name="gre[]" class="form-control" value="0"></td>
+                                    <td><input type="number" id="gre" name="gre[]" class="form-control" value="0"></td>
                                     <td><textarea id="gre" name="gre[]" class="form-control"></textarea></td>
                                 </tr>
                                 <tr>
                                     <th class="form-label" id="gre" name="gre[]">Employees and workers</th>
                                     <td><textarea id="gre" name="gre[]" class="form-control"></textarea></td>
-                                    <td><input type="number" id="gre" name="gre[]" class="form-control"></td>
-                                    <td><input type="number" id="gre" name="gre[]" class="form-control"></td>
+                                    <td><input type="number" id="gre" name="gre[]" class="form-control" value="0"></td>
+                                    <td><input type="number" id="gre" name="gre[]" class="form-control" value="0"></td>
                                     <td><textarea id="gre" name="gre[]" class="form-control"></textarea></td>
-                                    <td><input type="number" id="gre" name="gre[]" class="form-control"></td>
-                                    <td><input type="number" id="gre" name="gre[]" class="form-control"></td>
+                                    <td><input type="number" id="gre" name="gre[]" class="form-control" value="0"></td>
+                                    <td><input type="number" id="gre" name="gre[]" class="form-control" value="0"></td>
                                     <td><textarea id="gre" name="gre[]" class="form-control"></textarea></td>
                                 </tr>
                                 <tr>
                                     <th class="form-label" id="gre" name="gre[]">Customers</th>
                                     <td><textarea id="gre" name="gre[]" class="form-control"></textarea></td>
-                                    <td><input type="number" id="gre" name="gre[]" class="form-control"></td>
-                                    <td><input type="number" id="gre" name="gre[]" class="form-control"></td>
+                                    <td><input type="number" id="gre" name="gre[]" class="form-control" value="0"></td>
+                                    <td><input type="number" id="gre" name="gre[]" class="form-control" value="0"></td>
                                     <td><textarea id="gre" name="gre[]" class="form-control"></textarea></td>
-                                    <td><input type="number" id="gre" name="gre[]" class="form-control"></td>
-                                    <td><input type="number" id="gre" name="gre[]" class="form-control"></td>
+                                    <td><input type="number" id="gre" name="gre[]" class="form-control" value="0"></td>
+                                    <td><input type="number" id="gre" name="gre[]" class="form-control" value="0"></td>
                                     <td><textarea id="gre" name="gre[]" class="form-control"></textarea></td>
                                 </tr>
                                 <tr>
                                     <th class="form-label" id="gre" name="gre[]">Value Chain Partners</th>
                                     <td><textarea id="gre" name="gre[]" class="form-control"></textarea></td>
-                                    <td><input type="number" id="gre" name="gre[]" class="form-control"></td>
-                                    <td><input type="number" id="gre" name="gre[]" class="form-control"></td>
+                                    <td><input type="number" id="gre" name="gre[]" class="form-control" value="0"></td>
+                                    <td><input type="number" id="gre" name="gre[]" class="form-control" value="0"></td>
                                     <td><textarea id="gre" name="gre[]" class="form-control"></textarea></td>
-                                    <td><input type="number" id="gre" name="gre[]" class="form-control"></td>
-                                    <td><input type="number" id="gre" name="gre[]" class="form-control"></td>
+                                    <td><input type="number" id="gre" name="gre[]" class="form-control" value="0"></td>
+                                    <td><input type="number" id="gre" name="gre[]" class="form-control" value="0"></td>
                                     <td><textarea id="gre" name="gre[]" class="form-control"></textarea></td>
                                 </tr>
                                 <tr>
                                     <th class="form-label" id="gre" name="gre[]">Other (please specify)</th>
                                     <td><textarea id="gre" name="gre[]" class="form-control"></textarea></td>
-                                    <td><input type="number" id="gre" name="gre[]" class="form-control"></td>
-                                    <td><input type="number" id="gre" name="gre[]" class="form-control"></td>
+                                    <td><input type="number" id="gre" name="gre[]" class="form-control" value="0"></td>
+                                    <td><input type="number" id="gre" name="gre[]" class="form-control" value="0"></td>
                                     <td><textarea id="gre" name="gre[]" class="form-control"></textarea></td>
-                                    <td><input type="number" id="gre" name="gre[]" class="form-control"></td>
-                                    <td><input type="number" id="gre" name="gre[]" class="form-control"></td>
+                                    <td><input type="number" id="gre" name="gre[]" class="form-control" value="0"></td>
+                                    <td><input type="number" id="gre" name="gre[]" class="form-control" value="0"></td>
                                     <td><textarea id="gre" name="gre[]" class="form-control"></textarea></td>
                                 </tr>
                             </table>

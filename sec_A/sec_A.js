@@ -270,6 +270,12 @@ function validateNumericInput(input) {
     if (decimalCount > 1) {
         value = value.substr(0, value.lastIndexOf('.'));
     }
+
+    const numericValue = parseFloat(value);
+    if (numericValue > 100) {
+        value = '100';
+    }
+
     // Update the value of the input field
     input.value = value;
 }
@@ -287,6 +293,12 @@ function updatePercentage(input) {
 
     // Update the value of the input field
     input.value = value;
+
+    // Calculate the new cursor position (right before the percentage sign)
+    const newPosition = input.value.length - 1;
+
+    // Set the cursor position to right before the percentage sign
+    input.setSelectionRange(newPosition, newPosition);
 }
 
 /* ************************************************************************************************************************************ *
@@ -352,9 +364,11 @@ function calculateColumnTotalsForSection18a(tableId, startRowIndex, endRowIndex,
     }
     var row = table.rows[totalRowIndex];
 
-    var totalA = parseFloat(row.cells[2].querySelector('input').value) || 0;
+    // var totalA = parseFloat(row.cells[2].querySelector('input').value) || 0;
     var noB = parseFloat(row.cells[3].querySelector('input').value) || 0;
     var noC = parseFloat(row.cells[5].querySelector('input').value) || 0;
+    var totalA = noB + noC;
+    row.cells[2].querySelector('input').value = totalA;
 
     // Calculate percentages and update the respective cells
     row.cells[4].querySelector('input').value = calculatePercentage(noB, totalA);
@@ -378,9 +392,11 @@ function calculatePercentages18a(tableId, rowIndex) {
     var table = document.getElementById(tableId);
     var row = table.rows[rowIndex];
 
-    var totalA = parseFloat(row.cells[2].querySelector('input').value) || 0;
+    // var totalA = parseFloat(row.cells[2].querySelector('input').value) || 0;
     var noB = parseFloat(row.cells[3].querySelector('input').value) || 0;
     var noC = parseFloat(row.cells[5].querySelector('input').value) || 0;
+    var totalA = noB + noC;
+    row.cells[2].querySelector('input').value = totalA;
 
     // Calculate percentages and update the respective cells
     row.cells[4].querySelector('input').value = calculatePercentage(noB, totalA);
@@ -435,9 +451,11 @@ function calculateColumnTotalsForSection18b(tableId, startRowIndex, endRowIndex,
     }
     var row = table.rows[totalRowIndex];
 
-    var totalA = parseFloat(row.cells[2].querySelector('input').value) || 0;
+    // var totalA = parseFloat(row.cells[2].querySelector('input').value) || 0;
     var noB = parseFloat(row.cells[3].querySelector('input').value) || 0;
     var noC = parseFloat(row.cells[5].querySelector('input').value) || 0;
+    var totalA = noB + noC;
+    row.cells[2].querySelector('input').value = totalA;
 
     // Calculate percentages and update the respective cells
     row.cells[4].querySelector('input').value = calculatePercentage(noB, totalA);
@@ -461,9 +479,11 @@ function calculatePercentages18b(tableId, rowIndex) {
     var table = document.getElementById(tableId);
     var row = table.rows[rowIndex];
 
-    var totalA = parseFloat(row.cells[2].querySelector('input').value) || 0;
+    // var totalA = parseFloat(row.cells[2].querySelector('input').value) || 0;
     var noB = parseFloat(row.cells[3].querySelector('input').value) || 0;
     var noC = parseFloat(row.cells[5].querySelector('input').value) || 0;
+    var totalA = noB + noC;
+    row.cells[2].querySelector('input').value = totalA;
 
     // Calculate percentages and update the respective cells
     row.cells[4].querySelector('input').value = calculatePercentage(noB, totalA);
@@ -502,43 +522,6 @@ function validateInput(input) {
     // Update the value of the input field
     input.value = value;
 }
-
-
-/* ************************************************************************************************************************************ *
-/*                                                                                                                                      */
-/*                           V. Holding, Subsidiary and Associate Companies (including joint ventures)                                  */
-/*                                                                                                                                      */
-/* ************************************************************************************************************************************ */
-
-//21a- Names of holding / subsidiary / associate companies / joint ventures
-document.addEventListener('DOMContentLoaded', function () {
-    const holdingInput = document.getElementById('holding1');
-    const holdingValidationMessage = document.getElementById('holdingValidationMessage');
-
-    holdingInput.addEventListener('input', function () {
-        let inputValue = holdingInput.value.trim();
-        const pattern = /^(100(\.0{1,2})?|\d{0,2}(\.\d{0,2})?|0(\.\d{0,2})?)%?$/;
-
-        if (/[^0-9.%]/.test(inputValue)) {
-            // Disallow characters other than digits, '.', and '%'
-            inputValue = inputValue.replace(/[^0-9.%]/g, '');
-            holdingInput.value = inputValue;
-        }
-
-        if ((inputValue.match(/%/g) || []).length > 1) {
-            // Remove additional '%' symbols if more than one is present
-            inputValue = inputValue.replace(/%/g, '');
-            holdingInput.value = inputValue;
-        }
-
-        if (pattern.test(inputValue)) {
-            holdingValidationMessage.textContent = '';
-        } else {
-            holdingValidationMessage.textContent = 'e.g., 25%, 99.5%, 0%.';
-            holdingValidationMessage.style.color = 'red';
-        }
-    });
-});
 
 
 /* ************************************************************************************************************************************ *
