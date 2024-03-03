@@ -951,7 +951,7 @@
                          <textarea style="margin-left: 10px;"><?php echo isset($row_c['reclaimProcesses2']) ? $row_c['reclaimProcesses2'] : ''; ?></textarea>    
                     <!--Processes to safely reclaim products for reusing, recycling and disposing at the end of life end-->
 
-                    <label>4. Whether Extended Producer Responsibility (EPR) is applicable to the entity’s activities (Yes/No). If yes, whether the waste collection plan is in line with the Extended Producer Responsibility (EPR) plan submitted to Pollution Control Boards? If not, provide steps taken to address the same:</label>
+                    <label>4. Whether Extended Producer Responsibility (EPR) is applicable to the entityÂ’s activities (Yes/No). If yes, whether the waste collection plan is in line with the Extended Producer Responsibility (EPR) plan submitted to Pollution Control Boards? If not, provide steps taken to address the same:</label>
                         <?php
                             // Check the value of 'conflict_of_interest'
                             $eprApplicable = $row_c['2_5_eprApplicable'];
@@ -966,7 +966,7 @@
                                 echo "Not Applicable";
                             }
                         ?>
-                    <!--Whether Extended Producer Responsibility (EPR) is applicable to the entity’s activities end-->
+                    <!--Whether Extended Producer Responsibility (EPR) is applicable to the entityÂ’s activities end-->
 
                     <!------------------------------------------------------------------------------------------------------------------------->
                     <!--                                     LEADERSHIP INDICATORS -START                                                    -->
@@ -1811,7 +1811,6 @@
                                     echo "No";
                                 } elseif ($lifeInsuranceCompensationa == 'Yes') {
                                     echo '<label >Enter employee life insurance or compensatory package details:</label>';
-                                    echo $row_c['3_23_lifeInsuranceCompensationdetailsa'];
                                 }
                             ?><br>
                         <label>b. Workers</label>
@@ -1823,7 +1822,6 @@
                                     echo "No";
                                 } elseif ($lifeInsuranceCompensationb == 'Yes') {
                                     echo '<label>Enter worker life insurance or compensatory package details:</label>';
-                                    echo $row_c['3_25_lifeInsuranceCompensationdetailsb'];
                                 }
                             ?>
                     <!--Does the entity extend any life insurance or any compensatory package in the event of death End-->
