@@ -79,7 +79,7 @@
     <body>
         <!------------------------------------------------------------------------------------------------------------------------->
         <!--                                                                                                                     -->
-        <!--                                                HEADER                                                               -->
+        <!--                                                        HEADER                                                       -->
         <!--                                                                                                                     -->
         <!-------------------------------------------------------------------------------------------------------------------------> 
         <header class="header">
@@ -102,7 +102,7 @@
 
         <!------------------------------------------------------------------------------------------------------------------------->
         <!--                                                                                                                     -->
-        <!--                                                MAIN DIVISION                                                        -->
+        <!--                                                    MAIN DIVISION                                                    -->
         <!--                                                                                                                     -->
         <!-------------------------------------------------------------------------------------------------------------------------> 
         <div class="container">
@@ -496,20 +496,20 @@
                         <h2>PRINCIPLE 2</h2>
                         <h3>BUSINESSES SHOULD PROVIDE GOODS AND SERVICES IN A MANNER THAT IS SUSTAINABLE AND SAFE.</h3>
                         <div class="sdg-img">
-                            <img src="../images/SDG/G16.jpg" width="60px" style=" display: flex;float: right; margin-left: 10px;">
-                            <img src="../images/SDG/G15.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
-                            <img src="../images/SDG/G14.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
-                            <img src="../images/SDG/G13.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
-                            <img src="../images/SDG/G12.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
-                            <img src="../images/SDG/G11.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
-                            <img src="../images/SDG/G10.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
-                            <img src="../images/SDG/G9.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
-                            <img src="../images/SDG/G8.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
-                            <img src="../images/SDG/G7.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
-                            <img src="../images/SDG/G6.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
-                            <img src="../images/SDG/G5.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
+                            <img src="../images/SDG/G2.jpg" width="60px" style=" display: flex;float: right; margin-left: 10px;">
                             <img src="../images/SDG/G3.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
-                            <img src="../images/SDG/G2.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
+                            <img src="../images/SDG/G5.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
+                            <img src="../images/SDG/G6.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
+                            <img src="../images/SDG/G7.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
+                            <img src="../images/SDG/G8.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
+                            <img src="../images/SDG/G9.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
+                            <img src="../images/SDG/G10.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
+                            <img src="../images/SDG/G11.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
+                            <img src="../images/SDG/G12.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
+                            <img src="../images/SDG/G13.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
+                            <img src="../images/SDG/G14.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
+                            <img src="../images/SDG/G15.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
+                            <img src="../images/SDG/G16.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
                         </div>
                     </div>
 
@@ -904,14 +904,14 @@
                         <h2>PRINCIPLE 3</h2>
                         <h3>BUSINESSES SHOULD RESPECT & PROMOTE THE WELL-BEING OF ALL EMPLOYEES, INCLUDING THOSE IN THEIR VALUE CHAINS.</h3>
                         <div class="sdg-img">
-                            <img src="../images/SDG/G16.jpg" width="60px" style=" display: flex;float: right; margin-left: 10px;">
-                            <img src="../images/SDG/G11.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
-                            <img src="../images/SDG/G10.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
-                            <img src="../images/SDG/G8.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
-                            <img src="../images/SDG/G5.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
-                            <img src="../images/SDG/G4.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
+                            <img src="../images/SDG/G1.jpg" width="60px" style=" display: flex;float: right; margin-left: 10px;">
                             <img src="../images/SDG/G3.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
-                            <img src="../images/SDG/G1.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
+                            <img src="../images/SDG/G4.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
+                            <img src="../images/SDG/G5.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
+                            <img src="../images/SDG/G8.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
+                            <img src="../images/SDG/G10.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
+                            <img src="../images/SDG/G11.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
+                            <img src="../images/SDG/G16.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
                         </div>
                     </div>
 
@@ -2058,10 +2058,10 @@
                         <h2>PRINCIPLE 4</h2>
                         <h3>BUSINESSES SHOULD RESPECT THE INTERESTS OF & BE RESPONSIVE TO ALL THEIR STAKEHOLDERS.</h3>
                         <div class="sdg-img">
-                            <img src="../images/SDG/G16.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
-                            <img src="../images/SDG/G11.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
-                            <img src="../images/SDG/G5.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
                             <img src="../images/SDG/G1.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
+                            <img src="../images/SDG/G5.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
+                            <img src="../images/SDG/G11.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
+                            <img src="../images/SDG/G16.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
                         </div>
                     </div>
                     <!------------------------------------------------------------------------------------------------------------------------->
@@ -2182,12 +2182,12 @@
                         <h2>PRINCIPLE 5</h2>
                         <h3>BUSINESSES SHOULD RESPECT & PROMOTE HUMAN RIGHTS.</h3>
                         <div class="sdg-img">
-                            <img src="../images/SDG/G16.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
-                            <img src="../images/SDG/G10.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
-                            <img src="../images/SDG/G8.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
-                            <img src="../images/SDG/G5.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
-                            <img src="../images/SDG/G4.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
                             <img src="../images/SDG/G1.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
+                            <img src="../images/SDG/G4.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
+                            <img src="../images/SDG/G5.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
+                            <img src="../images/SDG/G8.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
+                            <img src="../images/SDG/G10.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
+                            <img src="../images/SDG/G16.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
                         </div>
                     </div>
                     <!------------------------------------------------------------------------------------------------------------------------->
@@ -2892,18 +2892,18 @@
                         <h2>PRINCIPLE 6</h2>
                         <h3> BUSINESSES SHOULD RESPECT AND MAKE EFFORTS TO PROTECT AND RESTORE THE ENVIRONMENT</h3>
                         <div class="sdg-img">
-                            <img src="../images/SDG/G15.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
-                            <img src="../images/SDG/G14.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
-                            <img src="../images/SDG/G13.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
-                            <img src="../images/SDG/G12.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
-                            <img src="../images/SDG/G11.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
-                            <img src="../images/SDG/G10.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
-                            <img src="../images/SDG/G9.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
-                            <img src="../images/SDG/G8.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
-                            <img src="../images/SDG/G7.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
-                            <img src="../images/SDG/G6.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
-                            <img src="../images/SDG/G3.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
                             <img src="../images/SDG/G2.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
+                            <img src="../images/SDG/G3.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
+                            <img src="../images/SDG/G6.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
+                            <img src="../images/SDG/G7.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
+                            <img src="../images/SDG/G8.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
+                            <img src="../images/SDG/G9.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
+                            <img src="../images/SDG/G10.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
+                            <img src="../images/SDG/G11.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
+                            <img src="../images/SDG/G12.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
+                            <img src="../images/SDG/G13.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
+                            <img src="../images/SDG/G14.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
+                            <img src="../images/SDG/G15.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
                         </div>
                     </div>
                     <!------------------------------------------------------------------------------------------------------------------------->
@@ -4265,16 +4265,16 @@
                         <h2>PRINCIPLE 7</h2>
                         <h3>BUSINESSES, WHEN ENGAGING IN INFLUENCING PUBLIC & REGULATORY POLICY, SHOULD DO SO IN A MANNER THAT IS RESPONSIBLE & TRANSPARENT</h3>
                         <div class="sdg-img">
-                            <img src="../images/SDG/G17.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
-                            <img src="../images/SDG/G16.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
-                            <img src="../images/SDG/G15.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
-                            <img src="../images/SDG/G14.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
-                            <img src="../images/SDG/G13.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
-                            <img src="../images/SDG/G11.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
-                            <img src="../images/SDG/G10.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
-                            <img src="../images/SDG/G9.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
-                            <img src="../images/SDG/G7.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
                             <img src="../images/SDG/G2.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
+                            <img src="../images/SDG/G7.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
+                            <img src="../images/SDG/G9.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
+                            <img src="../images/SDG/G10.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
+                            <img src="../images/SDG/G11.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
+                            <img src="../images/SDG/G13.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
+                            <img src="../images/SDG/G14.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
+                            <img src="../images/SDG/G15.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
+                            <img src="../images/SDG/G16.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
+                            <img src="../images/SDG/G17.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
                         </div>
                     </div>
 
@@ -4489,19 +4489,19 @@
                         <h2>PRINCIPLE 8</h2>
                         <h3>BUSINESSES SHOULD PROMOTE INCLUSIVE GROWTH & EQUITABLE DEVELOPMENT</h3>
                         <div class="sdg-img">
-                            <img src="../images/SDG/G17.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
-                            <img src="../images/SDG/G16.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
-                            <img src="../images/SDG/G15.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
-                            <img src="../images/SDG/G14.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
-                            <img src="../images/SDG/G13.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
-                            <img src="../images/SDG/G11.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
-                            <img src="../images/SDG/G9.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
-                            <img src="../images/SDG/G8.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
-                            <img src="../images/SDG/G5.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
-                            <img src="../images/SDG/G4.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
-                            <img src="../images/SDG/G3.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
-                            <img src="../images/SDG/G2.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
                             <img src="../images/SDG/G1.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
+                            <img src="../images/SDG/G2.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
+                            <img src="../images/SDG/G3.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
+                            <img src="../images/SDG/G4.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
+                            <img src="../images/SDG/G5.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
+                            <img src="../images/SDG/G8.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
+                            <img src="../images/SDG/G9.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
+                            <img src="../images/SDG/G11.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
+                            <img src="../images/SDG/G13.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
+                            <img src="../images/SDG/G14.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
+                            <img src="../images/SDG/G15.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
+                            <img src="../images/SDG/G16.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
+                            <img src="../images/SDG/G17.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
                         </div>
                     </div>
 
@@ -4928,12 +4928,12 @@
                         <h2>PRINCIPLE 9</h2>
                         <h3> BUSINESSES SHOULD ENGAGE WITH & PROVIDE VALUE TO THEIR CONSUMERS IN A RESPONSIBLE MANNER</h3>
                         <div class="sdg-img">
-                            <img src="../images/SDG/G16.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
-                            <img src="../images/SDG/G15.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
-                            <img src="../images/SDG/G14.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
-                            <img src="../images/SDG/G12.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
-                            <img src="../images/SDG/G4.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
                             <img src="../images/SDG/G2.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
+                            <img src="../images/SDG/G4.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
+                            <img src="../images/SDG/G12.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
+                            <img src="../images/SDG/G14.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
+                            <img src="../images/SDG/G15.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
+                            <img src="../images/SDG/G16.jpg" width="60px" style=" display: flex; float: right; margin-left: 10px;">
                         </div>
                     </div>
                     <!------------------------------------------------------------------------------------------------------------------------->
@@ -5272,7 +5272,7 @@
          
         <!------------------------------------------------------------------------------------------------------------------------->
         <!--                                                                                                                     -->
-        <!--                                                 JS SCRIPT                                                           -->
+        <!--                                                        JS SCRIPT                                                    -->
         <!--                                                                                                                     -->
         <!-------------------------------------------------------------------------------------------------------------------------> 
         <script src="sec_C.js"></script>
