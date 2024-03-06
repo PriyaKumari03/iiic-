@@ -1295,8 +1295,8 @@
                                 <table id="p_returnRetentionRates">
                                     <tr>
                                         <th></th>
-                                        <th  class="form-label" colspan="2">Permanent Employees</th>
-                                        <th  class="form-label" colspan="2">Permanent Workers</th>
+                                        <th  class="form-label" colspan="2">Permanent Employees<br>FY <?php echo $currentFY ?></th>
+                                        <th  class="form-label" colspan="2">Permanent Workers<br>FY <?php echo $currentFY ?></th>
                                     </tr>
                                     <tr>
                                         <th class="form-label">Gender</th>
@@ -2958,10 +2958,10 @@
                                 </table>
                             </div>
                             <div class="policy">
-                                    <details class="add_comment_detail">
-                                        <summary>Add comments</summary>
-                                        <textarea class="detail-control" id="p_energyConsumptionDetails_comments" name="p_energyConsumptionDetails_comments" placeholder="Enter additional information (if required)"></textarea>
-                                    </details>
+                                <details class="add_comment_detail">
+                                    <summary>Add comments</summary>
+                                    <textarea class="detail-control" id="p_energyConsumptionDetails_comments" name="p_energyConsumptionDetails_comments" placeholder="Enter additional information (if required)"></textarea>
+                                </details>
                             </div>
                         </div>
                         <!--Total energy consumption and energy intensity end-->
