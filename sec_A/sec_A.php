@@ -349,7 +349,7 @@
                                         <td style="width:5%;"><input type="number" id="doba" id="p_doba" name="doba[]" class="table-control" required value="1" readonly></td>
                                         <td><input type="text" id="doba" name="doba[]" class="form-control"></td>
                                         <td><input type="text" id="doba" name="doba[]" class="form-control"></td>
-                                        <td><input type="text" id="doba" name="doba[]" class="form-control" value="%" oninput="validateNumericInput(this); updatePercentage(this);"></td>
+                                        <td><input type="text" id="doba" name="doba[]" class="form-control" value="0%" oninput="validateAndUpdatePercentage(this);" onfocus="removeZeroPercentage(this)" onblur="addZeroIfEmptyPercentage(this)"></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -390,7 +390,7 @@
                                         <td style="width:5%;"><input type="number" id="dops" id="p_dops" name="dops[]" class="table-control" value="1" readonly required ></td>
                                         <td><input type="text" id="dops" name="dops[]" class="form-control"></td>
                                         <td><input type="text" id="dops" name="dops[]" class="form-control"></td>
-                                        <td><input type="text" id="dops" name="dops[]" class="form-control" value="%" oninput="validateNumericInput(this); updatePercentage(this);"></td>
+                                        <td><input type="text" id="dops" name="dops[]" class="form-control" value="0%" oninput="validateAndUpdatePercentage(this);" onfocus="removeZeroPercentage(this)" onblur="addZeroIfEmptyPercentage(this)"></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -444,14 +444,14 @@
                                 <tbody>
                                     <tr>
                                         <th class="form-label" id="nol" id="p_nol" name="nol[]" class="form-control">National</th>
-                                        <td><input type="number" name="nol[]" oninput="calculate16(this)" class="form-control nol-input" value="0"></td>
-                                        <td><input type="number" name="nol[]" oninput="calculate16(this)" class="form-control nol-input" value="0"></td>
+                                        <td><input type="number" name="nol[]" oninput="calculate16(this)" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" class="form-control nol-input" value="0"></td>
+                                        <td><input type="number" name="nol[]" oninput="calculate16(this)" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" class="form-control nol-input" value="0"></td>
                                         <td><input type="number" name="nol[]" class="form-control nol-total" value="0" readonly></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label" id="nol" id="p_nol" name="nol[]" class="form-control">International</th>
-                                        <td><input type="number" id="nol" name="nol[]" oninput="calculate16(this)" class="form-control nol-input" value="0"></td>
-                                        <td><input type="number" id="nol" name="nol[]" oninput="calculate16(this)" class="form-control nol-input" value="0"></td>
+                                        <td><input type="number" id="nol" name="nol[]" oninput="calculate16(this)" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" class="form-control nol-input" value="0"></td>
+                                        <td><input type="number" id="nol" name="nol[]" oninput="calculate16(this)" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" class="form-control nol-input" value="0"></td>
                                         <td><input type="number" id="nol" name="nol[]" class="form-control nol-total" value="0" readonly></td>
                                     </tr>
                                 </tbody>
@@ -488,15 +488,15 @@
                                         <tbody>
                                             <tr>
                                                 <th class="form-label" id="drm" id="p_drm" name="drm[]" class="form-control">National (No. of States)</th>
-                                                <td><input type="number" id="drm" name="drm[]" class="form-control" value="0"></td>
+                                                <td><input type="number" id="drm" name="drm[]" class="form-control" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" value="0"></td>
                                             </tr>
                                             <tr>
                                                 <th class="form-label" id="drm" id="p_drm" name="drm[]" class="form-control">National (No. of Union Territories)</th>
-                                                <td><input type="number" id="drm" name="drm[]" class="form-control" value="0"></td>
+                                                <td><input type="number" id="drm" name="drm[]" class="form-control" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" value="0"></td>
                                             </tr>
                                             <tr>
                                                 <th class="form-label" id="drm" id="p_drm" name="drm[]" class="form-control">International (No. of Countries)</th>
-                                                <td><input type="number" id="drm" name="drm[]" class="form-control" value="0"></td>
+                                                <td><input type="number" id="drm" name="drm[]" class="form-control" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" value="0"></td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -576,27 +576,27 @@
                                             <th class="form-label">1.</th>
                                             <th class="form-label">Permanent (D)</th>
                                             <td><input type="number" step="0.01" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 3)" value="0" readonly></td>
-                                            <td><input type="number" step="0.01" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 3)" value="0"></td>
+                                            <td><input type="number" step="0.01" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 3)" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" value="0"></td>
                                             <td><input type="text" step="0.01" id="dew" name="dew[]" class="form-control" value="0%" readonly></td>
-                                            <td><input type="number" step="0.01" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 3)" value="0"></td>
-                                            <td><input type="text" step="0.01" id="dew" name="dew[]" class="form-control" value="0%" readonly</td>
+                                            <td><input type="number" step="0.01" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 3)" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" value="0"></td>
+                                            <td><input type="text" step="0.01" id="dew" name="dew[]" class="form-control" value="0%" readonly></td>
                                         </tr>
                                         <tr>
                                             <th class="form-label">2.</th>
                                             <th class="form-label">Other than Permanent (E)</th>  
                                             <td><input type="number" step="0.01" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 4)" value="0" readonly></td>
-                                            <td><input type="number" step="0.01" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 4)" value="0"></td>
+                                            <td><input type="number" step="0.01" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 4)" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" value="0"></td>
                                             <td><input type="text" step="0.01" id="dew" name="dew[]" class="form-control" value="0%" readonly></td>
-                                            <td><input type="number" step="0.01" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 4)" value="0"></td>
+                                            <td><input type="number" step="0.01" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 4)" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" value="0"></td>
                                             <td><input type="text" step="0.01" id="dew" name="dew[]" class="form-control" value="0%" readonly></td>
                                         </tr>
                                         <tr>
                                             <th class="form-label">3.</th>
                                             <th class="form-label">Total employees (D + E)</th>
                                             <td><input type="number" step="0.01" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 5)" value="0" readonly></td>
-                                            <td><input type="number" step="0.01" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 5)" value="0"></td>
+                                            <td><input type="number" step="0.01" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 5)" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" value="0"></td>
                                             <td><input type="text" step="0.01" id="dew" name="dew[]" class="form-control" value="0%" readonly></td>
-                                            <td><input type="number" step="0.01" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 5)" value="0"></td>
+                                            <td><input type="number" step="0.01" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 5)" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" value="0"></td>
                                             <td><input type="text" step="0.01" id="dew" name="dew[]" class="form-control" value="0%" readonly></td>
                                         </tr>
                                         <tr>
@@ -606,27 +606,27 @@
                                             <th class="form-label">4.</th>
                                             <th class="form-label">Permanent (F)</th>
                                             <td><input type="number" step="0.01" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 7)" value="0" readonly></td>
-                                            <td><input type="number" step="0.01" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 7)" value="0"></td>
+                                            <td><input type="number" step="0.01" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 7)" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" value="0"></td>
                                             <td><input type="text" step="0.01" id="dew" name="dew[]" class="form-control" value="0%" readonly></td>
-                                            <td><input type="number" step="0.01" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 7)" value="0"></td>
+                                            <td><input type="number" step="0.01" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 7)" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" value="0"></td>
                                             <td><input type="text" step="0.01" id="dew" name="dew[]" class="form-control" value="0%" readonly></td>
                                         </tr>
                                         <tr>
                                             <th class="form-label">5.</th>
                                             <th class="form-label">Other than Permanent (G)</th>
                                             <td><input type="number" step="0.01" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 8)" value="0" readonly></td>
-                                            <td><input type="number" step="0.01" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 8)" value="0"></td>
+                                            <td><input type="number" step="0.01" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 8)" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" value="0"></td>
                                             <td><input type="text" step="0.01" id="dew" name="dew[]" class="form-control" value="0%" readonly></td>
-                                            <td><input type="number" step="0.01" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 8)" value="0"></td>
+                                            <td><input type="number" step="0.01" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 8)" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" value="0"></td>
                                             <td><input type="text" step="0.01" id="dew" name="dew[]" class="form-control" value="0%" readonly></td>
                                         </tr>
                                         <tr>
                                             <th class="form-label">6.</th>
                                             <th class="form-label">Total workers (F + G)</th>
                                             <td><input type="number" step="0.01" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 9)" value="0" readonly></td>
-                                            <td><input type="number" step="0.01" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 9)" value="0"></td>
+                                            <td><input type="number" step="0.01" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 9)" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" value="0"></td>
                                             <td><input type="text" step="0.01" id="dew" name="dew[]" class="form-control" value="0%" readonly></td>
-                                            <td><input type="number" step="0.01" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 9)" value="0"></td>
+                                            <td><input type="number" step="0.01" id="dew" name="dew[]" class="form-control" oninput="calculatePercentages18a('p_dew', 9)" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" value="0"></td>
                                             <td><input type="text" step="0.01" id="dew" name="dew[]" class="form-control" value="0%" readonly></td>
                                         </tr>
                                     </table>
@@ -665,27 +665,27 @@
                                             <th class="form-label" id="dewda" name="dewda[]">1.</th>
                                             <th class="form-label" id="dewda" name="dewda[]">Permanent (D)</th>
                                             <td><input type="number" step="0.01" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 3)" value="0" readonly></td>
-                                            <td><input type="number" step="0.01" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 3)" value="0"></td>
+                                            <td><input type="number" step="0.01" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 3)" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" value="0"></td>
                                             <td><input type="text" step="0.01" id="dewda" name="dewda[]" class="form-control" value="0%" readonly></td>
-                                            <td><input type="number" step="0.01" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 3)" value="0"></td>
+                                            <td><input type="number" step="0.01" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 3)" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" value="0"></td>
                                             <td><input type="text" step="0.01" id="dewda" name="dewda[]" class="form-control" value="0%" readonly></td>
                                         </tr>
                                         <tr>
                                             <th class="form-label" id="dewda" name="dewda[]">2.</th>
                                             <th class="form-label" id="dewda" name="dewda[]">Other than Permanent (E)</th>
                                             <td><input type="number" step="0.01" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 4)" value="0" readonly></td>
-                                            <td><input type="number" step="0.01" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 4)" value="0"></td>
+                                            <td><input type="number" step="0.01" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 4)" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" value="0"></td>
                                             <td><input type="text" step="0.01" id="dewda" name="dewda[]" class="form-control" value="0%" readonly></td>
-                                            <td><input type="number" step="0.01" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 4)" value="0"></td>
+                                            <td><input type="number" step="0.01" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 4)" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" value="0"></td>
                                             <td><input type="text" step="0.01" id="dewda" name="dewda[]" class="form-control" value="0%" readonly></td>
                                         </tr>
                                         <tr>
                                             <th class="form-label" id="dewda" name="dewda[]">3.</th>
                                             <th class="form-label" id="dewda" name="dewda[]">Total differently abled employees (D + E)</th>
                                             <td><input type="number" step="0.01" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 5)" value="0" readonly></td>
-                                            <td><input type="number" step="0.01" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 5)" value="0"></td>
+                                            <td><input type="number" step="0.01" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 5)" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" value="0"></td>
                                             <td><input type="text" step="0.01" id="dewda" name="dewda[]" class="form-control" value="0%" readonly></td>
-                                            <td><input type="number" step="0.01" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 5)" value="0"></td>
+                                            <td><input type="number" step="0.01" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 5)" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" value="0"></td>
                                             <td><input type="text" step="0.01" id="dewda" name="dewda[]" class="form-control" value="0%" readonly></td>
                                         </tr>
                                         <tr>
@@ -695,27 +695,27 @@
                                             <th class="form-label" id="dewda" name="dewda[]">4.</th>
                                             <th class="form-label" id="dewda" name="dewda[]">Permanent (F)</th>
                                             <td><input type="number" step="0.01" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 7)" value="0" readonly></td>
-                                            <td><input type="number" step="0.01" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 7)" value="0"></td>
+                                            <td><input type="number" step="0.01" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 7)" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" value="0"></td>
                                             <td><input type="text" step="0.01" id="dewda" name="dewda[]" class="form-control" value="0%" readonly></td>
-                                            <td><input type="number" step="0.01" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 7)" value="0"></td>
+                                            <td><input type="number" step="0.01" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 7)" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" value="0"></td>
                                             <td><input type="text" step="0.01" id="dewda" name="dewda[]" class="form-control"  value="0%" readonly></td>
                                         </tr>
                                         <tr>
                                             <th class="form-label" id="dewda" name="dewda[]">5.</th>
                                             <th class="form-label" id="dewda" name="dewda[]">Other than Permanent (G)</th>
                                             <td><input type="number" step="0.01" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 8)" value="0" readonly></td>
-                                            <td><input type="number" step="0.01" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 8)" value="0"></td>
+                                            <td><input type="number" step="0.01" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 8)" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" value="0"></td>
                                             <td><input type="text" step="0.01" id="dewda" name="dewda[]" class="form-control" value="0%" readonly></td>
-                                            <td><input type="number" step="0.01" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 8)" value="0"></td>
+                                            <td><input type="number" step="0.01" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 8)" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" value="0"></td>
                                             <td><input type="text" step="0.01" id="dewda" name="dewda[]" class="form-control" value="0%" readonly></td>
                                         </tr>
                                         <tr>
                                             <th class="form-label" id="dewda" name="dewda[]">6.</th>
                                             <th class="form-label" id="dewda" name="dewda[]">Total differently abled workers (F + G)</th>
                                             <td><input type="number" step="0.01" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 9)" value="0" readonly></td>
-                                            <td><input type="number" step="0.01" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 9)" value="0"></td>
+                                            <td><input type="number" step="0.01" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 9)" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" value="0"></td>
                                             <td><input type="text" step="0.01" id="dewda" name="dewda[]" class="form-control" value="0%" readonly></td>
-                                            <td><input type="number" step="0.01" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 9)" value="0"></td>
+                                            <td><input type="number" step="0.01" id="dewda" name="dewda[]" class="form-control" oninput="calculatePercentages18b('p_dewda', 9)" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" value="0"></td>
                                             <td><input type="text" step="0.01" id="dewda" name="dewda[]" class="form-control" value="0%" readonly></td>
                                         </tr>
                                     </table>
@@ -747,14 +747,14 @@
                                 </tr>
                                 <tr>
                                     <th class="form-label">Board of Directors</th>
-                                    <td><input type="number" step="0.01" id="pirw" name="pirw[]" oninput="calculate19(this)" class="form-control" value="0"></td>
-                                    <td><input type="number" step="0.01" id="pirw" name="pirw[]" oninput="calculate19(this)" class="form-control" value="0"></td>
+                                    <td><input type="number" step="0.01" id="pirw" name="pirw[]" oninput="calculate19(this)" class="form-control" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" value="0"></td>
+                                    <td><input type="number" step="0.01" id="pirw" name="pirw[]" oninput="calculate19(this)" class="form-control" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" value="0"></td>
                                     <td><input type="text" step="0.01" id="pirw" name="pirw[]" class="form-control" value="0%" readonly></td>
                                 </tr>
                                 <tr>
                                     <th class="form-label">Key Management <br> Personnel</th>
-                                    <td><input type="number" step="0.01" id="pirw" name="pirw[]" oninput="calculate19(this)" class="form-control" value="0"></td>
-                                    <td><input type="number" step="0.01" id="pirw" name="pirw[]" oninput="calculate19(this)" class="form-control" value="0"></td>
+                                    <td><input type="number" step="0.01" id="pirw" name="pirw[]" oninput="calculate19(this)" class="form-control" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" value="0"></td>
+                                    <td><input type="number" step="0.01" id="pirw" name="pirw[]" oninput="calculate19(this)" class="form-control" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" value="0"></td>
                                     <td><input type="text" step="0.01" id="pirw" name="pirw[]" class="form-control" value="0%" readonly></td>
                                 </tr>
                             </table>
@@ -794,27 +794,27 @@
                                 </tr>
                                 <tr>
                                     <th class="form-label">Permanent Employees</th>
-                                    <td><input type="text" step="0.01" id="torpew" name="torpew[]" class="form-control" value="%" oninput="validateNumericInput(this); updatePercentage(this);"></td>
-                                    <td><input type="text" step="0.01" id="torpew" name="torpew[]" class="form-control" value="%" oninput="validateNumericInput(this); updatePercentage(this);"></td>
-                                    <td><input type="text" step="0.01" id="torpew" name="torpew[]" class="form-control" value="%" oninput="validateNumericInput(this); updatePercentage(this);"></td>
-                                    <td><input type="text" step="0.01" id="torpew" name="torpew[]" class="form-control" value="%" oninput="validateNumericInput(this); updatePercentage(this);"></td>
-                                    <td><input type="text" step="0.01" id="torpew" name="torpew[]" class="form-control" value="%" oninput="validateNumericInput(this); updatePercentage(this);"></td>
-                                    <td><input type="text" step="0.01" id="torpew" name="torpew[]" class="form-control" value="%" oninput="validateNumericInput(this); updatePercentage(this);"></td>
-                                    <td><input type="text" step="0.01" id="torpew" name="torpew[]" class="form-control" value="%" oninput="validateNumericInput(this); updatePercentage(this);"></td>
-                                    <td><input type="text" step="0.01" id="torpew" name="torpew[]" class="form-control" value="%" oninput="validateNumericInput(this); updatePercentage(this);"></td>
-                                    <td><input type="text" step="0.01" id="torpew" name="torpew[]" class="form-control" value="%" oninput="validateNumericInput(this); updatePercentage(this);"></td>
+                                    <td><input type="text" step="0.01" id="torpew" name="torpew[]" class="form-control" value="0%" oninput="validateAndUpdatePercentage(this);" onfocus="removeZeroPercentage(this)" onblur="addZeroIfEmptyPercentage(this)"></td>
+                                    <td><input type="text" step="0.01" id="torpew" name="torpew[]" class="form-control" value="0%" oninput="validateAndUpdatePercentage(this);" onfocus="removeZeroPercentage(this)" onblur="addZeroIfEmptyPercentage(this)"></td>
+                                    <td><input type="text" step="0.01" id="torpew" name="torpew[]" class="form-control" value="0%" oninput="validateAndUpdatePercentage(this);" onfocus="removeZeroPercentage(this)" onblur="addZeroIfEmptyPercentage(this)"></td>
+                                    <td><input type="text" step="0.01" id="torpew" name="torpew[]" class="form-control" value="0%" oninput="validateAndUpdatePercentage(this);" onfocus="removeZeroPercentage(this)" onblur="addZeroIfEmptyPercentage(this)"></td>
+                                    <td><input type="text" step="0.01" id="torpew" name="torpew[]" class="form-control" value="0%" oninput="validateAndUpdatePercentage(this);" onfocus="removeZeroPercentage(this)" onblur="addZeroIfEmptyPercentage(this)"></td>
+                                    <td><input type="text" step="0.01" id="torpew" name="torpew[]" class="form-control" value="0%" oninput="validateAndUpdatePercentage(this);" onfocus="removeZeroPercentage(this)" onblur="addZeroIfEmptyPercentage(this)"></td>
+                                    <td><input type="text" step="0.01" id="torpew" name="torpew[]" class="form-control" value="0%" oninput="validateAndUpdatePercentage(this);" onfocus="removeZeroPercentage(this)" onblur="addZeroIfEmptyPercentage(this)"></td>
+                                    <td><input type="text" step="0.01" id="torpew" name="torpew[]" class="form-control" value="0%" oninput="validateAndUpdatePercentage(this);" onfocus="removeZeroPercentage(this)" onblur="addZeroIfEmptyPercentage(this)"></td>
+                                    <td><input type="text" step="0.01" id="torpew" name="torpew[]" class="form-control" value="0%" oninput="validateAndUpdatePercentage(this);" onfocus="removeZeroPercentage(this)" onblur="addZeroIfEmptyPercentage(this)"></td>
                                 </tr>
                                 <tr>
                                     <th class="form-label">Permanent Workers</th>
-                                    <td><input type="text" step="0.01" id="torpew" name="torpew[]" class="form-control" value="%" oninput="validateNumericInput(this); updatePercentage(this);"></td>
-                                    <td><input type="text" step="0.01" id="torpew" name="torpew[]" class="form-control" value="%" oninput="validateNumericInput(this); updatePercentage(this);"></td>
-                                    <td><input type="text" step="0.01" id="torpew" name="torpew[]" class="form-control" value="%" oninput="validateNumericInput(this); updatePercentage(this);"></td>
-                                    <td><input type="text" step="0.01" id="torpew" name="torpew[]" class="form-control" value="%" oninput="validateNumericInput(this); updatePercentage(this);"></td>
-                                    <td><input type="text" step="0.01" id="torpew" name="torpew[]" class="form-control" value="%" oninput="validateNumericInput(this); updatePercentage(this);"></td>
-                                    <td><input type="text" step="0.01" id="torpew" name="torpew[]" class="form-control" value="%" oninput="validateNumericInput(this); updatePercentage(this);"></td>
-                                    <td><input type="text" step="0.01" id="torpew" name="torpew[]" class="form-control" value="%" oninput="validateNumericInput(this); updatePercentage(this);"></td>
-                                    <td><input type="text" step="0.01" id="torpew" name="torpew[]" class="form-control" value="%" oninput="validateNumericInput(this); updatePercentage(this);"></td>
-                                    <td><input type="text" step="0.01" id="torpew" name="torpew[]" class="form-control" value="%" oninput="validateNumericInput(this); updatePercentage(this);"></td>
+                                    <td><input type="text" step="0.01" id="torpew" name="torpew[]" class="form-control" value="0%" oninput="validateAndUpdatePercentage(this);" onfocus="removeZeroPercentage(this)" onblur="addZeroIfEmptyPercentage(this)"></td>
+                                    <td><input type="text" step="0.01" id="torpew" name="torpew[]" class="form-control" value="0%" oninput="validateAndUpdatePercentage(this);" onfocus="removeZeroPercentage(this)" onblur="addZeroIfEmptyPercentage(this)"></td>
+                                    <td><input type="text" step="0.01" id="torpew" name="torpew[]" class="form-control" value="0%" oninput="validateAndUpdatePercentage(this);" onfocus="removeZeroPercentage(this)" onblur="addZeroIfEmptyPercentage(this)"></td>
+                                    <td><input type="text" step="0.01" id="torpew" name="torpew[]" class="form-control" value="0%" oninput="validateAndUpdatePercentage(this);" onfocus="removeZeroPercentage(this)" onblur="addZeroIfEmptyPercentage(this)"></td>
+                                    <td><input type="text" step="0.01" id="torpew" name="torpew[]" class="form-control" value="0%" oninput="validateAndUpdatePercentage(this);" onfocus="removeZeroPercentage(this)" onblur="addZeroIfEmptyPercentage(this)"></td>
+                                    <td><input type="text" step="0.01" id="torpew" name="torpew[]" class="form-control" value="0%" oninput="validateAndUpdatePercentage(this);" onfocus="removeZeroPercentage(this)" onblur="addZeroIfEmptyPercentage(this)"></td>
+                                    <td><input type="text" step="0.01" id="torpew" name="torpew[]" class="form-control" value="0%" oninput="validateAndUpdatePercentage(this);" onfocus="removeZeroPercentage(this)" onblur="addZeroIfEmptyPercentage(this)"></td>
+                                    <td><input type="text" step="0.01" id="torpew" name="torpew[]" class="form-control" value="0%" oninput="validateAndUpdatePercentage(this);" onfocus="removeZeroPercentage(this)" onblur="addZeroIfEmptyPercentage(this)"></td>
+                                    <td><input type="text" step="0.01" id="torpew" name="torpew[]" class="form-control" value="0%" oninput="validateAndUpdatePercentage(this);" onfocus="removeZeroPercentage(this)" onblur="addZeroIfEmptyPercentage(this)"></td>
                                 </tr>
                             </table>
                         </div>
@@ -863,7 +863,7 @@
                                         <td style="width:5%;"><input type="number" id="holding" id="p_holding" name="holding[]" class="table-control" value="1" readonly></td>
                                         <td><input type="text" id="holding" name="holding[]" class="form-control"></td>
                                         <td><input type="text" id="holding" name="holding[]" class="form-control"></td>
-                                        <td><input type="text" id="holding" name="holding[]" class="form-control" value="%" oninput="validateNumericInput(this); updatePercentage(this);"></td>
+                                        <td><input type="text" id="holding" name="holding[]" class="form-control" value="0%" oninput="validateAndUpdatePercentage(this);" onfocus="removeZeroPercentage(this)" onblur="addZeroIfEmptyPercentage(this)"></td>
                                         <td><input type="text" id="holding" name="holding[]" class="form-control"></td>
                                     </tr>
                                 <tbody>
@@ -976,71 +976,71 @@
                                 <tr>
                                     <th class="form-label" id="gre" name="gre[]">Communities</th>
                                     <td><textarea id="gre" name="gre[]" class="form-control"></textarea></td>
-                                    <td><input type="number" id="gre" name="gre[]" class="form-control" value="0"></td>
-                                    <td><input type="number" id="gre" name="gre[]" class="form-control" value="0"></td>
+                                    <td><input type="number" id="gre" name="gre[]" class="form-control" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" value="0"></td>
+                                    <td><input type="number" id="gre" name="gre[]" class="form-control" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" value="0"></td>
                                     <td><textarea id="gre" name="gre[]" class="form-control"></textarea></td>
-                                    <td><input type="number" id="gre" name="gre[]" class="form-control" value="0"></td>
-                                    <td><input type="number" id="gre" name="gre[]" class="form-control" value="0"></td>
+                                    <td><input type="number" id="gre" name="gre[]" class="form-control" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" value="0"></td>
+                                    <td><input type="number" id="gre" name="gre[]" class="form-control" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" value="0"></td>
                                     <td><textarea id="gre" name="gre[]" class="form-control"></textarea></td>
                                 </tr>
                                 <tr>
                                     <th class="form-label" id="gre" name="gre[]">Investors (other than shareholders)</th>
                                     <td><textarea id="gre" name="gre[]" class="form-control"></textarea></td>
-                                    <td><input type="number" id="gre" name="gre[]" class="form-control" value="0"></td>
-                                    <td><input type="number" id="gre" name="gre[]" class="form-control" value="0"></td>
+                                    <td><input type="number" id="gre" name="gre[]" class="form-control" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" value="0"></td>
+                                    <td><input type="number" id="gre" name="gre[]" class="form-control" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" value="0"></td>
                                     <td><textarea id="gre" name="gre[]" class="form-control"></textarea></td>
-                                    <td><input type="number" id="gre" name="gre[]" class="form-control" value="0"></td>
-                                    <td><input type="number" id="gre" name="gre[]" class="form-control" value="0"></td>
+                                    <td><input type="number" id="gre" name="gre[]" class="form-control" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" value="0"></td>
+                                    <td><input type="number" id="gre" name="gre[]" class="form-control" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" value="0"></td>
                                     <td><textarea id="gre" name="gre[]" class="form-control"></textarea></td>
                                 </tr>
                                 <tr>
                                     <th class="form-label" id="gre" name="gre[]">Shareholders</th>
                                     <td><textarea id="gre" name="gre[]" class="form-control"></textarea></td>
-                                    <td><input type="number" id="gre" name="gre[]" class="form-control" value="0"></td>
-                                    <td><input type="number" id="gre" name="gre[]" class="form-control" value="0"></td>
+                                    <td><input type="number" id="gre" name="gre[]" class="form-control" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" value="0"></td>
+                                    <td><input type="number" id="gre" name="gre[]" class="form-control" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" value="0"></td>
                                     <td><textarea id="gre" name="gre[]" class="form-control"></textarea></td>
-                                    <td><input type="number" id="gre" name="gre[]" class="form-control" value="0"></td>
-                                    <td><input type="number" id="gre" name="gre[]" class="form-control" value="0"></td>
+                                    <td><input type="number" id="gre" name="gre[]" class="form-control" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" value="0"></td>
+                                    <td><input type="number" id="gre" name="gre[]" class="form-control" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" value="0"></td>
                                     <td><textarea id="gre" name="gre[]" class="form-control"></textarea></td>
                                 </tr>
                                 <tr>
                                     <th class="form-label" id="gre" name="gre[]">Employees and workers</th>
                                     <td><textarea id="gre" name="gre[]" class="form-control"></textarea></td>
-                                    <td><input type="number" id="gre" name="gre[]" class="form-control" value="0"></td>
-                                    <td><input type="number" id="gre" name="gre[]" class="form-control" value="0"></td>
+                                    <td><input type="number" id="gre" name="gre[]" class="form-control" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" value="0"></td>
+                                    <td><input type="number" id="gre" name="gre[]" class="form-control" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" value="0"></td>
                                     <td><textarea id="gre" name="gre[]" class="form-control"></textarea></td>
-                                    <td><input type="number" id="gre" name="gre[]" class="form-control" value="0"></td>
-                                    <td><input type="number" id="gre" name="gre[]" class="form-control" value="0"></td>
+                                    <td><input type="number" id="gre" name="gre[]" class="form-control" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" value="0"></td>
+                                    <td><input type="number" id="gre" name="gre[]" class="form-control" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" value="0"></td>
                                     <td><textarea id="gre" name="gre[]" class="form-control"></textarea></td>
                                 </tr>
                                 <tr>
                                     <th class="form-label" id="gre" name="gre[]">Customers</th>
                                     <td><textarea id="gre" name="gre[]" class="form-control"></textarea></td>
-                                    <td><input type="number" id="gre" name="gre[]" class="form-control" value="0"></td>
-                                    <td><input type="number" id="gre" name="gre[]" class="form-control" value="0"></td>
+                                    <td><input type="number" id="gre" name="gre[]" class="form-control" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" value="0"></td>
+                                    <td><input type="number" id="gre" name="gre[]" class="form-control" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" value="0"></td>
                                     <td><textarea id="gre" name="gre[]" class="form-control"></textarea></td>
-                                    <td><input type="number" id="gre" name="gre[]" class="form-control" value="0"></td>
-                                    <td><input type="number" id="gre" name="gre[]" class="form-control" value="0"></td>
+                                    <td><input type="number" id="gre" name="gre[]" class="form-control" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" value="0"></td>
+                                    <td><input type="number" id="gre" name="gre[]" class="form-control" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" value="0"></td>
                                     <td><textarea id="gre" name="gre[]" class="form-control"></textarea></td>
                                 </tr>
                                 <tr>
                                     <th class="form-label" id="gre" name="gre[]">Value Chain Partners</th>
                                     <td><textarea id="gre" name="gre[]" class="form-control"></textarea></td>
-                                    <td><input type="number" id="gre" name="gre[]" class="form-control" value="0"></td>
-                                    <td><input type="number" id="gre" name="gre[]" class="form-control" value="0"></td>
+                                    <td><input type="number" id="gre" name="gre[]" class="form-control" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" value="0"></td>
+                                    <td><input type="number" id="gre" name="gre[]" class="form-control" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" value="0"></td>
                                     <td><textarea id="gre" name="gre[]" class="form-control"></textarea></td>
-                                    <td><input type="number" id="gre" name="gre[]" class="form-control" value="0"></td>
-                                    <td><input type="number" id="gre" name="gre[]" class="form-control" value="0"></td>
+                                    <td><input type="number" id="gre" name="gre[]" class="form-control" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" value="0"></td>
+                                    <td><input type="number" id="gre" name="gre[]" class="form-control" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" value="0"></td>
                                     <td><textarea id="gre" name="gre[]" class="form-control"></textarea></td>
                                 </tr>
                                 <tr>
                                     <th class="form-label" id="gre" name="gre[]">Other (please specify)</th>
                                     <td><textarea id="gre" name="gre[]" class="form-control"></textarea></td>
-                                    <td><input type="number" id="gre" name="gre[]" class="form-control" value="0"></td>
-                                    <td><input type="number" id="gre" name="gre[]" class="form-control" value="0"></td>
+                                    <td><input type="number" id="gre" name="gre[]" class="form-control" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" value="0"></td>
+                                    <td><input type="number" id="gre" name="gre[]" class="form-control" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" value="0"></td>
                                     <td><textarea id="gre" name="gre[]" class="form-control"></textarea></td>
-                                    <td><input type="number" id="gre" name="gre[]" class="form-control" value="0"></td>
-                                    <td><input type="number" id="gre" name="gre[]" class="form-control" value="0"></td>
+                                    <td><input type="number" id="gre" name="gre[]" class="form-control" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" value="0"></td>
+                                    <td><input type="number" id="gre" name="gre[]" class="form-control" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" value="0"></td>
                                     <td><textarea id="gre" name="gre[]" class="form-control"></textarea></td>
                                 </tr>
                             </table>
@@ -1112,6 +1112,9 @@
                     <!-- <button type="button" class="btn btn-primary" onclick="printReview()">Review Form</button> -->
                     <button type="submit" class="btn btn-primary" onclick="return confirmSubmission()">Submit</button>
                 </div>
+
+                <!-- Floating message for readonly fields -->
+                <div id="floatingMessage" style="display: none; position: absolute; padding: 8px; background: #f0f0f0; border: 1px solid #ddd; border-radius: 4px; pointer-events: none; z-index: 100;">This field is auto-calculated and cannot be edited.</div>
             </form>
         </div>
  

@@ -257,49 +257,108 @@ document.addEventListener('DOMContentLoaded', function () {
 /*                                                                                                                                      */
 /* ************************************************************************************************************************************ */
 
-//Validate numbers
-function validateNumericInput(input) {
-    // Get the current value of the input field
-    let value = input.value;
+//Validate percentages
+function validateAndUpdatePercentage(input) {
+    // Remove all percentage symbols first
+    let value = input.value.replace(/%/g, '');
 
-    // Remove any non-numeric characters except decimals from the input value
+    // Remove non-numeric characters except decimal points
     value = value.replace(/[^0-9.]/g, '');
 
-    // Ensure that there is only one decimal point
+    // Ensure only one decimal point
     const decimalCount = (value.match(/\./g) || []).length;
     if (decimalCount > 1) {
-        value = value.substr(0, value.lastIndexOf('.'));
+        value = value.replace(/\.(?=.*\.)/g, ''); // Remove all decimal points except the last
     }
 
+    // Limit to 100%
     const numericValue = parseFloat(value);
     if (numericValue > 100) {
         value = '100';
     }
 
-    // Update the value of the input field
-    input.value = value;
-}
-
-//percentage symbol
-function updatePercentage(input) {
-    // Get the current value of the input field
-    let value = input.value;
-
-    // Check if the value ends with the percentage symbol
+    // Append % if not present
     if (!value.endsWith('%')) {
-        // If not, append the percentage symbol to the value
         value += '%';
     }
 
-    // Update the value of the input field
+    // Remember the original cursor position
+    const prevCursorPosition = input.selectionStart;
+
+    // Update input value
     input.value = value;
 
-    // Calculate the new cursor position (right before the percentage sign)
-    const newPosition = input.value.length - 1;
+    // Calculate new cursor position
+    let newPosition = prevCursorPosition;
 
-    // Set the cursor position to right before the percentage sign
+    // If the cursor was beyond the last numeric character (immediately before the %),
+    // adjust it to be immediately before the %
+    if (prevCursorPosition > input.value.length - 1) {
+        newPosition = input.value.length - 1; // Position before '%'
+    } else {
+        // Adjust cursor only if editing before the '%' sign
+        newPosition = Math.min(newPosition, input.value.length - 1); // Ensure cursor is before '%'
+    }
+
     input.setSelectionRange(newPosition, newPosition);
 }
+
+function removeZero(element) {
+    if (element.value === '0') {
+        element.value = '';
+    }
+}
+
+function addZeroIfEmpty(element) {
+    if (element.value === '') {
+        element.value = '0';
+    }
+}
+
+function removeZeroPercentage(element) {
+    if (element.value === '0%') {
+        element.value = '%';
+        setTimeout(function () {
+            element.setSelectionRange(0, 0);
+        }, 50);
+    }
+    else {
+        const newPosition = element.value.length - 1;
+        setTimeout(function () {
+            element.setSelectionRange(newPosition, newPosition);
+        }, 50);
+    }
+}
+
+function addZeroIfEmptyPercentage(element) {
+    if (element.value === '%') {
+        element.value = '0%';
+    }
+}
+
+function limitInputsToPositiveOrOverwriteDash() {
+    // Find all input fields of type number in the document
+    const numberInputs = document.querySelectorAll('input[type="number"]');
+
+    numberInputs.forEach(input => {
+        input.addEventListener('input', function () {
+            let value = this.value;
+
+            // If the value starts with a dash and has more characters, check further
+            if (value.startsWith('-')) {
+                // If there's any digit after a dash, remove the dash
+                if (value.length > 1) {
+                    this.value = value.substring(1);
+                }
+            }
+        });
+    });
+}
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    limitInputsToPositiveOrOverwriteDash();
+});
 
 /* ************************************************************************************************************************************ *
 /*                                                                                                                                      */
@@ -582,7 +641,12 @@ function addBottomRow(Id) {
     // Clear other input fields in the new row
     const inputs = lastRow.getElementsByTagName("input");
     for (let i = 1; i < inputs.length; i++) {
-        inputs[i].value = "";
+        if (inputs[i].value.endsWith("%")) {
+            inputs[i].value = "0%";
+        }
+        else {
+            inputs[i].value = "";
+        }
     }
 
     // Add the new row at the bottom
@@ -650,7 +714,12 @@ function addRowAtIndex(Id) {
         // Clear input fields in the new row
         const inputs = newRow.getElementsByTagName("input");
         for (let i = 0; i < inputs.length; i++) {
-            inputs[i].value = "";
+            if (inputs[i].value.endsWith("%")) {
+                inputs[i].value = "0%";
+            }
+            else {
+                inputs[i].value = "";
+            }
         }
 
         // Add the new row at the specified index
@@ -683,6 +752,46 @@ function updateSNoValues(Id) {
         rows[i].cells[0].getElementsByTagName("input")[0].value = i + 1;
     }
 }
+
+/* ************************************************************************************************************************************ */
+/*                                                                                                                                      */
+/*                                         Function to display floating readonly fields                                                 */
+/*                                                                                                                                      */
+/* ************************************************************************************************************************************ */
+document.addEventListener('DOMContentLoaded', function () {
+    const floatingMessage = document.getElementById('floatingMessage');
+    const readOnlyFields = document.querySelectorAll('input[readonly]');
+
+    // Function to position the floating message near the mouse
+    function positionMessageNearMouse(event) {
+        floatingMessage.style.left = event.pageX + 10 + 'px'; // Offset by 10px from mouse
+        floatingMessage.style.top = event.pageY + 10 + 'px';
+        floatingMessage.style.display = 'block';
+    }
+
+    // Show floating message near readonly input fields on focus
+    readOnlyFields.forEach(field => {
+        field.addEventListener('focus', (event) => {
+            const rect = event.target.getBoundingClientRect();
+            floatingMessage.style.left = rect.left + window.scrollX + 'px';
+            floatingMessage.style.top = rect.bottom + window.scrollY + 10 + 'px'; // Offset by 10px
+            floatingMessage.style.display = 'block';
+        });
+
+        field.addEventListener('blur', () => {
+            floatingMessage.style.display = 'none';
+        });
+    });
+
+    // Optional: Show floating message near the mouse when it moves over the readonly input fields
+    readOnlyFields.forEach(field => {
+        field.addEventListener('mousemove', positionMessageNearMouse);
+        field.addEventListener('mouseleave', () => {
+            floatingMessage.style.display = 'none';
+        });
+    });
+});
+
 
 /* ************************************************************************************************************************************ */
 /*                                                                                                                                      */

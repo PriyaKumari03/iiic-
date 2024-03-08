@@ -373,6 +373,22 @@ h1 {
     box-shadow: none;
 }
 
+#floatingMessage {
+    display: none;
+    position: absolute;
+    padding: 8px;
+    font-family: 'Montserrat', sans-serif;
+    color: #2d6a4f;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    pointer-events: none; /* Makes the tooltip ignore mouse events */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    z-index: 100;
+    color: #333;
+    font-size: 0.875rem;
+}
+
 /*************************************************************************************************************************************/
 /*                                                                                                                                   */                           
 /*                                              For the table                                                                        */
