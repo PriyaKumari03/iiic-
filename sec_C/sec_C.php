@@ -149,27 +149,27 @@
                                     <tbody>
                                         <tr>
                                             <th class="form-label">Board of Directors</th>
-                                            <td><input type="text" value="0" id="coverage" name="coverage[]" class="form-control" ></td>
+                                            <td><input type="text" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="coverage" name="coverage[]" class="form-control" ></td>
                                             <td><input type="text" id="coverage" name="coverage[]" class="form-control" ></td>
-                                            <td><input type="text" id="coverage" name="coverage[]" class="form-control" value="%" oninput="validateNumericInput(this); updatePercentage(this);"></td>
+                                            <td><input type="text" id="coverage" name="coverage[]" class="form-control" value="0%" oninput="validateAndUpdatePercentage(this);" onfocus="removeZeroPercentage(this)" onblur="addZeroIfEmptyPercentage(this)"></td>
                                         </tr>
                                         <tr>
                                             <th class="form-label">Key Managerial Personnel</th>
-                                            <td><input type="text" value="0" id="coverage" name="coverage[]" class="form-control" ></td>
+                                            <td><input type="text" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="coverage" name="coverage[]" class="form-control" ></td>
                                             <td><input type="text" id="coverage" name="coverage[]" class="form-control" ></td>
-                                            <td><input type="text" id="coverage" name="coverage[]" class="form-control" value="%" oninput="validateNumericInput(this); updatePercentage(this);"></td>
+                                            <td><input type="text" id="coverage" name="coverage[]" class="form-control" value="0%" oninput="validateAndUpdatePercentage(this);" onfocus="removeZeroPercentage(this)" onblur="addZeroIfEmptyPercentage(this)"></td>
                                         </tr>
                                         <tr>
                                             <th class="form-label">Employees other than BoD and KMPs</th>
-                                            <td><input type="text" value="0" id="coverage" name="coverage[]" class="form-control" ></td>
+                                            <td><input type="text" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="coverage" name="coverage[]" class="form-control" ></td>
                                             <td><input type="text" id="coverage" name="coverage[]" class="form-control" ></td>
-                                            <td><input type="text" id="coverage" name="coverage[]" class="form-control" value="%" oninput="validateNumericInput(this); updatePercentage(this);"></td>
+                                            <td><input type="text" id="coverage" name="coverage[]" class="form-control" value="0%" oninput="validateAndUpdatePercentage(this);" onfocus="removeZeroPercentage(this)" onblur="addZeroIfEmptyPercentage(this)"></td>
                                         </tr>
                                         <tr>
                                             <th class="form-label">Workers</th>
-                                            <td><input type="text" value="0" id="coverage" name="coverage[]" class="form-control" ></td>
+                                            <td><input type="text" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="coverage" name="coverage[]" class="form-control" ></td>
                                             <td><input type="text" id="coverage" name="coverage[]" class="form-control" ></td>
-                                            <td><input type="text" id="coverage" name="coverage[]" class="form-control" value="%" oninput="validateNumericInput(this); updatePercentage(this);"></td>
+                                            <td><input type="text" id="coverage" name="coverage[]" class="form-control" value="0%" oninput="validateAndUpdatePercentage(this);" onfocus="removeZeroPercentage(this)" onblur="addZeroIfEmptyPercentage(this)"></td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -205,7 +205,7 @@
                                         <th class="form-label">Penalty/fine</th>
                                         <td><input type="text" id="details" name="details[]" class="form-control" ></td>
                                         <td><input type="text" id="details" name="details[]" class="form-control" ></td>
-                                        <td><input type="number" value="0" id="details" name="details[]" class="form-control" ></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="details" name="details[]" class="form-control" ></td>
                                         <td><input type="text" id="details" name="details[]" class="form-control" ></td>
                                         <td><input type="text" id="details" name="details[]" class="form-control" ></td>
                                     </tr>
@@ -213,7 +213,7 @@
                                         <th class="form-label">Settlement</th>
                                         <td><input type="text" id="details" name="details[]" class="form-control" ></td>
                                         <td><input type="text" id="details" name="details[]" class="form-control" ></td>
-                                        <td><input type="number" value="0" id="details" name="details[]" class="form-control" ></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="details" name="details[]" class="form-control" ></td>
                                         <td><input type="text" id="details" name="details[]" class="form-control" ></td>
                                         <td><input type="text" id="details" name="details[]" class="form-control" ></td>
                                     </tr>
@@ -221,7 +221,7 @@
                                         <th class="form-label">Compounding fee</th>
                                         <td><input type="text" id="details" name="details[]" class="form-control" ></td>
                                         <td><input type="text" id="details" name="details[]" class="form-control" ></td>
-                                        <td><input type="number" value="0" id="details" name="details[]" class="form-control" ></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="details" name="details[]" class="form-control" ></td>
                                         <td><input type="text" id="details" name="details[]" class="form-control" ></td>
                                         <td><input type="text" id="details" name="details[]" class="form-control" ></td>  
                                     </tr>
@@ -240,7 +240,7 @@
                                         <th class="form-label">Imprisonment</th>
                                         <td><input type="text" id="details" name="details[]" class="form-control" ></td>
                                         <td><input type="text" id="details" name="details[]" class="form-control" ></td>
-                                        <td><input type="number" value="0" id="details" name="details[]" class="form-control" ></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="details" name="details[]" class="form-control" ></td>
                                         <td><input type="text" id="details" name="details[]" class="form-control" ></td>
                                         <td><input type="text" id="details" name="details[]" class="form-control" ></td>
                                     </tr>
@@ -248,7 +248,7 @@
                                         <th class="form-label">Punishment</th>
                                         <td><input type="text" id="details" name="details[]" class="form-control" ></td>
                                         <td><input type="text" id="details" name="details[]" class="form-control" ></td>
-                                        <td><input type="number" value="0"  id="details" name="details[]" class="form-control" ></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="details" name="details[]" class="form-control" ></td>
                                         <td><input type="text" id="details" name="details[]" class="form-control" ></td>
                                         <td><input type="text" id="details" name="details[]" class="form-control" ></td>
                                     </tr>
@@ -327,23 +327,23 @@
                                     </tr>
                                     <tr>
                                         <th class="form-label">Directors</th>
-                                        <td><input type="number" value="0" id="disciplinaryAction" name="disciplinaryAction[]" class="form-control" ></td>
-                                        <td><input type="number" value="0" id="disciplinaryAction" name="disciplinaryAction[]" class="form-control" ></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="disciplinaryAction" name="disciplinaryAction[]" class="form-control" ></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="disciplinaryAction" name="disciplinaryAction[]" class="form-control" ></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label">KMPs</th>
-                                        <td><input type="number" value="0" id="disciplinaryAction" name="disciplinaryAction[]" class="form-control" ></td>
-                                        <td><input type="number" value="0" id="disciplinaryAction" name="disciplinaryAction[]" class="form-control" ></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="disciplinaryAction" name="disciplinaryAction[]" class="form-control" ></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="disciplinaryAction" name="disciplinaryAction[]" class="form-control" ></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label">Employees</th>
-                                        <td><input type="number" value="0" id="disciplinaryAction" name="disciplinaryAction[]" class="form-control" ></td>
-                                        <td><input type="number" value="0" id="disciplinaryAction" name="disciplinaryAction[]" class="form-control" ></td>    
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="disciplinaryAction" name="disciplinaryAction[]" class="form-control" ></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="disciplinaryAction" name="disciplinaryAction[]" class="form-control" ></td>    
                                     </tr>
                                     <tr>
                                         <th class="form-label">Workers</th>
-                                        <td><input type="number" value="0" id="disciplinaryAction" name="disciplinaryAction[]" class="form-control" ></td>
-                                        <td><input type="number" value="0" id="disciplinaryAction" name="disciplinaryAction[]" class="form-control" ></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="disciplinaryAction" name="disciplinaryAction[]" class="form-control" ></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="disciplinaryAction" name="disciplinaryAction[]" class="form-control" ></td>
                                     </tr>
                                 </table>
                             </div>
@@ -376,16 +376,16 @@
                                     </tr>
                                     <tr>
                                         <th class="form-label">Number of Complaints received in relation to issues of Conflfict of intrest of the Directors</th>
-                                        <td><input type="number" value="0" id="conflictComplaints" name="conflictComplaints[]" class="form-control" ></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="conflictComplaints" name="conflictComplaints[]" class="form-control" ></td>
                                         <td><input type="text" id="conflictComplaints" name="conflictComplaints[]" class="form-control" ></td>
-                                        <td><input type="number" value="0" id="conflictComplaints" name="conflictComplaints[]" class="form-control" ></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="conflictComplaints" name="conflictComplaints[]" class="form-control" ></td>
                                         <td><input type="text" id="conflictComplaints" name="conflictComplaints[]" class="form-control" ></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label">Number of Complaints received in relation to issues of Conflect to Intrest of the KMPs</th>
-                                        <td><input type="number" value="0" id="conflictComplaints" name="conflictComplaints[]" class="form-control" ></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="conflictComplaints" name="conflictComplaints[]" class="form-control" ></td>
                                         <td><input type="text" id="conflictComplaints" name="conflictComplaints[]" class="form-control" ></td>
-                                        <td><input type="number" value="0"id="conflictComplaints" name="conflictComplaints[]" class="form-control" ></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="conflictComplaints" name="conflictComplaints[]" class="form-control" ></td>
                                         <td><input type="text" id="conflictComplaints" name="conflictComplaints[]" class="form-control" ></td>
                                     </tr>
                                 </table>
@@ -436,9 +436,9 @@
                                     </thead>
                                     <tbody>
                                         <tr><td style="width:5%;"><input type="number" id="awarenessProgrammes" id="p_awarenessProgrammes" name="awarenessProgrammes[]" class="table-control" required value="1" readonly></td>
-                                        <td><input type="number" value="0" id="awarenessProgrammes" name="awarenessProgrammes[]" class="form-control" ></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="awarenessProgrammes" name="awarenessProgrammes[]" class="form-control" ></td>
                                         <td><input type="text" id="awarenessProgrammes" name="awarenessProgrammes[]" class="form-control" ></td>
-                                        <td><input type="text" id="awarenessProgrammes" name="awarenessProgrammes[]" class="form-control" value="%" oninput="validateNumericInput(this); updatePercentage(this);"></td>
+                                        <td><input type="text" id="awarenessProgrammes" name="awarenessProgrammes[]" class="form-control" value="0%" oninput="validateAndUpdatePercentage(this);" onfocus="removeZeroPercentage(this)" onblur="addZeroIfEmptyPercentage(this)"></td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -585,7 +585,7 @@
                                                 <tr>
                                                     <td style="width:5%;"><input type="number" id="sustainableSourcingPercentage" id="p_sustainableSourcingPercentage" name="sustainableSourcingPercentage[]" class="table-control" required value="1" readonly></td>
                                                     <td><input type="text" id="sustainableSourcingPercentage" name="sustainableSourcingPercentage[]" class="form-control" ></td>
-                                                    <td><input type="text" id="sustainableSourcingPercentage" name="sustainableSourcingPercentage[]" class="form-control" value="%" oninput="validateNumericInput(this); updatePercentage(this);"></td>
+                                                    <td><input type="text" id="sustainableSourcingPercentage" name="sustainableSourcingPercentage[]" class="form-control" value="0%" oninput="validateAndUpdatePercentage(this);" onfocus="removeZeroPercentage(this)" onblur="addZeroIfEmptyPercentage(this)"></td>
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -675,7 +675,7 @@
                                             <td style="width:5%;"><input type="number" id="lcaConducted2" id="p_lcaConducted2" name="lcaConducted2[]" class="table-control" required value="1" readonly></td>
                                             <td><input type="text" id="lcaConducted2" name="lcaConducted2[]" class="form-control" ></td>
                                             <td><input type="text" id="lcaConducted2" name="lcaConducted2[]" class="form-control" ></td>
-                                            <td><input type="text" id="lcaConducted2" name="lcaConducted2[]" class="form-control" value="%" oninput="validateNumericInput(this); updatePercentage(this);"></td>
+                                            <td><input type="text" id="lcaConducted2" name="lcaConducted2[]" class="form-control" value="0%" oninput="validateAndUpdatePercentage(this);" onfocus="removeZeroPercentage(this)" onblur="addZeroIfEmptyPercentage(this)"></td>
                                             <td><input type="text" id="lcaConducted2" name="lcaConducted2[]" class="form-control" ></td>
                                             <td><input type="text" id="lcaConducted2" name="lcaConducted2[]" class="form-control" ></td>
                                             <td><input type="text" id="lcaConducted2" name="lcaConducted2[]" class="form-control" ></td>
@@ -869,7 +869,7 @@
                                         <tr>
                                             <td style="width:5%;"><input type="number" id="reclaimedPercentages2" id="p_reclaimedPercentages2" name="reclaimedPercentages2[]" class="table-control" required value="1" readonly></td>                                                                      
                                             <td><input type="text" id="reclaimedPercentages2" name="reclaimedPercentages2[]" class="form-control" required></td>
-                                            <td><input type="text" id="reclaimedPercentages2" name="reclaimedPercentages2[]" class="form-control" value="%" oninput="validateNumericInput(this); updatePercentage(this);" required></td>
+                                            <td><input type="text" id="reclaimedPercentages2" name="reclaimedPercentages2[]" class="form-control" value="0%" oninput="validateAndUpdatePercentage(this);" onfocus="removeZeroPercentage(this)" onblur="addZeroIfEmptyPercentage(this)" required></td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -963,44 +963,44 @@
                                             </tr>
                                             <tr>
                                                 <th class="form-label">Male</th>
-                                                <td><input type="number" value="0" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 4)"></td>
-                                                <td><input type="number" value="0" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 4)"></td>
+                                                <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 4)"></td>
+                                                <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 4)"></td>
                                                 <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" value="0%" readonly></td>
-                                                <td><input type="number" value="0" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 4)"></td>
+                                                <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 4)"></td>
                                                 <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" value="0%" readonly></td>
-                                                <td><input type="number" value="0" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 4)"></td>
+                                                <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 4)"></td>
                                                 <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" value="0%" readonly></td>
-                                                <td><input type="number" value="0" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 4)"></td>
+                                                <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 4)"></td>
                                                 <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" value="0%" readonly></td>
-                                                <td><input type="number" value="0" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 4)"></td>
+                                                <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 4)"></td>
                                                 <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" value="0%" readonly></td>
                                             </tr>
                                             <tr>
                                                 <th class="form-label">Female</th>
-                                                <td><input type="number" value="0" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 5)"></td>
-                                                <td><input type="number" value="0" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 5)"></td>
+                                                <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 5)"></td>
+                                                <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 5)"></td>
                                                 <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" value="0%" readonly></td>
-                                                <td><input type="number" value="0" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 5)"></td>
+                                                <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 5)"></td>
                                                 <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" value="0%" readonly></td>
-                                                <td><input type="number" value="0" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 5)"></td>
+                                                <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 5)"></td>
                                                 <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" value="0%" readonly></td>
-                                                <td><input type="number" value="0" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 5)"></td>
+                                                <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 5)"></td>
                                                 <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" value="0%" readonly></td>
-                                                <td><input type="number" value="0" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 5)"></td>
+                                                <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 5)"></td>
                                                 <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" value="0%" readonly></td>
                                             </tr>
                                             <tr>
                                                 <th class="form-label">Total</th>
-                                                <td><input type="number" value="0" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 6)"></td>
-                                                <td><input type="number" value="0" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 6)"></td>
+                                                <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 6)"></td>
+                                                <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 6)"></td>
                                                 <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" value="0%" readonly></td>
-                                                <td><input type="number" value="0" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 6)"></td>
+                                                <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 6)"></td>
                                                 <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" value="0%" readonly></td>
-                                                <td><input type="number" value="0" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 6)"></td>
+                                                <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 6)"></td>
                                                 <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" value="0%" readonly></td>
-                                                <td><input type="number" value="0" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 6)"></td>
+                                                <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 6)"></td>
                                                 <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" value="0%" readonly></td>
-                                                <td><input type="number" value="0" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 6)"></td>
+                                                <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 6)"></td>
                                                 <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" value="0%" readonly></td>
                                             </tr>
                                             <tr>
@@ -1008,44 +1008,44 @@
                                             </tr>
                                             <tr>
                                                 <th class="form-label">Male</th>
-                                                <td><input type="number" value="0" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 8)"></td>
-                                                <td><input type="number" value="0" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 8)"></td>
+                                                <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 8)"></td>
+                                                <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 8)"></td>
                                                 <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" value="0%" readonly></td>
-                                                <td><input type="number" value="0" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 8)"></td>
+                                                <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 8)"></td>
                                                 <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" value="0%" readonly></td>
-                                                <td><input type="number" value="0" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 8)"></td>
+                                                <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 8)"></td>
                                                 <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" value="0%" readonly></td>
-                                                <td><input type="number" value="0" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 8)"></td>
+                                                <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 8)"></td>
                                                 <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" value="0%" readonly></td>
-                                                <td><input type="number" value="0" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 8)"></td>
+                                                <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 8)"></td>
                                                 <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" value="0%" readonly></td>
                                             </tr>
                                             <tr>
                                                 <th class="form-label">Female</th>
-                                                <td><input type="number" value="0" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 9)"></td>
-                                                <td><input type="number" value="0" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 9)"></td>
+                                                <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 9)"></td>
+                                                <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 9)"></td>
                                                 <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" value="0%" readonly></td>
-                                                <td><input type="number" value="0" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 9)"></td>
+                                                <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 9)"></td>
                                                 <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" value="0%" readonly></td>
-                                                <td><input type="number" value="0" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 9)"></td>
+                                                <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 9)"></td>
                                                 <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" value="0%" readonly></td>
-                                                <td><input type="number" value="0" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 9)"></td>
+                                                <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 9)"></td>
                                                 <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" value="0%" readonly></td>
-                                                <td><input type="number" value="0" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 9)"></td>
+                                                <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 9)"></td>
                                                 <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" value="0%" readonly></td>
                                             </tr>
                                             <tr>
                                                 <th class="form-label">Total</th>
-                                                <td><input type="number" value="0" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 10)"></td>
-                                                <td><input type="number" value="0" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 10)"></td>
+                                                <td><input type="number" value="0" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 10)" readonly></td>
+                                                <td><input type="number" value="0" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 10)" readonly></td>
                                                 <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" value="0%" readonly></td>
-                                                <td><input type="number" value="0" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 10)"></td>
+                                                <td><input type="number" value="0" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 10)" readonly></td>
                                                 <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" value="0%" readonly></td>
-                                                <td><input type="number" value="0" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 10)"></td>
+                                                <td><input type="number" value="0" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 10)" readonly></td>
                                                 <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" value="0%" readonly></td>
-                                                <td><input type="number" value="0" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 10)"></td>
+                                                <td><input type="number" value="0" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 10)" readonly></td>
                                                 <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" value="0%" readonly></td>
-                                                <td><input type="number" value="0" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 10)"></td>
+                                                <td><input type="number" value="0" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" oninput="calculatePercentages1a('p_employeeWellbeingDetails', 10)" readonly></td>
                                                 <td><input type="text" id="employeeWellbeingDetails" name="employeeWellbeingDetails[]" class="form-control" value="0%" readonly></td>
                                             </tr>
                                         </table>
@@ -1092,44 +1092,44 @@
                                             </tr>
                                             <tr>
                                                 <th class="form-label">Male</th>
-                                                <td><input type="number" value="0" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 4)"></td>
-                                                <td><input type="number" value="0" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 4)"></td>
+                                                <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 4)"></td>
+                                                <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 4)"></td>
                                                 <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" value="0%" readonly></td>
-                                                <td><input type="number" value="0" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 4)"></td>
+                                                <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 4)"></td>
                                                 <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" value="0%" readonly></td>
-                                                <td><input type="number" value="0" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 4)"></td>
+                                                <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 4)"></td>
                                                 <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" value="0%" readonly></td>
-                                                <td><input type="number" value="0" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 4)"></td>
+                                                <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 4)"></td>
                                                 <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" value="0%" readonly></td>
-                                                <td><input type="number" value="0" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 4)"></td>
+                                                <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 4)"></td>
                                                 <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" value="0%" readonly></td>
                                             </tr>
                                             <tr>
                                                 <th class="form-label">Female</th>
-                                                <td><input type="number" value="0" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 5)"></td>
-                                                <td><input type="number" value="0" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 5)"></td>
+                                                <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 5)"></td>
+                                                <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 5)"></td>
                                                 <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" value="0%" readonly></td>
-                                                <td><input type="number" value="0" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 5)"></td>
+                                                <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 5)"></td>
                                                 <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" value="0%" readonly></td>
-                                                <td><input type="number" value="0" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 5)"></td>
+                                                <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 5)"></td>
                                                 <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" value="0%" readonly></td>
-                                                <td><input type="number" value="0" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 5)"></td>
+                                                <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 5)"></td>
                                                 <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" value="0%" readonly></td>
-                                                <td><input type="number" value="0" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 5)"></td>
+                                                <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 5)"></td>
                                                 <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" value="0%" readonly></td>
                                             </tr>
                                             <tr>
                                                 <th class="form-label">Total</th>
-                                                <td><input type="number" value="0" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
-                                                <td><input type="number" value="0" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
+                                                <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
+                                                <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
                                                 <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" value="0%" readonly></td>
-                                                <td><input type="number" value="0" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
+                                                <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
                                                 <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" value="0%" readonly></td>
-                                                <td><input type="number" value="0" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
+                                                <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
                                                 <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" value="0%" readonly></td>
-                                                <td><input type="number" value="0" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
+                                                <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
                                                 <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" value="0%" readonly></td>
-                                                <td><input type="number" value="0" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
+                                                <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" readonly></td>
                                                 <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" value="0%" readonly></td>
                                             </tr>
                                             <tr>
@@ -1137,30 +1137,30 @@
                                             </tr>
                                             <tr>
                                                 <th class="form-label">Male</th>
-                                                <td><input type="number" value="0" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 8)"></td>
-                                                <td><input type="number" value="0" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 8)"></td>
+                                                <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 8)"></td>
+                                                <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 8)"></td>
                                                 <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" value="0%" readonly></td>
-                                                <td><input type="number" value="0" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 8)"></td>
+                                                <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 8)"></td>
                                                 <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" value="0%" readonly></td>
-                                                <td><input type="number" value="0" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 8)"></td>
+                                                <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 8)"></td>
                                                 <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" value="0%" readonly></td>
-                                                <td><input type="number" value="0" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 8)"></td>
+                                                <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 8)"></td>
                                                 <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" value="0%" readonly></td>
-                                                <td><input type="number" value="0" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 8)"></td>
+                                                <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 8)"></td>
                                                 <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" value="0%" readonly></td>
                                             </tr>
                                             <tr>
                                                 <th class="form-label">Female</th>
-                                                <td><input type="number" value="0" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 9)"></td>
-                                                <td><input type="number" value="0" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 9)"></td>
+                                                <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 9)"></td>
+                                                <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 9)"></td>
                                                 <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" value="0%" readonly></td>
-                                                <td><input type="number" value="0" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 9)"></td>
+                                                <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 9)"></td>
                                                 <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" value="0%" readonly></td>
-                                                <td><input type="number" value="0" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 9)"></td>
+                                                <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 9)"></td>
                                                 <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" value="0%" readonly></td>
-                                                <td><input type="number" value="0" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 9)"></td>
+                                                <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 9)"></td>
                                                 <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" value="0%" readonly></td>
-                                                <td><input type="number" value="0" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 9)"></td>
+                                                <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" oninput="calculatePercentages1b('p_workerWellbeingDetails', 9)"></td>
                                                 <td><input type="text" id="workerWellbeingDetails" name="workerWellbeingDetails[]" class="form-control" value="0%" readonly></td>
                                             </tr>
                                             <tr>
@@ -1212,29 +1212,29 @@
                                     </tr>
                                     <tr>
                                         <th class="form-label">PF</th>
-                                        <td><input type="text" id="retirementBenefitsDetails" name="retirementBenefitsDetails[]" class="form-control" value="%" oninput="validateNumericInput(this); updatePercentage(this);"></td>
-                                        <td><input type="text" id="retirementBenefitsDetails" name="retirementBenefitsDetails[]" class="form-control" value="%" oninput="validateNumericInput(this); updatePercentage(this);"></td>
+                                        <td><input type="text" id="retirementBenefitsDetails" name="retirementBenefitsDetails[]" class="form-control" value="0%" oninput="validateAndUpdatePercentage(this);" onfocus="removeZeroPercentage(this)" onblur="addZeroIfEmptyPercentage(this)"></td>
+                                        <td><input type="text" id="retirementBenefitsDetails" name="retirementBenefitsDetails[]" class="form-control" value="0%" oninput="validateAndUpdatePercentage(this);" onfocus="removeZeroPercentage(this)" onblur="addZeroIfEmptyPercentage(this)"></td>
                                         <td><input type="text" id="retirementBenefitsDetails" name="retirementBenefitsDetails[]" class="form-control" ></td>
-                                        <td><input type="text" id="retirementBenefitsDetails" name="retirementBenefitsDetails[]" class="form-control" value="%" oninput="validateNumericInput(this); updatePercentage(this);"></td>
-                                        <td><input type="text" id="retirementBenefitsDetails" name="retirementBenefitsDetails[]" class="form-control" value="%" oninput="validateNumericInput(this); updatePercentage(this);"></td>
+                                        <td><input type="text" id="retirementBenefitsDetails" name="retirementBenefitsDetails[]" class="form-control" value="0%" oninput="validateAndUpdatePercentage(this);" onfocus="removeZeroPercentage(this)" onblur="addZeroIfEmptyPercentage(this)"></td>
+                                        <td><input type="text" id="retirementBenefitsDetails" name="retirementBenefitsDetails[]" class="form-control" value="0%" oninput="validateAndUpdatePercentage(this);" onfocus="removeZeroPercentage(this)" onblur="addZeroIfEmptyPercentage(this)"></td>
                                         <td><input type="text" id="retirementBenefitsDetails" name="retirementBenefitsDetails[]" class="form-control" ></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label">Gratuity</th>
-                                        <td><input type="text" id="retirementBenefitsDetails" name="retirementBenefitsDetails[]" class="form-control" value="%" oninput="validateNumericInput(this); updatePercentage(this);"></td>
-                                        <td><input type="text" id="retirementBenefitsDetails" name="retirementBenefitsDetails[]" class="form-control" value="%" oninput="validateNumericInput(this); updatePercentage(this);"></td>
+                                        <td><input type="text" id="retirementBenefitsDetails" name="retirementBenefitsDetails[]" class="form-control" value="0%" oninput="validateAndUpdatePercentage(this);" onfocus="removeZeroPercentage(this)" onblur="addZeroIfEmptyPercentage(this)"></td>
+                                        <td><input type="text" id="retirementBenefitsDetails" name="retirementBenefitsDetails[]" class="form-control" value="0%" oninput="validateAndUpdatePercentage(this);" onfocus="removeZeroPercentage(this)" onblur="addZeroIfEmptyPercentage(this)"></td>
                                         <td><input type="text" id="retirementBenefitsDetails" name="retirementBenefitsDetails[]" class="form-control" ></td>
-                                        <td><input type="text" id="retirementBenefitsDetails" name="retirementBenefitsDetails[]" class="form-control" value="%" oninput="validateNumericInput(this); updatePercentage(this);"></td>
-                                        <td><input type="text" id="retirementBenefitsDetails" name="retirementBenefitsDetails[]" class="form-control" value="%" oninput="validateNumericInput(this); updatePercentage(this);"></td>
+                                        <td><input type="text" id="retirementBenefitsDetails" name="retirementBenefitsDetails[]" class="form-control" value="0%" oninput="validateAndUpdatePercentage(this);" onfocus="removeZeroPercentage(this)" onblur="addZeroIfEmptyPercentage(this)"></td>
+                                        <td><input type="text" id="retirementBenefitsDetails" name="retirementBenefitsDetails[]" class="form-control" value="0%" oninput="validateAndUpdatePercentage(this);" onfocus="removeZeroPercentage(this)" onblur="addZeroIfEmptyPercentage(this)"></td>
                                         <td><input type="text" id="retirementBenefitsDetails" name="retirementBenefitsDetails[]" class="form-control" ></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label">ESI</th>
-                                        <td><input type="text" id="retirementBenefitsDetails" name="retirementBenefitsDetails[]" class="form-control" value="%" oninput="validateNumericInput(this); updatePercentage(this);"></td>
-                                        <td><input type="text" id="retirementBenefitsDetails" name="retirementBenefitsDetails[]" class="form-control" value="%" oninput="validateNumericInput(this); updatePercentage(this);"></td>
+                                        <td><input type="text" id="retirementBenefitsDetails" name="retirementBenefitsDetails[]" class="form-control" value="0%" oninput="validateAndUpdatePercentage(this);" onfocus="removeZeroPercentage(this)" onblur="addZeroIfEmptyPercentage(this)"></td>
+                                        <td><input type="text" id="retirementBenefitsDetails" name="retirementBenefitsDetails[]" class="form-control" value="0%" oninput="validateAndUpdatePercentage(this);" onfocus="removeZeroPercentage(this)" onblur="addZeroIfEmptyPercentage(this)"></td>
                                         <td><input type="text" id="retirementBenefitsDetails" name="retirementBenefitsDetails[]" class="form-control" ></td>
-                                        <td><input type="text" id="retirementBenefitsDetails" name="retirementBenefitsDetails[]" class="form-control" value="%" oninput="validateNumericInput(this); updatePercentage(this);"></td>
-                                        <td><input type="text" id="retirementBenefitsDetails" name="retirementBenefitsDetails[]" class="form-control" value="%" oninput="validateNumericInput(this); updatePercentage(this);"></td>
+                                        <td><input type="text" id="retirementBenefitsDetails" name="retirementBenefitsDetails[]" class="form-control" value="0%" oninput="validateAndUpdatePercentage(this);" onfocus="removeZeroPercentage(this)" onblur="addZeroIfEmptyPercentage(this)"></td>
+                                        <td><input type="text" id="retirementBenefitsDetails" name="retirementBenefitsDetails[]" class="form-control" value="0%" oninput="validateAndUpdatePercentage(this);" onfocus="removeZeroPercentage(this)" onblur="addZeroIfEmptyPercentage(this)"></td>
                                         <td><input type="text" id="retirementBenefitsDetails" name="retirementBenefitsDetails[]" class="form-control" ></td>  
                                     </tr>
                                     <tr>
@@ -1242,11 +1242,11 @@
                                             Others - please specify
                                             <input type="text" id="retirementBenefitsDetails" name="retirementBenefitsDetails[]" class="form-control">
                                         </th>
-                                        <td><input type="text" id="retirementBenefitsDetails" name="retirementBenefitsDetails[]" class="form-control" value="%" oninput="validateNumericInput(this); updatePercentage(this);"></td>
-                                        <td><input type="text" id="retirementBenefitsDetails" name="retirementBenefitsDetails[]" class="form-control" value="%" oninput="validateNumericInput(this); updatePercentage(this);"></td>
+                                        <td><input type="text" id="retirementBenefitsDetails" name="retirementBenefitsDetails[]" class="form-control" value="0%" oninput="validateAndUpdatePercentage(this);" onfocus="removeZeroPercentage(this)" onblur="addZeroIfEmptyPercentage(this)"></td>
+                                        <td><input type="text" id="retirementBenefitsDetails" name="retirementBenefitsDetails[]" class="form-control" value="0%" oninput="validateAndUpdatePercentage(this);" onfocus="removeZeroPercentage(this)" onblur="addZeroIfEmptyPercentage(this)"></td>
                                         <td><input type="text" id="retirementBenefitsDetails" name="retirementBenefitsDetails[]" class="form-control" ></td>
-                                        <td><input type="text" id="retirementBenefitsDetails" name="retirementBenefitsDetails[]" class="form-control" value="%" oninput="validateNumericInput(this); updatePercentage(this);"></td>
-                                        <td><input type="text" id="retirementBenefitsDetails" name="retirementBenefitsDetails[]" class="form-control" value="%" oninput="validateNumericInput(this); updatePercentage(this);"></td>
+                                        <td><input type="text" id="retirementBenefitsDetails" name="retirementBenefitsDetails[]" class="form-control" value="0%" oninput="validateAndUpdatePercentage(this);" onfocus="removeZeroPercentage(this)" onblur="addZeroIfEmptyPercentage(this)"></td>
+                                        <td><input type="text" id="retirementBenefitsDetails" name="retirementBenefitsDetails[]" class="form-control" value="0%" oninput="validateAndUpdatePercentage(this);" onfocus="removeZeroPercentage(this)" onblur="addZeroIfEmptyPercentage(this)"></td>
                                         <td><input type="text" id="retirementBenefitsDetails" name="retirementBenefitsDetails[]" class="form-control" ></td>
                                     </tr>
                                 </table>
@@ -1307,17 +1307,17 @@
                                     </tr>
                                     <tr>
                                         <th align="center" class="form-label">Male</th>
-                                        <td><input type="number" value="0" id="returnRetentionRates" name="returnRetentionRates[]" class="form-control" oninput="calculateSectionTotalsP3_5()"></td>
-                                        <td><input type="number" value="0" id="returnRetentionRates" name="returnRetentionRates[]" class="form-control" oninput="calculateSectionTotalsP3_5()"></td>
-                                        <td><input type="number" value="0" id="returnRetentionRates" name="returnRetentionRates[]" class="form-control" oninput="calculateSectionTotalsP3_5()"></td>
-                                        <td><input type="number" value="0" id="returnRetentionRates" name="returnRetentionRates[]" class="form-control" oninput="calculateSectionTotalsP3_5()"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="returnRetentionRates" name="returnRetentionRates[]" class="form-control" oninput="calculateSectionTotalsP3_5()"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="returnRetentionRates" name="returnRetentionRates[]" class="form-control" oninput="calculateSectionTotalsP3_5()"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="returnRetentionRates" name="returnRetentionRates[]" class="form-control" oninput="calculateSectionTotalsP3_5()"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="returnRetentionRates" name="returnRetentionRates[]" class="form-control" oninput="calculateSectionTotalsP3_5()"></td>
                                     </tr>
                                     <tr>
                                         <th align="center" class="form-label">Female</th>
-                                        <td><input type="number" value="0" id="returnRetentionRates" name="returnRetentionRates[]" class="form-control" oninput="calculateSectionTotalsP3_5()"></td>
-                                        <td><input type="number" value="0" id="returnRetentionRates" name="returnRetentionRates[]" class="form-control" oninput="calculateSectionTotalsP3_5()"></td>
-                                        <td><input type="number" value="0" id="returnRetentionRates" name="returnRetentionRates[]" class="form-control" oninput="calculateSectionTotalsP3_5()"></td>
-                                        <td><input type="number" value="0" id="returnRetentionRates" name="returnRetentionRates[]" class="form-control" oninput="calculateSectionTotalsP3_5()"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="returnRetentionRates" name="returnRetentionRates[]" class="form-control" oninput="calculateSectionTotalsP3_5()"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="returnRetentionRates" name="returnRetentionRates[]" class="form-control" oninput="calculateSectionTotalsP3_5()"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="returnRetentionRates" name="returnRetentionRates[]" class="form-control" oninput="calculateSectionTotalsP3_5()"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="returnRetentionRates" name="returnRetentionRates[]" class="form-control" oninput="calculateSectionTotalsP3_5()"></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label">Total</th>
@@ -1406,20 +1406,20 @@
                                     </tr>
                                     <tr>
                                         <th align="center" class="form-label">Male</th>
-                                        <td><input type="number" value="0" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" oninput="calculatePercentages7('p_unionMembershipPercentage', 3)"></td>
-                                        <td><input type="number" value="0" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" oninput="calculatePercentages7('p_unionMembershipPercentage', 3)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" oninput="calculatePercentages7('p_unionMembershipPercentage', 3)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" oninput="calculatePercentages7('p_unionMembershipPercentage', 3)"></td>
                                         <td><input type="text" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" value="0%" readonly></td>
-                                        <td><input type="number" value="0" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" oninput="calculatePercentages7('p_unionMembershipPercentage', 3)"></td>
-                                        <td><input type="number" value="0" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" oninput="calculatePercentages7('p_unionMembershipPercentage', 3)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" oninput="calculatePercentages7('p_unionMembershipPercentage', 3)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" oninput="calculatePercentages7('p_unionMembershipPercentage', 3)"></td>
                                         <td><input type="text" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" value="0%" readonly></td>
                                     </tr>
                                     <tr>
                                         <th align="center" class="form-label">Female</th>
-                                        <td><input type="number" value="0" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" oninput="calculatePercentages7('p_unionMembershipPercentage', 4)"></td>
-                                        <td><input type="number" value="0" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" oninput="calculatePercentages7('p_unionMembershipPercentage', 4)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" oninput="calculatePercentages7('p_unionMembershipPercentage', 4)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" oninput="calculatePercentages7('p_unionMembershipPercentage', 4)"></td>
                                         <td><input type="text" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" value="0%" readonly></td>
-                                        <td><input type="number" value="0" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" oninput="calculatePercentages7('p_unionMembershipPercentage', 4)"></td>
-                                        <td><input type="number" value="0" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" oninput="calculatePercentages7('p_unionMembershipPercentage', 4)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" oninput="calculatePercentages7('p_unionMembershipPercentage', 4)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" oninput="calculatePercentages7('p_unionMembershipPercentage', 4)"></td>
                                         <td><input type="text" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" value="0%" readonly></td>
                                     </tr>
                                     <tr>
@@ -1433,20 +1433,20 @@
                                     </tr>
                                     <tr>
                                         <th align="center" class="form-label">Male</th>
-                                        <td><input type="number" value="0" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" oninput="calculatePercentages7('p_unionMembershipPercentage', 6)"></td>
-                                        <td><input type="number" value="0" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" oninput="calculatePercentages7('p_unionMembershipPercentage', 6)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" oninput="calculatePercentages7('p_unionMembershipPercentage', 6)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" oninput="calculatePercentages7('p_unionMembershipPercentage', 6)"></td>
                                         <td><input type="text" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" value="0%" readonly></td>
-                                        <td><input type="number" value="0" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" oninput="calculatePercentages7('p_unionMembershipPercentage', 6)"></td>
-                                        <td><input type="number" value="0" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" oninput="calculatePercentages7('p_unionMembershipPercentage', 6)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" oninput="calculatePercentages7('p_unionMembershipPercentage', 6)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" oninput="calculatePercentages7('p_unionMembershipPercentage', 6)"></td>
                                         <td><input type="text" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" value="0%" readonly></td>
                                     </tr>
                                     <tr>
                                         <th align="center" class="form-label">Female</th>
-                                        <td><input type="number" value="0" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" oninput="calculatePercentages7('p_unionMembershipPercentage', 7)"></td>
-                                        <td><input type="number" value="0" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" oninput="calculatePercentages7('p_unionMembershipPercentage', 7)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" oninput="calculatePercentages7('p_unionMembershipPercentage', 7)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" oninput="calculatePercentages7('p_unionMembershipPercentage', 7)"></td>
                                         <td><input type="text" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" value="0%" readonly></td>
-                                        <td><input type="number" value="0" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" oninput="calculatePercentages7('p_unionMembershipPercentage', 7)"></td>
-                                        <td><input type="number" value="0" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" oninput="calculatePercentages7('p_unionMembershipPercentage', 7)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" oninput="calculatePercentages7('p_unionMembershipPercentage', 7)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" oninput="calculatePercentages7('p_unionMembershipPercentage', 7)"></td>
                                         <td><input type="text" id="unionMembershipPercentage" name="unionMembershipPercentage[]" class="form-control" value="0%" readonly></td>
                                     </tr>
                                 </table>
@@ -1495,29 +1495,29 @@
                                     </tr>
                                     <tr>
                                         <th align="center" class="form-label">Male</th>
-                                        <td><input type="number" value="0" id="trainingDetails" name="trainingDetails[]" class="form-control" oninput="calculatePercentages8('p_trainingDetails', 4)"></td>
-                                        <td><input type="number" value="0" id="trainingDetails" name="trainingDetails[]" class="form-control" oninput="calculatePercentages8('p_trainingDetails', 4)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="trainingDetails" name="trainingDetails[]" class="form-control" oninput="calculatePercentages8('p_trainingDetails', 4)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="trainingDetails" name="trainingDetails[]" class="form-control" oninput="calculatePercentages8('p_trainingDetails', 4)"></td>
                                         <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" value="0%" readonly></td>
-                                        <td><input type="number" value="0" id="trainingDetails" name="trainingDetails[]" class="form-control" oninput="calculatePercentages8('p_trainingDetails', 4)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="trainingDetails" name="trainingDetails[]" class="form-control" oninput="calculatePercentages8('p_trainingDetails', 4)"></td>
                                         <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" value="0%" readonly></td>
-                                        <td><input type="number" value="0" id="trainingDetails" name="trainingDetails[]" class="form-control" oninput="calculatePercentages8('p_trainingDetails', 4)"></td>
-                                        <td><input type="number" value="0" id="trainingDetails" name="trainingDetails[]" class="form-control" oninput="calculatePercentages8('p_trainingDetails', 4)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="trainingDetails" name="trainingDetails[]" class="form-control" oninput="calculatePercentages8('p_trainingDetails', 4)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="trainingDetails" name="trainingDetails[]" class="form-control" oninput="calculatePercentages8('p_trainingDetails', 4)"></td>
                                         <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" value="0%" readonly></td>
-                                        <td><input type="number" value="0" id="trainingDetails" name="trainingDetails[]" class="form-control" oninput="calculatePercentages8('p_trainingDetails', 4)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="trainingDetails" name="trainingDetails[]" class="form-control" oninput="calculatePercentages8('p_trainingDetails', 4)"></td>
                                         <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" value="0%" readonly></td>
 
                                     </tr>
                                     <tr>
                                         <th align="center" class="form-label">Female</th>
-                                        <td><input type="number" value="0" id="trainingDetails" name="trainingDetails[]" class="form-control" oninput="calculatePercentages8('p_trainingDetails', 5)"></td>
-                                        <td><input type="number" value="0" id="trainingDetails" name="trainingDetails[]" class="form-control" oninput="calculatePercentages8('p_trainingDetails', 5)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="trainingDetails" name="trainingDetails[]" class="form-control" oninput="calculatePercentages8('p_trainingDetails', 5)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="trainingDetails" name="trainingDetails[]" class="form-control" oninput="calculatePercentages8('p_trainingDetails', 5)"></td>
                                         <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" value="0%" readonly></td>
-                                        <td><input type="number" value="0" id="trainingDetails" name="trainingDetails[]" class="form-control" oninput="calculatePercentages8('p_trainingDetails', 5)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="trainingDetails" name="trainingDetails[]" class="form-control" oninput="calculatePercentages8('p_trainingDetails', 5)"></td>
                                         <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" value="0%" readonly></td>
-                                        <td><input type="number" value="0" id="trainingDetails" name="trainingDetails[]" class="form-control" oninput="calculatePercentages8('p_trainingDetails', 5)"></td>
-                                        <td><input type="number" value="0" id="trainingDetails" name="trainingDetails[]" class="form-control" oninput="calculatePercentages8('p_trainingDetails', 5)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="trainingDetails" name="trainingDetails[]" class="form-control" oninput="calculatePercentages8('p_trainingDetails', 5)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="trainingDetails" name="trainingDetails[]" class="form-control" oninput="calculatePercentages8('p_trainingDetails', 5)"></td>
                                         <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" value="0%" readonly></td>
-                                        <td><input type="number" value="0" id="trainingDetails" name="trainingDetails[]" class="form-control" oninput="calculatePercentages8('p_trainingDetails', 5)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="trainingDetails" name="trainingDetails[]" class="form-control" oninput="calculatePercentages8('p_trainingDetails', 5)"></td>
                                         <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" value="0%" readonly></td>
                                     </tr>
                                     <tr>
@@ -1538,28 +1538,28 @@
                                     </tr>
                                     <tr>
                                         <th align="center" class="form-label">Male</th>
-                                        <td><input type="number" value="0" id="trainingDetails" name="trainingDetails[]" class="form-control" oninput="calculatePercentages8('p_trainingDetails', 8)"></td>
-                                        <td><input type="number" value="0" id="trainingDetails" name="trainingDetails[]" class="form-control" oninput="calculatePercentages8('p_trainingDetails', 8)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="trainingDetails" name="trainingDetails[]" class="form-control" oninput="calculatePercentages8('p_trainingDetails', 8)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="trainingDetails" name="trainingDetails[]" class="form-control" oninput="calculatePercentages8('p_trainingDetails', 8)"></td>
                                         <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" value="0%" readonly></td>
-                                        <td><input type="number" value="0" id="trainingDetails" name="trainingDetails[]" class="form-control" oninput="calculatePercentages8('p_trainingDetails', 8)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="trainingDetails" name="trainingDetails[]" class="form-control" oninput="calculatePercentages8('p_trainingDetails', 8)"></td>
                                         <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" value="0%" readonly></td>
-                                        <td><input type="number" value="0" id="trainingDetails" name="trainingDetails[]" class="form-control" oninput="calculatePercentages8('p_trainingDetails', 8)"></td>
-                                        <td><input type="number" value="0" id="trainingDetails" name="trainingDetails[]" class="form-control" oninput="calculatePercentages8('p_trainingDetails', 8)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="trainingDetails" name="trainingDetails[]" class="form-control" oninput="calculatePercentages8('p_trainingDetails', 8)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="trainingDetails" name="trainingDetails[]" class="form-control" oninput="calculatePercentages8('p_trainingDetails', 8)"></td>
                                         <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" value="0%" readonly></td>
-                                        <td><input type="number" value="0" id="trainingDetails" name="trainingDetails[]" class="form-control" oninput="calculatePercentages8('p_trainingDetails', 8)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="trainingDetails" name="trainingDetails[]" class="form-control" oninput="calculatePercentages8('p_trainingDetails', 8)"></td>
                                         <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" value="0%" readonly></td>
                                     </tr>
                                     <tr>
                                         <th align="center" class="form-label">Female</th>
-                                        <td><input type="number" value="0" id="trainingDetails" name="trainingDetails[]" class="form-control" oninput="calculatePercentages8('p_trainingDetails', 9)"></td>
-                                        <td><input type="number" value="0" id="trainingDetails" name="trainingDetails[]" class="form-control" oninput="calculatePercentages8('p_trainingDetails', 9)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="trainingDetails" name="trainingDetails[]" class="form-control" oninput="calculatePercentages8('p_trainingDetails', 9)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="trainingDetails" name="trainingDetails[]" class="form-control" oninput="calculatePercentages8('p_trainingDetails', 9)"></td>
                                         <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" value="0%" readonly></td>
-                                        <td><input type="number" value="0" id="trainingDetails" name="trainingDetails[]" class="form-control" oninput="calculatePercentages8('p_trainingDetails', 9)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="trainingDetails" name="trainingDetails[]" class="form-control" oninput="calculatePercentages8('p_trainingDetails', 9)"></td>
                                         <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" value="0%" readonly></td>
-                                        <td><input type="number" value="0" id="trainingDetails" name="trainingDetails[]" class="form-control" oninput="calculatePercentages8('p_trainingDetails', 9)"></td>
-                                        <td><input type="number" value="0" id="trainingDetails" name="trainingDetails[]" class="form-control" oninput="calculatePercentages8('p_trainingDetails', 9)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="trainingDetails" name="trainingDetails[]" class="form-control" oninput="calculatePercentages8('p_trainingDetails', 9)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="trainingDetails" name="trainingDetails[]" class="form-control" oninput="calculatePercentages8('p_trainingDetails', 9)"></td>
                                         <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" value="0%" readonly></td>
-                                        <td><input type="number" value="0" id="trainingDetails" name="trainingDetails[]" class="form-control" oninput="calculatePercentages8('p_trainingDetails', 9)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="trainingDetails" name="trainingDetails[]" class="form-control" oninput="calculatePercentages8('p_trainingDetails', 9)"></td>
                                         <td><input type="text" id="trainingDetails" name="trainingDetails[]" class="form-control" value="0%" readonly></td>
                                     </tr>
                                     <tr>
@@ -1612,20 +1612,20 @@
                                     </tr>
                                     <tr>
                                         <th align="center" class="form-label">Male</th>
-                                        <td><input type="number" value="0" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" oninput="calculatePercentages9('p_performanceReviewDetails', 3)"></td>
-                                        <td><input type="number" value="0" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" oninput="calculatePercentages9('p_performanceReviewDetails', 3)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" oninput="calculatePercentages9('p_performanceReviewDetails', 3)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" oninput="calculatePercentages9('p_performanceReviewDetails', 3)"></td>
                                         <td><input type="text" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" value="0%" readonly></td>
-                                        <td><input type="number" value="0" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" oninput="calculatePercentages9('p_performanceReviewDetails', 3)"></td>
-                                        <td><input type="number" value="0" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" oninput="calculatePercentages9('p_performanceReviewDetails', 3)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" oninput="calculatePercentages9('p_performanceReviewDetails', 3)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" oninput="calculatePercentages9('p_performanceReviewDetails', 3)"></td>
                                         <td><input type="text" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" value="0%" readonly></td>
                                     </tr>
                                     <tr>
                                         <th align="center" class="form-label">Female</th>
-                                        <td><input type="number" value="0" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" oninput="calculatePercentages9('p_performanceReviewDetails', 4)"></td>
-                                        <td><input type="number" value="0" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" oninput="calculatePercentages9('p_performanceReviewDetails', 4)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" oninput="calculatePercentages9('p_performanceReviewDetails', 4)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" oninput="calculatePercentages9('p_performanceReviewDetails', 4)"></td>
                                         <td><input type="text" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" value="0%" readonly></td>
-                                        <td><input type="number" value="0" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" oninput="calculatePercentages9('p_performanceReviewDetails', 4)"></td>
-                                        <td><input type="number" value="0" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" oninput="calculatePercentages9('p_performanceReviewDetails', 4)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" oninput="calculatePercentages9('p_performanceReviewDetails', 4)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" oninput="calculatePercentages9('p_performanceReviewDetails', 4)"></td>
                                         <td><input type="text" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" value="0%" readonly></td>
                                     </tr>
                                     <tr>
@@ -1642,20 +1642,20 @@
                                     </tr>
                                     <tr>
                                         <th align="center" class="form-label">Male</th>
-                                        <td><input type="number" value="0" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" oninput="calculatePercentages9('p_performanceReviewDetails', 7)"></td>
-                                        <td><input type="number" value="0" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" oninput="calculatePercentages9('p_performanceReviewDetails', 7)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" oninput="calculatePercentages9('p_performanceReviewDetails', 7)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" oninput="calculatePercentages9('p_performanceReviewDetails', 7)"></td>
                                         <td><input type="text" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" value="0%" readonly></td>
-                                        <td><input type="number" value="0" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" oninput="calculatePercentages9('p_performanceReviewDetails', 7)"></td>
-                                        <td><input type="number" value="0" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" oninput="calculatePercentages9('p_performanceReviewDetails', 7)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" oninput="calculatePercentages9('p_performanceReviewDetails', 7)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" oninput="calculatePercentages9('p_performanceReviewDetails', 7)"></td>
                                         <td><input type="text" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" value="0%" readonly></td>
                                     </tr>
                                     <tr>
                                         <th align="center" class="form-label">Female</th>
-                                        <td><input type="number" value="0" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" oninput="calculatePercentages9('p_performanceReviewDetails', 8)"></td>
-                                        <td><input type="number" value="0" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" oninput="calculatePercentages9('p_performanceReviewDetails', 8)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" oninput="calculatePercentages9('p_performanceReviewDetails', 8)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" oninput="calculatePercentages9('p_performanceReviewDetails', 8)"></td>
                                         <td><input type="text" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" value="0%" readonly></td>
-                                        <td><input type="number" value="0" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" oninput="calculatePercentages9('p_performanceReviewDetails', 8)"></td>
-                                        <td><input type="number" value="0" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" oninput="calculatePercentages9('p_performanceReviewDetails', 8)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" oninput="calculatePercentages9('p_performanceReviewDetails', 8)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" oninput="calculatePercentages9('p_performanceReviewDetails', 8)"></td>
                                         <td><input type="text" id="performanceReviewDetails" name="performanceReviewDetails[]" class="form-control" value="0%" readonly></td>
                                     </tr>
                                     <tr>
@@ -1865,11 +1865,11 @@
                                     </tr>
                                     <tr>
                                         <th class="form-label">Health and safety practices</th>
-                                        <td><input type="text" id="assesmentyr" name="assesmentyr[]" class="form-control" value="%" oninput="validateNumericInput(this); updatePercentage(this);"></td>
+                                        <td><input type="text" id="assesmentyr" name="assesmentyr[]" class="form-control" value="0%" oninput="validateAndUpdatePercentage(this);" onfocus="removeZeroPercentage(this)" onblur="addZeroIfEmptyPercentage(this)"></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label">Working conditions</th>
-                                        <td><input type="text" id="assesmentyr" name="assesmentyr[]" class="form-control" value="%" oninput="validateNumericInput(this); updatePercentage(this);"></td>
+                                        <td><input type="text" id="assesmentyr" name="assesmentyr[]" class="form-control" value="0%" oninput="validateAndUpdatePercentage(this);" onfocus="removeZeroPercentage(this)" onblur="addZeroIfEmptyPercentage(this)"></td>
                                     </tr>
                                 </table>
                             </div>
@@ -2016,11 +2016,11 @@
                                     </tr>
                                     <tr>
                                         <th class="form-label">Health and safety practices</th>
-                                        <td><input type="text" id="rdPercentageassesment" name="rdPercentageassesment[]" class="form-control" value="%" oninput="validateNumericInput(this); updatePercentage(this);"></td>
+                                        <td><input type="text" id="rdPercentageassesment" name="rdPercentageassesment[]" class="form-control" value="0%" oninput="validateAndUpdatePercentage(this);" onfocus="removeZeroPercentage(this)" onblur="addZeroIfEmptyPercentage(this)"></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label">Working conditions</th>
-                                        <td><input type="text" id="rdPercentageassesment" name="rdPercentageassesment[]" class="form-control" value="%" oninput="validateNumericInput(this); updatePercentage(this);"></td>
+                                        <td><input type="text" id="rdPercentageassesment" name="rdPercentageassesment[]" class="form-control" value="0%" oninput="validateAndUpdatePercentage(this);" onfocus="removeZeroPercentage(this)" onblur="addZeroIfEmptyPercentage(this)"></td>
                                     </tr>
                                 </table>
                             </div>
@@ -2222,29 +2222,29 @@
                                     </tr>
                                     <tr>
                                         <th class="form-label">Permanent</th>
-                                        <td><input type="number" value="0" id="humanRightsTrainingDetails" name="humanRightsTrainingDetails[]" class="form-control" oninput="calculatePercentages1('p_humanRightsTrainingDetails', 3)"></td>
-                                        <td><input type="number" value="0" id="humanRightsTrainingDetails" name="humanRightsTrainingDetails[]" class="form-control" oninput="calculatePercentages1('p_humanRightsTrainingDetails', 3)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="humanRightsTrainingDetails" name="humanRightsTrainingDetails[]" class="form-control" oninput="calculatePercentages1('p_humanRightsTrainingDetails', 3)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="humanRightsTrainingDetails" name="humanRightsTrainingDetails[]" class="form-control" oninput="calculatePercentages1('p_humanRightsTrainingDetails', 3)"></td>
                                         <td><input type="text" id="humanRightsTrainingDetails" name="humanRightsTrainingDetails[]" class="form-control" value="0%" readonly></td>
-                                        <td><input type="number" value="0" id="humanRightsTrainingDetails" name="humanRightsTrainingDetails[]" class="form-control" oninput="calculatePercentages1('p_humanRightsTrainingDetails', 3)"></td>
-                                        <td><input type="number" value="0" id="humanRightsTrainingDetails" name="humanRightsTrainingDetails[]" class="form-control" oninput="calculatePercentages1('p_humanRightsTrainingDetails', 3)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="humanRightsTrainingDetails" name="humanRightsTrainingDetails[]" class="form-control" oninput="calculatePercentages1('p_humanRightsTrainingDetails', 3)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="humanRightsTrainingDetails" name="humanRightsTrainingDetails[]" class="form-control" oninput="calculatePercentages1('p_humanRightsTrainingDetails', 3)"></td>
                                         <td><input type="text" id="humanRightsTrainingDetails" name="humanRightsTrainingDetails[]" class="form-control" value="0%" readonly></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label">Other than Permanent</th>
-                                        <td><input type="number" value="0" id="humanRightsTrainingDetails" name="humanRightsTrainingDetails[]" class="form-control" oninput="calculatePercentages1('p_humanRightsTrainingDetails', 4)"></td>
-                                        <td><input type="number" value="0" id="humanRightsTrainingDetails" name="humanRightsTrainingDetails[]" class="form-control" oninput="calculatePercentages1('p_humanRightsTrainingDetails', 4)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="humanRightsTrainingDetails" name="humanRightsTrainingDetails[]" class="form-control" oninput="calculatePercentages1('p_humanRightsTrainingDetails', 4)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="humanRightsTrainingDetails" name="humanRightsTrainingDetails[]" class="form-control" oninput="calculatePercentages1('p_humanRightsTrainingDetails', 4)"></td>
                                         <td><input type="text" id="humanRightsTrainingDetails" name="humanRightsTrainingDetails[]" class="form-control" value="0%" readonly></td>
-                                        <td><input type="number" value="0" id="humanRightsTrainingDetails" name="humanRightsTrainingDetails[]" class="form-control" oninput="calculatePercentages1('p_humanRightsTrainingDetails', 4)"></td>
-                                        <td><input type="number" value="0" id="humanRightsTrainingDetails" name="humanRightsTrainingDetails[]" class="form-control" oninput="calculatePercentages1('p_humanRightsTrainingDetails', 4)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="humanRightsTrainingDetails" name="humanRightsTrainingDetails[]" class="form-control" oninput="calculatePercentages1('p_humanRightsTrainingDetails', 4)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="humanRightsTrainingDetails" name="humanRightsTrainingDetails[]" class="form-control" oninput="calculatePercentages1('p_humanRightsTrainingDetails', 4)"></td>
                                         <td><input type="text" id="humanRightsTrainingDetails" name="humanRightsTrainingDetails[]" class="form-control" value="0%" readonly></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label">Total Employees</th>
-                                        <td><input type="number" value="0" id="humanRightsTrainingDetails" name="humanRightsTrainingDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" value="0" id="humanRightsTrainingDetails" name="humanRightsTrainingDetails[]" class="form-control" readonly></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="humanRightsTrainingDetails" name="humanRightsTrainingDetails[]" class="form-control" readonly></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="humanRightsTrainingDetails" name="humanRightsTrainingDetails[]" class="form-control" readonly></td>
                                         <td><input type="text" id="humanRightsTrainingDetails" name="humanRightsTrainingDetails[]" class="form-control" value="0%" readonly></td>
-                                        <td><input type="number" value="0" id="humanRightsTrainingDetails" name="humanRightsTrainingDetails[]" class="form-control" readonly></td>
-                                        <td><input type="number" value="0" id="humanRightsTrainingDetails" name="humanRightsTrainingDetails[]" class="form-control" readonly></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="humanRightsTrainingDetails" name="humanRightsTrainingDetails[]" class="form-control" readonly></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="humanRightsTrainingDetails" name="humanRightsTrainingDetails[]" class="form-control" readonly></td>
                                         <td><input type="text" id="humanRightsTrainingDetails" name="humanRightsTrainingDetails[]" class="form-control" value="0%" readonly></td>
                                     </tr>
                                     <tr>
@@ -2252,20 +2252,20 @@
                                     </tr>
                                     <tr>
                                         <th class="form-label">Permanent</th>
-                                        <td><input type="number" value="0" id="humanRightsTrainingDetails" name="humanRightsTrainingDetails[]" class="form-control" oninput="calculatePercentages1('p_humanRightsTrainingDetails', 7)"></td>
-                                        <td><input type="number" value="0" id="humanRightsTrainingDetails" name="humanRightsTrainingDetails[]" class="form-control" oninput="calculatePercentages1('p_humanRightsTrainingDetails', 7)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="humanRightsTrainingDetails" name="humanRightsTrainingDetails[]" class="form-control" oninput="calculatePercentages1('p_humanRightsTrainingDetails', 7)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="humanRightsTrainingDetails" name="humanRightsTrainingDetails[]" class="form-control" oninput="calculatePercentages1('p_humanRightsTrainingDetails', 7)"></td>
                                         <td><input type="text" id="humanRightsTrainingDetails" name="humanRightsTrainingDetails[]" class="form-control" value="0%" readonly></td>
-                                        <td><input type="number" value="0" id="humanRightsTrainingDetails" name="humanRightsTrainingDetails[]" class="form-control" oninput="calculatePercentages1('p_humanRightsTrainingDetails', 7)"></td>
-                                        <td><input type="number" value="0" id="humanRightsTrainingDetails" name="humanRightsTrainingDetails[]" class="form-control" oninput="calculatePercentages1('p_humanRightsTrainingDetails', 7)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="humanRightsTrainingDetails" name="humanRightsTrainingDetails[]" class="form-control" oninput="calculatePercentages1('p_humanRightsTrainingDetails', 7)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="humanRightsTrainingDetails" name="humanRightsTrainingDetails[]" class="form-control" oninput="calculatePercentages1('p_humanRightsTrainingDetails', 7)"></td>
                                         <td><input type="text" id="humanRightsTrainingDetails" name="humanRightsTrainingDetails[]" class="form-control" value="0%" readonly></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label">Other than Permanent</th>
-                                        <td><input type="number" value="0" id="humanRightsTrainingDetails" name="humanRightsTrainingDetails[]" class="form-control" oninput="calculatePercentages1('p_humanRightsTrainingDetails', 8)"></td>
-                                        <td><input type="number" value="0" id="humanRightsTrainingDetails" name="humanRightsTrainingDetails[]" class="form-control" oninput="calculatePercentages1('p_humanRightsTrainingDetails', 8)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="humanRightsTrainingDetails" name="humanRightsTrainingDetails[]" class="form-control" oninput="calculatePercentages1('p_humanRightsTrainingDetails', 8)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="humanRightsTrainingDetails" name="humanRightsTrainingDetails[]" class="form-control" oninput="calculatePercentages1('p_humanRightsTrainingDetails', 8)"></td>
                                         <td><input type="text" id="humanRightsTrainingDetails" name="humanRightsTrainingDetails[]" class="form-control" value="0%" readonly></td>
-                                        <td><input type="number" value="0" id="humanRightsTrainingDetails" name="humanRightsTrainingDetails[]" class="form-control" oninput="calculatePercentages1('p_humanRightsTrainingDetails', 8)"></td>
-                                        <td><input type="number" value="0" id="humanRightsTrainingDetails" name="humanRightsTrainingDetails[]" class="form-control" oninput="calculatePercentages1('p_humanRightsTrainingDetails', 8)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="humanRightsTrainingDetails" name="humanRightsTrainingDetails[]" class="form-control" oninput="calculatePercentages1('p_humanRightsTrainingDetails', 8)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="humanRightsTrainingDetails" name="humanRightsTrainingDetails[]" class="form-control" oninput="calculatePercentages1('p_humanRightsTrainingDetails', 8)"></td>
                                         <td><input type="text" id="humanRightsTrainingDetails" name="humanRightsTrainingDetails[]" class="form-control" value="0%" readonly></td>
                                     </tr>
                                     <tr>
@@ -2323,41 +2323,41 @@
                                     </tr>
                                     <tr>
                                         <th align="center" class="form-label">Male</th>
-                                        <td><input type="number" value="0" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 4)"></td>
-                                        <td><input type="number" value="0" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 4)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 4)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 4)"></td>
                                         <td><input type="text" id="wageDetails" name="wageDetails[]" class="form-control" value="0%" readonly></td>
-                                        <td><input type="number" value="0" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 4)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 4)"></td>
                                         <td><input type="text" id="wageDetails" name="wageDetails[]" class="form-control" value="0%" readonly></td>
-                                        <td><input type="number" value="0" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 4)"></td>
-                                        <td><input type="number" value="0" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 4)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 4)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 4)"></td>
                                         <td><input type="text" id="wageDetails" name="wageDetails[]" class="form-control" value="0%" readonly></td>
-                                        <td><input type="number" value="0" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 4)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 4)"></td>
                                         <td><input type="text" id="wageDetails" name="wageDetails[]" class="form-control" value="0%" readonly></td>
                                     </tr>
                                     <tr>
                                         <th align="center" class="form-label">Female</th>
-                                        <td><input type="number" value="0" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 5)"></td>
-                                        <td><input type="number" value="0" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 5)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 5)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 5)"></td>
                                         <td><input type="text" id="wageDetails" name="wageDetails[]" class="form-control" value="0%" readonly></td>
-                                        <td><input type="number" value="0" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 5)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 5)"></td>
                                         <td><input type="text" id="wageDetails" name="wageDetails[]" class="form-control" value="0%" readonly></td>
-                                        <td><input type="number" value="0" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 5)"></td>
-                                        <td><input type="number" value="0" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 5)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 5)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 5)"></td>
                                         <td><input type="text" id="wageDetails" name="wageDetails[]" class="form-control" value="0%" readonly></td>
-                                        <td><input type="number" value="0" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 5)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 5)"></td>
                                         <td><input type="text" id="wageDetails" name="wageDetails[]" class="form-control" value="0%" readonly></td>
                                     </tr>
                                     <tr>
                                         <th align="center" class="form-label">Total</th>
-                                        <td><input type="number" value="0" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 6)"></td>
-                                        <td><input type="number" value="0" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 6)"></td>
+                                        <td><input type="number" value="0" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 6)" readonly></td>
+                                        <td><input type="number" value="0" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 6)" readonly></td>
                                         <td><input type="text" id="wageDetails" name="wageDetails[]" class="form-control" value="0%" readonly></td>
-                                        <td><input type="number" value="0" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 6)"></td>
+                                        <td><input type="number" value="0" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 6)" readonly></td>
                                         <td><input type="text" id="wageDetails" name="wageDetails[]" class="form-control" value="0%" readonly></td>
-                                        <td><input type="number" value="0" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 6)"></td>
-                                        <td><input type="number" value="0" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 6)"></td>
+                                        <td><input type="number" value="0" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 6)" readonly></td>
+                                        <td><input type="number" value="0" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 6)" readonly></td>
                                         <td><input type="text" id="wageDetails" name="wageDetails[]" class="form-control" value="0%" readonly></td>
-                                        <td><input type="number" value="0" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 6)"></td>
+                                        <td><input type="number" value="0" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 6)" readonly></td>
                                         <td><input type="text" id="wageDetails" name="wageDetails[]" class="form-control" value="0%" readonly></td>
                                     </tr>
                                     <tr>
@@ -2365,28 +2365,28 @@
                                     </tr>
                                     <tr>
                                         <th align="center" class="form-label">Male</th>
-                                        <td><input type="number" value="0" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 8)"></td>
-                                        <td><input type="number" value="0" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 8)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 8)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 8)"></td>
                                         <td><input type="text" id="wageDetails" name="wageDetails[]" class="form-control" value="0%" readonly></td>
-                                        <td><input type="number" value="0" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 8)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 8)"></td>
                                         <td><input type="text" id="wageDetails" name="wageDetails[]" class="form-control" value="0%" readonly></td>
-                                        <td><input type="number" value="0" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 8)"></td>
-                                        <td><input type="number" value="0" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 8)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 8)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 8)"></td>
                                         <td><input type="text" id="wageDetails" name="wageDetails[]" class="form-control" value="0%" readonly></td>
-                                        <td><input type="number" value="0" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 8)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 8)"></td>
                                         <td><input type="text" id="wageDetails" name="wageDetails[]" class="form-control" value="0%" readonly></td>
                                     </tr>
                                     <tr>
                                         <th align="center" class="form-label">Female</th>
-                                        <td><input type="number" value="0" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 9)"></td>
-                                        <td><input type="number" value="0" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 9)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 9)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 9)"></td>
                                         <td><input type="text" id="wageDetails" name="wageDetails[]" class="form-control" value="0%" readonly></td>
-                                        <td><input type="number" value="0" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 9)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 9)"></td>
                                         <td><input type="text" id="wageDetails" name="wageDetails[]" class="form-control" value="0%" readonly></td>
-                                        <td><input type="number" value="0" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 9)"></td>
-                                        <td><input type="number" value="0" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 9)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 9)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 9)"></td>
                                         <td><input type="text" id="wageDetails" name="wageDetails[]" class="form-control" value="0%" readonly></td>
-                                        <td><input type="number" value="0" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 9)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 9)"></td>
                                         <td><input type="text" id="wageDetails" name="wageDetails[]" class="form-control" value="0%" readonly></td>
                                     </tr>
                                     <tr>
@@ -2407,28 +2407,28 @@
                                     </tr>
                                     <tr>
                                         <th align="center" class="form-label">Male</th>
-                                        <td><input type="number" value="0" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 12)"></td>
-                                        <td><input type="number" value="0" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 12)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 12)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 12)"></td>
                                         <td><input type="text" id="wageDetails" name="wageDetails[]" class="form-control" value="0%" readonly></td>
-                                        <td><input type="number" value="0" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 12)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 12)"></td>
                                         <td><input type="text" id="wageDetails" name="wageDetails[]" class="form-control" value="0%" readonly></td>
-                                        <td><input type="number" value="0" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 12)"></td>
-                                        <td><input type="number" value="0" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 12)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 12)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 12)"></td>
                                         <td><input type="text" id="wageDetails" name="wageDetails[]" class="form-control" value="0%" readonly></td>
-                                        <td><input type="number" value="0" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 12)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 12)"></td>
                                         <td><input type="text" id="wageDetails" name="wageDetails[]" class="form-control" value="0%" readonly></td>
                                     </tr>
                                     <tr>
                                         <th align="center" class="form-label">Female</th>
-                                        <td><input type="number" value="0" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 13)"></td>
-                                        <td><input type="number" value="0" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 13)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 13)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 13)"></td>
                                         <td><input type="text" id="wageDetails" name="wageDetails[]" class="form-control" value="0%" readonly></td>
-                                        <td><input type="number" value="0" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 13)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 13)"></td>
                                         <td><input type="text" id="wageDetails" name="wageDetails[]" class="form-control" value="0%" readonly></td>
-                                        <td><input type="number" value="0" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 13)"></td>
-                                        <td><input type="number" value="0" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 13)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 13)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 13)"></td>
                                         <td><input type="text" id="wageDetails" name="wageDetails[]" class="form-control" value="0%" readonly></td>
-                                        <td><input type="number" value="0" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 13)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 13)"></td>
                                         <td><input type="text" id="wageDetails" name="wageDetails[]" class="form-control" value="0%" readonly></td>
                                     </tr>
                                     <tr>
@@ -2449,28 +2449,28 @@
                                     </tr>
                                     <tr>
                                         <th align="center" class="form-label">Male</th>
-                                        <td><input type="number" value="0" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 16)"></td>
-                                        <td><input type="number" value="0" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 16)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 16)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 16)"></td>
                                         <td><input type="text" id="wageDetails" name="wageDetails[]" class="form-control" value="0%" readonly></td>
-                                        <td><input type="number" value="0" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 16)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 16)"></td>
                                         <td><input type="text" id="wageDetails" name="wageDetails[]" class="form-control" value="0%" readonly></td>
-                                        <td><input type="number" value="0" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 16)"></td>
-                                        <td><input type="number" value="0" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 16)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 16)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 16)"></td>
                                         <td><input type="text" id="wageDetails" name="wageDetails[]" class="form-control" value="0%" readonly></td>
-                                        <td><input type="number" value="0" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 16)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 16)"></td>
                                         <td><input type="text" id="wageDetails" name="wageDetails[]" class="form-control" value="0%" readonly></td>
                                     </tr>
                                     <tr>
                                         <th align="center" class="form-label">Female</th>
-                                        <td><input type="number" value="0" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 17)"></td>
-                                        <td><input type="number" value="0" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 17)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 17)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 17)"></td>
                                         <td><input type="text" id="wageDetails" name="wageDetails[]" class="form-control" value="0%" readonly></td>
-                                        <td><input type="number" value="0" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 17)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 17)"></td>
                                         <td><input type="text" id="wageDetails" name="wageDetails[]" class="form-control" value="0%" readonly></td>
-                                        <td><input type="number" value="0" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 17)"></td>
-                                        <td><input type="number" value="0" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 17)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 17)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 17)"></td>
                                         <td><input type="text" id="wageDetails" name="wageDetails[]" class="form-control" value="0%" readonly></td>
-                                        <td><input type="number" value="0" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 17)"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="wageDetails" name="wageDetails[]" class="form-control" oninput="calculatePercentages2('p_wageDetails', 17)"></td>
                                         <td><input type="text" id="wageDetails" name="wageDetails[]" class="form-control" value="0%" readonly></td>
                                     </tr>
                                     <tr>
@@ -2517,30 +2517,30 @@
                                     </tr>
                                     <tr>
                                         <th class="form-label">Board of Directors (BoD)</th>
-                                        <td><input type="number" value="0" id="remunerationDetails" name="remunerationDetails[]" class="form-control"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="remunerationDetails" name="remunerationDetails[]" class="form-control"></td>
                                         <td><input type="text" id="remunerationDetails" name="remunerationDetails[]" class="form-control"></td>
-                                        <td><input type="number" value="0" id="remunerationDetails" name="remunerationDetails[]" class="form-control"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="remunerationDetails" name="remunerationDetails[]" class="form-control"></td>
                                         <td><input type="text" id="remunerationDetails" name="remunerationDetails[]" class="form-control"></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label">Key Managerial Personnel (KMP)</th>
-                                        <td><input type="number" value="0" id="remunerationDetails" name="remunerationDetails[]" class="form-control"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="remunerationDetails" name="remunerationDetails[]" class="form-control"></td>
                                         <td><input type="text" id="remunerationDetails" name="remunerationDetails[]" class="form-control"></td>
-                                        <td><input type="number" value="0" id="remunerationDetails" name="remunerationDetails[]" class="form-control"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="remunerationDetails" name="remunerationDetails[]" class="form-control"></td>
                                         <td><input type="text" id="remunerationDetails" name="remunerationDetails[]" class="form-control"></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label">Employees other than BoD and KMP</th>
-                                        <td><input type="number" value="0" id="remunerationDetails" name="remunerationDetails[]" class="form-control"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="remunerationDetails" name="remunerationDetails[]" class="form-control"></td>
                                         <td><input type="text" id="remunerationDetails" name="remunerationDetails[]" class="form-control"></td>
-                                        <td><input type="number" value="0" id="remunerationDetails" name="remunerationDetails[]" class="form-control"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="remunerationDetails" name="remunerationDetails[]" class="form-control"></td>
                                         <td><input type="text" id="remunerationDetails" name="remunerationDetails[]" class="form-control"></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label">Workers</th>
-                                        <td><input type="number" value="0" id="remunerationDetails" name="remunerationDetails[]" class="form-control"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="remunerationDetails" name="remunerationDetails[]" class="form-control"></td>
                                         <td><input type="text" id="remunerationDetails" name="remunerationDetails[]" class="form-control"></td>
-                                        <td><input type="number" value="0" id="remunerationDetails" name="remunerationDetails[]" class="form-control"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="remunerationDetails" name="remunerationDetails[]" class="form-control"></td>
                                         <td><input type="text" id="remunerationDetails" name="remunerationDetails[]" class="form-control"></td>
                                     </tr>
                                 </table>
@@ -2722,30 +2722,30 @@
                                     </tr>
                                     <tr>
                                         <th class="form-label">Child Labour</th>
-                                        <td><input type="text" id="assessedPlantPercentage" name="assessedPlantPercentage[]" class="form-control" value="%" oninput="validateNumericInput(this); updatePercentage(this);"></td>
+                                        <td><input type="text" id="assessedPlantPercentage" name="assessedPlantPercentage[]" class="form-control" value="0%" oninput="validateAndUpdatePercentage(this);" onfocus="removeZeroPercentage(this)" onblur="addZeroIfEmptyPercentage(this)"></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label">Forced/Involuntary Labour</th>
-                                        <td><input type="text" id="assessedPlantPercentage" name="assessedPlantPercentage[]" class="form-control" value="%" oninput="validateNumericInput(this); updatePercentage(this);"></td>
+                                        <td><input type="text" id="assessedPlantPercentage" name="assessedPlantPercentage[]" class="form-control" value="0%" oninput="validateAndUpdatePercentage(this);" onfocus="removeZeroPercentage(this)" onblur="addZeroIfEmptyPercentage(this)"></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label">Sexual Harassment</th>
-                                        <td><input type="text" id="assessedPlantPercentage" name="assessedPlantPercentage[]" class="form-control" value="%" oninput="validateNumericInput(this); updatePercentage(this);"></td>
+                                        <td><input type="text" id="assessedPlantPercentage" name="assessedPlantPercentage[]" class="form-control" value="0%" oninput="validateAndUpdatePercentage(this);" onfocus="removeZeroPercentage(this)" onblur="addZeroIfEmptyPercentage(this)"></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label">Discrimination at Workplace</th>
-                                        <td><input type="text" id="assessedPlantPercentage" name="assessedPlantPercentage[]" class="form-control" value="%" oninput="validateNumericInput(this); updatePercentage(this);"></td>
+                                        <td><input type="text" id="assessedPlantPercentage" name="assessedPlantPercentage[]" class="form-control" value="0%" oninput="validateAndUpdatePercentage(this);" onfocus="removeZeroPercentage(this)" onblur="addZeroIfEmptyPercentage(this)"></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label">Wages</th>
-                                        <td><input type="text" id="assessedPlantPercentage" name="assessedPlantPercentage[]" class="form-control" value="%" oninput="validateNumericInput(this); updatePercentage(this);"></td>
+                                        <td><input type="text" id="assessedPlantPercentage" name="assessedPlantPercentage[]" class="form-control" value="0%" oninput="validateAndUpdatePercentage(this);" onfocus="removeZeroPercentage(this)" onblur="addZeroIfEmptyPercentage(this)"></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label">
                                             Others - please specify
                                             <input type="text" id="assessedPlantPercentage" name="assessedPlantPercentageOthers[]" class="form-control">
                                         </th>
-                                        <td><input type="text" id="assessedPlantPercentage" name="assessedPlantPercentageOthers[]" class="form-control" value="%" oninput="validateNumericInput(this); updatePercentage(this);"></td>
+                                        <td><input type="text" id="assessedPlantPercentage" name="assessedPlantPercentageOthers[]" class="form-control" value="0%" oninput="validateAndUpdatePercentage(this);" onfocus="removeZeroPercentage(this)" onblur="addZeroIfEmptyPercentage(this)"></td>
                                     </tr>
                                 </table>
                                 <div>
@@ -2827,30 +2827,30 @@
                                     </tr>
                                     <tr>
                                         <th class="form-label">Sexual Harassment</th>
-                                        <td><input type="text" id="valueChainAssessment" name="valueChainAssessment[]" class="form-control" value="%" oninput="validateNumericInput(this); updatePercentage(this);"></td>
+                                        <td><input type="text" id="valueChainAssessment" name="valueChainAssessment[]" class="form-control" value="0%" oninput="validateAndUpdatePercentage(this);" onfocus="removeZeroPercentage(this)" onblur="addZeroIfEmptyPercentage(this)"></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label">Discrimination at Workplace</th>
-                                        <td><input type="text" id="valueChainAssessment" name="valueChainAssessment[]" class="form-control" value="%" oninput="validateNumericInput(this); updatePercentage(this);"></td>
+                                        <td><input type="text" id="valueChainAssessment" name="valueChainAssessment[]" class="form-control" value="0%" oninput="validateAndUpdatePercentage(this);" onfocus="removeZeroPercentage(this)" onblur="addZeroIfEmptyPercentage(this)"></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label">Child Labour</th>
-                                        <td><input type="text" id="valueChainAssessment" name="valueChainAssessment[]" class="form-control" value="%" oninput="validateNumericInput(this); updatePercentage(this);"></td>
+                                        <td><input type="text" id="valueChainAssessment" name="valueChainAssessment[]" class="form-control" value="0%" oninput="validateAndUpdatePercentage(this);" onfocus="removeZeroPercentage(this)" onblur="addZeroIfEmptyPercentage(this)"></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label">Forced Labour/Involuntary Labour</th>
-                                        <td><input type="text" id="valueChainAssessment" name="valueChainAssessment[]" class="form-control" value="%" oninput="validateNumericInput(this); updatePercentage(this);"></td>
+                                        <td><input type="text" id="valueChainAssessment" name="valueChainAssessment[]" class="form-control" value="0%" oninput="validateAndUpdatePercentage(this);" onfocus="removeZeroPercentage(this)" onblur="addZeroIfEmptyPercentage(this)"></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label">Wages</th>
-                                        <td><input type="text" id="valueChainAssessment" name="valueChainAssessment[]" class="form-control" value="%" oninput="validateNumericInput(this); updatePercentage(this);"></td>
+                                        <td><input type="text" id="valueChainAssessment" name="valueChainAssessment[]" class="form-control" value="0%" oninput="validateAndUpdatePercentage(this);" onfocus="removeZeroPercentage(this)" onblur="addZeroIfEmptyPercentage(this)"></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label">
                                             Others - please specify
                                             <input type="text" id="valueChainAssessment" name="valueChainAssessmentOthers[]" class="form-control">
                                         </th>
-                                        <td><input type="text" id="valueChainAssessment" name="valueChainAssessmentOthers[]" class="form-control" value="%" oninput="validateNumericInput(this); updatePercentage(this);"></td>
+                                        <td><input type="text" id="valueChainAssessment" name="valueChainAssessmentOthers[]" class="form-control" value="0%" oninput="validateAndUpdatePercentage(this);" onfocus="removeZeroPercentage(this)" onblur="addZeroIfEmptyPercentage(this)"></td>
                                     </tr>
                                 </table>
                                 <div>
@@ -2927,18 +2927,18 @@
                                     </tr>
                                     <tr>
                                         <th class="form-label">Total electricity consumption (A) </th>
-                                        <td><input type="number" value="0" id="energyConsumptionDetails" name="energyConsumptionDetails[]" class="form-control" oninput="calculateSectionTotals1_1()"></td>
-                                        <td><input type="number" value="0" id="energyConsumptionDetails" name="energyConsumptionDetails[]" class="form-control" oninput="calculateSectionTotals1_1()"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="energyConsumptionDetails" name="energyConsumptionDetails[]" class="form-control" oninput="calculateSectionTotals1_1()"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="energyConsumptionDetails" name="energyConsumptionDetails[]" class="form-control" oninput="calculateSectionTotals1_1()"></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label">Total fuel consumption (B) </th>
-                                        <td><input type="number" value="0" id="energyConsumptionDetails" name="energyConsumptionDetails[]" class="form-control" oninput="calculateSectionTotals1_1()"></td>
-                                        <td><input type="number" value="0" id="energyConsumptionDetails" name="energyConsumptionDetails[]" class="form-control" oninput="calculateSectionTotals1_1()"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="energyConsumptionDetails" name="energyConsumptionDetails[]" class="form-control" oninput="calculateSectionTotals1_1()"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="energyConsumptionDetails" name="energyConsumptionDetails[]" class="form-control" oninput="calculateSectionTotals1_1()"></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label">Energy consumption through other sources (C) </th>
-                                        <td><input type="number" value="0" id="energyConsumptionDetails" name="energyConsumptionDetails[]" class="form-control" oninput="calculateSectionTotals1_1()"></td>
-                                        <td><input type="number" value="0" id="energyConsumptionDetails" name="energyConsumptionDetails[]" class="form-control" oninput="calculateSectionTotals1_1()"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="energyConsumptionDetails" name="energyConsumptionDetails[]" class="form-control" oninput="calculateSectionTotals1_1()"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="energyConsumptionDetails" name="energyConsumptionDetails[]" class="form-control" oninput="calculateSectionTotals1_1()"></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label">Total energy consumption (A+B+C) </th>
@@ -2947,13 +2947,13 @@
                                     </tr>
                                     <tr>
                                         <th class="form-label">Energy intensity per rupee of turnover (Total energy consumption/turnover in rupees) </th>
-                                        <td><input type="number" value="0" id="energyConsumptionDetails" name="energyConsumptionDetails[]" class="form-control"></td>
-                                        <td><input type="number" value="0" id="energyConsumptionDetails" name="energyConsumptionDetails[]" class="form-control"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="energyConsumptionDetails" name="energyConsumptionDetails[]" class="form-control"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="energyConsumptionDetails" name="energyConsumptionDetails[]" class="form-control"></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label">Energy intensity (optional) – the relevant metric may be selected by the entity </th>
-                                        <td><input type="number" value="0" id="energyConsumptionDetails" name="energyConsumptionDetails[]" class="form-control"></td>
-                                        <td><input type="number" value="0" id="energyConsumptionDetails" name="energyConsumptionDetails[]" class="form-control"></td>
+                                        <td><input type="text" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="energyConsumptionDetails" name="energyConsumptionDetails[]" class="form-control"></td>
+                                        <td><input type="text" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="energyConsumptionDetails" name="energyConsumptionDetails[]" class="form-control"></td>
                                     </tr>
                                 </table>
                             </div>
@@ -3031,28 +3031,28 @@
                                     </tr>
                                     <tr>
                                         <td align="center" class="form-label">(i) Surface water </th>
-                                        <td><input type="number" value="0" id="waterWithdrawalDetails" name="waterWithdrawalDetails[]" class="form-control" oninput="calculateSectionTotals3_1()"></td>
-                                        <td><input type="number" value="0" id="waterWithdrawalDetails" name="waterWithdrawalDetails[]" class="form-control" oninput="calculateSectionTotals3_1()"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="waterWithdrawalDetails" name="waterWithdrawalDetails[]" class="form-control" oninput="calculateSectionTotals3_1()"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="waterWithdrawalDetails" name="waterWithdrawalDetails[]" class="form-control" oninput="calculateSectionTotals3_1()"></td>
                                     </tr>
                                     <tr>
                                         <td align="center" class="form-label">(ii) Groundwater </th>
-                                        <td><input type="number" value="0" id="waterWithdrawalDetails" name="waterWithdrawalDetails[]" class="form-control" oninput="calculateSectionTotals3_1()"></td>
-                                        <td><input type="number" value="0" id="waterWithdrawalDetails" name="waterWithdrawalDetails[]" class="form-control" oninput="calculateSectionTotals3_1()"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="waterWithdrawalDetails" name="waterWithdrawalDetails[]" class="form-control" oninput="calculateSectionTotals3_1()"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="waterWithdrawalDetails" name="waterWithdrawalDetails[]" class="form-control" oninput="calculateSectionTotals3_1()"></td>
                                     </tr>
                                     <tr>
                                         <td align="center" class="form-label">(iii) Third party water </th>
-                                        <td><input type="number" value="0" id="waterWithdrawalDetails" name="waterWithdrawalDetails[]" class="form-control" oninput="calculateSectionTotals3_1()"></td>
-                                        <td><input type="number" value="0" id="waterWithdrawalDetails" name="waterWithdrawalDetails[]" class="form-control" oninput="calculateSectionTotals3_1()"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="waterWithdrawalDetails" name="waterWithdrawalDetails[]" class="form-control" oninput="calculateSectionTotals3_1()"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="waterWithdrawalDetails" name="waterWithdrawalDetails[]" class="form-control" oninput="calculateSectionTotals3_1()"></td>
                                     </tr>
                                     <tr>
                                         <td align="center" class="form-label">(iv) Seawater/desalinated water </th>
-                                        <td><input type="number" value="0" id="waterWithdrawalDetails" name="waterWithdrawalDetails[]" class="form-control" oninput="calculateSectionTotals3_1()"></td>
-                                        <td><input type="number" value="0" id="waterWithdrawalDetails" name="waterWithdrawalDetails[]" class="form-control" oninput="calculateSectionTotals3_1()"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="waterWithdrawalDetails" name="waterWithdrawalDetails[]" class="form-control" oninput="calculateSectionTotals3_1()"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="waterWithdrawalDetails" name="waterWithdrawalDetails[]" class="form-control" oninput="calculateSectionTotals3_1()"></td>
                                     </tr>
                                     <tr>
                                         <td align="center" class="form-label">(v) Others </th>
-                                        <td><input type="number" value="0" id="waterWithdrawalDetails" name="waterWithdrawalDetails[]" class="form-control" oninput="calculateSectionTotals3_1()"></td>
-                                        <td><input type="number" value="0" id="waterWithdrawalDetails" name="waterWithdrawalDetails[]" class="form-control" oninput="calculateSectionTotals3_1()"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="waterWithdrawalDetails" name="waterWithdrawalDetails[]" class="form-control" oninput="calculateSectionTotals3_1()"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="waterWithdrawalDetails" name="waterWithdrawalDetails[]" class="form-control" oninput="calculateSectionTotals3_1()"></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label">Total volume of water withdrawal (in kilolitres) (i + ii + iii + iv + v) </th>
@@ -3061,18 +3061,18 @@
                                     </tr>
                                     <tr>
                                         <th class="form-label">Total volume of water consumption (in kilolitres) </th>
-                                        <td><input type="number" value="0" id="waterWithdrawalDetails" name="waterWithdrawalDetails[]" class="form-control"></td>
-                                        <td><input type="number" value="0" id="waterWithdrawalDetails" name="waterWithdrawalDetails[]" class="form-control"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="waterWithdrawalDetails" name="waterWithdrawalDetails[]" class="form-control"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="waterWithdrawalDetails" name="waterWithdrawalDetails[]" class="form-control"></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label">Water intensity per rupee of turnover (Water consumed/turnover) </th>
-                                        <td><input type="number" value="0" id="waterWithdrawalDetails" name="waterWithdrawalDetails[]" class="form-control"></td>
-                                        <td><input type="number" value="0" id="waterWithdrawalDetails" name="waterWithdrawalDetails[]" class="form-control"></td>
+                                        <td><input type="text" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="waterWithdrawalDetails" name="waterWithdrawalDetails[]" class="form-control"></td>
+                                        <td><input type="text" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="waterWithdrawalDetails" name="waterWithdrawalDetails[]" class="form-control"></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label">Water intensity - optional </th>
-                                        <td><input type="number" value="0" id="waterWithdrawalDetails" name="waterWithdrawalDetails[]" class="form-control"></td>
-                                        <td><input type="number" value="0" id="waterWithdrawalDetails" name="waterWithdrawalDetails[]" class="form-control"></td>
+                                        <td><input type="text" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="waterWithdrawalDetails" name="waterWithdrawalDetails[]" class="form-control"></td>
+                                        <td><input type="text" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="waterWithdrawalDetails" name="waterWithdrawalDetails[]" class="form-control"></td>
                                     </tr>
                                 </table>
                             </div>
@@ -3368,49 +3368,49 @@
                                     </tr>
                                     <tr>
                                         <th class="form-label">Plastic waste (A) </th>
-                                        <td><input type="number" value="0" id="wasteDetails" name="wasteDetails[]" class="form-control" oninput="calculateSectionTotals8_1()"></td>
-                                        <td><input type="number" value="0" id="wasteDetails" name="wasteDetails[]" class="form-control" oninput="calculateSectionTotals8_1()"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="wasteDetails" name="wasteDetails[]" class="form-control" oninput="calculateSectionTotals8_1()"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="wasteDetails" name="wasteDetails[]" class="form-control" oninput="calculateSectionTotals8_1()"></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label">E-waste (B) </th>
-                                        <td><input type="number" value="0" id="wasteDetails" name="wasteDetails[]" class="form-control" oninput="calculateSectionTotals8_1()"></td>
-                                        <td><input type="number" value="0" id="wasteDetails" name="wasteDetails[]" class="form-control" oninput="calculateSectionTotals8_1()"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="wasteDetails" name="wasteDetails[]" class="form-control" oninput="calculateSectionTotals8_1()"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="wasteDetails" name="wasteDetails[]" class="form-control" oninput="calculateSectionTotals8_1()"></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label">Bio-medical waste (C) </th>
-                                        <td><input type="number" value="0" id="wasteDetails" name="wasteDetails[]" class="form-control" oninput="calculateSectionTotals8_1()"></td>
-                                        <td><input type="number" value="0" id="wasteDetails" name="wasteDetails[]" class="form-control" oninput="calculateSectionTotals8_1()"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="wasteDetails" name="wasteDetails[]" class="form-control" oninput="calculateSectionTotals8_1()"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="wasteDetails" name="wasteDetails[]" class="form-control" oninput="calculateSectionTotals8_1()"></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label">Construction and demolition waste (D) </th>
-                                        <td><input type="number" value="0" id="wasteDetails" name="wasteDetails[]" class="form-control" oninput="calculateSectionTotals8_1()"></td>
-                                        <td><input type="number" value="0" id="wasteDetails" name="wasteDetails[]" class="form-control" oninput="calculateSectionTotals8_1()"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="wasteDetails" name="wasteDetails[]" class="form-control" oninput="calculateSectionTotals8_1()"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="wasteDetails" name="wasteDetails[]" class="form-control" oninput="calculateSectionTotals8_1()"></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label">Battery waste (E) </th>
-                                        <td><input type="number" value="0" id="wasteDetails" name="wasteDetails[]" class="form-control" oninput="calculateSectionTotals8_1()"></td>
-                                        <td><input type="number" value="0" id="wasteDetails" name="wasteDetails[]" class="form-control" oninput="calculateSectionTotals8_1()"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="wasteDetails" name="wasteDetails[]" class="form-control" oninput="calculateSectionTotals8_1()"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="wasteDetails" name="wasteDetails[]" class="form-control" oninput="calculateSectionTotals8_1()"></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label">Radioactive waste (F) </th>
-                                        <td><input type="number" value="0" id="wasteDetails" name="wasteDetails[]" class="form-control" oninput="calculateSectionTotals8_1()"></td>
-                                        <td><input type="number" value="0" id="wasteDetails" name="wasteDetails[]" class="form-control" oninput="calculateSectionTotals8_1()"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="wasteDetails" name="wasteDetails[]" class="form-control" oninput="calculateSectionTotals8_1()"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="wasteDetails" name="wasteDetails[]" class="form-control" oninput="calculateSectionTotals8_1()"></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label">
                                             Other hazardous waste - please specify if any (G)
                                             <input type="text" id="wasteDetails" name="wasteDetails[]" class="form-control">
                                         </th>
-                                        <td><input type="number" value="0" id="wasteDetails" name="wasteDetails[]" class="form-control" oninput="calculateSectionTotals8_1()"></td>
-                                        <td><input type="number" value="0" id="wasteDetails" name="wasteDetails[]" class="form-control" oninput="calculateSectionTotals8_1()"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="wasteDetails" name="wasteDetails[]" class="form-control" oninput="calculateSectionTotals8_1()"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="wasteDetails" name="wasteDetails[]" class="form-control" oninput="calculateSectionTotals8_1()"></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label">
                                             Other Non-hazardous waste - please specify if any (H) 
                                             <input type="text" id="wasteDetails" name="wasteDetails[]" class="form-control">
                                         </th>
-                                        <td><input type="number" value="0" id="wasteDetails" name="wasteDetails[]" class="form-control" oninput="calculateSectionTotals8_1()"></td>
-                                        <td><input type="number" value="0" id="wasteDetails" name="wasteDetails[]" class="form-control" oninput="calculateSectionTotals8_1()"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="wasteDetails" name="wasteDetails[]" class="form-control" oninput="calculateSectionTotals8_1()"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="wasteDetails" name="wasteDetails[]" class="form-control" oninput="calculateSectionTotals8_1()"></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label">Total (A + B + C + D + E + F + G + H) </th>
@@ -3425,18 +3425,18 @@
                                     </tr>
                                     <tr>
                                         <td class="form-label">(i) Recycled </th>
-                                        <td><input type="number" value="0" id="wasteDetails" name="wasteDetails[]" class="form-control" oninput="calculateSectionTotals8_1()"></td>
-                                        <td><input type="number" value="0" id="wasteDetails" name="wasteDetails[]" class="form-control" oninput="calculateSectionTotals8_1()"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="wasteDetails" name="wasteDetails[]" class="form-control" oninput="calculateSectionTotals8_1()"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="wasteDetails" name="wasteDetails[]" class="form-control" oninput="calculateSectionTotals8_1()"></td>
                                     </tr>
                                     <tr>
                                         <td class="form-label">(ii) Re-used </th>
-                                        <td><input type="number" value="0" id="wasteDetails" name="wasteDetails[]" class="form-control" oninput="calculateSectionTotals8_1()"></td>
-                                        <td><input type="number" value="0" id="wasteDetails" name="wasteDetails[]" class="form-control" oninput="calculateSectionTotals8_1()"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="wasteDetails" name="wasteDetails[]" class="form-control" oninput="calculateSectionTotals8_1()"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="wasteDetails" name="wasteDetails[]" class="form-control" oninput="calculateSectionTotals8_1()"></td>
                                     </tr>
                                     <tr>
                                         <td class="form-label">(iii) Other recovery operations </th>
-                                        <td><input type="number" value="0" id="wasteDetails" name="wasteDetails[]" class="form-control" oninput="calculateSectionTotals8_1()"></td>
-                                        <td><input type="number" value="0" id="wasteDetails" name="wasteDetails[]" class="form-control" oninput="calculateSectionTotals8_1()"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="wasteDetails" name="wasteDetails[]" class="form-control" oninput="calculateSectionTotals8_1()"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="wasteDetails" name="wasteDetails[]" class="form-control" oninput="calculateSectionTotals8_1()"></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label" align="left">Total </th>
@@ -3451,18 +3451,18 @@
                                     </tr>
                                     <tr>
                                         <td class="form-label">(i) Incineration </th>
-                                        <td><input type="number" value="0" id="wasteDetails" name="wasteDetails[]" class="form-control" oninput="calculateSectionTotals8_1()"></td>
-                                        <td><input type="number" value="0" id="wasteDetails" name="wasteDetails[]" class="form-control" oninput="calculateSectionTotals8_1()"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="wasteDetails" name="wasteDetails[]" class="form-control" oninput="calculateSectionTotals8_1()"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="wasteDetails" name="wasteDetails[]" class="form-control" oninput="calculateSectionTotals8_1()"></td>
                                     </tr>
                                     <tr>
                                         <td class="form-label">(ii) Landfilling </th>
-                                        <td><input type="number" value="0" id="wasteDetails" name="wasteDetails[]" class="form-control" oninput="calculateSectionTotals8_1()"></td>
-                                        <td><input type="number" value="0" id="wasteDetails" name="wasteDetails[]" class="form-control" oninput="calculateSectionTotals8_1()"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="wasteDetails" name="wasteDetails[]" class="form-control" oninput="calculateSectionTotals8_1()"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="wasteDetails" name="wasteDetails[]" class="form-control" oninput="calculateSectionTotals8_1()"></td>
                                     </tr>
                                     <tr>
                                         <td class="form-label">(iii) Other disposal operations </th>
-                                        <td><input type="number" value="0" id="wasteDetails" name="wasteDetails[]" class="form-control" oninput="calculateSectionTotals8_1()"></td>
-                                        <td><input type="number" value="0" id="wasteDetails" name="wasteDetails[]" class="form-control" oninput="calculateSectionTotals8_1()"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="wasteDetails" name="wasteDetails[]" class="form-control" oninput="calculateSectionTotals8_1()"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="wasteDetails" name="wasteDetails[]" class="form-control" oninput="calculateSectionTotals8_1()"></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label" align="left">Total </th>
@@ -3671,18 +3671,18 @@
                                     </tr>
                                     <tr>
                                         <td class="form-label">Total electricity consumption (A) </th>
-                                        <td><input type="number" value="0" id="totalenergyconsumed" name="totalenergyconsumed[]" class="form-control" oninput="calculateSectionTotalsL1_1()"></td>
-                                        <td><input type="number" value="0" id="totalenergyconsumed" name="totalenergyconsumed[]" class="form-control" oninput="calculateSectionTotalsL1_1()"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="totalenergyconsumed" name="totalenergyconsumed[]" class="form-control" oninput="calculateSectionTotalsL1_1()"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="totalenergyconsumed" name="totalenergyconsumed[]" class="form-control" oninput="calculateSectionTotalsL1_1()"></td>
                                     </tr>
                                     <tr>
                                         <td class="form-label">Total fuel consumption (B) </th>
-                                        <td><input type="number" value="0" id="totalenergyconsumed" name="totalenergyconsumed[]" class="form-control" oninput="calculateSectionTotalsL1_1()"></td>
-                                        <td><input type="number" value="0" id="totalenergyconsumed" name="totalenergyconsumed[]" class="form-control" oninput="calculateSectionTotalsL1_1()"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="totalenergyconsumed" name="totalenergyconsumed[]" class="form-control" oninput="calculateSectionTotalsL1_1()"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="totalenergyconsumed" name="totalenergyconsumed[]" class="form-control" oninput="calculateSectionTotalsL1_1()"></td>
                                     </tr>
                                     <tr>
                                         <td class="form-label">Energy consumption through other sources (C) </th>
-                                        <td><input type="number" value="0" id="totalenergyconsumed" name="totalenergyconsumed[]" class="form-control" oninput="calculateSectionTotalsL1_1()"></td>
-                                        <td><input type="number" value="0" id="totalenergyconsumed" name="totalenergyconsumed[]" class="form-control" oninput="calculateSectionTotalsL1_1()"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="totalenergyconsumed" name="totalenergyconsumed[]" class="form-control" oninput="calculateSectionTotalsL1_1()"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="totalenergyconsumed" name="totalenergyconsumed[]" class="form-control" oninput="calculateSectionTotalsL1_1()"></td>
                                     </tr>
                                     <tr>
                                         <td class="form-label">Total energy consumed from renewable sources (A + B + C) </th>
@@ -3694,18 +3694,18 @@
                                     </tr>
                                     <tr>
                                         <td class="form-label">Total electricity consumption (D) </th>
-                                        <td><input type="number" value="0" id="totalenergyconsumed" name="totalenergyconsumed[]" class="form-control" oninput="calculateSectionTotalsL1_1()"></td>
-                                        <td><input type="number" value="0" id="totalenergyconsumed" name="totalenergyconsumed[]" class="form-control" oninput="calculateSectionTotalsL1_1()"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="totalenergyconsumed" name="totalenergyconsumed[]" class="form-control" oninput="calculateSectionTotalsL1_1()"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="totalenergyconsumed" name="totalenergyconsumed[]" class="form-control" oninput="calculateSectionTotalsL1_1()"></td>
                                     </tr>
                                     <tr>
                                         <td class="form-label">Total fuel consumption (E) </th>
-                                        <td><input type="number" value="0" id="totalenergyconsumed" name="totalenergyconsumed[]" class="form-control" oninput="calculateSectionTotalsL1_1()"></td>
-                                        <td><input type="number" value="0" id="totalenergyconsumed" name="totalenergyconsumed[]" class="form-control" oninput="calculateSectionTotalsL1_1()"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="totalenergyconsumed" name="totalenergyconsumed[]" class="form-control" oninput="calculateSectionTotalsL1_1()"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="totalenergyconsumed" name="totalenergyconsumed[]" class="form-control" oninput="calculateSectionTotalsL1_1()"></td>
                                     </tr>
                                     <tr>
                                         <td class="form-label">Energy consumption through other sources (F) </th>
-                                        <td><input type="number" value="0" id="totalenergyconsumed" name="totalenergyconsumed[]" class="form-control" oninput="calculateSectionTotalsL1_1()"></td>
-                                        <td><input type="number" value="0" id="totalenergyconsumed" name="totalenergyconsumed[]" class="form-control" oninput="calculateSectionTotalsL1_1()"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="totalenergyconsumed" name="totalenergyconsumed[]" class="form-control" oninput="calculateSectionTotalsL1_1()"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="totalenergyconsumed" name="totalenergyconsumed[]" class="form-control" oninput="calculateSectionTotalsL1_1()"></td>
                                     </tr>
                                     <tr>
                                         <td class="form-label">Total energy consumed from non-renewable sources (D + E + F) </th>
@@ -3769,16 +3769,16 @@
                                     </tr>
                                     <tr>
                                         <td class="form-label"> - No treatment </th>
-                                        <td><input type="number" value="0" id="waterdischarged" name="waterdischarged[]" class="form-control" oninput="calculateSectionTotalsL2_1()"></td>
-                                        <td><input type="number" value="0" id="waterdischarged" name="waterdischarged[]" class="form-control" oninput="calculateSectionTotalsL2_1()"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="waterdischarged" name="waterdischarged[]" class="form-control" oninput="calculateSectionTotalsL2_1()"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="waterdischarged" name="waterdischarged[]" class="form-control" oninput="calculateSectionTotalsL2_1()"></td>
                                     </tr>
                                     <tr>
                                         <td class="form-label">
                                             - With treatment - please specify level of treatment
                                             <input type="text" id="waterdischarged" name="waterdischarged[]" class="form-control">
                                         </td>
-                                        <td><input type="number" value="0" id="waterdischarged" name="waterdischarged[]" class="form-control" oninput="calculateSectionTotalsL2_1()"></td>
-                                        <td><input type="number" value="0" id="waterdischarged" name="waterdischarged[]" class="form-control" oninput="calculateSectionTotalsL2_1()"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="waterdischarged" name="waterdischarged[]" class="form-control" oninput="calculateSectionTotalsL2_1()"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="waterdischarged" name="waterdischarged[]" class="form-control" oninput="calculateSectionTotalsL2_1()"></td>
                                     </tr>
                                     <tr>
                                         <td class="form-label">(ii) To Groundwater </th>
@@ -3787,16 +3787,16 @@
                                     </tr>
                                     <tr>
                                         <td class="form-label"> - No treatment </th>
-                                        <td><input type="number" value="0" id="waterdischarged" name="waterdischarged[]" class="form-control" oninput="calculateSectionTotalsL2_1()"></td>
-                                        <td><input type="number" value="0" id="waterdischarged" name="waterdischarged[]" class="form-control" oninput="calculateSectionTotalsL2_1()"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="waterdischarged" name="waterdischarged[]" class="form-control" oninput="calculateSectionTotalsL2_1()"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="waterdischarged" name="waterdischarged[]" class="form-control" oninput="calculateSectionTotalsL2_1()"></td>
                                     </tr>
                                     <tr>
                                         <td class="form-label">
                                             - With treatment - please specify level of treatment
                                             <input type="text" id="waterdischarged" name="waterdischarged[]" class="form-control">
                                         </td>
-                                        <td><input type="number" value="0" id="waterdischarged" name="waterdischarged[]" class="form-control" oninput="calculateSectionTotalsL2_1()"></td>
-                                        <td><input type="number" value="0" id="waterdischarged" name="waterdischarged[]" class="form-control" oninput="calculateSectionTotalsL2_1()"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="waterdischarged" name="waterdischarged[]" class="form-control" oninput="calculateSectionTotalsL2_1()"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="waterdischarged" name="waterdischarged[]" class="form-control" oninput="calculateSectionTotalsL2_1()"></td>
                                     </tr>
                                     <tr>
                                         <td class="form-label">(iii) To Seawater </th>
@@ -3805,16 +3805,16 @@
                                     </tr>
                                     <tr>
                                         <td class="form-label"> - No treatment </th>
-                                        <td><input type="number" value="0" id="waterdischarged" name="waterdischarged[]" class="form-control" oninput="calculateSectionTotalsL2_1()"></td>
-                                        <td><input type="number" value="0" id="waterdischarged" name="waterdischarged[]" class="form-control" oninput="calculateSectionTotalsL2_1()"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="waterdischarged" name="waterdischarged[]" class="form-control" oninput="calculateSectionTotalsL2_1()"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="waterdischarged" name="waterdischarged[]" class="form-control" oninput="calculateSectionTotalsL2_1()"></td>
                                     </tr>
                                     <tr>
                                         <td class="form-label">
                                             - With treatment - please specify level of treatment
                                             <input type="text" id="waterdischarged" name="waterdischarged[]" class="form-control">
                                         </td>
-                                        <td><input type="number" value="0" id="waterdischarged" name="waterdischarged[]" class="form-control" oninput="calculateSectionTotalsL2_1()"></td>
-                                        <td><input type="number" value="0" id="waterdischarged" name="waterdischarged[]" class="form-control" oninput="calculateSectionTotalsL2_1()"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="waterdischarged" name="waterdischarged[]" class="form-control" oninput="calculateSectionTotalsL2_1()"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="waterdischarged" name="waterdischarged[]" class="form-control" oninput="calculateSectionTotalsL2_1()"></td>
                                     </tr>
                                     <tr>
                                         <td class="form-label">(iv) Sent to third-parties </th>
@@ -3823,16 +3823,16 @@
                                     </tr>
                                     <tr>
                                         <td class="form-label"> - No treatment </th>
-                                        <td><input type="number" value="0" id="waterdischarged" name="waterdischarged[]" class="form-control" oninput="calculateSectionTotalsL2_1()"></td>
-                                        <td><input type="number" value="0" id="waterdischarged" name="waterdischarged[]" class="form-control" oninput="calculateSectionTotalsL2_1()"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="waterdischarged" name="waterdischarged[]" class="form-control" oninput="calculateSectionTotalsL2_1()"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="waterdischarged" name="waterdischarged[]" class="form-control" oninput="calculateSectionTotalsL2_1()"></td>
                                     </tr>
                                     <tr>
                                         <td class="form-label">
                                             - With treatment - please specify level of treatment
                                             <input type="text" id="waterdischarged" name="waterdischarged[]" class="form-control">
                                         </td>
-                                        <td><input type="number" value="0" id="waterdischarged" name="waterdischarged[]" class="form-control" oninput="calculateSectionTotalsL2_1()"></td>
-                                        <td><input type="number" value="0" id="waterdischarged" name="waterdischarged[]" class="form-control" oninput="calculateSectionTotalsL2_1()"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="waterdischarged" name="waterdischarged[]" class="form-control" oninput="calculateSectionTotalsL2_1()"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="waterdischarged" name="waterdischarged[]" class="form-control" oninput="calculateSectionTotalsL2_1()"></td>
                                     </tr>
                                     <tr>
                                         <td class="form-label">(v) Others </th>
@@ -3841,16 +3841,16 @@
                                     </tr>
                                     <tr>
                                         <td class="form-label"> - No treatment </th>
-                                        <td><input type="number" value="0" id="waterdischarged" name="waterdischarged[]" class="form-control" oninput="calculateSectionTotalsL2_1()"></td>
-                                        <td><input type="number" value="0" id="waterdischarged" name="waterdischarged[]" class="form-control" oninput="calculateSectionTotalsL2_1()"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="waterdischarged" name="waterdischarged[]" class="form-control" oninput="calculateSectionTotalsL2_1()"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="waterdischarged" name="waterdischarged[]" class="form-control" oninput="calculateSectionTotalsL2_1()"></td>
                                     </tr>
                                     <tr>
                                         <td class="form-label">
                                             - With treatment - please specify level of treatment
                                             <input type="text" id="waterdischarged" name="waterdischarged[]" class="form-control">
                                         </td>
-                                        <td><input type="number" value="0" id="waterdischarged" name="waterdischarged[]" class="form-control" oninput="calculateSectionTotalsL2_1()"></td>
-                                        <td><input type="number" value="0" id="waterdischarged" name="waterdischarged[]" class="form-control" oninput="calculateSectionTotalsL2_1()"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="waterdischarged" name="waterdischarged[]" class="form-control" oninput="calculateSectionTotalsL2_1()"></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="waterdischarged" name="waterdischarged[]" class="form-control" oninput="calculateSectionTotalsL2_1()"></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label" align="left">Total water discharged (in kilolitres) </th>
@@ -3926,28 +3926,28 @@
                                             </tr>
                                             <tr>
                                                 <td class="form-label">(i) Surface water </td>
-                                                <td><input type="number" value="0" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
-                                                <td><input type="number" value="0" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
+                                                <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
+                                                <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
                                             </tr>
                                             <tr>
                                                 <td class="form-label">(ii) Groundwater </td>
-                                                <td><input type="number" value="0" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
-                                                <td><input type="number" value="0" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
+                                                <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
+                                                <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
                                             </tr>
                                             <tr>
                                                 <td class="form-label">(iii) Third party water </td>
-                                                <td><input type="number" value="0" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
-                                                <td><input type="number" value="0" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
+                                                <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
+                                                <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
                                             </tr>
                                             <tr>
                                                 <td class="form-label">(iv) Seawater/Desalinated water </td>
-                                                <td><input type="number" value="0" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
-                                                <td><input type="number" value="0" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
+                                                <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
+                                                <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
                                             </tr>
                                             <tr>
                                                 <td class="form-label">(v) Others </td>
-                                                <td><input type="number" value="0" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
-                                                <td><input type="number" value="0" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
+                                                <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
+                                                <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
                                             </tr>
                                             <tr>
                                                 <th class="form-label">Total volume of water withdrawal (in kilolitres) </th>
@@ -3956,18 +3956,18 @@
                                             </tr>
                                             <tr>
                                                 <th class="form-label">Total volume of water consumption (in kilolitres) </th>
-                                                <td><input type="number" value="0" id="waterstress" name="waterstress[]" class="form-control"></td>
-                                                <td><input type="number" value="0" id="waterstress" name="waterstress[]" class="form-control"></td>
+                                                <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="waterstress" name="waterstress[]" class="form-control"></td>
+                                                <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="waterstress" name="waterstress[]" class="form-control"></td>
                                             </tr>
                                             <tr>
                                                 <th class="form-label">Water intensity per rupee of turnover (Water consumed/turnover) </th>
-                                                <td><input type="number" value="0" id="waterstress" name="waterstress[]" class="form-control"></td>
-                                                <td><input type="number" value="0" id="waterstress" name="waterstress[]" class="form-control"></td>
+                                                <td><input type="text" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="waterstress" name="waterstress[]" class="form-control"></td>
+                                                <td><input type="text" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="waterstress" name="waterstress[]" class="form-control"></td>
                                             </tr>
                                             <tr>
                                                 <th class="form-label">Water intensity (optional) </th>
-                                                <td><input type="number" value="0" id="waterstress" name="waterstress[]" class="form-control"></td>
-                                                <td><input type="number" value="0" id="waterstress" name="waterstress[]" class="form-control"></td>
+                                                <td><input type="text" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="waterstress" name="waterstress[]" class="form-control"></td>
+                                                <td><input type="text" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="waterstress" name="waterstress[]" class="form-control"></td>
                                             </tr>
                                             <tr>
                                                 <th colspan="3" class="form-label" align="left">Water discharge by destination and level of treatment (in kilolitres) </th>
@@ -3979,16 +3979,16 @@
                                             </tr>
                                             <tr>
                                                 <td class="form-label"> - No treatment </td>
-                                                <td><input type="number" value="0" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
-                                                <td><input type="number" value="0" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
+                                                <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
+                                                <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
                                             </tr>
                                             <tr>
                                                 <td class="form-label">
                                                     - With treatment - please specify level of treatment
                                                     <input type="text" id="waterstress" name="waterstress[]" class="form-control">
                                                 </td>
-                                                <td><input type="number" value="0" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
-                                                <td><input type="number" value="0" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
+                                                <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
+                                                <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
                                             </tr>
                                             <tr>
                                                 <td class="form-label">(ii) Into Ground water </td>
@@ -3997,16 +3997,16 @@
                                             </tr>
                                             <tr>
                                                 <td class="form-label"> - No treatment </td>
-                                                <td><input type="number" value="0" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
-                                                <td><input type="number" value="0" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
+                                                <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
+                                                <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
                                             </tr>
                                             <tr>
                                                 <td class="form-label">
                                                     - With treatment - please specify level of treatment
                                                     <input type="text" id="waterstress" name="waterstress[]" class="form-control">
                                                 </td>
-                                                <td><input type="number" value="0" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
-                                                <td><input type="number" value="0" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
+                                                <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
+                                                <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
                                             </tr>
                                             <tr>
                                                 <td class="form-label">(iii) Into Seawater </td>
@@ -4015,16 +4015,16 @@
                                             </tr>
                                             <tr>
                                                 <td class="form-label"> - No treatment </td>
-                                                <td><input type="number" value="0" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
-                                                <td><input type="number" value="0" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
+                                                <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
+                                                <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
                                             </tr>
                                             <tr>
                                                 <td class="form-label">
                                                     - With treatment - please specify level of treatment
                                                     <input type="text" id="waterstress" name="waterstress[]" class="form-control">
                                                 </td>
-                                                <td><input type="number" value="0" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
-                                                <td><input type="number" value="0" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
+                                                <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
+                                                <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
                                             </tr>
                                             <tr>
                                                 <td class="form-label">(iv) Sent to third parties </td>
@@ -4033,16 +4033,16 @@
                                             </tr>
                                             <tr>
                                                 <td class="form-label"> - No treatment </td>
-                                                <td><input type="number" value="0" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
-                                                <td><input type="number" value="0" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
+                                                <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
+                                                <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
                                             </tr>
                                             <tr>
                                                 <td class="form-label">
                                                     - With treatment - please specify level of treatment
                                                     <input type="text" id="waterstress" name="waterstress[]" class="form-control">
                                                 </td>
-                                                <td><input type="number" value="0" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
-                                                <td><input type="number" value="0" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
+                                                <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
+                                                <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
                                             </tr>
                                             <tr>
                                                 <td class="form-label">(v) Others </td>
@@ -4051,16 +4051,16 @@
                                             </tr>
                                             <tr>
                                                 <td class="form-label"> - No treatment </td>
-                                                <td><input type="number" value="0" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
-                                                <td><input type="number" value="0" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
+                                                <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
+                                                <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
                                             </tr>
                                             <tr>
                                                 <td class="form-label">
                                                     - With treatment - please specify level of treatment
                                                     <input type="text" id="waterstress" name="waterstress[]" class="form-control">
                                                 </td>
-                                                <td><input type="number" value="0" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
-                                                <td><input type="number" value="0" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
+                                                <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
+                                                <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="waterstress" name="waterstress[]" class="form-control" oninput="calculateSectionTotalsL3_1()"></td>
                                             </tr>
                                             <tr>
                                                 <th class="form-label">Total water discharged (in kilolitres) </th>
@@ -4584,7 +4584,7 @@
                                             <td><input type="text" id="rehabilitationProject" name="rehabilitationProject[]" class="form-control" ></td>
                                             <td><input type="text" id="rehabilitationProject" name="rehabilitationProject[]" class="form-control" ></td>
                                             <td><input type="text" id="rehabilitationProject" name="rehabilitationProject[]" class="form-control" ></td>
-                                            <td><input type="text" id="rehabilitationProject" name="rehabilitationProject[]" class="form-control" value="%" oninput="validateNumericInput(this); updatePercentage(this);"></td>
+                                            <td><input type="text" id="rehabilitationProject" name="rehabilitationProject[]" class="form-control" value="0%" oninput="validateAndUpdatePercentage(this);" onfocus="removeZeroPercentage(this)" onblur="addZeroIfEmptyPercentage(this)"></td>
                                             <td><input type="text" id="rehabilitationProject" name="rehabilitationProject[]" class="form-control" ></td>
                                         </tr>
                                     </tbody>
@@ -4722,7 +4722,7 @@
                                             <td style="width:5%;"><input type="number" id="csrAspirationalDistricts" id="csrAspirationalDistricts" name="csrAspirationalDistricts[]" class="table-control" required value="1" readonly></td>
                                             <td><input type="text" id="csrAspirationalDistricts" name="csrAspirationalDistricts[]" class="form-control" ></td>
                                             <td><input type="text" id="csrAspirationalDistricts" name="csrAspirationalDistricts[]" class="form-control" ></td>
-                                            <td><input type="number" id="csrAspirationalDistricts" name="csrAspirationalDistricts[]" class="form-control amount-input" value="0" oninput="calculateAmount()"></td>
+                                            <td><input type="number" id="csrAspirationalDistricts" name="csrAspirationalDistricts[]" class="form-control amount-input" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" oninput="calculateAmount()"></td>
                                             <td><input type="text" id="csrAspirationalDistricts" name="csrAspirationalDistricts[]" class="form-control"></td>
                                         </tr>
                                     </tbody>
@@ -4893,7 +4893,7 @@
                                             <td style="width:5%;"><input type="number" id="csrProjectBeneficiaries" id="p_csrProjectBeneficiaries" name="intellectualPropertiesBenefits[]" class="table-control" required value="1" readonly></td>
                                             <td><input type="text" id="csrProjectBeneficiaries" name="csrProjectBeneficiaries[]" class="form-control" required></td>
                                             <td><input type="text" id="csrProjectBeneficiaries" name="csrProjectBeneficiaries[]" class="form-control" required></td>
-                                            <td><input type="text" id="csrProjectBeneficiaries" name="csrProjectBeneficiaries[]" class="form-control" value="%" oninput="validateNumericInput(this); updatePercentage(this);" required></td>
+                                            <td><input type="text" id="csrProjectBeneficiaries" name="csrProjectBeneficiaries[]" class="form-control" value="0%" oninput="validateAndUpdatePercentage(this);" onfocus="removeZeroPercentage(this)" onblur="addZeroIfEmptyPercentage(this)" required></td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -4967,15 +4967,15 @@
                                     </tr>
                                     <tr>
                                         <th class="form-label">Environmental and social parameters relevant to the product</th>
-                                        <td><input type="text" id="productTurnover" name="productTurnover[]" class="form-control" value="%" oninput="validateNumericInput(this); updatePercentage(this);"></td>
+                                        <td><input type="text" id="productTurnover" name="productTurnover[]" class="form-control" value="0%" oninput="validateAndUpdatePercentage(this);" onfocus="removeZeroPercentage(this)" onblur="addZeroIfEmptyPercentage(this)"></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label">Safe and responsible usage</th>
-                                        <td><input type="text" id="productTurnover" name="productTurnover[]" class="form-control" value="%" oninput="validateNumericInput(this); updatePercentage(this);"></td>
+                                        <td><input type="text" id="productTurnover" name="productTurnover[]" class="form-control" value="0%" oninput="validateAndUpdatePercentage(this);" onfocus="removeZeroPercentage(this)" onblur="addZeroIfEmptyPercentage(this)"></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label">Recycling and/or safe disposal</th>
-                                        <td><input type="text" id="productTurnover" name="productTurnover[]" class="form-control" value="%" oninput="validateNumericInput(this); updatePercentage(this);"></td>
+                                        <td><input type="text" id="productTurnover" name="productTurnover[]" class="form-control" value="0%" oninput="validateAndUpdatePercentage(this);" onfocus="removeZeroPercentage(this)" onblur="addZeroIfEmptyPercentage(this)"></td>
                                     </tr>
                                 </table>
                             </div>
@@ -5012,65 +5012,65 @@
                                     </tr>
                                     <tr>
                                         <th class="form-label" id="consumerComplaints" name="consumerComplaints[]">Data privacy</th>
-                                        <td><input type="number" value="0" id="consumerComplaints" name="consumerComplaints[]" class="form-control" ></td>
-                                        <td><input type="number" value="0" id="consumerComplaints" name="consumerComplaints[]" class="form-control" ></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="consumerComplaints" name="consumerComplaints[]" class="form-control" ></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="consumerComplaints" name="consumerComplaints[]" class="form-control" ></td>
                                         <td><input type="text" id="consumerComplaints" name="consumerComplaints[]" class="form-control" ></td>
-                                        <td><input type="number" value="0" id="consumerComplaints" name="consumerComplaints[]" class="form-control" ></td>
-                                        <td><input type="number" value="0" id="consumerComplaints" name="consumerComplaints[]" class="form-control" ></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="consumerComplaints" name="consumerComplaints[]" class="form-control" ></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="consumerComplaints" name="consumerComplaints[]" class="form-control" ></td>
                                         <td><input type="text" id="consumerComplaints" name="consumerComplaints[]" class="form-control" ></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label" id="consumerComplaints" name="consumerComplaints[]">Advertising</th>
-                                        <td><input type="number" value="0" id="consumerComplaints" name="consumerComplaints[]" class="form-control" ></td>
-                                        <td><input type="number" value="0" id="consumerComplaints" name="consumerComplaints[]" class="form-control" ></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="consumerComplaints" name="consumerComplaints[]" class="form-control" ></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="consumerComplaints" name="consumerComplaints[]" class="form-control" ></td>
                                         <td><input type="text" id="consumerComplaints" name="consumerComplaints[]" class="form-control" ></td>
-                                        <td><input type="number" value="0" id="consumerComplaints" name="consumerComplaints[]" class="form-control" ></td>
-                                        <td><input type="number" value="0" id="consumerComplaints" name="consumerComplaints[]" class="form-control" ></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="consumerComplaints" name="consumerComplaints[]" class="form-control" ></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="consumerComplaints" name="consumerComplaints[]" class="form-control" ></td>
                                         <td><input type="text" id="consumerComplaints" name="consumerComplaints[]" class="form-control" ></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label" id="consumerComplaints" name="consumerComplaints[]">Cyber-security</th>
-                                        <td><input type="number" value="0" id="consumerComplaints" name="consumerComplaints[]" class="form-control" ></td>
-                                        <td><input type="number" value="0" id="consumerComplaints" name="consumerComplaints[]" class="form-control" ></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="consumerComplaints" name="consumerComplaints[]" class="form-control" ></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="consumerComplaints" name="consumerComplaints[]" class="form-control" ></td>
                                         <td><input type="text" id="consumerComplaints" name="consumerComplaints[]" class="form-control" ></td>
-                                        <td><input type="number" value="0" id="consumerComplaints" name="consumerComplaints[]" class="form-control" ></td>
-                                        <td><input type="number" value="0" id="consumerComplaints" name="consumerComplaints[]" class="form-control" ></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="consumerComplaints" name="consumerComplaints[]" class="form-control" ></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="consumerComplaints" name="consumerComplaints[]" class="form-control" ></td>
                                         <td><input type="text" id="consumerComplaints" name="consumerComplaints[]" class="form-control" ></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label" id="consumerComplaints" name="consumerComplaints[]">Delivery of essential services</th>
-                                        <td><input type="number" value="0" id="consumerComplaints" name="consumerComplaints[]" class="form-control" ></td>
-                                        <td><input type="number" value="0" id="consumerComplaints" name="consumerComplaints[]" class="form-control" ></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="consumerComplaints" name="consumerComplaints[]" class="form-control" ></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="consumerComplaints" name="consumerComplaints[]" class="form-control" ></td>
                                         <td><input type="text" id="consumerComplaints" name="consumerComplaints[]" class="form-control" ></td>
-                                        <td><input type="number" value="0" id="consumerComplaints" name="consumerComplaints[]" class="form-control" ></td>
-                                        <td><input type="number" value="0" id="consumerComplaints" name="consumerComplaints[]" class="form-control" ></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="consumerComplaints" name="consumerComplaints[]" class="form-control" ></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="consumerComplaints" name="consumerComplaints[]" class="form-control" ></td>
                                         <td><input type="text" id="consumerComplaints" name="consumerComplaints[]" class="form-control" ></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label" id="consumerComplaints" name="consumerComplaints[]">Restrictive Trade Practices</th>
-                                        <td><input type="number" value="0" id="consumerComplaints" name="consumerComplaints[]" class="form-control" ></td>
-                                        <td><input type="number" value="0" id="consumerComplaints" name="consumerComplaints[]" class="form-control" ></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="consumerComplaints" name="consumerComplaints[]" class="form-control" ></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="consumerComplaints" name="consumerComplaints[]" class="form-control" ></td>
                                         <td><input type="text" id="consumerComplaints" name="consumerComplaints[]" class="form-control" ></td>
-                                        <td><input type="number" value="0" id="consumerComplaints" name="consumerComplaints[]" class="form-control" ></td>
-                                        <td><input type="number" value="0" id="consumerComplaints" name="consumerComplaints[]" class="form-control" ></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="consumerComplaints" name="consumerComplaints[]" class="form-control" ></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="consumerComplaints" name="consumerComplaints[]" class="form-control" ></td>
                                         <td><input type="text" id="consumerComplaints" name="consumerComplaints[]" class="form-control" ></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label" id="consumerComplaints" name="consumerComplaints[]">Unfair Trade Practices</th>
-                                        <td><input type="number" value="0" id="consumerComplaints" name="consumerComplaints[]" class="form-control" ></td>
-                                        <td><input type="number" value="0" id="consumerComplaints" name="consumerComplaints[]" class="form-control" ></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="consumerComplaints" name="consumerComplaints[]" class="form-control" ></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="consumerComplaints" name="consumerComplaints[]" class="form-control" ></td>
                                         <td><input type="text" id="consumerComplaints" name="consumerComplaints[]" class="form-control" ></td>
-                                        <td><input type="number" value="0" id="consumerComplaints" name="consumerComplaints[]" class="form-control" ></td>
-                                        <td><input type="number" value="0" id="consumerComplaints" name="consumerComplaints[]" class="form-control" ></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="consumerComplaints" name="consumerComplaints[]" class="form-control" ></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="consumerComplaints" name="consumerComplaints[]" class="form-control" ></td>
                                         <td><input type="text" id="consumerComplaints" name="consumerComplaints[]" class="form-control" ></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label" id="consumerComplaints" name="consumerComplaints[]">Other </th>
-                                        <td><input type="number" value="0" id="consumerComplaints" name="consumerComplaints[]" class="form-control" ></td>
-                                        <td><input type="number" value="0" id="consumerComplaints" name="consumerComplaints[]" class="form-control" ></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="consumerComplaints" name="consumerComplaints[]" class="form-control" ></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="consumerComplaints" name="consumerComplaints[]" class="form-control" ></td>
                                         <td><input type="text" id="consumerComplaints" name="consumerComplaints[]" class="form-control" ></td>
-                                        <td><input type="number" value="0" id="consumerComplaints" name="consumerComplaints[]" class="form-control" ></td>
-                                        <td><input type="number" value="0" id="consumerComplaints" name="consumerComplaints[]" class="form-control" ></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="consumerComplaints" name="consumerComplaints[]" class="form-control" ></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="consumerComplaints" name="consumerComplaints[]" class="form-control" ></td>
                                         <td><input type="text" id="consumerComplaints" name="consumerComplaints[]" class="form-control" ></td>
                                     </tr>
                                 </table>
@@ -5098,12 +5098,12 @@
                                     </tr>
                                     <tr>
                                         <th class="form-label">Voluntary recalls</th>
-                                        <td><input type="number" value="0" id="productRecallInstances" name="productRecallInstances[]" class="form-control" ></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="productRecallInstances" name="productRecallInstances[]" class="form-control" ></td>
                                         <td><input type="text" id="productRecallInstances" name="productRecallInstances[]" class="form-control" ></td>
                                     </tr>
                                     <tr>
                                         <th class="form-label">Forced recalls</th>
-                                        <td><input type="number" value="0" id="productRecallInstances" name="productRecallInstances[]" class="form-control" ></td>
+                                        <td><input type="number" value="0" onfocus="removeZero(this)" onblur="addZeroIfEmpty(this)" id="productRecallInstances" name="productRecallInstances[]" class="form-control" ></td>
                                         <td><input type="text" id="productRecallInstances" name="productRecallInstances[]" class="form-control" ></td>
                                     </tr>
                                 </table>
@@ -5267,6 +5267,9 @@
                     <button type="button" class="btn-primary" onclick="navigate(-1)">Previous</button>
                     <button type="submit" class="btn btn-primary" onclick="return confirmSubmission()">Submit</button>
                 </div>
+
+                <!-- Floating message for readonly fields -->
+                <div id="floatingMessage" style="display: none; position: absolute; padding: 8px; background: #f0f0f0; border: 1px solid #ddd; border-radius: 4px; pointer-events: none; z-index: 100;">This field is auto-calculated and cannot be edited.</div>
             </form>
         </div>
          
