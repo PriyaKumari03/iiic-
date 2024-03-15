@@ -4728,8 +4728,8 @@
                                     </tbody>
                                     <tfoot>
                                         <tr>
-                                            <td colspan="3">Total : </td>
-                                            <td colspan="2" id="totalAmount">0</td>
+                                            <td class="form-label" colspan="3">Total </td>
+                                            <td colspan="2" name="csrAspirationalDistrictsTotal[]" id="totalAmount">0</td>
                                         </tr>
                                     </tfoot>
                                 </table>
