@@ -210,6 +210,7 @@ CREATE TABLE IF NOT EXISTS `section_c_form` (
   `8_5_socialImpactActions` text,
   `8_5_socialImpactActions_comments` text,
   `8_6_csrAspirationalDistricts` text,
+  `8_6_csrAspirationalDistrictsTotal` text,
   `8_6_csrAspirationalDistricts_comments` text,
   `8_7_procurementPolicyMarginalized` text,
   `8_8_procurementPolicyMarginalizedDetails` text,
