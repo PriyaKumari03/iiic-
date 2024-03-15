@@ -298,6 +298,7 @@ try {
                        $socialImpactActions = implode('| ', $_POST['socialImpactActions']);
                        $socialImpactActions_comments = $_POST['p_socialImpactActions_comments'];
                        $csrAspirationalDistricts = implode('| ', $_POST['csrAspirationalDistricts']);
+                       $csrAspirationalDistrictsTotal = $_POST['csrAspirationalDistrictsTotal'];                    //new column
                        $csrAspirationalDistricts_comments = $_POST['p_csrAspirationalDistricts_comments'];
                        $procurementPolicyMarginalized = $_POST['procurementPolicyMarginalizedChoice'];
                        $procurementPolicyMarginalizedDetails = $_POST['procurementPolicyMarginalizedDetails'];
@@ -579,8 +580,9 @@ try {
                             '8_5_socialImpactActions' => $socialImpactActions,
                             '8_5_socialImpactActions_comments' => $socialImpactActions_comments,
                             '8_6_csrAspirationalDistricts' => $csrAspirationalDistricts,
+                            '8_6_csrAspirationalDistrictsTotal' => $csrAspirationalDistrictsTotal,                //new column
                             '8_6_csrAspirationalDistricts_comments' => $csrAspirationalDistricts_comments,
-                                //3 sub question - a(8_7), b(8_7_B), c(8_7_C)
+                            //3 sub question - a(8_7), b(8_7_B), c(8_7_C)
                             '8_7_procurementPolicyMarginalized' => $procurementPolicyMarginalized,
                             '8_8_procurementPolicyMarginalizedDetails' => $procurementPolicyMarginalizedDetails,
                             '8_7_B_procurementPolicyMarginalized' => $procurementPolicyMarginalized_b,
